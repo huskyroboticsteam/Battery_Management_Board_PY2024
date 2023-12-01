@@ -1,0 +1,1385 @@
+Archive member included to satisfy reference by file (symbol)
+
+.\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+                              .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o (CyIntEnable)
+.\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+                              .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o) (CySysClkWcoEnabled)
+.\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph.o)
+                              .\CortexM0\ARM_GCC_541\Debug\main.o (I2C_DataPeriph_Start)
+.\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C.o)
+                              .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph.o) (I2C_DataPeriph_I2CInit)
+.\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C_SLAVE.o)
+                              .\CortexM0\ARM_GCC_541\Debug\battery.o (I2C_DataPeriph_I2CSlaveStatus)
+.\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain.o)
+                              .\CortexM0\ARM_GCC_541\Debug\main.o (I2C_Brain_Start)
+.\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C.o)
+                              .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain.o) (I2C_Brain_I2CInit)
+.\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_MASTER.o)
+                              .\CortexM0\ARM_GCC_541\Debug\battery.o (I2C_Brain_I2CMasterSendStart)
+.\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty.o)
+                              .\CortexM0\ARM_GCC_541\Debug\main.o (Jetty_Start)
+.\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C.o)
+                              .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty.o) (Jetty_I2CInit)
+.\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C_SLAVE.o)
+                              .\CortexM0\ARM_GCC_541\Debug\battery.o (Jetty_I2CSlaveStatus)
+.\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyBootAsmGnu.o)
+                              .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o) (CyDelayCycles)
+.\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyFlash.o)
+                              .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o) (CySysFlashSetWaitCycles)
+.\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C_INT.o)
+                              .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C.o) (I2C_DataPeriph_I2C_ISR)
+.\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_INT.o)
+                              .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C.o) (I2C_Brain_I2C_ISR)
+.\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C_INT.o)
+                              .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C.o) (Jetty_I2C_ISR)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_udivsi3.o)
+                              .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o) (__aeabi_uidiv)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_divsi3.o)
+                              .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o) (__aeabi_idiv)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_dvmd_tls.o)
+                              c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_udivsi3.o) (__aeabi_idiv0)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-errno.o)
+                              .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o (__errno)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-exit.o)
+                              c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o (exit)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-impure.o)
+                              c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-exit.o) (_global_impure_ptr)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-init.o)
+                              c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o (__libc_init_array)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memcpy-stub.o)
+                              .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyFlash.o) (memcpy)
+c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memset.o)
+                              c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o (memset)
+
+Allocating common symbols
+Common symbol       size              file
+
+I2C_Brain_mstrControl
+                    0x1               .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_MASTER.o)
+I2C_DataPeriph_slWrBufSize
+                    0x4               .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C_SLAVE.o)
+I2C_DataPeriph_slRdBufSize
+                    0x4               .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C_SLAVE.o)
+I2C_DataPeriph_slOverFlowCount
+                    0x1               .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C_SLAVE.o)
+I2C_Brain_mstrWrBufIndexTmp
+                    0x4               .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_MASTER.o)
+Jetty_state         0x1               .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C.o)
+I2C_DataPeriph_slRdBufIndexTmp
+                    0x4               .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C_SLAVE.o)
+I2C_Brain_mstrRdBufPtr
+                    0x4               .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_MASTER.o)
+Jetty_slStatus      0x1               .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C_SLAVE.o)
+Jetty_slRdBufIndex  0x4               .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C_SLAVE.o)
+I2C_Brain_state     0x1               .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C.o)
+Jetty_slWrBufSize   0x4               .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C_SLAVE.o)
+Jetty_slRdBufIndexTmp
+                    0x4               .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C_SLAVE.o)
+I2C_Brain_mstrRdBufSize
+                    0x4               .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_MASTER.o)
+I2C_DataPeriph_slRdBufIndex
+                    0x4               .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C_SLAVE.o)
+I2C_Brain_mstrWrBufSize
+                    0x4               .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_MASTER.o)
+Jetty_slRdBufPtr    0x4               .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C_SLAVE.o)
+Jetty_slOverFlowCount
+                    0x1               .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C_SLAVE.o)
+I2C_Brain_mstrWrBufPtr
+                    0x4               .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_MASTER.o)
+I2C_DataPeriph_slRdBufPtr
+                    0x4               .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C_SLAVE.o)
+I2C_DataPeriph_slWrBufPtr
+                    0x4               .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C_SLAVE.o)
+Jetty_slWrBufIndex  0x4               .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C_SLAVE.o)
+Jetty_slWrBufPtr    0x4               .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C_SLAVE.o)
+I2C_Brain_mstrWrBufIndex
+                    0x4               .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_MASTER.o)
+I2C_DataPeriph_state
+                    0x1               .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C.o)
+Jetty_slRdBufSize   0x4               .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C_SLAVE.o)
+I2C_DataPeriph_slStatus
+                    0x1               .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C_SLAVE.o)
+I2C_Brain_mstrRdBufIndex
+                    0x4               .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_MASTER.o)
+I2C_DataPeriph_slWrBufIndex
+                    0x4               .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C_SLAVE.o)
+I2C_Brain_mstrStatus
+                    0x2               .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_MASTER.o)
+
+Discarded input sections
+
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crti.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crti.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crti.o
+ .data          0x00000000        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+ .text          0x00000000       0x78 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .ARM.extab     0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .ARM.exidx     0x00000000        0x8 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\main.o
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\main.o
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\main.o
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\battery.o
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\battery.o
+ .bss           0x00000000        0x2 .\CortexM0\ARM_GCC_541\Debug\battery.o
+ .text.I2C_RW_Address
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\battery.o
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+ .data          0x00000000        0x4 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+ .text._exit    0x00000000        0xc .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+ .text._sbrk    0x00000000       0x30 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CySysClkImoStart
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CySysClkImoStop
+                0x00000000       0x1c .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CySysClkWriteHfclkDirect
+                0x00000000       0x44 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CySysEnablePumpClock
+                0x00000000       0x38 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CySysClkGetSysclkSource
+                0x00000000       0x34 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CySysClkWriteSysclkDiv
+                0x00000000       0x30 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CySysClkEcoStop
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CySysClkEcoReadStatus
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CySysClkConfigureEcoTrim
+                0x00000000       0x60 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CySysClkConfigureEcoDrive
+                0x00000000      0x174 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CySysClkPllStop
+                0x00000000       0x28 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CySysClkPllSetBypassMode
+                0x00000000       0x38 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CySysClkPllGetUnlockStatus
+                0x00000000       0x34 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CySysClkPllSetSource
+                0x00000000       0x30 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CySysLvdDisable
+                0x00000000       0x20 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CySysLvdGetInterruptSource
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CySysLvdClearInterrupt
+                0x00000000        0xc .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CySysGetResetReason
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CyDisableInts
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CyEnableInts
+                0x00000000        0xc .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CyIntGetState
+                0x00000000       0x18 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CyIntSetPending
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CyIntClearPending
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CySysClkPllGetLockStatus
+                0x00000000       0x40 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CySysClkPllGetBypassMode
+                0x00000000       0x30 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CySysClkPllConfigChangeAllowed
+                0x00000000       0x40 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CySysClkPllSetPQ
+                0x00000000       0xa4 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CySysClkPllSetOutputDivider
+                0x00000000       0x58 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CySysClkPllSetFrequency
+                0x00000000      0x110 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CyIntSetSysVector
+                0x00000000       0x20 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CyIntGetSysVector
+                0x00000000       0x1c .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CyIntGetVector
+                0x00000000       0x20 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CyIntGetPriority
+                0x00000000       0x2c .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CySoftwareReset
+                0x00000000       0x18 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CySysClkEcoStart
+                0x00000000       0x48 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CySysClkPllStart
+                0x00000000       0x9c .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CySysLvdEnable
+                0x00000000       0x44 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CyDelayFreq
+                0x00000000       0x4c .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CySysTickStop
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CySysTickEnableInterrupt
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CySysTickEnable
+                0x00000000       0x18 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CySysTickDisableInterrupt
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CySysTickSetReload
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CySysTickGetReload
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CySysTickGetValue
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CySysTickSetClockSource
+                0x00000000       0x20 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CySysTickGetClockSource
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CySysTickGetCountFlag
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CySysTickServiceCallbacks
+                0x00000000       0x2c .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CySysTickClear
+                0x00000000        0xc .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CySysTickInit
+                0x00000000       0x48 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CySysTickStart
+                0x00000000       0x20 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CySysTickSetCallback
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CySysTickGetCallback
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CyGetUniqueId
+                0x00000000       0x70 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CySysSetRamAccessArbPriority
+                0x00000000       0x20 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CySysSetFlashAccessArbPriority
+                0x00000000       0x20 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CySysSetDmacAccessArbPriority
+                0x00000000       0x20 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CySysSetPeripheralAccessArbPriority
+                0x00000000       0x68 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .text.CySysClkIloEnabled
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .text.CySysClkGetLfclkSource
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .text.CySysClkIloStart
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .text.CySysClkIloStartMeasurement
+                0x00000000       0x5c .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .text.CySysClkIloStopMeasurement
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .text.CySysClkIloCompensate
+                0x00000000      0x104 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .text.CySysClkIloUpdateTrimReg
+                0x00000000       0xa8 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .text.CySysClkIloTrim
+                0x00000000       0xd8 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .text.CySysClkIloRestoreFactoryTrim
+                0x00000000       0x30 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .text.CySysClkWcoStart
+                0x00000000       0x40 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .text.CySysClkWcoSetPowerMode
+                0x00000000       0x4c .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .text.CySysClkWcoClockOutSelect
+                0x00000000       0x2c .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .text.CySysWdtGetEnabledStatus
+                0x00000000       0x24 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .text.CySysWdtSetMode
+                0x00000000       0x38 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .text.CySysClkLfclkPosedgeRestore
+                0x00000000       0x2c .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .text.CySysWdtGetMode
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .text.CySysWdtSetClearOnMatch
+                0x00000000       0x34 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .text.CySysWdtGetClearOnMatch
+                0x00000000       0x24 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .text.CySysWdtEnable
+                0x00000000       0x3c .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .text.CySysWdtDisable
+                0x00000000       0x44 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .text.CySysWdtSetCascade
+                0x00000000       0x34 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .text.CySysWdtGetCascade
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .text.CySysWdtSetMatch
+                0x00000000       0x54 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .text.CySysWdtSetToggleBit
+                0x00000000       0x30 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .text.CySysWdtGetToggleBit
+                0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .text.CySysWdtGetMatch
+                0x00000000       0x20 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .text.CySysWdtGetCount
+                0x00000000       0x3c .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .text.CySysClkLfclkPosedgeCatch
+                0x00000000       0x74 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .text.CySysClkIloStop
+                0x00000000       0x4c .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .text.CySysClkSetLfclkSource
+                0x00000000       0x38 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .text.CySysClkWcoStop
+                0x00000000       0x48 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .text.CySysWdtGetInterruptSource
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .text.CySysWdtResetCounters
+                0x00000000       0x20 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .text.CySysWdtSetInterruptCallback
+                0x00000000       0x20 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .text.CySysWdtGetInterruptCallback
+                0x00000000       0x20 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .text.CySysWdtEnableCounterIsr
+                0x00000000       0x34 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .text.CySysWdtDisableCounterIsr
+                0x00000000       0x28 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .text.CySysWatchdogFeed
+                0x00000000       0x60 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .text.CySysTimerDelayUntilMatch
+                0x00000000       0x6c .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .text.CySysTimerDelay
+                0x00000000       0x3c .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .rodata        0x00000000        0xc .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph.o)
+ .text.I2C_DataPeriph_ScbModeStop
+                0x00000000        0x8 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph.o)
+ .text.I2C_DataPeriph_Stop
+                0x00000000       0x2c .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph.o)
+ .text.I2C_DataPeriph_SetRxFifoLevel
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph.o)
+ .text.I2C_DataPeriph_SetTxFifoLevel
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph.o)
+ .text.I2C_DataPeriph_SetCustomInterruptHandler
+                0x00000000        0xc .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C.o)
+ .text.I2C_DataPeriph_I2CStop
+                0x00000000       0x20 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C_SLAVE.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C_SLAVE.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C_SLAVE.o)
+ .text.I2C_DataPeriph_I2CSlaveClearReadStatus
+                0x00000000       0x28 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C_SLAVE.o)
+ .text.I2C_DataPeriph_I2CSlaveClearWriteStatus
+                0x00000000       0x28 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C_SLAVE.o)
+ .text.I2C_DataPeriph_I2CSlaveSetAddressMask
+                0x00000000       0x18 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C_SLAVE.o)
+ .text.I2C_DataPeriph_I2CSlaveInitReadBuf
+                0x00000000       0x3c .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C_SLAVE.o)
+ .text.I2C_DataPeriph_I2CSlaveInitWriteBuf
+                0x00000000       0x34 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C_SLAVE.o)
+ .text.I2C_DataPeriph_I2CSlaveGetReadBufSize
+                0x00000000        0xc .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C_SLAVE.o)
+ .text.I2C_DataPeriph_I2CSlaveGetWriteBufSize
+                0x00000000        0xc .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C_SLAVE.o)
+ .text.I2C_DataPeriph_I2CSlaveClearReadBuf
+                0x00000000        0xc .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C_SLAVE.o)
+ .text.I2C_DataPeriph_I2CSlaveClearWriteBuf
+                0x00000000        0xc .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C_SLAVE.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain.o)
+ .text.I2C_Brain_ScbModeStop
+                0x00000000        0x8 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain.o)
+ .text.I2C_Brain_Stop
+                0x00000000       0x2c .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain.o)
+ .text.I2C_Brain_SetRxFifoLevel
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain.o)
+ .text.I2C_Brain_SetTxFifoLevel
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain.o)
+ .text.I2C_Brain_SetCustomInterruptHandler
+                0x00000000        0xc .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C.o)
+ .text.I2C_Brain_I2CStop
+                0x00000000       0x20 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_MASTER.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_MASTER.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_MASTER.o)
+ .text.I2C_Brain_I2CMasterSendStop
+                0x00000000       0x58 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_MASTER.o)
+ .text.I2C_Brain_I2CMasterGetReadBufSize
+                0x00000000        0xc .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_MASTER.o)
+ .text.I2C_Brain_I2CMasterGetWriteBufSize
+                0x00000000        0xc .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_MASTER.o)
+ .text.I2C_Brain_I2CMasterClearReadBuf
+                0x00000000       0x28 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_MASTER.o)
+ .text.I2C_Brain_I2CMasterClearWriteBuf
+                0x00000000       0x28 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_MASTER.o)
+ .text.I2C_Brain_I2CMasterClearStatus
+                0x00000000       0x20 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_MASTER.o)
+ .text.I2C_Brain_I2CReStartGeneration
+                0x00000000       0x20 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_MASTER.o)
+ .text.I2C_Brain_I2CMasterWriteBuf
+                0x00000000       0xf8 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_MASTER.o)
+ .text.I2C_Brain_I2CMasterReadBuf
+                0x00000000      0x108 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_MASTER.o)
+ .text.I2C_Brain_I2CMasterSendRestart
+                0x00000000       0x68 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_MASTER.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty.o)
+ .text.Jetty_ScbModeStop
+                0x00000000        0x8 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty.o)
+ .text.Jetty_Stop
+                0x00000000       0x2c .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty.o)
+ .text.Jetty_SetRxFifoLevel
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty.o)
+ .text.Jetty_SetTxFifoLevel
+                0x00000000       0x14 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty.o)
+ .text.Jetty_SetCustomInterruptHandler
+                0x00000000        0xc .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C.o)
+ .text.Jetty_I2CStop
+                0x00000000       0x20 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C_SLAVE.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C_SLAVE.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C_SLAVE.o)
+ .text.Jetty_I2CSlaveClearReadStatus
+                0x00000000       0x28 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C_SLAVE.o)
+ .text.Jetty_I2CSlaveClearWriteStatus
+                0x00000000       0x28 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C_SLAVE.o)
+ .text.Jetty_I2CSlaveSetAddressMask
+                0x00000000       0x18 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C_SLAVE.o)
+ .text.Jetty_I2CSlaveInitReadBuf
+                0x00000000       0x3c .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C_SLAVE.o)
+ .text.Jetty_I2CSlaveInitWriteBuf
+                0x00000000       0x34 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C_SLAVE.o)
+ .text.Jetty_I2CSlaveGetReadBufSize
+                0x00000000        0xc .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C_SLAVE.o)
+ .text.Jetty_I2CSlaveGetWriteBufSize
+                0x00000000        0xc .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C_SLAVE.o)
+ .text.Jetty_I2CSlaveClearReadBuf
+                0x00000000        0xc .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C_SLAVE.o)
+ .text.Jetty_I2CSlaveClearWriteBuf
+                0x00000000        0xc .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C_SLAVE.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyBootAsmGnu.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyBootAsmGnu.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyFlash.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyFlash.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyFlash.o)
+ .text.CySysFlashClockBackup
+                0x00000000        0x4 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyFlash.o)
+ .text.CySysFlashClockRestore
+                0x00000000        0x4 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyFlash.o)
+ .text.CySysFlashWriteRow
+                0x00000000      0x128 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyFlash.o)
+ .text.CySysSFlashWriteUserRow
+                0x00000000      0x110 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyFlash.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C_INT.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C_INT.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C_INT.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_INT.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_INT.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_INT.o)
+ .text          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C_INT.o)
+ .data          0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C_INT.o)
+ .bss           0x00000000        0x0 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C_INT.o)
+ .text          0x00000000      0x114 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_udivsi3.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_udivsi3.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_udivsi3.o)
+ .text          0x00000000      0x1d4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_divsi3.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_divsi3.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_divsi3.o)
+ .text          0x00000000        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_dvmd_tls.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_dvmd_tls.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_dvmd_tls.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-errno.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-errno.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-errno.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-exit.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-exit.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-exit.o)
+ .text.exit     0x00000000       0x2c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-exit.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-impure.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-impure.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-impure.o)
+ .rodata._global_impure_ptr
+                0x00000000        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-impure.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-init.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-init.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-init.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memcpy-stub.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memcpy-stub.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memcpy-stub.o)
+ .text.memcpy   0x00000000       0x12 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memcpy-stub.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memset.o)
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memset.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memset.o)
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtend.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtend.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtend.o
+ .text          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtn.o
+ .data          0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtn.o
+ .bss           0x00000000        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+rom              0x00000000         0x00040000         xr
+ram              0x20000000         0x00008000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crti.o
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+START GROUP
+LOAD .\CortexM0\ARM_GCC_541\Debug\main.o
+LOAD .\CortexM0\ARM_GCC_541\Debug\battery.o
+LOAD .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+LOAD .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
+LOAD .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+LOAD .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a
+END GROUP
+START GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a
+END GROUP
+START GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc_nano.a
+END GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtend.o
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtn.o
+START GROUP
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libc.a
+LOAD c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libnosys.a
+END GROUP
+                0x00000000                CY_APPL_ORIGIN = 0x0
+                0x00000100                CY_FLASH_ROW_SIZE = 0x100
+                0x00000001                CY_APPL_NUM = 0x1
+                0x00000001                CY_APPL_MAX = 0x1
+                0x00000040                CY_METADATA_SIZE = 0x40
+                0x00000000                CY_APPL_LOADABLE = 0x0
+                0x00000000                CY_CHECKSUM_EXCLUDE_SIZE = ALIGN (0x0, CY_FLASH_ROW_SIZE)
+                0x00000000                CY_APP_FOR_STACK_AND_COPIER = 0x0
+                [!provide]                PROVIDE (__cy_heap_start, _end)
+                0x00000001                PROVIDE (__cy_region_num, ((__cy_regions_end - __cy_regions) / 0x10))
+                0x20008000                PROVIDE (__cy_stack, (ORIGIN (ram) + LENGTH (ram)))
+                [!provide]                PROVIDE (__cy_heap_end, (__cy_stack - 0x800))
+
+.cybootloader   0x00000000        0x0
+ *(.cybootloader)
+                0x00000000                appl1_start = CY_APPL_ORIGIN?CY_APPL_ORIGIN:ALIGN (CY_FLASH_ROW_SIZE)
+                0x0001ff00                appl2_start = (appl1_start + ALIGN ((((LENGTH (rom) - appl1_start) - (0x2 * CY_FLASH_ROW_SIZE)) / 0x2), CY_FLASH_ROW_SIZE))
+                0x00000000                appl_start = (CY_APPL_NUM == 0x1)?appl1_start:appl2_start
+                0x00000001                cy_project_type_bootloader = (appl_start == 0x0)?0x1:0x0
+                0x00000000                cy_project_type_app_for_stack_and_copier = (CY_APP_FOR_STACK_AND_COPIER == 0x1)?0x1:0x0
+
+.text           0x00000000     0x1d8c
+ CREATE_OBJECT_SYMBOLS
+                0x00000000                PROVIDE (__cy_interrupt_vector, RomVectors)
+ *(.romvectors)
+ .romvectors    0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+                0x00000000                RomVectors
+                0x00000001                ASSERT ((. != __cy_interrupt_vector), No interrupt vector)
+                0x00000001                ASSERT (CY_APPL_ORIGIN?(SIZEOF (.cybootloader) <= CY_APPL_ORIGIN):0x1, Wrong image location)
+                0x00000010                PROVIDE (__cy_reset, Reset)
+ *(.text.Reset)
+ .text.Reset    0x00000010        0x8 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+                0x00000010                Reset
+                0x00000001                ASSERT ((. != __cy_reset), No reset code)
+ *(.psocinit)
+ .psocinit      0x00000018      0x190 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+                0x000000c8                cyfitter_cfg
+                0x000001a8                . = MAX (., 0x100)
+ *(.text .text.* .gnu.linkonce.t.*)
+ .text          0x000001a8       0x60 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+ .text.main     0x00000208       0x40 .\CortexM0\ARM_GCC_541\Debug\main.o
+                0x00000208                main
+ .text.DataPeriphRead
+                0x00000248       0x4c .\CortexM0\ARM_GCC_541\Debug\battery.o
+                0x00000248                DataPeriphRead
+ .text.JettySend
+                0x00000294       0x4c .\CortexM0\ARM_GCC_541\Debug\battery.o
+                0x00000294                JettySend
+ .text.convertValue
+                0x000002e0        0x4 .\CortexM0\ARM_GCC_541\Debug\battery.o
+                0x000002e0                convertValue
+ .text.AnalogSetDefault
+                0x000002e4       0x20 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .text.CYMEMZERO
+                0x00000304        0xc .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .text.IntDefaultHandler
+                0x00000310       0x10 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+                0x00000310                IntDefaultHandler
+ .text.Start_c  0x00000320       0x48 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+                0x00000320                Start_c
+ .text.initialize_psoc
+                0x00000368       0x4c .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+                0x00000368                initialize_psoc
+ .text.CySysClkImoSetPwrBgTrim5
+                0x000003b4       0x30 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CySysClkImoSetImoTrims
+                0x000003e4       0xb0 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .text.CySysClkImoDisableWcoLock
+                0x00000494       0x54 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+                0x00000494                CySysClkImoDisableWcoLock
+ .text.CySysClkImoGetWcoLock
+                0x000004e8       0x14 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+                0x000004e8                CySysClkImoGetWcoLock
+ .text.CySysClkImoEnableUsbLock
+                0x000004fc       0x44 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+                0x000004fc                CySysClkImoEnableUsbLock
+ .text.CySysClkImoDisableUsbLock
+                0x00000540       0x74 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+                0x00000540                CySysClkImoDisableUsbLock
+ .text.CySysClkImoGetUsbLock
+                0x000005b4       0x14 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+                0x000005b4                CySysClkImoGetUsbLock
+ .text.CyIntEnable
+                0x000005c8       0x14 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+                0x000005c8                CyIntEnable
+ .text.CyIntDisable
+                0x000005dc       0x14 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+                0x000005dc                CyIntDisable
+ .text.CyHalt   0x000005f0        0x4 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+                0x000005f0                CyHalt
+ .text.CyIntSetVector
+                0x000005f4       0x24 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+                0x000005f4                CyIntSetVector
+ .text.CyIntSetPriority
+                0x00000618       0x4c .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+                0x00000618                CyIntSetPriority
+ .text.CyDelay  0x00000664       0x30 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+                0x00000664                CyDelay
+ .text.CySysClkImoEnableWcoLock
+                0x00000694      0x104 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+                0x00000694                CySysClkImoEnableWcoLock
+ .text.CyDelayUs
+                0x00000798       0x14 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+                0x00000798                CyDelayUs
+ .text.CySysClkWriteImoFreq
+                0x000007ac      0x1bc .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+                0x000007ac                CySysClkWriteImoFreq
+ .text.CySysWdtLocked
+                0x00000968       0x14 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .text.CySysClkWcoEnabled
+                0x0000097c       0x14 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+                0x0000097c                CySysClkWcoEnabled
+ .text.CySysWdtLock
+                0x00000990       0x1c .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+                0x00000990                CySysWdtLock
+ .text.CySysWdtUnlock
+                0x000009ac       0x30 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+                0x000009ac                CySysWdtUnlock
+ .text.CySysWdtClearInterrupt
+                0x000009dc       0x4c .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+                0x000009dc                CySysWdtClearInterrupt
+ .text.CySysWdtIsr
+                0x00000a28       0xa4 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+                0x00000a28                CySysWdtIsr
+ .text.I2C_DataPeriph_ScbEnableIntr
+                0x00000acc        0xc .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph.o)
+ .text.I2C_DataPeriph_Init
+                0x00000ad8        0x8 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph.o)
+                0x00000ad8                I2C_DataPeriph_Init
+ .text.I2C_DataPeriph_Enable
+                0x00000ae0       0x18 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph.o)
+                0x00000ae0                I2C_DataPeriph_Enable
+ .text.I2C_DataPeriph_Start
+                0x00000af8       0x20 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph.o)
+                0x00000af8                I2C_DataPeriph_Start
+ .text.I2C_DataPeriph_I2CInit
+                0x00000b18       0xcc .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C.o)
+                0x00000b18                I2C_DataPeriph_I2CInit
+ .text.I2C_DataPeriph_I2CFwBlockReset
+                0x00000be4       0x5c .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C.o)
+                0x00000be4                I2C_DataPeriph_I2CFwBlockReset
+ .text.I2C_DataPeriph_I2CSlaveStatus
+                0x00000c40        0xc .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C_SLAVE.o)
+                0x00000c40                I2C_DataPeriph_I2CSlaveStatus
+ .text.I2C_DataPeriph_I2CSlaveSetAddress
+                0x00000c4c       0x18 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C_SLAVE.o)
+                0x00000c4c                I2C_DataPeriph_I2CSlaveSetAddress
+ .text.I2C_Brain_ScbEnableIntr
+                0x00000c64        0xc .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain.o)
+ .text.I2C_Brain_Init
+                0x00000c70        0x8 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain.o)
+                0x00000c70                I2C_Brain_Init
+ .text.I2C_Brain_Enable
+                0x00000c78       0x18 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain.o)
+                0x00000c78                I2C_Brain_Enable
+ .text.I2C_Brain_Start
+                0x00000c90       0x20 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain.o)
+                0x00000c90                I2C_Brain_Start
+ .text.I2C_Brain_I2CInit
+                0x00000cb0       0xb8 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C.o)
+                0x00000cb0                I2C_Brain_I2CInit
+ .text.I2C_Brain_I2CFwBlockReset
+                0x00000d68       0x5c .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C.o)
+                0x00000d68                I2C_Brain_I2CFwBlockReset
+ .text.I2C_Brain_I2CMasterWaitOneUnit
+                0x00000dc4       0x28 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_MASTER.o)
+ .text.I2C_Brain_I2CMasterHandleStatus
+                0x00000dec       0xc4 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_MASTER.o)
+ .text.I2C_Brain_I2CMasterSendStart
+                0x00000eb0       0xc4 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_MASTER.o)
+                0x00000eb0                I2C_Brain_I2CMasterSendStart
+ .text.I2C_Brain_I2CMasterWriteByte
+                0x00000f74       0x48 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_MASTER.o)
+                0x00000f74                I2C_Brain_I2CMasterWriteByte
+ .text.I2C_Brain_I2CMasterReadByte
+                0x00000fbc       0x7c .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_MASTER.o)
+                0x00000fbc                I2C_Brain_I2CMasterReadByte
+ .text.I2C_Brain_I2CMasterStatus
+                0x00001038       0x30 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_MASTER.o)
+                0x00001038                I2C_Brain_I2CMasterStatus
+ .text.Jetty_ScbEnableIntr
+                0x00001068        0xc .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty.o)
+ .text.Jetty_Init
+                0x00001074        0x8 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty.o)
+                0x00001074                Jetty_Init
+ .text.Jetty_Enable
+                0x0000107c       0x18 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty.o)
+                0x0000107c                Jetty_Enable
+ .text.Jetty_Start
+                0x00001094       0x20 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty.o)
+                0x00001094                Jetty_Start
+ .text.Jetty_I2CInit
+                0x000010b4       0xcc .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C.o)
+                0x000010b4                Jetty_I2CInit
+ .text.Jetty_I2CFwBlockReset
+                0x00001180       0x5c .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C.o)
+                0x00001180                Jetty_I2CFwBlockReset
+ .text.Jetty_I2CSlaveStatus
+                0x000011dc        0xc .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C_SLAVE.o)
+                0x000011dc                Jetty_I2CSlaveStatus
+ .text.Jetty_I2CSlaveSetAddress
+                0x000011e8       0x18 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C_SLAVE.o)
+                0x000011e8                Jetty_I2CSlaveSetAddress
+ .text          0x00001200       0x20 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyBootAsmGnu.o)
+                0x00001200                CyDelayCycles
+                0x00001212                CyEnterCriticalSection
+                0x0000121a                CyExitCriticalSection
+ .text.CySysFlashSetWaitCycles
+                0x00001220       0x54 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyFlash.o)
+                0x00001220                CySysFlashSetWaitCycles
+ .text.I2C_DataPeriph_I2C_ISR
+                0x00001274      0x3b8 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C_INT.o)
+                0x00001274                I2C_DataPeriph_I2C_ISR
+ .text.I2C_Brain_I2C_ISR
+                0x0000162c      0x340 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_INT.o)
+                0x0000162c                I2C_Brain_I2C_ISR
+ .text.Jetty_I2C_ISR
+                0x0000196c      0x3b8 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C_INT.o)
+                0x0000196c                Jetty_I2C_ISR
+ .text.__errno  0x00001d24        0xc c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-errno.o)
+                0x00001d24                __errno
+ .text.__libc_init_array
+                0x00001d30       0x4c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-init.o)
+                0x00001d30                __libc_init_array
+ .text.memset   0x00001d7c       0x10 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memset.o)
+                0x00001d7c                memset
+ *(.plt)
+ *(.gnu.warning)
+ *(.glue_7t)
+ .glue_7t       0x00001d8c        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x00001d8c        0x0 linker stubs
+ *(.vfp11_veneer)
+ .vfp11_veneer  0x00001d8c        0x0 linker stubs
+ *(.bootloader)
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+ *(.gcc_except_table)
+
+.v4_bx          0x00001d8c        0x0
+ .v4_bx         0x00001d8c        0x0 linker stubs
+
+.iplt           0x00001d8c        0x0
+ .iplt          0x00001d8c        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+
+.eh_frame       0x00001d8c        0x4
+ *(.eh_frame)
+ .eh_frame      0x00001d8c        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+ .eh_frame      0x00001d8c        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtend.o
+                [!provide]                PROVIDE (__exidx_start, .)
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x00001d90                __exidx_end = .
+
+.rodata         0x00001d90       0x70
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x00001d90        0xc .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .rodata        0x00001d9c       0x2e .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+                0x00001d9c                cyImoFreqMhz2Reg
+ .rodata.str1.1
+                0x00001dca        0x2 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-impure.o)
+                0x00001dcc                . = ALIGN (0x4)
+ *(.init)
+ .init          0x00001dcc        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crti.o
+                0x00001dcc                _init
+ .init          0x00001dd0        0x8 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtn.o
+                0x00001dd8                . = ALIGN (0x4)
+                0x00001dd8                __preinit_array_start = .
+ *(.preinit_array)
+                0x00001dd8                __preinit_array_end = .
+                0x00001dd8                . = ALIGN (0x4)
+                0x00001dd8                __init_array_start = .
+ *(SORT(.init_array.*))
+ *(.init_array)
+ .init_array    0x00001dd8        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+ .init_array    0x00001ddc        0x4 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+                0x00001de0                __init_array_end = .
+                0x00001de0                . = ALIGN (0x4)
+ *(.fini)
+ .fini          0x00001de0        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crti.o
+                0x00001de0                _fini
+ .fini          0x00001de4        0x8 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtn.o
+                0x00001dec                . = ALIGN (0x4)
+                0x00001dec                __fini_array_start = .
+ *(.fini_array)
+ .fini_array    0x00001dec        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+ *(SORT(.fini_array.*))
+                0x00001df0                __fini_array_end = .
+                0x00001df0                . = ALIGN (0x4)
+ *crtbegin.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *crtend.o(.ctors)
+                0x00001df0                . = ALIGN (0x4)
+ *crtbegin.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *crtend.o(.dtors)
+                0x00001df0                . = ALIGN (0x4)
+                0x00001df0                __cy_regions = .
+                0x00001df0        0x4 LONG 0x1e00 __cy_region_init_ram
+                0x00001df4        0x4 LONG 0x200000c0 __cy_region_start_data
+                0x00001df8        0x4 LONG 0x88 __cy_region_init_size_ram
+                0x00001dfc        0x4 LONG 0xf0 __cy_region_zero_size_ram
+                0x00001e00                __cy_regions_end = .
+                0x00001e00                . = ALIGN (0x8)
+                0x00001e00                _etext = .
+
+.cy_checksum_exclude
+                0x00001e00        0x0
+ *(.cy_checksum_exclude)
+
+.ramvectors     0x20000000       0xc0
+                0x20000000                __cy_region_start_ram = .
+ *(.ramvectors)
+ .ramvectors    0x20000000       0xc0 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+                0x20000000                CyRamVectors
+
+.noinit
+ *(.noinit)
+
+.data           0x200000c0       0x88 load address 0x00001e00
+                0x200000c0                __cy_region_start_data = .
+ *(.jcr)
+ .jcr           0x200000c0        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+ .jcr           0x200000c0        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtend.o
+ *(.got.plt)
+ *(.got)
+ *(.shdata)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x200000c4       0x14 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+                0x200000c4                CySysClkPumpConfig
+                0x200000c8                cydelay32kMs
+                0x200000cc                cydelayFreqKhz
+                0x200000d0                cydelayFreqMhz
+                0x200000d4                cydelayFreqHz
+ .data          0x200000d8        0x8 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .data.impure_data
+                0x200000e0       0x60 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-impure.o)
+ .data._impure_ptr
+                0x20000140        0x4 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-impure.o)
+                0x20000140                _impure_ptr
+                0x20000148                . = ALIGN (0x8)
+ *fill*         0x20000144        0x4 
+ *(.ram)
+                0x20000148                _edata = .
+
+.igot.plt       0x20000148        0x0 load address 0x00001e88
+ .igot.plt      0x20000148        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+
+.bss            0x20000148       0xf0 load address 0x00001e88
+                0x20000148                PROVIDE (__bss_start__, .)
+ *(.shbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x20000148       0x1c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+ .bss           0x20000164       0x20 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+                0x20000164                CySysClkImoTrim4
+                0x20000168                CySysClkImoTrim5
+                0x20000180                CySysTickInitVar
+ .bss           0x20000184       0x28 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .bss           0x200001ac        0x8 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph.o)
+                0x200001ac                I2C_DataPeriph_initVar
+                0x200001b0                I2C_DataPeriph_customIntrHandler
+ .bss           0x200001b4        0x8 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain.o)
+                0x200001b4                I2C_Brain_initVar
+                0x200001b8                I2C_Brain_customIntrHandler
+ .bss           0x200001bc        0x8 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty.o)
+                0x200001bc                Jetty_initVar
+                0x200001c0                Jetty_customIntrHandler
+ *(COMMON)
+ COMMON         0x200001c4        0x1 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C.o)
+                0x200001c4                I2C_DataPeriph_state
+ *fill*         0x200001c5        0x3 
+ COMMON         0x200001c8       0x24 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C_SLAVE.o)
+                0x200001c8                I2C_DataPeriph_slWrBufSize
+                0x200001cc                I2C_DataPeriph_slRdBufSize
+                0x200001d0                I2C_DataPeriph_slOverFlowCount
+                0x200001d4                I2C_DataPeriph_slRdBufIndexTmp
+                0x200001d8                I2C_DataPeriph_slRdBufIndex
+                0x200001dc                I2C_DataPeriph_slRdBufPtr
+                0x200001e0                I2C_DataPeriph_slWrBufPtr
+                0x200001e4                I2C_DataPeriph_slStatus
+                0x200001e8                I2C_DataPeriph_slWrBufIndex
+ COMMON         0x200001ec        0x1 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C.o)
+                0x200001ec                I2C_Brain_state
+ *fill*         0x200001ed        0x3 
+ COMMON         0x200001f0       0x22 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_MASTER.o)
+                0x200001f0                I2C_Brain_mstrControl
+                0x200001f4                I2C_Brain_mstrWrBufIndexTmp
+                0x200001f8                I2C_Brain_mstrRdBufPtr
+                0x200001fc                I2C_Brain_mstrRdBufSize
+                0x20000200                I2C_Brain_mstrWrBufSize
+                0x20000204                I2C_Brain_mstrWrBufPtr
+                0x20000208                I2C_Brain_mstrWrBufIndex
+                0x2000020c                I2C_Brain_mstrRdBufIndex
+                0x20000210                I2C_Brain_mstrStatus
+ COMMON         0x20000212        0x1 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C.o)
+                0x20000212                Jetty_state
+ *fill*         0x20000213        0x1 
+ COMMON         0x20000214       0x24 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C_SLAVE.o)
+                0x20000214                Jetty_slStatus
+                0x20000218                Jetty_slRdBufIndex
+                0x2000021c                Jetty_slWrBufSize
+                0x20000220                Jetty_slRdBufIndexTmp
+                0x20000224                Jetty_slRdBufPtr
+                0x20000228                Jetty_slOverFlowCount
+                0x2000022c                Jetty_slWrBufIndex
+                0x20000230                Jetty_slWrBufPtr
+                0x20000234                Jetty_slRdBufSize
+                0x20000238                . = ALIGN (0x8)
+ *(.ram.b)
+                0x20000238                _end = .
+                0x20000238                __end = .
+                0x20000238                PROVIDE (end, .)
+                0x20000238                PROVIDE (__bss_end__, .)
+                0x00001e00                __cy_region_init_ram = LOADADDR (.data)
+                0x00000088                __cy_region_init_size_ram = (_edata - ADDR (.data))
+                0x000000f0                __cy_region_zero_size_ram = (_end - _edata)
+
+.heap           0x20000238       0x80 load address 0x00001e88
+                0x20000238                . = _end
+                0x200002b8                . = (. + 0x80)
+ *fill*         0x20000238       0x80 
+                0x200002b8                __cy_heap_limit = .
+
+.stack          0x20007800      0x800
+                0x20007800                __cy_stack_limit = .
+                0x20008000                . = (. + 0x800)
+ *fill*         0x20007800      0x800 
+                0x00000001                ASSERT ((__cy_stack_limit >= __cy_heap_limit), region RAM overflowed with stack)
+                0x00000000                cy_checksum_exclude_size = (CY_APPL_LOADABLE == 0x1)?SIZEOF (.cy_checksum_exclude):0x0
+                0x00000001                ASSERT ((cy_checksum_exclude_size <= CY_CHECKSUM_EXCLUDE_SIZE), CY_BOOT: Section .cy_checksum_exclude size exceedes specified limit.)
+                0x0003ffc0                cyloadermeta_start = (cy_project_type_bootloader || cy_project_type_app_for_stack_and_copier)?(LENGTH (rom) - CY_METADATA_SIZE):0xf0000000
+
+.cyloadermeta
+ *(.cyloadermeta)
+                0x0003ffc0                cyloadablemeta_start = cy_project_type_app_for_stack_and_copier?((LENGTH (rom) - CY_FLASH_ROW_SIZE) - CY_METADATA_SIZE):((LENGTH (rom) - (CY_FLASH_ROW_SIZE * (CY_APPL_NUM - 0x1))) - CY_METADATA_SIZE)
+
+.cyloadablemeta
+ *(.cyloadablemeta)
+
+.cyflashprotect
+                0x90400000       0x80
+ *(.cyflashprotect)
+ .cyflashprotect
+                0x90400000       0x80 .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
+                0x90400000                cy_meta_flashprotect
+
+.cymeta         0x90500000        0xc
+ *(.cymeta)
+ .cymeta        0x90500000        0xc .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
+                0x90500000                cy_metadata
+
+.cychipprotect  0x90600000        0x1
+ *(.cychipprotect)
+ .cychipprotect
+                0x90600000        0x1 .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
+                0x90600000                cy_meta_chipprotect
+
+.rel.dyn        0x00001e88        0x0 load address 0x90600004
+ .rel.iplt      0x00001e88        0x0 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x8d0
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 .\CortexM0\ARM_GCC_541\Debug\main.o
+ .debug_aranges
+                0x00000020       0x38 .\CortexM0\ARM_GCC_541\Debug\battery.o
+ .debug_aranges
+                0x00000058       0x38 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_aranges
+                0x00000090       0x18 .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
+ .debug_aranges
+                0x000000a8       0x48 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+ .debug_aranges
+                0x000000f0      0x270 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .debug_aranges
+                0x00000360      0x188 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .debug_aranges
+                0x000004e8       0x60 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph.o)
+ .debug_aranges
+                0x00000548       0x30 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C.o)
+ .debug_aranges
+                0x00000578       0x70 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C_SLAVE.o)
+ .debug_aranges
+                0x000005e8       0x60 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain.o)
+ .debug_aranges
+                0x00000648       0x30 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C.o)
+ .debug_aranges
+                0x00000678       0x98 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_MASTER.o)
+ .debug_aranges
+                0x00000710       0x60 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty.o)
+ .debug_aranges
+                0x00000770       0x30 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C.o)
+ .debug_aranges
+                0x000007a0       0x70 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C_SLAVE.o)
+ .debug_aranges
+                0x00000810       0x20 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyBootAsmGnu.o)
+ .debug_aranges
+                0x00000830       0x40 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyFlash.o)
+ .debug_aranges
+                0x00000870       0x20 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C_INT.o)
+ .debug_aranges
+                0x00000890       0x20 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_INT.o)
+ .debug_aranges
+                0x000008b0       0x20 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C_INT.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x589a
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x1c9 .\CortexM0\ARM_GCC_541\Debug\main.o
+ .debug_info    0x000001c9      0x2e0 .\CortexM0\ARM_GCC_541\Debug\battery.o
+ .debug_info    0x000004a9      0x299 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_info    0x00000742       0xf8 .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
+ .debug_info    0x0000083a      0x3a2 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+ .debug_info    0x00000bdc     0x17e4 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .debug_info    0x000023c0     0x1058 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .debug_info    0x00003418      0x298 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph.o)
+ .debug_info    0x000036b0      0x18f .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C.o)
+ .debug_info    0x0000383f      0x38d .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C_SLAVE.o)
+ .debug_info    0x00003bcc      0x298 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain.o)
+ .debug_info    0x00003e64      0x195 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C.o)
+ .debug_info    0x00003ff9      0x813 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_MASTER.o)
+ .debug_info    0x0000480c      0x298 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty.o)
+ .debug_info    0x00004aa4      0x18f .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C.o)
+ .debug_info    0x00004c33      0x38d .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C_SLAVE.o)
+ .debug_info    0x00004fc0       0xb2 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyBootAsmGnu.o)
+ .debug_info    0x00005072      0x352 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyFlash.o)
+ .debug_info    0x000053c4      0x197 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C_INT.o)
+ .debug_info    0x0000555b      0x1a8 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_INT.o)
+ .debug_info    0x00005703      0x197 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C_INT.o)
+
+.debug_abbrev   0x00000000     0x17a1
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0xc5 .\CortexM0\ARM_GCC_541\Debug\main.o
+ .debug_abbrev  0x000000c5       0xda .\CortexM0\ARM_GCC_541\Debug\battery.o
+ .debug_abbrev  0x0000019f      0x166 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_abbrev  0x00000305       0x5d .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
+ .debug_abbrev  0x00000362      0x1d7 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+ .debug_abbrev  0x00000539      0x293 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .debug_abbrev  0x000007cc      0x248 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .debug_abbrev  0x00000a14      0x118 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph.o)
+ .debug_abbrev  0x00000b2c       0xc7 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C.o)
+ .debug_abbrev  0x00000bf3      0x156 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C_SLAVE.o)
+ .debug_abbrev  0x00000d49      0x118 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain.o)
+ .debug_abbrev  0x00000e61       0xc7 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C.o)
+ .debug_abbrev  0x00000f28      0x1c2 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_MASTER.o)
+ .debug_abbrev  0x000010ea      0x118 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty.o)
+ .debug_abbrev  0x00001202       0xc7 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C.o)
+ .debug_abbrev  0x000012c9      0x156 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C_SLAVE.o)
+ .debug_abbrev  0x0000141f       0x14 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyBootAsmGnu.o)
+ .debug_abbrev  0x00001433      0x182 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyFlash.o)
+ .debug_abbrev  0x000015b5       0xa4 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C_INT.o)
+ .debug_abbrev  0x00001659       0xa4 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_INT.o)
+ .debug_abbrev  0x000016fd       0xa4 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C_INT.o)
+
+.debug_line     0x00000000     0x26b4
+ *(.debug_line)
+ .debug_line    0x00000000       0xdc .\CortexM0\ARM_GCC_541\Debug\main.o
+ .debug_line    0x000000dc      0x113 .\CortexM0\ARM_GCC_541\Debug\battery.o
+ .debug_line    0x000001ef      0x155 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_line    0x00000344      0x141 .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
+ .debug_line    0x00000485      0x236 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+ .debug_line    0x000006bb      0x8ef .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .debug_line    0x00000faa      0x5d1 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .debug_line    0x0000157b      0x13a .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph.o)
+ .debug_line    0x000016b5       0xd9 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C.o)
+ .debug_line    0x0000178e      0x147 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C_SLAVE.o)
+ .debug_line    0x000018d5      0x130 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain.o)
+ .debug_line    0x00001a05       0xce .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C.o)
+ .debug_line    0x00001ad3      0x308 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_MASTER.o)
+ .debug_line    0x00001ddb      0x128 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty.o)
+ .debug_line    0x00001f03       0xc7 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C.o)
+ .debug_line    0x00001fca      0x13e .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C_SLAVE.o)
+ .debug_line    0x00002108       0x68 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyBootAsmGnu.o)
+ .debug_line    0x00002170      0x173 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyFlash.o)
+ .debug_line    0x000022e3      0x13f .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C_INT.o)
+ .debug_line    0x00002422      0x16e .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_INT.o)
+ .debug_line    0x00002590      0x124 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C_INT.o)
+
+.debug_frame    0x00000000     0x1720
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x2c .\CortexM0\ARM_GCC_541\Debug\main.o
+ .debug_frame   0x0000002c       0x70 .\CortexM0\ARM_GCC_541\Debug\battery.o
+ .debug_frame   0x0000009c       0x74 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_frame   0x00000110       0xbc .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+ .debug_frame   0x000001cc      0x718 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .debug_frame   0x000008e4      0x4a4 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .debug_frame   0x00000d88       0xe8 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph.o)
+ .debug_frame   0x00000e70       0x58 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C.o)
+ .debug_frame   0x00000ec8       0xf8 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C_SLAVE.o)
+ .debug_frame   0x00000fc0       0xe8 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain.o)
+ .debug_frame   0x000010a8       0x58 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C.o)
+ .debug_frame   0x00001100      0x1d8 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_MASTER.o)
+ .debug_frame   0x000012d8       0xe8 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty.o)
+ .debug_frame   0x000013c0       0x58 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C.o)
+ .debug_frame   0x00001418       0xf8 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C_SLAVE.o)
+ .debug_frame   0x00001510       0x90 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyFlash.o)
+ .debug_frame   0x000015a0       0x2c .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C_INT.o)
+ .debug_frame   0x000015cc       0x2c .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_INT.o)
+ .debug_frame   0x000015f8       0x2c .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C_INT.o)
+ .debug_frame   0x00001624       0x20 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_udivsi3.o)
+ .debug_frame   0x00001644       0x20 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_divsi3.o)
+ .debug_frame   0x00001664       0x20 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-errno.o)
+ .debug_frame   0x00001684       0x28 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-exit.o)
+ .debug_frame   0x000016ac       0x2c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-init.o)
+ .debug_frame   0x000016d8       0x28 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x00001700       0x20 c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memset.o)
+
+.debug_str      0x00000000     0x2320
+ *(.debug_str)
+ .debug_str     0x00000000      0x21f .\CortexM0\ARM_GCC_541\Debug\main.o
+                                0x25f (size before relaxing)
+ .debug_str     0x0000021f       0xf2 .\CortexM0\ARM_GCC_541\Debug\battery.o
+                                0x2dc (size before relaxing)
+ .debug_str     0x00000311       0xbf .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+                                0x27d (size before relaxing)
+ .debug_str     0x000003d0       0x63 .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
+                                0x1ea (size before relaxing)
+ .debug_str     0x00000433      0x140 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+                                0x323 (size before relaxing)
+ .debug_str     0x00000573      0x933 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+                                0xb6a (size before relaxing)
+ .debug_str     0x00000ea6      0x6e7 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+                                0x93f (size before relaxing)
+ .debug_str     0x0000158d      0x18a .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph.o)
+                                0x37a (size before relaxing)
+ .debug_str     0x00001717       0xcf .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C.o)
+                                0x2da (size before relaxing)
+ .debug_str     0x000017e6      0x236 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C_SLAVE.o)
+                                0x4bd (size before relaxing)
+ .debug_str     0x00001a1c      0x128 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain.o)
+                                0x334 (size before relaxing)
+ .debug_str     0x00001b44       0x98 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C.o)
+                                0x2a0 (size before relaxing)
+ .debug_str     0x00001bdc      0x2b9 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_MASTER.o)
+                                0x580 (size before relaxing)
+ .debug_str     0x00001e95       0xf4 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty.o)
+                                0x2fc (size before relaxing)
+ .debug_str     0x00001f89       0x90 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C.o)
+                                0x289 (size before relaxing)
+ .debug_str     0x00002019      0x186 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C_SLAVE.o)
+                                0x400 (size before relaxing)
+ .debug_str     0x0000219f       0xb2 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyFlash.o)
+                                0x2d2 (size before relaxing)
+ .debug_str     0x00002251       0x5d .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C_INT.o)
+                                0x367 (size before relaxing)
+ .debug_str     0x000022ae       0x3d .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_INT.o)
+                                0x334 (size before relaxing)
+ .debug_str     0x000022eb       0x35 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C_INT.o)
+                                0x2e9 (size before relaxing)
+
+.debug_loc      0x00000000     0x3c7e
+ *(.debug_loc)
+ .debug_loc     0x00000000       0x1e .\CortexM0\ARM_GCC_541\Debug\main.o
+ .debug_loc     0x0000001e      0x149 .\CortexM0\ARM_GCC_541\Debug\battery.o
+ .debug_loc     0x00000167       0xa9 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_loc     0x00000210      0x14f .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+ .debug_loc     0x0000035f     0x18f5 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .debug_loc     0x00001c54      0xdb7 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .debug_loc     0x00002a0b       0x7e .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph.o)
+ .debug_loc     0x00002a89      0x180 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C_SLAVE.o)
+ .debug_loc     0x00002c09       0x7e .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain.o)
+ .debug_loc     0x00002c87      0xa49 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_MASTER.o)
+ .debug_loc     0x000036d0       0x7e .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty.o)
+ .debug_loc     0x0000374e      0x180 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C_SLAVE.o)
+ .debug_loc     0x000038ce      0x160 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyFlash.o)
+ .debug_loc     0x00003a2e       0xa2 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C_INT.o)
+ .debug_loc     0x00003ad0      0x10c .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_INT.o)
+ .debug_loc     0x00003bdc       0xa2 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C_INT.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_ranges   0x00000000      0x768
+ *(.debug_ranges)
+ .debug_ranges  0x00000000       0x10 .\CortexM0\ARM_GCC_541\Debug\main.o
+ .debug_ranges  0x00000010       0x28 .\CortexM0\ARM_GCC_541\Debug\battery.o
+ .debug_ranges  0x00000038       0x28 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_ranges  0x00000060       0x38 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+ .debug_ranges  0x00000098      0x260 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .debug_ranges  0x000002f8      0x178 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .debug_ranges  0x00000470       0x50 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph.o)
+ .debug_ranges  0x000004c0       0x20 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C.o)
+ .debug_ranges  0x000004e0       0x60 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C_SLAVE.o)
+ .debug_ranges  0x00000540       0x50 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain.o)
+ .debug_ranges  0x00000590       0x20 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C.o)
+ .debug_ranges  0x000005b0       0x88 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_MASTER.o)
+ .debug_ranges  0x00000638       0x50 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty.o)
+ .debug_ranges  0x00000688       0x20 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C.o)
+ .debug_ranges  0x000006a8       0x60 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C_SLAVE.o)
+ .debug_ranges  0x00000708       0x30 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyFlash.o)
+ .debug_ranges  0x00000738       0x10 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C_INT.o)
+ .debug_ranges  0x00000748       0x10 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_INT.o)
+ .debug_ranges  0x00000758       0x10 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C_INT.o)
+
+.comment        0x00000000       0x6e
+ .comment       0x00000000       0x6e .\CortexM0\ARM_GCC_541\Debug\main.o
+                                 0x6f (size before relaxing)
+ .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\battery.o
+ .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
+ .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+ .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph.o)
+ .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C.o)
+ .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C_SLAVE.o)
+ .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain.o)
+ .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C.o)
+ .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_MASTER.o)
+ .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty.o)
+ .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C.o)
+ .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C_SLAVE.o)
+ .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyFlash.o)
+ .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C_INT.o)
+ .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_INT.o)
+ .comment       0x0000006e       0x6f .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C_INT.o)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.note.gnu.arm.ident
+ *(.note.gnu.arm.ident)
+
+.ARM.attributes
+                0x00000000       0x28
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x00000000       0x1e c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crti.o
+ .ARM.attributes
+                0x0000001e       0x2c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
+ .ARM.attributes
+                0x0000004a       0x1b c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+ .ARM.attributes
+                0x00000065       0x31 .\CortexM0\ARM_GCC_541\Debug\main.o
+ .ARM.attributes
+                0x00000096       0x31 .\CortexM0\ARM_GCC_541\Debug\battery.o
+ .ARM.attributes
+                0x000000c7       0x31 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .ARM.attributes
+                0x000000f8       0x31 .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
+ .ARM.attributes
+                0x00000129       0x31 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+ .ARM.attributes
+                0x0000015a       0x31 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLib.o)
+ .ARM.attributes
+                0x0000018b       0x31 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyLFClk.o)
+ .ARM.attributes
+                0x000001bc       0x31 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph.o)
+ .ARM.attributes
+                0x000001ed       0x31 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C.o)
+ .ARM.attributes
+                0x0000021e       0x31 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C_SLAVE.o)
+ .ARM.attributes
+                0x0000024f       0x31 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain.o)
+ .ARM.attributes
+                0x00000280       0x31 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C.o)
+ .ARM.attributes
+                0x000002b1       0x31 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_MASTER.o)
+ .ARM.attributes
+                0x000002e2       0x31 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty.o)
+ .ARM.attributes
+                0x00000313       0x31 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C.o)
+ .ARM.attributes
+                0x00000344       0x31 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C_SLAVE.o)
+ .ARM.attributes
+                0x00000375       0x21 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyBootAsmGnu.o)
+ .ARM.attributes
+                0x00000396       0x31 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(CyFlash.o)
+ .ARM.attributes
+                0x000003c7       0x31 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_DataPeriph_I2C_INT.o)
+ .ARM.attributes
+                0x000003f8       0x31 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(I2C_Brain_I2C_INT.o)
+ .ARM.attributes
+                0x00000429       0x31 .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a(Jetty_I2C_INT.o)
+ .ARM.attributes
+                0x0000045a       0x1e c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x00000478       0x1e c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_divsi3.o)
+ .ARM.attributes
+                0x00000496       0x1e c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m\libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x000004b4       0x2c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-errno.o)
+ .ARM.attributes
+                0x000004e0       0x2c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-exit.o)
+ .ARM.attributes
+                0x0000050c       0x2c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-impure.o)
+ .ARM.attributes
+                0x00000538       0x2c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-init.o)
+ .ARM.attributes
+                0x00000564       0x2c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memcpy-stub.o)
+ .ARM.attributes
+                0x00000590       0x2c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv6-m\libg_nano.a(lib_a-memset.o)
+ .ARM.attributes
+                0x000005bc       0x2c c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtend.o
+ .ARM.attributes
+                0x000005e8       0x1e c:/program files (x86)/cypress/psoc creator/4.4/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtn.o
+
+/DISCARD/
+ *(.note.GNU-stack)
+OUTPUT(C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\CortexM0\ARM_GCC_541\Debug\BatteryBalance.elf elf32-littlearm)

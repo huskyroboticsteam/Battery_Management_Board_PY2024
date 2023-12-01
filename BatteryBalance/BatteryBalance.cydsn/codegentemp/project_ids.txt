@@ -1,0 +1,6 @@
+C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\BatteryBalance.cyprj|8118b7bf-cf72-464c-a33c-467f9ed46df0
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|61412eb7-a3d3-4446-b010-505a2785ac21
+C:\Users\tsien\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|e58a54ac-839f-4541-b452-df338f9223f7
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|a1a6ae09-9643-43f4-b5c7-d4f8a7318e20
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|efc3b3a3-c2ec-47d1-8ba0-76f973c49567
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|bbb4d72a-00eb-4049-a93c-d1edb115d359
