@@ -11,6 +11,9 @@
 */
 #include "project.h"
 #include "io.h"
+#include <stdint.h>
+#include <INA226.h>
+
 
 int main(void)
 {
@@ -18,16 +21,19 @@ int main(void)
 
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
     BatteryBalanceInit();
+    init_INA226();
     
-    uint32 current;
-    uint8 ina226;
+    uint8_t current;
+    uint8_t status;
 
     for(;;)
     {
-        DataPeriphRead(DATA_ADDRESS, &ina226);
-        current = convertValue(ina226);
-        
-        JettySend(JETTY, current);
+        // INA226Read(DATA_ADDRESS, &ina226);
+        // current = convertValue(ina226);
+        status = getCurrent(&current);
+        if (status == SUCCESS) {
+            JettySend(JETTY, current);  
+        }
         
         CyDelay(100);
     }

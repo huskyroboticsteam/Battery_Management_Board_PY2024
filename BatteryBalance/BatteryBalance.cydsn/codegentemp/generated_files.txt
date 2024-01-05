@@ -13,19 +13,19 @@
   <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\cyfitteriar.inc" value="HEADER;;;;;" />
   <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\cyfitter.h" value="HEADER;;;;;" />
   <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\cydisabledsheets.h" value="HEADER;;;;;" />
-  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\I2C_DataPeriph.c" value="SOURCE_C;CortexM0;;;;I2C_DataPeriph" />
-  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\I2C_DataPeriph.h" value="HEADER;;;;;I2C_DataPeriph" />
-  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\I2C_DataPeriph_I2C.h" value="HEADER;;;;;I2C_DataPeriph" />
-  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\I2C_DataPeriph_I2C_INT.c" value="SOURCE_C;CortexM0;;;;I2C_DataPeriph" />
-  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\I2C_DataPeriph_I2C.c" value="SOURCE_C;CortexM0;;;;I2C_DataPeriph" />
-  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\I2C_DataPeriph_I2C_BOOT.c" value="SOURCE_C;CortexM0;;;;I2C_DataPeriph" />
-  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\I2C_DataPeriph_I2C_SLAVE.c" value="SOURCE_C;CortexM0;;;;I2C_DataPeriph" />
-  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\I2C_DataPeriph_PM.c" value="SOURCE_C;CortexM0;;;;I2C_DataPeriph" />
-  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\I2C_DataPeriph_BOOT.c" value="SOURCE_C;CortexM0;;;;I2C_DataPeriph" />
-  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\I2C_DataPeriph_PINS.h" value="HEADER;;;;;I2C_DataPeriph" />
-  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\I2C_DataPeriph_I2C_PVT.h" value="HEADER;;;;;I2C_DataPeriph" />
-  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\I2C_DataPeriph_PVT.h" value="HEADER;;;;;I2C_DataPeriph" />
-  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\I2C_DataPeriph_BOOT.h" value="HEADER;;;;;I2C_DataPeriph" />
+  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\INA226_I2C.c" value="SOURCE_C;CortexM0;;;;INA226_I2C" />
+  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\INA226_I2C.h" value="HEADER;;;;;INA226_I2C" />
+  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\INA226_I2C_I2C.h" value="HEADER;;;;;INA226_I2C" />
+  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\INA226_I2C_I2C_INT.c" value="SOURCE_C;CortexM0;;;;INA226_I2C" />
+  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\INA226_I2C_I2C.c" value="SOURCE_C;CortexM0;;;;INA226_I2C" />
+  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\INA226_I2C_I2C_BOOT.c" value="SOURCE_C;CortexM0;;;;INA226_I2C" />
+  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\INA226_I2C_I2C_MASTER.c" value="SOURCE_C;CortexM0;;;;INA226_I2C" />
+  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\INA226_I2C_PM.c" value="SOURCE_C;CortexM0;;;;INA226_I2C" />
+  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\INA226_I2C_BOOT.c" value="SOURCE_C;CortexM0;;;;INA226_I2C" />
+  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\INA226_I2C_PINS.h" value="HEADER;;;;;INA226_I2C" />
+  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\INA226_I2C_I2C_PVT.h" value="HEADER;;;;;INA226_I2C" />
+  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\INA226_I2C_PVT.h" value="HEADER;;;;;INA226_I2C" />
+  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\INA226_I2C_BOOT.h" value="HEADER;;;;;INA226_I2C" />
   <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\I2C_Brain.c" value="SOURCE_C;CortexM0;;;;I2C_Brain" />
   <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\I2C_Brain.h" value="HEADER;;;;;I2C_Brain" />
   <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\I2C_Brain_I2C.h" value="HEADER;;;;;I2C_Brain" />
@@ -45,25 +45,38 @@
   <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\Jetty_I2C_INT.c" value="SOURCE_C;CortexM0;;;;Jetty" />
   <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\Jetty_I2C.c" value="SOURCE_C;CortexM0;;;;Jetty" />
   <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\Jetty_I2C_BOOT.c" value="SOURCE_C;CortexM0;;;;Jetty" />
-  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\Jetty_I2C_SLAVE.c" value="SOURCE_C;CortexM0;;;;Jetty" />
+  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\Jetty_I2C_MASTER.c" value="SOURCE_C;CortexM0;;;;Jetty" />
   <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\Jetty_PM.c" value="SOURCE_C;CortexM0;;;;Jetty" />
   <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\Jetty_BOOT.c" value="SOURCE_C;CortexM0;;;;Jetty" />
   <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\Jetty_PINS.h" value="HEADER;;;;;Jetty" />
   <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\Jetty_I2C_PVT.h" value="HEADER;;;;;Jetty" />
   <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\Jetty_PVT.h" value="HEADER;;;;;Jetty" />
   <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\Jetty_BOOT.h" value="HEADER;;;;;Jetty" />
-  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\I2C_DataPeriph_SCBCLK.c" value="SOURCE_C;CortexM0;;;;I2C_DataPeriph_SCBCLK" />
-  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\I2C_DataPeriph_SCBCLK.h" value="HEADER;;;;;I2C_DataPeriph_SCBCLK" />
-  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\I2C_DataPeriph_sda.c" value="SOURCE_C;CortexM0;;;;I2C_DataPeriph_sda" />
-  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\I2C_DataPeriph_sda.h" value="HEADER;;;;;I2C_DataPeriph_sda" />
-  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\I2C_DataPeriph_sda_aliases.h" value="HEADER;;;;;I2C_DataPeriph_sda" />
-  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\I2C_DataPeriph_sda_PM.c" value="SOURCE_C;CortexM0;;;;I2C_DataPeriph_sda" />
-  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\I2C_DataPeriph_scl.c" value="SOURCE_C;CortexM0;;;;I2C_DataPeriph_scl" />
-  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\I2C_DataPeriph_scl.h" value="HEADER;;;;;I2C_DataPeriph_scl" />
-  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\I2C_DataPeriph_scl_aliases.h" value="HEADER;;;;;I2C_DataPeriph_scl" />
-  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\I2C_DataPeriph_scl_PM.c" value="SOURCE_C;CortexM0;;;;I2C_DataPeriph_scl" />
-  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\I2C_DataPeriph_SCB_IRQ.c" value="SOURCE_C;CortexM0;;;;I2C_DataPeriph_SCB_IRQ" />
-  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\I2C_DataPeriph_SCB_IRQ.h" value="HEADER;;;;;I2C_DataPeriph_SCB_IRQ" />
+  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\DBG_UART.c" value="SOURCE_C;CortexM0;;;;DBG_UART" />
+  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\DBG_UART.h" value="HEADER;;;;;DBG_UART" />
+  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\DBG_UART_SPI_UART.h" value="HEADER;;;;;DBG_UART" />
+  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\DBG_UART_SPI_UART.c" value="SOURCE_C;CortexM0;;;;DBG_UART" />
+  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\DBG_UART_SPI_UART_INT.c" value="SOURCE_C;CortexM0;;;;DBG_UART" />
+  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\DBG_UART_PM.c" value="SOURCE_C;CortexM0;;;;DBG_UART" />
+  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\DBG_UART_UART.c" value="SOURCE_C;CortexM0;;;;DBG_UART" />
+  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\DBG_UART_BOOT.c" value="SOURCE_C;CortexM0;;;;DBG_UART" />
+  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\DBG_UART_UART_BOOT.c" value="SOURCE_C;CortexM0;;;;DBG_UART" />
+  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\DBG_UART_PINS.h" value="HEADER;;;;;DBG_UART" />
+  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\DBG_UART_SPI_UART_PVT.h" value="HEADER;;;;;DBG_UART" />
+  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\DBG_UART_PVT.h" value="HEADER;;;;;DBG_UART" />
+  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\DBG_UART_BOOT.h" value="HEADER;;;;;DBG_UART" />
+  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\INA226_I2C_SCBCLK.c" value="SOURCE_C;CortexM0;;;;INA226_I2C_SCBCLK" />
+  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\INA226_I2C_SCBCLK.h" value="HEADER;;;;;INA226_I2C_SCBCLK" />
+  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\INA226_I2C_sda.c" value="SOURCE_C;CortexM0;;;;INA226_I2C_sda" />
+  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\INA226_I2C_sda.h" value="HEADER;;;;;INA226_I2C_sda" />
+  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\INA226_I2C_sda_aliases.h" value="HEADER;;;;;INA226_I2C_sda" />
+  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\INA226_I2C_sda_PM.c" value="SOURCE_C;CortexM0;;;;INA226_I2C_sda" />
+  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\INA226_I2C_scl.c" value="SOURCE_C;CortexM0;;;;INA226_I2C_scl" />
+  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\INA226_I2C_scl.h" value="HEADER;;;;;INA226_I2C_scl" />
+  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\INA226_I2C_scl_aliases.h" value="HEADER;;;;;INA226_I2C_scl" />
+  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\INA226_I2C_scl_PM.c" value="SOURCE_C;CortexM0;;;;INA226_I2C_scl" />
+  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\INA226_I2C_SCB_IRQ.c" value="SOURCE_C;CortexM0;;;;INA226_I2C_SCB_IRQ" />
+  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\INA226_I2C_SCB_IRQ.h" value="HEADER;;;;;INA226_I2C_SCB_IRQ" />
   <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\I2C_Brain_SCBCLK.c" value="SOURCE_C;CortexM0;;;;I2C_Brain_SCBCLK" />
   <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\I2C_Brain_SCBCLK.h" value="HEADER;;;;;I2C_Brain_SCBCLK" />
   <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\I2C_Brain_sda.c" value="SOURCE_C;CortexM0;;;;I2C_Brain_sda" />
@@ -88,6 +101,16 @@
   <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\Jetty_scl_PM.c" value="SOURCE_C;CortexM0;;;;Jetty_scl" />
   <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\Jetty_SCB_IRQ.c" value="SOURCE_C;CortexM0;;;;Jetty_SCB_IRQ" />
   <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\Jetty_SCB_IRQ.h" value="HEADER;;;;;Jetty_SCB_IRQ" />
+  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\DBG_UART_SCBCLK.c" value="SOURCE_C;CortexM0;;;;DBG_UART_SCBCLK" />
+  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\DBG_UART_SCBCLK.h" value="HEADER;;;;;DBG_UART_SCBCLK" />
+  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\DBG_UART_tx.c" value="SOURCE_C;CortexM0;;;;DBG_UART_tx" />
+  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\DBG_UART_tx.h" value="HEADER;;;;;DBG_UART_tx" />
+  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\DBG_UART_tx_aliases.h" value="HEADER;;;;;DBG_UART_tx" />
+  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\DBG_UART_tx_PM.c" value="SOURCE_C;CortexM0;;;;DBG_UART_tx" />
+  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\DBG_UART_rx.c" value="SOURCE_C;CortexM0;;;;DBG_UART_rx" />
+  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\DBG_UART_rx.h" value="HEADER;;;;;DBG_UART_rx" />
+  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\DBG_UART_rx_aliases.h" value="HEADER;;;;;DBG_UART_rx" />
+  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\DBG_UART_rx_PM.c" value="SOURCE_C;CortexM0;;;;DBG_UART_rx" />
   <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\cm0gcc.ld" value="LINKER_SCRIPT;;;b98f980c-3bd1-4fc7-a887-c56a20a46fdd;;cy_boot" />
   <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\Cm0RealView.scat" value="LINKER_SCRIPT;;;fdb8e1ae-f83a-46cf-9446-1d703716f38a;;cy_boot" />
   <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\Cm0Start.c" value="SOURCE_C;CortexM0;;;;cy_boot" />

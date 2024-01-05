@@ -6,7 +6,7 @@
 
 #Build Date:         Sep  9 2019 11:47:43
 
-#File Generated:     Nov 30 2023 18:26:15
+#File Generated:     Dec 5 2023 17:53:07
 
 #Purpose:            
 
@@ -14,7 +14,7 @@
 
 #***************************************************************************
 
-Executing : C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\bin/sjplacer.exe --proj-name BatteryBalance --netlist-vh2 BatteryBalance_p.vh2 --arch p4_udb2x4 --arch-file C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\dev\arch/udbdsi_2x4_08.cydata --ip-file C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\dev\psoc4/2/ip_blocks.cydata --rrg-file C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\dev\psoc4/2/route_arch-rrg.cydata --irq-file C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\dev\psoc4/2/irqconn.cydata --drq-file C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\dev\psoc4/2/triggerconn.cydata --dsi-conn-file C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\dev\psoc4/2/dsiconn.cydata --pins-file pins_124-VFBGA.xml --lib-file BatteryBalance_p.lib --sdc-file BatteryBalance.sdc --io-pcf BatteryBalance.pci --outdir .
+Executing : C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\bin/sjplacer.exe --proj-name BatteryBalance --netlist-vh2 BatteryBalance_p.vh2 --arch p4_udb2x4 --arch-file C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\dev\arch/udbdsi_2x4_08.cydata --ip-file C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\dev\psoc4/2/ip_blocks.cydata --rrg-file C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\dev\psoc4/2/route_arch-rrg.cydata --irq-file C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\dev\psoc4/2/irqconn.cydata --drq-file C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\dev\psoc4/2/triggerconn.cydata --dsi-conn-file C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\dev\psoc4/2/dsiconn.cydata --pins-file pins_64-TQFP.xml --lib-file BatteryBalance_p.lib --sdc-file BatteryBalance.sdc --io-pcf BatteryBalance.pci --outdir .
 
 		Softjin Techologies Placer, Version 1.1
 
@@ -56,7 +56,7 @@ Design Statistics after Packing
 Device Utilization Summary after Packing
     Macrocells                  :	0/64
     UDBS                        :	0/8
-    IOs                         :	6/99
+    IOs                         :	8/76
 
 
 D2088: Phase 3, elapsed time : 0.0 (sec)
@@ -75,11 +75,11 @@ Final Design Statistics
     Number of Status            	:	0
     Number of SyncCells         	:	0
     Number of count7cells       	:	0
-    Number of IOs       	:	6
+    Number of IOs       	:	8
 
 Device Utilization Summary
     Macrocells                  :	0/64
-    IOs                         :	6/99
+    IOs                         :	8/76
 
 
 Phase 8
@@ -87,5 +87,5 @@ D2088: Phase 8, elapsed time : 0.0 (sec)
 
 D2054: Placement of the design completed successfully
 
-I2076: Total run-time: 0.9 sec.
+I2076: Total run-time: 1.4 sec.
 

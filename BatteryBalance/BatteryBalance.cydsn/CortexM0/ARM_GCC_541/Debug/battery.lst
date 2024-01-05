@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cceqGWId.s 			page 1
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cctKGwxD.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cceqGWId.s 			page 1
   34              		.loc 1 21 0
   35 0000 0129     		cmp	r1, #1
   36 0002 02D8     		bhi	.L3
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cceqGWId.s 			page 2
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cctKGwxD.s 			page 2
 
 
   22:battery.c     ****         (baseAddress << 1 | read);
@@ -83,16 +83,16 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cceqGWId.s 			page 1
   52              		.cfi_endproc
   53              	.LFE34:
   54              		.size	I2C_RW_Address, .-I2C_RW_Address
-  55 000e C046     		.section	.text.DataPeriphRead,"ax",%progbits
+  55 000e C046     		.section	.text.INA226Read,"ax",%progbits
   56              		.align	2
-  57              		.global	DataPeriphRead
+  57              		.global	INA226Read
   58              		.code	16
   59              		.thumb_func
-  60              		.type	DataPeriphRead, %function
-  61              	DataPeriphRead:
+  60              		.type	INA226Read, %function
+  61              	INA226Read:
   62              	.LFB35:
   24:battery.c     **** 
-  25:battery.c     **** uint8 DataPeriphRead(uint32 address, uint8* store)
+  25:battery.c     **** uint8 INA226Read(uint32 address, uint8* store)
   26:battery.c     **** {
   63              		.loc 1 26 0
   64              		.cfi_startproc
@@ -118,16 +118,16 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cceqGWId.s 			page 1
   81              		.loc 1 27 0 discriminator 1
   82 000a 0428     		cmp	r0, #4
   83 000c FBD0     		beq	.L5
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cceqGWId.s 			page 3
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cctKGwxD.s 			page 3
 
 
-  29:battery.c     ****         I2C_DataPeriph_I2CSlaveStatus() == I2C_DataPeriph_I2C_SSTAT_RD_BUSY
+  29:battery.c     ****         INA226_I2C_I2CMasterStatus() == INA226_I2C_I2C_MSTAT_XFER_INP
   84              		.loc 1 29 0 discriminator 1
-  85 000e FFF7FEFF 		bl	I2C_DataPeriph_I2CSlaveStatus
+  85 000e FFF7FEFF 		bl	INA226_I2C_I2CMasterStatus
   86              	.LVL7:
-  28:battery.c     ****         I2C_DataPeriph_I2CSlaveStatus() == I2C_DataPeriph_I2C_SSTAT_RD_BUSY
+  28:battery.c     ****         INA226_I2C_I2CMasterStatus() == INA226_I2C_I2C_MSTAT_XFER_INP
   87              		.loc 1 28 0 discriminator 1
-  88 0012 0228     		cmp	r0, #2
+  88 0012 0428     		cmp	r0, #4
   89 0014 F7D0     		beq	.L5
   30:battery.c     ****     ) {}
   31:battery.c     ****     uint32 status = I2C_Brain_I2CMasterSendStart(address, I2C_Brain_I2C_READ_XFER_MODE,
@@ -174,17 +174,17 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cceqGWId.s 			page 1
  122              	.LVL12:
   39:battery.c     ****         return SUCCESS;
  123              		.loc 1 39 0
- 124 0044 0120     		movs	r0, #1
+ 124 0044 0020     		movs	r0, #0
  125 0046 00E0     		b	.L9
  126              	.LVL13:
  127              	.L10:
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cceqGWId.s 			page 4
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cctKGwxD.s 			page 4
 
 
   40:battery.c     ****     } else {
   41:battery.c     ****         return FAIL;
  128              		.loc 1 41 0
- 129 0048 0020     		movs	r0, #0
+ 129 0048 0120     		movs	r0, #1
  130              	.LVL14:
  131              	.L9:
   42:battery.c     ****     }
@@ -196,7 +196,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cceqGWId.s 			page 1
  136 004a 70BD     		pop	{r4, r5, r6, pc}
  137              		.cfi_endproc
  138              	.LFE35:
- 139              		.size	DataPeriphRead, .-DataPeriphRead
+ 139              		.size	INA226Read, .-INA226Read
  140              		.section	.text.JettySend,"ax",%progbits
  141              		.align	2
  142              		.global	JettySend
@@ -206,8 +206,8 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cceqGWId.s 			page 1
  146              	JettySend:
  147              	.LFB36:
   44:battery.c     **** 
-  45:battery.c     **** uint8 JettySend(uint32 address, uint32 data)
-  46:battery.c     **** {
+  45:battery.c     **** uint8_t JettySend(uint32 address, uint8* store)
+  46:battery.c     **** {   
  148              		.loc 1 46 0
  149              		.cfi_startproc
  150              		@ args = 0, pretend = 0, frame = 0
@@ -232,16 +232,16 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cceqGWId.s 			page 1
  166              		.loc 1 47 0 discriminator 1
  167 000a 0428     		cmp	r0, #4
  168 000c FBD0     		beq	.L12
-  49:battery.c     ****         Jetty_I2CSlaveStatus() == Jetty_I2C_SSTAT_WR_BUSY
+  49:battery.c     ****         Jetty_I2CMasterStatus() == INA226_I2C_I2C_MSTAT_XFER_INP
  169              		.loc 1 49 0 discriminator 1
- 170 000e FFF7FEFF 		bl	Jetty_I2CSlaveStatus
+ 170 000e FFF7FEFF 		bl	Jetty_I2CMasterStatus
  171              	.LVL20:
-  48:battery.c     ****         Jetty_I2CSlaveStatus() == Jetty_I2C_SSTAT_WR_BUSY
+  48:battery.c     ****         Jetty_I2CMasterStatus() == INA226_I2C_I2C_MSTAT_XFER_INP
  172              		.loc 1 48 0 discriminator 1
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cceqGWId.s 			page 5
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cctKGwxD.s 			page 5
 
 
- 173 0012 2028     		cmp	r0, #32
+ 173 0012 0428     		cmp	r0, #4
  174 0014 F7D0     		beq	.L12
   50:battery.c     ****     ) {}
   51:battery.c     ****     uint32 status = I2C_Brain_I2CMasterSendStart(address, I2C_Brain_I2C_WRITE_XFER_MODE,
@@ -257,17 +257,17 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cceqGWId.s 			page 1
  182              		.loc 1 53 0
  183 0022 05E0     		b	.L14
  184              	.L15:
-  54:battery.c     ****         status = I2C_Brain_I2CMasterSendStart(address, I2C_Brain_I2C_WRITE_XFER_MODE,
+  54:battery.c     ****         status = I2C_Brain_I2CMasterSendStart(address, I2C_Brain_I2C_READ_XFER_MODE,
  185              		.loc 1 54 0
  186 0024 FA22     		movs	r2, #250
  187 0026 5200     		lsls	r2, r2, #1
- 188 0028 0021     		movs	r1, #0
+ 188 0028 0121     		movs	r1, #1
  189 002a 2000     		movs	r0, r4
  190              	.LVL22:
  191 002c FFF7FEFF 		bl	I2C_Brain_I2CMasterSendStart
  192              	.LVL23:
  193              	.L14:
-  53:battery.c     ****         status = I2C_Brain_I2CMasterSendStart(address, I2C_Brain_I2C_WRITE_XFER_MODE,
+  53:battery.c     ****         status = I2C_Brain_I2CMasterSendStart(address, I2C_Brain_I2C_READ_XFER_MODE,
  194              		.loc 1 53 0
  195 0030 0428     		cmp	r0, #4
  196 0032 F7D1     		bne	.L15
@@ -276,1072 +276,1231 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cceqGWId.s 			page 1
   57:battery.c     ****     if (status == I2C_Brain_I2C_MSTR_NO_ERROR) {
  197              		.loc 1 57 0
  198 0034 0028     		cmp	r0, #0
- 199 0036 06D1     		bne	.L17
-  58:battery.c     ****         I2C_Brain_I2CMasterWriteByte(data, I2C_TIMEOUT);
+ 199 0036 07D1     		bne	.L17
+  58:battery.c     ****         I2C_Brain_I2CMasterReadByte(I2C_Brain_I2C_NAK_DATA, store, I2C_TIMEOUT);
  200              		.loc 1 58 0
- 201 0038 FA21     		movs	r1, #250
- 202 003a 4900     		lsls	r1, r1, #1
- 203 003c 2800     		movs	r0, r5
- 204              	.LVL24:
- 205 003e FFF7FEFF 		bl	I2C_Brain_I2CMasterWriteByte
- 206              	.LVL25:
+ 201 0038 FA22     		movs	r2, #250
+ 202 003a 5200     		lsls	r2, r2, #1
+ 203 003c 2900     		movs	r1, r5
+ 204 003e 0130     		adds	r0, r0, #1
+ 205              	.LVL24:
+ 206 0040 FFF7FEFF 		bl	I2C_Brain_I2CMasterReadByte
+ 207              	.LVL25:
   59:battery.c     ****         return SUCCESS;
- 207              		.loc 1 59 0
- 208 0042 0120     		movs	r0, #1
- 209 0044 00E0     		b	.L16
- 210              	.LVL26:
- 211              	.L17:
+ 208              		.loc 1 59 0
+ 209 0044 0020     		movs	r0, #0
+ 210 0046 00E0     		b	.L16
+ 211              	.LVL26:
+ 212              	.L17:
   60:battery.c     ****     } else {
   61:battery.c     ****         return FAIL;
- 212              		.loc 1 61 0
- 213 0046 0020     		movs	r0, #0
- 214              	.LVL27:
- 215              	.L16:
+ 213              		.loc 1 61 0
+ 214 0048 0120     		movs	r0, #1
+ 215              	.LVL27:
+ 216              	.L16:
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cctKGwxD.s 			page 6
+
+
   62:battery.c     ****     }
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cceqGWId.s 			page 6
-
-
   63:battery.c     **** }
- 216              		.loc 1 63 0
- 217              		@ sp needed
- 218              	.LVL28:
- 219              	.LVL29:
- 220 0048 70BD     		pop	{r4, r5, r6, pc}
- 221              		.cfi_endproc
- 222              	.LFE36:
- 223              		.size	JettySend, .-JettySend
- 224 004a C046     		.section	.text.convertValue,"ax",%progbits
- 225              		.align	2
- 226              		.global	convertValue
- 227              		.code	16
- 228              		.thumb_func
- 229              		.type	convertValue, %function
- 230              	convertValue:
- 231              	.LFB37:
+ 217              		.loc 1 63 0
+ 218              		@ sp needed
+ 219              	.LVL28:
+ 220              	.LVL29:
+ 221 004a 70BD     		pop	{r4, r5, r6, pc}
+ 222              		.cfi_endproc
+ 223              	.LFE36:
+ 224              		.size	JettySend, .-JettySend
+ 225              		.section	.text.convertValue,"ax",%progbits
+ 226              		.align	2
+ 227              		.global	convertValue
+ 228              		.code	16
+ 229              		.thumb_func
+ 230              		.type	convertValue, %function
+ 231              	convertValue:
+ 232              	.LFB37:
   64:battery.c     **** 
   65:battery.c     **** uint32 convertValue(uint8 adc_value) {
- 232              		.loc 1 65 0
- 233              		.cfi_startproc
- 234              		@ args = 0, pretend = 0, frame = 0
- 235              		@ frame_needed = 0, uses_anonymous_args = 0
- 236              		@ link register save eliminated.
- 237              	.LVL30:
+ 233              		.loc 1 65 0
+ 234              		.cfi_startproc
+ 235              		@ args = 0, pretend = 0, frame = 0
+ 236              		@ frame_needed = 0, uses_anonymous_args = 0
+ 237              		@ link register save eliminated.
+ 238              	.LVL30:
   66:battery.c     ****     return (uint32)adc_value;   
   67:battery.c     **** }
- 238              		.loc 1 67 0
- 239              		@ sp needed
- 240 0000 7047     		bx	lr
- 241              		.cfi_endproc
- 242              	.LFE37:
- 243              		.size	convertValue, .-convertValue
- 244              		.global	KEN_LOW
- 245              		.global	MICHAEL_LOW
- 246 0002 C046     		.bss
- 247              		.type	KEN_LOW, %object
- 248              		.size	KEN_LOW, 1
- 249              	KEN_LOW:
- 250 0000 00       		.space	1
- 251              		.type	MICHAEL_LOW, %object
- 252              		.size	MICHAEL_LOW, 1
- 253              	MICHAEL_LOW:
- 254 0001 00       		.space	1
- 255              		.text
- 256              	.Letext0:
- 257              		.file 2 "Generated_Source\\PSoC4/cytypes.h"
- 258              		.file 3 "Generated_Source\\PSoC4/I2C_Brain_I2C.h"
- 259              		.file 4 "Generated_Source\\PSoC4/I2C_DataPeriph_I2C.h"
- 260              		.file 5 "Generated_Source\\PSoC4/Jetty_I2C.h"
- 261              		.section	.debug_info,"",%progbits
- 262              	.Ldebug_info0:
- 263 0000 DC020000 		.4byte	0x2dc
- 264 0004 0400     		.2byte	0x4
- 265 0006 00000000 		.4byte	.Ldebug_abbrev0
- 266 000a 04       		.byte	0x4
- 267 000b 01       		.uleb128 0x1
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cceqGWId.s 			page 7
+ 239              		.loc 1 67 0
+ 240              		@ sp needed
+ 241 0000 7047     		bx	lr
+ 242              		.cfi_endproc
+ 243              	.LFE37:
+ 244              		.size	convertValue, .-convertValue
+ 245 0002 C046     		.section	.text.BatteryBalanceInit,"ax",%progbits
+ 246              		.align	2
+ 247              		.global	BatteryBalanceInit
+ 248              		.code	16
+ 249              		.thumb_func
+ 250              		.type	BatteryBalanceInit, %function
+ 251              	BatteryBalanceInit:
+ 252              	.LFB38:
+  68:battery.c     **** 
+  69:battery.c     **** 
+  70:battery.c     **** void BatteryBalanceInit(void)
+  71:battery.c     **** {
+ 253              		.loc 1 71 0
+ 254              		.cfi_startproc
+ 255              		@ args = 0, pretend = 0, frame = 0
+ 256              		@ frame_needed = 0, uses_anonymous_args = 0
+ 257 0000 10B5     		push	{r4, lr}
+ 258              		.cfi_def_cfa_offset 8
+ 259              		.cfi_offset 4, -8
+ 260              		.cfi_offset 14, -4
+  72:battery.c     ****     I2C_Brain_Start();
+ 261              		.loc 1 72 0
+ 262 0002 FFF7FEFF 		bl	I2C_Brain_Start
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cctKGwxD.s 			page 7
 
 
- 268 000c AC010000 		.4byte	.LASF36
- 269 0010 0C       		.byte	0xc
- 270 0011 00000000 		.4byte	.LASF37
- 271 0015 96000000 		.4byte	.LASF38
- 272 0019 00000000 		.4byte	.Ldebug_ranges0+0
- 273 001d 00000000 		.4byte	0
- 274 0021 00000000 		.4byte	.Ldebug_line0
- 275 0025 02       		.uleb128 0x2
- 276 0026 01       		.byte	0x1
- 277 0027 06       		.byte	0x6
- 278 0028 55000000 		.4byte	.LASF0
- 279 002c 02       		.uleb128 0x2
- 280 002d 01       		.byte	0x1
- 281 002e 08       		.byte	0x8
- 282 002f 61000000 		.4byte	.LASF1
- 283 0033 02       		.uleb128 0x2
- 284 0034 02       		.byte	0x2
- 285 0035 05       		.byte	0x5
- 286 0036 56020000 		.4byte	.LASF2
- 287 003a 02       		.uleb128 0x2
- 288 003b 02       		.byte	0x2
- 289 003c 07       		.byte	0x7
- 290 003d 26000000 		.4byte	.LASF3
- 291 0041 02       		.uleb128 0x2
- 292 0042 04       		.byte	0x4
- 293 0043 05       		.byte	0x5
- 294 0044 72020000 		.4byte	.LASF4
- 295 0048 02       		.uleb128 0x2
- 296 0049 04       		.byte	0x4
- 297 004a 07       		.byte	0x7
- 298 004b 7E000000 		.4byte	.LASF5
- 299 004f 02       		.uleb128 0x2
- 300 0050 08       		.byte	0x8
- 301 0051 05       		.byte	0x5
- 302 0052 43020000 		.4byte	.LASF6
- 303 0056 02       		.uleb128 0x2
- 304 0057 08       		.byte	0x8
- 305 0058 07       		.byte	0x7
- 306 0059 66010000 		.4byte	.LASF7
- 307 005d 03       		.uleb128 0x3
- 308 005e 04       		.byte	0x4
- 309 005f 05       		.byte	0x5
- 310 0060 696E7400 		.ascii	"int\000"
- 311 0064 02       		.uleb128 0x2
- 312 0065 04       		.byte	0x4
- 313 0066 07       		.byte	0x7
- 314 0067 36010000 		.4byte	.LASF8
- 315 006b 04       		.uleb128 0x4
- 316 006c 90000000 		.4byte	.LASF9
- 317 0070 02       		.byte	0x2
- 318 0071 FB01     		.2byte	0x1fb
- 319 0073 2C000000 		.4byte	0x2c
- 320 0077 04       		.uleb128 0x4
- 321 0078 28010000 		.4byte	.LASF10
- 322 007c 02       		.byte	0x2
- 323 007d FC01     		.2byte	0x1fc
- 324 007f 3A000000 		.4byte	0x3a
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cceqGWId.s 			page 8
+ 263              	.LVL31:
+  73:battery.c     ****     
+  74:battery.c     ****     Jetty_Start();
+ 264              		.loc 1 74 0
+ 265 0006 FFF7FEFF 		bl	Jetty_Start
+ 266              	.LVL32:
+  75:battery.c     ****     //Jetty_I2CSlaveSetAddress(JETTY);
+  76:battery.c     **** }
+ 267              		.loc 1 76 0
+ 268              		@ sp needed
+ 269 000a 10BD     		pop	{r4, pc}
+ 270              		.cfi_endproc
+ 271              	.LFE38:
+ 272              		.size	BatteryBalanceInit, .-BatteryBalanceInit
+ 273              		.global	KEN_LOW
+ 274              		.global	MICHAEL_LOW
+ 275              		.bss
+ 276              		.type	KEN_LOW, %object
+ 277              		.size	KEN_LOW, 1
+ 278              	KEN_LOW:
+ 279 0000 00       		.space	1
+ 280              		.type	MICHAEL_LOW, %object
+ 281              		.size	MICHAEL_LOW, 1
+ 282              	MICHAEL_LOW:
+ 283 0001 00       		.space	1
+ 284              		.text
+ 285              	.Letext0:
+ 286              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 287              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 288              		.file 4 "Generated_Source\\PSoC4/cytypes.h"
+ 289              		.file 5 "Generated_Source\\PSoC4/I2C_Brain_I2C.h"
+ 290              		.file 6 "Generated_Source\\PSoC4/INA226_I2C_I2C.h"
+ 291              		.file 7 "Generated_Source\\PSoC4/Jetty_I2C.h"
+ 292              		.file 8 "Generated_Source\\PSoC4/I2C_Brain.h"
+ 293              		.file 9 "Generated_Source\\PSoC4/Jetty.h"
+ 294              		.section	.debug_info,"",%progbits
+ 295              	.Ldebug_info0:
+ 296 0000 24030000 		.4byte	0x324
+ 297 0004 0400     		.2byte	0x4
+ 298 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 299 000a 04       		.byte	0x4
+ 300 000b 01       		.uleb128 0x1
+ 301 000c D6010000 		.4byte	.LASF38
+ 302 0010 0C       		.byte	0xc
+ 303 0011 18000000 		.4byte	.LASF39
+ 304 0015 C9000000 		.4byte	.LASF40
+ 305 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 306 001d 00000000 		.4byte	0
+ 307 0021 00000000 		.4byte	.Ldebug_line0
+ 308 0025 02       		.uleb128 0x2
+ 309 0026 01       		.byte	0x1
+ 310 0027 06       		.byte	0x6
+ 311 0028 73000000 		.4byte	.LASF0
+ 312 002c 03       		.uleb128 0x3
+ 313 002d 0E000000 		.4byte	.LASF9
+ 314 0031 02       		.byte	0x2
+ 315 0032 1D       		.byte	0x1d
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cctKGwxD.s 			page 8
 
 
- 325 0083 04       		.uleb128 0x4
- 326 0084 2F010000 		.4byte	.LASF11
- 327 0088 02       		.byte	0x2
- 328 0089 FD01     		.2byte	0x1fd
- 329 008b 48000000 		.4byte	0x48
- 330 008f 02       		.uleb128 0x2
- 331 0090 04       		.byte	0x4
- 332 0091 04       		.byte	0x4
- 333 0092 4A000000 		.4byte	.LASF12
- 334 0096 02       		.uleb128 0x2
- 335 0097 08       		.byte	0x8
- 336 0098 04       		.byte	0x4
- 337 0099 14010000 		.4byte	.LASF13
- 338 009d 02       		.uleb128 0x2
- 339 009e 01       		.byte	0x1
- 340 009f 08       		.byte	0x8
- 341 00a0 51020000 		.4byte	.LASF14
- 342 00a4 02       		.uleb128 0x2
- 343 00a5 08       		.byte	0x8
- 344 00a6 04       		.byte	0x4
- 345 00a7 90020000 		.4byte	.LASF15
- 346 00ab 02       		.uleb128 0x2
- 347 00ac 04       		.byte	0x4
- 348 00ad 07       		.byte	0x7
- 349 00ae 3A020000 		.4byte	.LASF16
- 350 00b2 05       		.uleb128 0x5
- 351 00b3 6F000000 		.4byte	.LASF19
- 352 00b7 01       		.byte	0x1
- 353 00b8 13       		.byte	0x13
- 354 00b9 83000000 		.4byte	0x83
- 355 00bd 00000000 		.4byte	.LFB34
- 356 00c1 0E000000 		.4byte	.LFE34-.LFB34
- 357 00c5 01       		.uleb128 0x1
- 358 00c6 9C       		.byte	0x9c
- 359 00c7 E8000000 		.4byte	0xe8
- 360 00cb 06       		.uleb128 0x6
- 361 00cc 52010000 		.4byte	.LASF17
- 362 00d0 01       		.byte	0x1
- 363 00d1 13       		.byte	0x13
- 364 00d2 83000000 		.4byte	0x83
- 365 00d6 00000000 		.4byte	.LLST0
- 366 00da 07       		.uleb128 0x7
- 367 00db D7020000 		.4byte	.LASF18
- 368 00df 01       		.byte	0x1
- 369 00e0 13       		.byte	0x13
- 370 00e1 9D000000 		.4byte	0x9d
- 371 00e5 01       		.uleb128 0x1
- 372 00e6 51       		.byte	0x51
- 373 00e7 00       		.byte	0
- 374 00e8 05       		.uleb128 0x5
- 375 00e9 43010000 		.4byte	.LASF20
- 376 00ed 01       		.byte	0x1
- 377 00ee 19       		.byte	0x19
- 378 00ef 6B000000 		.4byte	0x6b
- 379 00f3 00000000 		.4byte	.LFB35
- 380 00f7 4C000000 		.4byte	.LFE35-.LFB35
- 381 00fb 01       		.uleb128 0x1
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cceqGWId.s 			page 9
+ 316 0033 37000000 		.4byte	0x37
+ 317 0037 02       		.uleb128 0x2
+ 318 0038 01       		.byte	0x1
+ 319 0039 08       		.byte	0x8
+ 320 003a 7F000000 		.4byte	.LASF1
+ 321 003e 02       		.uleb128 0x2
+ 322 003f 02       		.byte	0x2
+ 323 0040 05       		.byte	0x5
+ 324 0041 84020000 		.4byte	.LASF2
+ 325 0045 02       		.uleb128 0x2
+ 326 0046 02       		.byte	0x2
+ 327 0047 07       		.byte	0x7
+ 328 0048 3E000000 		.4byte	.LASF3
+ 329 004c 02       		.uleb128 0x2
+ 330 004d 04       		.byte	0x4
+ 331 004e 05       		.byte	0x5
+ 332 004f BE020000 		.4byte	.LASF4
+ 333 0053 02       		.uleb128 0x2
+ 334 0054 04       		.byte	0x4
+ 335 0055 07       		.byte	0x7
+ 336 0056 9C000000 		.4byte	.LASF5
+ 337 005a 02       		.uleb128 0x2
+ 338 005b 08       		.byte	0x8
+ 339 005c 05       		.byte	0x5
+ 340 005d 00000000 		.4byte	.LASF6
+ 341 0061 02       		.uleb128 0x2
+ 342 0062 08       		.byte	0x8
+ 343 0063 07       		.byte	0x7
+ 344 0064 83010000 		.4byte	.LASF7
+ 345 0068 04       		.uleb128 0x4
+ 346 0069 04       		.byte	0x4
+ 347 006a 05       		.byte	0x5
+ 348 006b 696E7400 		.ascii	"int\000"
+ 349 006f 02       		.uleb128 0x2
+ 350 0070 04       		.byte	0x4
+ 351 0071 07       		.byte	0x7
+ 352 0072 62010000 		.4byte	.LASF8
+ 353 0076 03       		.uleb128 0x3
+ 354 0077 9A010000 		.4byte	.LASF10
+ 355 007b 03       		.byte	0x3
+ 356 007c 18       		.byte	0x18
+ 357 007d 2C000000 		.4byte	0x2c
+ 358 0081 05       		.uleb128 0x5
+ 359 0082 9E020000 		.4byte	.LASF11
+ 360 0086 04       		.byte	0x4
+ 361 0087 FB01     		.2byte	0x1fb
+ 362 0089 37000000 		.4byte	0x37
+ 363 008d 05       		.uleb128 0x5
+ 364 008e 54010000 		.4byte	.LASF12
+ 365 0092 04       		.byte	0x4
+ 366 0093 FC01     		.2byte	0x1fc
+ 367 0095 45000000 		.4byte	0x45
+ 368 0099 05       		.uleb128 0x5
+ 369 009a 5B010000 		.4byte	.LASF13
+ 370 009e 04       		.byte	0x4
+ 371 009f FD01     		.2byte	0x1fd
+ 372 00a1 53000000 		.4byte	0x53
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cctKGwxD.s 			page 9
 
 
- 382 00fc 9C       		.byte	0x9c
- 383 00fd 98010000 		.4byte	0x198
- 384 0101 06       		.uleb128 0x6
- 385 0102 5E010000 		.4byte	.LASF21
- 386 0106 01       		.byte	0x1
- 387 0107 19       		.byte	0x19
- 388 0108 83000000 		.4byte	0x83
- 389 010c 3A000000 		.4byte	.LLST1
- 390 0110 06       		.uleb128 0x6
- 391 0111 6C020000 		.4byte	.LASF22
- 392 0115 01       		.byte	0x1
- 393 0116 19       		.byte	0x19
- 394 0117 98010000 		.4byte	0x198
- 395 011b 66000000 		.4byte	.LLST2
- 396 011f 08       		.uleb128 0x8
- 397 0120 39000000 		.4byte	.LASF25
- 398 0124 01       		.byte	0x1
- 399 0125 1F       		.byte	0x1f
- 400 0126 83000000 		.4byte	0x83
- 401 012a 92000000 		.4byte	.LLST3
- 402 012e 09       		.uleb128 0x9
- 403 012f 0A000000 		.4byte	.LVL6
- 404 0133 97020000 		.4byte	0x297
- 405 0137 09       		.uleb128 0x9
- 406 0138 12000000 		.4byte	.LVL7
- 407 013c A3020000 		.4byte	0x2a3
- 408 0140 0A       		.uleb128 0xa
- 409 0141 22000000 		.4byte	.LVL8
- 410 0145 AF020000 		.4byte	0x2af
- 411 0149 60010000 		.4byte	0x160
- 412 014d 0B       		.uleb128 0xb
- 413 014e 01       		.uleb128 0x1
- 414 014f 50       		.byte	0x50
- 415 0150 02       		.uleb128 0x2
- 416 0151 74       		.byte	0x74
- 417 0152 00       		.sleb128 0
- 418 0153 0B       		.uleb128 0xb
- 419 0154 01       		.uleb128 0x1
- 420 0155 51       		.byte	0x51
- 421 0156 01       		.uleb128 0x1
- 422 0157 31       		.byte	0x31
- 423 0158 0B       		.uleb128 0xb
- 424 0159 01       		.uleb128 0x1
- 425 015a 52       		.byte	0x52
- 426 015b 03       		.uleb128 0x3
- 427 015c 0A       		.byte	0xa
- 428 015d F401     		.2byte	0x1f4
- 429 015f 00       		.byte	0
- 430 0160 0A       		.uleb128 0xa
- 431 0161 30000000 		.4byte	.LVL10
- 432 0165 AF020000 		.4byte	0x2af
- 433 0169 80010000 		.4byte	0x180
- 434 016d 0B       		.uleb128 0xb
- 435 016e 01       		.uleb128 0x1
- 436 016f 50       		.byte	0x50
- 437 0170 02       		.uleb128 0x2
- 438 0171 74       		.byte	0x74
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cceqGWId.s 			page 10
+ 373 00a5 02       		.uleb128 0x2
+ 374 00a6 04       		.byte	0x4
+ 375 00a7 04       		.byte	0x4
+ 376 00a8 6D000000 		.4byte	.LASF14
+ 377 00ac 02       		.uleb128 0x2
+ 378 00ad 08       		.byte	0x8
+ 379 00ae 04       		.byte	0x4
+ 380 00af 2D010000 		.4byte	.LASF15
+ 381 00b3 02       		.uleb128 0x2
+ 382 00b4 01       		.byte	0x1
+ 383 00b5 08       		.byte	0x8
+ 384 00b6 7F020000 		.4byte	.LASF16
+ 385 00ba 02       		.uleb128 0x2
+ 386 00bb 08       		.byte	0x8
+ 387 00bc 04       		.byte	0x4
+ 388 00bd C7020000 		.4byte	.LASF17
+ 389 00c1 02       		.uleb128 0x2
+ 390 00c2 04       		.byte	0x4
+ 391 00c3 07       		.byte	0x7
+ 392 00c4 64020000 		.4byte	.LASF18
+ 393 00c8 06       		.uleb128 0x6
+ 394 00c9 04       		.byte	0x4
+ 395 00ca 81000000 		.4byte	0x81
+ 396 00ce 07       		.uleb128 0x7
+ 397 00cf 8D000000 		.4byte	.LASF21
+ 398 00d3 01       		.byte	0x1
+ 399 00d4 13       		.byte	0x13
+ 400 00d5 99000000 		.4byte	0x99
+ 401 00d9 00000000 		.4byte	.LFB34
+ 402 00dd 0E000000 		.4byte	.LFE34-.LFB34
+ 403 00e1 01       		.uleb128 0x1
+ 404 00e2 9C       		.byte	0x9c
+ 405 00e3 04010000 		.4byte	0x104
+ 406 00e7 08       		.uleb128 0x8
+ 407 00e8 6F010000 		.4byte	.LASF19
+ 408 00ec 01       		.byte	0x1
+ 409 00ed 13       		.byte	0x13
+ 410 00ee 99000000 		.4byte	0x99
+ 411 00f2 00000000 		.4byte	.LLST0
+ 412 00f6 09       		.uleb128 0x9
+ 413 00f7 F0020000 		.4byte	.LASF20
+ 414 00fb 01       		.byte	0x1
+ 415 00fc 13       		.byte	0x13
+ 416 00fd B3000000 		.4byte	0xb3
+ 417 0101 01       		.uleb128 0x1
+ 418 0102 51       		.byte	0x51
+ 419 0103 00       		.byte	0
+ 420 0104 07       		.uleb128 0x7
+ 421 0105 58000000 		.4byte	.LASF22
+ 422 0109 01       		.byte	0x1
+ 423 010a 19       		.byte	0x19
+ 424 010b 81000000 		.4byte	0x81
+ 425 010f 00000000 		.4byte	.LFB35
+ 426 0113 4C000000 		.4byte	.LFE35-.LFB35
+ 427 0117 01       		.uleb128 0x1
+ 428 0118 9C       		.byte	0x9c
+ 429 0119 B4010000 		.4byte	0x1b4
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cctKGwxD.s 			page 10
 
 
- 439 0172 00       		.sleb128 0
- 440 0173 0B       		.uleb128 0xb
- 441 0174 01       		.uleb128 0x1
- 442 0175 51       		.byte	0x51
- 443 0176 01       		.uleb128 0x1
- 444 0177 31       		.byte	0x31
- 445 0178 0B       		.uleb128 0xb
- 446 0179 01       		.uleb128 0x1
- 447 017a 52       		.byte	0x52
- 448 017b 03       		.uleb128 0x3
- 449 017c 0A       		.byte	0xa
- 450 017d F401     		.2byte	0x1f4
- 451 017f 00       		.byte	0
- 452 0180 0C       		.uleb128 0xc
- 453 0181 44000000 		.4byte	.LVL12
- 454 0185 BB020000 		.4byte	0x2bb
- 455 0189 0B       		.uleb128 0xb
- 456 018a 01       		.uleb128 0x1
- 457 018b 51       		.byte	0x51
- 458 018c 02       		.uleb128 0x2
- 459 018d 75       		.byte	0x75
- 460 018e 00       		.sleb128 0
- 461 018f 0B       		.uleb128 0xb
- 462 0190 01       		.uleb128 0x1
- 463 0191 52       		.byte	0x52
- 464 0192 03       		.uleb128 0x3
- 465 0193 0A       		.byte	0xa
- 466 0194 F401     		.2byte	0x1f4
- 467 0196 00       		.byte	0
- 468 0197 00       		.byte	0
- 469 0198 0D       		.uleb128 0xd
- 470 0199 04       		.byte	0x4
- 471 019a 6B000000 		.4byte	0x6b
- 472 019e 05       		.uleb128 0x5
- 473 019f 40000000 		.4byte	.LASF23
- 474 01a3 01       		.byte	0x1
- 475 01a4 2D       		.byte	0x2d
- 476 01a5 6B000000 		.4byte	0x6b
- 477 01a9 00000000 		.4byte	.LFB36
- 478 01ad 4A000000 		.4byte	.LFE36-.LFB36
- 479 01b1 01       		.uleb128 0x1
- 480 01b2 9C       		.byte	0x9c
- 481 01b3 4E020000 		.4byte	0x24e
- 482 01b7 06       		.uleb128 0x6
- 483 01b8 5E010000 		.4byte	.LASF21
- 484 01bc 01       		.byte	0x1
- 485 01bd 2D       		.byte	0x2d
- 486 01be 83000000 		.4byte	0x83
- 487 01c2 C8000000 		.4byte	.LLST4
- 488 01c6 06       		.uleb128 0x6
- 489 01c7 50000000 		.4byte	.LASF24
- 490 01cb 01       		.byte	0x1
- 491 01cc 2D       		.byte	0x2d
- 492 01cd 83000000 		.4byte	0x83
- 493 01d1 F4000000 		.4byte	.LLST5
- 494 01d5 08       		.uleb128 0x8
- 495 01d6 39000000 		.4byte	.LASF25
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cceqGWId.s 			page 11
+ 430 011d 08       		.uleb128 0x8
+ 431 011e 7B010000 		.4byte	.LASF23
+ 432 0122 01       		.byte	0x1
+ 433 0123 19       		.byte	0x19
+ 434 0124 99000000 		.4byte	0x99
+ 435 0128 3A000000 		.4byte	.LLST1
+ 436 012c 08       		.uleb128 0x8
+ 437 012d 79020000 		.4byte	.LASF24
+ 438 0131 01       		.byte	0x1
+ 439 0132 19       		.byte	0x19
+ 440 0133 C8000000 		.4byte	0xc8
+ 441 0137 66000000 		.4byte	.LLST2
+ 442 013b 0A       		.uleb128 0xa
+ 443 013c 51000000 		.4byte	.LASF26
+ 444 0140 01       		.byte	0x1
+ 445 0141 1F       		.byte	0x1f
+ 446 0142 99000000 		.4byte	0x99
+ 447 0146 92000000 		.4byte	.LLST3
+ 448 014a 0B       		.uleb128 0xb
+ 449 014b 0A000000 		.4byte	.LVL6
+ 450 014f D5020000 		.4byte	0x2d5
+ 451 0153 0B       		.uleb128 0xb
+ 452 0154 12000000 		.4byte	.LVL7
+ 453 0158 E1020000 		.4byte	0x2e1
+ 454 015c 0C       		.uleb128 0xc
+ 455 015d 22000000 		.4byte	.LVL8
+ 456 0161 ED020000 		.4byte	0x2ed
+ 457 0165 7C010000 		.4byte	0x17c
+ 458 0169 0D       		.uleb128 0xd
+ 459 016a 01       		.uleb128 0x1
+ 460 016b 50       		.byte	0x50
+ 461 016c 02       		.uleb128 0x2
+ 462 016d 74       		.byte	0x74
+ 463 016e 00       		.sleb128 0
+ 464 016f 0D       		.uleb128 0xd
+ 465 0170 01       		.uleb128 0x1
+ 466 0171 51       		.byte	0x51
+ 467 0172 01       		.uleb128 0x1
+ 468 0173 31       		.byte	0x31
+ 469 0174 0D       		.uleb128 0xd
+ 470 0175 01       		.uleb128 0x1
+ 471 0176 52       		.byte	0x52
+ 472 0177 03       		.uleb128 0x3
+ 473 0178 0A       		.byte	0xa
+ 474 0179 F401     		.2byte	0x1f4
+ 475 017b 00       		.byte	0
+ 476 017c 0C       		.uleb128 0xc
+ 477 017d 30000000 		.4byte	.LVL10
+ 478 0181 ED020000 		.4byte	0x2ed
+ 479 0185 9C010000 		.4byte	0x19c
+ 480 0189 0D       		.uleb128 0xd
+ 481 018a 01       		.uleb128 0x1
+ 482 018b 50       		.byte	0x50
+ 483 018c 02       		.uleb128 0x2
+ 484 018d 74       		.byte	0x74
+ 485 018e 00       		.sleb128 0
+ 486 018f 0D       		.uleb128 0xd
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cctKGwxD.s 			page 11
 
 
- 496 01da 01       		.byte	0x1
- 497 01db 33       		.byte	0x33
- 498 01dc 83000000 		.4byte	0x83
- 499 01e0 20010000 		.4byte	.LLST6
- 500 01e4 09       		.uleb128 0x9
- 501 01e5 0A000000 		.4byte	.LVL19
- 502 01e9 97020000 		.4byte	0x297
- 503 01ed 09       		.uleb128 0x9
- 504 01ee 12000000 		.4byte	.LVL20
- 505 01f2 C7020000 		.4byte	0x2c7
- 506 01f6 0A       		.uleb128 0xa
- 507 01f7 22000000 		.4byte	.LVL21
- 508 01fb AF020000 		.4byte	0x2af
- 509 01ff 16020000 		.4byte	0x216
- 510 0203 0B       		.uleb128 0xb
- 511 0204 01       		.uleb128 0x1
- 512 0205 50       		.byte	0x50
- 513 0206 02       		.uleb128 0x2
- 514 0207 74       		.byte	0x74
- 515 0208 00       		.sleb128 0
- 516 0209 0B       		.uleb128 0xb
- 517 020a 01       		.uleb128 0x1
- 518 020b 51       		.byte	0x51
- 519 020c 01       		.uleb128 0x1
- 520 020d 30       		.byte	0x30
- 521 020e 0B       		.uleb128 0xb
- 522 020f 01       		.uleb128 0x1
- 523 0210 52       		.byte	0x52
- 524 0211 03       		.uleb128 0x3
- 525 0212 0A       		.byte	0xa
- 526 0213 F401     		.2byte	0x1f4
- 527 0215 00       		.byte	0
- 528 0216 0A       		.uleb128 0xa
- 529 0217 30000000 		.4byte	.LVL23
- 530 021b AF020000 		.4byte	0x2af
- 531 021f 36020000 		.4byte	0x236
- 532 0223 0B       		.uleb128 0xb
- 533 0224 01       		.uleb128 0x1
- 534 0225 50       		.byte	0x50
- 535 0226 02       		.uleb128 0x2
- 536 0227 74       		.byte	0x74
- 537 0228 00       		.sleb128 0
- 538 0229 0B       		.uleb128 0xb
- 539 022a 01       		.uleb128 0x1
- 540 022b 51       		.byte	0x51
- 541 022c 01       		.uleb128 0x1
- 542 022d 30       		.byte	0x30
- 543 022e 0B       		.uleb128 0xb
- 544 022f 01       		.uleb128 0x1
- 545 0230 52       		.byte	0x52
- 546 0231 03       		.uleb128 0x3
- 547 0232 0A       		.byte	0xa
- 548 0233 F401     		.2byte	0x1f4
- 549 0235 00       		.byte	0
- 550 0236 0C       		.uleb128 0xc
- 551 0237 42000000 		.4byte	.LVL25
- 552 023b D3020000 		.4byte	0x2d3
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cceqGWId.s 			page 12
+ 487 0190 01       		.uleb128 0x1
+ 488 0191 51       		.byte	0x51
+ 489 0192 01       		.uleb128 0x1
+ 490 0193 31       		.byte	0x31
+ 491 0194 0D       		.uleb128 0xd
+ 492 0195 01       		.uleb128 0x1
+ 493 0196 52       		.byte	0x52
+ 494 0197 03       		.uleb128 0x3
+ 495 0198 0A       		.byte	0xa
+ 496 0199 F401     		.2byte	0x1f4
+ 497 019b 00       		.byte	0
+ 498 019c 0E       		.uleb128 0xe
+ 499 019d 44000000 		.4byte	.LVL12
+ 500 01a1 F9020000 		.4byte	0x2f9
+ 501 01a5 0D       		.uleb128 0xd
+ 502 01a6 01       		.uleb128 0x1
+ 503 01a7 51       		.byte	0x51
+ 504 01a8 02       		.uleb128 0x2
+ 505 01a9 75       		.byte	0x75
+ 506 01aa 00       		.sleb128 0
+ 507 01ab 0D       		.uleb128 0xd
+ 508 01ac 01       		.uleb128 0x1
+ 509 01ad 52       		.byte	0x52
+ 510 01ae 03       		.uleb128 0x3
+ 511 01af 0A       		.byte	0xa
+ 512 01b0 F401     		.2byte	0x1f4
+ 513 01b2 00       		.byte	0
+ 514 01b3 00       		.byte	0
+ 515 01b4 07       		.uleb128 0x7
+ 516 01b5 63000000 		.4byte	.LASF25
+ 517 01b9 01       		.byte	0x1
+ 518 01ba 2D       		.byte	0x2d
+ 519 01bb 76000000 		.4byte	0x76
+ 520 01bf 00000000 		.4byte	.LFB36
+ 521 01c3 4C000000 		.4byte	.LFE36-.LFB36
+ 522 01c7 01       		.uleb128 0x1
+ 523 01c8 9C       		.byte	0x9c
+ 524 01c9 64020000 		.4byte	0x264
+ 525 01cd 08       		.uleb128 0x8
+ 526 01ce 7B010000 		.4byte	.LASF23
+ 527 01d2 01       		.byte	0x1
+ 528 01d3 2D       		.byte	0x2d
+ 529 01d4 99000000 		.4byte	0x99
+ 530 01d8 C8000000 		.4byte	.LLST4
+ 531 01dc 08       		.uleb128 0x8
+ 532 01dd 79020000 		.4byte	.LASF24
+ 533 01e1 01       		.byte	0x1
+ 534 01e2 2D       		.byte	0x2d
+ 535 01e3 C8000000 		.4byte	0xc8
+ 536 01e7 F4000000 		.4byte	.LLST5
+ 537 01eb 0A       		.uleb128 0xa
+ 538 01ec 51000000 		.4byte	.LASF26
+ 539 01f0 01       		.byte	0x1
+ 540 01f1 33       		.byte	0x33
+ 541 01f2 99000000 		.4byte	0x99
+ 542 01f6 20010000 		.4byte	.LLST6
+ 543 01fa 0B       		.uleb128 0xb
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cctKGwxD.s 			page 12
 
 
- 553 023f 0B       		.uleb128 0xb
- 554 0240 01       		.uleb128 0x1
- 555 0241 50       		.byte	0x50
- 556 0242 02       		.uleb128 0x2
- 557 0243 75       		.byte	0x75
- 558 0244 00       		.sleb128 0
- 559 0245 0B       		.uleb128 0xb
- 560 0246 01       		.uleb128 0x1
- 561 0247 51       		.byte	0x51
- 562 0248 03       		.uleb128 0x3
- 563 0249 0A       		.byte	0xa
- 564 024a F401     		.2byte	0x1f4
- 565 024c 00       		.byte	0
- 566 024d 00       		.byte	0
- 567 024e 05       		.uleb128 0x5
- 568 024f 1B010000 		.4byte	.LASF26
- 569 0253 01       		.byte	0x1
- 570 0254 41       		.byte	0x41
- 571 0255 83000000 		.4byte	0x83
- 572 0259 00000000 		.4byte	.LFB37
- 573 025d 02000000 		.4byte	.LFE37-.LFB37
- 574 0261 01       		.uleb128 0x1
- 575 0262 9C       		.byte	0x9c
- 576 0263 75020000 		.4byte	0x275
- 577 0267 07       		.uleb128 0x7
- 578 0268 7D010000 		.4byte	.LASF27
- 579 026c 01       		.byte	0x1
- 580 026d 41       		.byte	0x41
- 581 026e 6B000000 		.4byte	0x6b
- 582 0272 01       		.uleb128 0x1
- 583 0273 50       		.byte	0x50
- 584 0274 00       		.byte	0
- 585 0275 0E       		.uleb128 0xe
- 586 0276 60020000 		.4byte	.LASF28
- 587 027a 01       		.byte	0x1
- 588 027b 10       		.byte	0x10
- 589 027c 6B000000 		.4byte	0x6b
- 590 0280 05       		.uleb128 0x5
- 591 0281 03       		.byte	0x3
- 592 0282 00000000 		.4byte	MICHAEL_LOW
- 593 0286 0E       		.uleb128 0xe
- 594 0287 87010000 		.4byte	.LASF29
- 595 028b 01       		.byte	0x1
- 596 028c 11       		.byte	0x11
- 597 028d 6B000000 		.4byte	0x6b
- 598 0291 05       		.uleb128 0x5
- 599 0292 03       		.byte	0x3
- 600 0293 00000000 		.4byte	KEN_LOW
- 601 0297 0F       		.uleb128 0xf
- 602 0298 FA000000 		.4byte	.LASF30
- 603 029c FA000000 		.4byte	.LASF30
- 604 02a0 03       		.byte	0x3
- 605 02a1 0F01     		.2byte	0x10f
- 606 02a3 0F       		.uleb128 0xf
- 607 02a4 B9020000 		.4byte	.LASF31
- 608 02a8 B9020000 		.4byte	.LASF31
- 609 02ac 04       		.byte	0x4
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cceqGWId.s 			page 13
+ 544 01fb 0A000000 		.4byte	.LVL19
+ 545 01ff D5020000 		.4byte	0x2d5
+ 546 0203 0B       		.uleb128 0xb
+ 547 0204 12000000 		.4byte	.LVL20
+ 548 0208 05030000 		.4byte	0x305
+ 549 020c 0C       		.uleb128 0xc
+ 550 020d 22000000 		.4byte	.LVL21
+ 551 0211 ED020000 		.4byte	0x2ed
+ 552 0215 2C020000 		.4byte	0x22c
+ 553 0219 0D       		.uleb128 0xd
+ 554 021a 01       		.uleb128 0x1
+ 555 021b 50       		.byte	0x50
+ 556 021c 02       		.uleb128 0x2
+ 557 021d 74       		.byte	0x74
+ 558 021e 00       		.sleb128 0
+ 559 021f 0D       		.uleb128 0xd
+ 560 0220 01       		.uleb128 0x1
+ 561 0221 51       		.byte	0x51
+ 562 0222 01       		.uleb128 0x1
+ 563 0223 30       		.byte	0x30
+ 564 0224 0D       		.uleb128 0xd
+ 565 0225 01       		.uleb128 0x1
+ 566 0226 52       		.byte	0x52
+ 567 0227 03       		.uleb128 0x3
+ 568 0228 0A       		.byte	0xa
+ 569 0229 F401     		.2byte	0x1f4
+ 570 022b 00       		.byte	0
+ 571 022c 0C       		.uleb128 0xc
+ 572 022d 30000000 		.4byte	.LVL23
+ 573 0231 ED020000 		.4byte	0x2ed
+ 574 0235 4C020000 		.4byte	0x24c
+ 575 0239 0D       		.uleb128 0xd
+ 576 023a 01       		.uleb128 0x1
+ 577 023b 50       		.byte	0x50
+ 578 023c 02       		.uleb128 0x2
+ 579 023d 74       		.byte	0x74
+ 580 023e 00       		.sleb128 0
+ 581 023f 0D       		.uleb128 0xd
+ 582 0240 01       		.uleb128 0x1
+ 583 0241 51       		.byte	0x51
+ 584 0242 01       		.uleb128 0x1
+ 585 0243 31       		.byte	0x31
+ 586 0244 0D       		.uleb128 0xd
+ 587 0245 01       		.uleb128 0x1
+ 588 0246 52       		.byte	0x52
+ 589 0247 03       		.uleb128 0x3
+ 590 0248 0A       		.byte	0xa
+ 591 0249 F401     		.2byte	0x1f4
+ 592 024b 00       		.byte	0
+ 593 024c 0E       		.uleb128 0xe
+ 594 024d 44000000 		.4byte	.LVL25
+ 595 0251 F9020000 		.4byte	0x2f9
+ 596 0255 0D       		.uleb128 0xd
+ 597 0256 01       		.uleb128 0x1
+ 598 0257 51       		.byte	0x51
+ 599 0258 02       		.uleb128 0x2
+ 600 0259 75       		.byte	0x75
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cctKGwxD.s 			page 13
 
 
- 610 02ad 2501     		.2byte	0x125
- 611 02af 0F       		.uleb128 0xf
- 612 02b0 9C020000 		.4byte	.LASF32
- 613 02b4 9C020000 		.4byte	.LASF32
- 614 02b8 03       		.byte	0x3
- 615 02b9 1B01     		.2byte	0x11b
- 616 02bb 0F       		.uleb128 0xf
- 617 02bc 0A000000 		.4byte	.LASF33
- 618 02c0 0A000000 		.4byte	.LASF33
- 619 02c4 03       		.byte	0x3
- 620 02c5 1F01     		.2byte	0x11f
- 621 02c7 0F       		.uleb128 0xf
- 622 02c8 7B020000 		.4byte	.LASF34
- 623 02cc 7B020000 		.4byte	.LASF34
- 624 02d0 05       		.byte	0x5
- 625 02d1 2501     		.2byte	0x125
- 626 02d3 0F       		.uleb128 0xf
- 627 02d4 8F010000 		.4byte	.LASF35
- 628 02d8 8F010000 		.4byte	.LASF35
- 629 02dc 03       		.byte	0x3
- 630 02dd 1E01     		.2byte	0x11e
- 631 02df 00       		.byte	0
- 632              		.section	.debug_abbrev,"",%progbits
- 633              	.Ldebug_abbrev0:
- 634 0000 01       		.uleb128 0x1
- 635 0001 11       		.uleb128 0x11
- 636 0002 01       		.byte	0x1
- 637 0003 25       		.uleb128 0x25
- 638 0004 0E       		.uleb128 0xe
- 639 0005 13       		.uleb128 0x13
- 640 0006 0B       		.uleb128 0xb
- 641 0007 03       		.uleb128 0x3
- 642 0008 0E       		.uleb128 0xe
- 643 0009 1B       		.uleb128 0x1b
- 644 000a 0E       		.uleb128 0xe
- 645 000b 55       		.uleb128 0x55
- 646 000c 17       		.uleb128 0x17
- 647 000d 11       		.uleb128 0x11
- 648 000e 01       		.uleb128 0x1
- 649 000f 10       		.uleb128 0x10
- 650 0010 17       		.uleb128 0x17
- 651 0011 00       		.byte	0
- 652 0012 00       		.byte	0
- 653 0013 02       		.uleb128 0x2
- 654 0014 24       		.uleb128 0x24
- 655 0015 00       		.byte	0
- 656 0016 0B       		.uleb128 0xb
- 657 0017 0B       		.uleb128 0xb
- 658 0018 3E       		.uleb128 0x3e
- 659 0019 0B       		.uleb128 0xb
- 660 001a 03       		.uleb128 0x3
- 661 001b 0E       		.uleb128 0xe
- 662 001c 00       		.byte	0
- 663 001d 00       		.byte	0
- 664 001e 03       		.uleb128 0x3
- 665 001f 24       		.uleb128 0x24
- 666 0020 00       		.byte	0
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cceqGWId.s 			page 14
+ 601 025a 00       		.sleb128 0
+ 602 025b 0D       		.uleb128 0xd
+ 603 025c 01       		.uleb128 0x1
+ 604 025d 52       		.byte	0x52
+ 605 025e 03       		.uleb128 0x3
+ 606 025f 0A       		.byte	0xa
+ 607 0260 F401     		.2byte	0x1f4
+ 608 0262 00       		.byte	0
+ 609 0263 00       		.byte	0
+ 610 0264 07       		.uleb128 0x7
+ 611 0265 47010000 		.4byte	.LASF27
+ 612 0269 01       		.byte	0x1
+ 613 026a 41       		.byte	0x41
+ 614 026b 99000000 		.4byte	0x99
+ 615 026f 00000000 		.4byte	.LFB37
+ 616 0273 02000000 		.4byte	.LFE37-.LFB37
+ 617 0277 01       		.uleb128 0x1
+ 618 0278 9C       		.byte	0x9c
+ 619 0279 8B020000 		.4byte	0x28b
+ 620 027d 09       		.uleb128 0x9
+ 621 027e A2010000 		.4byte	.LASF28
+ 622 0282 01       		.byte	0x1
+ 623 0283 41       		.byte	0x41
+ 624 0284 81000000 		.4byte	0x81
+ 625 0288 01       		.uleb128 0x1
+ 626 0289 50       		.byte	0x50
+ 627 028a 00       		.byte	0
+ 628 028b 0F       		.uleb128 0xf
+ 629 028c 34010000 		.4byte	.LASF41
+ 630 0290 01       		.byte	0x1
+ 631 0291 46       		.byte	0x46
+ 632 0292 00000000 		.4byte	.LFB38
+ 633 0296 0C000000 		.4byte	.LFE38-.LFB38
+ 634 029a 01       		.uleb128 0x1
+ 635 029b 9C       		.byte	0x9c
+ 636 029c B3020000 		.4byte	0x2b3
+ 637 02a0 0B       		.uleb128 0xb
+ 638 02a1 06000000 		.4byte	.LVL31
+ 639 02a5 11030000 		.4byte	0x311
+ 640 02a9 0B       		.uleb128 0xb
+ 641 02aa 0A000000 		.4byte	.LVL32
+ 642 02ae 1C030000 		.4byte	0x31c
+ 643 02b2 00       		.byte	0
+ 644 02b3 10       		.uleb128 0x10
+ 645 02b4 CA010000 		.4byte	.LASF29
+ 646 02b8 01       		.byte	0x1
+ 647 02b9 10       		.byte	0x10
+ 648 02ba 81000000 		.4byte	0x81
+ 649 02be 05       		.uleb128 0x5
+ 650 02bf 03       		.byte	0x3
+ 651 02c0 00000000 		.4byte	MICHAEL_LOW
+ 652 02c4 10       		.uleb128 0x10
+ 653 02c5 C2010000 		.4byte	.LASF30
+ 654 02c9 01       		.byte	0x1
+ 655 02ca 11       		.byte	0x11
+ 656 02cb 81000000 		.4byte	0x81
+ 657 02cf 05       		.uleb128 0x5
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cctKGwxD.s 			page 14
 
 
- 667 0021 0B       		.uleb128 0xb
- 668 0022 0B       		.uleb128 0xb
- 669 0023 3E       		.uleb128 0x3e
- 670 0024 0B       		.uleb128 0xb
- 671 0025 03       		.uleb128 0x3
- 672 0026 08       		.uleb128 0x8
- 673 0027 00       		.byte	0
- 674 0028 00       		.byte	0
- 675 0029 04       		.uleb128 0x4
- 676 002a 16       		.uleb128 0x16
- 677 002b 00       		.byte	0
- 678 002c 03       		.uleb128 0x3
- 679 002d 0E       		.uleb128 0xe
- 680 002e 3A       		.uleb128 0x3a
- 681 002f 0B       		.uleb128 0xb
- 682 0030 3B       		.uleb128 0x3b
- 683 0031 05       		.uleb128 0x5
- 684 0032 49       		.uleb128 0x49
- 685 0033 13       		.uleb128 0x13
- 686 0034 00       		.byte	0
- 687 0035 00       		.byte	0
- 688 0036 05       		.uleb128 0x5
- 689 0037 2E       		.uleb128 0x2e
- 690 0038 01       		.byte	0x1
- 691 0039 3F       		.uleb128 0x3f
- 692 003a 19       		.uleb128 0x19
- 693 003b 03       		.uleb128 0x3
- 694 003c 0E       		.uleb128 0xe
- 695 003d 3A       		.uleb128 0x3a
- 696 003e 0B       		.uleb128 0xb
- 697 003f 3B       		.uleb128 0x3b
- 698 0040 0B       		.uleb128 0xb
- 699 0041 27       		.uleb128 0x27
- 700 0042 19       		.uleb128 0x19
- 701 0043 49       		.uleb128 0x49
- 702 0044 13       		.uleb128 0x13
- 703 0045 11       		.uleb128 0x11
- 704 0046 01       		.uleb128 0x1
- 705 0047 12       		.uleb128 0x12
- 706 0048 06       		.uleb128 0x6
- 707 0049 40       		.uleb128 0x40
- 708 004a 18       		.uleb128 0x18
- 709 004b 9742     		.uleb128 0x2117
- 710 004d 19       		.uleb128 0x19
- 711 004e 01       		.uleb128 0x1
- 712 004f 13       		.uleb128 0x13
- 713 0050 00       		.byte	0
- 714 0051 00       		.byte	0
- 715 0052 06       		.uleb128 0x6
- 716 0053 05       		.uleb128 0x5
- 717 0054 00       		.byte	0
- 718 0055 03       		.uleb128 0x3
- 719 0056 0E       		.uleb128 0xe
- 720 0057 3A       		.uleb128 0x3a
- 721 0058 0B       		.uleb128 0xb
- 722 0059 3B       		.uleb128 0x3b
- 723 005a 0B       		.uleb128 0xb
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cceqGWId.s 			page 15
+ 658 02d0 03       		.byte	0x3
+ 659 02d1 00000000 		.4byte	KEN_LOW
+ 660 02d5 11       		.uleb128 0x11
+ 661 02d6 A4020000 		.4byte	.LASF31
+ 662 02da A4020000 		.4byte	.LASF31
+ 663 02de 05       		.byte	0x5
+ 664 02df 0F01     		.2byte	0x10f
+ 665 02e1 11       		.uleb128 0x11
+ 666 02e2 AE000000 		.4byte	.LASF32
+ 667 02e6 AE000000 		.4byte	.LASF32
+ 668 02ea 06       		.byte	0x6
+ 669 02eb 0F01     		.2byte	0x10f
+ 670 02ed 11       		.uleb128 0x11
+ 671 02ee D3020000 		.4byte	.LASF33
+ 672 02f2 D3020000 		.4byte	.LASF33
+ 673 02f6 05       		.byte	0x5
+ 674 02f7 1B01     		.2byte	0x11b
+ 675 02f9 11       		.uleb128 0x11
+ 676 02fa 22000000 		.4byte	.LASF34
+ 677 02fe 22000000 		.4byte	.LASF34
+ 678 0302 05       		.byte	0x5
+ 679 0303 1F01     		.2byte	0x11f
+ 680 0305 11       		.uleb128 0x11
+ 681 0306 AC010000 		.4byte	.LASF35
+ 682 030a AC010000 		.4byte	.LASF35
+ 683 030e 07       		.byte	0x7
+ 684 030f 0F01     		.2byte	0x10f
+ 685 0311 12       		.uleb128 0x12
+ 686 0312 8E020000 		.4byte	.LASF36
+ 687 0316 8E020000 		.4byte	.LASF36
+ 688 031a 08       		.byte	0x8
+ 689 031b 72       		.byte	0x72
+ 690 031c 12       		.uleb128 0x12
+ 691 031d 6D020000 		.4byte	.LASF37
+ 692 0321 6D020000 		.4byte	.LASF37
+ 693 0325 09       		.byte	0x9
+ 694 0326 72       		.byte	0x72
+ 695 0327 00       		.byte	0
+ 696              		.section	.debug_abbrev,"",%progbits
+ 697              	.Ldebug_abbrev0:
+ 698 0000 01       		.uleb128 0x1
+ 699 0001 11       		.uleb128 0x11
+ 700 0002 01       		.byte	0x1
+ 701 0003 25       		.uleb128 0x25
+ 702 0004 0E       		.uleb128 0xe
+ 703 0005 13       		.uleb128 0x13
+ 704 0006 0B       		.uleb128 0xb
+ 705 0007 03       		.uleb128 0x3
+ 706 0008 0E       		.uleb128 0xe
+ 707 0009 1B       		.uleb128 0x1b
+ 708 000a 0E       		.uleb128 0xe
+ 709 000b 55       		.uleb128 0x55
+ 710 000c 17       		.uleb128 0x17
+ 711 000d 11       		.uleb128 0x11
+ 712 000e 01       		.uleb128 0x1
+ 713 000f 10       		.uleb128 0x10
+ 714 0010 17       		.uleb128 0x17
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cctKGwxD.s 			page 15
 
 
- 724 005b 49       		.uleb128 0x49
- 725 005c 13       		.uleb128 0x13
- 726 005d 02       		.uleb128 0x2
- 727 005e 17       		.uleb128 0x17
- 728 005f 00       		.byte	0
- 729 0060 00       		.byte	0
- 730 0061 07       		.uleb128 0x7
- 731 0062 05       		.uleb128 0x5
- 732 0063 00       		.byte	0
- 733 0064 03       		.uleb128 0x3
- 734 0065 0E       		.uleb128 0xe
- 735 0066 3A       		.uleb128 0x3a
- 736 0067 0B       		.uleb128 0xb
- 737 0068 3B       		.uleb128 0x3b
- 738 0069 0B       		.uleb128 0xb
- 739 006a 49       		.uleb128 0x49
- 740 006b 13       		.uleb128 0x13
- 741 006c 02       		.uleb128 0x2
- 742 006d 18       		.uleb128 0x18
- 743 006e 00       		.byte	0
- 744 006f 00       		.byte	0
- 745 0070 08       		.uleb128 0x8
- 746 0071 34       		.uleb128 0x34
- 747 0072 00       		.byte	0
- 748 0073 03       		.uleb128 0x3
- 749 0074 0E       		.uleb128 0xe
- 750 0075 3A       		.uleb128 0x3a
- 751 0076 0B       		.uleb128 0xb
- 752 0077 3B       		.uleb128 0x3b
- 753 0078 0B       		.uleb128 0xb
- 754 0079 49       		.uleb128 0x49
- 755 007a 13       		.uleb128 0x13
- 756 007b 02       		.uleb128 0x2
- 757 007c 17       		.uleb128 0x17
- 758 007d 00       		.byte	0
- 759 007e 00       		.byte	0
- 760 007f 09       		.uleb128 0x9
- 761 0080 898201   		.uleb128 0x4109
- 762 0083 00       		.byte	0
- 763 0084 11       		.uleb128 0x11
- 764 0085 01       		.uleb128 0x1
- 765 0086 31       		.uleb128 0x31
- 766 0087 13       		.uleb128 0x13
- 767 0088 00       		.byte	0
- 768 0089 00       		.byte	0
- 769 008a 0A       		.uleb128 0xa
- 770 008b 898201   		.uleb128 0x4109
- 771 008e 01       		.byte	0x1
- 772 008f 11       		.uleb128 0x11
- 773 0090 01       		.uleb128 0x1
- 774 0091 31       		.uleb128 0x31
- 775 0092 13       		.uleb128 0x13
- 776 0093 01       		.uleb128 0x1
- 777 0094 13       		.uleb128 0x13
- 778 0095 00       		.byte	0
- 779 0096 00       		.byte	0
- 780 0097 0B       		.uleb128 0xb
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cceqGWId.s 			page 16
+ 715 0011 00       		.byte	0
+ 716 0012 00       		.byte	0
+ 717 0013 02       		.uleb128 0x2
+ 718 0014 24       		.uleb128 0x24
+ 719 0015 00       		.byte	0
+ 720 0016 0B       		.uleb128 0xb
+ 721 0017 0B       		.uleb128 0xb
+ 722 0018 3E       		.uleb128 0x3e
+ 723 0019 0B       		.uleb128 0xb
+ 724 001a 03       		.uleb128 0x3
+ 725 001b 0E       		.uleb128 0xe
+ 726 001c 00       		.byte	0
+ 727 001d 00       		.byte	0
+ 728 001e 03       		.uleb128 0x3
+ 729 001f 16       		.uleb128 0x16
+ 730 0020 00       		.byte	0
+ 731 0021 03       		.uleb128 0x3
+ 732 0022 0E       		.uleb128 0xe
+ 733 0023 3A       		.uleb128 0x3a
+ 734 0024 0B       		.uleb128 0xb
+ 735 0025 3B       		.uleb128 0x3b
+ 736 0026 0B       		.uleb128 0xb
+ 737 0027 49       		.uleb128 0x49
+ 738 0028 13       		.uleb128 0x13
+ 739 0029 00       		.byte	0
+ 740 002a 00       		.byte	0
+ 741 002b 04       		.uleb128 0x4
+ 742 002c 24       		.uleb128 0x24
+ 743 002d 00       		.byte	0
+ 744 002e 0B       		.uleb128 0xb
+ 745 002f 0B       		.uleb128 0xb
+ 746 0030 3E       		.uleb128 0x3e
+ 747 0031 0B       		.uleb128 0xb
+ 748 0032 03       		.uleb128 0x3
+ 749 0033 08       		.uleb128 0x8
+ 750 0034 00       		.byte	0
+ 751 0035 00       		.byte	0
+ 752 0036 05       		.uleb128 0x5
+ 753 0037 16       		.uleb128 0x16
+ 754 0038 00       		.byte	0
+ 755 0039 03       		.uleb128 0x3
+ 756 003a 0E       		.uleb128 0xe
+ 757 003b 3A       		.uleb128 0x3a
+ 758 003c 0B       		.uleb128 0xb
+ 759 003d 3B       		.uleb128 0x3b
+ 760 003e 05       		.uleb128 0x5
+ 761 003f 49       		.uleb128 0x49
+ 762 0040 13       		.uleb128 0x13
+ 763 0041 00       		.byte	0
+ 764 0042 00       		.byte	0
+ 765 0043 06       		.uleb128 0x6
+ 766 0044 0F       		.uleb128 0xf
+ 767 0045 00       		.byte	0
+ 768 0046 0B       		.uleb128 0xb
+ 769 0047 0B       		.uleb128 0xb
+ 770 0048 49       		.uleb128 0x49
+ 771 0049 13       		.uleb128 0x13
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cctKGwxD.s 			page 16
 
 
- 781 0098 8A8201   		.uleb128 0x410a
- 782 009b 00       		.byte	0
- 783 009c 02       		.uleb128 0x2
- 784 009d 18       		.uleb128 0x18
- 785 009e 9142     		.uleb128 0x2111
- 786 00a0 18       		.uleb128 0x18
- 787 00a1 00       		.byte	0
- 788 00a2 00       		.byte	0
- 789 00a3 0C       		.uleb128 0xc
- 790 00a4 898201   		.uleb128 0x4109
- 791 00a7 01       		.byte	0x1
- 792 00a8 11       		.uleb128 0x11
- 793 00a9 01       		.uleb128 0x1
- 794 00aa 31       		.uleb128 0x31
- 795 00ab 13       		.uleb128 0x13
- 796 00ac 00       		.byte	0
- 797 00ad 00       		.byte	0
- 798 00ae 0D       		.uleb128 0xd
- 799 00af 0F       		.uleb128 0xf
- 800 00b0 00       		.byte	0
- 801 00b1 0B       		.uleb128 0xb
- 802 00b2 0B       		.uleb128 0xb
- 803 00b3 49       		.uleb128 0x49
- 804 00b4 13       		.uleb128 0x13
- 805 00b5 00       		.byte	0
- 806 00b6 00       		.byte	0
- 807 00b7 0E       		.uleb128 0xe
- 808 00b8 34       		.uleb128 0x34
- 809 00b9 00       		.byte	0
- 810 00ba 03       		.uleb128 0x3
- 811 00bb 0E       		.uleb128 0xe
- 812 00bc 3A       		.uleb128 0x3a
- 813 00bd 0B       		.uleb128 0xb
- 814 00be 3B       		.uleb128 0x3b
- 815 00bf 0B       		.uleb128 0xb
- 816 00c0 49       		.uleb128 0x49
- 817 00c1 13       		.uleb128 0x13
- 818 00c2 3F       		.uleb128 0x3f
- 819 00c3 19       		.uleb128 0x19
- 820 00c4 02       		.uleb128 0x2
- 821 00c5 18       		.uleb128 0x18
- 822 00c6 00       		.byte	0
- 823 00c7 00       		.byte	0
- 824 00c8 0F       		.uleb128 0xf
- 825 00c9 2E       		.uleb128 0x2e
- 826 00ca 00       		.byte	0
- 827 00cb 3F       		.uleb128 0x3f
- 828 00cc 19       		.uleb128 0x19
- 829 00cd 3C       		.uleb128 0x3c
- 830 00ce 19       		.uleb128 0x19
- 831 00cf 6E       		.uleb128 0x6e
- 832 00d0 0E       		.uleb128 0xe
- 833 00d1 03       		.uleb128 0x3
- 834 00d2 0E       		.uleb128 0xe
- 835 00d3 3A       		.uleb128 0x3a
- 836 00d4 0B       		.uleb128 0xb
- 837 00d5 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cceqGWId.s 			page 17
+ 772 004a 00       		.byte	0
+ 773 004b 00       		.byte	0
+ 774 004c 07       		.uleb128 0x7
+ 775 004d 2E       		.uleb128 0x2e
+ 776 004e 01       		.byte	0x1
+ 777 004f 3F       		.uleb128 0x3f
+ 778 0050 19       		.uleb128 0x19
+ 779 0051 03       		.uleb128 0x3
+ 780 0052 0E       		.uleb128 0xe
+ 781 0053 3A       		.uleb128 0x3a
+ 782 0054 0B       		.uleb128 0xb
+ 783 0055 3B       		.uleb128 0x3b
+ 784 0056 0B       		.uleb128 0xb
+ 785 0057 27       		.uleb128 0x27
+ 786 0058 19       		.uleb128 0x19
+ 787 0059 49       		.uleb128 0x49
+ 788 005a 13       		.uleb128 0x13
+ 789 005b 11       		.uleb128 0x11
+ 790 005c 01       		.uleb128 0x1
+ 791 005d 12       		.uleb128 0x12
+ 792 005e 06       		.uleb128 0x6
+ 793 005f 40       		.uleb128 0x40
+ 794 0060 18       		.uleb128 0x18
+ 795 0061 9742     		.uleb128 0x2117
+ 796 0063 19       		.uleb128 0x19
+ 797 0064 01       		.uleb128 0x1
+ 798 0065 13       		.uleb128 0x13
+ 799 0066 00       		.byte	0
+ 800 0067 00       		.byte	0
+ 801 0068 08       		.uleb128 0x8
+ 802 0069 05       		.uleb128 0x5
+ 803 006a 00       		.byte	0
+ 804 006b 03       		.uleb128 0x3
+ 805 006c 0E       		.uleb128 0xe
+ 806 006d 3A       		.uleb128 0x3a
+ 807 006e 0B       		.uleb128 0xb
+ 808 006f 3B       		.uleb128 0x3b
+ 809 0070 0B       		.uleb128 0xb
+ 810 0071 49       		.uleb128 0x49
+ 811 0072 13       		.uleb128 0x13
+ 812 0073 02       		.uleb128 0x2
+ 813 0074 17       		.uleb128 0x17
+ 814 0075 00       		.byte	0
+ 815 0076 00       		.byte	0
+ 816 0077 09       		.uleb128 0x9
+ 817 0078 05       		.uleb128 0x5
+ 818 0079 00       		.byte	0
+ 819 007a 03       		.uleb128 0x3
+ 820 007b 0E       		.uleb128 0xe
+ 821 007c 3A       		.uleb128 0x3a
+ 822 007d 0B       		.uleb128 0xb
+ 823 007e 3B       		.uleb128 0x3b
+ 824 007f 0B       		.uleb128 0xb
+ 825 0080 49       		.uleb128 0x49
+ 826 0081 13       		.uleb128 0x13
+ 827 0082 02       		.uleb128 0x2
+ 828 0083 18       		.uleb128 0x18
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cctKGwxD.s 			page 17
 
 
- 838 00d6 05       		.uleb128 0x5
- 839 00d7 00       		.byte	0
- 840 00d8 00       		.byte	0
- 841 00d9 00       		.byte	0
- 842              		.section	.debug_loc,"",%progbits
- 843              	.Ldebug_loc0:
- 844              	.LLST0:
- 845 0000 00000000 		.4byte	.LVL0
- 846 0004 06000000 		.4byte	.LVL1
- 847 0008 0100     		.2byte	0x1
- 848 000a 50       		.byte	0x50
- 849 000b 06000000 		.4byte	.LVL1
- 850 000f 0A000000 		.4byte	.LVL2
- 851 0013 0400     		.2byte	0x4
- 852 0015 F3       		.byte	0xf3
- 853 0016 01       		.uleb128 0x1
- 854 0017 50       		.byte	0x50
- 855 0018 9F       		.byte	0x9f
- 856 0019 0A000000 		.4byte	.LVL2
- 857 001d 0C000000 		.4byte	.LVL3
- 858 0021 0100     		.2byte	0x1
- 859 0023 50       		.byte	0x50
- 860 0024 0C000000 		.4byte	.LVL3
- 861 0028 0E000000 		.4byte	.LFE34
- 862 002c 0400     		.2byte	0x4
- 863 002e F3       		.byte	0xf3
- 864 002f 01       		.uleb128 0x1
- 865 0030 50       		.byte	0x50
- 866 0031 9F       		.byte	0x9f
- 867 0032 00000000 		.4byte	0
- 868 0036 00000000 		.4byte	0
- 869              	.LLST1:
- 870 003a 00000000 		.4byte	.LVL4
- 871 003e 06000000 		.4byte	.LVL5
- 872 0042 0100     		.2byte	0x1
- 873 0044 50       		.byte	0x50
- 874 0045 06000000 		.4byte	.LVL5
- 875 0049 4A000000 		.4byte	.LVL15
- 876 004d 0100     		.2byte	0x1
- 877 004f 54       		.byte	0x54
- 878 0050 4A000000 		.4byte	.LVL15
- 879 0054 4C000000 		.4byte	.LFE35
- 880 0058 0400     		.2byte	0x4
- 881 005a F3       		.byte	0xf3
- 882 005b 01       		.uleb128 0x1
- 883 005c 50       		.byte	0x50
- 884 005d 9F       		.byte	0x9f
- 885 005e 00000000 		.4byte	0
- 886 0062 00000000 		.4byte	0
- 887              	.LLST2:
- 888 0066 00000000 		.4byte	.LVL4
- 889 006a 06000000 		.4byte	.LVL5
- 890 006e 0100     		.2byte	0x1
- 891 0070 51       		.byte	0x51
- 892 0071 06000000 		.4byte	.LVL5
- 893 0075 4A000000 		.4byte	.LVL16
- 894 0079 0100     		.2byte	0x1
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cceqGWId.s 			page 18
+ 829 0084 00       		.byte	0
+ 830 0085 00       		.byte	0
+ 831 0086 0A       		.uleb128 0xa
+ 832 0087 34       		.uleb128 0x34
+ 833 0088 00       		.byte	0
+ 834 0089 03       		.uleb128 0x3
+ 835 008a 0E       		.uleb128 0xe
+ 836 008b 3A       		.uleb128 0x3a
+ 837 008c 0B       		.uleb128 0xb
+ 838 008d 3B       		.uleb128 0x3b
+ 839 008e 0B       		.uleb128 0xb
+ 840 008f 49       		.uleb128 0x49
+ 841 0090 13       		.uleb128 0x13
+ 842 0091 02       		.uleb128 0x2
+ 843 0092 17       		.uleb128 0x17
+ 844 0093 00       		.byte	0
+ 845 0094 00       		.byte	0
+ 846 0095 0B       		.uleb128 0xb
+ 847 0096 898201   		.uleb128 0x4109
+ 848 0099 00       		.byte	0
+ 849 009a 11       		.uleb128 0x11
+ 850 009b 01       		.uleb128 0x1
+ 851 009c 31       		.uleb128 0x31
+ 852 009d 13       		.uleb128 0x13
+ 853 009e 00       		.byte	0
+ 854 009f 00       		.byte	0
+ 855 00a0 0C       		.uleb128 0xc
+ 856 00a1 898201   		.uleb128 0x4109
+ 857 00a4 01       		.byte	0x1
+ 858 00a5 11       		.uleb128 0x11
+ 859 00a6 01       		.uleb128 0x1
+ 860 00a7 31       		.uleb128 0x31
+ 861 00a8 13       		.uleb128 0x13
+ 862 00a9 01       		.uleb128 0x1
+ 863 00aa 13       		.uleb128 0x13
+ 864 00ab 00       		.byte	0
+ 865 00ac 00       		.byte	0
+ 866 00ad 0D       		.uleb128 0xd
+ 867 00ae 8A8201   		.uleb128 0x410a
+ 868 00b1 00       		.byte	0
+ 869 00b2 02       		.uleb128 0x2
+ 870 00b3 18       		.uleb128 0x18
+ 871 00b4 9142     		.uleb128 0x2111
+ 872 00b6 18       		.uleb128 0x18
+ 873 00b7 00       		.byte	0
+ 874 00b8 00       		.byte	0
+ 875 00b9 0E       		.uleb128 0xe
+ 876 00ba 898201   		.uleb128 0x4109
+ 877 00bd 01       		.byte	0x1
+ 878 00be 11       		.uleb128 0x11
+ 879 00bf 01       		.uleb128 0x1
+ 880 00c0 31       		.uleb128 0x31
+ 881 00c1 13       		.uleb128 0x13
+ 882 00c2 00       		.byte	0
+ 883 00c3 00       		.byte	0
+ 884 00c4 0F       		.uleb128 0xf
+ 885 00c5 2E       		.uleb128 0x2e
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cctKGwxD.s 			page 18
 
 
- 895 007b 55       		.byte	0x55
- 896 007c 4A000000 		.4byte	.LVL16
- 897 0080 4C000000 		.4byte	.LFE35
- 898 0084 0400     		.2byte	0x4
- 899 0086 F3       		.byte	0xf3
- 900 0087 01       		.uleb128 0x1
- 901 0088 51       		.byte	0x51
- 902 0089 9F       		.byte	0x9f
- 903 008a 00000000 		.4byte	0
- 904 008e 00000000 		.4byte	0
- 905              	.LLST3:
- 906 0092 22000000 		.4byte	.LVL8
- 907 0096 2C000000 		.4byte	.LVL9
- 908 009a 0100     		.2byte	0x1
- 909 009c 50       		.byte	0x50
- 910 009d 30000000 		.4byte	.LVL10
- 911 00a1 40000000 		.4byte	.LVL11
- 912 00a5 0100     		.2byte	0x1
- 913 00a7 50       		.byte	0x50
- 914 00a8 40000000 		.4byte	.LVL11
- 915 00ac 43000000 		.4byte	.LVL12-1
- 916 00b0 0300     		.2byte	0x3
- 917 00b2 70       		.byte	0x70
- 918 00b3 7F       		.sleb128 -1
- 919 00b4 9F       		.byte	0x9f
- 920 00b5 48000000 		.4byte	.LVL13
- 921 00b9 4A000000 		.4byte	.LVL14
- 922 00bd 0100     		.2byte	0x1
- 923 00bf 50       		.byte	0x50
- 924 00c0 00000000 		.4byte	0
- 925 00c4 00000000 		.4byte	0
- 926              	.LLST4:
- 927 00c8 00000000 		.4byte	.LVL17
- 928 00cc 06000000 		.4byte	.LVL18
- 929 00d0 0100     		.2byte	0x1
- 930 00d2 50       		.byte	0x50
- 931 00d3 06000000 		.4byte	.LVL18
- 932 00d7 48000000 		.4byte	.LVL28
- 933 00db 0100     		.2byte	0x1
- 934 00dd 54       		.byte	0x54
- 935 00de 48000000 		.4byte	.LVL28
- 936 00e2 4A000000 		.4byte	.LFE36
- 937 00e6 0400     		.2byte	0x4
- 938 00e8 F3       		.byte	0xf3
- 939 00e9 01       		.uleb128 0x1
- 940 00ea 50       		.byte	0x50
- 941 00eb 9F       		.byte	0x9f
- 942 00ec 00000000 		.4byte	0
- 943 00f0 00000000 		.4byte	0
- 944              	.LLST5:
- 945 00f4 00000000 		.4byte	.LVL17
- 946 00f8 06000000 		.4byte	.LVL18
- 947 00fc 0100     		.2byte	0x1
- 948 00fe 51       		.byte	0x51
- 949 00ff 06000000 		.4byte	.LVL18
- 950 0103 48000000 		.4byte	.LVL29
- 951 0107 0100     		.2byte	0x1
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cceqGWId.s 			page 19
+ 886 00c6 01       		.byte	0x1
+ 887 00c7 3F       		.uleb128 0x3f
+ 888 00c8 19       		.uleb128 0x19
+ 889 00c9 03       		.uleb128 0x3
+ 890 00ca 0E       		.uleb128 0xe
+ 891 00cb 3A       		.uleb128 0x3a
+ 892 00cc 0B       		.uleb128 0xb
+ 893 00cd 3B       		.uleb128 0x3b
+ 894 00ce 0B       		.uleb128 0xb
+ 895 00cf 27       		.uleb128 0x27
+ 896 00d0 19       		.uleb128 0x19
+ 897 00d1 11       		.uleb128 0x11
+ 898 00d2 01       		.uleb128 0x1
+ 899 00d3 12       		.uleb128 0x12
+ 900 00d4 06       		.uleb128 0x6
+ 901 00d5 40       		.uleb128 0x40
+ 902 00d6 18       		.uleb128 0x18
+ 903 00d7 9742     		.uleb128 0x2117
+ 904 00d9 19       		.uleb128 0x19
+ 905 00da 01       		.uleb128 0x1
+ 906 00db 13       		.uleb128 0x13
+ 907 00dc 00       		.byte	0
+ 908 00dd 00       		.byte	0
+ 909 00de 10       		.uleb128 0x10
+ 910 00df 34       		.uleb128 0x34
+ 911 00e0 00       		.byte	0
+ 912 00e1 03       		.uleb128 0x3
+ 913 00e2 0E       		.uleb128 0xe
+ 914 00e3 3A       		.uleb128 0x3a
+ 915 00e4 0B       		.uleb128 0xb
+ 916 00e5 3B       		.uleb128 0x3b
+ 917 00e6 0B       		.uleb128 0xb
+ 918 00e7 49       		.uleb128 0x49
+ 919 00e8 13       		.uleb128 0x13
+ 920 00e9 3F       		.uleb128 0x3f
+ 921 00ea 19       		.uleb128 0x19
+ 922 00eb 02       		.uleb128 0x2
+ 923 00ec 18       		.uleb128 0x18
+ 924 00ed 00       		.byte	0
+ 925 00ee 00       		.byte	0
+ 926 00ef 11       		.uleb128 0x11
+ 927 00f0 2E       		.uleb128 0x2e
+ 928 00f1 00       		.byte	0
+ 929 00f2 3F       		.uleb128 0x3f
+ 930 00f3 19       		.uleb128 0x19
+ 931 00f4 3C       		.uleb128 0x3c
+ 932 00f5 19       		.uleb128 0x19
+ 933 00f6 6E       		.uleb128 0x6e
+ 934 00f7 0E       		.uleb128 0xe
+ 935 00f8 03       		.uleb128 0x3
+ 936 00f9 0E       		.uleb128 0xe
+ 937 00fa 3A       		.uleb128 0x3a
+ 938 00fb 0B       		.uleb128 0xb
+ 939 00fc 3B       		.uleb128 0x3b
+ 940 00fd 05       		.uleb128 0x5
+ 941 00fe 00       		.byte	0
+ 942 00ff 00       		.byte	0
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cctKGwxD.s 			page 19
 
 
- 952 0109 55       		.byte	0x55
- 953 010a 48000000 		.4byte	.LVL29
- 954 010e 4A000000 		.4byte	.LFE36
- 955 0112 0400     		.2byte	0x4
- 956 0114 F3       		.byte	0xf3
- 957 0115 01       		.uleb128 0x1
- 958 0116 51       		.byte	0x51
- 959 0117 9F       		.byte	0x9f
- 960 0118 00000000 		.4byte	0
- 961 011c 00000000 		.4byte	0
- 962              	.LLST6:
- 963 0120 22000000 		.4byte	.LVL21
- 964 0124 2C000000 		.4byte	.LVL22
- 965 0128 0100     		.2byte	0x1
- 966 012a 50       		.byte	0x50
- 967 012b 30000000 		.4byte	.LVL23
- 968 012f 3E000000 		.4byte	.LVL24
- 969 0133 0100     		.2byte	0x1
- 970 0135 50       		.byte	0x50
- 971 0136 46000000 		.4byte	.LVL26
- 972 013a 48000000 		.4byte	.LVL27
- 973 013e 0100     		.2byte	0x1
- 974 0140 50       		.byte	0x50
- 975 0141 00000000 		.4byte	0
- 976 0145 00000000 		.4byte	0
- 977              		.section	.debug_aranges,"",%progbits
- 978 0000 34000000 		.4byte	0x34
- 979 0004 0200     		.2byte	0x2
- 980 0006 00000000 		.4byte	.Ldebug_info0
- 981 000a 04       		.byte	0x4
- 982 000b 00       		.byte	0
- 983 000c 0000     		.2byte	0
- 984 000e 0000     		.2byte	0
- 985 0010 00000000 		.4byte	.LFB34
- 986 0014 0E000000 		.4byte	.LFE34-.LFB34
- 987 0018 00000000 		.4byte	.LFB35
- 988 001c 4C000000 		.4byte	.LFE35-.LFB35
- 989 0020 00000000 		.4byte	.LFB36
- 990 0024 4A000000 		.4byte	.LFE36-.LFB36
- 991 0028 00000000 		.4byte	.LFB37
- 992 002c 02000000 		.4byte	.LFE37-.LFB37
- 993 0030 00000000 		.4byte	0
- 994 0034 00000000 		.4byte	0
- 995              		.section	.debug_ranges,"",%progbits
- 996              	.Ldebug_ranges0:
- 997 0000 00000000 		.4byte	.LFB34
- 998 0004 0E000000 		.4byte	.LFE34
- 999 0008 00000000 		.4byte	.LFB35
- 1000 000c 4C000000 		.4byte	.LFE35
- 1001 0010 00000000 		.4byte	.LFB36
- 1002 0014 4A000000 		.4byte	.LFE36
- 1003 0018 00000000 		.4byte	.LFB37
- 1004 001c 02000000 		.4byte	.LFE37
- 1005 0020 00000000 		.4byte	0
- 1006 0024 00000000 		.4byte	0
- 1007              		.section	.debug_line,"",%progbits
- 1008              	.Ldebug_line0:
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cceqGWId.s 			page 20
+ 943 0100 12       		.uleb128 0x12
+ 944 0101 2E       		.uleb128 0x2e
+ 945 0102 00       		.byte	0
+ 946 0103 3F       		.uleb128 0x3f
+ 947 0104 19       		.uleb128 0x19
+ 948 0105 3C       		.uleb128 0x3c
+ 949 0106 19       		.uleb128 0x19
+ 950 0107 6E       		.uleb128 0x6e
+ 951 0108 0E       		.uleb128 0xe
+ 952 0109 03       		.uleb128 0x3
+ 953 010a 0E       		.uleb128 0xe
+ 954 010b 3A       		.uleb128 0x3a
+ 955 010c 0B       		.uleb128 0xb
+ 956 010d 3B       		.uleb128 0x3b
+ 957 010e 0B       		.uleb128 0xb
+ 958 010f 00       		.byte	0
+ 959 0110 00       		.byte	0
+ 960 0111 00       		.byte	0
+ 961              		.section	.debug_loc,"",%progbits
+ 962              	.Ldebug_loc0:
+ 963              	.LLST0:
+ 964 0000 00000000 		.4byte	.LVL0
+ 965 0004 06000000 		.4byte	.LVL1
+ 966 0008 0100     		.2byte	0x1
+ 967 000a 50       		.byte	0x50
+ 968 000b 06000000 		.4byte	.LVL1
+ 969 000f 0A000000 		.4byte	.LVL2
+ 970 0013 0400     		.2byte	0x4
+ 971 0015 F3       		.byte	0xf3
+ 972 0016 01       		.uleb128 0x1
+ 973 0017 50       		.byte	0x50
+ 974 0018 9F       		.byte	0x9f
+ 975 0019 0A000000 		.4byte	.LVL2
+ 976 001d 0C000000 		.4byte	.LVL3
+ 977 0021 0100     		.2byte	0x1
+ 978 0023 50       		.byte	0x50
+ 979 0024 0C000000 		.4byte	.LVL3
+ 980 0028 0E000000 		.4byte	.LFE34
+ 981 002c 0400     		.2byte	0x4
+ 982 002e F3       		.byte	0xf3
+ 983 002f 01       		.uleb128 0x1
+ 984 0030 50       		.byte	0x50
+ 985 0031 9F       		.byte	0x9f
+ 986 0032 00000000 		.4byte	0
+ 987 0036 00000000 		.4byte	0
+ 988              	.LLST1:
+ 989 003a 00000000 		.4byte	.LVL4
+ 990 003e 06000000 		.4byte	.LVL5
+ 991 0042 0100     		.2byte	0x1
+ 992 0044 50       		.byte	0x50
+ 993 0045 06000000 		.4byte	.LVL5
+ 994 0049 4A000000 		.4byte	.LVL15
+ 995 004d 0100     		.2byte	0x1
+ 996 004f 54       		.byte	0x54
+ 997 0050 4A000000 		.4byte	.LVL15
+ 998 0054 4C000000 		.4byte	.LFE35
+ 999 0058 0400     		.2byte	0x4
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cctKGwxD.s 			page 20
 
 
- 1009 0000 0F010000 		.section	.debug_str,"MS",%progbits,1
- 1009      02007E00 
- 1009      00000201 
- 1009      FB0E0D00 
- 1009      01010101 
- 1010              	.LASF37:
- 1011 0000 62617474 		.ascii	"battery.c\000"
- 1011      6572792E 
- 1011      6300
- 1012              	.LASF33:
- 1013 000a 4932435F 		.ascii	"I2C_Brain_I2CMasterReadByte\000"
- 1013      42726169 
- 1013      6E5F4932 
- 1013      434D6173 
- 1013      74657252 
- 1014              	.LASF3:
- 1015 0026 73686F72 		.ascii	"short unsigned int\000"
- 1015      7420756E 
- 1015      7369676E 
- 1015      65642069 
- 1015      6E7400
- 1016              	.LASF25:
- 1017 0039 73746174 		.ascii	"status\000"
- 1017      757300
- 1018              	.LASF23:
- 1019 0040 4A657474 		.ascii	"JettySend\000"
- 1019      7953656E 
- 1019      6400
- 1020              	.LASF12:
- 1021 004a 666C6F61 		.ascii	"float\000"
- 1021      7400
- 1022              	.LASF24:
- 1023 0050 64617461 		.ascii	"data\000"
- 1023      00
- 1024              	.LASF0:
- 1025 0055 7369676E 		.ascii	"signed char\000"
- 1025      65642063 
- 1025      68617200 
- 1026              	.LASF1:
- 1027 0061 756E7369 		.ascii	"unsigned char\000"
- 1027      676E6564 
- 1027      20636861 
- 1027      7200
- 1028              	.LASF19:
- 1029 006f 4932435F 		.ascii	"I2C_RW_Address\000"
- 1029      52575F41 
- 1029      64647265 
- 1029      737300
- 1030              	.LASF5:
- 1031 007e 6C6F6E67 		.ascii	"long unsigned int\000"
- 1031      20756E73 
- 1031      69676E65 
- 1031      6420696E 
- 1031      7400
- 1032              	.LASF9:
- 1033 0090 75696E74 		.ascii	"uint8\000"
- 1033      3800
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cceqGWId.s 			page 21
+ 1000 005a F3       		.byte	0xf3
+ 1001 005b 01       		.uleb128 0x1
+ 1002 005c 50       		.byte	0x50
+ 1003 005d 9F       		.byte	0x9f
+ 1004 005e 00000000 		.4byte	0
+ 1005 0062 00000000 		.4byte	0
+ 1006              	.LLST2:
+ 1007 0066 00000000 		.4byte	.LVL4
+ 1008 006a 06000000 		.4byte	.LVL5
+ 1009 006e 0100     		.2byte	0x1
+ 1010 0070 51       		.byte	0x51
+ 1011 0071 06000000 		.4byte	.LVL5
+ 1012 0075 4A000000 		.4byte	.LVL16
+ 1013 0079 0100     		.2byte	0x1
+ 1014 007b 55       		.byte	0x55
+ 1015 007c 4A000000 		.4byte	.LVL16
+ 1016 0080 4C000000 		.4byte	.LFE35
+ 1017 0084 0400     		.2byte	0x4
+ 1018 0086 F3       		.byte	0xf3
+ 1019 0087 01       		.uleb128 0x1
+ 1020 0088 51       		.byte	0x51
+ 1021 0089 9F       		.byte	0x9f
+ 1022 008a 00000000 		.4byte	0
+ 1023 008e 00000000 		.4byte	0
+ 1024              	.LLST3:
+ 1025 0092 22000000 		.4byte	.LVL8
+ 1026 0096 2C000000 		.4byte	.LVL9
+ 1027 009a 0100     		.2byte	0x1
+ 1028 009c 50       		.byte	0x50
+ 1029 009d 30000000 		.4byte	.LVL10
+ 1030 00a1 40000000 		.4byte	.LVL11
+ 1031 00a5 0100     		.2byte	0x1
+ 1032 00a7 50       		.byte	0x50
+ 1033 00a8 40000000 		.4byte	.LVL11
+ 1034 00ac 43000000 		.4byte	.LVL12-1
+ 1035 00b0 0300     		.2byte	0x3
+ 1036 00b2 70       		.byte	0x70
+ 1037 00b3 7F       		.sleb128 -1
+ 1038 00b4 9F       		.byte	0x9f
+ 1039 00b5 48000000 		.4byte	.LVL13
+ 1040 00b9 4A000000 		.4byte	.LVL14
+ 1041 00bd 0100     		.2byte	0x1
+ 1042 00bf 50       		.byte	0x50
+ 1043 00c0 00000000 		.4byte	0
+ 1044 00c4 00000000 		.4byte	0
+ 1045              	.LLST4:
+ 1046 00c8 00000000 		.4byte	.LVL17
+ 1047 00cc 06000000 		.4byte	.LVL18
+ 1048 00d0 0100     		.2byte	0x1
+ 1049 00d2 50       		.byte	0x50
+ 1050 00d3 06000000 		.4byte	.LVL18
+ 1051 00d7 4A000000 		.4byte	.LVL28
+ 1052 00db 0100     		.2byte	0x1
+ 1053 00dd 54       		.byte	0x54
+ 1054 00de 4A000000 		.4byte	.LVL28
+ 1055 00e2 4C000000 		.4byte	.LFE36
+ 1056 00e6 0400     		.2byte	0x4
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cctKGwxD.s 			page 21
 
 
- 1034              	.LASF38:
- 1035 0096 433A5C55 		.ascii	"C:\\Users\\tsien\\Documents\\GitHub\\Battery_Manage"
- 1035      73657273 
- 1035      5C747369 
- 1035      656E5C44 
- 1035      6F63756D 
- 1036 00c4 6D656E74 		.ascii	"ment_Board_PY2023\\BatteryBalance\\BatteryBalance.c"
- 1036      5F426F61 
- 1036      72645F50 
- 1036      59323032 
- 1036      335C4261 
- 1037 00f5 7964736E 		.ascii	"ydsn\000"
- 1037      00
- 1038              	.LASF30:
- 1039 00fa 4932435F 		.ascii	"I2C_Brain_I2CMasterStatus\000"
- 1039      42726169 
- 1039      6E5F4932 
- 1039      434D6173 
- 1039      74657253 
- 1040              	.LASF13:
- 1041 0114 646F7562 		.ascii	"double\000"
- 1041      6C6500
- 1042              	.LASF26:
- 1043 011b 636F6E76 		.ascii	"convertValue\000"
- 1043      65727456 
- 1043      616C7565 
- 1043      00
- 1044              	.LASF10:
- 1045 0128 75696E74 		.ascii	"uint16\000"
- 1045      313600
- 1046              	.LASF11:
- 1047 012f 75696E74 		.ascii	"uint32\000"
- 1047      333200
- 1048              	.LASF8:
- 1049 0136 756E7369 		.ascii	"unsigned int\000"
- 1049      676E6564 
- 1049      20696E74 
- 1049      00
- 1050              	.LASF20:
- 1051 0143 44617461 		.ascii	"DataPeriphRead\000"
- 1051      50657269 
- 1051      70685265 
- 1051      616400
- 1052              	.LASF17:
- 1053 0152 62617365 		.ascii	"baseAddress\000"
- 1053      41646472 
- 1053      65737300 
- 1054              	.LASF21:
- 1055 015e 61646472 		.ascii	"address\000"
- 1055      65737300 
- 1056              	.LASF7:
- 1057 0166 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1057      206C6F6E 
- 1057      6720756E 
- 1057      7369676E 
- 1057      65642069 
- 1058              	.LASF27:
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cceqGWId.s 			page 22
+ 1057 00e8 F3       		.byte	0xf3
+ 1058 00e9 01       		.uleb128 0x1
+ 1059 00ea 50       		.byte	0x50
+ 1060 00eb 9F       		.byte	0x9f
+ 1061 00ec 00000000 		.4byte	0
+ 1062 00f0 00000000 		.4byte	0
+ 1063              	.LLST5:
+ 1064 00f4 00000000 		.4byte	.LVL17
+ 1065 00f8 06000000 		.4byte	.LVL18
+ 1066 00fc 0100     		.2byte	0x1
+ 1067 00fe 51       		.byte	0x51
+ 1068 00ff 06000000 		.4byte	.LVL18
+ 1069 0103 4A000000 		.4byte	.LVL29
+ 1070 0107 0100     		.2byte	0x1
+ 1071 0109 55       		.byte	0x55
+ 1072 010a 4A000000 		.4byte	.LVL29
+ 1073 010e 4C000000 		.4byte	.LFE36
+ 1074 0112 0400     		.2byte	0x4
+ 1075 0114 F3       		.byte	0xf3
+ 1076 0115 01       		.uleb128 0x1
+ 1077 0116 51       		.byte	0x51
+ 1078 0117 9F       		.byte	0x9f
+ 1079 0118 00000000 		.4byte	0
+ 1080 011c 00000000 		.4byte	0
+ 1081              	.LLST6:
+ 1082 0120 22000000 		.4byte	.LVL21
+ 1083 0124 2C000000 		.4byte	.LVL22
+ 1084 0128 0100     		.2byte	0x1
+ 1085 012a 50       		.byte	0x50
+ 1086 012b 30000000 		.4byte	.LVL23
+ 1087 012f 40000000 		.4byte	.LVL24
+ 1088 0133 0100     		.2byte	0x1
+ 1089 0135 50       		.byte	0x50
+ 1090 0136 40000000 		.4byte	.LVL24
+ 1091 013a 43000000 		.4byte	.LVL25-1
+ 1092 013e 0300     		.2byte	0x3
+ 1093 0140 70       		.byte	0x70
+ 1094 0141 7F       		.sleb128 -1
+ 1095 0142 9F       		.byte	0x9f
+ 1096 0143 48000000 		.4byte	.LVL26
+ 1097 0147 4A000000 		.4byte	.LVL27
+ 1098 014b 0100     		.2byte	0x1
+ 1099 014d 50       		.byte	0x50
+ 1100 014e 00000000 		.4byte	0
+ 1101 0152 00000000 		.4byte	0
+ 1102              		.section	.debug_aranges,"",%progbits
+ 1103 0000 3C000000 		.4byte	0x3c
+ 1104 0004 0200     		.2byte	0x2
+ 1105 0006 00000000 		.4byte	.Ldebug_info0
+ 1106 000a 04       		.byte	0x4
+ 1107 000b 00       		.byte	0
+ 1108 000c 0000     		.2byte	0
+ 1109 000e 0000     		.2byte	0
+ 1110 0010 00000000 		.4byte	.LFB34
+ 1111 0014 0E000000 		.4byte	.LFE34-.LFB34
+ 1112 0018 00000000 		.4byte	.LFB35
+ 1113 001c 4C000000 		.4byte	.LFE35-.LFB35
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cctKGwxD.s 			page 22
 
 
- 1059 017d 6164635F 		.ascii	"adc_value\000"
- 1059      76616C75 
- 1059      6500
- 1060              	.LASF29:
- 1061 0187 4B454E5F 		.ascii	"KEN_LOW\000"
- 1061      4C4F5700 
- 1062              	.LASF35:
- 1063 018f 4932435F 		.ascii	"I2C_Brain_I2CMasterWriteByte\000"
- 1063      42726169 
- 1063      6E5F4932 
- 1063      434D6173 
- 1063      74657257 
- 1064              	.LASF36:
- 1065 01ac 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 1065      43313120 
- 1065      352E342E 
- 1065      31203230 
- 1065      31363036 
- 1066 01df 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
- 1066      20726576 
- 1066      6973696F 
- 1066      6E203233 
- 1066      37373135 
- 1067 0212 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 1067      66756E63 
- 1067      74696F6E 
- 1067      2D736563 
- 1067      74696F6E 
- 1068              	.LASF16:
- 1069 023a 73697A65 		.ascii	"sizetype\000"
- 1069      74797065 
- 1069      00
- 1070              	.LASF6:
- 1071 0243 6C6F6E67 		.ascii	"long long int\000"
- 1071      206C6F6E 
- 1071      6720696E 
- 1071      7400
- 1072              	.LASF14:
- 1073 0251 63686172 		.ascii	"char\000"
- 1073      00
- 1074              	.LASF2:
- 1075 0256 73686F72 		.ascii	"short int\000"
- 1075      7420696E 
- 1075      7400
- 1076              	.LASF28:
- 1077 0260 4D494348 		.ascii	"MICHAEL_LOW\000"
- 1077      41454C5F 
- 1077      4C4F5700 
- 1078              	.LASF22:
- 1079 026c 73746F72 		.ascii	"store\000"
- 1079      6500
- 1080              	.LASF4:
- 1081 0272 6C6F6E67 		.ascii	"long int\000"
- 1081      20696E74 
- 1081      00
- 1082              	.LASF34:
- 1083 027b 4A657474 		.ascii	"Jetty_I2CSlaveStatus\000"
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cceqGWId.s 			page 23
+ 1114 0020 00000000 		.4byte	.LFB36
+ 1115 0024 4C000000 		.4byte	.LFE36-.LFB36
+ 1116 0028 00000000 		.4byte	.LFB37
+ 1117 002c 02000000 		.4byte	.LFE37-.LFB37
+ 1118 0030 00000000 		.4byte	.LFB38
+ 1119 0034 0C000000 		.4byte	.LFE38-.LFB38
+ 1120 0038 00000000 		.4byte	0
+ 1121 003c 00000000 		.4byte	0
+ 1122              		.section	.debug_ranges,"",%progbits
+ 1123              	.Ldebug_ranges0:
+ 1124 0000 00000000 		.4byte	.LFB34
+ 1125 0004 0E000000 		.4byte	.LFE34
+ 1126 0008 00000000 		.4byte	.LFB35
+ 1127 000c 4C000000 		.4byte	.LFE35
+ 1128 0010 00000000 		.4byte	.LFB36
+ 1129 0014 4C000000 		.4byte	.LFE36
+ 1130 0018 00000000 		.4byte	.LFB37
+ 1131 001c 02000000 		.4byte	.LFE37
+ 1132 0020 00000000 		.4byte	.LFB38
+ 1133 0024 0C000000 		.4byte	.LFE38
+ 1134 0028 00000000 		.4byte	0
+ 1135 002c 00000000 		.4byte	0
+ 1136              		.section	.debug_line,"",%progbits
+ 1137              	.Ldebug_line0:
+ 1138 0000 35020000 		.section	.debug_str,"MS",%progbits,1
+ 1138      02009101 
+ 1138      00000201 
+ 1138      FB0E0D00 
+ 1138      01010101 
+ 1139              	.LASF6:
+ 1140 0000 6C6F6E67 		.ascii	"long long int\000"
+ 1140      206C6F6E 
+ 1140      6720696E 
+ 1140      7400
+ 1141              	.LASF9:
+ 1142 000e 5F5F7569 		.ascii	"__uint8_t\000"
+ 1142      6E74385F 
+ 1142      7400
+ 1143              	.LASF39:
+ 1144 0018 62617474 		.ascii	"battery.c\000"
+ 1144      6572792E 
+ 1144      6300
+ 1145              	.LASF34:
+ 1146 0022 4932435F 		.ascii	"I2C_Brain_I2CMasterReadByte\000"
+ 1146      42726169 
+ 1146      6E5F4932 
+ 1146      434D6173 
+ 1146      74657252 
+ 1147              	.LASF3:
+ 1148 003e 73686F72 		.ascii	"short unsigned int\000"
+ 1148      7420756E 
+ 1148      7369676E 
+ 1148      65642069 
+ 1148      6E7400
+ 1149              	.LASF26:
+ 1150 0051 73746174 		.ascii	"status\000"
+ 1150      757300
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cctKGwxD.s 			page 23
 
 
- 1083      795F4932 
- 1083      43536C61 
- 1083      76655374 
- 1083      61747573 
- 1084              	.LASF15:
- 1085 0290 6C6F6E67 		.ascii	"long double\000"
- 1085      20646F75 
- 1085      626C6500 
- 1086              	.LASF32:
- 1087 029c 4932435F 		.ascii	"I2C_Brain_I2CMasterSendStart\000"
- 1087      42726169 
- 1087      6E5F4932 
- 1087      434D6173 
- 1087      74657253 
- 1088              	.LASF31:
- 1089 02b9 4932435F 		.ascii	"I2C_DataPeriph_I2CSlaveStatus\000"
- 1089      44617461 
- 1089      50657269 
- 1089      70685F49 
- 1089      3243536C 
- 1090              	.LASF18:
- 1091 02d7 72656164 		.ascii	"read\000"
- 1091      00
- 1092              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 1151              	.LASF22:
+ 1152 0058 494E4132 		.ascii	"INA226Read\000"
+ 1152      32365265 
+ 1152      616400
+ 1153              	.LASF25:
+ 1154 0063 4A657474 		.ascii	"JettySend\000"
+ 1154      7953656E 
+ 1154      6400
+ 1155              	.LASF14:
+ 1156 006d 666C6F61 		.ascii	"float\000"
+ 1156      7400
+ 1157              	.LASF0:
+ 1158 0073 7369676E 		.ascii	"signed char\000"
+ 1158      65642063 
+ 1158      68617200 
+ 1159              	.LASF1:
+ 1160 007f 756E7369 		.ascii	"unsigned char\000"
+ 1160      676E6564 
+ 1160      20636861 
+ 1160      7200
+ 1161              	.LASF21:
+ 1162 008d 4932435F 		.ascii	"I2C_RW_Address\000"
+ 1162      52575F41 
+ 1162      64647265 
+ 1162      737300
+ 1163              	.LASF5:
+ 1164 009c 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1164      20756E73 
+ 1164      69676E65 
+ 1164      6420696E 
+ 1164      7400
+ 1165              	.LASF32:
+ 1166 00ae 494E4132 		.ascii	"INA226_I2C_I2CMasterStatus\000"
+ 1166      32365F49 
+ 1166      32435F49 
+ 1166      32434D61 
+ 1166      73746572 
+ 1167              	.LASF40:
+ 1168 00c9 433A5C55 		.ascii	"C:\\Users\\tsien\\Documents\\GitHub\\Battery_Manage"
+ 1168      73657273 
+ 1168      5C747369 
+ 1168      656E5C44 
+ 1168      6F63756D 
+ 1169 00f7 6D656E74 		.ascii	"ment_Board_PY2023\\BatteryBalance\\BatteryBalance.c"
+ 1169      5F426F61 
+ 1169      72645F50 
+ 1169      59323032 
+ 1169      335C4261 
+ 1170 0128 7964736E 		.ascii	"ydsn\000"
+ 1170      00
+ 1171              	.LASF15:
+ 1172 012d 646F7562 		.ascii	"double\000"
+ 1172      6C6500
+ 1173              	.LASF41:
+ 1174 0134 42617474 		.ascii	"BatteryBalanceInit\000"
+ 1174      65727942 
+ 1174      616C616E 
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cctKGwxD.s 			page 24
+
+
+ 1174      6365496E 
+ 1174      697400
+ 1175              	.LASF27:
+ 1176 0147 636F6E76 		.ascii	"convertValue\000"
+ 1176      65727456 
+ 1176      616C7565 
+ 1176      00
+ 1177              	.LASF12:
+ 1178 0154 75696E74 		.ascii	"uint16\000"
+ 1178      313600
+ 1179              	.LASF13:
+ 1180 015b 75696E74 		.ascii	"uint32\000"
+ 1180      333200
+ 1181              	.LASF8:
+ 1182 0162 756E7369 		.ascii	"unsigned int\000"
+ 1182      676E6564 
+ 1182      20696E74 
+ 1182      00
+ 1183              	.LASF19:
+ 1184 016f 62617365 		.ascii	"baseAddress\000"
+ 1184      41646472 
+ 1184      65737300 
+ 1185              	.LASF23:
+ 1186 017b 61646472 		.ascii	"address\000"
+ 1186      65737300 
+ 1187              	.LASF7:
+ 1188 0183 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1188      206C6F6E 
+ 1188      6720756E 
+ 1188      7369676E 
+ 1188      65642069 
+ 1189              	.LASF10:
+ 1190 019a 75696E74 		.ascii	"uint8_t\000"
+ 1190      385F7400 
+ 1191              	.LASF28:
+ 1192 01a2 6164635F 		.ascii	"adc_value\000"
+ 1192      76616C75 
+ 1192      6500
+ 1193              	.LASF35:
+ 1194 01ac 4A657474 		.ascii	"Jetty_I2CMasterStatus\000"
+ 1194      795F4932 
+ 1194      434D6173 
+ 1194      74657253 
+ 1194      74617475 
+ 1195              	.LASF30:
+ 1196 01c2 4B454E5F 		.ascii	"KEN_LOW\000"
+ 1196      4C4F5700 
+ 1197              	.LASF29:
+ 1198 01ca 4D494348 		.ascii	"MICHAEL_LOW\000"
+ 1198      41454C5F 
+ 1198      4C4F5700 
+ 1199              	.LASF38:
+ 1200 01d6 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1200      43313120 
+ 1200      352E342E 
+ 1200      31203230 
+ 1200      31363036 
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cctKGwxD.s 			page 25
+
+
+ 1201 0209 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ 1201      20726576 
+ 1201      6973696F 
+ 1201      6E203233 
+ 1201      37373135 
+ 1202 023c 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1202      66756E63 
+ 1202      74696F6E 
+ 1202      2D736563 
+ 1202      74696F6E 
+ 1203              	.LASF18:
+ 1204 0264 73697A65 		.ascii	"sizetype\000"
+ 1204      74797065 
+ 1204      00
+ 1205              	.LASF37:
+ 1206 026d 4A657474 		.ascii	"Jetty_Start\000"
+ 1206      795F5374 
+ 1206      61727400 
+ 1207              	.LASF24:
+ 1208 0279 73746F72 		.ascii	"store\000"
+ 1208      6500
+ 1209              	.LASF16:
+ 1210 027f 63686172 		.ascii	"char\000"
+ 1210      00
+ 1211              	.LASF2:
+ 1212 0284 73686F72 		.ascii	"short int\000"
+ 1212      7420696E 
+ 1212      7400
+ 1213              	.LASF36:
+ 1214 028e 4932435F 		.ascii	"I2C_Brain_Start\000"
+ 1214      42726169 
+ 1214      6E5F5374 
+ 1214      61727400 
+ 1215              	.LASF11:
+ 1216 029e 75696E74 		.ascii	"uint8\000"
+ 1216      3800
+ 1217              	.LASF31:
+ 1218 02a4 4932435F 		.ascii	"I2C_Brain_I2CMasterStatus\000"
+ 1218      42726169 
+ 1218      6E5F4932 
+ 1218      434D6173 
+ 1218      74657253 
+ 1219              	.LASF4:
+ 1220 02be 6C6F6E67 		.ascii	"long int\000"
+ 1220      20696E74 
+ 1220      00
+ 1221              	.LASF17:
+ 1222 02c7 6C6F6E67 		.ascii	"long double\000"
+ 1222      20646F75 
+ 1222      626C6500 
+ 1223              	.LASF33:
+ 1224 02d3 4932435F 		.ascii	"I2C_Brain_I2CMasterSendStart\000"
+ 1224      42726169 
+ 1224      6E5F4932 
+ 1224      434D6173 
+ 1224      74657253 
+ 1225              	.LASF20:
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cctKGwxD.s 			page 26
+
+
+ 1226 02f0 72656164 		.ascii	"read\000"
+ 1226      00
+ 1227              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

@@ -26,7 +26,7 @@
 *   Initial Parameter Constants
 ****************************************/
 
-#define Jetty_I2C_MODE                   (1u)
+#define Jetty_I2C_MODE                   (2u)
 #define Jetty_I2C_OVS_FACTOR_LOW         (8u)
 #define Jetty_I2C_OVS_FACTOR_HIGH        (8u)
 #define Jetty_I2C_MEDIAN_FILTER_ENABLE   (1u)

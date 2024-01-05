@@ -11,12 +11,13 @@
 */
 
 #include "project.h"
+#include <stdint.h>
 
 #ifndef __IO__
 #define __IO__
 
-#define SUCCESS (uint8)1
-#define FAIL (uint8)0
+#define SUCCESS (uint8)0
+#define FAIL (uint8)1
     
 #define I2C_TIMEOUT (uint32)500
 #define DATA_ADDRESS (uint32)0x8
@@ -30,9 +31,9 @@ uint32 convertValue(uint8 adc_value);
 
 void BatteryBalanceInit(void);
 
-uint8 DataPeriphRead(uint32 address, uint8* store);
+uint8_t INA226Read(uint32 address, uint8* store);
 
-uint8 JettySend(uint32 address, uint32 data);
+uint8_t JettySend(uint32 address, uint8* store);
 
 // void BatteryBalance(uint8* battery, uint8* value, float32* threshold);
     

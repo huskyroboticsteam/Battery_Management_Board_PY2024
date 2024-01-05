@@ -22,11 +22,11 @@ uint32 I2C_RW_Address(uint32 baseAddress, char read)
         (baseAddress << 1 | read);
 }
 
-uint8 DataPeriphRead(uint32 address, uint8* store)
+uint8 INA226Read(uint32 address, uint8* store)
 {
     while (
         I2C_Brain_I2CMasterStatus() == I2C_Brain_I2C_MSTAT_XFER_INP ||
-        I2C_DataPeriph_I2CSlaveStatus() == I2C_DataPeriph_I2C_SSTAT_RD_BUSY
+        INA226_I2C_I2CMasterStatus() == INA226_I2C_I2C_MSTAT_XFER_INP
     ) {}
     uint32 status = I2C_Brain_I2CMasterSendStart(address, I2C_Brain_I2C_READ_XFER_MODE,
             I2C_TIMEOUT);
@@ -42,20 +42,20 @@ uint8 DataPeriphRead(uint32 address, uint8* store)
     }
 }
 
-uint8 JettySend(uint32 address, uint32 data)
-{
+uint8_t JettySend(uint32 address, uint8* store)
+{   
     while (
         I2C_Brain_I2CMasterStatus() == I2C_Brain_I2C_MSTAT_XFER_INP ||
-        Jetty_I2CSlaveStatus() == Jetty_I2C_SSTAT_WR_BUSY
+        Jetty_I2CMasterStatus() == INA226_I2C_I2C_MSTAT_XFER_INP
     ) {}
     uint32 status = I2C_Brain_I2CMasterSendStart(address, I2C_Brain_I2C_WRITE_XFER_MODE,
             I2C_TIMEOUT);
     while (status != I2C_Brain_I2C_MSTR_NOT_READY) {
-        status = I2C_Brain_I2CMasterSendStart(address, I2C_Brain_I2C_WRITE_XFER_MODE,
+        status = I2C_Brain_I2CMasterSendStart(address, I2C_Brain_I2C_READ_XFER_MODE,
             I2C_TIMEOUT);
     }
     if (status == I2C_Brain_I2C_MSTR_NO_ERROR) {
-        I2C_Brain_I2CMasterWriteByte(data, I2C_TIMEOUT);
+        I2C_Brain_I2CMasterReadByte(I2C_Brain_I2C_NAK_DATA, store, I2C_TIMEOUT);
         return SUCCESS;
     } else {
         return FAIL;
@@ -71,13 +71,11 @@ void BatteryBalanceInit(void)
 {
     I2C_Brain_Start();
     
-    I2C_DataPeriph_Start();
-    I2C_DataPeriph_I2CSlaveSetAddress(DATA_ADDRESS);
-    
     Jetty_Start();
-    Jetty_I2CSlaveSetAddress(JETTY);
+    //Jetty_I2CSlaveSetAddress(JETTY);
 }
 
+/*
 void BatteryBalance(uint8* battery, uint8* value, float32* threshold)
 {
     float32 newVal = convertValue(*value);
