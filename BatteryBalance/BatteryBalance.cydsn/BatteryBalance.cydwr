@@ -10,7 +10,21 @@
     </Group>
   </Group>
   <Data key="DataVersionKey" value="2" />
-  <Group key="DWRInstGuidMapping" />
+  <Group key="DWRInstGuidMapping">
+    <Group key="Clock">
+      <Data key="3dbba19d-7851-4a83-b204-a0a386fe8d68/2dc2d7a8-ce2b-43c7-af4a-821c8cd73ccf" value="INA226_I2C_SCBCLK" />
+      <Data key="6e3fa992-292c-4f0b-9603-713e7e13d552/2dc2d7a8-ce2b-43c7-af4a-821c8cd73ccf" value="I2C_Brain_SCBCLK" />
+      <Data key="a47cde1a-63fb-4cae-b828-e88a2eb61d6f/2dc2d7a8-ce2b-43c7-af4a-821c8cd73ccf" value="Jetty_SCBCLK" />
+    </Group>
+    <Group key="Pin">
+      <Data key="3dbba19d-7851-4a83-b204-a0a386fe8d68/5382e105-1382-4a2e-b9f4-3bb2feba71e0" value="INA226_I2C_sda" />
+      <Data key="3dbba19d-7851-4a83-b204-a0a386fe8d68/22863ebe-a37b-476f-b252-6e49a8c00b12" value="INA226_I2C_scl" />
+      <Data key="6e3fa992-292c-4f0b-9603-713e7e13d552/5382e105-1382-4a2e-b9f4-3bb2feba71e0" value="I2C_Brain_sda" />
+      <Data key="6e3fa992-292c-4f0b-9603-713e7e13d552/22863ebe-a37b-476f-b252-6e49a8c00b12" value="I2C_Brain_scl" />
+      <Data key="a47cde1a-63fb-4cae-b828-e88a2eb61d6f/5382e105-1382-4a2e-b9f4-3bb2feba71e0" value="Jetty_sda" />
+      <Data key="a47cde1a-63fb-4cae-b828-e88a2eb61d6f/22863ebe-a37b-476f-b252-6e49a8c00b12" value="Jetty_scl" />
+    </Group>
+  </Group>
   <Group key="FlashSecurity">
     <Group key="RowsKey">
       <Group key="0">
@@ -3091,6 +3105,77 @@
     </Group>
   </Group>
   <Group key="M0S8Clock">
+    <Group key="LocalClks">
+      <Group key="3dbba19d-7851-4a83-b204-a0a386fe8d68/2dc2d7a8-ce2b-43c7-af4a-821c8cd73ccf">
+        <Data key="check_tolerance" value="True" />
+        <Data key="derive_type" value="AUTO" />
+        <Data key="desired_freq" value="1.6" />
+        <Data key="desired_unit" value="6" />
+        <Data key="divider" value="30" />
+        <Data key="enabled" value="True" />
+        <Data key="fract_divider_denominator" value="0" />
+        <Data key="fract_divider_numerator" value="0" />
+        <Data key="minus_tolerance" value="100" />
+        <Data key="name" value="INA226_I2C_SCBCLK" />
+        <Data key="netlist_name" value="\INA226_I2C:SCBCLK\" />
+        <Data key="ph_align_clock_id" value="413DE2EF-D9F2-4233-A808-DFAF137FD877" />
+        <Data key="ph_align_clock_name" value="HFCLK" />
+        <Data key="plus_tolerance" value="2" />
+        <Data key="scope" value="LOCAL" />
+        <Data key="sourceClk_minus_acuracy_name" value="2" />
+        <Data key="sourceClk_plus_acuracy_name" value="2" />
+        <Data key="src_clk_id" value="413DE2EF-D9F2-4233-A808-DFAF137FD877" />
+        <Data key="src_clk_name" value="HFClk" />
+        <Data key="start_on_reset" value="True" />
+        <Data key="uses_fract_divider" value="False" />
+      </Group>
+      <Group key="6e3fa992-292c-4f0b-9603-713e7e13d552/2dc2d7a8-ce2b-43c7-af4a-821c8cd73ccf">
+        <Data key="check_tolerance" value="True" />
+        <Data key="derive_type" value="AUTO" />
+        <Data key="desired_freq" value="1.6" />
+        <Data key="desired_unit" value="6" />
+        <Data key="divider" value="30" />
+        <Data key="enabled" value="True" />
+        <Data key="fract_divider_denominator" value="0" />
+        <Data key="fract_divider_numerator" value="0" />
+        <Data key="minus_tolerance" value="100" />
+        <Data key="name" value="I2C_Brain_SCBCLK" />
+        <Data key="netlist_name" value="\I2C_Brain:SCBCLK\" />
+        <Data key="ph_align_clock_id" value="413DE2EF-D9F2-4233-A808-DFAF137FD877" />
+        <Data key="ph_align_clock_name" value="HFCLK" />
+        <Data key="plus_tolerance" value="2" />
+        <Data key="scope" value="LOCAL" />
+        <Data key="sourceClk_minus_acuracy_name" value="2" />
+        <Data key="sourceClk_plus_acuracy_name" value="2" />
+        <Data key="src_clk_id" value="413DE2EF-D9F2-4233-A808-DFAF137FD877" />
+        <Data key="src_clk_name" value="HFClk" />
+        <Data key="start_on_reset" value="True" />
+        <Data key="uses_fract_divider" value="False" />
+      </Group>
+      <Group key="a47cde1a-63fb-4cae-b828-e88a2eb61d6f/2dc2d7a8-ce2b-43c7-af4a-821c8cd73ccf">
+        <Data key="check_tolerance" value="True" />
+        <Data key="derive_type" value="AUTO" />
+        <Data key="desired_freq" value="1.6" />
+        <Data key="desired_unit" value="6" />
+        <Data key="divider" value="30" />
+        <Data key="enabled" value="True" />
+        <Data key="fract_divider_denominator" value="0" />
+        <Data key="fract_divider_numerator" value="0" />
+        <Data key="minus_tolerance" value="100" />
+        <Data key="name" value="Jetty_SCBCLK" />
+        <Data key="netlist_name" value="\Jetty:SCBCLK\" />
+        <Data key="ph_align_clock_id" value="413DE2EF-D9F2-4233-A808-DFAF137FD877" />
+        <Data key="ph_align_clock_name" value="HFCLK" />
+        <Data key="plus_tolerance" value="2" />
+        <Data key="scope" value="LOCAL" />
+        <Data key="sourceClk_minus_acuracy_name" value="2" />
+        <Data key="sourceClk_plus_acuracy_name" value="2" />
+        <Data key="src_clk_id" value="413DE2EF-D9F2-4233-A808-DFAF137FD877" />
+        <Data key="src_clk_name" value="HFClk" />
+        <Data key="start_on_reset" value="True" />
+        <Data key="uses_fract_divider" value="False" />
+      </Group>
+    </Group>
     <Group key="SystemClks">
       <Group key="1EB9C57A-B1AC-449a-92B8-1EB82F7A8FE5">
         <Data key="accuracy_display_unit" value="1" />
@@ -3143,12 +3228,12 @@
         <Data key="minus_tolerance" value="0" />
         <Data key="name" value="PLL1" />
         <Data key="netlist_name" value="PLL1" />
-        <Data key="P" value="0" />
+        <Data key="P" value="8" />
         <Data key="plus_tolerance" value="0" />
-        <Data key="Q" value="0" />
+        <Data key="Q" value="16" />
         <Data key="scope" value="BUILTIN" />
-        <Data key="sourceClk_minus_acuracy_name" value="0" />
-        <Data key="sourceClk_plus_acuracy_name" value="0" />
+        <Data key="sourceClk_minus_acuracy_name" value="2" />
+        <Data key="sourceClk_plus_acuracy_name" value="2" />
         <Data key="src_clk_id" value="BA1FF31D-570B-4ee4-8086-5A1087FF2AD2" />
         <Data key="src_clk_name" value="PLL1_Sel" />
         <Data key="start_on_reset" value="False" />
@@ -3621,6 +3706,16 @@
         <Data key="src_clk_id" value="25052E45-97E1-4618-A621-47712D88CDFB" />
         <Data key="src_clk_name" value="PLL0_Sel" />
         <Data key="start_on_reset" value="True" />
+      </Group>
+    </Group>
+  </Group>
+  <Group key="Pin2">
+    <Group key="UnAssigned Pins">
+      <Group key="3dbba19d-7851-4a83-b204-a0a386fe8d68/22863ebe-a37b-476f-b252-6e49a8c00b12">
+        <Data key="0" value="133490076368016400" />
+      </Group>
+      <Group key="6e3fa992-292c-4f0b-9603-713e7e13d552/22863ebe-a37b-476f-b252-6e49a8c00b12">
+        <Data key="0" value="133490076996390783" />
       </Group>
     </Group>
   </Group>

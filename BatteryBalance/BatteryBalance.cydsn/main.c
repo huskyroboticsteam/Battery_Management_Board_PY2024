@@ -13,7 +13,8 @@
 #include "io.h"
 #include <stdint.h>
 #include <INA226.h>
-
+#include "./HindsightCAN/CANPacket.h"
+#include "./HindsightCAN/Port.h"
 
 int main(void)
 {
@@ -25,14 +26,16 @@ int main(void)
     
     uint8_t current;
     uint8_t status;
+    uint16_t count = 0;
+    CANPacket* data;
 
     for(;;)
     {
-        // INA226Read(DATA_ADDRESS, &ina226);
-        // current = convertValue(ina226);
         status = getCurrent(&current);
         if (status == SUCCESS) {
-            JettySend(JETTY, current);  
+            *data = ConstructCANPacket(count, sizeof(uint8_t), &current);
+            SendCANPacket(data);
+            count++;
         }
         
         CyDelay(100);

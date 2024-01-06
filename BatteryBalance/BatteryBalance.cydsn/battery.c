@@ -22,6 +22,7 @@ uint32 I2C_RW_Address(uint32 baseAddress, char read)
         (baseAddress << 1 | read);
 }
 
+/*
 uint8 INA226Read(uint32 address, uint8* store)
 {
     while (
@@ -41,7 +42,9 @@ uint8 INA226Read(uint32 address, uint8* store)
         return FAIL;
     }
 }
+*/
 
+/*
 uint8_t JettySend(uint32 address, uint8* store)
 {   
     while (
@@ -61,6 +64,7 @@ uint8_t JettySend(uint32 address, uint8* store)
         return FAIL;
     }
 }
+*/
 
 uint32 convertValue(uint8 adc_value) {
     return (uint32)adc_value;   
@@ -69,9 +73,9 @@ uint32 convertValue(uint8 adc_value) {
 
 void BatteryBalanceInit(void)
 {
-    I2C_Brain_Start();
+    // I2C_Brain_Start();
     
-    Jetty_Start();
+    // Jetty_Start();
     //Jetty_I2CSlaveSetAddress(JETTY);
 }
 

@@ -856,8 +856,8 @@ extern uint8 DBG_UART_initVar;
 #define DBG_UART_FIFO_SIZE      (8u)  /* TX or RX FIFO size. */
 #define DBG_UART_EZ_DATA_NR     (32u)  /* Number of words in EZ memory. */ 
 #define DBG_UART_ONE_BYTE_WIDTH (8u)            /* Number of bits in one byte. */
-#define DBG_UART_FF_DATA_NR_LOG2_MASK       (0x0Fu)      /* Number of bits to represent a FIFO address. */
-#define DBG_UART_FF_DATA_NR_LOG2_PLUS1_MASK (0x1Fu) /* Number of bits to represent #bytes in FIFO. */
+#define DBG_UART_FF_DATA_NR_LOG2_MASK       (0x07u)      /* Number of bits to represent a FIFO address. */
+#define DBG_UART_FF_DATA_NR_LOG2_PLUS1_MASK (0x0Fu) /* Number of bits to represent #bytes in FIFO. */
 
 
 /***************************************

@@ -2,7 +2,7 @@
 --	Conversion of BatteryBalance.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Tue Dec 05 17:53:04 2023
+--	Sat Jan 06 12:45:56 2024
 --
 
 USE cypress.cypress.all;
@@ -24,18 +24,18 @@ SIGNAL \INA226_I2C:miso_m_wire\ : bit;
 SIGNAL \INA226_I2C:tmpOE__sda_net_0\ : bit;
 SIGNAL zero : bit;
 SIGNAL \INA226_I2C:tmpFB_0__sda_net_0\ : bit;
-SIGNAL Net_20 : bit;
+SIGNAL Net_221 : bit;
 TERMINAL \INA226_I2C:tmpSIOVREF__sda_net_0\ : bit;
 SIGNAL one : bit;
 SIGNAL \INA226_I2C:tmpINTERRUPT_0__sda_net_0\ : bit;
 SIGNAL \INA226_I2C:tmpOE__scl_net_0\ : bit;
 SIGNAL \INA226_I2C:tmpFB_0__scl_net_0\ : bit;
-SIGNAL Net_19 : bit;
+SIGNAL Net_220 : bit;
 TERMINAL \INA226_I2C:tmpSIOVREF__scl_net_0\ : bit;
 SIGNAL \INA226_I2C:tmpINTERRUPT_0__scl_net_0\ : bit;
 SIGNAL \INA226_I2C:Net_1099\ : bit;
 SIGNAL \INA226_I2C:Net_1258\ : bit;
-SIGNAL Net_3 : bit;
+SIGNAL Net_204 : bit;
 SIGNAL \INA226_I2C:cts_wire\ : bit;
 SIGNAL \INA226_I2C:tx_wire\ : bit;
 SIGNAL \INA226_I2C:rts_wire\ : bit;
@@ -46,109 +46,19 @@ SIGNAL \INA226_I2C:select_m_wire_1\ : bit;
 SIGNAL \INA226_I2C:select_m_wire_0\ : bit;
 SIGNAL \INA226_I2C:sclk_m_wire\ : bit;
 SIGNAL \INA226_I2C:miso_s_wire\ : bit;
-SIGNAL Net_21 : bit;
-SIGNAL Net_12 : bit;
+SIGNAL Net_222 : bit;
+SIGNAL Net_213 : bit;
 SIGNAL \INA226_I2C:Net_1028\ : bit;
-SIGNAL Net_5 : bit;
-SIGNAL Net_6 : bit;
-SIGNAL Net_7 : bit;
-SIGNAL Net_8 : bit;
-SIGNAL Net_9 : bit;
-SIGNAL Net_10 : bit;
-SIGNAL Net_11 : bit;
-SIGNAL Net_14 : bit;
-SIGNAL Net_15 : bit;
-SIGNAL Net_22 : bit;
-SIGNAL \I2C_Brain:Net_847\ : bit;
-SIGNAL \I2C_Brain:select_s_wire\ : bit;
-SIGNAL \I2C_Brain:rx_wire\ : bit;
-SIGNAL \I2C_Brain:Net_1257\ : bit;
-SIGNAL \I2C_Brain:uncfg_rx_irq\ : bit;
-SIGNAL \I2C_Brain:Net_1170\ : bit;
-SIGNAL \I2C_Brain:sclk_s_wire\ : bit;
-SIGNAL \I2C_Brain:mosi_s_wire\ : bit;
-SIGNAL \I2C_Brain:miso_m_wire\ : bit;
-SIGNAL \I2C_Brain:tmpOE__sda_net_0\ : bit;
-SIGNAL \I2C_Brain:tmpFB_0__sda_net_0\ : bit;
-SIGNAL Net_46 : bit;
-TERMINAL \I2C_Brain:tmpSIOVREF__sda_net_0\ : bit;
-SIGNAL \I2C_Brain:tmpINTERRUPT_0__sda_net_0\ : bit;
-SIGNAL \I2C_Brain:tmpOE__scl_net_0\ : bit;
-SIGNAL \I2C_Brain:tmpFB_0__scl_net_0\ : bit;
-SIGNAL Net_45 : bit;
-TERMINAL \I2C_Brain:tmpSIOVREF__scl_net_0\ : bit;
-SIGNAL \I2C_Brain:tmpINTERRUPT_0__scl_net_0\ : bit;
-SIGNAL \I2C_Brain:Net_1099\ : bit;
-SIGNAL \I2C_Brain:Net_1258\ : bit;
-SIGNAL Net_29 : bit;
-SIGNAL \I2C_Brain:cts_wire\ : bit;
-SIGNAL \I2C_Brain:tx_wire\ : bit;
-SIGNAL \I2C_Brain:rts_wire\ : bit;
-SIGNAL \I2C_Brain:mosi_m_wire\ : bit;
-SIGNAL \I2C_Brain:select_m_wire_3\ : bit;
-SIGNAL \I2C_Brain:select_m_wire_2\ : bit;
-SIGNAL \I2C_Brain:select_m_wire_1\ : bit;
-SIGNAL \I2C_Brain:select_m_wire_0\ : bit;
-SIGNAL \I2C_Brain:sclk_m_wire\ : bit;
-SIGNAL \I2C_Brain:miso_s_wire\ : bit;
-SIGNAL Net_47 : bit;
-SIGNAL Net_38 : bit;
-SIGNAL \I2C_Brain:Net_1028\ : bit;
-SIGNAL Net_31 : bit;
-SIGNAL Net_32 : bit;
-SIGNAL Net_33 : bit;
-SIGNAL Net_34 : bit;
-SIGNAL Net_35 : bit;
-SIGNAL Net_36 : bit;
-SIGNAL Net_37 : bit;
-SIGNAL Net_40 : bit;
-SIGNAL Net_41 : bit;
-SIGNAL Net_48 : bit;
-SIGNAL \Jetty:Net_847\ : bit;
-SIGNAL \Jetty:select_s_wire\ : bit;
-SIGNAL \Jetty:rx_wire\ : bit;
-SIGNAL \Jetty:Net_1257\ : bit;
-SIGNAL \Jetty:uncfg_rx_irq\ : bit;
-SIGNAL \Jetty:Net_1170\ : bit;
-SIGNAL \Jetty:sclk_s_wire\ : bit;
-SIGNAL \Jetty:mosi_s_wire\ : bit;
-SIGNAL \Jetty:miso_m_wire\ : bit;
-SIGNAL \Jetty:tmpOE__sda_net_0\ : bit;
-SIGNAL \Jetty:tmpFB_0__sda_net_0\ : bit;
-SIGNAL Net_68 : bit;
-TERMINAL \Jetty:tmpSIOVREF__sda_net_0\ : bit;
-SIGNAL \Jetty:tmpINTERRUPT_0__sda_net_0\ : bit;
-SIGNAL \Jetty:tmpOE__scl_net_0\ : bit;
-SIGNAL \Jetty:tmpFB_0__scl_net_0\ : bit;
-SIGNAL Net_67 : bit;
-TERMINAL \Jetty:tmpSIOVREF__scl_net_0\ : bit;
-SIGNAL \Jetty:tmpINTERRUPT_0__scl_net_0\ : bit;
-SIGNAL \Jetty:Net_1099\ : bit;
-SIGNAL \Jetty:Net_1258\ : bit;
-SIGNAL Net_51 : bit;
-SIGNAL \Jetty:cts_wire\ : bit;
-SIGNAL \Jetty:tx_wire\ : bit;
-SIGNAL \Jetty:rts_wire\ : bit;
-SIGNAL \Jetty:mosi_m_wire\ : bit;
-SIGNAL \Jetty:select_m_wire_3\ : bit;
-SIGNAL \Jetty:select_m_wire_2\ : bit;
-SIGNAL \Jetty:select_m_wire_1\ : bit;
-SIGNAL \Jetty:select_m_wire_0\ : bit;
-SIGNAL \Jetty:sclk_m_wire\ : bit;
-SIGNAL \Jetty:miso_s_wire\ : bit;
-SIGNAL Net_69 : bit;
-SIGNAL Net_60 : bit;
-SIGNAL \Jetty:Net_1028\ : bit;
-SIGNAL Net_53 : bit;
-SIGNAL Net_54 : bit;
-SIGNAL Net_55 : bit;
-SIGNAL Net_56 : bit;
-SIGNAL Net_57 : bit;
-SIGNAL Net_58 : bit;
-SIGNAL Net_59 : bit;
-SIGNAL Net_62 : bit;
-SIGNAL Net_63 : bit;
-SIGNAL Net_70 : bit;
+SIGNAL Net_206 : bit;
+SIGNAL Net_207 : bit;
+SIGNAL Net_208 : bit;
+SIGNAL Net_209 : bit;
+SIGNAL Net_210 : bit;
+SIGNAL Net_211 : bit;
+SIGNAL Net_212 : bit;
+SIGNAL Net_215 : bit;
+SIGNAL Net_216 : bit;
+SIGNAL Net_223 : bit;
 SIGNAL \DBG_UART:Net_847\ : bit;
 SIGNAL \DBG_UART:select_s_wire\ : bit;
 SIGNAL \DBG_UART:rx_wire\ : bit;
@@ -172,7 +82,7 @@ SIGNAL \DBG_UART:tmpIO_0__rx_net_0\ : bit;
 TERMINAL \DBG_UART:tmpSIOVREF__rx_net_0\ : bit;
 SIGNAL \DBG_UART:tmpINTERRUPT_0__rx_net_0\ : bit;
 SIGNAL \DBG_UART:cts_wire\ : bit;
-SIGNAL Net_75 : bit;
+SIGNAL Net_248 : bit;
 SIGNAL \DBG_UART:rts_wire\ : bit;
 SIGNAL \DBG_UART:mosi_m_wire\ : bit;
 SIGNAL \DBG_UART:select_m_wire_3\ : bit;
@@ -181,21 +91,21 @@ SIGNAL \DBG_UART:select_m_wire_1\ : bit;
 SIGNAL \DBG_UART:select_m_wire_0\ : bit;
 SIGNAL \DBG_UART:sclk_m_wire\ : bit;
 SIGNAL \DBG_UART:miso_s_wire\ : bit;
-SIGNAL Net_91 : bit;
-SIGNAL Net_92 : bit;
-SIGNAL Net_93 : bit;
-SIGNAL Net_84 : bit;
+SIGNAL Net_264 : bit;
+SIGNAL Net_265 : bit;
+SIGNAL Net_266 : bit;
+SIGNAL Net_257 : bit;
 SIGNAL \DBG_UART:Net_1028\ : bit;
-SIGNAL Net_77 : bit;
-SIGNAL Net_78 : bit;
-SIGNAL Net_79 : bit;
-SIGNAL Net_80 : bit;
-SIGNAL Net_81 : bit;
-SIGNAL Net_82 : bit;
-SIGNAL Net_83 : bit;
-SIGNAL Net_86 : bit;
-SIGNAL Net_87 : bit;
-SIGNAL Net_94 : bit;
+SIGNAL Net_250 : bit;
+SIGNAL Net_251 : bit;
+SIGNAL Net_252 : bit;
+SIGNAL Net_253 : bit;
+SIGNAL Net_254 : bit;
+SIGNAL Net_255 : bit;
+SIGNAL Net_256 : bit;
+SIGNAL Net_259 : bit;
+SIGNAL Net_260 : bit;
+SIGNAL Net_267 : bit;
 BEGIN
 
 zero <=  ('0') ;
@@ -272,7 +182,7 @@ one <=  ('1') ;
 		y=>(zero),
 		fb=>(\INA226_I2C:tmpFB_0__sda_net_0\),
 		analog=>(open),
-		io=>Net_20,
+		io=>Net_221,
 		siovref=>(\INA226_I2C:tmpSIOVREF__sda_net_0\),
 		annotation=>(open),
 		in_clock=>zero,
@@ -342,7 +252,7 @@ one <=  ('1') ;
 		y=>(zero),
 		fb=>(\INA226_I2C:tmpFB_0__scl_net_0\),
 		analog=>(open),
-		io=>Net_19,
+		io=>Net_220,
 		siovref=>(\INA226_I2C:tmpSIOVREF__scl_net_0\),
 		annotation=>(open),
 		in_clock=>zero,
@@ -355,12 +265,12 @@ one <=  ('1') ;
 \INA226_I2C:SCB_IRQ\:cy_isr_v1_0
 	GENERIC MAP(int_type=>"10",
 		is_nmi=>'0')
-	PORT MAP(int_signal=>Net_3);
+	PORT MAP(int_signal=>Net_204);
 \INA226_I2C:SCB\:cy_m0s8_scb_v2_0
 	GENERIC MAP(cy_registers=>"",
 		scb_mode=>0)
 	PORT MAP(clock=>\INA226_I2C:Net_847\,
-		interrupt=>Net_3,
+		interrupt=>Net_204,
 		rx=>zero,
 		tx=>\INA226_I2C:tx_wire\,
 		cts=>zero,
@@ -373,360 +283,10 @@ one <=  ('1') ;
 		miso_s=>\INA226_I2C:miso_s_wire\,
 		select_s=>zero,
 		sclk_s=>zero,
-		scl=>Net_19,
-		sda=>Net_20,
-		tx_req=>Net_21,
-		rx_req=>Net_12);
-\I2C_Brain:SCBCLK\:cy_clock_v1_0
-	GENERIC MAP(cy_registers=>"",
-		id=>"6e3fa992-292c-4f0b-9603-713e7e13d552/2dc2d7a8-ce2b-43c7-af4a-821c8cd73ccf",
-		source_clock_id=>"",
-		divisor=>0,
-		period=>"625000000",
-		is_direct=>'0',
-		is_digital=>'0')
-	PORT MAP(clock_out=>\I2C_Brain:Net_847\,
-		dig_domain_out=>open);
-\I2C_Brain:sda\:cy_psoc3_pins_v1_10
-	GENERIC MAP(id=>"6e3fa992-292c-4f0b-9603-713e7e13d552/5382e105-1382-4a2e-b9f4-3bb2feba71e0",
-		drive_mode=>"100",
-		ibuf_enabled=>"1",
-		init_dr_st=>"1",
-		input_sync=>"0",
-		input_clk_en=>'0',
-		input_sync_mode=>"0",
-		intr_mode=>"00",
-		invert_in_clock=>'0',
-		invert_in_clock_en=>'0',
-		invert_in_reset=>'0',
-		invert_out_clock=>'0',
-		invert_out_clock_en=>'0',
-		invert_out_reset=>'0',
-		io_voltage=>"",
-		layout_mode=>"CONTIGUOUS",
-		output_conn=>"0",
-		output_sync=>"0",
-		output_clk_en=>'0',
-		output_mode=>"0",
-		output_reset=>'0',
-		output_clock_mode=>"0",
-		oe_sync=>"0",
-		oe_conn=>"0",
-		oe_reset=>'0',
-		pin_aliases=>"",
-		pin_mode=>"B",
-		por_state=>4,
-		sio_group_cnt=>0,
-		sio_hifreq=>"00000000",
-		sio_hyst=>"1",
-		sio_ibuf=>"00000000",
-		sio_info=>"00",
-		sio_obuf=>"00000000",
-		sio_refsel=>"00000000",
-		sio_vtrip=>"00000000",
-		sio_vohsel=>"00000000",
-		slew_rate=>"0",
-		spanning=>'0',
-		sw_only=>'0',
-		vtrip=>"00",
-		width=>1,
-		port_alias_required=>'0',
-		port_alias_group=>"",
-		use_annotation=>"0",
-		pa_in_clock=>-1,
-		pa_in_clock_en=>-1,
-		pa_in_reset=>-1,
-		pa_out_clock=>-1,
-		pa_out_clock_en=>-1,
-		pa_out_reset=>-1,
-		ovt_needed=>"0",
-		ovt_slew_control=>"00",
-		ovt_hyst_trim=>"0",
-		input_buffer_sel=>"00")
-	PORT MAP(oe=>(one),
-		y=>(zero),
-		fb=>(\I2C_Brain:tmpFB_0__sda_net_0\),
-		analog=>(open),
-		io=>Net_46,
-		siovref=>(\I2C_Brain:tmpSIOVREF__sda_net_0\),
-		annotation=>(open),
-		in_clock=>zero,
-		in_clock_en=>one,
-		in_reset=>zero,
-		out_clock=>zero,
-		out_clock_en=>one,
-		out_reset=>zero,
-		interrupt=>\I2C_Brain:tmpINTERRUPT_0__sda_net_0\);
-\I2C_Brain:scl\:cy_psoc3_pins_v1_10
-	GENERIC MAP(id=>"6e3fa992-292c-4f0b-9603-713e7e13d552/22863ebe-a37b-476f-b252-6e49a8c00b12",
-		drive_mode=>"100",
-		ibuf_enabled=>"1",
-		init_dr_st=>"1",
-		input_sync=>"0",
-		input_clk_en=>'0',
-		input_sync_mode=>"0",
-		intr_mode=>"00",
-		invert_in_clock=>'0',
-		invert_in_clock_en=>'0',
-		invert_in_reset=>'0',
-		invert_out_clock=>'0',
-		invert_out_clock_en=>'0',
-		invert_out_reset=>'0',
-		io_voltage=>"",
-		layout_mode=>"CONTIGUOUS",
-		output_conn=>"0",
-		output_sync=>"0",
-		output_clk_en=>'0',
-		output_mode=>"0",
-		output_reset=>'0',
-		output_clock_mode=>"0",
-		oe_sync=>"0",
-		oe_conn=>"0",
-		oe_reset=>'0',
-		pin_aliases=>"",
-		pin_mode=>"B",
-		por_state=>4,
-		sio_group_cnt=>0,
-		sio_hifreq=>"00000000",
-		sio_hyst=>"1",
-		sio_ibuf=>"00000000",
-		sio_info=>"00",
-		sio_obuf=>"00000000",
-		sio_refsel=>"00000000",
-		sio_vtrip=>"00000000",
-		sio_vohsel=>"00000000",
-		slew_rate=>"0",
-		spanning=>'0',
-		sw_only=>'0',
-		vtrip=>"00",
-		width=>1,
-		port_alias_required=>'0',
-		port_alias_group=>"",
-		use_annotation=>"0",
-		pa_in_clock=>-1,
-		pa_in_clock_en=>-1,
-		pa_in_reset=>-1,
-		pa_out_clock=>-1,
-		pa_out_clock_en=>-1,
-		pa_out_reset=>-1,
-		ovt_needed=>"0",
-		ovt_slew_control=>"00",
-		ovt_hyst_trim=>"0",
-		input_buffer_sel=>"00")
-	PORT MAP(oe=>(one),
-		y=>(zero),
-		fb=>(\I2C_Brain:tmpFB_0__scl_net_0\),
-		analog=>(open),
-		io=>Net_45,
-		siovref=>(\I2C_Brain:tmpSIOVREF__scl_net_0\),
-		annotation=>(open),
-		in_clock=>zero,
-		in_clock_en=>one,
-		in_reset=>zero,
-		out_clock=>zero,
-		out_clock_en=>one,
-		out_reset=>zero,
-		interrupt=>\I2C_Brain:tmpINTERRUPT_0__scl_net_0\);
-\I2C_Brain:SCB_IRQ\:cy_isr_v1_0
-	GENERIC MAP(int_type=>"10",
-		is_nmi=>'0')
-	PORT MAP(int_signal=>Net_29);
-\I2C_Brain:SCB\:cy_m0s8_scb_v2_0
-	GENERIC MAP(cy_registers=>"",
-		scb_mode=>0)
-	PORT MAP(clock=>\I2C_Brain:Net_847\,
-		interrupt=>Net_29,
-		rx=>zero,
-		tx=>\I2C_Brain:tx_wire\,
-		cts=>zero,
-		rts=>\I2C_Brain:rts_wire\,
-		mosi_m=>\I2C_Brain:mosi_m_wire\,
-		miso_m=>zero,
-		select_m=>(\I2C_Brain:select_m_wire_3\, \I2C_Brain:select_m_wire_2\, \I2C_Brain:select_m_wire_1\, \I2C_Brain:select_m_wire_0\),
-		sclk_m=>\I2C_Brain:sclk_m_wire\,
-		mosi_s=>zero,
-		miso_s=>\I2C_Brain:miso_s_wire\,
-		select_s=>zero,
-		sclk_s=>zero,
-		scl=>Net_45,
-		sda=>Net_46,
-		tx_req=>Net_47,
-		rx_req=>Net_38);
-\Jetty:SCBCLK\:cy_clock_v1_0
-	GENERIC MAP(cy_registers=>"",
-		id=>"a47cde1a-63fb-4cae-b828-e88a2eb61d6f/2dc2d7a8-ce2b-43c7-af4a-821c8cd73ccf",
-		source_clock_id=>"",
-		divisor=>0,
-		period=>"625000000",
-		is_direct=>'0',
-		is_digital=>'0')
-	PORT MAP(clock_out=>\Jetty:Net_847\,
-		dig_domain_out=>open);
-\Jetty:sda\:cy_psoc3_pins_v1_10
-	GENERIC MAP(id=>"a47cde1a-63fb-4cae-b828-e88a2eb61d6f/5382e105-1382-4a2e-b9f4-3bb2feba71e0",
-		drive_mode=>"100",
-		ibuf_enabled=>"1",
-		init_dr_st=>"1",
-		input_sync=>"0",
-		input_clk_en=>'0',
-		input_sync_mode=>"0",
-		intr_mode=>"00",
-		invert_in_clock=>'0',
-		invert_in_clock_en=>'0',
-		invert_in_reset=>'0',
-		invert_out_clock=>'0',
-		invert_out_clock_en=>'0',
-		invert_out_reset=>'0',
-		io_voltage=>"",
-		layout_mode=>"CONTIGUOUS",
-		output_conn=>"0",
-		output_sync=>"0",
-		output_clk_en=>'0',
-		output_mode=>"0",
-		output_reset=>'0',
-		output_clock_mode=>"0",
-		oe_sync=>"0",
-		oe_conn=>"0",
-		oe_reset=>'0',
-		pin_aliases=>"",
-		pin_mode=>"B",
-		por_state=>4,
-		sio_group_cnt=>0,
-		sio_hifreq=>"00000000",
-		sio_hyst=>"1",
-		sio_ibuf=>"00000000",
-		sio_info=>"00",
-		sio_obuf=>"00000000",
-		sio_refsel=>"00000000",
-		sio_vtrip=>"00000000",
-		sio_vohsel=>"00000000",
-		slew_rate=>"0",
-		spanning=>'0',
-		sw_only=>'0',
-		vtrip=>"00",
-		width=>1,
-		port_alias_required=>'0',
-		port_alias_group=>"",
-		use_annotation=>"0",
-		pa_in_clock=>-1,
-		pa_in_clock_en=>-1,
-		pa_in_reset=>-1,
-		pa_out_clock=>-1,
-		pa_out_clock_en=>-1,
-		pa_out_reset=>-1,
-		ovt_needed=>"0",
-		ovt_slew_control=>"00",
-		ovt_hyst_trim=>"0",
-		input_buffer_sel=>"00")
-	PORT MAP(oe=>(one),
-		y=>(zero),
-		fb=>(\Jetty:tmpFB_0__sda_net_0\),
-		analog=>(open),
-		io=>Net_68,
-		siovref=>(\Jetty:tmpSIOVREF__sda_net_0\),
-		annotation=>(open),
-		in_clock=>zero,
-		in_clock_en=>one,
-		in_reset=>zero,
-		out_clock=>zero,
-		out_clock_en=>one,
-		out_reset=>zero,
-		interrupt=>\Jetty:tmpINTERRUPT_0__sda_net_0\);
-\Jetty:scl\:cy_psoc3_pins_v1_10
-	GENERIC MAP(id=>"a47cde1a-63fb-4cae-b828-e88a2eb61d6f/22863ebe-a37b-476f-b252-6e49a8c00b12",
-		drive_mode=>"100",
-		ibuf_enabled=>"1",
-		init_dr_st=>"1",
-		input_sync=>"0",
-		input_clk_en=>'0',
-		input_sync_mode=>"0",
-		intr_mode=>"00",
-		invert_in_clock=>'0',
-		invert_in_clock_en=>'0',
-		invert_in_reset=>'0',
-		invert_out_clock=>'0',
-		invert_out_clock_en=>'0',
-		invert_out_reset=>'0',
-		io_voltage=>"",
-		layout_mode=>"CONTIGUOUS",
-		output_conn=>"0",
-		output_sync=>"0",
-		output_clk_en=>'0',
-		output_mode=>"0",
-		output_reset=>'0',
-		output_clock_mode=>"0",
-		oe_sync=>"0",
-		oe_conn=>"0",
-		oe_reset=>'0',
-		pin_aliases=>"",
-		pin_mode=>"B",
-		por_state=>4,
-		sio_group_cnt=>0,
-		sio_hifreq=>"00000000",
-		sio_hyst=>"1",
-		sio_ibuf=>"00000000",
-		sio_info=>"00",
-		sio_obuf=>"00000000",
-		sio_refsel=>"00000000",
-		sio_vtrip=>"00000000",
-		sio_vohsel=>"00000000",
-		slew_rate=>"0",
-		spanning=>'0',
-		sw_only=>'0',
-		vtrip=>"00",
-		width=>1,
-		port_alias_required=>'0',
-		port_alias_group=>"",
-		use_annotation=>"0",
-		pa_in_clock=>-1,
-		pa_in_clock_en=>-1,
-		pa_in_reset=>-1,
-		pa_out_clock=>-1,
-		pa_out_clock_en=>-1,
-		pa_out_reset=>-1,
-		ovt_needed=>"0",
-		ovt_slew_control=>"00",
-		ovt_hyst_trim=>"0",
-		input_buffer_sel=>"00")
-	PORT MAP(oe=>(one),
-		y=>(zero),
-		fb=>(\Jetty:tmpFB_0__scl_net_0\),
-		analog=>(open),
-		io=>Net_67,
-		siovref=>(\Jetty:tmpSIOVREF__scl_net_0\),
-		annotation=>(open),
-		in_clock=>zero,
-		in_clock_en=>one,
-		in_reset=>zero,
-		out_clock=>zero,
-		out_clock_en=>one,
-		out_reset=>zero,
-		interrupt=>\Jetty:tmpINTERRUPT_0__scl_net_0\);
-\Jetty:SCB_IRQ\:cy_isr_v1_0
-	GENERIC MAP(int_type=>"10",
-		is_nmi=>'0')
-	PORT MAP(int_signal=>Net_51);
-\Jetty:SCB\:cy_m0s8_scb_v2_0
-	GENERIC MAP(cy_registers=>"",
-		scb_mode=>0)
-	PORT MAP(clock=>\Jetty:Net_847\,
-		interrupt=>Net_51,
-		rx=>zero,
-		tx=>\Jetty:tx_wire\,
-		cts=>zero,
-		rts=>\Jetty:rts_wire\,
-		mosi_m=>\Jetty:mosi_m_wire\,
-		miso_m=>zero,
-		select_m=>(\Jetty:select_m_wire_3\, \Jetty:select_m_wire_2\, \Jetty:select_m_wire_1\, \Jetty:select_m_wire_0\),
-		sclk_m=>\Jetty:sclk_m_wire\,
-		mosi_s=>zero,
-		miso_s=>\Jetty:miso_s_wire\,
-		select_s=>zero,
-		sclk_s=>zero,
-		scl=>Net_67,
-		sda=>Net_68,
-		tx_req=>Net_69,
-		rx_req=>Net_60);
+		scl=>Net_220,
+		sda=>Net_221,
+		tx_req=>Net_222,
+		rx_req=>Net_213);
 \DBG_UART:SCBCLK\:cy_clock_v1_0
 	GENERIC MAP(cy_registers=>"",
 		id=>"43ec2fa1-bf22-4b71-9477-b6ca7b97f0b0/2dc2d7a8-ce2b-43c7-af4a-821c8cd73ccf",
@@ -881,7 +441,7 @@ one <=  ('1') ;
 	GENERIC MAP(cy_registers=>"",
 		scb_mode=>2)
 	PORT MAP(clock=>\DBG_UART:Net_847\,
-		interrupt=>Net_75,
+		interrupt=>Net_248,
 		rx=>\DBG_UART:rx_wire\,
 		tx=>\DBG_UART:tx_wire\,
 		cts=>zero,
@@ -894,9 +454,9 @@ one <=  ('1') ;
 		miso_s=>\DBG_UART:miso_s_wire\,
 		select_s=>zero,
 		sclk_s=>zero,
-		scl=>Net_91,
-		sda=>Net_92,
-		tx_req=>Net_93,
-		rx_req=>Net_84);
+		scl=>Net_264,
+		sda=>Net_265,
+		tx_req=>Net_266,
+		rx_req=>Net_257);
 
 END R_T_L;

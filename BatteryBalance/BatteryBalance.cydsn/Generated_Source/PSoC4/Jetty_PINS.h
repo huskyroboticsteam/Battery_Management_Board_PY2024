@@ -32,8 +32,8 @@
 #define Jetty_REMOVE_RX_WAKE_SCL_MOSI_PIN  (1u)
 #define Jetty_REMOVE_RX_SCL_MOSI_PIN      (1u)
 #define Jetty_REMOVE_TX_SDA_MISO_PIN      (1u)
-#define Jetty_REMOVE_CTS_SCLK_PIN      (1u)
-#define Jetty_REMOVE_RTS_SS0_PIN      (1u)
+#define Jetty_REMOVE_SCLK_PIN      (1u)
+#define Jetty_REMOVE_SS0_PIN      (1u)
 #define Jetty_REMOVE_SS1_PIN                 (1u)
 #define Jetty_REMOVE_SS2_PIN                 (1u)
 #define Jetty_REMOVE_SS3_PIN                 (1u)
@@ -62,8 +62,8 @@
 #define Jetty_RX_WAKE_SCL_MOSI_PIN (0u == Jetty_REMOVE_RX_WAKE_SCL_MOSI_PIN)
 #define Jetty_RX_SCL_MOSI_PIN     (0u == Jetty_REMOVE_RX_SCL_MOSI_PIN)
 #define Jetty_TX_SDA_MISO_PIN     (0u == Jetty_REMOVE_TX_SDA_MISO_PIN)
-#define Jetty_CTS_SCLK_PIN     (0u == Jetty_REMOVE_CTS_SCLK_PIN)
-#define Jetty_RTS_SS0_PIN     (0u == Jetty_REMOVE_RTS_SS0_PIN)
+#define Jetty_SCLK_PIN     (0u == Jetty_REMOVE_SCLK_PIN)
+#define Jetty_SS0_PIN     (0u == Jetty_REMOVE_SS0_PIN)
 #define Jetty_SS1_PIN                (0u == Jetty_REMOVE_SS1_PIN)
 #define Jetty_SS2_PIN                (0u == Jetty_REMOVE_SS2_PIN)
 #define Jetty_SS3_PIN                (0u == Jetty_REMOVE_SS3_PIN)
@@ -105,13 +105,13 @@
     #include "Jetty_uart_tx_i2c_sda_spi_miso.h"
 #endif /* (Jetty_TX_SDA_MISO) */
 
-#if (Jetty_CTS_SCLK_PIN)
-    #include "Jetty_uart_cts_spi_sclk.h"
-#endif /* (Jetty_CTS_SCLK) */
+#if (Jetty_SCLK_PIN)
+    #include "Jetty_spi_sclk.h"
+#endif /* (Jetty_SCLK) */
 
-#if (Jetty_RTS_SS0_PIN)
-    #include "Jetty_uart_rts_spi_ss0.h"
-#endif /* (Jetty_RTS_SS0_PIN) */
+#if (Jetty_SS0_PIN)
+    #include "Jetty_spi_ss0.h"
+#endif /* (Jetty_SS0_PIN) */
 
 #if (Jetty_SS1_PIN)
     #include "Jetty_spi_ss1.h"
@@ -245,31 +245,31 @@
     #define Jetty_TX_SDA_MISO_HSIOM_SEL_UART  (Jetty_uart_tx_i2c_sda_spi_miso__0__HSIOM_UART)
 #endif /* (Jetty_TX_SDA_MISO_PIN) */
 
-#if (Jetty_CTS_SCLK_PIN)
-    #define Jetty_CTS_SCLK_HSIOM_REG   (*(reg32 *) Jetty_uart_cts_spi_sclk__0__HSIOM)
-    #define Jetty_CTS_SCLK_HSIOM_PTR   ( (reg32 *) Jetty_uart_cts_spi_sclk__0__HSIOM)
+#if (Jetty_SCLK_PIN)
+    #define Jetty_SCLK_HSIOM_REG   (*(reg32 *) Jetty_spi_sclk__0__HSIOM)
+    #define Jetty_SCLK_HSIOM_PTR   ( (reg32 *) Jetty_spi_sclk__0__HSIOM)
     
-    #define Jetty_CTS_SCLK_HSIOM_MASK      (Jetty_uart_cts_spi_sclk__0__HSIOM_MASK)
-    #define Jetty_CTS_SCLK_HSIOM_POS       (Jetty_uart_cts_spi_sclk__0__HSIOM_SHIFT)
-    #define Jetty_CTS_SCLK_HSIOM_SEL_GPIO  (Jetty_uart_cts_spi_sclk__0__HSIOM_GPIO)
-    #define Jetty_CTS_SCLK_HSIOM_SEL_I2C   (Jetty_uart_cts_spi_sclk__0__HSIOM_I2C)
-    #define Jetty_CTS_SCLK_HSIOM_SEL_SPI   (Jetty_uart_cts_spi_sclk__0__HSIOM_SPI)
-    #define Jetty_CTS_SCLK_HSIOM_SEL_UART  (Jetty_uart_cts_spi_sclk__0__HSIOM_UART)
-#endif /* (Jetty_CTS_SCLK_PIN) */
+    #define Jetty_SCLK_HSIOM_MASK      (Jetty_spi_sclk__0__HSIOM_MASK)
+    #define Jetty_SCLK_HSIOM_POS       (Jetty_spi_sclk__0__HSIOM_SHIFT)
+    #define Jetty_SCLK_HSIOM_SEL_GPIO  (Jetty_spi_sclk__0__HSIOM_GPIO)
+    #define Jetty_SCLK_HSIOM_SEL_I2C   (Jetty_spi_sclk__0__HSIOM_I2C)
+    #define Jetty_SCLK_HSIOM_SEL_SPI   (Jetty_spi_sclk__0__HSIOM_SPI)
+    #define Jetty_SCLK_HSIOM_SEL_UART  (Jetty_spi_sclk__0__HSIOM_UART)
+#endif /* (Jetty_SCLK_PIN) */
 
-#if (Jetty_RTS_SS0_PIN)
-    #define Jetty_RTS_SS0_HSIOM_REG   (*(reg32 *) Jetty_uart_rts_spi_ss0__0__HSIOM)
-    #define Jetty_RTS_SS0_HSIOM_PTR   ( (reg32 *) Jetty_uart_rts_spi_ss0__0__HSIOM)
+#if (Jetty_SS0_PIN)
+    #define Jetty_SS0_HSIOM_REG   (*(reg32 *) Jetty_spi_ss0__0__HSIOM)
+    #define Jetty_SS0_HSIOM_PTR   ( (reg32 *) Jetty_spi_ss0__0__HSIOM)
     
-    #define Jetty_RTS_SS0_HSIOM_MASK      (Jetty_uart_rts_spi_ss0__0__HSIOM_MASK)
-    #define Jetty_RTS_SS0_HSIOM_POS       (Jetty_uart_rts_spi_ss0__0__HSIOM_SHIFT)
-    #define Jetty_RTS_SS0_HSIOM_SEL_GPIO  (Jetty_uart_rts_spi_ss0__0__HSIOM_GPIO)
-    #define Jetty_RTS_SS0_HSIOM_SEL_I2C   (Jetty_uart_rts_spi_ss0__0__HSIOM_I2C)
-    #define Jetty_RTS_SS0_HSIOM_SEL_SPI   (Jetty_uart_rts_spi_ss0__0__HSIOM_SPI)
+    #define Jetty_SS0_HSIOM_MASK      (Jetty_spi_ss0__0__HSIOM_MASK)
+    #define Jetty_SS0_HSIOM_POS       (Jetty_spi_ss0__0__HSIOM_SHIFT)
+    #define Jetty_SS0_HSIOM_SEL_GPIO  (Jetty_spi_ss0__0__HSIOM_GPIO)
+    #define Jetty_SS0_HSIOM_SEL_I2C   (Jetty_spi_ss0__0__HSIOM_I2C)
+    #define Jetty_SS0_HSIOM_SEL_SPI   (Jetty_spi_ss0__0__HSIOM_SPI)
 #if !(Jetty_CY_SCBIP_V0 || Jetty_CY_SCBIP_V1)
-    #define Jetty_RTS_SS0_HSIOM_SEL_UART  (Jetty_uart_rts_spi_ss0__0__HSIOM_UART)
+    #define Jetty_SS0_HSIOM_SEL_UART  (Jetty_spi_ss0__0__HSIOM_UART)
 #endif /* !(Jetty_CY_SCBIP_V0 || Jetty_CY_SCBIP_V1) */
-#endif /* (Jetty_RTS_SS0_PIN) */
+#endif /* (Jetty_SS0_PIN) */
 
 #if (Jetty_SS1_PIN)
     #define Jetty_SS1_HSIOM_REG  (*(reg32 *) Jetty_spi_ss1__0__HSIOM)
@@ -511,8 +511,8 @@
 #define Jetty_RX_WAKE_SCL_MOSI_PIN_INDEX   (0u)
 #define Jetty_RX_SCL_MOSI_PIN_INDEX       (0u)
 #define Jetty_TX_SDA_MISO_PIN_INDEX       (1u)
-#define Jetty_CTS_SCLK_PIN_INDEX       (2u)
-#define Jetty_RTS_SS0_PIN_INDEX       (3u)
+#define Jetty_SCLK_PIN_INDEX       (2u)
+#define Jetty_SS0_PIN_INDEX       (3u)
 #define Jetty_SS1_PIN_INDEX                  (4u)
 #define Jetty_SS2_PIN_INDEX                  (5u)
 #define Jetty_SS3_PIN_INDEX                  (6u)
@@ -521,8 +521,8 @@
 #define Jetty_RX_WAKE_SCL_MOSI_PIN_MASK ((uint32) 0x01u << Jetty_RX_WAKE_SCL_MOSI_PIN_INDEX)
 #define Jetty_RX_SCL_MOSI_PIN_MASK     ((uint32) 0x01u << Jetty_RX_SCL_MOSI_PIN_INDEX)
 #define Jetty_TX_SDA_MISO_PIN_MASK     ((uint32) 0x01u << Jetty_TX_SDA_MISO_PIN_INDEX)
-#define Jetty_CTS_SCLK_PIN_MASK     ((uint32) 0x01u << Jetty_CTS_SCLK_PIN_INDEX)
-#define Jetty_RTS_SS0_PIN_MASK     ((uint32) 0x01u << Jetty_RTS_SS0_PIN_INDEX)
+#define Jetty_SCLK_PIN_MASK     ((uint32) 0x01u << Jetty_SCLK_PIN_INDEX)
+#define Jetty_SS0_PIN_MASK     ((uint32) 0x01u << Jetty_SS0_PIN_INDEX)
 #define Jetty_SS1_PIN_MASK                ((uint32) 0x01u << Jetty_SS1_PIN_INDEX)
 #define Jetty_SS2_PIN_MASK                ((uint32) 0x01u << Jetty_SS2_PIN_INDEX)
 #define Jetty_SS3_PIN_MASK                ((uint32) 0x01u << Jetty_SS3_PIN_INDEX)
@@ -556,12 +556,12 @@
                                                    Jetty_uart_tx_i2c_sda_spi_miso_SHIFT))
 #endif /* (Jetty_TX_SDA_MISO_PIN) */
 
-#if (Jetty_RTS_SS0_PIN)
-    #define Jetty_CHECK_RTS_SS0_PIN_USED \
+#if (Jetty_SS0_PIN)
+    #define Jetty_CHECK_SS0_PIN_USED \
                 (Jetty_PIN_DM_ALG_HIZ != \
-                    Jetty_GET_P4_PIN_DM(Jetty_uart_rts_spi_ss0_PC, \
-                                                   Jetty_uart_rts_spi_ss0_SHIFT))
-#endif /* (Jetty_RTS_SS0_PIN) */
+                    Jetty_GET_P4_PIN_DM(Jetty_spi_ss0_PC, \
+                                                   Jetty_spi_ss0_SHIFT))
+#endif /* (Jetty_SS0_PIN) */
 
 /* Set bits-mask in register */
 #define Jetty_SET_REGISTER_BITS(reg, mask, pos, mode) \
@@ -667,10 +667,10 @@
 #define Jetty_REMOVE_MOSI_SCL_RX_PIN         Jetty_REMOVE_RX_SCL_MOSI_PIN
 #define Jetty_REMOVE_MISO_SDA_TX_PIN         Jetty_REMOVE_TX_SDA_MISO_PIN
 #ifndef Jetty_REMOVE_SCLK_PIN
-#define Jetty_REMOVE_SCLK_PIN                Jetty_REMOVE_CTS_SCLK_PIN
+#define Jetty_REMOVE_SCLK_PIN                Jetty_REMOVE_SCLK_PIN
 #endif /* Jetty_REMOVE_SCLK_PIN */
 #ifndef Jetty_REMOVE_SS0_PIN
-#define Jetty_REMOVE_SS0_PIN                 Jetty_REMOVE_RTS_SS0_PIN
+#define Jetty_REMOVE_SS0_PIN                 Jetty_REMOVE_SS0_PIN
 #endif /* Jetty_REMOVE_SS0_PIN */
 
 /* Unconfigured pins */
@@ -678,10 +678,10 @@
 #define Jetty_MOSI_SCL_RX_PIN        Jetty_RX_SCL_MOSI_PIN
 #define Jetty_MISO_SDA_TX_PIN        Jetty_TX_SDA_MISO_PIN
 #ifndef Jetty_SCLK_PIN
-#define Jetty_SCLK_PIN               Jetty_CTS_SCLK_PIN
+#define Jetty_SCLK_PIN               Jetty_SCLK_PIN
 #endif /* Jetty_SCLK_PIN */
 #ifndef Jetty_SS0_PIN
-#define Jetty_SS0_PIN                Jetty_RTS_SS0_PIN
+#define Jetty_SS0_PIN                Jetty_SS0_PIN
 #endif /* Jetty_SS0_PIN */
 
 #if (Jetty_MOSI_SCL_RX_WAKE_PIN)
@@ -713,19 +713,19 @@
 
 #if (Jetty_SCLK_PIN)
     #ifndef Jetty_SCLK_HSIOM_REG
-    #define Jetty_SCLK_HSIOM_REG     Jetty_CTS_SCLK_HSIOM_REG
-    #define Jetty_SCLK_HSIOM_PTR     Jetty_CTS_SCLK_HSIOM_PTR
-    #define Jetty_SCLK_HSIOM_MASK    Jetty_CTS_SCLK_HSIOM_MASK
-    #define Jetty_SCLK_HSIOM_POS     Jetty_CTS_SCLK_HSIOM_POS
+    #define Jetty_SCLK_HSIOM_REG     Jetty_SCLK_HSIOM_REG
+    #define Jetty_SCLK_HSIOM_PTR     Jetty_SCLK_HSIOM_PTR
+    #define Jetty_SCLK_HSIOM_MASK    Jetty_SCLK_HSIOM_MASK
+    #define Jetty_SCLK_HSIOM_POS     Jetty_SCLK_HSIOM_POS
     #endif /* Jetty_SCLK_HSIOM_REG */
 #endif /* (Jetty_SCLK_PIN) */
 
 #if (Jetty_SS0_PIN)
     #ifndef Jetty_SS0_HSIOM_REG
-    #define Jetty_SS0_HSIOM_REG      Jetty_RTS_SS0_HSIOM_REG
-    #define Jetty_SS0_HSIOM_PTR      Jetty_RTS_SS0_HSIOM_PTR
-    #define Jetty_SS0_HSIOM_MASK     Jetty_RTS_SS0_HSIOM_MASK
-    #define Jetty_SS0_HSIOM_POS      Jetty_RTS_SS0_HSIOM_POS
+    #define Jetty_SS0_HSIOM_REG      Jetty_SS0_HSIOM_REG
+    #define Jetty_SS0_HSIOM_PTR      Jetty_SS0_HSIOM_PTR
+    #define Jetty_SS0_HSIOM_MASK     Jetty_SS0_HSIOM_MASK
+    #define Jetty_SS0_HSIOM_POS      Jetty_SS0_HSIOM_POS
     #endif /* Jetty_SS0_HSIOM_REG */
 #endif /* (Jetty_SS0_PIN) */
 
@@ -733,20 +733,20 @@
 #define Jetty_MOSI_SCL_RX_PIN_INDEX      Jetty_RX_SCL_MOSI_PIN_INDEX
 #define Jetty_MISO_SDA_TX_PIN_INDEX      Jetty_TX_SDA_MISO_PIN_INDEX
 #ifndef Jetty_SCLK_PIN_INDEX
-#define Jetty_SCLK_PIN_INDEX             Jetty_CTS_SCLK_PIN_INDEX
+#define Jetty_SCLK_PIN_INDEX             Jetty_SCLK_PIN_INDEX
 #endif /* Jetty_SCLK_PIN_INDEX */
 #ifndef Jetty_SS0_PIN_INDEX
-#define Jetty_SS0_PIN_INDEX              Jetty_RTS_SS0_PIN_INDEX
+#define Jetty_SS0_PIN_INDEX              Jetty_SS0_PIN_INDEX
 #endif /* Jetty_SS0_PIN_INDEX */
 
 #define Jetty_MOSI_SCL_RX_WAKE_PIN_MASK Jetty_RX_WAKE_SCL_MOSI_PIN_MASK
 #define Jetty_MOSI_SCL_RX_PIN_MASK      Jetty_RX_SCL_MOSI_PIN_MASK
 #define Jetty_MISO_SDA_TX_PIN_MASK      Jetty_TX_SDA_MISO_PIN_MASK
 #ifndef Jetty_SCLK_PIN_MASK
-#define Jetty_SCLK_PIN_MASK             Jetty_CTS_SCLK_PIN_MASK
+#define Jetty_SCLK_PIN_MASK             Jetty_SCLK_PIN_MASK
 #endif /* Jetty_SCLK_PIN_MASK */
 #ifndef Jetty_SS0_PIN_MASK
-#define Jetty_SS0_PIN_MASK              Jetty_RTS_SS0_PIN_MASK
+#define Jetty_SS0_PIN_MASK              Jetty_SS0_PIN_MASK
 #endif /* Jetty_SS0_PIN_MASK */
 
 #endif /* (CY_SCB_PINS_Jetty_H) */

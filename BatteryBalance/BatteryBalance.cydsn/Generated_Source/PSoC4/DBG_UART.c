@@ -539,22 +539,22 @@ static void DBG_UART_ScbModeStop(void)
             hsiomSel[DBG_UART_TX_SDA_MISO_PIN_INDEX] = DBG_UART_TX_SDA_MISO_HSIOM_SEL_SPI;
         #endif /* (DBG_UART_TX_SDA_MISO_PIN) */
         
-        #if (DBG_UART_CTS_SCLK_PIN)
-            hsiomSel[DBG_UART_CTS_SCLK_PIN_INDEX] = DBG_UART_CTS_SCLK_HSIOM_SEL_SPI;
-        #endif /* (DBG_UART_CTS_SCLK_PIN) */
+        #if (DBG_UART_SCLK_PIN)
+            hsiomSel[DBG_UART_SCLK_PIN_INDEX] = DBG_UART_SCLK_HSIOM_SEL_SPI;
+        #endif /* (DBG_UART_SCLK_PIN) */
 
             if (DBG_UART_SPI_SLAVE == subMode)
             {
                 /* Slave */
                 pinsDm[DBG_UART_RX_SCL_MOSI_PIN_INDEX] = DBG_UART_PIN_DM_DIG_HIZ;
                 pinsDm[DBG_UART_TX_SDA_MISO_PIN_INDEX] = DBG_UART_PIN_DM_STRONG;
-                pinsDm[DBG_UART_CTS_SCLK_PIN_INDEX] = DBG_UART_PIN_DM_DIG_HIZ;
+                pinsDm[DBG_UART_SCLK_PIN_INDEX] = DBG_UART_PIN_DM_DIG_HIZ;
 
-            #if (DBG_UART_RTS_SS0_PIN)
+            #if (DBG_UART_SS0_PIN)
                 /* Only SS0 is valid choice for Slave */
-                hsiomSel[DBG_UART_RTS_SS0_PIN_INDEX] = DBG_UART_RTS_SS0_HSIOM_SEL_SPI;
-                pinsDm  [DBG_UART_RTS_SS0_PIN_INDEX] = DBG_UART_PIN_DM_DIG_HIZ;
-            #endif /* (DBG_UART_RTS_SS0_PIN) */
+                hsiomSel[DBG_UART_SS0_PIN_INDEX] = DBG_UART_SS0_HSIOM_SEL_SPI;
+                pinsDm  [DBG_UART_SS0_PIN_INDEX] = DBG_UART_PIN_DM_DIG_HIZ;
+            #endif /* (DBG_UART_SS0_PIN) */
 
             #if (DBG_UART_TX_SDA_MISO_PIN)
                 /* Disable input buffer */
@@ -566,13 +566,13 @@ static void DBG_UART_ScbModeStop(void)
                 /* (Master) */
                 pinsDm[DBG_UART_RX_SCL_MOSI_PIN_INDEX] = DBG_UART_PIN_DM_STRONG;
                 pinsDm[DBG_UART_TX_SDA_MISO_PIN_INDEX] = DBG_UART_PIN_DM_DIG_HIZ;
-                pinsDm[DBG_UART_CTS_SCLK_PIN_INDEX] = DBG_UART_PIN_DM_STRONG;
+                pinsDm[DBG_UART_SCLK_PIN_INDEX] = DBG_UART_PIN_DM_STRONG;
 
-            #if (DBG_UART_RTS_SS0_PIN)
-                hsiomSel [DBG_UART_RTS_SS0_PIN_INDEX] = DBG_UART_RTS_SS0_HSIOM_SEL_SPI;
-                pinsDm   [DBG_UART_RTS_SS0_PIN_INDEX] = DBG_UART_PIN_DM_STRONG;
-                pinsInBuf |= DBG_UART_RTS_SS0_PIN_MASK;
-            #endif /* (DBG_UART_RTS_SS0_PIN) */
+            #if (DBG_UART_SS0_PIN)
+                hsiomSel [DBG_UART_SS0_PIN_INDEX] = DBG_UART_SS0_HSIOM_SEL_SPI;
+                pinsDm   [DBG_UART_SS0_PIN_INDEX] = DBG_UART_PIN_DM_STRONG;
+                pinsInBuf |= DBG_UART_SS0_PIN_MASK;
+            #endif /* (DBG_UART_SS0_PIN) */
 
             #if (DBG_UART_SS1_PIN)
                 hsiomSel [DBG_UART_SS1_PIN_INDEX] = DBG_UART_SS1_HSIOM_SEL_SPI;
@@ -600,9 +600,9 @@ static void DBG_UART_ScbModeStop(void)
             #else
             #endif /* (DBG_UART_RX_SCL_MOSI_PIN) */
 
-            #if (DBG_UART_CTS_SCLK_PIN)
-                pinsInBuf |= DBG_UART_CTS_SCLK_PIN_MASK;
-            #endif /* (DBG_UART_CTS_SCLK_PIN) */
+            #if (DBG_UART_SCLK_PIN)
+                pinsInBuf |= DBG_UART_SCLK_PIN_MASK;
+            #endif /* (DBG_UART_SCLK_PIN) */
             }
         }
         else /* UART */
@@ -646,22 +646,22 @@ static void DBG_UART_ScbModeStop(void)
                     if (0u != (DBG_UART_UART_CTS_PIN_ENABLE & uartEnableMask))
                     {
                         /* CTS input is multiplexed with SCLK */
-                    #if (DBG_UART_CTS_SCLK_PIN)
-                        hsiomSel[DBG_UART_CTS_SCLK_PIN_INDEX] = DBG_UART_CTS_SCLK_HSIOM_SEL_UART;
-                        pinsDm  [DBG_UART_CTS_SCLK_PIN_INDEX] = DBG_UART_PIN_DM_DIG_HIZ;
-                    #endif /* (DBG_UART_CTS_SCLK_PIN) */
+                    #if (DBG_UART_SCLK_PIN)
+                        hsiomSel[DBG_UART_SCLK_PIN_INDEX] = DBG_UART_SCLK_HSIOM_SEL_UART;
+                        pinsDm  [DBG_UART_SCLK_PIN_INDEX] = DBG_UART_PIN_DM_DIG_HIZ;
+                    #endif /* (DBG_UART_SCLK_PIN) */
                     }
 
                     if (0u != (DBG_UART_UART_RTS_PIN_ENABLE & uartEnableMask))
                     {
                         /* RTS output is multiplexed with SS0 */
-                    #if (DBG_UART_RTS_SS0_PIN)
-                        hsiomSel[DBG_UART_RTS_SS0_PIN_INDEX] = DBG_UART_RTS_SS0_HSIOM_SEL_UART;
-                        pinsDm  [DBG_UART_RTS_SS0_PIN_INDEX] = DBG_UART_PIN_DM_STRONG;
+                    #if (DBG_UART_SS0_PIN)
+                        hsiomSel[DBG_UART_SS0_PIN_INDEX] = DBG_UART_SS0_HSIOM_SEL_UART;
+                        pinsDm  [DBG_UART_SS0_PIN_INDEX] = DBG_UART_PIN_DM_STRONG;
                         
                         /* Disable input buffer */
-                        pinsInBuf |= DBG_UART_RTS_SS0_PIN_MASK;
-                    #endif /* (DBG_UART_RTS_SS0_PIN) */
+                        pinsInBuf |= DBG_UART_SS0_PIN_MASK;
+                    #endif /* (DBG_UART_SS0_PIN) */
                     }
                 }
             #endif /* !(DBG_UART_CY_SCBIP_V0 || DBG_UART_CY_SCBIP_V1) */
@@ -722,31 +722,31 @@ static void DBG_UART_ScbModeStop(void)
     #endif /* (!DBG_UART_CY_SCBIP_V1) */
     #endif /* (DBG_UART_RX_SCL_MOSI_PIN) */
 
-    #if (DBG_UART_CTS_SCLK_PIN)
-        DBG_UART_SET_HSIOM_SEL(DBG_UART_CTS_SCLK_HSIOM_REG,
-                                       DBG_UART_CTS_SCLK_HSIOM_MASK,
-                                       DBG_UART_CTS_SCLK_HSIOM_POS,
-                                       hsiomSel[DBG_UART_CTS_SCLK_PIN_INDEX]);
+    #if (DBG_UART_SCLK_PIN)
+        DBG_UART_SET_HSIOM_SEL(DBG_UART_SCLK_HSIOM_REG,
+                                       DBG_UART_SCLK_HSIOM_MASK,
+                                       DBG_UART_SCLK_HSIOM_POS,
+                                       hsiomSel[DBG_UART_SCLK_PIN_INDEX]);
 
-        DBG_UART_uart_cts_spi_sclk_SetDriveMode((uint8) pinsDm[DBG_UART_CTS_SCLK_PIN_INDEX]);
+        DBG_UART_spi_sclk_SetDriveMode((uint8) pinsDm[DBG_UART_SCLK_PIN_INDEX]);
 
-        DBG_UART_SET_INP_DIS(DBG_UART_uart_cts_spi_sclk_INP_DIS,
-                                     DBG_UART_uart_cts_spi_sclk_MASK,
-                                     (0u != (pinsInBuf & DBG_UART_CTS_SCLK_PIN_MASK)));
-    #endif /* (DBG_UART_CTS_SCLK_PIN) */
+        DBG_UART_SET_INP_DIS(DBG_UART_spi_sclk_INP_DIS,
+                                     DBG_UART_spi_sclk_MASK,
+                                     (0u != (pinsInBuf & DBG_UART_SCLK_PIN_MASK)));
+    #endif /* (DBG_UART_SCLK_PIN) */
 
-    #if (DBG_UART_RTS_SS0_PIN)
-        DBG_UART_SET_HSIOM_SEL(DBG_UART_RTS_SS0_HSIOM_REG,
-                                       DBG_UART_RTS_SS0_HSIOM_MASK,
-                                       DBG_UART_RTS_SS0_HSIOM_POS,
-                                       hsiomSel[DBG_UART_RTS_SS0_PIN_INDEX]);
+    #if (DBG_UART_SS0_PIN)
+        DBG_UART_SET_HSIOM_SEL(DBG_UART_SS0_HSIOM_REG,
+                                       DBG_UART_SS0_HSIOM_MASK,
+                                       DBG_UART_SS0_HSIOM_POS,
+                                       hsiomSel[DBG_UART_SS0_PIN_INDEX]);
 
-        DBG_UART_uart_rts_spi_ss0_SetDriveMode((uint8) pinsDm[DBG_UART_RTS_SS0_PIN_INDEX]);
+        DBG_UART_spi_ss0_SetDriveMode((uint8) pinsDm[DBG_UART_SS0_PIN_INDEX]);
 
-        DBG_UART_SET_INP_DIS(DBG_UART_uart_rts_spi_ss0_INP_DIS,
-                                     DBG_UART_uart_rts_spi_ss0_MASK,
-                                     (0u != (pinsInBuf & DBG_UART_RTS_SS0_PIN_MASK)));
-    #endif /* (DBG_UART_RTS_SS0_PIN) */
+        DBG_UART_SET_INP_DIS(DBG_UART_spi_ss0_INP_DIS,
+                                     DBG_UART_spi_ss0_MASK,
+                                     (0u != (pinsInBuf & DBG_UART_SS0_PIN_MASK)));
+    #endif /* (DBG_UART_SS0_PIN) */
 
     #if (DBG_UART_SS1_PIN)
         DBG_UART_SET_HSIOM_SEL(DBG_UART_SS1_HSIOM_REG,

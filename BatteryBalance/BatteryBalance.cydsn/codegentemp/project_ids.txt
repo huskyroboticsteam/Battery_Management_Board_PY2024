@@ -1,6 +1,8 @@
-C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\BatteryBalance.cyprj|7c304457-5b73-4215-b213-5a092628884e
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|2ec3d6ad-6463-43df-8136-8de4c59930e4
-C:\Users\tsien\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|4e9be6cd-354c-45ee-bffb-088da3a3c3b9
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|838f30c0-a452-44c8-a4c1-4583e1ceded4
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|e1e31027-2b9a-403e-9273-aa64676d0ed8
-C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|828479b4-ed62-4344-94d2-310a02aca765
+C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\BatteryBalance.cyprj|7ea125bb-db8d-4107-b089-f7b88930b344
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|77c6ed1b-1a08-4403-8969-427aad269518
+C:\Users\tsien\Documents\PSoC Creator\4.4\Downloads ( 4.4).cylib\Downloads ( 4.4).cyprj|bc76bf62-d9b5-4559-9229-f1e869271d7e
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|1f130ff5-9cfd-4084-ab12-f6a47ca80d9b
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|5ba66107-d2b9-45a2-8982-37c6de633026
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|a81cd6f3-dd25-4213-a884-e3bb4f2f2053
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\dev\psoc4\PSoC4AnalogDevice\psoc4arch.cydsn\psoc4arch.cyprj|b4526c08-b209-4dba-8bd1-acb8613ff0c6
+C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|3affc607-4a8e-4b7c-80ae-61e25608ea00

@@ -1,0 +1,929 @@
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccras0Ne.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m0
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 0
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"PortTemplate.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.InitCAN,"ax",%progbits
+  20              		.align	2
+  21              		.global	InitCAN
+  22              		.code	16
+  23              		.thumb_func
+  24              		.type	InitCAN, %function
+  25              	InitCAN:
+  26              	.LFB32:
+  27              		.file 1 "HindsightCAN\\PortFiles\\PortTemplate.c"
+   1:HindsightCAN\PortFiles/PortTemplate.c **** /*
+   2:HindsightCAN\PortFiles/PortTemplate.c ****  * Documentation: https://huskyroboticsteam.slite.com/app/channels/iU0BryG7M9/collections/aXvWTcIR6
+   3:HindsightCAN\PortFiles/PortTemplate.c ****  */
+   4:HindsightCAN\PortFiles/PortTemplate.c **** #if CHIP_TYPE == CHIP_TYPE_PSOC_CY8C4245AXI_483//Replace this with the chip you are porting
+   5:HindsightCAN\PortFiles/PortTemplate.c **** 
+   6:HindsightCAN\PortFiles/PortTemplate.c **** #include "../Port.h"
+   7:HindsightCAN\PortFiles/PortTemplate.c **** #include "project.h"
+   8:HindsightCAN\PortFiles/PortTemplate.c **** 
+   9:HindsightCAN\PortFiles/PortTemplate.c **** void InitCAN(int deviceGroup, int deviceAddress)
+  10:HindsightCAN\PortFiles/PortTemplate.c **** {
+  28              		.loc 1 10 0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              		@ link register save eliminated.
+  33              	.LVL0:
+  11:HindsightCAN\PortFiles/PortTemplate.c ****     // Implement hardware initialization of CAN
+  12:HindsightCAN\PortFiles/PortTemplate.c ****     // Including receive filters
+  13:HindsightCAN\PortFiles/PortTemplate.c **** }
+  34              		.loc 1 13 0
+  35              		@ sp needed
+  36 0000 7047     		bx	lr
+  37              		.cfi_endproc
+  38              	.LFE32:
+  39              		.size	InitCAN, .-InitCAN
+  40 0002 C046     		.section	.text.SendCANPacket,"ax",%progbits
+  41              		.align	2
+  42              		.global	SendCANPacket
+  43              		.code	16
+  44              		.thumb_func
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccras0Ne.s 			page 2
+
+
+  45              		.type	SendCANPacket, %function
+  46              	SendCANPacket:
+  47              	.LFB33:
+  14:HindsightCAN\PortFiles/PortTemplate.c **** int SendCANPacket(CANPacket *packetToSend)
+  15:HindsightCAN\PortFiles/PortTemplate.c **** {
+  48              		.loc 1 15 0
+  49              		.cfi_startproc
+  50              		@ args = 0, pretend = 0, frame = 0
+  51              		@ frame_needed = 0, uses_anonymous_args = 0
+  52              		@ link register save eliminated.
+  53              	.LVL1:
+  54              	.LVL2:
+  16:HindsightCAN\PortFiles/PortTemplate.c ****     //Implement sending/ queing to send packet
+  17:HindsightCAN\PortFiles/PortTemplate.c **** }
+  55              		.loc 1 17 0
+  56              		@ sp needed
+  57 0000 7047     		bx	lr
+  58              		.cfi_endproc
+  59              	.LFE33:
+  60              		.size	SendCANPacket, .-SendCANPacket
+  61 0002 C046     		.section	.text.PollAndReceiveCANPacket,"ax",%progbits
+  62              		.align	2
+  63              		.global	PollAndReceiveCANPacket
+  64              		.code	16
+  65              		.thumb_func
+  66              		.type	PollAndReceiveCANPacket, %function
+  67              	PollAndReceiveCANPacket:
+  68              	.LFB34:
+  18:HindsightCAN\PortFiles/PortTemplate.c **** int PollAndReceiveCANPacket(CANPacket *receivedPacket)
+  19:HindsightCAN\PortFiles/PortTemplate.c **** {
+  69              		.loc 1 19 0
+  70              		.cfi_startproc
+  71              		@ args = 0, pretend = 0, frame = 0
+  72              		@ frame_needed = 0, uses_anonymous_args = 0
+  73              		@ link register save eliminated.
+  74              	.LVL3:
+  75              	.LVL4:
+  20:HindsightCAN\PortFiles/PortTemplate.c ****     //Implement get next CAN packet from buffers/registers
+  21:HindsightCAN\PortFiles/PortTemplate.c **** }
+  76              		.loc 1 21 0
+  77              		@ sp needed
+  78 0000 7047     		bx	lr
+  79              		.cfi_endproc
+  80              	.LFE34:
+  81              		.size	PollAndReceiveCANPacket, .-PollAndReceiveCANPacket
+  82 0002 C046     		.section	.text.getLocalDeviceSerial,"ax",%progbits
+  83              		.align	2
+  84              		.global	getLocalDeviceSerial
+  85              		.code	16
+  86              		.thumb_func
+  87              		.type	getLocalDeviceSerial, %function
+  88              	getLocalDeviceSerial:
+  89              	.LFB35:
+  22:HindsightCAN\PortFiles/PortTemplate.c **** 
+  23:HindsightCAN\PortFiles/PortTemplate.c **** uint8_t getLocalDeviceSerial()
+  24:HindsightCAN\PortFiles/PortTemplate.c **** {
+  90              		.loc 1 24 0
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccras0Ne.s 			page 3
+
+
+  91              		.cfi_startproc
+  92              		@ args = 0, pretend = 0, frame = 0
+  93              		@ frame_needed = 0, uses_anonymous_args = 0
+  94              		@ link register save eliminated.
+  25:HindsightCAN\PortFiles/PortTemplate.c ****     //Reading DIP switches? Hard coded?
+  26:HindsightCAN\PortFiles/PortTemplate.c ****     //This might be board specific, rather than chip specific.
+  27:HindsightCAN\PortFiles/PortTemplate.c ****     return DEVICE_SERIAL_MOTOR_CHASSIS_FR; // example value (also used for testing)
+  28:HindsightCAN\PortFiles/PortTemplate.c **** }
+  95              		.loc 1 28 0
+  96 0000 0920     		movs	r0, #9
+  97              		@ sp needed
+  98 0002 7047     		bx	lr
+  99              		.cfi_endproc
+ 100              	.LFE35:
+ 101              		.size	getLocalDeviceSerial, .-getLocalDeviceSerial
+ 102              		.section	.text.getLocalDeviceGroup,"ax",%progbits
+ 103              		.align	2
+ 104              		.global	getLocalDeviceGroup
+ 105              		.code	16
+ 106              		.thumb_func
+ 107              		.type	getLocalDeviceGroup, %function
+ 108              	getLocalDeviceGroup:
+ 109              	.LFB36:
+  29:HindsightCAN\PortFiles/PortTemplate.c **** uint8_t getLocalDeviceGroup()
+  30:HindsightCAN\PortFiles/PortTemplate.c **** {
+ 110              		.loc 1 30 0
+ 111              		.cfi_startproc
+ 112              		@ args = 0, pretend = 0, frame = 0
+ 113              		@ frame_needed = 0, uses_anonymous_args = 0
+ 114              		@ link register save eliminated.
+  31:HindsightCAN\PortFiles/PortTemplate.c ****     //Definitely board specific.
+  32:HindsightCAN\PortFiles/PortTemplate.c ****     return DEVICE_GROUP_MOTOR_CONTROL; // example value (also used for testing)
+  33:HindsightCAN\PortFiles/PortTemplate.c **** }
+ 115              		.loc 1 33 0
+ 116 0000 0420     		movs	r0, #4
+ 117              		@ sp needed
+ 118 0002 7047     		bx	lr
+ 119              		.cfi_endproc
+ 120              	.LFE36:
+ 121              		.size	getLocalDeviceGroup, .-getLocalDeviceGroup
+ 122              		.section	.text.getChipType,"ax",%progbits
+ 123              		.align	2
+ 124              		.global	getChipType
+ 125              		.code	16
+ 126              		.thumb_func
+ 127              		.type	getChipType, %function
+ 128              	getChipType:
+ 129              	.LFB37:
+  34:HindsightCAN\PortFiles/PortTemplate.c **** 
+  35:HindsightCAN\PortFiles/PortTemplate.c **** uint8_t getChipType()
+  36:HindsightCAN\PortFiles/PortTemplate.c **** {
+ 130              		.loc 1 36 0
+ 131              		.cfi_startproc
+ 132              		@ args = 0, pretend = 0, frame = 0
+ 133              		@ frame_needed = 0, uses_anonymous_args = 0
+ 134              		@ link register save eliminated.
+  37:HindsightCAN\PortFiles/PortTemplate.c ****     // return CHIP_TYPE; 
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccras0Ne.s 			page 4
+
+
+  38:HindsightCAN\PortFiles/PortTemplate.c ****     return 0x05;
+  39:HindsightCAN\PortFiles/PortTemplate.c ****     //Should be same for all ports, just not sure where to put it.
+  40:HindsightCAN\PortFiles/PortTemplate.c **** }
+ 135              		.loc 1 40 0
+ 136 0000 0520     		movs	r0, #5
+ 137              		@ sp needed
+ 138 0002 7047     		bx	lr
+ 139              		.cfi_endproc
+ 140              	.LFE37:
+ 141              		.size	getChipType, .-getChipType
+ 142              		.text
+ 143              	.Letext0:
+ 144              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 145              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+ 146              		.file 4 "HindsightCAN\\PortFiles\\../CANPacket.h"
+ 147              		.section	.debug_info,"",%progbits
+ 148              	.Ldebug_info0:
+ 149 0000 C5010000 		.4byte	0x1c5
+ 150 0004 0400     		.2byte	0x4
+ 151 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 152 000a 04       		.byte	0x4
+ 153 000b 01       		.uleb128 0x1
+ 154 000c 60010000 		.4byte	.LASF29
+ 155 0010 0C       		.byte	0xc
+ 156 0011 36020000 		.4byte	.LASF30
+ 157 0015 8F000000 		.4byte	.LASF31
+ 158 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 159 001d 00000000 		.4byte	0
+ 160 0021 00000000 		.4byte	.Ldebug_line0
+ 161 0025 02       		.uleb128 0x2
+ 162 0026 01       		.byte	0x1
+ 163 0027 06       		.byte	0x6
+ 164 0028 85020000 		.4byte	.LASF0
+ 165 002c 03       		.uleb128 0x3
+ 166 002d 00000000 		.4byte	.LASF3
+ 167 0031 02       		.byte	0x2
+ 168 0032 1D       		.byte	0x1d
+ 169 0033 37000000 		.4byte	0x37
+ 170 0037 02       		.uleb128 0x2
+ 171 0038 01       		.byte	0x1
+ 172 0039 08       		.byte	0x8
+ 173 003a 5C000000 		.4byte	.LASF1
+ 174 003e 02       		.uleb128 0x2
+ 175 003f 02       		.byte	0x2
+ 176 0040 05       		.byte	0x5
+ 177 0041 14010000 		.4byte	.LASF2
+ 178 0045 03       		.uleb128 0x3
+ 179 0046 F3000000 		.4byte	.LASF4
+ 180 004a 02       		.byte	0x2
+ 181 004b 2B       		.byte	0x2b
+ 182 004c 50000000 		.4byte	0x50
+ 183 0050 02       		.uleb128 0x2
+ 184 0051 02       		.byte	0x2
+ 185 0052 07       		.byte	0x7
+ 186 0053 7C000000 		.4byte	.LASF5
+ 187 0057 02       		.uleb128 0x2
+ 188 0058 04       		.byte	0x4
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccras0Ne.s 			page 5
+
+
+ 189 0059 05       		.byte	0x5
+ 190 005a 70020000 		.4byte	.LASF6
+ 191 005e 02       		.uleb128 0x2
+ 192 005f 04       		.byte	0x4
+ 193 0060 07       		.byte	0x7
+ 194 0061 6A000000 		.4byte	.LASF7
+ 195 0065 02       		.uleb128 0x2
+ 196 0066 08       		.byte	0x8
+ 197 0067 05       		.byte	0x5
+ 198 0068 05020000 		.4byte	.LASF8
+ 199 006c 02       		.uleb128 0x2
+ 200 006d 08       		.byte	0x8
+ 201 006e 07       		.byte	0x7
+ 202 006f 41010000 		.4byte	.LASF9
+ 203 0073 04       		.uleb128 0x4
+ 204 0074 04       		.byte	0x4
+ 205 0075 05       		.byte	0x5
+ 206 0076 696E7400 		.ascii	"int\000"
+ 207 007a 02       		.uleb128 0x2
+ 208 007b 04       		.byte	0x4
+ 209 007c 07       		.byte	0x7
+ 210 007d 34010000 		.4byte	.LASF10
+ 211 0081 03       		.uleb128 0x3
+ 212 0082 58010000 		.4byte	.LASF11
+ 213 0086 03       		.byte	0x3
+ 214 0087 18       		.byte	0x18
+ 215 0088 2C000000 		.4byte	0x2c
+ 216 008c 03       		.uleb128 0x3
+ 217 008d 2D020000 		.4byte	.LASF12
+ 218 0091 03       		.byte	0x3
+ 219 0092 24       		.byte	0x24
+ 220 0093 45000000 		.4byte	0x45
+ 221 0097 05       		.uleb128 0x5
+ 222 0098 0C       		.byte	0xc
+ 223 0099 04       		.byte	0x4
+ 224 009a 0F       		.byte	0xf
+ 225 009b C3000000 		.4byte	0xc3
+ 226 009f 06       		.uleb128 0x6
+ 227 00a0 696400   		.ascii	"id\000"
+ 228 00a3 04       		.byte	0x4
+ 229 00a4 11       		.byte	0x11
+ 230 00a5 8C000000 		.4byte	0x8c
+ 231 00a9 00       		.byte	0
+ 232 00aa 06       		.uleb128 0x6
+ 233 00ab 646C6300 		.ascii	"dlc\000"
+ 234 00af 04       		.byte	0x4
+ 235 00b0 12       		.byte	0x12
+ 236 00b1 81000000 		.4byte	0x81
+ 237 00b5 02       		.byte	0x2
+ 238 00b6 07       		.uleb128 0x7
+ 239 00b7 57000000 		.4byte	.LASF13
+ 240 00bb 04       		.byte	0x4
+ 241 00bc 13       		.byte	0x13
+ 242 00bd C3000000 		.4byte	0xc3
+ 243 00c1 03       		.byte	0x3
+ 244 00c2 00       		.byte	0
+ 245 00c3 08       		.uleb128 0x8
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccras0Ne.s 			page 6
+
+
+ 246 00c4 81000000 		.4byte	0x81
+ 247 00c8 D3000000 		.4byte	0xd3
+ 248 00cc 09       		.uleb128 0x9
+ 249 00cd D3000000 		.4byte	0xd3
+ 250 00d1 07       		.byte	0x7
+ 251 00d2 00       		.byte	0
+ 252 00d3 02       		.uleb128 0x2
+ 253 00d4 04       		.byte	0x4
+ 254 00d5 07       		.byte	0x7
+ 255 00d6 EE010000 		.4byte	.LASF14
+ 256 00da 03       		.uleb128 0x3
+ 257 00db 1E010000 		.4byte	.LASF15
+ 258 00df 04       		.byte	0x4
+ 259 00e0 14       		.byte	0x14
+ 260 00e1 97000000 		.4byte	0x97
+ 261 00e5 02       		.uleb128 0x2
+ 262 00e6 04       		.byte	0x4
+ 263 00e7 04       		.byte	0x4
+ 264 00e8 51000000 		.4byte	.LASF16
+ 265 00ec 02       		.uleb128 0x2
+ 266 00ed 08       		.byte	0x8
+ 267 00ee 04       		.byte	0x4
+ 268 00ef FE000000 		.4byte	.LASF17
+ 269 00f3 02       		.uleb128 0x2
+ 270 00f4 01       		.byte	0x1
+ 271 00f5 08       		.byte	0x8
+ 272 00f6 13020000 		.4byte	.LASF18
+ 273 00fa 02       		.uleb128 0x2
+ 274 00fb 08       		.byte	0x8
+ 275 00fc 04       		.byte	0x4
+ 276 00fd 79020000 		.4byte	.LASF19
+ 277 0101 0A       		.uleb128 0xa
+ 278 0102 25020000 		.4byte	.LASF32
+ 279 0106 01       		.byte	0x1
+ 280 0107 09       		.byte	0x9
+ 281 0108 00000000 		.4byte	.LFB32
+ 282 010c 02000000 		.4byte	.LFE32-.LFB32
+ 283 0110 01       		.uleb128 0x1
+ 284 0111 9C       		.byte	0x9c
+ 285 0112 31010000 		.4byte	0x131
+ 286 0116 0B       		.uleb128 0xb
+ 287 0117 28010000 		.4byte	.LASF20
+ 288 011b 01       		.byte	0x1
+ 289 011c 09       		.byte	0x9
+ 290 011d 73000000 		.4byte	0x73
+ 291 0121 01       		.uleb128 0x1
+ 292 0122 50       		.byte	0x50
+ 293 0123 0B       		.uleb128 0xb
+ 294 0124 16000000 		.4byte	.LASF21
+ 295 0128 01       		.byte	0x1
+ 296 0129 09       		.byte	0x9
+ 297 012a 73000000 		.4byte	0x73
+ 298 012e 01       		.uleb128 0x1
+ 299 012f 51       		.byte	0x51
+ 300 0130 00       		.byte	0
+ 301 0131 0C       		.uleb128 0xc
+ 302 0132 F7010000 		.4byte	.LASF23
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccras0Ne.s 			page 7
+
+
+ 303 0136 01       		.byte	0x1
+ 304 0137 0E       		.byte	0xe
+ 305 0138 73000000 		.4byte	0x73
+ 306 013c 00000000 		.4byte	.LFB33
+ 307 0140 02000000 		.4byte	.LFE33-.LFB33
+ 308 0144 01       		.uleb128 0x1
+ 309 0145 9C       		.byte	0x9c
+ 310 0146 5A010000 		.4byte	0x15a
+ 311 014a 0D       		.uleb128 0xd
+ 312 014b 18020000 		.4byte	.LASF22
+ 313 014f 01       		.byte	0x1
+ 314 0150 0E       		.byte	0xe
+ 315 0151 5A010000 		.4byte	0x15a
+ 316 0155 00000000 		.4byte	.LLST0
+ 317 0159 00       		.byte	0
+ 318 015a 0E       		.uleb128 0xe
+ 319 015b 04       		.byte	0x4
+ 320 015c DA000000 		.4byte	0xda
+ 321 0160 0C       		.uleb128 0xc
+ 322 0161 39000000 		.4byte	.LASF24
+ 323 0165 01       		.byte	0x1
+ 324 0166 12       		.byte	0x12
+ 325 0167 73000000 		.4byte	0x73
+ 326 016b 00000000 		.4byte	.LFB34
+ 327 016f 02000000 		.4byte	.LFE34-.LFB34
+ 328 0173 01       		.uleb128 0x1
+ 329 0174 9C       		.byte	0x9c
+ 330 0175 89010000 		.4byte	0x189
+ 331 0179 0D       		.uleb128 0xd
+ 332 017a 05010000 		.4byte	.LASF25
+ 333 017e 01       		.byte	0x1
+ 334 017f 12       		.byte	0x12
+ 335 0180 5A010000 		.4byte	0x15a
+ 336 0184 21000000 		.4byte	.LLST1
+ 337 0188 00       		.byte	0
+ 338 0189 0F       		.uleb128 0xf
+ 339 018a 24000000 		.4byte	.LASF26
+ 340 018e 01       		.byte	0x1
+ 341 018f 17       		.byte	0x17
+ 342 0190 81000000 		.4byte	0x81
+ 343 0194 00000000 		.4byte	.LFB35
+ 344 0198 04000000 		.4byte	.LFE35-.LFB35
+ 345 019c 01       		.uleb128 0x1
+ 346 019d 9C       		.byte	0x9c
+ 347 019e 0F       		.uleb128 0xf
+ 348 019f 5C020000 		.4byte	.LASF27
+ 349 01a3 01       		.byte	0x1
+ 350 01a4 1D       		.byte	0x1d
+ 351 01a5 81000000 		.4byte	0x81
+ 352 01a9 00000000 		.4byte	.LFB36
+ 353 01ad 04000000 		.4byte	.LFE36-.LFB36
+ 354 01b1 01       		.uleb128 0x1
+ 355 01b2 9C       		.byte	0x9c
+ 356 01b3 0F       		.uleb128 0xf
+ 357 01b4 0A000000 		.4byte	.LASF28
+ 358 01b8 01       		.byte	0x1
+ 359 01b9 23       		.byte	0x23
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccras0Ne.s 			page 8
+
+
+ 360 01ba 81000000 		.4byte	0x81
+ 361 01be 00000000 		.4byte	.LFB37
+ 362 01c2 04000000 		.4byte	.LFE37-.LFB37
+ 363 01c6 01       		.uleb128 0x1
+ 364 01c7 9C       		.byte	0x9c
+ 365 01c8 00       		.byte	0
+ 366              		.section	.debug_abbrev,"",%progbits
+ 367              	.Ldebug_abbrev0:
+ 368 0000 01       		.uleb128 0x1
+ 369 0001 11       		.uleb128 0x11
+ 370 0002 01       		.byte	0x1
+ 371 0003 25       		.uleb128 0x25
+ 372 0004 0E       		.uleb128 0xe
+ 373 0005 13       		.uleb128 0x13
+ 374 0006 0B       		.uleb128 0xb
+ 375 0007 03       		.uleb128 0x3
+ 376 0008 0E       		.uleb128 0xe
+ 377 0009 1B       		.uleb128 0x1b
+ 378 000a 0E       		.uleb128 0xe
+ 379 000b 55       		.uleb128 0x55
+ 380 000c 17       		.uleb128 0x17
+ 381 000d 11       		.uleb128 0x11
+ 382 000e 01       		.uleb128 0x1
+ 383 000f 10       		.uleb128 0x10
+ 384 0010 17       		.uleb128 0x17
+ 385 0011 00       		.byte	0
+ 386 0012 00       		.byte	0
+ 387 0013 02       		.uleb128 0x2
+ 388 0014 24       		.uleb128 0x24
+ 389 0015 00       		.byte	0
+ 390 0016 0B       		.uleb128 0xb
+ 391 0017 0B       		.uleb128 0xb
+ 392 0018 3E       		.uleb128 0x3e
+ 393 0019 0B       		.uleb128 0xb
+ 394 001a 03       		.uleb128 0x3
+ 395 001b 0E       		.uleb128 0xe
+ 396 001c 00       		.byte	0
+ 397 001d 00       		.byte	0
+ 398 001e 03       		.uleb128 0x3
+ 399 001f 16       		.uleb128 0x16
+ 400 0020 00       		.byte	0
+ 401 0021 03       		.uleb128 0x3
+ 402 0022 0E       		.uleb128 0xe
+ 403 0023 3A       		.uleb128 0x3a
+ 404 0024 0B       		.uleb128 0xb
+ 405 0025 3B       		.uleb128 0x3b
+ 406 0026 0B       		.uleb128 0xb
+ 407 0027 49       		.uleb128 0x49
+ 408 0028 13       		.uleb128 0x13
+ 409 0029 00       		.byte	0
+ 410 002a 00       		.byte	0
+ 411 002b 04       		.uleb128 0x4
+ 412 002c 24       		.uleb128 0x24
+ 413 002d 00       		.byte	0
+ 414 002e 0B       		.uleb128 0xb
+ 415 002f 0B       		.uleb128 0xb
+ 416 0030 3E       		.uleb128 0x3e
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccras0Ne.s 			page 9
+
+
+ 417 0031 0B       		.uleb128 0xb
+ 418 0032 03       		.uleb128 0x3
+ 419 0033 08       		.uleb128 0x8
+ 420 0034 00       		.byte	0
+ 421 0035 00       		.byte	0
+ 422 0036 05       		.uleb128 0x5
+ 423 0037 13       		.uleb128 0x13
+ 424 0038 01       		.byte	0x1
+ 425 0039 0B       		.uleb128 0xb
+ 426 003a 0B       		.uleb128 0xb
+ 427 003b 3A       		.uleb128 0x3a
+ 428 003c 0B       		.uleb128 0xb
+ 429 003d 3B       		.uleb128 0x3b
+ 430 003e 0B       		.uleb128 0xb
+ 431 003f 01       		.uleb128 0x1
+ 432 0040 13       		.uleb128 0x13
+ 433 0041 00       		.byte	0
+ 434 0042 00       		.byte	0
+ 435 0043 06       		.uleb128 0x6
+ 436 0044 0D       		.uleb128 0xd
+ 437 0045 00       		.byte	0
+ 438 0046 03       		.uleb128 0x3
+ 439 0047 08       		.uleb128 0x8
+ 440 0048 3A       		.uleb128 0x3a
+ 441 0049 0B       		.uleb128 0xb
+ 442 004a 3B       		.uleb128 0x3b
+ 443 004b 0B       		.uleb128 0xb
+ 444 004c 49       		.uleb128 0x49
+ 445 004d 13       		.uleb128 0x13
+ 446 004e 38       		.uleb128 0x38
+ 447 004f 0B       		.uleb128 0xb
+ 448 0050 00       		.byte	0
+ 449 0051 00       		.byte	0
+ 450 0052 07       		.uleb128 0x7
+ 451 0053 0D       		.uleb128 0xd
+ 452 0054 00       		.byte	0
+ 453 0055 03       		.uleb128 0x3
+ 454 0056 0E       		.uleb128 0xe
+ 455 0057 3A       		.uleb128 0x3a
+ 456 0058 0B       		.uleb128 0xb
+ 457 0059 3B       		.uleb128 0x3b
+ 458 005a 0B       		.uleb128 0xb
+ 459 005b 49       		.uleb128 0x49
+ 460 005c 13       		.uleb128 0x13
+ 461 005d 38       		.uleb128 0x38
+ 462 005e 0B       		.uleb128 0xb
+ 463 005f 00       		.byte	0
+ 464 0060 00       		.byte	0
+ 465 0061 08       		.uleb128 0x8
+ 466 0062 01       		.uleb128 0x1
+ 467 0063 01       		.byte	0x1
+ 468 0064 49       		.uleb128 0x49
+ 469 0065 13       		.uleb128 0x13
+ 470 0066 01       		.uleb128 0x1
+ 471 0067 13       		.uleb128 0x13
+ 472 0068 00       		.byte	0
+ 473 0069 00       		.byte	0
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccras0Ne.s 			page 10
+
+
+ 474 006a 09       		.uleb128 0x9
+ 475 006b 21       		.uleb128 0x21
+ 476 006c 00       		.byte	0
+ 477 006d 49       		.uleb128 0x49
+ 478 006e 13       		.uleb128 0x13
+ 479 006f 2F       		.uleb128 0x2f
+ 480 0070 0B       		.uleb128 0xb
+ 481 0071 00       		.byte	0
+ 482 0072 00       		.byte	0
+ 483 0073 0A       		.uleb128 0xa
+ 484 0074 2E       		.uleb128 0x2e
+ 485 0075 01       		.byte	0x1
+ 486 0076 3F       		.uleb128 0x3f
+ 487 0077 19       		.uleb128 0x19
+ 488 0078 03       		.uleb128 0x3
+ 489 0079 0E       		.uleb128 0xe
+ 490 007a 3A       		.uleb128 0x3a
+ 491 007b 0B       		.uleb128 0xb
+ 492 007c 3B       		.uleb128 0x3b
+ 493 007d 0B       		.uleb128 0xb
+ 494 007e 27       		.uleb128 0x27
+ 495 007f 19       		.uleb128 0x19
+ 496 0080 11       		.uleb128 0x11
+ 497 0081 01       		.uleb128 0x1
+ 498 0082 12       		.uleb128 0x12
+ 499 0083 06       		.uleb128 0x6
+ 500 0084 40       		.uleb128 0x40
+ 501 0085 18       		.uleb128 0x18
+ 502 0086 9742     		.uleb128 0x2117
+ 503 0088 19       		.uleb128 0x19
+ 504 0089 01       		.uleb128 0x1
+ 505 008a 13       		.uleb128 0x13
+ 506 008b 00       		.byte	0
+ 507 008c 00       		.byte	0
+ 508 008d 0B       		.uleb128 0xb
+ 509 008e 05       		.uleb128 0x5
+ 510 008f 00       		.byte	0
+ 511 0090 03       		.uleb128 0x3
+ 512 0091 0E       		.uleb128 0xe
+ 513 0092 3A       		.uleb128 0x3a
+ 514 0093 0B       		.uleb128 0xb
+ 515 0094 3B       		.uleb128 0x3b
+ 516 0095 0B       		.uleb128 0xb
+ 517 0096 49       		.uleb128 0x49
+ 518 0097 13       		.uleb128 0x13
+ 519 0098 02       		.uleb128 0x2
+ 520 0099 18       		.uleb128 0x18
+ 521 009a 00       		.byte	0
+ 522 009b 00       		.byte	0
+ 523 009c 0C       		.uleb128 0xc
+ 524 009d 2E       		.uleb128 0x2e
+ 525 009e 01       		.byte	0x1
+ 526 009f 3F       		.uleb128 0x3f
+ 527 00a0 19       		.uleb128 0x19
+ 528 00a1 03       		.uleb128 0x3
+ 529 00a2 0E       		.uleb128 0xe
+ 530 00a3 3A       		.uleb128 0x3a
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccras0Ne.s 			page 11
+
+
+ 531 00a4 0B       		.uleb128 0xb
+ 532 00a5 3B       		.uleb128 0x3b
+ 533 00a6 0B       		.uleb128 0xb
+ 534 00a7 27       		.uleb128 0x27
+ 535 00a8 19       		.uleb128 0x19
+ 536 00a9 49       		.uleb128 0x49
+ 537 00aa 13       		.uleb128 0x13
+ 538 00ab 11       		.uleb128 0x11
+ 539 00ac 01       		.uleb128 0x1
+ 540 00ad 12       		.uleb128 0x12
+ 541 00ae 06       		.uleb128 0x6
+ 542 00af 40       		.uleb128 0x40
+ 543 00b0 18       		.uleb128 0x18
+ 544 00b1 9742     		.uleb128 0x2117
+ 545 00b3 19       		.uleb128 0x19
+ 546 00b4 01       		.uleb128 0x1
+ 547 00b5 13       		.uleb128 0x13
+ 548 00b6 00       		.byte	0
+ 549 00b7 00       		.byte	0
+ 550 00b8 0D       		.uleb128 0xd
+ 551 00b9 05       		.uleb128 0x5
+ 552 00ba 00       		.byte	0
+ 553 00bb 03       		.uleb128 0x3
+ 554 00bc 0E       		.uleb128 0xe
+ 555 00bd 3A       		.uleb128 0x3a
+ 556 00be 0B       		.uleb128 0xb
+ 557 00bf 3B       		.uleb128 0x3b
+ 558 00c0 0B       		.uleb128 0xb
+ 559 00c1 49       		.uleb128 0x49
+ 560 00c2 13       		.uleb128 0x13
+ 561 00c3 02       		.uleb128 0x2
+ 562 00c4 17       		.uleb128 0x17
+ 563 00c5 00       		.byte	0
+ 564 00c6 00       		.byte	0
+ 565 00c7 0E       		.uleb128 0xe
+ 566 00c8 0F       		.uleb128 0xf
+ 567 00c9 00       		.byte	0
+ 568 00ca 0B       		.uleb128 0xb
+ 569 00cb 0B       		.uleb128 0xb
+ 570 00cc 49       		.uleb128 0x49
+ 571 00cd 13       		.uleb128 0x13
+ 572 00ce 00       		.byte	0
+ 573 00cf 00       		.byte	0
+ 574 00d0 0F       		.uleb128 0xf
+ 575 00d1 2E       		.uleb128 0x2e
+ 576 00d2 00       		.byte	0
+ 577 00d3 3F       		.uleb128 0x3f
+ 578 00d4 19       		.uleb128 0x19
+ 579 00d5 03       		.uleb128 0x3
+ 580 00d6 0E       		.uleb128 0xe
+ 581 00d7 3A       		.uleb128 0x3a
+ 582 00d8 0B       		.uleb128 0xb
+ 583 00d9 3B       		.uleb128 0x3b
+ 584 00da 0B       		.uleb128 0xb
+ 585 00db 49       		.uleb128 0x49
+ 586 00dc 13       		.uleb128 0x13
+ 587 00dd 11       		.uleb128 0x11
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccras0Ne.s 			page 12
+
+
+ 588 00de 01       		.uleb128 0x1
+ 589 00df 12       		.uleb128 0x12
+ 590 00e0 06       		.uleb128 0x6
+ 591 00e1 40       		.uleb128 0x40
+ 592 00e2 18       		.uleb128 0x18
+ 593 00e3 9742     		.uleb128 0x2117
+ 594 00e5 19       		.uleb128 0x19
+ 595 00e6 00       		.byte	0
+ 596 00e7 00       		.byte	0
+ 597 00e8 00       		.byte	0
+ 598              		.section	.debug_loc,"",%progbits
+ 599              	.Ldebug_loc0:
+ 600              	.LLST0:
+ 601 0000 00000000 		.4byte	.LVL1
+ 602 0004 00000000 		.4byte	.LVL2
+ 603 0008 0100     		.2byte	0x1
+ 604 000a 50       		.byte	0x50
+ 605 000b 00000000 		.4byte	.LVL2
+ 606 000f 02000000 		.4byte	.LFE33
+ 607 0013 0400     		.2byte	0x4
+ 608 0015 F3       		.byte	0xf3
+ 609 0016 01       		.uleb128 0x1
+ 610 0017 50       		.byte	0x50
+ 611 0018 9F       		.byte	0x9f
+ 612 0019 00000000 		.4byte	0
+ 613 001d 00000000 		.4byte	0
+ 614              	.LLST1:
+ 615 0021 00000000 		.4byte	.LVL3
+ 616 0025 00000000 		.4byte	.LVL4
+ 617 0029 0100     		.2byte	0x1
+ 618 002b 50       		.byte	0x50
+ 619 002c 00000000 		.4byte	.LVL4
+ 620 0030 02000000 		.4byte	.LFE34
+ 621 0034 0400     		.2byte	0x4
+ 622 0036 F3       		.byte	0xf3
+ 623 0037 01       		.uleb128 0x1
+ 624 0038 50       		.byte	0x50
+ 625 0039 9F       		.byte	0x9f
+ 626 003a 00000000 		.4byte	0
+ 627 003e 00000000 		.4byte	0
+ 628              		.section	.debug_aranges,"",%progbits
+ 629 0000 44000000 		.4byte	0x44
+ 630 0004 0200     		.2byte	0x2
+ 631 0006 00000000 		.4byte	.Ldebug_info0
+ 632 000a 04       		.byte	0x4
+ 633 000b 00       		.byte	0
+ 634 000c 0000     		.2byte	0
+ 635 000e 0000     		.2byte	0
+ 636 0010 00000000 		.4byte	.LFB32
+ 637 0014 02000000 		.4byte	.LFE32-.LFB32
+ 638 0018 00000000 		.4byte	.LFB33
+ 639 001c 02000000 		.4byte	.LFE33-.LFB33
+ 640 0020 00000000 		.4byte	.LFB34
+ 641 0024 02000000 		.4byte	.LFE34-.LFB34
+ 642 0028 00000000 		.4byte	.LFB35
+ 643 002c 04000000 		.4byte	.LFE35-.LFB35
+ 644 0030 00000000 		.4byte	.LFB36
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccras0Ne.s 			page 13
+
+
+ 645 0034 04000000 		.4byte	.LFE36-.LFB36
+ 646 0038 00000000 		.4byte	.LFB37
+ 647 003c 04000000 		.4byte	.LFE37-.LFB37
+ 648 0040 00000000 		.4byte	0
+ 649 0044 00000000 		.4byte	0
+ 650              		.section	.debug_ranges,"",%progbits
+ 651              	.Ldebug_ranges0:
+ 652 0000 00000000 		.4byte	.LFB32
+ 653 0004 02000000 		.4byte	.LFE32
+ 654 0008 00000000 		.4byte	.LFB33
+ 655 000c 02000000 		.4byte	.LFE33
+ 656 0010 00000000 		.4byte	.LFB34
+ 657 0014 02000000 		.4byte	.LFE34
+ 658 0018 00000000 		.4byte	.LFB35
+ 659 001c 04000000 		.4byte	.LFE35
+ 660 0020 00000000 		.4byte	.LFB36
+ 661 0024 04000000 		.4byte	.LFE36
+ 662 0028 00000000 		.4byte	.LFB37
+ 663 002c 04000000 		.4byte	.LFE37
+ 664 0030 00000000 		.4byte	0
+ 665 0034 00000000 		.4byte	0
+ 666              		.section	.debug_line,"",%progbits
+ 667              	.Ldebug_line0:
+ 668 0000 C8010000 		.section	.debug_str,"MS",%progbits,1
+ 668      02006201 
+ 668      00000201 
+ 668      FB0E0D00 
+ 668      01010101 
+ 669              	.LASF3:
+ 670 0000 5F5F7569 		.ascii	"__uint8_t\000"
+ 670      6E74385F 
+ 670      7400
+ 671              	.LASF28:
+ 672 000a 67657443 		.ascii	"getChipType\000"
+ 672      68697054 
+ 672      79706500 
+ 673              	.LASF21:
+ 674 0016 64657669 		.ascii	"deviceAddress\000"
+ 674      63654164 
+ 674      64726573 
+ 674      7300
+ 675              	.LASF26:
+ 676 0024 6765744C 		.ascii	"getLocalDeviceSerial\000"
+ 676      6F63616C 
+ 676      44657669 
+ 676      63655365 
+ 676      7269616C 
+ 677              	.LASF24:
+ 678 0039 506F6C6C 		.ascii	"PollAndReceiveCANPacket\000"
+ 678      416E6452 
+ 678      65636569 
+ 678      76654341 
+ 678      4E506163 
+ 679              	.LASF16:
+ 680 0051 666C6F61 		.ascii	"float\000"
+ 680      7400
+ 681              	.LASF13:
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccras0Ne.s 			page 14
+
+
+ 682 0057 64617461 		.ascii	"data\000"
+ 682      00
+ 683              	.LASF1:
+ 684 005c 756E7369 		.ascii	"unsigned char\000"
+ 684      676E6564 
+ 684      20636861 
+ 684      7200
+ 685              	.LASF7:
+ 686 006a 6C6F6E67 		.ascii	"long unsigned int\000"
+ 686      20756E73 
+ 686      69676E65 
+ 686      6420696E 
+ 686      7400
+ 687              	.LASF5:
+ 688 007c 73686F72 		.ascii	"short unsigned int\000"
+ 688      7420756E 
+ 688      7369676E 
+ 688      65642069 
+ 688      6E7400
+ 689              	.LASF31:
+ 690 008f 433A5C55 		.ascii	"C:\\Users\\tsien\\Documents\\GitHub\\Battery_Manage"
+ 690      73657273 
+ 690      5C747369 
+ 690      656E5C44 
+ 690      6F63756D 
+ 691 00bd 6D656E74 		.ascii	"ment_Board_PY2023\\BatteryBalance\\BatteryBalance.c"
+ 691      5F426F61 
+ 691      72645F50 
+ 691      59323032 
+ 691      335C4261 
+ 692 00ee 7964736E 		.ascii	"ydsn\000"
+ 692      00
+ 693              	.LASF4:
+ 694 00f3 5F5F7569 		.ascii	"__uint16_t\000"
+ 694      6E743136 
+ 694      5F7400
+ 695              	.LASF17:
+ 696 00fe 646F7562 		.ascii	"double\000"
+ 696      6C6500
+ 697              	.LASF25:
+ 698 0105 72656365 		.ascii	"receivedPacket\000"
+ 698      69766564 
+ 698      5061636B 
+ 698      657400
+ 699              	.LASF2:
+ 700 0114 73686F72 		.ascii	"short int\000"
+ 700      7420696E 
+ 700      7400
+ 701              	.LASF15:
+ 702 011e 43414E50 		.ascii	"CANPacket\000"
+ 702      61636B65 
+ 702      7400
+ 703              	.LASF20:
+ 704 0128 64657669 		.ascii	"deviceGroup\000"
+ 704      63654772 
+ 704      6F757000 
+ 705              	.LASF10:
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccras0Ne.s 			page 15
+
+
+ 706 0134 756E7369 		.ascii	"unsigned int\000"
+ 706      676E6564 
+ 706      20696E74 
+ 706      00
+ 707              	.LASF9:
+ 708 0141 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 708      206C6F6E 
+ 708      6720756E 
+ 708      7369676E 
+ 708      65642069 
+ 709              	.LASF11:
+ 710 0158 75696E74 		.ascii	"uint8_t\000"
+ 710      385F7400 
+ 711              	.LASF29:
+ 712 0160 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 712      43313120 
+ 712      352E342E 
+ 712      31203230 
+ 712      31363036 
+ 713 0193 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ 713      20726576 
+ 713      6973696F 
+ 713      6E203233 
+ 713      37373135 
+ 714 01c6 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 714      66756E63 
+ 714      74696F6E 
+ 714      2D736563 
+ 714      74696F6E 
+ 715              	.LASF14:
+ 716 01ee 73697A65 		.ascii	"sizetype\000"
+ 716      74797065 
+ 716      00
+ 717              	.LASF23:
+ 718 01f7 53656E64 		.ascii	"SendCANPacket\000"
+ 718      43414E50 
+ 718      61636B65 
+ 718      7400
+ 719              	.LASF8:
+ 720 0205 6C6F6E67 		.ascii	"long long int\000"
+ 720      206C6F6E 
+ 720      6720696E 
+ 720      7400
+ 721              	.LASF18:
+ 722 0213 63686172 		.ascii	"char\000"
+ 722      00
+ 723              	.LASF22:
+ 724 0218 7061636B 		.ascii	"packetToSend\000"
+ 724      6574546F 
+ 724      53656E64 
+ 724      00
+ 725              	.LASF32:
+ 726 0225 496E6974 		.ascii	"InitCAN\000"
+ 726      43414E00 
+ 727              	.LASF12:
+ 728 022d 75696E74 		.ascii	"uint16_t\000"
+ 728      31365F74 
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccras0Ne.s 			page 16
+
+
+ 728      00
+ 729              	.LASF30:
+ 730 0236 48696E64 		.ascii	"HindsightCAN\\PortFiles\\PortTemplate.c\000"
+ 730      73696768 
+ 730      7443414E 
+ 730      5C506F72 
+ 730      7446696C 
+ 731              	.LASF27:
+ 732 025c 6765744C 		.ascii	"getLocalDeviceGroup\000"
+ 732      6F63616C 
+ 732      44657669 
+ 732      63654772 
+ 732      6F757000 
+ 733              	.LASF6:
+ 734 0270 6C6F6E67 		.ascii	"long int\000"
+ 734      20696E74 
+ 734      00
+ 735              	.LASF19:
+ 736 0279 6C6F6E67 		.ascii	"long double\000"
+ 736      20646F75 
+ 736      626C6500 
+ 737              	.LASF0:
+ 738 0285 7369676E 		.ascii	"signed char\000"
+ 738      65642063 
+ 738      68617200 
+ 739              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

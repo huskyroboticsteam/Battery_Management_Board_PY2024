@@ -856,8 +856,8 @@ extern uint8 Jetty_initVar;
 #define Jetty_FIFO_SIZE      (8u)  /* TX or RX FIFO size. */
 #define Jetty_EZ_DATA_NR     (32u)  /* Number of words in EZ memory. */ 
 #define Jetty_ONE_BYTE_WIDTH (8u)            /* Number of bits in one byte. */
-#define Jetty_FF_DATA_NR_LOG2_MASK       (0x0Fu)      /* Number of bits to represent a FIFO address. */
-#define Jetty_FF_DATA_NR_LOG2_PLUS1_MASK (0x1Fu) /* Number of bits to represent #bytes in FIFO. */
+#define Jetty_FF_DATA_NR_LOG2_MASK       (0x07u)      /* Number of bits to represent a FIFO address. */
+#define Jetty_FF_DATA_NR_LOG2_PLUS1_MASK (0x0Fu) /* Number of bits to represent #bytes in FIFO. */
 
 
 /***************************************

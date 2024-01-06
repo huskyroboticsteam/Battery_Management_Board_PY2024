@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="BatteryBalance\BatteryBalance\CANLib\CANPacket.h">
 <ExpandedNodeIds>
 <v>BatteryBalance</v>
 <v>BatteryBalance\BatteryBalance</v>
@@ -21,12 +21,28 @@
 <v>BatteryBalance\BatteryBalance\BatteryBalance.cydwr</v>
 <v>BatteryBalance\BatteryBalance\BatteryBalance.cydwr\Pins</v>
 <v>BatteryBalance\BatteryBalance\BatteryBalance.cydwr\Analog</v>
-<v>BatteryBalance\BatteryBalance\BatteryBalance.cydwr\DMA</v>
 <v>BatteryBalance\BatteryBalance\BatteryBalance.cydwr\Clocks</v>
 <v>BatteryBalance\BatteryBalance\BatteryBalance.cydwr\Interrupts</v>
 <v>BatteryBalance\BatteryBalance\BatteryBalance.cydwr\System</v>
 <v>BatteryBalance\BatteryBalance\BatteryBalance.cydwr\Directives</v>
 <v>BatteryBalance\BatteryBalance\BatteryBalance.cydwr\Flash Security</v>
+<v>BatteryBalance\BatteryBalance\CANLib</v>
+<v>BatteryBalance\BatteryBalance\CANLib\CANCommon.c</v>
+<v>BatteryBalance\BatteryBalance\CANLib\CANCommon.h</v>
+<v>BatteryBalance\BatteryBalance\CANLib\CANGPIO.c</v>
+<v>BatteryBalance\BatteryBalance\CANLib\CANGPIO.h</v>
+<v>BatteryBalance\BatteryBalance\CANLib\CANLocalization.c</v>
+<v>BatteryBalance\BatteryBalance\CANLib\CANLocalization.h</v>
+<v>BatteryBalance\BatteryBalance\CANLib\CANMotorUnit.c</v>
+<v>BatteryBalance\BatteryBalance\CANLib\CANMotorUnit.h</v>
+<v>BatteryBalance\BatteryBalance\CANLib\CANPacket.h</v>
+<v>BatteryBalance\BatteryBalance\CANLib\CANPower.c</v>
+<v>BatteryBalance\BatteryBalance\CANLib\CANPower.h</v>
+<v>BatteryBalance\BatteryBalance\CANLib\CANScience.c</v>
+<v>BatteryBalance\BatteryBalance\CANLib\CANScience.h</v>
+<v>BatteryBalance\BatteryBalance\CANLib\CANSerialNumbers.h</v>
+<v>BatteryBalance\BatteryBalance\CANLib\Port.h</v>
+<v>BatteryBalance\BatteryBalance\CANLib\PortTemplate.c</v>
 <v>BatteryBalance\BatteryBalance\Header Files</v>
 <v>BatteryBalance\BatteryBalance\Header Files\cyapicallbacks.h</v>
 <v>BatteryBalance\BatteryBalance\Header Files\INA226.h</v>
@@ -36,7 +52,6 @@
 <v>BatteryBalance\BatteryBalance\Source Files\INA226.c</v>
 <v>BatteryBalance\BatteryBalance\Source Files\main.c</v>
 <v>BatteryBalance\BatteryBalance\Generated_Source</v>
-<v>BatteryBalance\BatteryBalance\Generated_Source\PSoC4</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>BatteryBalance</v>
@@ -45,34 +60,33 @@
 <v>BatteryBalance\BatteryBalance\BatteryBalance.cydwr</v>
 <v>BatteryBalance\BatteryBalance\BatteryBalance.cydwr\Pins</v>
 <v>BatteryBalance\BatteryBalance\BatteryBalance.cydwr\Analog</v>
-<v>BatteryBalance\BatteryBalance\BatteryBalance.cydwr\DMA</v>
 <v>BatteryBalance\BatteryBalance\BatteryBalance.cydwr\Clocks</v>
 <v>BatteryBalance\BatteryBalance\BatteryBalance.cydwr\Interrupts</v>
 <v>BatteryBalance\BatteryBalance\BatteryBalance.cydwr\System</v>
 <v>BatteryBalance\BatteryBalance\BatteryBalance.cydwr\Directives</v>
 <v>BatteryBalance\BatteryBalance\BatteryBalance.cydwr\Flash Security</v>
+<v>BatteryBalance\BatteryBalance\CANLib</v>
+<v>BatteryBalance\BatteryBalance\CANLib\CANCommon.c</v>
+<v>BatteryBalance\BatteryBalance\CANLib\CANCommon.h</v>
+<v>BatteryBalance\BatteryBalance\CANLib\CANGPIO.c</v>
+<v>BatteryBalance\BatteryBalance\CANLib\CANGPIO.h</v>
+<v>BatteryBalance\BatteryBalance\CANLib\CANLocalization.c</v>
+<v>BatteryBalance\BatteryBalance\CANLib\CANLocalization.h</v>
+<v>BatteryBalance\BatteryBalance\CANLib\CANMotorUnit.c</v>
+<v>BatteryBalance\BatteryBalance\CANLib\CANMotorUnit.h</v>
+<v>BatteryBalance\BatteryBalance\CANLib\CANPacket.h</v>
+<v>BatteryBalance\BatteryBalance\CANLib\CANPower.c</v>
+<v>BatteryBalance\BatteryBalance\CANLib\CANPower.h</v>
+<v>BatteryBalance\BatteryBalance\CANLib\CANScience.c</v>
+<v>BatteryBalance\BatteryBalance\CANLib\CANScience.h</v>
+<v>BatteryBalance\BatteryBalance\CANLib\CANSerialNumbers.h</v>
+<v>BatteryBalance\BatteryBalance\CANLib\Port.h</v>
+<v>BatteryBalance\BatteryBalance\CANLib\PortTemplate.c</v>
 <v>BatteryBalance\BatteryBalance\Header Files</v>
 <v>BatteryBalance\BatteryBalance\Header Files\cyapicallbacks.h</v>
-<v>BatteryBalance\BatteryBalance\Header Files\INA226.h</v>
-<v>BatteryBalance\BatteryBalance\Header Files\io.h</v>
-<v>BatteryBalance\BatteryBalance\Source Files</v>
-<v>BatteryBalance\BatteryBalance\Source Files\battery.c</v>
-<v>BatteryBalance\BatteryBalance\Source Files\INA226.c</v>
-<v>BatteryBalance\BatteryBalance\Source Files\main.c</v>
-<v>BatteryBalance\BatteryBalance\Generated_Source</v>
-<v>BatteryBalance\BatteryBalance\Generated_Source\PSoC4</v>
-<v>BatteryBalance\BatteryBalance\Generated_Source\PSoC4\cy_boot</v>
-<v>BatteryBalance\BatteryBalance\Generated_Source\PSoC4\cy_dmac</v>
-<v>BatteryBalance\BatteryBalance\Generated_Source\PSoC4\cy_lfclk</v>
-<v>BatteryBalance\BatteryBalance\Generated_Source\PSoC4\DBG_UART</v>
-<v>BatteryBalance\BatteryBalance\Generated_Source\PSoC4\DBG_UART_rx</v>
-<v>BatteryBalance\BatteryBalance\Generated_Source\PSoC4\DBG_UART_SCBCLK</v>
-<v>BatteryBalance\BatteryBalance\Generated_Source\PSoC4\DBG_UART_tx</v>
-<v>BatteryBalance\BatteryBalance\Generated_Source\PSoC4\Em_EEPROM_Dynamic</v>
-<v>BatteryBalance\BatteryBalance\Generated_Source\PSoC4\I2C_Brain</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="BatteryBalance">
 <ExpandedNodeIds>
 <v>BatteryBalance</v>
 <v>BatteryBalance\BatteryBalance</v>
@@ -95,10 +109,15 @@
 <v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug</v>
 <v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files</v>
 <v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\battery.lst</v>
+<v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\CANCommon.lst</v>
+<v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\CANGPIO.lst</v>
+<v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\CANLocalization.lst</v>
+<v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\CANMotorUnit.lst</v>
+<v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\CANPower.lst</v>
+<v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\CANScience.lst</v>
 <v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\Cm0Start.lst</v>
 <v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
 <v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
-<v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\CyDMA.lst</v>
 <v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
 <v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
 <v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLFClk.lst</v>
@@ -118,19 +137,6 @@
 <v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\DBG_UART_tx_PM.lst</v>
 <v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\DBG_UART_UART.lst</v>
 <v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\DBG_UART_UART_BOOT.lst</v>
-<v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_Brain.lst</v>
-<v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_Brain_BOOT.lst</v>
-<v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_Brain_I2C.lst</v>
-<v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_Brain_I2C_BOOT.lst</v>
-<v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_Brain_I2C_INT.lst</v>
-<v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_Brain_I2C_MASTER.lst</v>
-<v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_Brain_PM.lst</v>
-<v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_Brain_SCB_IRQ.lst</v>
-<v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_Brain_SCBCLK.lst</v>
-<v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_Brain_scl.lst</v>
-<v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_Brain_scl_PM.lst</v>
-<v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_Brain_sda.lst</v>
-<v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_Brain_sda_PM.lst</v>
 <v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\INA226.lst</v>
 <v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\INA226_I2C.lst</v>
 <v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\INA226_I2C_BOOT.lst</v>
@@ -145,20 +151,8 @@
 <v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\INA226_I2C_scl_PM.lst</v>
 <v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\INA226_I2C_sda.lst</v>
 <v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\INA226_I2C_sda_PM.lst</v>
-<v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\Jetty.lst</v>
-<v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\Jetty_BOOT.lst</v>
-<v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\Jetty_I2C.lst</v>
-<v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\Jetty_I2C_BOOT.lst</v>
-<v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\Jetty_I2C_INT.lst</v>
-<v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\Jetty_I2C_MASTER.lst</v>
-<v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\Jetty_PM.lst</v>
-<v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\Jetty_SCB_IRQ.lst</v>
-<v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\Jetty_SCBCLK.lst</v>
-<v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\Jetty_scl.lst</v>
-<v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\Jetty_scl_PM.lst</v>
-<v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\Jetty_sda.lst</v>
-<v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\Jetty_sda_PM.lst</v>
 <v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\PortTemplate.lst</v>
 <v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\BatteryBalance.elf</v>
 <v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\BatteryBalance.hex</v>
 <v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\BatteryBalance.map</v>
@@ -174,10 +168,15 @@
 <v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug</v>
 <v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files</v>
 <v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\battery.lst</v>
+<v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\CANCommon.lst</v>
+<v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\CANGPIO.lst</v>
+<v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\CANLocalization.lst</v>
+<v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\CANMotorUnit.lst</v>
+<v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\CANPower.lst</v>
+<v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\CANScience.lst</v>
 <v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\Cm0Start.lst</v>
 <v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
 <v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
-<v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\CyDMA.lst</v>
 <v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
 <v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
 <v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLFClk.lst</v>
@@ -193,11 +192,6 @@
 <v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\DBG_UART_SCBCLK.lst</v>
 <v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\DBG_UART_SPI_UART.lst</v>
 <v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\DBG_UART_SPI_UART_INT.lst</v>
-<v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\DBG_UART_tx.lst</v>
-<v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\DBG_UART_tx_PM.lst</v>
-<v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\DBG_UART_UART.lst</v>
-<v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\DBG_UART_UART_BOOT.lst</v>
-<v>BatteryBalance\BatteryBalance\CortexM0\ARM_GCC_541\Debug\Listing Files\I2C_Brain.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -205,15 +199,14 @@
 <v>Datasheet</v>
 </TreeKeysV2>
 <TreeStatesV2>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="BatteryBalance">
 <ExpandedNodeIds>
 <v>BatteryBalance</v>
 <v>BatteryBalance\BatteryBalance</v>
 <v>BatteryBalance\BatteryBalance\PSoC 4 Architecture TRM</v>
-<v>BatteryBalance\BatteryBalance\PSoC 4200L Family Datasheet</v>
+<v>BatteryBalance\BatteryBalance\PSoC 4200 Family Datasheet</v>
 <v>BatteryBalance\BatteryBalance\System Reference Guides</v>
 <v>BatteryBalance\BatteryBalance\System Reference Guides\cy_boot_v6_0</v>
-<v>BatteryBalance\BatteryBalance\System Reference Guides\cy_dmac_v1_10</v>
 <v>BatteryBalance\BatteryBalance\System Reference Guides\cy_lfclk_v1_20</v>
 <v>BatteryBalance\BatteryBalance\SCB_P4_v4_0</v>
 <v>BatteryBalance\BatteryBalance\SCB_P4_v4_0\SCB_P4_v4_0.pdf</v>
@@ -222,10 +215,9 @@
 <v>BatteryBalance</v>
 <v>BatteryBalance\BatteryBalance</v>
 <v>BatteryBalance\BatteryBalance\PSoC 4 Architecture TRM</v>
-<v>BatteryBalance\BatteryBalance\PSoC 4200L Family Datasheet</v>
+<v>BatteryBalance\BatteryBalance\PSoC 4200 Family Datasheet</v>
 <v>BatteryBalance\BatteryBalance\System Reference Guides</v>
 <v>BatteryBalance\BatteryBalance\System Reference Guides\cy_boot_v6_0</v>
-<v>BatteryBalance\BatteryBalance\System Reference Guides\cy_dmac_v1_10</v>
 <v>BatteryBalance\BatteryBalance\System Reference Guides\cy_lfclk_v1_20</v>
 <v>BatteryBalance\BatteryBalance\SCB_P4_v4_0</v>
 <v>BatteryBalance\BatteryBalance\SCB_P4_v4_0\SCB_P4_v4_0.pdf</v>
@@ -252,7 +244,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="947, 494" SelectedTabbedMdiWindow="54b01fa6-d7e8-4e34-8ebd-d7fae91731c8"><DocumentWindow Key="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\main.c" Guid="54b01fa6-d7e8-4e34-8ebd-d7fae91731c8" /><DocumentWindow Key="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\io.h" Guid="656ae8fb-9403-448f-a0df-22453621512c" /><DocumentWindow Key="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\battery.c" Guid="bbb7870f-ff5d-49f8-9c58-4180c6041ff9" /><DocumentWindow Key="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\TopDesign\TopDesign.cysch" Guid="e5fb8ea6-0db1-4ce0-baf3-01f91bf0ab78" /><DocumentWindow Key="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\BatteryBalance.cydwr" Guid="b7637801-40af-4834-abb1-0309cb21d262" /><DocumentWindow Key="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\INA226.h" Guid="a9d98b7a-31ef-46b9-83e4-37fc2a0ff95b" /><DocumentWindow Key="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\INA226.c" Guid="8ab84104-c160-45af-bc5f-1705d52d8e91" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="f35b9719-7e17-47a6-a48c-91d72f47c3b4" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="947, 494" SelectedTabbedMdiWindow="bbb7870f-ff5d-49f8-9c58-4180c6041ff9"><DocumentWindow Key="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\main.c" Guid="54b01fa6-d7e8-4e34-8ebd-d7fae91731c8" /><DocumentWindow Key="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\io.h" Guid="656ae8fb-9403-448f-a0df-22453621512c" /><DocumentWindow Key="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\battery.c" Guid="bbb7870f-ff5d-49f8-9c58-4180c6041ff9" /><DocumentWindow Key="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\TopDesign\TopDesign.cysch" Guid="e5fb8ea6-0db1-4ce0-baf3-01f91bf0ab78" /><DocumentWindow Key="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\BatteryBalance.cydwr" Guid="b7637801-40af-4834-abb1-0309cb21d262" /><DocumentWindow Key="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\INA226.h" Guid="a9d98b7a-31ef-46b9-83e4-37fc2a0ff95b" /><DocumentWindow Key="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\INA226.c" Guid="8ab84104-c160-45af-bc5f-1705d52d8e91" /><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="f35b9719-7e17-47a6-a48c-91d72f47c3b4" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 1
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccCKXTyj.s 			page 1
 
 
    1              		.syntax unified
@@ -26,7 +26,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 1
   23              		.thumb_func
   24              		.type	DBG_UART_UartInit, %function
   25              	DBG_UART_UartInit:
-  26              	.LFB1:
+  26              	.LFB0:
   27              		.file 1 "Generated_Source\\PSoC4\\DBG_UART_UART.c"
    1:Generated_Source\PSoC4/DBG_UART_UART.c **** /***************************************************************************//**
    2:Generated_Source\PSoC4/DBG_UART_UART.c **** * \file DBG_UART_UART.c
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 1
   28:Generated_Source\PSoC4/DBG_UART_UART.c ****     /** This global variable determines whether to enable Skip Start
   29:Generated_Source\PSoC4/DBG_UART_UART.c ****     * functionality when DBG_UART_Sleep() function is called:
   30:Generated_Source\PSoC4/DBG_UART_UART.c ****     * 0 – disable, other values – enable. Default value is 1.
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 2
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccCKXTyj.s 			page 2
 
 
   31:Generated_Source\PSoC4/DBG_UART_UART.c ****     * It is only available when Enable wakeup from Deep Sleep Mode is enabled.
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 1
   85:Generated_Source\PSoC4/DBG_UART_UART.c ****     *
   86:Generated_Source\PSoC4/DBG_UART_UART.c ****     *  This function is intended specifically to be used when the DBG_UART
   87:Generated_Source\PSoC4/DBG_UART_UART.c ****     *  configuration is set to “Unconfigured DBG_UART” in the customizer.
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 3
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccCKXTyj.s 			page 3
 
 
   88:Generated_Source\PSoC4/DBG_UART_UART.c ****     *  After initializing the DBG_UART in UART mode using this function,
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 1
  142:Generated_Source\PSoC4/DBG_UART_UART.c ****                                                 (DBG_UART_UART_GET_CTRL_OVS_IRDA_LP(config->oversam
  143:Generated_Source\PSoC4/DBG_UART_UART.c ****                                                 (DBG_UART_CTRL_OVS_IRDA_OVS16));
  144:Generated_Source\PSoC4/DBG_UART_UART.c ****             }
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 4
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccCKXTyj.s 			page 4
 
 
  145:Generated_Source\PSoC4/DBG_UART_UART.c ****             else
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 1
  199:Generated_Source\PSoC4/DBG_UART_UART.c ****                                             DBG_UART_GET_UART_FLOW_CTRL_CTS_POLARITY (config->ctsPo
  200:Generated_Source\PSoC4/DBG_UART_UART.c ****                                             DBG_UART_GET_UART_FLOW_CTRL_RTS_POLARITY (config->rtsPo
  201:Generated_Source\PSoC4/DBG_UART_UART.c ****                                             DBG_UART_GET_UART_FLOW_CTRL_TRIGGER_LEVEL(config->rtsRx
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 5
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccCKXTyj.s 			page 5
 
 
  202:Generated_Source\PSoC4/DBG_UART_UART.c ****         #endif /* !(DBG_UART_CY_SCBIP_V0 || DBG_UART_CY_SCBIP_V1) */
@@ -296,9 +296,9 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 1
  249:Generated_Source\PSoC4/DBG_UART_UART.c ****         /* Configure UART interface */
  250:Generated_Source\PSoC4/DBG_UART_UART.c ****         DBG_UART_CTRL_REG = DBG_UART_UART_DEFAULT_CTRL;
   33              		.loc 1 250 0
-  34 0000 154A     		ldr	r2, .L2
-  35 0002 164B     		ldr	r3, .L2+4
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 6
+  34 0000 134A     		ldr	r2, .L2
+  35 0002 144B     		ldr	r3, .L2+4
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccCKXTyj.s 			page 6
 
 
   36 0004 1A60     		str	r2, [r3]
@@ -307,64 +307,60 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 1
  253:Generated_Source\PSoC4/DBG_UART_UART.c ****         DBG_UART_UART_CTRL_REG = DBG_UART_UART_DEFAULT_UART_CTRL;
   37              		.loc 1 253 0
   38 0006 0023     		movs	r3, #0
-  39 0008 154A     		ldr	r2, .L2+8
+  39 0008 134A     		ldr	r2, .L2+8
   40 000a 1360     		str	r3, [r2]
  254:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  255:Generated_Source\PSoC4/DBG_UART_UART.c ****         /* Configure RX direction */
  256:Generated_Source\PSoC4/DBG_UART_UART.c ****         DBG_UART_UART_RX_CTRL_REG = DBG_UART_UART_DEFAULT_UART_RX_CTRL;
   41              		.loc 1 256 0
-  42 000c 1549     		ldr	r1, .L2+12
-  43 000e 164A     		ldr	r2, .L2+16
+  42 000c 1349     		ldr	r1, .L2+12
+  43 000e 144A     		ldr	r2, .L2+16
   44 0010 1160     		str	r1, [r2]
  257:Generated_Source\PSoC4/DBG_UART_UART.c ****         DBG_UART_RX_CTRL_REG      = DBG_UART_UART_DEFAULT_RX_CTRL;
   45              		.loc 1 257 0
-  46 0012 164A     		ldr	r2, .L2+20
-  47 0014 1649     		ldr	r1, .L2+24
+  46 0012 144A     		ldr	r2, .L2+20
+  47 0014 1449     		ldr	r1, .L2+24
   48 0016 0A60     		str	r2, [r1]
  258:Generated_Source\PSoC4/DBG_UART_UART.c ****         DBG_UART_RX_FIFO_CTRL_REG = DBG_UART_UART_DEFAULT_RX_FIFO_CTRL;
   49              		.loc 1 258 0
   50 0018 0720     		movs	r0, #7
-  51 001a 1649     		ldr	r1, .L2+28
+  51 001a 1449     		ldr	r1, .L2+28
   52 001c 0860     		str	r0, [r1]
  259:Generated_Source\PSoC4/DBG_UART_UART.c ****         DBG_UART_RX_MATCH_REG     = DBG_UART_UART_DEFAULT_RX_MATCH_REG;
   53              		.loc 1 259 0
-  54 001e 1649     		ldr	r1, .L2+32
+  54 001e 1449     		ldr	r1, .L2+32
   55 0020 0B60     		str	r3, [r1]
  260:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  261:Generated_Source\PSoC4/DBG_UART_UART.c ****         /* Configure TX direction */
  262:Generated_Source\PSoC4/DBG_UART_UART.c ****         DBG_UART_UART_TX_CTRL_REG = DBG_UART_UART_DEFAULT_UART_TX_CTRL;
   56              		.loc 1 262 0
   57 0022 0638     		subs	r0, r0, #6
-  58 0024 1549     		ldr	r1, .L2+36
+  58 0024 1349     		ldr	r1, .L2+36
   59 0026 0860     		str	r0, [r1]
  263:Generated_Source\PSoC4/DBG_UART_UART.c ****         DBG_UART_TX_CTRL_REG      = DBG_UART_UART_DEFAULT_TX_CTRL;
   60              		.loc 1 263 0
-  61 0028 1549     		ldr	r1, .L2+40
+  61 0028 1349     		ldr	r1, .L2+40
   62 002a 0A60     		str	r2, [r1]
  264:Generated_Source\PSoC4/DBG_UART_UART.c ****         DBG_UART_TX_FIFO_CTRL_REG = DBG_UART_UART_DEFAULT_TX_FIFO_CTRL;
   63              		.loc 1 264 0
-  64 002c 154A     		ldr	r2, .L2+44
+  64 002c 134A     		ldr	r2, .L2+44
   65 002e 1360     		str	r3, [r2]
  265:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  266:Generated_Source\PSoC4/DBG_UART_UART.c ****     #if !(DBG_UART_CY_SCBIP_V0 || DBG_UART_CY_SCBIP_V1)
  267:Generated_Source\PSoC4/DBG_UART_UART.c ****         DBG_UART_UART_FLOW_CTRL_REG = DBG_UART_UART_DEFAULT_FLOW_CTRL;
-  66              		.loc 1 267 0
-  67 0030 0421     		movs	r1, #4
-  68 0032 154A     		ldr	r2, .L2+48
-  69 0034 1160     		str	r1, [r2]
  268:Generated_Source\PSoC4/DBG_UART_UART.c ****     #endif /* !(DBG_UART_CY_SCBIP_V0 || DBG_UART_CY_SCBIP_V1) */
  269:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  270:Generated_Source\PSoC4/DBG_UART_UART.c ****         /* Configure interrupt with UART handler but do not enable it */
  271:Generated_Source\PSoC4/DBG_UART_UART.c ****     #if(DBG_UART_SCB_IRQ_INTERNAL)
  272:Generated_Source\PSoC4/DBG_UART_UART.c ****         CyIntDisable    (DBG_UART_ISR_NUMBER);
  273:Generated_Source\PSoC4/DBG_UART_UART.c ****         CyIntSetPriority(DBG_UART_ISR_NUMBER, DBG_UART_ISR_PRIORITY);
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 7
-
-
  274:Generated_Source\PSoC4/DBG_UART_UART.c ****         (void) CyIntSetVector(DBG_UART_ISR_NUMBER, &DBG_UART_SPI_UART_ISR);
  275:Generated_Source\PSoC4/DBG_UART_UART.c ****     #endif /* (DBG_UART_SCB_IRQ_INTERNAL) */
  276:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  277:Generated_Source\PSoC4/DBG_UART_UART.c ****         /* Configure WAKE interrupt */
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccCKXTyj.s 			page 7
+
+
  278:Generated_Source\PSoC4/DBG_UART_UART.c ****     #if(DBG_UART_UART_RX_WAKEUP_IRQ)
  279:Generated_Source\PSoC4/DBG_UART_UART.c ****         CyIntDisable    (DBG_UART_RX_WAKE_ISR_NUMBER);
  280:Generated_Source\PSoC4/DBG_UART_UART.c ****         CyIntSetPriority(DBG_UART_RX_WAKE_ISR_NUMBER, DBG_UART_RX_WAKE_ISR_PRIORITY);
@@ -373,36 +369,36 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 1
  283:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  284:Generated_Source\PSoC4/DBG_UART_UART.c ****         /* Configure interrupt sources */
  285:Generated_Source\PSoC4/DBG_UART_UART.c ****         DBG_UART_INTR_I2C_EC_MASK_REG = DBG_UART_UART_DEFAULT_INTR_I2C_EC_MASK;
-  70              		.loc 1 285 0
-  71 0036 154A     		ldr	r2, .L2+52
-  72 0038 1360     		str	r3, [r2]
+  66              		.loc 1 285 0
+  67 0030 134A     		ldr	r2, .L2+48
+  68 0032 1360     		str	r3, [r2]
  286:Generated_Source\PSoC4/DBG_UART_UART.c ****         DBG_UART_INTR_SPI_EC_MASK_REG = DBG_UART_UART_DEFAULT_INTR_SPI_EC_MASK;
-  73              		.loc 1 286 0
-  74 003a 154A     		ldr	r2, .L2+56
-  75 003c 1360     		str	r3, [r2]
+  69              		.loc 1 286 0
+  70 0034 134A     		ldr	r2, .L2+52
+  71 0036 1360     		str	r3, [r2]
  287:Generated_Source\PSoC4/DBG_UART_UART.c ****         DBG_UART_INTR_SLAVE_MASK_REG  = DBG_UART_UART_DEFAULT_INTR_SLAVE_MASK;
-  76              		.loc 1 287 0
-  77 003e 154A     		ldr	r2, .L2+60
-  78 0040 1360     		str	r3, [r2]
+  72              		.loc 1 287 0
+  73 0038 134A     		ldr	r2, .L2+56
+  74 003a 1360     		str	r3, [r2]
  288:Generated_Source\PSoC4/DBG_UART_UART.c ****         DBG_UART_INTR_MASTER_MASK_REG = DBG_UART_UART_DEFAULT_INTR_MASTER_MASK;
-  79              		.loc 1 288 0
-  80 0042 154A     		ldr	r2, .L2+64
-  81 0044 1360     		str	r3, [r2]
+  75              		.loc 1 288 0
+  76 003c 134A     		ldr	r2, .L2+60
+  77 003e 1360     		str	r3, [r2]
  289:Generated_Source\PSoC4/DBG_UART_UART.c ****         DBG_UART_INTR_RX_MASK_REG     = DBG_UART_UART_DEFAULT_INTR_RX_MASK;
-  82              		.loc 1 289 0
-  83 0046 154A     		ldr	r2, .L2+68
-  84 0048 1360     		str	r3, [r2]
+  78              		.loc 1 289 0
+  79 0040 134A     		ldr	r2, .L2+64
+  80 0042 1360     		str	r3, [r2]
  290:Generated_Source\PSoC4/DBG_UART_UART.c ****         DBG_UART_INTR_TX_MASK_REG     = DBG_UART_UART_DEFAULT_INTR_TX_MASK;
-  85              		.loc 1 290 0
-  86 004a 154A     		ldr	r2, .L2+72
-  87 004c 1360     		str	r3, [r2]
+  81              		.loc 1 290 0
+  82 0044 134A     		ldr	r2, .L2+68
+  83 0046 1360     		str	r3, [r2]
  291:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  292:Generated_Source\PSoC4/DBG_UART_UART.c ****         /* Configure TX interrupt sources to restore. */
  293:Generated_Source\PSoC4/DBG_UART_UART.c ****         DBG_UART_IntrTxMask = LO16(DBG_UART_INTR_TX_MASK_REG);
-  88              		.loc 1 293 0
-  89 004e 1268     		ldr	r2, [r2]
-  90 0050 144B     		ldr	r3, .L2+76
-  91 0052 1A80     		strh	r2, [r3]
+  84              		.loc 1 293 0
+  85 0048 1268     		ldr	r2, [r2]
+  86 004a 134B     		ldr	r3, .L2+72
+  87 004c 1A80     		strh	r2, [r3]
  294:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  295:Generated_Source\PSoC4/DBG_UART_UART.c ****     #if(DBG_UART_INTERNAL_RX_SW_BUFFER_CONST)
  296:Generated_Source\PSoC4/DBG_UART_UART.c ****         DBG_UART_rxBufferHead     = 0u;
@@ -415,46 +411,45 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 1
  303:Generated_Source\PSoC4/DBG_UART_UART.c ****         DBG_UART_txBufferTail = 0u;
  304:Generated_Source\PSoC4/DBG_UART_UART.c ****     #endif /* (DBG_UART_INTERNAL_TX_SW_BUFFER_CONST) */
  305:Generated_Source\PSoC4/DBG_UART_UART.c ****     }
-  92              		.loc 1 305 0
-  93              		@ sp needed
-  94 0054 7047     		bx	lr
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 8
+  88              		.loc 1 305 0
+  89              		@ sp needed
+  90 004e 7047     		bx	lr
+  91              	.L3:
+  92              		.align	2
+  93              	.L2:
+  94 0050 0B000002 		.word	33554443
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccCKXTyj.s 			page 8
 
 
-  95              	.L3:
-  96 0056 C046     		.align	2
-  97              	.L2:
-  98 0058 0B000002 		.word	33554443
-  99 005c 00002740 		.word	1076297728
- 100 0060 40002740 		.word	1076297792
- 101 0064 01000A00 		.word	655361
- 102 0068 48002740 		.word	1076297800
- 103 006c 07000080 		.word	-2147483641
- 104 0070 00032740 		.word	1076298496
- 105 0074 04032740 		.word	1076298500
- 106 0078 10032740 		.word	1076298512
- 107 007c 44002740 		.word	1076297796
- 108 0080 00022740 		.word	1076298240
- 109 0084 04022740 		.word	1076298244
- 110 0088 50002740 		.word	1076297808
- 111 008c 880E2740 		.word	1076301448
- 112 0090 C80E2740 		.word	1076301512
- 113 0094 480F2740 		.word	1076301640
- 114 0098 080F2740 		.word	1076301576
- 115 009c C80F2740 		.word	1076301768
- 116 00a0 880F2740 		.word	1076301704
- 117 00a4 00000000 		.word	DBG_UART_IntrTxMask
- 118              		.cfi_endproc
- 119              	.LFE1:
- 120              		.size	DBG_UART_UartInit, .-DBG_UART_UartInit
- 121              		.section	.text.DBG_UART_UartPostEnable,"ax",%progbits
- 122              		.align	2
- 123              		.global	DBG_UART_UartPostEnable
- 124              		.code	16
- 125              		.thumb_func
- 126              		.type	DBG_UART_UartPostEnable, %function
- 127              	DBG_UART_UartPostEnable:
- 128              	.LFB2:
+  95 0054 00000640 		.word	1074135040
+  96 0058 40000640 		.word	1074135104
+  97 005c 01000A00 		.word	655361
+  98 0060 48000640 		.word	1074135112
+  99 0064 07000080 		.word	-2147483641
+ 100 0068 00030640 		.word	1074135808
+ 101 006c 04030640 		.word	1074135812
+ 102 0070 10030640 		.word	1074135824
+ 103 0074 44000640 		.word	1074135108
+ 104 0078 00020640 		.word	1074135552
+ 105 007c 04020640 		.word	1074135556
+ 106 0080 880E0640 		.word	1074138760
+ 107 0084 C80E0640 		.word	1074138824
+ 108 0088 480F0640 		.word	1074138952
+ 109 008c 080F0640 		.word	1074138888
+ 110 0090 C80F0640 		.word	1074139080
+ 111 0094 880F0640 		.word	1074139016
+ 112 0098 00000000 		.word	DBG_UART_IntrTxMask
+ 113              		.cfi_endproc
+ 114              	.LFE0:
+ 115              		.size	DBG_UART_UartInit, .-DBG_UART_UartInit
+ 116              		.section	.text.DBG_UART_UartPostEnable,"ax",%progbits
+ 117              		.align	2
+ 118              		.global	DBG_UART_UartPostEnable
+ 119              		.code	16
+ 120              		.thumb_func
+ 121              		.type	DBG_UART_UartPostEnable, %function
+ 122              	DBG_UART_UartPostEnable:
+ 123              	.LFB1:
  306:Generated_Source\PSoC4/DBG_UART_UART.c **** #endif /* (DBG_UART_SCB_MODE_UNCONFIG_CONST_CFG) */
  307:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  308:Generated_Source\PSoC4/DBG_UART_UART.c **** 
@@ -468,47 +463,47 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 1
  316:Generated_Source\PSoC4/DBG_UART_UART.c **** *******************************************************************************/
  317:Generated_Source\PSoC4/DBG_UART_UART.c **** void DBG_UART_UartPostEnable(void)
  318:Generated_Source\PSoC4/DBG_UART_UART.c **** {
- 129              		.loc 1 318 0
- 130              		.cfi_startproc
- 131              		@ args = 0, pretend = 0, frame = 0
- 132              		@ frame_needed = 0, uses_anonymous_args = 0
- 133              		@ link register save eliminated.
+ 124              		.loc 1 318 0
+ 125              		.cfi_startproc
+ 126              		@ args = 0, pretend = 0, frame = 0
+ 127              		@ frame_needed = 0, uses_anonymous_args = 0
+ 128              		@ link register save eliminated.
  319:Generated_Source\PSoC4/DBG_UART_UART.c **** #if (DBG_UART_SCB_MODE_UNCONFIG_CONST_CFG)
  320:Generated_Source\PSoC4/DBG_UART_UART.c ****     #if (DBG_UART_TX_SDA_MISO_PIN)
  321:Generated_Source\PSoC4/DBG_UART_UART.c ****         if (DBG_UART_CHECK_TX_SDA_MISO_PIN_USED)
  322:Generated_Source\PSoC4/DBG_UART_UART.c ****         {
  323:Generated_Source\PSoC4/DBG_UART_UART.c ****             /* Set SCB UART to drive the output pin */
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 9
-
-
  324:Generated_Source\PSoC4/DBG_UART_UART.c ****             DBG_UART_SET_HSIOM_SEL(DBG_UART_TX_SDA_MISO_HSIOM_REG, DBG_UART_TX_SDA_MISO_HSIOM_MASK,
  325:Generated_Source\PSoC4/DBG_UART_UART.c ****                                            DBG_UART_TX_SDA_MISO_HSIOM_POS, DBG_UART_TX_SDA_MISO_HSI
  326:Generated_Source\PSoC4/DBG_UART_UART.c ****         }
  327:Generated_Source\PSoC4/DBG_UART_UART.c ****     #endif /* (DBG_UART_TX_SDA_MISO_PIN_PIN) */
  328:Generated_Source\PSoC4/DBG_UART_UART.c **** 
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccCKXTyj.s 			page 9
+
+
  329:Generated_Source\PSoC4/DBG_UART_UART.c ****     #if !(DBG_UART_CY_SCBIP_V0 || DBG_UART_CY_SCBIP_V1)
- 330:Generated_Source\PSoC4/DBG_UART_UART.c ****         #if (DBG_UART_RTS_SS0_PIN)
- 331:Generated_Source\PSoC4/DBG_UART_UART.c ****             if (DBG_UART_CHECK_RTS_SS0_PIN_USED)
+ 330:Generated_Source\PSoC4/DBG_UART_UART.c ****         #if (DBG_UART_SS0_PIN)
+ 331:Generated_Source\PSoC4/DBG_UART_UART.c ****             if (DBG_UART_CHECK_SS0_PIN_USED)
  332:Generated_Source\PSoC4/DBG_UART_UART.c ****             {
  333:Generated_Source\PSoC4/DBG_UART_UART.c ****                 /* Set SCB UART to drive the output pin */
- 334:Generated_Source\PSoC4/DBG_UART_UART.c ****                 DBG_UART_SET_HSIOM_SEL(DBG_UART_RTS_SS0_HSIOM_REG, DBG_UART_RTS_SS0_HSIOM_MASK,
- 335:Generated_Source\PSoC4/DBG_UART_UART.c ****                                                DBG_UART_RTS_SS0_HSIOM_POS, DBG_UART_RTS_SS0_HSIOM_S
+ 334:Generated_Source\PSoC4/DBG_UART_UART.c ****                 DBG_UART_SET_HSIOM_SEL(DBG_UART_SS0_HSIOM_REG, DBG_UART_SS0_HSIOM_MASK,
+ 335:Generated_Source\PSoC4/DBG_UART_UART.c ****                                                DBG_UART_SS0_HSIOM_POS, DBG_UART_SS0_HSIOM_SEL_UART)
  336:Generated_Source\PSoC4/DBG_UART_UART.c ****             }
- 337:Generated_Source\PSoC4/DBG_UART_UART.c ****         #endif /* (DBG_UART_RTS_SS0_PIN) */
+ 337:Generated_Source\PSoC4/DBG_UART_UART.c ****         #endif /* (DBG_UART_SS0_PIN) */
  338:Generated_Source\PSoC4/DBG_UART_UART.c ****     #endif /* !(DBG_UART_CY_SCBIP_V0 || DBG_UART_CY_SCBIP_V1) */
  339:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  340:Generated_Source\PSoC4/DBG_UART_UART.c **** #else
  341:Generated_Source\PSoC4/DBG_UART_UART.c ****     #if (DBG_UART_UART_TX_PIN)
  342:Generated_Source\PSoC4/DBG_UART_UART.c ****          /* Set SCB UART to drive the output pin */
  343:Generated_Source\PSoC4/DBG_UART_UART.c ****         DBG_UART_SET_HSIOM_SEL(DBG_UART_TX_HSIOM_REG, DBG_UART_TX_HSIOM_MASK,
- 134              		.loc 1 343 0
- 135 0000 0549     		ldr	r1, .L5
- 136 0002 0B68     		ldr	r3, [r1]
- 137 0004 F022     		movs	r2, #240
- 138 0006 9343     		bics	r3, r2
- 139 0008 603A     		subs	r2, r2, #96
- 140 000a 1343     		orrs	r3, r2
- 141 000c 0B60     		str	r3, [r1]
+ 129              		.loc 1 343 0
+ 130 0000 0549     		ldr	r1, .L5
+ 131 0002 0B68     		ldr	r3, [r1]
+ 132 0004 F022     		movs	r2, #240
+ 133 0006 9343     		bics	r3, r2
+ 134 0008 603A     		subs	r2, r2, #96
+ 135 000a 1343     		orrs	r3, r2
+ 136 000c 0B60     		str	r3, [r1]
  344:Generated_Source\PSoC4/DBG_UART_UART.c ****                                        DBG_UART_TX_HSIOM_POS, DBG_UART_TX_HSIOM_SEL_UART);
  345:Generated_Source\PSoC4/DBG_UART_UART.c ****     #endif /* (DBG_UART_UART_TX_PIN) */
  346:Generated_Source\PSoC4/DBG_UART_UART.c **** 
@@ -521,35 +516,35 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 1
  353:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  354:Generated_Source\PSoC4/DBG_UART_UART.c ****     /* Restore TX interrupt sources. */
  355:Generated_Source\PSoC4/DBG_UART_UART.c ****     DBG_UART_SetTxInterruptMode(DBG_UART_IntrTxMask);
- 142              		.loc 1 355 0
- 143 000e 034B     		ldr	r3, .L5+4
- 144 0010 1A88     		ldrh	r2, [r3]
- 145 0012 034B     		ldr	r3, .L5+8
- 146 0014 1A60     		str	r2, [r3]
+ 137              		.loc 1 355 0
+ 138 000e 034B     		ldr	r3, .L5+4
+ 139 0010 1A88     		ldrh	r2, [r3]
+ 140 0012 034B     		ldr	r3, .L5+8
+ 141 0014 1A60     		str	r2, [r3]
  356:Generated_Source\PSoC4/DBG_UART_UART.c **** }
- 147              		.loc 1 356 0
- 148              		@ sp needed
- 149 0016 7047     		bx	lr
- 150              	.L6:
- 151              		.align	2
- 152              	.L5:
- 153 0018 00060240 		.word	1073874432
- 154 001c 00000000 		.word	DBG_UART_IntrTxMask
- 155 0020 880F2740 		.word	1076301704
- 156              		.cfi_endproc
- 157              	.LFE2:
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 10
+ 142              		.loc 1 356 0
+ 143              		@ sp needed
+ 144 0016 7047     		bx	lr
+ 145              	.L6:
+ 146              		.align	2
+ 147              	.L5:
+ 148 0018 10000140 		.word	1073807376
+ 149 001c 00000000 		.word	DBG_UART_IntrTxMask
+ 150 0020 880F0640 		.word	1074139016
+ 151              		.cfi_endproc
+ 152              	.LFE1:
+ 153              		.size	DBG_UART_UartPostEnable, .-DBG_UART_UartPostEnable
+ 154              		.section	.text.DBG_UART_UartStop,"ax",%progbits
+ 155              		.align	2
+ 156              		.global	DBG_UART_UartStop
+ 157              		.code	16
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccCKXTyj.s 			page 10
 
 
- 158              		.size	DBG_UART_UartPostEnable, .-DBG_UART_UartPostEnable
- 159              		.section	.text.DBG_UART_UartStop,"ax",%progbits
- 160              		.align	2
- 161              		.global	DBG_UART_UartStop
- 162              		.code	16
- 163              		.thumb_func
- 164              		.type	DBG_UART_UartStop, %function
- 165              	DBG_UART_UartStop:
- 166              	.LFB3:
+ 158              		.thumb_func
+ 159              		.type	DBG_UART_UartStop, %function
+ 160              	DBG_UART_UartStop:
+ 161              	.LFB2:
  357:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  358:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  359:Generated_Source\PSoC4/DBG_UART_UART.c **** /*******************************************************************************
@@ -564,11 +559,11 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 1
  368:Generated_Source\PSoC4/DBG_UART_UART.c **** *******************************************************************************/
  369:Generated_Source\PSoC4/DBG_UART_UART.c **** void DBG_UART_UartStop(void)
  370:Generated_Source\PSoC4/DBG_UART_UART.c **** {
- 167              		.loc 1 370 0
- 168              		.cfi_startproc
- 169              		@ args = 0, pretend = 0, frame = 0
- 170              		@ frame_needed = 0, uses_anonymous_args = 0
- 171              		@ link register save eliminated.
+ 162              		.loc 1 370 0
+ 163              		.cfi_startproc
+ 164              		@ args = 0, pretend = 0, frame = 0
+ 165              		@ frame_needed = 0, uses_anonymous_args = 0
+ 166              		@ link register save eliminated.
  371:Generated_Source\PSoC4/DBG_UART_UART.c **** #if(DBG_UART_SCB_MODE_UNCONFIG_CONST_CFG)
  372:Generated_Source\PSoC4/DBG_UART_UART.c ****     #if (DBG_UART_TX_SDA_MISO_PIN)
  373:Generated_Source\PSoC4/DBG_UART_UART.c ****         if (DBG_UART_CHECK_TX_SDA_MISO_PIN_USED)
@@ -580,32 +575,32 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 1
  379:Generated_Source\PSoC4/DBG_UART_UART.c ****     #endif /* (DBG_UART_TX_SDA_MISO_PIN_PIN) */
  380:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  381:Generated_Source\PSoC4/DBG_UART_UART.c ****     #if !(DBG_UART_CY_SCBIP_V0 || DBG_UART_CY_SCBIP_V1)
- 382:Generated_Source\PSoC4/DBG_UART_UART.c ****         #if (DBG_UART_RTS_SS0_PIN)
- 383:Generated_Source\PSoC4/DBG_UART_UART.c ****             if (DBG_UART_CHECK_RTS_SS0_PIN_USED)
+ 382:Generated_Source\PSoC4/DBG_UART_UART.c ****         #if (DBG_UART_SS0_PIN)
+ 383:Generated_Source\PSoC4/DBG_UART_UART.c ****             if (DBG_UART_CHECK_SS0_PIN_USED)
  384:Generated_Source\PSoC4/DBG_UART_UART.c ****             {
  385:Generated_Source\PSoC4/DBG_UART_UART.c ****                 /* Set output pin state after block is disabled */
- 386:Generated_Source\PSoC4/DBG_UART_UART.c ****                 DBG_UART_uart_rts_spi_ss0_Write(DBG_UART_GET_UART_RTS_INACTIVE);
+ 386:Generated_Source\PSoC4/DBG_UART_UART.c ****                 DBG_UART_spi_ss0_Write(DBG_UART_GET_UART_RTS_INACTIVE);
  387:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  388:Generated_Source\PSoC4/DBG_UART_UART.c ****                 /* Set GPIO to drive output pin */
- 389:Generated_Source\PSoC4/DBG_UART_UART.c ****                 DBG_UART_SET_HSIOM_SEL(DBG_UART_RTS_SS0_HSIOM_REG, DBG_UART_RTS_SS0_HSIOM_MASK,
- 390:Generated_Source\PSoC4/DBG_UART_UART.c ****                                                DBG_UART_RTS_SS0_HSIOM_POS, DBG_UART_RTS_SS0_HSIOM_S
+ 389:Generated_Source\PSoC4/DBG_UART_UART.c ****                 DBG_UART_SET_HSIOM_SEL(DBG_UART_SS0_HSIOM_REG, DBG_UART_SS0_HSIOM_MASK,
+ 390:Generated_Source\PSoC4/DBG_UART_UART.c ****                                                DBG_UART_SS0_HSIOM_POS, DBG_UART_SS0_HSIOM_SEL_GPIO)
  391:Generated_Source\PSoC4/DBG_UART_UART.c ****             }
- 392:Generated_Source\PSoC4/DBG_UART_UART.c ****         #endif /* (DBG_UART_RTS_SS0_PIN) */
+ 392:Generated_Source\PSoC4/DBG_UART_UART.c ****         #endif /* (DBG_UART_SS0_PIN) */
  393:Generated_Source\PSoC4/DBG_UART_UART.c ****     #endif /* !(DBG_UART_CY_SCBIP_V0 || DBG_UART_CY_SCBIP_V1) */
  394:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  395:Generated_Source\PSoC4/DBG_UART_UART.c **** #else
  396:Generated_Source\PSoC4/DBG_UART_UART.c ****     #if (DBG_UART_UART_TX_PIN)
  397:Generated_Source\PSoC4/DBG_UART_UART.c ****         /* Set GPIO to drive output pin */
  398:Generated_Source\PSoC4/DBG_UART_UART.c ****         DBG_UART_SET_HSIOM_SEL(DBG_UART_TX_HSIOM_REG, DBG_UART_TX_HSIOM_MASK,
- 172              		.loc 1 398 0
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 11
+ 167              		.loc 1 398 0
+ 168 0000 064A     		ldr	r2, .L8
+ 169 0002 1368     		ldr	r3, [r2]
+ 170 0004 F021     		movs	r1, #240
+ 171 0006 8B43     		bics	r3, r1
+ 172 0008 1360     		str	r3, [r2]
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccCKXTyj.s 			page 11
 
 
- 173 0000 064A     		ldr	r2, .L8
- 174 0002 1368     		ldr	r3, [r2]
- 175 0004 F021     		movs	r1, #240
- 176 0006 8B43     		bics	r3, r1
- 177 0008 1360     		str	r3, [r2]
  399:Generated_Source\PSoC4/DBG_UART_UART.c ****                                        DBG_UART_TX_HSIOM_POS, DBG_UART_TX_HSIOM_SEL_GPIO);
  400:Generated_Source\PSoC4/DBG_UART_UART.c ****     #endif /* (DBG_UART_UART_TX_PIN) */
  401:Generated_Source\PSoC4/DBG_UART_UART.c **** 
@@ -627,45 +622,45 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 1
  417:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  418:Generated_Source\PSoC4/DBG_UART_UART.c ****     /* Store TX interrupt sources (exclude level triggered). */
  419:Generated_Source\PSoC4/DBG_UART_UART.c ****     DBG_UART_IntrTxMask = LO16(DBG_UART_GetTxInterruptMode() & DBG_UART_INTR_UART_TX_RESTORE);
- 178              		.loc 1 419 0
- 179 000a 054B     		ldr	r3, .L8+4
- 180 000c 1A68     		ldr	r2, [r3]
- 181 000e E423     		movs	r3, #228
- 182 0010 DB00     		lsls	r3, r3, #3
- 183 0012 1340     		ands	r3, r2
- 184 0014 034A     		ldr	r2, .L8+8
- 185 0016 1380     		strh	r3, [r2]
+ 173              		.loc 1 419 0
+ 174 000a 054B     		ldr	r3, .L8+4
+ 175 000c 1A68     		ldr	r2, [r3]
+ 176 000e E423     		movs	r3, #228
+ 177 0010 DB00     		lsls	r3, r3, #3
+ 178 0012 1340     		ands	r3, r2
+ 179 0014 034A     		ldr	r2, .L8+8
+ 180 0016 1380     		strh	r3, [r2]
  420:Generated_Source\PSoC4/DBG_UART_UART.c **** }
- 186              		.loc 1 420 0
- 187              		@ sp needed
- 188 0018 7047     		bx	lr
- 189              	.L9:
- 190 001a C046     		.align	2
- 191              	.L8:
- 192 001c 00060240 		.word	1073874432
- 193 0020 880F2740 		.word	1076301704
- 194 0024 00000000 		.word	DBG_UART_IntrTxMask
- 195              		.cfi_endproc
- 196              	.LFE3:
- 197              		.size	DBG_UART_UartStop, .-DBG_UART_UartStop
- 198              		.section	.text.DBG_UART_UartSetRxAddress,"ax",%progbits
- 199              		.align	2
- 200              		.global	DBG_UART_UartSetRxAddress
- 201              		.code	16
- 202              		.thumb_func
- 203              		.type	DBG_UART_UartSetRxAddress, %function
- 204              	DBG_UART_UartSetRxAddress:
- 205              	.LFB4:
+ 181              		.loc 1 420 0
+ 182              		@ sp needed
+ 183 0018 7047     		bx	lr
+ 184              	.L9:
+ 185 001a C046     		.align	2
+ 186              	.L8:
+ 187 001c 10000140 		.word	1073807376
+ 188 0020 880F0640 		.word	1074139016
+ 189 0024 00000000 		.word	DBG_UART_IntrTxMask
+ 190              		.cfi_endproc
+ 191              	.LFE2:
+ 192              		.size	DBG_UART_UartStop, .-DBG_UART_UartStop
+ 193              		.section	.text.DBG_UART_UartSetRxAddress,"ax",%progbits
+ 194              		.align	2
+ 195              		.global	DBG_UART_UartSetRxAddress
+ 196              		.code	16
+ 197              		.thumb_func
+ 198              		.type	DBG_UART_UartSetRxAddress, %function
+ 199              	DBG_UART_UartSetRxAddress:
+ 200              	.LFB3:
  421:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  422:Generated_Source\PSoC4/DBG_UART_UART.c **** 
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 12
-
-
  423:Generated_Source\PSoC4/DBG_UART_UART.c **** /*******************************************************************************
  424:Generated_Source\PSoC4/DBG_UART_UART.c **** * Function Name: DBG_UART_UartSetRxAddress
  425:Generated_Source\PSoC4/DBG_UART_UART.c **** ****************************************************************************//**
  426:Generated_Source\PSoC4/DBG_UART_UART.c **** *
  427:Generated_Source\PSoC4/DBG_UART_UART.c **** *  Sets the hardware detectable receiver address for the UART in the
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccCKXTyj.s 			page 12
+
+
  428:Generated_Source\PSoC4/DBG_UART_UART.c **** *  Multiprocessor mode.
  429:Generated_Source\PSoC4/DBG_UART_UART.c **** *
  430:Generated_Source\PSoC4/DBG_UART_UART.c **** *  \param address: Address for hardware address detection.
@@ -673,59 +668,59 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 1
  432:Generated_Source\PSoC4/DBG_UART_UART.c **** *******************************************************************************/
  433:Generated_Source\PSoC4/DBG_UART_UART.c **** void DBG_UART_UartSetRxAddress(uint32 address)
  434:Generated_Source\PSoC4/DBG_UART_UART.c **** {
- 206              		.loc 1 434 0
- 207              		.cfi_startproc
- 208              		@ args = 0, pretend = 0, frame = 0
- 209              		@ frame_needed = 0, uses_anonymous_args = 0
- 210              		@ link register save eliminated.
- 211              	.LVL0:
+ 201              		.loc 1 434 0
+ 202              		.cfi_startproc
+ 203              		@ args = 0, pretend = 0, frame = 0
+ 204              		@ frame_needed = 0, uses_anonymous_args = 0
+ 205              		@ link register save eliminated.
+ 206              	.LVL0:
  435:Generated_Source\PSoC4/DBG_UART_UART.c ****      uint32 matchReg;
  436:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  437:Generated_Source\PSoC4/DBG_UART_UART.c ****     matchReg = DBG_UART_RX_MATCH_REG;
- 212              		.loc 1 437 0
- 213 0000 034A     		ldr	r2, .L11
- 214 0002 1368     		ldr	r3, [r2]
- 215              	.LVL1:
+ 207              		.loc 1 437 0
+ 208 0000 034A     		ldr	r2, .L11
+ 209 0002 1368     		ldr	r3, [r2]
+ 210              	.LVL1:
  438:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  439:Generated_Source\PSoC4/DBG_UART_UART.c ****     matchReg &= ((uint32) ~DBG_UART_RX_MATCH_ADDR_MASK); /* Clear address bits */
- 216              		.loc 1 439 0
- 217 0004 FF21     		movs	r1, #255
- 218 0006 8B43     		bics	r3, r1
- 219              	.LVL2:
+ 211              		.loc 1 439 0
+ 212 0004 FF21     		movs	r1, #255
+ 213 0006 8B43     		bics	r3, r1
+ 214              	.LVL2:
  440:Generated_Source\PSoC4/DBG_UART_UART.c ****     matchReg |= ((uint32)  (address & DBG_UART_RX_MATCH_ADDR_MASK)); /* Set address  */
- 220              		.loc 1 440 0
- 221 0008 0840     		ands	r0, r1
- 222              	.LVL3:
- 223 000a 1843     		orrs	r0, r3
- 224              	.LVL4:
+ 215              		.loc 1 440 0
+ 216 0008 0840     		ands	r0, r1
+ 217              	.LVL3:
+ 218 000a 1843     		orrs	r0, r3
+ 219              	.LVL4:
  441:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  442:Generated_Source\PSoC4/DBG_UART_UART.c ****     DBG_UART_RX_MATCH_REG = matchReg;
- 225              		.loc 1 442 0
- 226 000c 1060     		str	r0, [r2]
+ 220              		.loc 1 442 0
+ 221 000c 1060     		str	r0, [r2]
  443:Generated_Source\PSoC4/DBG_UART_UART.c **** }
- 227              		.loc 1 443 0
- 228              		@ sp needed
- 229 000e 7047     		bx	lr
- 230              	.L12:
- 231              		.align	2
- 232              	.L11:
- 233 0010 10032740 		.word	1076298512
- 234              		.cfi_endproc
- 235              	.LFE4:
- 236              		.size	DBG_UART_UartSetRxAddress, .-DBG_UART_UartSetRxAddress
- 237              		.section	.text.DBG_UART_UartSetRxAddressMask,"ax",%progbits
- 238              		.align	2
- 239              		.global	DBG_UART_UartSetRxAddressMask
- 240              		.code	16
- 241              		.thumb_func
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 13
-
-
- 242              		.type	DBG_UART_UartSetRxAddressMask, %function
- 243              	DBG_UART_UartSetRxAddressMask:
- 244              	.LFB5:
+ 222              		.loc 1 443 0
+ 223              		@ sp needed
+ 224 000e 7047     		bx	lr
+ 225              	.L12:
+ 226              		.align	2
+ 227              	.L11:
+ 228 0010 10030640 		.word	1074135824
+ 229              		.cfi_endproc
+ 230              	.LFE3:
+ 231              		.size	DBG_UART_UartSetRxAddress, .-DBG_UART_UartSetRxAddress
+ 232              		.section	.text.DBG_UART_UartSetRxAddressMask,"ax",%progbits
+ 233              		.align	2
+ 234              		.global	DBG_UART_UartSetRxAddressMask
+ 235              		.code	16
+ 236              		.thumb_func
+ 237              		.type	DBG_UART_UartSetRxAddressMask, %function
+ 238              	DBG_UART_UartSetRxAddressMask:
+ 239              	.LFB4:
  444:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  445:Generated_Source\PSoC4/DBG_UART_UART.c **** 
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccCKXTyj.s 			page 13
+
+
  446:Generated_Source\PSoC4/DBG_UART_UART.c **** /*******************************************************************************
  447:Generated_Source\PSoC4/DBG_UART_UART.c **** * Function Name: DBG_UART_UartSetRxAddressMask
  448:Generated_Source\PSoC4/DBG_UART_UART.c **** ****************************************************************************//**
@@ -740,58 +735,58 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 1
  457:Generated_Source\PSoC4/DBG_UART_UART.c **** *******************************************************************************/
  458:Generated_Source\PSoC4/DBG_UART_UART.c **** void DBG_UART_UartSetRxAddressMask(uint32 addressMask)
  459:Generated_Source\PSoC4/DBG_UART_UART.c **** {
- 245              		.loc 1 459 0
- 246              		.cfi_startproc
- 247              		@ args = 0, pretend = 0, frame = 0
- 248              		@ frame_needed = 0, uses_anonymous_args = 0
- 249              		@ link register save eliminated.
- 250              	.LVL5:
+ 240              		.loc 1 459 0
+ 241              		.cfi_startproc
+ 242              		@ args = 0, pretend = 0, frame = 0
+ 243              		@ frame_needed = 0, uses_anonymous_args = 0
+ 244              		@ link register save eliminated.
+ 245              	.LVL5:
  460:Generated_Source\PSoC4/DBG_UART_UART.c ****     uint32 matchReg;
  461:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  462:Generated_Source\PSoC4/DBG_UART_UART.c ****     matchReg = DBG_UART_RX_MATCH_REG;
- 251              		.loc 1 462 0
- 252 0000 034A     		ldr	r2, .L14
- 253 0002 1168     		ldr	r1, [r2]
- 254              	.LVL6:
+ 246              		.loc 1 462 0
+ 247 0000 034A     		ldr	r2, .L14
+ 248 0002 1168     		ldr	r1, [r2]
+ 249              	.LVL6:
  463:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  464:Generated_Source\PSoC4/DBG_UART_UART.c ****     matchReg &= ((uint32) ~DBG_UART_RX_MATCH_MASK_MASK); /* Clear address mask bits */
- 255              		.loc 1 464 0
- 256 0004 034B     		ldr	r3, .L14+4
- 257 0006 0B40     		ands	r3, r1
- 258              	.LVL7:
+ 250              		.loc 1 464 0
+ 251 0004 034B     		ldr	r3, .L14+4
+ 252 0006 0B40     		ands	r3, r1
+ 253              	.LVL7:
  465:Generated_Source\PSoC4/DBG_UART_UART.c ****     matchReg |= ((uint32) (addressMask << DBG_UART_RX_MATCH_MASK_POS));
- 259              		.loc 1 465 0
- 260 0008 0004     		lsls	r0, r0, #16
- 261              	.LVL8:
- 262 000a 1843     		orrs	r0, r3
- 263              	.LVL9:
+ 254              		.loc 1 465 0
+ 255 0008 0004     		lsls	r0, r0, #16
+ 256              	.LVL8:
+ 257 000a 1843     		orrs	r0, r3
+ 258              	.LVL9:
  466:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  467:Generated_Source\PSoC4/DBG_UART_UART.c ****     DBG_UART_RX_MATCH_REG = matchReg;
- 264              		.loc 1 467 0
- 265 000c 1060     		str	r0, [r2]
+ 259              		.loc 1 467 0
+ 260 000c 1060     		str	r0, [r2]
  468:Generated_Source\PSoC4/DBG_UART_UART.c **** }
- 266              		.loc 1 468 0
- 267              		@ sp needed
- 268 000e 7047     		bx	lr
- 269              	.L15:
- 270              		.align	2
- 271              	.L14:
- 272 0010 10032740 		.word	1076298512
- 273 0014 FFFF00FF 		.word	-16711681
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 14
+ 261              		.loc 1 468 0
+ 262              		@ sp needed
+ 263 000e 7047     		bx	lr
+ 264              	.L15:
+ 265              		.align	2
+ 266              	.L14:
+ 267 0010 10030640 		.word	1074135824
+ 268 0014 FFFF00FF 		.word	-16711681
+ 269              		.cfi_endproc
+ 270              	.LFE4:
+ 271              		.size	DBG_UART_UartSetRxAddressMask, .-DBG_UART_UartSetRxAddressMask
+ 272              		.section	.text.DBG_UART_UartGetChar,"ax",%progbits
+ 273              		.align	2
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccCKXTyj.s 			page 14
 
 
- 274              		.cfi_endproc
- 275              	.LFE5:
- 276              		.size	DBG_UART_UartSetRxAddressMask, .-DBG_UART_UartSetRxAddressMask
- 277              		.section	.text.DBG_UART_UartGetChar,"ax",%progbits
- 278              		.align	2
- 279              		.global	DBG_UART_UartGetChar
- 280              		.code	16
- 281              		.thumb_func
- 282              		.type	DBG_UART_UartGetChar, %function
- 283              	DBG_UART_UartGetChar:
- 284              	.LFB6:
+ 274              		.global	DBG_UART_UartGetChar
+ 275              		.code	16
+ 276              		.thumb_func
+ 277              		.type	DBG_UART_UartGetChar, %function
+ 278              	DBG_UART_UartGetChar:
+ 279              	.LFB5:
  469:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  470:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  471:Generated_Source\PSoC4/DBG_UART_UART.c **** #if(DBG_UART_UART_RX_DIRECTION)
@@ -823,89 +818,89 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 1
  497:Generated_Source\PSoC4/DBG_UART_UART.c ****     *******************************************************************************/
  498:Generated_Source\PSoC4/DBG_UART_UART.c ****     uint32 DBG_UART_UartGetChar(void)
  499:Generated_Source\PSoC4/DBG_UART_UART.c ****     {
- 285              		.loc 1 499 0
- 286              		.cfi_startproc
- 287              		@ args = 0, pretend = 0, frame = 0
- 288              		@ frame_needed = 0, uses_anonymous_args = 0
- 289 0000 10B5     		push	{r4, lr}
- 290              		.cfi_def_cfa_offset 8
- 291              		.cfi_offset 4, -8
- 292              		.cfi_offset 14, -4
- 293              	.LVL10:
+ 280              		.loc 1 499 0
+ 281              		.cfi_startproc
+ 282              		@ args = 0, pretend = 0, frame = 0
+ 283              		@ frame_needed = 0, uses_anonymous_args = 0
+ 284 0000 10B5     		push	{r4, lr}
+ 285              		.cfi_def_cfa_offset 8
+ 286              		.cfi_offset 4, -8
+ 287              		.cfi_offset 14, -4
+ 288              	.LVL10:
  500:Generated_Source\PSoC4/DBG_UART_UART.c ****         uint32 rxData = 0u;
  501:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  502:Generated_Source\PSoC4/DBG_UART_UART.c ****         /* Reads data only if there is data to read */
  503:Generated_Source\PSoC4/DBG_UART_UART.c ****         if (0u != DBG_UART_SpiUartGetRxBufferSize())
- 294              		.loc 1 503 0
- 295 0002 FFF7FEFF 		bl	DBG_UART_SpiUartGetRxBufferSize
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 15
-
-
- 296              	.LVL11:
- 297 0006 0028     		cmp	r0, #0
- 298 0008 02D0     		beq	.L19
+ 289              		.loc 1 503 0
+ 290 0002 FFF7FEFF 		bl	DBG_UART_SpiUartGetRxBufferSize
+ 291              	.LVL11:
+ 292 0006 0028     		cmp	r0, #0
+ 293 0008 02D0     		beq	.L19
  504:Generated_Source\PSoC4/DBG_UART_UART.c ****         {
  505:Generated_Source\PSoC4/DBG_UART_UART.c ****             rxData = DBG_UART_SpiUartReadRxData();
- 299              		.loc 1 505 0
- 300 000a FFF7FEFF 		bl	DBG_UART_SpiUartReadRxData
- 301              	.LVL12:
- 302 000e 00E0     		b	.L17
- 303              	.LVL13:
- 304              	.L19:
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccCKXTyj.s 			page 15
+
+
+ 294              		.loc 1 505 0
+ 295 000a FFF7FEFF 		bl	DBG_UART_SpiUartReadRxData
+ 296              	.LVL12:
+ 297 000e 00E0     		b	.L17
+ 298              	.LVL13:
+ 299              	.L19:
  500:Generated_Source\PSoC4/DBG_UART_UART.c ****         uint32 rxData = 0u;
- 305              		.loc 1 500 0
- 306 0010 0020     		movs	r0, #0
- 307              	.LVL14:
- 308              	.L17:
+ 300              		.loc 1 500 0
+ 301 0010 0020     		movs	r0, #0
+ 302              	.LVL14:
+ 303              	.L17:
  506:Generated_Source\PSoC4/DBG_UART_UART.c ****         }
  507:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  508:Generated_Source\PSoC4/DBG_UART_UART.c ****         if (DBG_UART_CHECK_INTR_RX(DBG_UART_INTR_RX_ERR))
- 309              		.loc 1 508 0
- 310 0012 054B     		ldr	r3, .L20
- 311 0014 1A68     		ldr	r2, [r3]
- 312 0016 D823     		movs	r3, #216
- 313 0018 9B00     		lsls	r3, r3, #2
- 314 001a 1A42     		tst	r2, r3
- 315 001c 03D0     		beq	.L18
- 316              	.LVL15:
+ 304              		.loc 1 508 0
+ 305 0012 054B     		ldr	r3, .L20
+ 306 0014 1A68     		ldr	r2, [r3]
+ 307 0016 D823     		movs	r3, #216
+ 308 0018 9B00     		lsls	r3, r3, #2
+ 309 001a 1A42     		tst	r2, r3
+ 310 001c 03D0     		beq	.L18
+ 311              	.LVL15:
  509:Generated_Source\PSoC4/DBG_UART_UART.c ****         {
  510:Generated_Source\PSoC4/DBG_UART_UART.c ****             rxData = 0u; /* Error occurred: returns zero */
  511:Generated_Source\PSoC4/DBG_UART_UART.c ****             DBG_UART_ClearRxInterruptSource(DBG_UART_INTR_RX_ERR);
- 317              		.loc 1 511 0
- 318 001e 1A00     		movs	r2, r3
- 319 0020 014B     		ldr	r3, .L20
- 320 0022 1A60     		str	r2, [r3]
+ 312              		.loc 1 511 0
+ 313 001e 1A00     		movs	r2, r3
+ 314 0020 014B     		ldr	r3, .L20
+ 315 0022 1A60     		str	r2, [r3]
  510:Generated_Source\PSoC4/DBG_UART_UART.c ****             DBG_UART_ClearRxInterruptSource(DBG_UART_INTR_RX_ERR);
- 321              		.loc 1 510 0
- 322 0024 0020     		movs	r0, #0
- 323              	.LVL16:
- 324              	.L18:
+ 316              		.loc 1 510 0
+ 317 0024 0020     		movs	r0, #0
+ 318              	.LVL16:
+ 319              	.L18:
  512:Generated_Source\PSoC4/DBG_UART_UART.c ****         }
  513:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  514:Generated_Source\PSoC4/DBG_UART_UART.c ****         return (rxData);
  515:Generated_Source\PSoC4/DBG_UART_UART.c ****     }
- 325              		.loc 1 515 0
- 326              		@ sp needed
- 327 0026 10BD     		pop	{r4, pc}
- 328              	.L21:
- 329              		.align	2
- 330              	.L20:
- 331 0028 C00F2740 		.word	1076301760
- 332              		.cfi_endproc
- 333              	.LFE6:
- 334              		.size	DBG_UART_UartGetChar, .-DBG_UART_UartGetChar
- 335              		.section	.text.DBG_UART_UartGetByte,"ax",%progbits
- 336              		.align	2
- 337              		.global	DBG_UART_UartGetByte
- 338              		.code	16
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 16
-
-
- 339              		.thumb_func
- 340              		.type	DBG_UART_UartGetByte, %function
- 341              	DBG_UART_UartGetByte:
- 342              	.LFB7:
+ 320              		.loc 1 515 0
+ 321              		@ sp needed
+ 322 0026 10BD     		pop	{r4, pc}
+ 323              	.L21:
+ 324              		.align	2
+ 325              	.L20:
+ 326 0028 C00F0640 		.word	1074139072
+ 327              		.cfi_endproc
+ 328              	.LFE5:
+ 329              		.size	DBG_UART_UartGetChar, .-DBG_UART_UartGetChar
+ 330              		.section	.text.DBG_UART_UartGetByte,"ax",%progbits
+ 331              		.align	2
+ 332              		.global	DBG_UART_UartGetByte
+ 333              		.code	16
+ 334              		.thumb_func
+ 335              		.type	DBG_UART_UartGetByte, %function
+ 336              	DBG_UART_UartGetByte:
+ 337              	.LFB6:
  516:Generated_Source\PSoC4/DBG_UART_UART.c **** 
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccCKXTyj.s 			page 16
+
+
  517:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  518:Generated_Source\PSoC4/DBG_UART_UART.c ****     /*******************************************************************************
  519:Generated_Source\PSoC4/DBG_UART_UART.c ****     * Function Name: DBG_UART_UartGetByte
@@ -939,14 +934,14 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 1
  547:Generated_Source\PSoC4/DBG_UART_UART.c ****     *******************************************************************************/
  548:Generated_Source\PSoC4/DBG_UART_UART.c ****     uint32 DBG_UART_UartGetByte(void)
  549:Generated_Source\PSoC4/DBG_UART_UART.c ****     {
- 343              		.loc 1 549 0
- 344              		.cfi_startproc
- 345              		@ args = 0, pretend = 0, frame = 0
- 346              		@ frame_needed = 0, uses_anonymous_args = 0
- 347 0000 10B5     		push	{r4, lr}
- 348              		.cfi_def_cfa_offset 8
- 349              		.cfi_offset 4, -8
- 350              		.cfi_offset 14, -4
+ 338              		.loc 1 549 0
+ 339              		.cfi_startproc
+ 340              		@ args = 0, pretend = 0, frame = 0
+ 341              		@ frame_needed = 0, uses_anonymous_args = 0
+ 342 0000 10B5     		push	{r4, lr}
+ 343              		.cfi_def_cfa_offset 8
+ 344              		.cfi_offset 4, -8
+ 345              		.cfi_offset 14, -4
  550:Generated_Source\PSoC4/DBG_UART_UART.c ****         uint32 rxData;
  551:Generated_Source\PSoC4/DBG_UART_UART.c ****         uint32 tmpStatus;
  552:Generated_Source\PSoC4/DBG_UART_UART.c **** 
@@ -957,15 +952,15 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 1
  557:Generated_Source\PSoC4/DBG_UART_UART.c ****         #endif
  558:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  559:Generated_Source\PSoC4/DBG_UART_UART.c ****         if (0u != DBG_UART_SpiUartGetRxBufferSize())
- 351              		.loc 1 559 0
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 17
-
-
- 352 0002 FFF7FEFF 		bl	DBG_UART_SpiUartGetRxBufferSize
- 353              	.LVL17:
- 354 0006 0028     		cmp	r0, #0
- 355 0008 02D0     		beq	.L23
+ 346              		.loc 1 559 0
+ 347 0002 FFF7FEFF 		bl	DBG_UART_SpiUartGetRxBufferSize
+ 348              	.LVL17:
+ 349 0006 0028     		cmp	r0, #0
+ 350 0008 02D0     		beq	.L23
  560:Generated_Source\PSoC4/DBG_UART_UART.c ****         {
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccCKXTyj.s 			page 17
+
+
  561:Generated_Source\PSoC4/DBG_UART_UART.c ****             /* Enables interrupt to receive more bytes: at least one byte is in
  562:Generated_Source\PSoC4/DBG_UART_UART.c ****             * buffer.
  563:Generated_Source\PSoC4/DBG_UART_UART.c ****             */
@@ -977,12 +972,12 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 1
  569:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  570:Generated_Source\PSoC4/DBG_UART_UART.c ****             /* Get received byte */
  571:Generated_Source\PSoC4/DBG_UART_UART.c ****             rxData = DBG_UART_SpiUartReadRxData();
- 356              		.loc 1 571 0
- 357 000a FFF7FEFF 		bl	DBG_UART_SpiUartReadRxData
- 358              	.LVL18:
- 359 000e 01E0     		b	.L24
- 360              	.LVL19:
- 361              	.L23:
+ 351              		.loc 1 571 0
+ 352 000a FFF7FEFF 		bl	DBG_UART_SpiUartReadRxData
+ 353              	.LVL18:
+ 354 000e 01E0     		b	.L24
+ 355              	.LVL19:
+ 356              	.L23:
  572:Generated_Source\PSoC4/DBG_UART_UART.c ****         }
  573:Generated_Source\PSoC4/DBG_UART_UART.c ****         else
  574:Generated_Source\PSoC4/DBG_UART_UART.c ****         {
@@ -990,11 +985,11 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 1
  576:Generated_Source\PSoC4/DBG_UART_UART.c ****             * case of empty. Otherwise the first received byte will be read.
  577:Generated_Source\PSoC4/DBG_UART_UART.c ****             */
  578:Generated_Source\PSoC4/DBG_UART_UART.c ****             rxData = DBG_UART_RX_FIFO_RD_REG;
- 362              		.loc 1 578 0
- 363 0010 064B     		ldr	r3, .L25
- 364 0012 1868     		ldr	r0, [r3]
- 365              	.LVL20:
- 366              	.L24:
+ 357              		.loc 1 578 0
+ 358 0010 064B     		ldr	r3, .L25
+ 359 0012 1868     		ldr	r0, [r3]
+ 360              	.LVL20:
+ 361              	.L24:
  579:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  580:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  581:Generated_Source\PSoC4/DBG_UART_UART.c ****             /* Enables interrupt to receive more bytes. */
@@ -1013,53 +1008,53 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 1
  594:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  595:Generated_Source\PSoC4/DBG_UART_UART.c ****         /* Get and clear RX error mask */
  596:Generated_Source\PSoC4/DBG_UART_UART.c ****         tmpStatus = (DBG_UART_GetRxInterruptSource() & DBG_UART_INTR_RX_ERR);
- 367              		.loc 1 596 0
- 368 0014 064A     		ldr	r2, .L25+4
- 369 0016 1368     		ldr	r3, [r2]
- 370              	.LVL21:
+ 362              		.loc 1 596 0
+ 363 0014 064A     		ldr	r2, .L25+4
+ 364 0016 1368     		ldr	r3, [r2]
+ 365              	.LVL21:
  597:Generated_Source\PSoC4/DBG_UART_UART.c ****         DBG_UART_ClearRxInterruptSource(DBG_UART_INTR_RX_ERR);
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 18
-
-
- 371              		.loc 1 597 0
- 372 0018 D821     		movs	r1, #216
- 373 001a 8900     		lsls	r1, r1, #2
- 374 001c 1160     		str	r1, [r2]
+ 366              		.loc 1 597 0
+ 367 0018 D821     		movs	r1, #216
+ 368 001a 8900     		lsls	r1, r1, #2
+ 369 001c 1160     		str	r1, [r2]
  598:Generated_Source\PSoC4/DBG_UART_UART.c **** 
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccCKXTyj.s 			page 18
+
+
  599:Generated_Source\PSoC4/DBG_UART_UART.c ****         /* Puts together data and error status:
  600:Generated_Source\PSoC4/DBG_UART_UART.c ****         * MP mode and accept address: 9th bit is set to notify mark.
  601:Generated_Source\PSoC4/DBG_UART_UART.c ****         */
  602:Generated_Source\PSoC4/DBG_UART_UART.c ****         rxData |= ((uint32) (tmpStatus << 8u));
- 375              		.loc 1 602 0
- 376 001e 1B02     		lsls	r3, r3, #8
- 377              	.LVL22:
- 378 0020 D822     		movs	r2, #216
- 379 0022 9202     		lsls	r2, r2, #10
- 380 0024 1340     		ands	r3, r2
- 381 0026 1843     		orrs	r0, r3
- 382              	.LVL23:
+ 370              		.loc 1 602 0
+ 371 001e 1B02     		lsls	r3, r3, #8
+ 372              	.LVL22:
+ 373 0020 D822     		movs	r2, #216
+ 374 0022 9202     		lsls	r2, r2, #10
+ 375 0024 1340     		ands	r3, r2
+ 376 0026 1843     		orrs	r0, r3
+ 377              	.LVL23:
  603:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  604:Generated_Source\PSoC4/DBG_UART_UART.c ****         return (rxData);
  605:Generated_Source\PSoC4/DBG_UART_UART.c ****     }
- 383              		.loc 1 605 0
- 384              		@ sp needed
- 385 0028 10BD     		pop	{r4, pc}
- 386              	.L26:
- 387 002a C046     		.align	2
- 388              	.L25:
- 389 002c 40032740 		.word	1076298560
- 390 0030 C00F2740 		.word	1076301760
- 391              		.cfi_endproc
- 392              	.LFE7:
- 393              		.size	DBG_UART_UartGetByte, .-DBG_UART_UartGetByte
- 394              		.section	.text.DBG_UART_UartSetRtsPolarity,"ax",%progbits
- 395              		.align	2
- 396              		.global	DBG_UART_UartSetRtsPolarity
- 397              		.code	16
- 398              		.thumb_func
- 399              		.type	DBG_UART_UartSetRtsPolarity, %function
- 400              	DBG_UART_UartSetRtsPolarity:
- 401              	.LFB8:
+ 378              		.loc 1 605 0
+ 379              		@ sp needed
+ 380 0028 10BD     		pop	{r4, pc}
+ 381              	.L26:
+ 382 002a C046     		.align	2
+ 383              	.L25:
+ 384 002c 40030640 		.word	1074135872
+ 385 0030 C00F0640 		.word	1074139072
+ 386              		.cfi_endproc
+ 387              	.LFE6:
+ 388              		.size	DBG_UART_UartGetByte, .-DBG_UART_UartGetByte
+ 389              		.section	.text.DBG_UART_UartPutString,"ax",%progbits
+ 390              		.align	2
+ 391              		.global	DBG_UART_UartPutString
+ 392              		.code	16
+ 393              		.thumb_func
+ 394              		.type	DBG_UART_UartPutString, %function
+ 395              	DBG_UART_UartPutString:
+ 396              	.LFB7:
  606:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  607:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  608:Generated_Source\PSoC4/DBG_UART_UART.c ****     #if !(DBG_UART_CY_SCBIP_V0 || DBG_UART_CY_SCBIP_V1)
@@ -1078,69 +1073,22 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 1
  621:Generated_Source\PSoC4/DBG_UART_UART.c ****         *******************************************************************************/
  622:Generated_Source\PSoC4/DBG_UART_UART.c ****         void DBG_UART_UartSetRtsPolarity(uint32 polarity)
  623:Generated_Source\PSoC4/DBG_UART_UART.c ****         {
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 19
-
-
- 402              		.loc 1 623 0
- 403              		.cfi_startproc
- 404              		@ args = 0, pretend = 0, frame = 0
- 405              		@ frame_needed = 0, uses_anonymous_args = 0
- 406              		@ link register save eliminated.
- 407              	.LVL24:
  624:Generated_Source\PSoC4/DBG_UART_UART.c ****             if(0u != polarity)
- 408              		.loc 1 624 0
- 409 0000 0028     		cmp	r0, #0
- 410 0002 06D0     		beq	.L28
  625:Generated_Source\PSoC4/DBG_UART_UART.c ****             {
  626:Generated_Source\PSoC4/DBG_UART_UART.c ****                 DBG_UART_UART_FLOW_CTRL_REG |= (uint32)  DBG_UART_UART_FLOW_CTRL_RTS_POLARITY;
- 411              		.loc 1 626 0
- 412 0004 064A     		ldr	r2, .L30
- 413 0006 1368     		ldr	r3, [r2]
- 414 0008 8021     		movs	r1, #128
- 415 000a 4902     		lsls	r1, r1, #9
- 416 000c 0B43     		orrs	r3, r1
- 417 000e 1360     		str	r3, [r2]
- 418 0010 04E0     		b	.L27
- 419              	.L28:
  627:Generated_Source\PSoC4/DBG_UART_UART.c ****             }
  628:Generated_Source\PSoC4/DBG_UART_UART.c ****             else
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccCKXTyj.s 			page 19
+
+
  629:Generated_Source\PSoC4/DBG_UART_UART.c ****             {
  630:Generated_Source\PSoC4/DBG_UART_UART.c ****                 DBG_UART_UART_FLOW_CTRL_REG &= (uint32) ~DBG_UART_UART_FLOW_CTRL_RTS_POLARITY;
- 420              		.loc 1 630 0
- 421 0012 034A     		ldr	r2, .L30
- 422 0014 1168     		ldr	r1, [r2]
- 423 0016 034B     		ldr	r3, .L30+4
- 424 0018 0B40     		ands	r3, r1
- 425 001a 1360     		str	r3, [r2]
- 426              	.L27:
  631:Generated_Source\PSoC4/DBG_UART_UART.c ****             }
  632:Generated_Source\PSoC4/DBG_UART_UART.c ****         }
- 427              		.loc 1 632 0
- 428              		@ sp needed
- 429 001c 7047     		bx	lr
- 430              	.L31:
- 431 001e C046     		.align	2
- 432              	.L30:
- 433 0020 50002740 		.word	1076297808
- 434 0024 FFFFFEFF 		.word	-65537
- 435              		.cfi_endproc
- 436              	.LFE8:
- 437              		.size	DBG_UART_UartSetRtsPolarity, .-DBG_UART_UartSetRtsPolarity
- 438              		.section	.text.DBG_UART_UartSetRtsFifoLevel,"ax",%progbits
- 439              		.align	2
- 440              		.global	DBG_UART_UartSetRtsFifoLevel
- 441              		.code	16
- 442              		.thumb_func
- 443              		.type	DBG_UART_UartSetRtsFifoLevel, %function
- 444              	DBG_UART_UartSetRtsFifoLevel:
- 445              	.LFB9:
  633:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  634:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  635:Generated_Source\PSoC4/DBG_UART_UART.c ****         /*******************************************************************************
  636:Generated_Source\PSoC4/DBG_UART_UART.c ****         * Function Name: DBG_UART_UartSetRtsFifoLevel
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 20
-
-
  637:Generated_Source\PSoC4/DBG_UART_UART.c ****         ****************************************************************************//**
  638:Generated_Source\PSoC4/DBG_UART_UART.c ****         *
  639:Generated_Source\PSoC4/DBG_UART_UART.c ****         *  Sets level in the RX FIFO for RTS signal activation.
@@ -1156,57 +1104,15 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 1
  649:Generated_Source\PSoC4/DBG_UART_UART.c ****         *******************************************************************************/
  650:Generated_Source\PSoC4/DBG_UART_UART.c ****         void DBG_UART_UartSetRtsFifoLevel(uint32 level)
  651:Generated_Source\PSoC4/DBG_UART_UART.c ****         {
- 446              		.loc 1 651 0
- 447              		.cfi_startproc
- 448              		@ args = 0, pretend = 0, frame = 0
- 449              		@ frame_needed = 0, uses_anonymous_args = 0
- 450              		@ link register save eliminated.
- 451              	.LVL25:
  652:Generated_Source\PSoC4/DBG_UART_UART.c ****             uint32 uartFlowCtrl;
  653:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  654:Generated_Source\PSoC4/DBG_UART_UART.c ****             uartFlowCtrl = DBG_UART_UART_FLOW_CTRL_REG;
- 452              		.loc 1 654 0
- 453 0000 034A     		ldr	r2, .L33
- 454 0002 1368     		ldr	r3, [r2]
- 455              	.LVL26:
  655:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  656:Generated_Source\PSoC4/DBG_UART_UART.c ****             uartFlowCtrl &= ((uint32) ~DBG_UART_UART_FLOW_CTRL_TRIGGER_LEVEL_MASK); /* Clear level 
- 456              		.loc 1 656 0
- 457 0004 0F21     		movs	r1, #15
- 458 0006 8B43     		bics	r3, r1
- 459              	.LVL27:
  657:Generated_Source\PSoC4/DBG_UART_UART.c ****             uartFlowCtrl |= ((uint32) (DBG_UART_UART_FLOW_CTRL_TRIGGER_LEVEL_MASK & level));
- 460              		.loc 1 657 0
- 461 0008 0840     		ands	r0, r1
- 462              	.LVL28:
- 463 000a 1843     		orrs	r0, r3
- 464              	.LVL29:
  658:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  659:Generated_Source\PSoC4/DBG_UART_UART.c ****             DBG_UART_UART_FLOW_CTRL_REG = uartFlowCtrl;
- 465              		.loc 1 659 0
- 466 000c 1060     		str	r0, [r2]
  660:Generated_Source\PSoC4/DBG_UART_UART.c ****         }
- 467              		.loc 1 660 0
- 468              		@ sp needed
- 469 000e 7047     		bx	lr
- 470              	.L34:
- 471              		.align	2
- 472              	.L33:
- 473 0010 50002740 		.word	1076297808
- 474              		.cfi_endproc
- 475              	.LFE9:
- 476              		.size	DBG_UART_UartSetRtsFifoLevel, .-DBG_UART_UartSetRtsFifoLevel
- 477              		.section	.text.DBG_UART_UartPutString,"ax",%progbits
- 478              		.align	2
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 21
-
-
- 479              		.global	DBG_UART_UartPutString
- 480              		.code	16
- 481              		.thumb_func
- 482              		.type	DBG_UART_UartPutString, %function
- 483              	DBG_UART_UartPutString:
- 484              	.LFB10:
  661:Generated_Source\PSoC4/DBG_UART_UART.c ****     #endif /* !(DBG_UART_CY_SCBIP_V0 || DBG_UART_CY_SCBIP_V1) */
  662:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  663:Generated_Source\PSoC4/DBG_UART_UART.c **** #endif /* (DBG_UART_UART_RX_DIRECTION) */
@@ -1228,70 +1134,73 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 1
  679:Generated_Source\PSoC4/DBG_UART_UART.c ****     *******************************************************************************/
  680:Generated_Source\PSoC4/DBG_UART_UART.c ****     void DBG_UART_UartPutString(const char8 string[])
  681:Generated_Source\PSoC4/DBG_UART_UART.c ****     {
- 485              		.loc 1 681 0
- 486              		.cfi_startproc
- 487              		@ args = 0, pretend = 0, frame = 0
- 488              		@ frame_needed = 0, uses_anonymous_args = 0
- 489              	.LVL30:
- 490 0000 70B5     		push	{r4, r5, r6, lr}
- 491              		.cfi_def_cfa_offset 16
- 492              		.cfi_offset 4, -16
- 493              		.cfi_offset 5, -12
- 494              		.cfi_offset 6, -8
- 495              		.cfi_offset 14, -4
- 496 0002 0500     		movs	r5, r0
- 497              	.LVL31:
+ 397              		.loc 1 681 0
+ 398              		.cfi_startproc
+ 399              		@ args = 0, pretend = 0, frame = 0
+ 400              		@ frame_needed = 0, uses_anonymous_args = 0
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccCKXTyj.s 			page 20
+
+
+ 401              	.LVL24:
+ 402 0000 70B5     		push	{r4, r5, r6, lr}
+ 403              		.cfi_def_cfa_offset 16
+ 404              		.cfi_offset 4, -16
+ 405              		.cfi_offset 5, -12
+ 406              		.cfi_offset 6, -8
+ 407              		.cfi_offset 14, -4
+ 408 0002 0500     		movs	r5, r0
+ 409              	.LVL25:
  682:Generated_Source\PSoC4/DBG_UART_UART.c ****         uint32 bufIndex;
  683:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  684:Generated_Source\PSoC4/DBG_UART_UART.c ****         bufIndex = 0u;
- 498              		.loc 1 684 0
- 499 0004 0024     		movs	r4, #0
+ 410              		.loc 1 684 0
+ 411 0004 0024     		movs	r4, #0
  685:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  686:Generated_Source\PSoC4/DBG_UART_UART.c ****         /* Blocks the control flow until all data has been sent */
  687:Generated_Source\PSoC4/DBG_UART_UART.c ****         while(string[bufIndex] != ((char8) 0))
- 500              		.loc 1 687 0
- 501 0006 02E0     		b	.L36
- 502              	.LVL32:
- 503              	.L37:
+ 412              		.loc 1 687 0
+ 413 0006 02E0     		b	.L28
+ 414              	.LVL26:
+ 415              	.L29:
  688:Generated_Source\PSoC4/DBG_UART_UART.c ****         {
  689:Generated_Source\PSoC4/DBG_UART_UART.c ****             DBG_UART_UartPutChar((uint32) string[bufIndex]);
- 504              		.loc 1 689 0
- 505 0008 FFF7FEFF 		bl	DBG_UART_SpiUartWriteTxData
- 506              	.LVL33:
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 22
-
-
+ 416              		.loc 1 689 0
+ 417 0008 FFF7FEFF 		bl	DBG_UART_SpiUartWriteTxData
+ 418              	.LVL27:
  690:Generated_Source\PSoC4/DBG_UART_UART.c ****             bufIndex++;
- 507              		.loc 1 690 0
- 508 000c 0134     		adds	r4, r4, #1
- 509              	.LVL34:
- 510              	.L36:
+ 419              		.loc 1 690 0
+ 420 000c 0134     		adds	r4, r4, #1
+ 421              	.LVL28:
+ 422              	.L28:
  687:Generated_Source\PSoC4/DBG_UART_UART.c ****         {
- 511              		.loc 1 687 0
- 512 000e 285D     		ldrb	r0, [r5, r4]
- 513 0010 0028     		cmp	r0, #0
- 514 0012 F9D1     		bne	.L37
+ 423              		.loc 1 687 0
+ 424 000e 285D     		ldrb	r0, [r5, r4]
+ 425 0010 0028     		cmp	r0, #0
+ 426 0012 F9D1     		bne	.L29
  691:Generated_Source\PSoC4/DBG_UART_UART.c ****         }
  692:Generated_Source\PSoC4/DBG_UART_UART.c ****     }
- 515              		.loc 1 692 0
- 516              		@ sp needed
- 517              	.LVL35:
- 518              	.LVL36:
- 519 0014 70BD     		pop	{r4, r5, r6, pc}
- 520              		.cfi_endproc
- 521              	.LFE10:
- 522              		.size	DBG_UART_UartPutString, .-DBG_UART_UartPutString
- 523 0016 C046     		.section	.text.DBG_UART_UartPutCRLF,"ax",%progbits
- 524              		.align	2
- 525              		.global	DBG_UART_UartPutCRLF
- 526              		.code	16
- 527              		.thumb_func
- 528              		.type	DBG_UART_UartPutCRLF, %function
- 529              	DBG_UART_UartPutCRLF:
- 530              	.LFB11:
+ 427              		.loc 1 692 0
+ 428              		@ sp needed
+ 429              	.LVL29:
+ 430              	.LVL30:
+ 431 0014 70BD     		pop	{r4, r5, r6, pc}
+ 432              		.cfi_endproc
+ 433              	.LFE7:
+ 434              		.size	DBG_UART_UartPutString, .-DBG_UART_UartPutString
+ 435 0016 C046     		.section	.text.DBG_UART_UartPutCRLF,"ax",%progbits
+ 436              		.align	2
+ 437              		.global	DBG_UART_UartPutCRLF
+ 438              		.code	16
+ 439              		.thumb_func
+ 440              		.type	DBG_UART_UartPutCRLF, %function
+ 441              	DBG_UART_UartPutCRLF:
+ 442              	.LFB8:
  693:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  694:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  695:Generated_Source\PSoC4/DBG_UART_UART.c ****     /*******************************************************************************
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccCKXTyj.s 			page 21
+
+
  696:Generated_Source\PSoC4/DBG_UART_UART.c ****     * Function Name: DBG_UART_UartPutCRLF
  697:Generated_Source\PSoC4/DBG_UART_UART.c ****     ****************************************************************************//**
  698:Generated_Source\PSoC4/DBG_UART_UART.c ****     *
@@ -1305,53 +1214,53 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 1
  706:Generated_Source\PSoC4/DBG_UART_UART.c ****     *******************************************************************************/
  707:Generated_Source\PSoC4/DBG_UART_UART.c ****     void DBG_UART_UartPutCRLF(uint32 txDataByte)
  708:Generated_Source\PSoC4/DBG_UART_UART.c ****     {
- 531              		.loc 1 708 0
- 532              		.cfi_startproc
- 533              		@ args = 0, pretend = 0, frame = 0
- 534              		@ frame_needed = 0, uses_anonymous_args = 0
- 535              	.LVL37:
- 536 0000 10B5     		push	{r4, lr}
- 537              		.cfi_def_cfa_offset 8
- 538              		.cfi_offset 4, -8
- 539              		.cfi_offset 14, -4
+ 443              		.loc 1 708 0
+ 444              		.cfi_startproc
+ 445              		@ args = 0, pretend = 0, frame = 0
+ 446              		@ frame_needed = 0, uses_anonymous_args = 0
+ 447              	.LVL31:
+ 448 0000 10B5     		push	{r4, lr}
+ 449              		.cfi_def_cfa_offset 8
+ 450              		.cfi_offset 4, -8
+ 451              		.cfi_offset 14, -4
  709:Generated_Source\PSoC4/DBG_UART_UART.c ****         DBG_UART_UartPutChar(txDataByte);  /* Blocks control flow until all data has been sent */
- 540              		.loc 1 709 0
- 541 0002 FFF7FEFF 		bl	DBG_UART_SpiUartWriteTxData
- 542              	.LVL38:
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 23
-
-
+ 452              		.loc 1 709 0
+ 453 0002 FFF7FEFF 		bl	DBG_UART_SpiUartWriteTxData
+ 454              	.LVL32:
  710:Generated_Source\PSoC4/DBG_UART_UART.c ****         DBG_UART_UartPutChar(0x0Du);       /* Blocks control flow until all data has been sent */
- 543              		.loc 1 710 0
- 544 0006 0D20     		movs	r0, #13
- 545 0008 FFF7FEFF 		bl	DBG_UART_SpiUartWriteTxData
- 546              	.LVL39:
+ 455              		.loc 1 710 0
+ 456 0006 0D20     		movs	r0, #13
+ 457 0008 FFF7FEFF 		bl	DBG_UART_SpiUartWriteTxData
+ 458              	.LVL33:
  711:Generated_Source\PSoC4/DBG_UART_UART.c ****         DBG_UART_UartPutChar(0x0Au);       /* Blocks control flow until all data has been sent */
- 547              		.loc 1 711 0
- 548 000c 0A20     		movs	r0, #10
- 549 000e FFF7FEFF 		bl	DBG_UART_SpiUartWriteTxData
- 550              	.LVL40:
+ 459              		.loc 1 711 0
+ 460 000c 0A20     		movs	r0, #10
+ 461 000e FFF7FEFF 		bl	DBG_UART_SpiUartWriteTxData
+ 462              	.LVL34:
  712:Generated_Source\PSoC4/DBG_UART_UART.c ****     }
- 551              		.loc 1 712 0
- 552              		@ sp needed
- 553 0012 10BD     		pop	{r4, pc}
- 554              		.cfi_endproc
- 555              	.LFE11:
- 556              		.size	DBG_UART_UartPutCRLF, .-DBG_UART_UartPutCRLF
- 557              		.section	.text.DBG_UART_UartEnableCts,"ax",%progbits
- 558              		.align	2
- 559              		.global	DBG_UART_UartEnableCts
- 560              		.code	16
- 561              		.thumb_func
- 562              		.type	DBG_UART_UartEnableCts, %function
- 563              	DBG_UART_UartEnableCts:
- 564              	.LFB12:
+ 463              		.loc 1 712 0
+ 464              		@ sp needed
+ 465 0012 10BD     		pop	{r4, pc}
+ 466              		.cfi_endproc
+ 467              	.LFE8:
+ 468              		.size	DBG_UART_UartPutCRLF, .-DBG_UART_UartPutCRLF
+ 469              		.section	.text.DBG_UART_UartSendBreakBlocking,"ax",%progbits
+ 470              		.align	2
+ 471              		.global	DBG_UART_UartSendBreakBlocking
+ 472              		.code	16
+ 473              		.thumb_func
+ 474              		.type	DBG_UART_UartSendBreakBlocking, %function
+ 475              	DBG_UART_UartSendBreakBlocking:
+ 476              	.LFB9:
  713:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  714:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  715:Generated_Source\PSoC4/DBG_UART_UART.c ****     #if !(DBG_UART_CY_SCBIP_V0 || DBG_UART_CY_SCBIP_V1)
  716:Generated_Source\PSoC4/DBG_UART_UART.c ****         /*******************************************************************************
  717:Generated_Source\PSoC4/DBG_UART_UART.c ****         * Function Name: DBG_UARTSCB_UartEnableCts
  718:Generated_Source\PSoC4/DBG_UART_UART.c ****         ****************************************************************************//**
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccCKXTyj.s 			page 22
+
+
  719:Generated_Source\PSoC4/DBG_UART_UART.c ****         *
  720:Generated_Source\PSoC4/DBG_UART_UART.c ****         *  Enables usage of CTS input signal by the UART transmitter.
  721:Generated_Source\PSoC4/DBG_UART_UART.c ****         *  Only available for PSoC 4100 BLE / PSoC 4200 BLE / PSoC 4100M / PSoC 4200M /
@@ -1360,41 +1269,8 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 1
  724:Generated_Source\PSoC4/DBG_UART_UART.c ****         *******************************************************************************/
  725:Generated_Source\PSoC4/DBG_UART_UART.c ****         void DBG_UART_UartEnableCts(void)
  726:Generated_Source\PSoC4/DBG_UART_UART.c ****         {
- 565              		.loc 1 726 0
- 566              		.cfi_startproc
- 567              		@ args = 0, pretend = 0, frame = 0
- 568              		@ frame_needed = 0, uses_anonymous_args = 0
- 569              		@ link register save eliminated.
  727:Generated_Source\PSoC4/DBG_UART_UART.c ****             DBG_UART_UART_FLOW_CTRL_REG |= (uint32)  DBG_UART_UART_FLOW_CTRL_CTS_ENABLE;
- 570              		.loc 1 727 0
- 571 0000 034A     		ldr	r2, .L40
- 572 0002 1368     		ldr	r3, [r2]
- 573 0004 8021     		movs	r1, #128
- 574 0006 8904     		lsls	r1, r1, #18
- 575 0008 0B43     		orrs	r3, r1
- 576 000a 1360     		str	r3, [r2]
  728:Generated_Source\PSoC4/DBG_UART_UART.c ****         }
- 577              		.loc 1 728 0
- 578              		@ sp needed
- 579 000c 7047     		bx	lr
- 580              	.L41:
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 24
-
-
- 581 000e C046     		.align	2
- 582              	.L40:
- 583 0010 50002740 		.word	1076297808
- 584              		.cfi_endproc
- 585              	.LFE12:
- 586              		.size	DBG_UART_UartEnableCts, .-DBG_UART_UartEnableCts
- 587              		.section	.text.DBG_UART_UartDisableCts,"ax",%progbits
- 588              		.align	2
- 589              		.global	DBG_UART_UartDisableCts
- 590              		.code	16
- 591              		.thumb_func
- 592              		.type	DBG_UART_UartDisableCts, %function
- 593              	DBG_UART_UartDisableCts:
- 594              	.LFB13:
  729:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  730:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  731:Generated_Source\PSoC4/DBG_UART_UART.c ****         /*******************************************************************************
@@ -1408,41 +1284,8 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 1
  739:Generated_Source\PSoC4/DBG_UART_UART.c ****         *******************************************************************************/
  740:Generated_Source\PSoC4/DBG_UART_UART.c ****         void DBG_UART_UartDisableCts(void)
  741:Generated_Source\PSoC4/DBG_UART_UART.c ****         {
- 595              		.loc 1 741 0
- 596              		.cfi_startproc
- 597              		@ args = 0, pretend = 0, frame = 0
- 598              		@ frame_needed = 0, uses_anonymous_args = 0
- 599              		@ link register save eliminated.
  742:Generated_Source\PSoC4/DBG_UART_UART.c ****             DBG_UART_UART_FLOW_CTRL_REG &= (uint32) ~DBG_UART_UART_FLOW_CTRL_CTS_ENABLE;
- 600              		.loc 1 742 0
- 601 0000 024A     		ldr	r2, .L43
- 602 0002 1168     		ldr	r1, [r2]
- 603 0004 024B     		ldr	r3, .L43+4
- 604 0006 0B40     		ands	r3, r1
- 605 0008 1360     		str	r3, [r2]
  743:Generated_Source\PSoC4/DBG_UART_UART.c ****         }
- 606              		.loc 1 743 0
- 607              		@ sp needed
- 608 000a 7047     		bx	lr
- 609              	.L44:
- 610              		.align	2
- 611              	.L43:
- 612 000c 50002740 		.word	1076297808
- 613 0010 FFFFFFFD 		.word	-33554433
- 614              		.cfi_endproc
- 615              	.LFE13:
- 616              		.size	DBG_UART_UartDisableCts, .-DBG_UART_UartDisableCts
- 617              		.section	.text.DBG_UART_UartSetCtsPolarity,"ax",%progbits
- 618              		.align	2
- 619              		.global	DBG_UART_UartSetCtsPolarity
- 620              		.code	16
- 621              		.thumb_func
- 622              		.type	DBG_UART_UartSetCtsPolarity, %function
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 25
-
-
- 623              	DBG_UART_UartSetCtsPolarity:
- 624              	.LFB14:
  744:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  745:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  746:Generated_Source\PSoC4/DBG_UART_UART.c ****         /*******************************************************************************
@@ -1461,67 +1304,23 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 1
  759:Generated_Source\PSoC4/DBG_UART_UART.c ****         *******************************************************************************/
  760:Generated_Source\PSoC4/DBG_UART_UART.c ****         void DBG_UART_UartSetCtsPolarity(uint32 polarity)
  761:Generated_Source\PSoC4/DBG_UART_UART.c ****         {
- 625              		.loc 1 761 0
- 626              		.cfi_startproc
- 627              		@ args = 0, pretend = 0, frame = 0
- 628              		@ frame_needed = 0, uses_anonymous_args = 0
- 629              		@ link register save eliminated.
- 630              	.LVL41:
  762:Generated_Source\PSoC4/DBG_UART_UART.c ****             if (0u != polarity)
- 631              		.loc 1 762 0
- 632 0000 0028     		cmp	r0, #0
- 633 0002 06D0     		beq	.L46
  763:Generated_Source\PSoC4/DBG_UART_UART.c ****             {
  764:Generated_Source\PSoC4/DBG_UART_UART.c ****                 DBG_UART_UART_FLOW_CTRL_REG |= (uint32)  DBG_UART_UART_FLOW_CTRL_CTS_POLARITY;
- 634              		.loc 1 764 0
- 635 0004 064A     		ldr	r2, .L48
- 636 0006 1368     		ldr	r3, [r2]
- 637 0008 8021     		movs	r1, #128
- 638 000a 4904     		lsls	r1, r1, #17
- 639 000c 0B43     		orrs	r3, r1
- 640 000e 1360     		str	r3, [r2]
- 641 0010 04E0     		b	.L45
- 642              	.L46:
  765:Generated_Source\PSoC4/DBG_UART_UART.c ****             }
  766:Generated_Source\PSoC4/DBG_UART_UART.c ****             else
  767:Generated_Source\PSoC4/DBG_UART_UART.c ****             {
  768:Generated_Source\PSoC4/DBG_UART_UART.c ****                 DBG_UART_UART_FLOW_CTRL_REG &= (uint32) ~DBG_UART_UART_FLOW_CTRL_CTS_POLARITY;
- 643              		.loc 1 768 0
- 644 0012 034A     		ldr	r2, .L48
- 645 0014 1168     		ldr	r1, [r2]
- 646 0016 034B     		ldr	r3, .L48+4
- 647 0018 0B40     		ands	r3, r1
- 648 001a 1360     		str	r3, [r2]
- 649              	.L45:
  769:Generated_Source\PSoC4/DBG_UART_UART.c ****             }
  770:Generated_Source\PSoC4/DBG_UART_UART.c ****         }
- 650              		.loc 1 770 0
- 651              		@ sp needed
- 652 001c 7047     		bx	lr
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 26
-
-
- 653              	.L49:
- 654 001e C046     		.align	2
- 655              	.L48:
- 656 0020 50002740 		.word	1076297808
- 657 0024 FFFFFFFE 		.word	-16777217
- 658              		.cfi_endproc
- 659              	.LFE14:
- 660              		.size	DBG_UART_UartSetCtsPolarity, .-DBG_UART_UartSetCtsPolarity
- 661              		.section	.text.DBG_UART_UartSendBreakBlocking,"ax",%progbits
- 662              		.align	2
- 663              		.global	DBG_UART_UartSendBreakBlocking
- 664              		.code	16
- 665              		.thumb_func
- 666              		.type	DBG_UART_UartSendBreakBlocking, %function
- 667              	DBG_UART_UartSendBreakBlocking:
- 668              	.LFB15:
  771:Generated_Source\PSoC4/DBG_UART_UART.c ****     #endif /* !(DBG_UART_CY_SCBIP_V0 || DBG_UART_CY_SCBIP_V1) */
  772:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  773:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  774:Generated_Source\PSoC4/DBG_UART_UART.c ****     /*******************************************************************************
  775:Generated_Source\PSoC4/DBG_UART_UART.c ****     * Function Name: DBG_UART_UartSendBreakBlocking
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccCKXTyj.s 			page 23
+
+
  776:Generated_Source\PSoC4/DBG_UART_UART.c ****     ****************************************************************************//**
  777:Generated_Source\PSoC4/DBG_UART_UART.c ****     *
  778:Generated_Source\PSoC4/DBG_UART_UART.c ****     * Sends a break condition (logic low) of specified width on UART TX line.
@@ -1542,1478 +1341,1292 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 1
  793:Generated_Source\PSoC4/DBG_UART_UART.c ****     *******************************************************************************/
  794:Generated_Source\PSoC4/DBG_UART_UART.c ****     void DBG_UART_UartSendBreakBlocking(uint32 breakWidth)
  795:Generated_Source\PSoC4/DBG_UART_UART.c ****     {
- 669              		.loc 1 795 0
- 670              		.cfi_startproc
- 671              		@ args = 0, pretend = 0, frame = 0
- 672              		@ frame_needed = 0, uses_anonymous_args = 0
- 673              	.LVL42:
- 674 0000 70B5     		push	{r4, r5, r6, lr}
- 675              		.cfi_def_cfa_offset 16
- 676              		.cfi_offset 4, -16
- 677              		.cfi_offset 5, -12
- 678              		.cfi_offset 6, -8
- 679              		.cfi_offset 14, -4
- 680 0002 0300     		movs	r3, r0
+ 477              		.loc 1 795 0
+ 478              		.cfi_startproc
+ 479              		@ args = 0, pretend = 0, frame = 0
+ 480              		@ frame_needed = 0, uses_anonymous_args = 0
+ 481              	.LVL35:
+ 482 0000 70B5     		push	{r4, r5, r6, lr}
+ 483              		.cfi_def_cfa_offset 16
+ 484              		.cfi_offset 4, -16
+ 485              		.cfi_offset 5, -12
+ 486              		.cfi_offset 6, -8
+ 487              		.cfi_offset 14, -4
+ 488 0002 0300     		movs	r3, r0
  796:Generated_Source\PSoC4/DBG_UART_UART.c ****         uint32 txCtrlReg;
  797:Generated_Source\PSoC4/DBG_UART_UART.c ****         uint32 txIntrReg;
  798:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  799:Generated_Source\PSoC4/DBG_UART_UART.c ****         /* Disable all UART TX interrupt source and clear UART TX Done history */
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 27
-
-
  800:Generated_Source\PSoC4/DBG_UART_UART.c ****         txIntrReg = DBG_UART_GetTxInterruptMode();
- 681              		.loc 1 800 0
- 682 0004 0F4A     		ldr	r2, .L52
- 683 0006 1568     		ldr	r5, [r2]
- 684              	.LVL43:
+ 489              		.loc 1 800 0
+ 490 0004 0F4A     		ldr	r2, .L33
+ 491 0006 1568     		ldr	r5, [r2]
+ 492              	.LVL36:
  801:Generated_Source\PSoC4/DBG_UART_UART.c ****         DBG_UART_SetTxInterruptMode(0u);
- 685              		.loc 1 801 0
- 686 0008 0024     		movs	r4, #0
- 687 000a 1460     		str	r4, [r2]
+ 493              		.loc 1 801 0
+ 494 0008 0024     		movs	r4, #0
+ 495 000a 1460     		str	r4, [r2]
  802:Generated_Source\PSoC4/DBG_UART_UART.c ****         DBG_UART_ClearTxInterruptSource(DBG_UART_INTR_TX_UART_DONE);
- 688              		.loc 1 802 0
- 689 000c 8021     		movs	r1, #128
- 690 000e 8900     		lsls	r1, r1, #2
- 691 0010 0D4A     		ldr	r2, .L52+4
- 692 0012 1160     		str	r1, [r2]
+ 496              		.loc 1 802 0
+ 497 000c 8021     		movs	r1, #128
+ 498 000e 8900     		lsls	r1, r1, #2
+ 499 0010 0D4A     		ldr	r2, .L33+4
+ 500 0012 1160     		str	r1, [r2]
  803:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  804:Generated_Source\PSoC4/DBG_UART_UART.c ****         /* Store TX CTRL configuration */
  805:Generated_Source\PSoC4/DBG_UART_UART.c ****         txCtrlReg = DBG_UART_TX_CTRL_REG;
- 693              		.loc 1 805 0
- 694 0014 0D4A     		ldr	r2, .L52+8
- 695 0016 1668     		ldr	r6, [r2]
- 696              	.LVL44:
+ 501              		.loc 1 805 0
+ 502 0014 0D4A     		ldr	r2, .L33+8
+ 503 0016 1668     		ldr	r6, [r2]
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccCKXTyj.s 			page 24
+
+
+ 504              	.LVL37:
  806:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  807:Generated_Source\PSoC4/DBG_UART_UART.c ****         /* Set break width */
  808:Generated_Source\PSoC4/DBG_UART_UART.c ****         DBG_UART_TX_CTRL_REG = (DBG_UART_TX_CTRL_REG & (uint32) ~DBG_UART_TX_CTRL_DATA_WIDTH_MASK) 
- 697              		.loc 1 808 0
- 698 0018 1168     		ldr	r1, [r2]
- 699 001a 0F20     		movs	r0, #15
- 700              	.LVL45:
- 701 001c 8143     		bics	r1, r0
+ 505              		.loc 1 808 0
+ 506 0018 1168     		ldr	r1, [r2]
+ 507 001a 0F20     		movs	r0, #15
+ 508              	.LVL38:
+ 509 001c 8143     		bics	r1, r0
  809:Generated_Source\PSoC4/DBG_UART_UART.c ****                                         DBG_UART_GET_TX_CTRL_DATA_WIDTH(breakWidth);
- 702              		.loc 1 809 0
- 703 001e 013B     		subs	r3, r3, #1
- 704              	.LVL46:
- 705 0020 1840     		ands	r0, r3
+ 510              		.loc 1 809 0
+ 511 001e 013B     		subs	r3, r3, #1
+ 512              	.LVL39:
+ 513 0020 1840     		ands	r0, r3
  808:Generated_Source\PSoC4/DBG_UART_UART.c ****                                         DBG_UART_GET_TX_CTRL_DATA_WIDTH(breakWidth);
- 706              		.loc 1 808 0
- 707 0022 0843     		orrs	r0, r1
- 708 0024 1060     		str	r0, [r2]
+ 514              		.loc 1 808 0
+ 515 0022 0843     		orrs	r0, r1
+ 516 0024 1060     		str	r0, [r2]
  810:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  811:Generated_Source\PSoC4/DBG_UART_UART.c ****         /* Generate break */
  812:Generated_Source\PSoC4/DBG_UART_UART.c ****         DBG_UART_TX_FIFO_WR_REG = 0u;
- 709              		.loc 1 812 0
- 710 0026 0A4B     		ldr	r3, .L52+12
- 711              	.LVL47:
- 712 0028 1C60     		str	r4, [r3]
- 713              	.L51:
+ 517              		.loc 1 812 0
+ 518 0026 0A4B     		ldr	r3, .L33+12
+ 519              	.LVL40:
+ 520 0028 1C60     		str	r4, [r3]
+ 521              	.L32:
  813:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  814:Generated_Source\PSoC4/DBG_UART_UART.c ****         /* Wait for break completion */
  815:Generated_Source\PSoC4/DBG_UART_UART.c ****         while (0u == (DBG_UART_GetTxInterruptSource() & DBG_UART_INTR_TX_UART_DONE))
- 714              		.loc 1 815 0 discriminator 1
- 715 002a 074B     		ldr	r3, .L52+4
- 716 002c 1B68     		ldr	r3, [r3]
- 717 002e 9B05     		lsls	r3, r3, #22
- 718 0030 FBD5     		bpl	.L51
+ 522              		.loc 1 815 0 discriminator 1
+ 523 002a 074B     		ldr	r3, .L33+4
+ 524 002c 1B68     		ldr	r3, [r3]
+ 525 002e 9B05     		lsls	r3, r3, #22
+ 526 0030 FBD5     		bpl	.L32
  816:Generated_Source\PSoC4/DBG_UART_UART.c ****         {
  817:Generated_Source\PSoC4/DBG_UART_UART.c ****         }
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 28
-
-
  818:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  819:Generated_Source\PSoC4/DBG_UART_UART.c ****         /* Clear all UART TX interrupt sources to  */
  820:Generated_Source\PSoC4/DBG_UART_UART.c ****         DBG_UART_ClearTxInterruptSource(DBG_UART_INTR_TX_ALL);
- 719              		.loc 1 820 0
- 720 0032 084A     		ldr	r2, .L52+16
- 721 0034 044B     		ldr	r3, .L52+4
- 722 0036 1A60     		str	r2, [r3]
+ 527              		.loc 1 820 0
+ 528 0032 084A     		ldr	r2, .L33+16
+ 529 0034 044B     		ldr	r3, .L33+4
+ 530 0036 1A60     		str	r2, [r3]
  821:Generated_Source\PSoC4/DBG_UART_UART.c **** 
  822:Generated_Source\PSoC4/DBG_UART_UART.c ****         /* Restore TX interrupt sources and data width */
  823:Generated_Source\PSoC4/DBG_UART_UART.c ****         DBG_UART_TX_CTRL_REG = txCtrlReg;
- 723              		.loc 1 823 0
- 724 0038 044B     		ldr	r3, .L52+8
- 725 003a 1E60     		str	r6, [r3]
+ 531              		.loc 1 823 0
+ 532 0038 044B     		ldr	r3, .L33+8
+ 533 003a 1E60     		str	r6, [r3]
  824:Generated_Source\PSoC4/DBG_UART_UART.c ****         DBG_UART_SetTxInterruptMode(txIntrReg);
- 726              		.loc 1 824 0
- 727 003c 014B     		ldr	r3, .L52
- 728 003e 1D60     		str	r5, [r3]
+ 534              		.loc 1 824 0
+ 535 003c 014B     		ldr	r3, .L33
+ 536 003e 1D60     		str	r5, [r3]
  825:Generated_Source\PSoC4/DBG_UART_UART.c ****     }
- 729              		.loc 1 825 0
- 730              		@ sp needed
- 731              	.LVL48:
- 732              	.LVL49:
- 733 0040 70BD     		pop	{r4, r5, r6, pc}
- 734              	.L53:
- 735 0042 C046     		.align	2
- 736              	.L52:
- 737 0044 880F2740 		.word	1076301704
- 738 0048 800F2740 		.word	1076301696
- 739 004c 00022740 		.word	1076298240
- 740 0050 40022740 		.word	1076298304
- 741 0054 F3070000 		.word	2035
- 742              		.cfi_endproc
- 743              	.LFE15:
- 744              		.size	DBG_UART_UartSendBreakBlocking, .-DBG_UART_UartSendBreakBlocking
- 745              		.text
- 746              	.Letext0:
- 747              		.file 2 "Generated_Source\\PSoC4/cytypes.h"
- 748              		.file 3 "Generated_Source\\PSoC4\\DBG_UART_SPI_UART.h"
- 749              		.file 4 "Generated_Source\\PSoC4\\DBG_UART_PVT.h"
- 750              		.section	.debug_info,"",%progbits
- 751              	.Ldebug_info0:
- 752 0000 B1030000 		.4byte	0x3b1
- 753 0004 0400     		.2byte	0x4
- 754 0006 00000000 		.4byte	.Ldebug_abbrev0
- 755 000a 04       		.byte	0x4
- 756 000b 01       		.uleb128 0x1
- 757 000c DA020000 		.4byte	.LASF50
- 758 0010 0C       		.byte	0xc
- 759 0011 2F000000 		.4byte	.LASF51
- 760 0015 B5010000 		.4byte	.LASF52
- 761 0019 00000000 		.4byte	.Ldebug_ranges0+0
- 762 001d 00000000 		.4byte	0
- 763 0021 00000000 		.4byte	.Ldebug_line0
- 764 0025 02       		.uleb128 0x2
- 765 0026 01       		.byte	0x1
- 766 0027 06       		.byte	0x6
- 767 0028 E8030000 		.4byte	.LASF0
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 29
+ 537              		.loc 1 825 0
+ 538              		@ sp needed
+ 539              	.LVL41:
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccCKXTyj.s 			page 25
 
 
- 768 002c 02       		.uleb128 0x2
- 769 002d 01       		.byte	0x1
- 770 002e 08       		.byte	0x8
- 771 002f 53010000 		.4byte	.LASF1
- 772 0033 02       		.uleb128 0x2
- 773 0034 02       		.byte	0x2
- 774 0035 05       		.byte	0x5
- 775 0036 B6030000 		.4byte	.LASF2
- 776 003a 02       		.uleb128 0x2
- 777 003b 02       		.byte	0x2
- 778 003c 07       		.byte	0x7
- 779 003d C6000000 		.4byte	.LASF3
- 780 0041 02       		.uleb128 0x2
- 781 0042 04       		.byte	0x4
- 782 0043 05       		.byte	0x5
- 783 0044 C0030000 		.4byte	.LASF4
- 784 0048 02       		.uleb128 0x2
- 785 0049 04       		.byte	0x4
- 786 004a 07       		.byte	0x7
- 787 004b 87010000 		.4byte	.LASF5
- 788 004f 02       		.uleb128 0x2
- 789 0050 08       		.byte	0x8
- 790 0051 05       		.byte	0x5
- 791 0052 00000000 		.4byte	.LASF6
- 792 0056 02       		.uleb128 0x2
- 793 0057 08       		.byte	0x8
- 794 0058 07       		.byte	0x7
- 795 0059 9A020000 		.4byte	.LASF7
- 796 005d 03       		.uleb128 0x3
- 797 005e 04       		.byte	0x4
- 798 005f 05       		.byte	0x5
- 799 0060 696E7400 		.ascii	"int\000"
- 800 0064 02       		.uleb128 0x2
- 801 0065 04       		.byte	0x4
- 802 0066 07       		.byte	0x7
- 803 0067 70020000 		.4byte	.LASF8
- 804 006b 04       		.uleb128 0x4
- 805 006c 33020000 		.4byte	.LASF9
- 806 0070 02       		.byte	0x2
- 807 0071 FC01     		.2byte	0x1fc
- 808 0073 3A000000 		.4byte	0x3a
- 809 0077 04       		.uleb128 0x4
- 810 0078 3A020000 		.4byte	.LASF10
- 811 007c 02       		.byte	0x2
- 812 007d FD01     		.2byte	0x1fd
- 813 007f 48000000 		.4byte	0x48
- 814 0083 02       		.uleb128 0x2
- 815 0084 04       		.byte	0x4
- 816 0085 04       		.byte	0x4
- 817 0086 27010000 		.4byte	.LASF11
- 818 008a 02       		.uleb128 0x2
- 819 008b 08       		.byte	0x8
- 820 008c 04       		.byte	0x4
- 821 008d 2C020000 		.4byte	.LASF12
- 822 0091 04       		.uleb128 0x4
- 823 0092 79010000 		.4byte	.LASF13
- 824 0096 02       		.byte	0x2
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 30
+ 540              	.LVL42:
+ 541 0040 70BD     		pop	{r4, r5, r6, pc}
+ 542              	.L34:
+ 543 0042 C046     		.align	2
+ 544              	.L33:
+ 545 0044 880F0640 		.word	1074139016
+ 546 0048 800F0640 		.word	1074139008
+ 547 004c 00020640 		.word	1074135552
+ 548 0050 40020640 		.word	1074135616
+ 549 0054 F3070000 		.word	2035
+ 550              		.cfi_endproc
+ 551              	.LFE9:
+ 552              		.size	DBG_UART_UartSendBreakBlocking, .-DBG_UART_UartSendBreakBlocking
+ 553              		.text
+ 554              	.Letext0:
+ 555              		.file 2 "Generated_Source\\PSoC4/cytypes.h"
+ 556              		.file 3 "Generated_Source\\PSoC4\\DBG_UART_SPI_UART.h"
+ 557              		.file 4 "Generated_Source\\PSoC4\\DBG_UART_PVT.h"
+ 558              		.section	.debug_info,"",%progbits
+ 559              	.Ldebug_info0:
+ 560 0000 0C030000 		.4byte	0x30c
+ 561 0004 0400     		.2byte	0x4
+ 562 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 563 000a 04       		.byte	0x4
+ 564 000b 01       		.uleb128 0x1
+ 565 000c 47020000 		.4byte	.LASF42
+ 566 0010 0C       		.byte	0xc
+ 567 0011 2F000000 		.4byte	.LASF43
+ 568 0015 57010000 		.4byte	.LASF44
+ 569 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 570 001d 00000000 		.4byte	0
+ 571 0021 00000000 		.4byte	.Ldebug_line0
+ 572 0025 02       		.uleb128 0x2
+ 573 0026 01       		.byte	0x1
+ 574 0027 06       		.byte	0x6
+ 575 0028 55030000 		.4byte	.LASF0
+ 576 002c 02       		.uleb128 0x2
+ 577 002d 01       		.byte	0x1
+ 578 002e 08       		.byte	0x8
+ 579 002f 06010000 		.4byte	.LASF1
+ 580 0033 02       		.uleb128 0x2
+ 581 0034 02       		.byte	0x2
+ 582 0035 05       		.byte	0x5
+ 583 0036 23030000 		.4byte	.LASF2
+ 584 003a 02       		.uleb128 0x2
+ 585 003b 02       		.byte	0x2
+ 586 003c 07       		.byte	0x7
+ 587 003d 44010000 		.4byte	.LASF3
+ 588 0041 02       		.uleb128 0x2
+ 589 0042 04       		.byte	0x4
+ 590 0043 05       		.byte	0x5
+ 591 0044 2D030000 		.4byte	.LASF4
+ 592 0048 02       		.uleb128 0x2
+ 593 0049 04       		.byte	0x4
+ 594 004a 07       		.byte	0x7
+ 595 004b 32010000 		.4byte	.LASF5
+ 596 004f 02       		.uleb128 0x2
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccCKXTyj.s 			page 26
 
 
- 825 0097 0C02     		.2byte	0x20c
- 826 0099 9D000000 		.4byte	0x9d
- 827 009d 02       		.uleb128 0x2
- 828 009e 01       		.byte	0x1
- 829 009f 08       		.byte	0x8
- 830 00a0 9C030000 		.4byte	.LASF14
- 831 00a4 04       		.uleb128 0x4
- 832 00a5 29000000 		.4byte	.LASF15
- 833 00a9 02       		.byte	0x2
- 834 00aa A702     		.2byte	0x2a7
- 835 00ac B0000000 		.4byte	0xb0
- 836 00b0 05       		.uleb128 0x5
- 837 00b1 77000000 		.4byte	0x77
- 838 00b5 02       		.uleb128 0x2
- 839 00b6 08       		.byte	0x8
- 840 00b7 04       		.byte	0x4
- 841 00b8 DC030000 		.4byte	.LASF16
- 842 00bc 02       		.uleb128 0x2
- 843 00bd 04       		.byte	0x4
- 844 00be 07       		.byte	0x7
- 845 00bf 68030000 		.4byte	.LASF17
- 846 00c3 06       		.uleb128 0x6
- 847 00c4 F4030000 		.4byte	.LASF18
- 848 00c8 01       		.byte	0x1
- 849 00c9 F7       		.byte	0xf7
- 850 00ca 00000000 		.4byte	.LFB1
- 851 00ce A8000000 		.4byte	.LFE1-.LFB1
- 852 00d2 01       		.uleb128 0x1
- 853 00d3 9C       		.byte	0x9c
- 854 00d4 07       		.uleb128 0x7
- 855 00d5 61010000 		.4byte	.LASF19
- 856 00d9 01       		.byte	0x1
- 857 00da 3D01     		.2byte	0x13d
- 858 00dc 00000000 		.4byte	.LFB2
- 859 00e0 24000000 		.4byte	.LFE2-.LFB2
- 860 00e4 01       		.uleb128 0x1
- 861 00e5 9C       		.byte	0x9c
- 862 00e6 07       		.uleb128 0x7
- 863 00e7 28040000 		.4byte	.LASF20
- 864 00eb 01       		.byte	0x1
- 865 00ec 7101     		.2byte	0x171
- 866 00ee 00000000 		.4byte	.LFB3
- 867 00f2 28000000 		.4byte	.LFE3-.LFB3
- 868 00f6 01       		.uleb128 0x1
- 869 00f7 9C       		.byte	0x9c
- 870 00f8 08       		.uleb128 0x8
- 871 00f9 56020000 		.4byte	.LASF21
- 872 00fd 01       		.byte	0x1
- 873 00fe B101     		.2byte	0x1b1
- 874 0100 00000000 		.4byte	.LFB4
- 875 0104 14000000 		.4byte	.LFE4-.LFB4
- 876 0108 01       		.uleb128 0x1
- 877 0109 9C       		.byte	0x9c
- 878 010a 2F010000 		.4byte	0x12f
- 879 010e 09       		.uleb128 0x9
- 880 010f 7F010000 		.4byte	.LASF23
- 881 0113 01       		.byte	0x1
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 31
+ 597 0050 08       		.byte	0x8
+ 598 0051 05       		.byte	0x5
+ 599 0052 00000000 		.4byte	.LASF6
+ 600 0056 02       		.uleb128 0x2
+ 601 0057 08       		.byte	0x8
+ 602 0058 07       		.byte	0x7
+ 603 0059 27020000 		.4byte	.LASF7
+ 604 005d 03       		.uleb128 0x3
+ 605 005e 04       		.byte	0x4
+ 606 005f 05       		.byte	0x5
+ 607 0060 696E7400 		.ascii	"int\000"
+ 608 0064 02       		.uleb128 0x2
+ 609 0065 04       		.byte	0x4
+ 610 0066 07       		.byte	0x7
+ 611 0067 12020000 		.4byte	.LASF8
+ 612 006b 04       		.uleb128 0x4
+ 613 006c D5010000 		.4byte	.LASF9
+ 614 0070 02       		.byte	0x2
+ 615 0071 FC01     		.2byte	0x1fc
+ 616 0073 3A000000 		.4byte	0x3a
+ 617 0077 04       		.uleb128 0x4
+ 618 0078 DC010000 		.4byte	.LASF10
+ 619 007c 02       		.byte	0x2
+ 620 007d FD01     		.2byte	0x1fd
+ 621 007f 48000000 		.4byte	0x48
+ 622 0083 02       		.uleb128 0x2
+ 623 0084 04       		.byte	0x4
+ 624 0085 04       		.byte	0x4
+ 625 0086 DA000000 		.4byte	.LASF11
+ 626 008a 02       		.uleb128 0x2
+ 627 008b 08       		.byte	0x8
+ 628 008c 04       		.byte	0x4
+ 629 008d CE010000 		.4byte	.LASF12
+ 630 0091 04       		.uleb128 0x4
+ 631 0092 2C010000 		.4byte	.LASF13
+ 632 0096 02       		.byte	0x2
+ 633 0097 0C02     		.2byte	0x20c
+ 634 0099 9D000000 		.4byte	0x9d
+ 635 009d 02       		.uleb128 0x2
+ 636 009e 01       		.byte	0x1
+ 637 009f 08       		.byte	0x8
+ 638 00a0 09030000 		.4byte	.LASF14
+ 639 00a4 04       		.uleb128 0x4
+ 640 00a5 29000000 		.4byte	.LASF15
+ 641 00a9 02       		.byte	0x2
+ 642 00aa A702     		.2byte	0x2a7
+ 643 00ac B0000000 		.4byte	0xb0
+ 644 00b0 05       		.uleb128 0x5
+ 645 00b1 77000000 		.4byte	0x77
+ 646 00b5 02       		.uleb128 0x2
+ 647 00b6 08       		.byte	0x8
+ 648 00b7 04       		.byte	0x4
+ 649 00b8 49030000 		.4byte	.LASF16
+ 650 00bc 02       		.uleb128 0x2
+ 651 00bd 04       		.byte	0x4
+ 652 00be 07       		.byte	0x7
+ 653 00bf D5020000 		.4byte	.LASF17
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccCKXTyj.s 			page 27
 
 
- 882 0114 B101     		.2byte	0x1b1
- 883 0116 77000000 		.4byte	0x77
- 884 011a 00000000 		.4byte	.LLST0
- 885 011e 0A       		.uleb128 0xa
- 886 011f D3030000 		.4byte	.LASF25
- 887 0123 01       		.byte	0x1
- 888 0124 B301     		.2byte	0x1b3
- 889 0126 77000000 		.4byte	0x77
- 890 012a 21000000 		.4byte	.LLST1
- 891 012e 00       		.byte	0
- 892 012f 08       		.uleb128 0x8
- 893 0130 D9000000 		.4byte	.LASF22
- 894 0134 01       		.byte	0x1
- 895 0135 CA01     		.2byte	0x1ca
- 896 0137 00000000 		.4byte	.LFB5
- 897 013b 18000000 		.4byte	.LFE5-.LFB5
- 898 013f 01       		.uleb128 0x1
- 899 0140 9C       		.byte	0x9c
- 900 0141 66010000 		.4byte	0x166
- 901 0145 09       		.uleb128 0x9
- 902 0146 20020000 		.4byte	.LASF24
- 903 014a 01       		.byte	0x1
- 904 014b CA01     		.2byte	0x1ca
- 905 014d 77000000 		.4byte	0x77
- 906 0151 3F000000 		.4byte	.LLST2
- 907 0155 0A       		.uleb128 0xa
- 908 0156 D3030000 		.4byte	.LASF25
- 909 015a 01       		.byte	0x1
- 910 015b CC01     		.2byte	0x1cc
- 911 015d 77000000 		.4byte	0x77
- 912 0161 60000000 		.4byte	.LLST3
- 913 0165 00       		.byte	0
- 914 0166 0B       		.uleb128 0xb
- 915 0167 FE000000 		.4byte	.LASF27
- 916 016b 01       		.byte	0x1
- 917 016c F201     		.2byte	0x1f2
- 918 016e 77000000 		.4byte	0x77
- 919 0172 00000000 		.4byte	.LFB6
- 920 0176 2C000000 		.4byte	.LFE6-.LFB6
- 921 017a 01       		.uleb128 0x1
- 922 017b 9C       		.byte	0x9c
- 923 017c A3010000 		.4byte	0x1a3
- 924 0180 0A       		.uleb128 0xa
- 925 0181 19020000 		.4byte	.LASF26
- 926 0185 01       		.byte	0x1
- 927 0186 F401     		.2byte	0x1f4
- 928 0188 77000000 		.4byte	0x77
- 929 018c 89000000 		.4byte	.LLST4
- 930 0190 0C       		.uleb128 0xc
- 931 0191 06000000 		.4byte	.LVL11
- 932 0195 90030000 		.4byte	0x390
- 933 0199 0C       		.uleb128 0xc
- 934 019a 0E000000 		.4byte	.LVL12
- 935 019e 9C030000 		.4byte	0x39c
- 936 01a2 00       		.byte	0
- 937 01a3 0B       		.uleb128 0xb
- 938 01a4 41020000 		.4byte	.LASF28
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 32
+ 654 00c3 06       		.uleb128 0x6
+ 655 00c4 6B030000 		.4byte	.LASF18
+ 656 00c8 01       		.byte	0x1
+ 657 00c9 F7       		.byte	0xf7
+ 658 00ca 00000000 		.4byte	.LFB0
+ 659 00ce 9C000000 		.4byte	.LFE0-.LFB0
+ 660 00d2 01       		.uleb128 0x1
+ 661 00d3 9C       		.byte	0x9c
+ 662 00d4 07       		.uleb128 0x7
+ 663 00d5 14010000 		.4byte	.LASF19
+ 664 00d9 01       		.byte	0x1
+ 665 00da 3D01     		.2byte	0x13d
+ 666 00dc 00000000 		.4byte	.LFB1
+ 667 00e0 24000000 		.4byte	.LFE1-.LFB1
+ 668 00e4 01       		.uleb128 0x1
+ 669 00e5 9C       		.byte	0x9c
+ 670 00e6 07       		.uleb128 0x7
+ 671 00e7 88030000 		.4byte	.LASF20
+ 672 00eb 01       		.byte	0x1
+ 673 00ec 7101     		.2byte	0x171
+ 674 00ee 00000000 		.4byte	.LFB2
+ 675 00f2 28000000 		.4byte	.LFE2-.LFB2
+ 676 00f6 01       		.uleb128 0x1
+ 677 00f7 9C       		.byte	0x9c
+ 678 00f8 08       		.uleb128 0x8
+ 679 00f9 F8010000 		.4byte	.LASF21
+ 680 00fd 01       		.byte	0x1
+ 681 00fe B101     		.2byte	0x1b1
+ 682 0100 00000000 		.4byte	.LFB3
+ 683 0104 14000000 		.4byte	.LFE3-.LFB3
+ 684 0108 01       		.uleb128 0x1
+ 685 0109 9C       		.byte	0x9c
+ 686 010a 2F010000 		.4byte	0x12f
+ 687 010e 09       		.uleb128 0x9
+ 688 010f 1F020000 		.4byte	.LASF23
+ 689 0113 01       		.byte	0x1
+ 690 0114 B101     		.2byte	0x1b1
+ 691 0116 77000000 		.4byte	0x77
+ 692 011a 00000000 		.4byte	.LLST0
+ 693 011e 0A       		.uleb128 0xa
+ 694 011f 40030000 		.4byte	.LASF25
+ 695 0123 01       		.byte	0x1
+ 696 0124 B301     		.2byte	0x1b3
+ 697 0126 77000000 		.4byte	0x77
+ 698 012a 21000000 		.4byte	.LLST1
+ 699 012e 00       		.byte	0
+ 700 012f 08       		.uleb128 0x8
+ 701 0130 8C000000 		.4byte	.LASF22
+ 702 0134 01       		.byte	0x1
+ 703 0135 CA01     		.2byte	0x1ca
+ 704 0137 00000000 		.4byte	.LFB4
+ 705 013b 18000000 		.4byte	.LFE4-.LFB4
+ 706 013f 01       		.uleb128 0x1
+ 707 0140 9C       		.byte	0x9c
+ 708 0141 66010000 		.4byte	0x166
+ 709 0145 09       		.uleb128 0x9
+ 710 0146 C2010000 		.4byte	.LASF24
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccCKXTyj.s 			page 28
 
 
- 939 01a8 01       		.byte	0x1
- 940 01a9 2402     		.2byte	0x224
- 941 01ab 77000000 		.4byte	0x77
- 942 01af 00000000 		.4byte	.LFB7
- 943 01b3 34000000 		.4byte	.LFE7-.LFB7
- 944 01b7 01       		.uleb128 0x1
- 945 01b8 9C       		.byte	0x9c
- 946 01b9 F0010000 		.4byte	0x1f0
- 947 01bd 0A       		.uleb128 0xa
- 948 01be 19020000 		.4byte	.LASF26
- 949 01c2 01       		.byte	0x1
- 950 01c3 2602     		.2byte	0x226
- 951 01c5 77000000 		.4byte	0x77
- 952 01c9 D6000000 		.4byte	.LLST5
- 953 01cd 0A       		.uleb128 0xa
- 954 01ce C9030000 		.4byte	.LASF29
- 955 01d2 01       		.byte	0x1
- 956 01d3 2702     		.2byte	0x227
- 957 01d5 77000000 		.4byte	0x77
- 958 01d9 F4000000 		.4byte	.LLST6
- 959 01dd 0C       		.uleb128 0xc
- 960 01de 06000000 		.4byte	.LVL17
- 961 01e2 90030000 		.4byte	0x390
- 962 01e6 0C       		.uleb128 0xc
- 963 01e7 0E000000 		.4byte	.LVL18
- 964 01eb 9C030000 		.4byte	0x39c
- 965 01ef 00       		.byte	0
- 966 01f0 08       		.uleb128 0x8
- 967 01f1 99010000 		.4byte	.LASF30
- 968 01f5 01       		.byte	0x1
- 969 01f6 6E02     		.2byte	0x26e
- 970 01f8 00000000 		.4byte	.LFB8
- 971 01fc 28000000 		.4byte	.LFE8-.LFB8
- 972 0200 01       		.uleb128 0x1
- 973 0201 9C       		.byte	0x9c
- 974 0202 15020000 		.4byte	0x215
- 975 0206 0D       		.uleb128 0xd
- 976 0207 C8020000 		.4byte	.LASF31
- 977 020b 01       		.byte	0x1
- 978 020c 6E02     		.2byte	0x26e
- 979 020e 77000000 		.4byte	0x77
- 980 0212 01       		.uleb128 0x1
- 981 0213 50       		.byte	0x50
- 982 0214 00       		.byte	0
- 983 0215 08       		.uleb128 0x8
- 984 0216 7D020000 		.4byte	.LASF32
- 985 021a 01       		.byte	0x1
- 986 021b 8A02     		.2byte	0x28a
- 987 021d 00000000 		.4byte	.LFB9
- 988 0221 14000000 		.4byte	.LFE9-.LFB9
- 989 0225 01       		.uleb128 0x1
- 990 0226 9C       		.byte	0x9c
- 991 0227 4C020000 		.4byte	0x24c
- 992 022b 09       		.uleb128 0x9
- 993 022c 6D000000 		.4byte	.LASF33
- 994 0230 01       		.byte	0x1
- 995 0231 8A02     		.2byte	0x28a
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 33
+ 711 014a 01       		.byte	0x1
+ 712 014b CA01     		.2byte	0x1ca
+ 713 014d 77000000 		.4byte	0x77
+ 714 0151 3F000000 		.4byte	.LLST2
+ 715 0155 0A       		.uleb128 0xa
+ 716 0156 40030000 		.4byte	.LASF25
+ 717 015a 01       		.byte	0x1
+ 718 015b CC01     		.2byte	0x1cc
+ 719 015d 77000000 		.4byte	0x77
+ 720 0161 60000000 		.4byte	.LLST3
+ 721 0165 00       		.byte	0
+ 722 0166 0B       		.uleb128 0xb
+ 723 0167 B1000000 		.4byte	.LASF27
+ 724 016b 01       		.byte	0x1
+ 725 016c F201     		.2byte	0x1f2
+ 726 016e 77000000 		.4byte	0x77
+ 727 0172 00000000 		.4byte	.LFB5
+ 728 0176 2C000000 		.4byte	.LFE5-.LFB5
+ 729 017a 01       		.uleb128 0x1
+ 730 017b 9C       		.byte	0x9c
+ 731 017c A3010000 		.4byte	0x1a3
+ 732 0180 0A       		.uleb128 0xa
+ 733 0181 BB010000 		.4byte	.LASF26
+ 734 0185 01       		.byte	0x1
+ 735 0186 F401     		.2byte	0x1f4
+ 736 0188 77000000 		.4byte	0x77
+ 737 018c 89000000 		.4byte	.LLST4
+ 738 0190 0C       		.uleb128 0xc
+ 739 0191 06000000 		.4byte	.LVL11
+ 740 0195 EB020000 		.4byte	0x2eb
+ 741 0199 0C       		.uleb128 0xc
+ 742 019a 0E000000 		.4byte	.LVL12
+ 743 019e F7020000 		.4byte	0x2f7
+ 744 01a2 00       		.byte	0
+ 745 01a3 0B       		.uleb128 0xb
+ 746 01a4 E3010000 		.4byte	.LASF28
+ 747 01a8 01       		.byte	0x1
+ 748 01a9 2402     		.2byte	0x224
+ 749 01ab 77000000 		.4byte	0x77
+ 750 01af 00000000 		.4byte	.LFB6
+ 751 01b3 34000000 		.4byte	.LFE6-.LFB6
+ 752 01b7 01       		.uleb128 0x1
+ 753 01b8 9C       		.byte	0x9c
+ 754 01b9 F0010000 		.4byte	0x1f0
+ 755 01bd 0A       		.uleb128 0xa
+ 756 01be BB010000 		.4byte	.LASF26
+ 757 01c2 01       		.byte	0x1
+ 758 01c3 2602     		.2byte	0x226
+ 759 01c5 77000000 		.4byte	0x77
+ 760 01c9 D6000000 		.4byte	.LLST5
+ 761 01cd 0A       		.uleb128 0xa
+ 762 01ce 36030000 		.4byte	.LASF29
+ 763 01d2 01       		.byte	0x1
+ 764 01d3 2702     		.2byte	0x227
+ 765 01d5 77000000 		.4byte	0x77
+ 766 01d9 F4000000 		.4byte	.LLST6
+ 767 01dd 0C       		.uleb128 0xc
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccCKXTyj.s 			page 29
 
 
- 996 0233 77000000 		.4byte	0x77
- 997 0237 0D010000 		.4byte	.LLST7
- 998 023b 0A       		.uleb128 0xa
- 999 023c 10040000 		.4byte	.LASF34
- 1000 0240 01       		.byte	0x1
- 1001 0241 8C02     		.2byte	0x28c
- 1002 0243 77000000 		.4byte	0x77
- 1003 0247 2E010000 		.4byte	.LLST8
- 1004 024b 00       		.byte	0
- 1005 024c 08       		.uleb128 0x8
- 1006 024d 56000000 		.4byte	.LASF35
- 1007 0251 01       		.byte	0x1
- 1008 0252 A802     		.2byte	0x2a8
- 1009 0254 00000000 		.4byte	.LFB10
- 1010 0258 16000000 		.4byte	.LFE10-.LFB10
- 1011 025c 01       		.uleb128 0x1
- 1012 025d 9C       		.byte	0x9c
- 1013 025e 8C020000 		.4byte	0x28c
- 1014 0262 09       		.uleb128 0x9
- 1015 0263 F7000000 		.4byte	.LASF36
- 1016 0267 01       		.byte	0x1
- 1017 0268 A802     		.2byte	0x2a8
- 1018 026a 8C020000 		.4byte	0x28c
- 1019 026e 4C010000 		.4byte	.LLST9
- 1020 0272 0A       		.uleb128 0xa
- 1021 0273 D1020000 		.4byte	.LASF37
- 1022 0277 01       		.byte	0x1
- 1023 0278 AA02     		.2byte	0x2aa
- 1024 027a 77000000 		.4byte	0x77
- 1025 027e 78010000 		.4byte	.LLST10
- 1026 0282 0C       		.uleb128 0xc
- 1027 0283 0C000000 		.4byte	.LVL33
- 1028 0287 A8030000 		.4byte	0x3a8
- 1029 028b 00       		.byte	0
- 1030 028c 0E       		.uleb128 0xe
- 1031 028d 04       		.byte	0x4
- 1032 028e 92020000 		.4byte	0x292
- 1033 0292 0F       		.uleb128 0xf
- 1034 0293 91000000 		.4byte	0x91
- 1035 0297 08       		.uleb128 0x8
- 1036 0298 A1030000 		.4byte	.LASF38
- 1037 029c 01       		.byte	0x1
- 1038 029d C302     		.2byte	0x2c3
- 1039 029f 00000000 		.4byte	.LFB11
- 1040 02a3 14000000 		.4byte	.LFE11-.LFB11
- 1041 02a7 01       		.uleb128 0x1
- 1042 02a8 9C       		.byte	0x9c
- 1043 02a9 F5020000 		.4byte	0x2f5
- 1044 02ad 09       		.uleb128 0x9
- 1045 02ae 91030000 		.4byte	.LASF39
- 1046 02b2 01       		.byte	0x1
- 1047 02b3 C302     		.2byte	0x2c3
- 1048 02b5 77000000 		.4byte	0x77
- 1049 02b9 97010000 		.4byte	.LLST11
- 1050 02bd 10       		.uleb128 0x10
- 1051 02be 06000000 		.4byte	.LVL38
- 1052 02c2 A8030000 		.4byte	0x3a8
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 34
+ 768 01de 06000000 		.4byte	.LVL17
+ 769 01e2 EB020000 		.4byte	0x2eb
+ 770 01e6 0C       		.uleb128 0xc
+ 771 01e7 0E000000 		.4byte	.LVL18
+ 772 01eb F7020000 		.4byte	0x2f7
+ 773 01ef 00       		.byte	0
+ 774 01f0 08       		.uleb128 0x8
+ 775 01f1 56000000 		.4byte	.LASF30
+ 776 01f5 01       		.byte	0x1
+ 777 01f6 A802     		.2byte	0x2a8
+ 778 01f8 00000000 		.4byte	.LFB7
+ 779 01fc 16000000 		.4byte	.LFE7-.LFB7
+ 780 0200 01       		.uleb128 0x1
+ 781 0201 9C       		.byte	0x9c
+ 782 0202 30020000 		.4byte	0x230
+ 783 0206 09       		.uleb128 0x9
+ 784 0207 AA000000 		.4byte	.LASF31
+ 785 020b 01       		.byte	0x1
+ 786 020c A802     		.2byte	0x2a8
+ 787 020e 30020000 		.4byte	0x230
+ 788 0212 0D010000 		.4byte	.LLST7
+ 789 0216 0A       		.uleb128 0xa
+ 790 0217 3E020000 		.4byte	.LASF32
+ 791 021b 01       		.byte	0x1
+ 792 021c AA02     		.2byte	0x2aa
+ 793 021e 77000000 		.4byte	0x77
+ 794 0222 39010000 		.4byte	.LLST8
+ 795 0226 0C       		.uleb128 0xc
+ 796 0227 0C000000 		.4byte	.LVL27
+ 797 022b 03030000 		.4byte	0x303
+ 798 022f 00       		.byte	0
+ 799 0230 0D       		.uleb128 0xd
+ 800 0231 04       		.byte	0x4
+ 801 0232 36020000 		.4byte	0x236
+ 802 0236 0E       		.uleb128 0xe
+ 803 0237 91000000 		.4byte	0x91
+ 804 023b 08       		.uleb128 0x8
+ 805 023c 0E030000 		.4byte	.LASF33
+ 806 0240 01       		.byte	0x1
+ 807 0241 C302     		.2byte	0x2c3
+ 808 0243 00000000 		.4byte	.LFB8
+ 809 0247 14000000 		.4byte	.LFE8-.LFB8
+ 810 024b 01       		.uleb128 0x1
+ 811 024c 9C       		.byte	0x9c
+ 812 024d 99020000 		.4byte	0x299
+ 813 0251 09       		.uleb128 0x9
+ 814 0252 FE020000 		.4byte	.LASF34
+ 815 0256 01       		.byte	0x1
+ 816 0257 C302     		.2byte	0x2c3
+ 817 0259 77000000 		.4byte	0x77
+ 818 025d 58010000 		.4byte	.LLST9
+ 819 0261 0F       		.uleb128 0xf
+ 820 0262 06000000 		.4byte	.LVL32
+ 821 0266 03030000 		.4byte	0x303
+ 822 026a 76020000 		.4byte	0x276
+ 823 026e 10       		.uleb128 0x10
+ 824 026f 01       		.uleb128 0x1
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccCKXTyj.s 			page 30
 
 
- 1053 02c6 D2020000 		.4byte	0x2d2
- 1054 02ca 11       		.uleb128 0x11
- 1055 02cb 01       		.uleb128 0x1
- 1056 02cc 50       		.byte	0x50
- 1057 02cd 03       		.uleb128 0x3
- 1058 02ce F3       		.byte	0xf3
- 1059 02cf 01       		.uleb128 0x1
- 1060 02d0 50       		.byte	0x50
- 1061 02d1 00       		.byte	0
- 1062 02d2 10       		.uleb128 0x10
- 1063 02d3 0C000000 		.4byte	.LVL39
- 1064 02d7 A8030000 		.4byte	0x3a8
- 1065 02db E5020000 		.4byte	0x2e5
- 1066 02df 11       		.uleb128 0x11
- 1067 02e0 01       		.uleb128 0x1
- 1068 02e1 50       		.byte	0x50
- 1069 02e2 01       		.uleb128 0x1
- 1070 02e3 3D       		.byte	0x3d
- 1071 02e4 00       		.byte	0
- 1072 02e5 12       		.uleb128 0x12
- 1073 02e6 12000000 		.4byte	.LVL40
- 1074 02ea A8030000 		.4byte	0x3a8
- 1075 02ee 11       		.uleb128 0x11
- 1076 02ef 01       		.uleb128 0x1
- 1077 02f0 50       		.byte	0x50
- 1078 02f1 01       		.uleb128 0x1
- 1079 02f2 3A       		.byte	0x3a
- 1080 02f3 00       		.byte	0
- 1081 02f4 00       		.byte	0
- 1082 02f5 07       		.uleb128 0x7
- 1083 02f6 B1020000 		.4byte	.LASF40
- 1084 02fa 01       		.byte	0x1
- 1085 02fb D502     		.2byte	0x2d5
- 1086 02fd 00000000 		.4byte	.LFB12
- 1087 0301 14000000 		.4byte	.LFE12-.LFB12
- 1088 0305 01       		.uleb128 0x1
- 1089 0306 9C       		.byte	0x9c
- 1090 0307 07       		.uleb128 0x7
- 1091 0308 8F000000 		.4byte	.LASF41
- 1092 030c 01       		.byte	0x1
- 1093 030d E402     		.2byte	0x2e4
- 1094 030f 00000000 		.4byte	.LFB13
- 1095 0313 14000000 		.4byte	.LFE13-.LFB13
- 1096 0317 01       		.uleb128 0x1
- 1097 0318 9C       		.byte	0x9c
- 1098 0319 08       		.uleb128 0x8
- 1099 031a 73000000 		.4byte	.LASF42
- 1100 031e 01       		.byte	0x1
- 1101 031f F802     		.2byte	0x2f8
- 1102 0321 00000000 		.4byte	.LFB14
- 1103 0325 28000000 		.4byte	.LFE14-.LFB14
- 1104 0329 01       		.uleb128 0x1
- 1105 032a 9C       		.byte	0x9c
- 1106 032b 3E030000 		.4byte	0x33e
- 1107 032f 0D       		.uleb128 0xd
- 1108 0330 C8020000 		.4byte	.LASF31
- 1109 0334 01       		.byte	0x1
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 35
+ 825 0270 50       		.byte	0x50
+ 826 0271 03       		.uleb128 0x3
+ 827 0272 F3       		.byte	0xf3
+ 828 0273 01       		.uleb128 0x1
+ 829 0274 50       		.byte	0x50
+ 830 0275 00       		.byte	0
+ 831 0276 0F       		.uleb128 0xf
+ 832 0277 0C000000 		.4byte	.LVL33
+ 833 027b 03030000 		.4byte	0x303
+ 834 027f 89020000 		.4byte	0x289
+ 835 0283 10       		.uleb128 0x10
+ 836 0284 01       		.uleb128 0x1
+ 837 0285 50       		.byte	0x50
+ 838 0286 01       		.uleb128 0x1
+ 839 0287 3D       		.byte	0x3d
+ 840 0288 00       		.byte	0
+ 841 0289 11       		.uleb128 0x11
+ 842 028a 12000000 		.4byte	.LVL34
+ 843 028e 03030000 		.4byte	0x303
+ 844 0292 10       		.uleb128 0x10
+ 845 0293 01       		.uleb128 0x1
+ 846 0294 50       		.byte	0x50
+ 847 0295 01       		.uleb128 0x1
+ 848 0296 3A       		.byte	0x3a
+ 849 0297 00       		.byte	0
+ 850 0298 00       		.byte	0
+ 851 0299 08       		.uleb128 0x8
+ 852 029a 6D000000 		.4byte	.LASF35
+ 853 029e 01       		.byte	0x1
+ 854 029f 1A03     		.2byte	0x31a
+ 855 02a1 00000000 		.4byte	.LFB9
+ 856 02a5 58000000 		.4byte	.LFE9-.LFB9
+ 857 02a9 01       		.uleb128 0x1
+ 858 02aa 9C       		.byte	0x9c
+ 859 02ab E0020000 		.4byte	0x2e0
+ 860 02af 09       		.uleb128 0x9
+ 861 02b0 7D030000 		.4byte	.LASF36
+ 862 02b4 01       		.byte	0x1
+ 863 02b5 1A03     		.2byte	0x31a
+ 864 02b7 77000000 		.4byte	0x77
+ 865 02bb 79010000 		.4byte	.LLST10
+ 866 02bf 0A       		.uleb128 0xa
+ 867 02c0 61030000 		.4byte	.LASF37
+ 868 02c4 01       		.byte	0x1
+ 869 02c5 1C03     		.2byte	0x31c
+ 870 02c7 77000000 		.4byte	0x77
+ 871 02cb B2010000 		.4byte	.LLST11
+ 872 02cf 0A       		.uleb128 0xa
+ 873 02d0 E0000000 		.4byte	.LASF38
+ 874 02d4 01       		.byte	0x1
+ 875 02d5 1D03     		.2byte	0x31d
+ 876 02d7 77000000 		.4byte	0x77
+ 877 02db C5010000 		.4byte	.LLST12
+ 878 02df 00       		.byte	0
+ 879 02e0 12       		.uleb128 0x12
+ 880 02e1 C6000000 		.4byte	.LASF45
+ 881 02e5 04       		.byte	0x4
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccCKXTyj.s 			page 31
 
 
- 1110 0335 F802     		.2byte	0x2f8
- 1111 0337 77000000 		.4byte	0x77
- 1112 033b 01       		.uleb128 0x1
- 1113 033c 50       		.byte	0x50
- 1114 033d 00       		.byte	0
- 1115 033e 08       		.uleb128 0x8
- 1116 033f A7000000 		.4byte	.LASF43
- 1117 0343 01       		.byte	0x1
- 1118 0344 1A03     		.2byte	0x31a
- 1119 0346 00000000 		.4byte	.LFB15
- 1120 034a 58000000 		.4byte	.LFE15-.LFB15
- 1121 034e 01       		.uleb128 0x1
- 1122 034f 9C       		.byte	0x9c
- 1123 0350 85030000 		.4byte	0x385
- 1124 0354 09       		.uleb128 0x9
- 1125 0355 1D040000 		.4byte	.LASF44
- 1126 0359 01       		.byte	0x1
- 1127 035a 1A03     		.2byte	0x31a
- 1128 035c 77000000 		.4byte	0x77
- 1129 0360 B8010000 		.4byte	.LLST12
- 1130 0364 0A       		.uleb128 0xa
- 1131 0365 06040000 		.4byte	.LASF45
- 1132 0369 01       		.byte	0x1
- 1133 036a 1C03     		.2byte	0x31c
- 1134 036c 77000000 		.4byte	0x77
- 1135 0370 F1010000 		.4byte	.LLST13
- 1136 0374 0A       		.uleb128 0xa
- 1137 0375 2D010000 		.4byte	.LASF46
- 1138 0379 01       		.byte	0x1
- 1139 037a 1D03     		.2byte	0x31d
- 1140 037c 77000000 		.4byte	0x77
- 1141 0380 04020000 		.4byte	.LLST14
- 1142 0384 00       		.byte	0
- 1143 0385 13       		.uleb128 0x13
- 1144 0386 13010000 		.4byte	.LASF53
- 1145 038a 04       		.byte	0x4
- 1146 038b 5B       		.byte	0x5b
- 1147 038c 6B000000 		.4byte	0x6b
- 1148 0390 14       		.uleb128 0x14
- 1149 0391 71030000 		.4byte	.LASF47
- 1150 0395 71030000 		.4byte	.LASF47
- 1151 0399 03       		.byte	0x3
- 1152 039a 3E03     		.2byte	0x33e
- 1153 039c 14       		.uleb128 0x14
- 1154 039d 0E000000 		.4byte	.LASF48
- 1155 03a1 0E000000 		.4byte	.LASF48
- 1156 03a5 03       		.byte	0x3
- 1157 03a6 3D03     		.2byte	0x33d
- 1158 03a8 14       		.uleb128 0x14
- 1159 03a9 37010000 		.4byte	.LASF49
- 1160 03ad 37010000 		.4byte	.LASF49
- 1161 03b1 03       		.byte	0x3
- 1162 03b2 4403     		.2byte	0x344
- 1163 03b4 00       		.byte	0
- 1164              		.section	.debug_abbrev,"",%progbits
- 1165              	.Ldebug_abbrev0:
- 1166 0000 01       		.uleb128 0x1
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 36
+ 882 02e6 5B       		.byte	0x5b
+ 883 02e7 6B000000 		.4byte	0x6b
+ 884 02eb 13       		.uleb128 0x13
+ 885 02ec DE020000 		.4byte	.LASF39
+ 886 02f0 DE020000 		.4byte	.LASF39
+ 887 02f4 03       		.byte	0x3
+ 888 02f5 3E03     		.2byte	0x33e
+ 889 02f7 13       		.uleb128 0x13
+ 890 02f8 0E000000 		.4byte	.LASF40
+ 891 02fc 0E000000 		.4byte	.LASF40
+ 892 0300 03       		.byte	0x3
+ 893 0301 3D03     		.2byte	0x33d
+ 894 0303 13       		.uleb128 0x13
+ 895 0304 EA000000 		.4byte	.LASF41
+ 896 0308 EA000000 		.4byte	.LASF41
+ 897 030c 03       		.byte	0x3
+ 898 030d 4403     		.2byte	0x344
+ 899 030f 00       		.byte	0
+ 900              		.section	.debug_abbrev,"",%progbits
+ 901              	.Ldebug_abbrev0:
+ 902 0000 01       		.uleb128 0x1
+ 903 0001 11       		.uleb128 0x11
+ 904 0002 01       		.byte	0x1
+ 905 0003 25       		.uleb128 0x25
+ 906 0004 0E       		.uleb128 0xe
+ 907 0005 13       		.uleb128 0x13
+ 908 0006 0B       		.uleb128 0xb
+ 909 0007 03       		.uleb128 0x3
+ 910 0008 0E       		.uleb128 0xe
+ 911 0009 1B       		.uleb128 0x1b
+ 912 000a 0E       		.uleb128 0xe
+ 913 000b 55       		.uleb128 0x55
+ 914 000c 17       		.uleb128 0x17
+ 915 000d 11       		.uleb128 0x11
+ 916 000e 01       		.uleb128 0x1
+ 917 000f 10       		.uleb128 0x10
+ 918 0010 17       		.uleb128 0x17
+ 919 0011 00       		.byte	0
+ 920 0012 00       		.byte	0
+ 921 0013 02       		.uleb128 0x2
+ 922 0014 24       		.uleb128 0x24
+ 923 0015 00       		.byte	0
+ 924 0016 0B       		.uleb128 0xb
+ 925 0017 0B       		.uleb128 0xb
+ 926 0018 3E       		.uleb128 0x3e
+ 927 0019 0B       		.uleb128 0xb
+ 928 001a 03       		.uleb128 0x3
+ 929 001b 0E       		.uleb128 0xe
+ 930 001c 00       		.byte	0
+ 931 001d 00       		.byte	0
+ 932 001e 03       		.uleb128 0x3
+ 933 001f 24       		.uleb128 0x24
+ 934 0020 00       		.byte	0
+ 935 0021 0B       		.uleb128 0xb
+ 936 0022 0B       		.uleb128 0xb
+ 937 0023 3E       		.uleb128 0x3e
+ 938 0024 0B       		.uleb128 0xb
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccCKXTyj.s 			page 32
 
 
- 1167 0001 11       		.uleb128 0x11
- 1168 0002 01       		.byte	0x1
- 1169 0003 25       		.uleb128 0x25
- 1170 0004 0E       		.uleb128 0xe
- 1171 0005 13       		.uleb128 0x13
- 1172 0006 0B       		.uleb128 0xb
- 1173 0007 03       		.uleb128 0x3
- 1174 0008 0E       		.uleb128 0xe
- 1175 0009 1B       		.uleb128 0x1b
- 1176 000a 0E       		.uleb128 0xe
- 1177 000b 55       		.uleb128 0x55
- 1178 000c 17       		.uleb128 0x17
- 1179 000d 11       		.uleb128 0x11
- 1180 000e 01       		.uleb128 0x1
- 1181 000f 10       		.uleb128 0x10
- 1182 0010 17       		.uleb128 0x17
- 1183 0011 00       		.byte	0
- 1184 0012 00       		.byte	0
- 1185 0013 02       		.uleb128 0x2
- 1186 0014 24       		.uleb128 0x24
- 1187 0015 00       		.byte	0
- 1188 0016 0B       		.uleb128 0xb
- 1189 0017 0B       		.uleb128 0xb
- 1190 0018 3E       		.uleb128 0x3e
- 1191 0019 0B       		.uleb128 0xb
- 1192 001a 03       		.uleb128 0x3
- 1193 001b 0E       		.uleb128 0xe
- 1194 001c 00       		.byte	0
- 1195 001d 00       		.byte	0
- 1196 001e 03       		.uleb128 0x3
- 1197 001f 24       		.uleb128 0x24
- 1198 0020 00       		.byte	0
- 1199 0021 0B       		.uleb128 0xb
- 1200 0022 0B       		.uleb128 0xb
- 1201 0023 3E       		.uleb128 0x3e
- 1202 0024 0B       		.uleb128 0xb
- 1203 0025 03       		.uleb128 0x3
- 1204 0026 08       		.uleb128 0x8
- 1205 0027 00       		.byte	0
- 1206 0028 00       		.byte	0
- 1207 0029 04       		.uleb128 0x4
- 1208 002a 16       		.uleb128 0x16
- 1209 002b 00       		.byte	0
- 1210 002c 03       		.uleb128 0x3
- 1211 002d 0E       		.uleb128 0xe
- 1212 002e 3A       		.uleb128 0x3a
- 1213 002f 0B       		.uleb128 0xb
- 1214 0030 3B       		.uleb128 0x3b
- 1215 0031 05       		.uleb128 0x5
- 1216 0032 49       		.uleb128 0x49
- 1217 0033 13       		.uleb128 0x13
- 1218 0034 00       		.byte	0
- 1219 0035 00       		.byte	0
- 1220 0036 05       		.uleb128 0x5
- 1221 0037 35       		.uleb128 0x35
- 1222 0038 00       		.byte	0
- 1223 0039 49       		.uleb128 0x49
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 37
+ 939 0025 03       		.uleb128 0x3
+ 940 0026 08       		.uleb128 0x8
+ 941 0027 00       		.byte	0
+ 942 0028 00       		.byte	0
+ 943 0029 04       		.uleb128 0x4
+ 944 002a 16       		.uleb128 0x16
+ 945 002b 00       		.byte	0
+ 946 002c 03       		.uleb128 0x3
+ 947 002d 0E       		.uleb128 0xe
+ 948 002e 3A       		.uleb128 0x3a
+ 949 002f 0B       		.uleb128 0xb
+ 950 0030 3B       		.uleb128 0x3b
+ 951 0031 05       		.uleb128 0x5
+ 952 0032 49       		.uleb128 0x49
+ 953 0033 13       		.uleb128 0x13
+ 954 0034 00       		.byte	0
+ 955 0035 00       		.byte	0
+ 956 0036 05       		.uleb128 0x5
+ 957 0037 35       		.uleb128 0x35
+ 958 0038 00       		.byte	0
+ 959 0039 49       		.uleb128 0x49
+ 960 003a 13       		.uleb128 0x13
+ 961 003b 00       		.byte	0
+ 962 003c 00       		.byte	0
+ 963 003d 06       		.uleb128 0x6
+ 964 003e 2E       		.uleb128 0x2e
+ 965 003f 00       		.byte	0
+ 966 0040 3F       		.uleb128 0x3f
+ 967 0041 19       		.uleb128 0x19
+ 968 0042 03       		.uleb128 0x3
+ 969 0043 0E       		.uleb128 0xe
+ 970 0044 3A       		.uleb128 0x3a
+ 971 0045 0B       		.uleb128 0xb
+ 972 0046 3B       		.uleb128 0x3b
+ 973 0047 0B       		.uleb128 0xb
+ 974 0048 27       		.uleb128 0x27
+ 975 0049 19       		.uleb128 0x19
+ 976 004a 11       		.uleb128 0x11
+ 977 004b 01       		.uleb128 0x1
+ 978 004c 12       		.uleb128 0x12
+ 979 004d 06       		.uleb128 0x6
+ 980 004e 40       		.uleb128 0x40
+ 981 004f 18       		.uleb128 0x18
+ 982 0050 9742     		.uleb128 0x2117
+ 983 0052 19       		.uleb128 0x19
+ 984 0053 00       		.byte	0
+ 985 0054 00       		.byte	0
+ 986 0055 07       		.uleb128 0x7
+ 987 0056 2E       		.uleb128 0x2e
+ 988 0057 00       		.byte	0
+ 989 0058 3F       		.uleb128 0x3f
+ 990 0059 19       		.uleb128 0x19
+ 991 005a 03       		.uleb128 0x3
+ 992 005b 0E       		.uleb128 0xe
+ 993 005c 3A       		.uleb128 0x3a
+ 994 005d 0B       		.uleb128 0xb
+ 995 005e 3B       		.uleb128 0x3b
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccCKXTyj.s 			page 33
 
 
- 1224 003a 13       		.uleb128 0x13
- 1225 003b 00       		.byte	0
- 1226 003c 00       		.byte	0
- 1227 003d 06       		.uleb128 0x6
- 1228 003e 2E       		.uleb128 0x2e
- 1229 003f 00       		.byte	0
- 1230 0040 3F       		.uleb128 0x3f
- 1231 0041 19       		.uleb128 0x19
- 1232 0042 03       		.uleb128 0x3
- 1233 0043 0E       		.uleb128 0xe
- 1234 0044 3A       		.uleb128 0x3a
- 1235 0045 0B       		.uleb128 0xb
- 1236 0046 3B       		.uleb128 0x3b
- 1237 0047 0B       		.uleb128 0xb
- 1238 0048 27       		.uleb128 0x27
- 1239 0049 19       		.uleb128 0x19
- 1240 004a 11       		.uleb128 0x11
- 1241 004b 01       		.uleb128 0x1
- 1242 004c 12       		.uleb128 0x12
- 1243 004d 06       		.uleb128 0x6
- 1244 004e 40       		.uleb128 0x40
- 1245 004f 18       		.uleb128 0x18
- 1246 0050 9742     		.uleb128 0x2117
- 1247 0052 19       		.uleb128 0x19
- 1248 0053 00       		.byte	0
- 1249 0054 00       		.byte	0
- 1250 0055 07       		.uleb128 0x7
- 1251 0056 2E       		.uleb128 0x2e
- 1252 0057 00       		.byte	0
- 1253 0058 3F       		.uleb128 0x3f
- 1254 0059 19       		.uleb128 0x19
- 1255 005a 03       		.uleb128 0x3
- 1256 005b 0E       		.uleb128 0xe
- 1257 005c 3A       		.uleb128 0x3a
- 1258 005d 0B       		.uleb128 0xb
- 1259 005e 3B       		.uleb128 0x3b
- 1260 005f 05       		.uleb128 0x5
- 1261 0060 27       		.uleb128 0x27
- 1262 0061 19       		.uleb128 0x19
- 1263 0062 11       		.uleb128 0x11
- 1264 0063 01       		.uleb128 0x1
- 1265 0064 12       		.uleb128 0x12
- 1266 0065 06       		.uleb128 0x6
- 1267 0066 40       		.uleb128 0x40
- 1268 0067 18       		.uleb128 0x18
- 1269 0068 9742     		.uleb128 0x2117
- 1270 006a 19       		.uleb128 0x19
- 1271 006b 00       		.byte	0
- 1272 006c 00       		.byte	0
- 1273 006d 08       		.uleb128 0x8
- 1274 006e 2E       		.uleb128 0x2e
- 1275 006f 01       		.byte	0x1
- 1276 0070 3F       		.uleb128 0x3f
- 1277 0071 19       		.uleb128 0x19
- 1278 0072 03       		.uleb128 0x3
- 1279 0073 0E       		.uleb128 0xe
- 1280 0074 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 38
+ 996 005f 05       		.uleb128 0x5
+ 997 0060 27       		.uleb128 0x27
+ 998 0061 19       		.uleb128 0x19
+ 999 0062 11       		.uleb128 0x11
+ 1000 0063 01       		.uleb128 0x1
+ 1001 0064 12       		.uleb128 0x12
+ 1002 0065 06       		.uleb128 0x6
+ 1003 0066 40       		.uleb128 0x40
+ 1004 0067 18       		.uleb128 0x18
+ 1005 0068 9742     		.uleb128 0x2117
+ 1006 006a 19       		.uleb128 0x19
+ 1007 006b 00       		.byte	0
+ 1008 006c 00       		.byte	0
+ 1009 006d 08       		.uleb128 0x8
+ 1010 006e 2E       		.uleb128 0x2e
+ 1011 006f 01       		.byte	0x1
+ 1012 0070 3F       		.uleb128 0x3f
+ 1013 0071 19       		.uleb128 0x19
+ 1014 0072 03       		.uleb128 0x3
+ 1015 0073 0E       		.uleb128 0xe
+ 1016 0074 3A       		.uleb128 0x3a
+ 1017 0075 0B       		.uleb128 0xb
+ 1018 0076 3B       		.uleb128 0x3b
+ 1019 0077 05       		.uleb128 0x5
+ 1020 0078 27       		.uleb128 0x27
+ 1021 0079 19       		.uleb128 0x19
+ 1022 007a 11       		.uleb128 0x11
+ 1023 007b 01       		.uleb128 0x1
+ 1024 007c 12       		.uleb128 0x12
+ 1025 007d 06       		.uleb128 0x6
+ 1026 007e 40       		.uleb128 0x40
+ 1027 007f 18       		.uleb128 0x18
+ 1028 0080 9742     		.uleb128 0x2117
+ 1029 0082 19       		.uleb128 0x19
+ 1030 0083 01       		.uleb128 0x1
+ 1031 0084 13       		.uleb128 0x13
+ 1032 0085 00       		.byte	0
+ 1033 0086 00       		.byte	0
+ 1034 0087 09       		.uleb128 0x9
+ 1035 0088 05       		.uleb128 0x5
+ 1036 0089 00       		.byte	0
+ 1037 008a 03       		.uleb128 0x3
+ 1038 008b 0E       		.uleb128 0xe
+ 1039 008c 3A       		.uleb128 0x3a
+ 1040 008d 0B       		.uleb128 0xb
+ 1041 008e 3B       		.uleb128 0x3b
+ 1042 008f 05       		.uleb128 0x5
+ 1043 0090 49       		.uleb128 0x49
+ 1044 0091 13       		.uleb128 0x13
+ 1045 0092 02       		.uleb128 0x2
+ 1046 0093 17       		.uleb128 0x17
+ 1047 0094 00       		.byte	0
+ 1048 0095 00       		.byte	0
+ 1049 0096 0A       		.uleb128 0xa
+ 1050 0097 34       		.uleb128 0x34
+ 1051 0098 00       		.byte	0
+ 1052 0099 03       		.uleb128 0x3
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccCKXTyj.s 			page 34
 
 
- 1281 0075 0B       		.uleb128 0xb
- 1282 0076 3B       		.uleb128 0x3b
- 1283 0077 05       		.uleb128 0x5
- 1284 0078 27       		.uleb128 0x27
- 1285 0079 19       		.uleb128 0x19
- 1286 007a 11       		.uleb128 0x11
- 1287 007b 01       		.uleb128 0x1
- 1288 007c 12       		.uleb128 0x12
- 1289 007d 06       		.uleb128 0x6
- 1290 007e 40       		.uleb128 0x40
- 1291 007f 18       		.uleb128 0x18
- 1292 0080 9742     		.uleb128 0x2117
- 1293 0082 19       		.uleb128 0x19
- 1294 0083 01       		.uleb128 0x1
- 1295 0084 13       		.uleb128 0x13
- 1296 0085 00       		.byte	0
- 1297 0086 00       		.byte	0
- 1298 0087 09       		.uleb128 0x9
- 1299 0088 05       		.uleb128 0x5
- 1300 0089 00       		.byte	0
- 1301 008a 03       		.uleb128 0x3
- 1302 008b 0E       		.uleb128 0xe
- 1303 008c 3A       		.uleb128 0x3a
- 1304 008d 0B       		.uleb128 0xb
- 1305 008e 3B       		.uleb128 0x3b
- 1306 008f 05       		.uleb128 0x5
- 1307 0090 49       		.uleb128 0x49
- 1308 0091 13       		.uleb128 0x13
- 1309 0092 02       		.uleb128 0x2
- 1310 0093 17       		.uleb128 0x17
- 1311 0094 00       		.byte	0
- 1312 0095 00       		.byte	0
- 1313 0096 0A       		.uleb128 0xa
- 1314 0097 34       		.uleb128 0x34
- 1315 0098 00       		.byte	0
- 1316 0099 03       		.uleb128 0x3
- 1317 009a 0E       		.uleb128 0xe
- 1318 009b 3A       		.uleb128 0x3a
- 1319 009c 0B       		.uleb128 0xb
- 1320 009d 3B       		.uleb128 0x3b
- 1321 009e 05       		.uleb128 0x5
- 1322 009f 49       		.uleb128 0x49
- 1323 00a0 13       		.uleb128 0x13
- 1324 00a1 02       		.uleb128 0x2
- 1325 00a2 17       		.uleb128 0x17
- 1326 00a3 00       		.byte	0
- 1327 00a4 00       		.byte	0
- 1328 00a5 0B       		.uleb128 0xb
- 1329 00a6 2E       		.uleb128 0x2e
- 1330 00a7 01       		.byte	0x1
- 1331 00a8 3F       		.uleb128 0x3f
- 1332 00a9 19       		.uleb128 0x19
- 1333 00aa 03       		.uleb128 0x3
- 1334 00ab 0E       		.uleb128 0xe
- 1335 00ac 3A       		.uleb128 0x3a
- 1336 00ad 0B       		.uleb128 0xb
- 1337 00ae 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 39
+ 1053 009a 0E       		.uleb128 0xe
+ 1054 009b 3A       		.uleb128 0x3a
+ 1055 009c 0B       		.uleb128 0xb
+ 1056 009d 3B       		.uleb128 0x3b
+ 1057 009e 05       		.uleb128 0x5
+ 1058 009f 49       		.uleb128 0x49
+ 1059 00a0 13       		.uleb128 0x13
+ 1060 00a1 02       		.uleb128 0x2
+ 1061 00a2 17       		.uleb128 0x17
+ 1062 00a3 00       		.byte	0
+ 1063 00a4 00       		.byte	0
+ 1064 00a5 0B       		.uleb128 0xb
+ 1065 00a6 2E       		.uleb128 0x2e
+ 1066 00a7 01       		.byte	0x1
+ 1067 00a8 3F       		.uleb128 0x3f
+ 1068 00a9 19       		.uleb128 0x19
+ 1069 00aa 03       		.uleb128 0x3
+ 1070 00ab 0E       		.uleb128 0xe
+ 1071 00ac 3A       		.uleb128 0x3a
+ 1072 00ad 0B       		.uleb128 0xb
+ 1073 00ae 3B       		.uleb128 0x3b
+ 1074 00af 05       		.uleb128 0x5
+ 1075 00b0 27       		.uleb128 0x27
+ 1076 00b1 19       		.uleb128 0x19
+ 1077 00b2 49       		.uleb128 0x49
+ 1078 00b3 13       		.uleb128 0x13
+ 1079 00b4 11       		.uleb128 0x11
+ 1080 00b5 01       		.uleb128 0x1
+ 1081 00b6 12       		.uleb128 0x12
+ 1082 00b7 06       		.uleb128 0x6
+ 1083 00b8 40       		.uleb128 0x40
+ 1084 00b9 18       		.uleb128 0x18
+ 1085 00ba 9742     		.uleb128 0x2117
+ 1086 00bc 19       		.uleb128 0x19
+ 1087 00bd 01       		.uleb128 0x1
+ 1088 00be 13       		.uleb128 0x13
+ 1089 00bf 00       		.byte	0
+ 1090 00c0 00       		.byte	0
+ 1091 00c1 0C       		.uleb128 0xc
+ 1092 00c2 898201   		.uleb128 0x4109
+ 1093 00c5 00       		.byte	0
+ 1094 00c6 11       		.uleb128 0x11
+ 1095 00c7 01       		.uleb128 0x1
+ 1096 00c8 31       		.uleb128 0x31
+ 1097 00c9 13       		.uleb128 0x13
+ 1098 00ca 00       		.byte	0
+ 1099 00cb 00       		.byte	0
+ 1100 00cc 0D       		.uleb128 0xd
+ 1101 00cd 0F       		.uleb128 0xf
+ 1102 00ce 00       		.byte	0
+ 1103 00cf 0B       		.uleb128 0xb
+ 1104 00d0 0B       		.uleb128 0xb
+ 1105 00d1 49       		.uleb128 0x49
+ 1106 00d2 13       		.uleb128 0x13
+ 1107 00d3 00       		.byte	0
+ 1108 00d4 00       		.byte	0
+ 1109 00d5 0E       		.uleb128 0xe
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccCKXTyj.s 			page 35
 
 
- 1338 00af 05       		.uleb128 0x5
- 1339 00b0 27       		.uleb128 0x27
- 1340 00b1 19       		.uleb128 0x19
- 1341 00b2 49       		.uleb128 0x49
- 1342 00b3 13       		.uleb128 0x13
- 1343 00b4 11       		.uleb128 0x11
- 1344 00b5 01       		.uleb128 0x1
- 1345 00b6 12       		.uleb128 0x12
- 1346 00b7 06       		.uleb128 0x6
- 1347 00b8 40       		.uleb128 0x40
- 1348 00b9 18       		.uleb128 0x18
- 1349 00ba 9742     		.uleb128 0x2117
- 1350 00bc 19       		.uleb128 0x19
- 1351 00bd 01       		.uleb128 0x1
- 1352 00be 13       		.uleb128 0x13
- 1353 00bf 00       		.byte	0
- 1354 00c0 00       		.byte	0
- 1355 00c1 0C       		.uleb128 0xc
- 1356 00c2 898201   		.uleb128 0x4109
- 1357 00c5 00       		.byte	0
- 1358 00c6 11       		.uleb128 0x11
- 1359 00c7 01       		.uleb128 0x1
- 1360 00c8 31       		.uleb128 0x31
- 1361 00c9 13       		.uleb128 0x13
- 1362 00ca 00       		.byte	0
- 1363 00cb 00       		.byte	0
- 1364 00cc 0D       		.uleb128 0xd
- 1365 00cd 05       		.uleb128 0x5
- 1366 00ce 00       		.byte	0
- 1367 00cf 03       		.uleb128 0x3
- 1368 00d0 0E       		.uleb128 0xe
- 1369 00d1 3A       		.uleb128 0x3a
- 1370 00d2 0B       		.uleb128 0xb
- 1371 00d3 3B       		.uleb128 0x3b
- 1372 00d4 05       		.uleb128 0x5
- 1373 00d5 49       		.uleb128 0x49
- 1374 00d6 13       		.uleb128 0x13
- 1375 00d7 02       		.uleb128 0x2
- 1376 00d8 18       		.uleb128 0x18
- 1377 00d9 00       		.byte	0
- 1378 00da 00       		.byte	0
- 1379 00db 0E       		.uleb128 0xe
- 1380 00dc 0F       		.uleb128 0xf
- 1381 00dd 00       		.byte	0
- 1382 00de 0B       		.uleb128 0xb
- 1383 00df 0B       		.uleb128 0xb
- 1384 00e0 49       		.uleb128 0x49
- 1385 00e1 13       		.uleb128 0x13
- 1386 00e2 00       		.byte	0
- 1387 00e3 00       		.byte	0
- 1388 00e4 0F       		.uleb128 0xf
- 1389 00e5 26       		.uleb128 0x26
- 1390 00e6 00       		.byte	0
- 1391 00e7 49       		.uleb128 0x49
- 1392 00e8 13       		.uleb128 0x13
- 1393 00e9 00       		.byte	0
- 1394 00ea 00       		.byte	0
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 40
+ 1110 00d6 26       		.uleb128 0x26
+ 1111 00d7 00       		.byte	0
+ 1112 00d8 49       		.uleb128 0x49
+ 1113 00d9 13       		.uleb128 0x13
+ 1114 00da 00       		.byte	0
+ 1115 00db 00       		.byte	0
+ 1116 00dc 0F       		.uleb128 0xf
+ 1117 00dd 898201   		.uleb128 0x4109
+ 1118 00e0 01       		.byte	0x1
+ 1119 00e1 11       		.uleb128 0x11
+ 1120 00e2 01       		.uleb128 0x1
+ 1121 00e3 31       		.uleb128 0x31
+ 1122 00e4 13       		.uleb128 0x13
+ 1123 00e5 01       		.uleb128 0x1
+ 1124 00e6 13       		.uleb128 0x13
+ 1125 00e7 00       		.byte	0
+ 1126 00e8 00       		.byte	0
+ 1127 00e9 10       		.uleb128 0x10
+ 1128 00ea 8A8201   		.uleb128 0x410a
+ 1129 00ed 00       		.byte	0
+ 1130 00ee 02       		.uleb128 0x2
+ 1131 00ef 18       		.uleb128 0x18
+ 1132 00f0 9142     		.uleb128 0x2111
+ 1133 00f2 18       		.uleb128 0x18
+ 1134 00f3 00       		.byte	0
+ 1135 00f4 00       		.byte	0
+ 1136 00f5 11       		.uleb128 0x11
+ 1137 00f6 898201   		.uleb128 0x4109
+ 1138 00f9 01       		.byte	0x1
+ 1139 00fa 11       		.uleb128 0x11
+ 1140 00fb 01       		.uleb128 0x1
+ 1141 00fc 31       		.uleb128 0x31
+ 1142 00fd 13       		.uleb128 0x13
+ 1143 00fe 00       		.byte	0
+ 1144 00ff 00       		.byte	0
+ 1145 0100 12       		.uleb128 0x12
+ 1146 0101 34       		.uleb128 0x34
+ 1147 0102 00       		.byte	0
+ 1148 0103 03       		.uleb128 0x3
+ 1149 0104 0E       		.uleb128 0xe
+ 1150 0105 3A       		.uleb128 0x3a
+ 1151 0106 0B       		.uleb128 0xb
+ 1152 0107 3B       		.uleb128 0x3b
+ 1153 0108 0B       		.uleb128 0xb
+ 1154 0109 49       		.uleb128 0x49
+ 1155 010a 13       		.uleb128 0x13
+ 1156 010b 3F       		.uleb128 0x3f
+ 1157 010c 19       		.uleb128 0x19
+ 1158 010d 3C       		.uleb128 0x3c
+ 1159 010e 19       		.uleb128 0x19
+ 1160 010f 00       		.byte	0
+ 1161 0110 00       		.byte	0
+ 1162 0111 13       		.uleb128 0x13
+ 1163 0112 2E       		.uleb128 0x2e
+ 1164 0113 00       		.byte	0
+ 1165 0114 3F       		.uleb128 0x3f
+ 1166 0115 19       		.uleb128 0x19
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccCKXTyj.s 			page 36
 
 
- 1395 00eb 10       		.uleb128 0x10
- 1396 00ec 898201   		.uleb128 0x4109
- 1397 00ef 01       		.byte	0x1
- 1398 00f0 11       		.uleb128 0x11
- 1399 00f1 01       		.uleb128 0x1
- 1400 00f2 31       		.uleb128 0x31
- 1401 00f3 13       		.uleb128 0x13
- 1402 00f4 01       		.uleb128 0x1
- 1403 00f5 13       		.uleb128 0x13
- 1404 00f6 00       		.byte	0
- 1405 00f7 00       		.byte	0
- 1406 00f8 11       		.uleb128 0x11
- 1407 00f9 8A8201   		.uleb128 0x410a
- 1408 00fc 00       		.byte	0
- 1409 00fd 02       		.uleb128 0x2
- 1410 00fe 18       		.uleb128 0x18
- 1411 00ff 9142     		.uleb128 0x2111
- 1412 0101 18       		.uleb128 0x18
- 1413 0102 00       		.byte	0
- 1414 0103 00       		.byte	0
- 1415 0104 12       		.uleb128 0x12
- 1416 0105 898201   		.uleb128 0x4109
- 1417 0108 01       		.byte	0x1
- 1418 0109 11       		.uleb128 0x11
- 1419 010a 01       		.uleb128 0x1
- 1420 010b 31       		.uleb128 0x31
- 1421 010c 13       		.uleb128 0x13
- 1422 010d 00       		.byte	0
- 1423 010e 00       		.byte	0
- 1424 010f 13       		.uleb128 0x13
- 1425 0110 34       		.uleb128 0x34
- 1426 0111 00       		.byte	0
- 1427 0112 03       		.uleb128 0x3
- 1428 0113 0E       		.uleb128 0xe
- 1429 0114 3A       		.uleb128 0x3a
- 1430 0115 0B       		.uleb128 0xb
- 1431 0116 3B       		.uleb128 0x3b
- 1432 0117 0B       		.uleb128 0xb
- 1433 0118 49       		.uleb128 0x49
- 1434 0119 13       		.uleb128 0x13
- 1435 011a 3F       		.uleb128 0x3f
- 1436 011b 19       		.uleb128 0x19
- 1437 011c 3C       		.uleb128 0x3c
- 1438 011d 19       		.uleb128 0x19
- 1439 011e 00       		.byte	0
- 1440 011f 00       		.byte	0
- 1441 0120 14       		.uleb128 0x14
- 1442 0121 2E       		.uleb128 0x2e
- 1443 0122 00       		.byte	0
- 1444 0123 3F       		.uleb128 0x3f
- 1445 0124 19       		.uleb128 0x19
- 1446 0125 3C       		.uleb128 0x3c
- 1447 0126 19       		.uleb128 0x19
- 1448 0127 6E       		.uleb128 0x6e
- 1449 0128 0E       		.uleb128 0xe
- 1450 0129 03       		.uleb128 0x3
- 1451 012a 0E       		.uleb128 0xe
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 41
+ 1167 0116 3C       		.uleb128 0x3c
+ 1168 0117 19       		.uleb128 0x19
+ 1169 0118 6E       		.uleb128 0x6e
+ 1170 0119 0E       		.uleb128 0xe
+ 1171 011a 03       		.uleb128 0x3
+ 1172 011b 0E       		.uleb128 0xe
+ 1173 011c 3A       		.uleb128 0x3a
+ 1174 011d 0B       		.uleb128 0xb
+ 1175 011e 3B       		.uleb128 0x3b
+ 1176 011f 05       		.uleb128 0x5
+ 1177 0120 00       		.byte	0
+ 1178 0121 00       		.byte	0
+ 1179 0122 00       		.byte	0
+ 1180              		.section	.debug_loc,"",%progbits
+ 1181              	.Ldebug_loc0:
+ 1182              	.LLST0:
+ 1183 0000 00000000 		.4byte	.LVL0
+ 1184 0004 0A000000 		.4byte	.LVL3
+ 1185 0008 0100     		.2byte	0x1
+ 1186 000a 50       		.byte	0x50
+ 1187 000b 0A000000 		.4byte	.LVL3
+ 1188 000f 14000000 		.4byte	.LFE3
+ 1189 0013 0400     		.2byte	0x4
+ 1190 0015 F3       		.byte	0xf3
+ 1191 0016 01       		.uleb128 0x1
+ 1192 0017 50       		.byte	0x50
+ 1193 0018 9F       		.byte	0x9f
+ 1194 0019 00000000 		.4byte	0
+ 1195 001d 00000000 		.4byte	0
+ 1196              	.LLST1:
+ 1197 0021 04000000 		.4byte	.LVL1
+ 1198 0025 0C000000 		.4byte	.LVL4
+ 1199 0029 0100     		.2byte	0x1
+ 1200 002b 53       		.byte	0x53
+ 1201 002c 0C000000 		.4byte	.LVL4
+ 1202 0030 14000000 		.4byte	.LFE3
+ 1203 0034 0100     		.2byte	0x1
+ 1204 0036 50       		.byte	0x50
+ 1205 0037 00000000 		.4byte	0
+ 1206 003b 00000000 		.4byte	0
+ 1207              	.LLST2:
+ 1208 003f 00000000 		.4byte	.LVL5
+ 1209 0043 0A000000 		.4byte	.LVL8
+ 1210 0047 0100     		.2byte	0x1
+ 1211 0049 50       		.byte	0x50
+ 1212 004a 0A000000 		.4byte	.LVL8
+ 1213 004e 18000000 		.4byte	.LFE4
+ 1214 0052 0400     		.2byte	0x4
+ 1215 0054 F3       		.byte	0xf3
+ 1216 0055 01       		.uleb128 0x1
+ 1217 0056 50       		.byte	0x50
+ 1218 0057 9F       		.byte	0x9f
+ 1219 0058 00000000 		.4byte	0
+ 1220 005c 00000000 		.4byte	0
+ 1221              	.LLST3:
+ 1222 0060 04000000 		.4byte	.LVL6
+ 1223 0064 08000000 		.4byte	.LVL7
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccCKXTyj.s 			page 37
 
 
- 1452 012b 3A       		.uleb128 0x3a
- 1453 012c 0B       		.uleb128 0xb
- 1454 012d 3B       		.uleb128 0x3b
- 1455 012e 05       		.uleb128 0x5
- 1456 012f 00       		.byte	0
- 1457 0130 00       		.byte	0
- 1458 0131 00       		.byte	0
- 1459              		.section	.debug_loc,"",%progbits
- 1460              	.Ldebug_loc0:
- 1461              	.LLST0:
- 1462 0000 00000000 		.4byte	.LVL0
- 1463 0004 0A000000 		.4byte	.LVL3
- 1464 0008 0100     		.2byte	0x1
- 1465 000a 50       		.byte	0x50
- 1466 000b 0A000000 		.4byte	.LVL3
- 1467 000f 14000000 		.4byte	.LFE4
- 1468 0013 0400     		.2byte	0x4
- 1469 0015 F3       		.byte	0xf3
- 1470 0016 01       		.uleb128 0x1
- 1471 0017 50       		.byte	0x50
- 1472 0018 9F       		.byte	0x9f
- 1473 0019 00000000 		.4byte	0
- 1474 001d 00000000 		.4byte	0
- 1475              	.LLST1:
- 1476 0021 04000000 		.4byte	.LVL1
- 1477 0025 0C000000 		.4byte	.LVL4
- 1478 0029 0100     		.2byte	0x1
- 1479 002b 53       		.byte	0x53
- 1480 002c 0C000000 		.4byte	.LVL4
- 1481 0030 14000000 		.4byte	.LFE4
- 1482 0034 0100     		.2byte	0x1
- 1483 0036 50       		.byte	0x50
- 1484 0037 00000000 		.4byte	0
- 1485 003b 00000000 		.4byte	0
- 1486              	.LLST2:
- 1487 003f 00000000 		.4byte	.LVL5
- 1488 0043 0A000000 		.4byte	.LVL8
- 1489 0047 0100     		.2byte	0x1
- 1490 0049 50       		.byte	0x50
- 1491 004a 0A000000 		.4byte	.LVL8
- 1492 004e 18000000 		.4byte	.LFE5
- 1493 0052 0400     		.2byte	0x4
- 1494 0054 F3       		.byte	0xf3
- 1495 0055 01       		.uleb128 0x1
- 1496 0056 50       		.byte	0x50
- 1497 0057 9F       		.byte	0x9f
- 1498 0058 00000000 		.4byte	0
- 1499 005c 00000000 		.4byte	0
- 1500              	.LLST3:
- 1501 0060 04000000 		.4byte	.LVL6
- 1502 0064 08000000 		.4byte	.LVL7
- 1503 0068 0100     		.2byte	0x1
- 1504 006a 51       		.byte	0x51
- 1505 006b 08000000 		.4byte	.LVL7
- 1506 006f 0C000000 		.4byte	.LVL9
- 1507 0073 0100     		.2byte	0x1
- 1508 0075 53       		.byte	0x53
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 42
+ 1224 0068 0100     		.2byte	0x1
+ 1225 006a 51       		.byte	0x51
+ 1226 006b 08000000 		.4byte	.LVL7
+ 1227 006f 0C000000 		.4byte	.LVL9
+ 1228 0073 0100     		.2byte	0x1
+ 1229 0075 53       		.byte	0x53
+ 1230 0076 0C000000 		.4byte	.LVL9
+ 1231 007a 18000000 		.4byte	.LFE4
+ 1232 007e 0100     		.2byte	0x1
+ 1233 0080 50       		.byte	0x50
+ 1234 0081 00000000 		.4byte	0
+ 1235 0085 00000000 		.4byte	0
+ 1236              	.LLST4:
+ 1237 0089 02000000 		.4byte	.LVL10
+ 1238 008d 0E000000 		.4byte	.LVL12
+ 1239 0091 0200     		.2byte	0x2
+ 1240 0093 30       		.byte	0x30
+ 1241 0094 9F       		.byte	0x9f
+ 1242 0095 0E000000 		.4byte	.LVL12
+ 1243 0099 10000000 		.4byte	.LVL13
+ 1244 009d 0100     		.2byte	0x1
+ 1245 009f 50       		.byte	0x50
+ 1246 00a0 10000000 		.4byte	.LVL13
+ 1247 00a4 12000000 		.4byte	.LVL14
+ 1248 00a8 0200     		.2byte	0x2
+ 1249 00aa 30       		.byte	0x30
+ 1250 00ab 9F       		.byte	0x9f
+ 1251 00ac 12000000 		.4byte	.LVL14
+ 1252 00b0 1E000000 		.4byte	.LVL15
+ 1253 00b4 0100     		.2byte	0x1
+ 1254 00b6 50       		.byte	0x50
+ 1255 00b7 1E000000 		.4byte	.LVL15
+ 1256 00bb 26000000 		.4byte	.LVL16
+ 1257 00bf 0200     		.2byte	0x2
+ 1258 00c1 30       		.byte	0x30
+ 1259 00c2 9F       		.byte	0x9f
+ 1260 00c3 26000000 		.4byte	.LVL16
+ 1261 00c7 2C000000 		.4byte	.LFE5
+ 1262 00cb 0100     		.2byte	0x1
+ 1263 00cd 50       		.byte	0x50
+ 1264 00ce 00000000 		.4byte	0
+ 1265 00d2 00000000 		.4byte	0
+ 1266              	.LLST5:
+ 1267 00d6 0E000000 		.4byte	.LVL18
+ 1268 00da 10000000 		.4byte	.LVL19
+ 1269 00de 0100     		.2byte	0x1
+ 1270 00e0 50       		.byte	0x50
+ 1271 00e1 14000000 		.4byte	.LVL20
+ 1272 00e5 34000000 		.4byte	.LFE6
+ 1273 00e9 0100     		.2byte	0x1
+ 1274 00eb 50       		.byte	0x50
+ 1275 00ec 00000000 		.4byte	0
+ 1276 00f0 00000000 		.4byte	0
+ 1277              	.LLST6:
+ 1278 00f4 18000000 		.4byte	.LVL21
+ 1279 00f8 20000000 		.4byte	.LVL22
+ 1280 00fc 0700     		.2byte	0x7
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccCKXTyj.s 			page 38
 
 
- 1509 0076 0C000000 		.4byte	.LVL9
- 1510 007a 18000000 		.4byte	.LFE5
- 1511 007e 0100     		.2byte	0x1
- 1512 0080 50       		.byte	0x50
- 1513 0081 00000000 		.4byte	0
- 1514 0085 00000000 		.4byte	0
- 1515              	.LLST4:
- 1516 0089 02000000 		.4byte	.LVL10
- 1517 008d 0E000000 		.4byte	.LVL12
- 1518 0091 0200     		.2byte	0x2
- 1519 0093 30       		.byte	0x30
- 1520 0094 9F       		.byte	0x9f
- 1521 0095 0E000000 		.4byte	.LVL12
- 1522 0099 10000000 		.4byte	.LVL13
- 1523 009d 0100     		.2byte	0x1
- 1524 009f 50       		.byte	0x50
- 1525 00a0 10000000 		.4byte	.LVL13
- 1526 00a4 12000000 		.4byte	.LVL14
- 1527 00a8 0200     		.2byte	0x2
- 1528 00aa 30       		.byte	0x30
- 1529 00ab 9F       		.byte	0x9f
- 1530 00ac 12000000 		.4byte	.LVL14
- 1531 00b0 1E000000 		.4byte	.LVL15
- 1532 00b4 0100     		.2byte	0x1
- 1533 00b6 50       		.byte	0x50
- 1534 00b7 1E000000 		.4byte	.LVL15
- 1535 00bb 26000000 		.4byte	.LVL16
- 1536 00bf 0200     		.2byte	0x2
- 1537 00c1 30       		.byte	0x30
- 1538 00c2 9F       		.byte	0x9f
- 1539 00c3 26000000 		.4byte	.LVL16
- 1540 00c7 2C000000 		.4byte	.LFE6
- 1541 00cb 0100     		.2byte	0x1
- 1542 00cd 50       		.byte	0x50
- 1543 00ce 00000000 		.4byte	0
- 1544 00d2 00000000 		.4byte	0
- 1545              	.LLST5:
- 1546 00d6 0E000000 		.4byte	.LVL18
- 1547 00da 10000000 		.4byte	.LVL19
- 1548 00de 0100     		.2byte	0x1
- 1549 00e0 50       		.byte	0x50
- 1550 00e1 14000000 		.4byte	.LVL20
- 1551 00e5 34000000 		.4byte	.LFE7
- 1552 00e9 0100     		.2byte	0x1
- 1553 00eb 50       		.byte	0x50
- 1554 00ec 00000000 		.4byte	0
- 1555 00f0 00000000 		.4byte	0
- 1556              	.LLST6:
- 1557 00f4 18000000 		.4byte	.LVL21
- 1558 00f8 20000000 		.4byte	.LVL22
- 1559 00fc 0700     		.2byte	0x7
- 1560 00fe 73       		.byte	0x73
- 1561 00ff 00       		.sleb128 0
- 1562 0100 0A       		.byte	0xa
- 1563 0101 6003     		.2byte	0x360
- 1564 0103 1A       		.byte	0x1a
- 1565 0104 9F       		.byte	0x9f
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 43
+ 1281 00fe 73       		.byte	0x73
+ 1282 00ff 00       		.sleb128 0
+ 1283 0100 0A       		.byte	0xa
+ 1284 0101 6003     		.2byte	0x360
+ 1285 0103 1A       		.byte	0x1a
+ 1286 0104 9F       		.byte	0x9f
+ 1287 0105 00000000 		.4byte	0
+ 1288 0109 00000000 		.4byte	0
+ 1289              	.LLST7:
+ 1290 010d 00000000 		.4byte	.LVL24
+ 1291 0111 08000000 		.4byte	.LVL26
+ 1292 0115 0100     		.2byte	0x1
+ 1293 0117 50       		.byte	0x50
+ 1294 0118 08000000 		.4byte	.LVL26
+ 1295 011c 14000000 		.4byte	.LVL30
+ 1296 0120 0100     		.2byte	0x1
+ 1297 0122 55       		.byte	0x55
+ 1298 0123 14000000 		.4byte	.LVL30
+ 1299 0127 16000000 		.4byte	.LFE7
+ 1300 012b 0400     		.2byte	0x4
+ 1301 012d F3       		.byte	0xf3
+ 1302 012e 01       		.uleb128 0x1
+ 1303 012f 50       		.byte	0x50
+ 1304 0130 9F       		.byte	0x9f
+ 1305 0131 00000000 		.4byte	0
+ 1306 0135 00000000 		.4byte	0
+ 1307              	.LLST8:
+ 1308 0139 04000000 		.4byte	.LVL25
+ 1309 013d 08000000 		.4byte	.LVL26
+ 1310 0141 0200     		.2byte	0x2
+ 1311 0143 30       		.byte	0x30
+ 1312 0144 9F       		.byte	0x9f
+ 1313 0145 08000000 		.4byte	.LVL26
+ 1314 0149 14000000 		.4byte	.LVL29
+ 1315 014d 0100     		.2byte	0x1
+ 1316 014f 54       		.byte	0x54
+ 1317 0150 00000000 		.4byte	0
+ 1318 0154 00000000 		.4byte	0
+ 1319              	.LLST9:
+ 1320 0158 00000000 		.4byte	.LVL31
+ 1321 015c 05000000 		.4byte	.LVL32-1
+ 1322 0160 0100     		.2byte	0x1
+ 1323 0162 50       		.byte	0x50
+ 1324 0163 05000000 		.4byte	.LVL32-1
+ 1325 0167 14000000 		.4byte	.LFE8
+ 1326 016b 0400     		.2byte	0x4
+ 1327 016d F3       		.byte	0xf3
+ 1328 016e 01       		.uleb128 0x1
+ 1329 016f 50       		.byte	0x50
+ 1330 0170 9F       		.byte	0x9f
+ 1331 0171 00000000 		.4byte	0
+ 1332 0175 00000000 		.4byte	0
+ 1333              	.LLST10:
+ 1334 0179 00000000 		.4byte	.LVL35
+ 1335 017d 1C000000 		.4byte	.LVL38
+ 1336 0181 0100     		.2byte	0x1
+ 1337 0183 50       		.byte	0x50
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccCKXTyj.s 			page 39
 
 
- 1566 0105 00000000 		.4byte	0
- 1567 0109 00000000 		.4byte	0
- 1568              	.LLST7:
- 1569 010d 00000000 		.4byte	.LVL25
- 1570 0111 0A000000 		.4byte	.LVL28
- 1571 0115 0100     		.2byte	0x1
- 1572 0117 50       		.byte	0x50
- 1573 0118 0A000000 		.4byte	.LVL28
- 1574 011c 14000000 		.4byte	.LFE9
- 1575 0120 0400     		.2byte	0x4
- 1576 0122 F3       		.byte	0xf3
- 1577 0123 01       		.uleb128 0x1
- 1578 0124 50       		.byte	0x50
- 1579 0125 9F       		.byte	0x9f
- 1580 0126 00000000 		.4byte	0
- 1581 012a 00000000 		.4byte	0
- 1582              	.LLST8:
- 1583 012e 04000000 		.4byte	.LVL26
- 1584 0132 0C000000 		.4byte	.LVL29
- 1585 0136 0100     		.2byte	0x1
- 1586 0138 53       		.byte	0x53
- 1587 0139 0C000000 		.4byte	.LVL29
- 1588 013d 14000000 		.4byte	.LFE9
- 1589 0141 0100     		.2byte	0x1
- 1590 0143 50       		.byte	0x50
- 1591 0144 00000000 		.4byte	0
- 1592 0148 00000000 		.4byte	0
- 1593              	.LLST9:
- 1594 014c 00000000 		.4byte	.LVL30
- 1595 0150 08000000 		.4byte	.LVL32
- 1596 0154 0100     		.2byte	0x1
- 1597 0156 50       		.byte	0x50
- 1598 0157 08000000 		.4byte	.LVL32
- 1599 015b 14000000 		.4byte	.LVL36
- 1600 015f 0100     		.2byte	0x1
- 1601 0161 55       		.byte	0x55
- 1602 0162 14000000 		.4byte	.LVL36
- 1603 0166 16000000 		.4byte	.LFE10
- 1604 016a 0400     		.2byte	0x4
- 1605 016c F3       		.byte	0xf3
- 1606 016d 01       		.uleb128 0x1
- 1607 016e 50       		.byte	0x50
- 1608 016f 9F       		.byte	0x9f
- 1609 0170 00000000 		.4byte	0
- 1610 0174 00000000 		.4byte	0
- 1611              	.LLST10:
- 1612 0178 04000000 		.4byte	.LVL31
- 1613 017c 08000000 		.4byte	.LVL32
- 1614 0180 0200     		.2byte	0x2
- 1615 0182 30       		.byte	0x30
- 1616 0183 9F       		.byte	0x9f
- 1617 0184 08000000 		.4byte	.LVL32
- 1618 0188 14000000 		.4byte	.LVL35
- 1619 018c 0100     		.2byte	0x1
- 1620 018e 54       		.byte	0x54
- 1621 018f 00000000 		.4byte	0
- 1622 0193 00000000 		.4byte	0
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 44
+ 1338 0184 1C000000 		.4byte	.LVL38
+ 1339 0188 20000000 		.4byte	.LVL39
+ 1340 018c 0100     		.2byte	0x1
+ 1341 018e 53       		.byte	0x53
+ 1342 018f 20000000 		.4byte	.LVL39
+ 1343 0193 28000000 		.4byte	.LVL40
+ 1344 0197 0300     		.2byte	0x3
+ 1345 0199 73       		.byte	0x73
+ 1346 019a 01       		.sleb128 1
+ 1347 019b 9F       		.byte	0x9f
+ 1348 019c 28000000 		.4byte	.LVL40
+ 1349 01a0 58000000 		.4byte	.LFE9
+ 1350 01a4 0400     		.2byte	0x4
+ 1351 01a6 F3       		.byte	0xf3
+ 1352 01a7 01       		.uleb128 0x1
+ 1353 01a8 50       		.byte	0x50
+ 1354 01a9 9F       		.byte	0x9f
+ 1355 01aa 00000000 		.4byte	0
+ 1356 01ae 00000000 		.4byte	0
+ 1357              	.LLST11:
+ 1358 01b2 18000000 		.4byte	.LVL37
+ 1359 01b6 40000000 		.4byte	.LVL42
+ 1360 01ba 0100     		.2byte	0x1
+ 1361 01bc 56       		.byte	0x56
+ 1362 01bd 00000000 		.4byte	0
+ 1363 01c1 00000000 		.4byte	0
+ 1364              	.LLST12:
+ 1365 01c5 08000000 		.4byte	.LVL36
+ 1366 01c9 40000000 		.4byte	.LVL41
+ 1367 01cd 0100     		.2byte	0x1
+ 1368 01cf 55       		.byte	0x55
+ 1369 01d0 40000000 		.4byte	.LVL41
+ 1370 01d4 58000000 		.4byte	.LFE9
+ 1371 01d8 0200     		.2byte	0x2
+ 1372 01da 73       		.byte	0x73
+ 1373 01db 00       		.sleb128 0
+ 1374 01dc 00000000 		.4byte	0
+ 1375 01e0 00000000 		.4byte	0
+ 1376              		.section	.debug_aranges,"",%progbits
+ 1377 0000 64000000 		.4byte	0x64
+ 1378 0004 0200     		.2byte	0x2
+ 1379 0006 00000000 		.4byte	.Ldebug_info0
+ 1380 000a 04       		.byte	0x4
+ 1381 000b 00       		.byte	0
+ 1382 000c 0000     		.2byte	0
+ 1383 000e 0000     		.2byte	0
+ 1384 0010 00000000 		.4byte	.LFB0
+ 1385 0014 9C000000 		.4byte	.LFE0-.LFB0
+ 1386 0018 00000000 		.4byte	.LFB1
+ 1387 001c 24000000 		.4byte	.LFE1-.LFB1
+ 1388 0020 00000000 		.4byte	.LFB2
+ 1389 0024 28000000 		.4byte	.LFE2-.LFB2
+ 1390 0028 00000000 		.4byte	.LFB3
+ 1391 002c 14000000 		.4byte	.LFE3-.LFB3
+ 1392 0030 00000000 		.4byte	.LFB4
+ 1393 0034 18000000 		.4byte	.LFE4-.LFB4
+ 1394 0038 00000000 		.4byte	.LFB5
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccCKXTyj.s 			page 40
 
 
- 1623              	.LLST11:
- 1624 0197 00000000 		.4byte	.LVL37
- 1625 019b 05000000 		.4byte	.LVL38-1
- 1626 019f 0100     		.2byte	0x1
- 1627 01a1 50       		.byte	0x50
- 1628 01a2 05000000 		.4byte	.LVL38-1
- 1629 01a6 14000000 		.4byte	.LFE11
- 1630 01aa 0400     		.2byte	0x4
- 1631 01ac F3       		.byte	0xf3
- 1632 01ad 01       		.uleb128 0x1
- 1633 01ae 50       		.byte	0x50
- 1634 01af 9F       		.byte	0x9f
- 1635 01b0 00000000 		.4byte	0
- 1636 01b4 00000000 		.4byte	0
- 1637              	.LLST12:
- 1638 01b8 00000000 		.4byte	.LVL42
- 1639 01bc 1C000000 		.4byte	.LVL45
- 1640 01c0 0100     		.2byte	0x1
- 1641 01c2 50       		.byte	0x50
- 1642 01c3 1C000000 		.4byte	.LVL45
- 1643 01c7 20000000 		.4byte	.LVL46
- 1644 01cb 0100     		.2byte	0x1
- 1645 01cd 53       		.byte	0x53
- 1646 01ce 20000000 		.4byte	.LVL46
- 1647 01d2 28000000 		.4byte	.LVL47
- 1648 01d6 0300     		.2byte	0x3
- 1649 01d8 73       		.byte	0x73
- 1650 01d9 01       		.sleb128 1
- 1651 01da 9F       		.byte	0x9f
- 1652 01db 28000000 		.4byte	.LVL47
- 1653 01df 58000000 		.4byte	.LFE15
- 1654 01e3 0400     		.2byte	0x4
- 1655 01e5 F3       		.byte	0xf3
- 1656 01e6 01       		.uleb128 0x1
- 1657 01e7 50       		.byte	0x50
- 1658 01e8 9F       		.byte	0x9f
- 1659 01e9 00000000 		.4byte	0
- 1660 01ed 00000000 		.4byte	0
- 1661              	.LLST13:
- 1662 01f1 18000000 		.4byte	.LVL44
- 1663 01f5 40000000 		.4byte	.LVL49
- 1664 01f9 0100     		.2byte	0x1
- 1665 01fb 56       		.byte	0x56
- 1666 01fc 00000000 		.4byte	0
- 1667 0200 00000000 		.4byte	0
- 1668              	.LLST14:
- 1669 0204 08000000 		.4byte	.LVL43
- 1670 0208 40000000 		.4byte	.LVL48
- 1671 020c 0100     		.2byte	0x1
- 1672 020e 55       		.byte	0x55
- 1673 020f 40000000 		.4byte	.LVL48
- 1674 0213 58000000 		.4byte	.LFE15
- 1675 0217 0200     		.2byte	0x2
- 1676 0219 73       		.byte	0x73
- 1677 021a 00       		.sleb128 0
- 1678 021b 00000000 		.4byte	0
- 1679 021f 00000000 		.4byte	0
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 45
+ 1395 003c 2C000000 		.4byte	.LFE5-.LFB5
+ 1396 0040 00000000 		.4byte	.LFB6
+ 1397 0044 34000000 		.4byte	.LFE6-.LFB6
+ 1398 0048 00000000 		.4byte	.LFB7
+ 1399 004c 16000000 		.4byte	.LFE7-.LFB7
+ 1400 0050 00000000 		.4byte	.LFB8
+ 1401 0054 14000000 		.4byte	.LFE8-.LFB8
+ 1402 0058 00000000 		.4byte	.LFB9
+ 1403 005c 58000000 		.4byte	.LFE9-.LFB9
+ 1404 0060 00000000 		.4byte	0
+ 1405 0064 00000000 		.4byte	0
+ 1406              		.section	.debug_ranges,"",%progbits
+ 1407              	.Ldebug_ranges0:
+ 1408 0000 00000000 		.4byte	.LFB0
+ 1409 0004 9C000000 		.4byte	.LFE0
+ 1410 0008 00000000 		.4byte	.LFB1
+ 1411 000c 24000000 		.4byte	.LFE1
+ 1412 0010 00000000 		.4byte	.LFB2
+ 1413 0014 28000000 		.4byte	.LFE2
+ 1414 0018 00000000 		.4byte	.LFB3
+ 1415 001c 14000000 		.4byte	.LFE3
+ 1416 0020 00000000 		.4byte	.LFB4
+ 1417 0024 18000000 		.4byte	.LFE4
+ 1418 0028 00000000 		.4byte	.LFB5
+ 1419 002c 2C000000 		.4byte	.LFE5
+ 1420 0030 00000000 		.4byte	.LFB6
+ 1421 0034 34000000 		.4byte	.LFE6
+ 1422 0038 00000000 		.4byte	.LFB7
+ 1423 003c 16000000 		.4byte	.LFE7
+ 1424 0040 00000000 		.4byte	.LFB8
+ 1425 0044 14000000 		.4byte	.LFE8
+ 1426 0048 00000000 		.4byte	.LFB9
+ 1427 004c 58000000 		.4byte	.LFE9
+ 1428 0050 00000000 		.4byte	0
+ 1429 0054 00000000 		.4byte	0
+ 1430              		.section	.debug_line,"",%progbits
+ 1431              	.Ldebug_line0:
+ 1432 0000 75010000 		.section	.debug_str,"MS",%progbits,1
+ 1432      02007300 
+ 1432      00000201 
+ 1432      FB0E0D00 
+ 1432      01010101 
+ 1433              	.LASF6:
+ 1434 0000 6C6F6E67 		.ascii	"long long int\000"
+ 1434      206C6F6E 
+ 1434      6720696E 
+ 1434      7400
+ 1435              	.LASF40:
+ 1436 000e 4442475F 		.ascii	"DBG_UART_SpiUartReadRxData\000"
+ 1436      55415254 
+ 1436      5F537069 
+ 1436      55617274 
+ 1436      52656164 
+ 1437              	.LASF15:
+ 1438 0029 72656733 		.ascii	"reg32\000"
+ 1438      3200
+ 1439              	.LASF43:
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccCKXTyj.s 			page 41
 
 
- 1680              		.section	.debug_aranges,"",%progbits
- 1681 0000 8C000000 		.4byte	0x8c
- 1682 0004 0200     		.2byte	0x2
- 1683 0006 00000000 		.4byte	.Ldebug_info0
- 1684 000a 04       		.byte	0x4
- 1685 000b 00       		.byte	0
- 1686 000c 0000     		.2byte	0
- 1687 000e 0000     		.2byte	0
- 1688 0010 00000000 		.4byte	.LFB1
- 1689 0014 A8000000 		.4byte	.LFE1-.LFB1
- 1690 0018 00000000 		.4byte	.LFB2
- 1691 001c 24000000 		.4byte	.LFE2-.LFB2
- 1692 0020 00000000 		.4byte	.LFB3
- 1693 0024 28000000 		.4byte	.LFE3-.LFB3
- 1694 0028 00000000 		.4byte	.LFB4
- 1695 002c 14000000 		.4byte	.LFE4-.LFB4
- 1696 0030 00000000 		.4byte	.LFB5
- 1697 0034 18000000 		.4byte	.LFE5-.LFB5
- 1698 0038 00000000 		.4byte	.LFB6
- 1699 003c 2C000000 		.4byte	.LFE6-.LFB6
- 1700 0040 00000000 		.4byte	.LFB7
- 1701 0044 34000000 		.4byte	.LFE7-.LFB7
- 1702 0048 00000000 		.4byte	.LFB8
- 1703 004c 28000000 		.4byte	.LFE8-.LFB8
- 1704 0050 00000000 		.4byte	.LFB9
- 1705 0054 14000000 		.4byte	.LFE9-.LFB9
- 1706 0058 00000000 		.4byte	.LFB10
- 1707 005c 16000000 		.4byte	.LFE10-.LFB10
- 1708 0060 00000000 		.4byte	.LFB11
- 1709 0064 14000000 		.4byte	.LFE11-.LFB11
- 1710 0068 00000000 		.4byte	.LFB12
- 1711 006c 14000000 		.4byte	.LFE12-.LFB12
- 1712 0070 00000000 		.4byte	.LFB13
- 1713 0074 14000000 		.4byte	.LFE13-.LFB13
- 1714 0078 00000000 		.4byte	.LFB14
- 1715 007c 28000000 		.4byte	.LFE14-.LFB14
- 1716 0080 00000000 		.4byte	.LFB15
- 1717 0084 58000000 		.4byte	.LFE15-.LFB15
- 1718 0088 00000000 		.4byte	0
- 1719 008c 00000000 		.4byte	0
- 1720              		.section	.debug_ranges,"",%progbits
- 1721              	.Ldebug_ranges0:
- 1722 0000 00000000 		.4byte	.LFB1
- 1723 0004 A8000000 		.4byte	.LFE1
- 1724 0008 00000000 		.4byte	.LFB2
- 1725 000c 24000000 		.4byte	.LFE2
- 1726 0010 00000000 		.4byte	.LFB3
- 1727 0014 28000000 		.4byte	.LFE3
- 1728 0018 00000000 		.4byte	.LFB4
- 1729 001c 14000000 		.4byte	.LFE4
- 1730 0020 00000000 		.4byte	.LFB5
- 1731 0024 18000000 		.4byte	.LFE5
- 1732 0028 00000000 		.4byte	.LFB6
- 1733 002c 2C000000 		.4byte	.LFE6
- 1734 0030 00000000 		.4byte	.LFB7
- 1735 0034 34000000 		.4byte	.LFE7
- 1736 0038 00000000 		.4byte	.LFB8
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 46
+ 1440 002f 47656E65 		.ascii	"Generated_Source\\PSoC4\\DBG_UART_UART.c\000"
+ 1440      72617465 
+ 1440      645F536F 
+ 1440      75726365 
+ 1440      5C50536F 
+ 1441              	.LASF30:
+ 1442 0056 4442475F 		.ascii	"DBG_UART_UartPutString\000"
+ 1442      55415254 
+ 1442      5F556172 
+ 1442      74507574 
+ 1442      53747269 
+ 1443              	.LASF35:
+ 1444 006d 4442475F 		.ascii	"DBG_UART_UartSendBreakBlocking\000"
+ 1444      55415254 
+ 1444      5F556172 
+ 1444      7453656E 
+ 1444      64427265 
+ 1445              	.LASF22:
+ 1446 008c 4442475F 		.ascii	"DBG_UART_UartSetRxAddressMask\000"
+ 1446      55415254 
+ 1446      5F556172 
+ 1446      74536574 
+ 1446      52784164 
+ 1447              	.LASF31:
+ 1448 00aa 73747269 		.ascii	"string\000"
+ 1448      6E6700
+ 1449              	.LASF27:
+ 1450 00b1 4442475F 		.ascii	"DBG_UART_UartGetChar\000"
+ 1450      55415254 
+ 1450      5F556172 
+ 1450      74476574 
+ 1450      43686172 
+ 1451              	.LASF45:
+ 1452 00c6 4442475F 		.ascii	"DBG_UART_IntrTxMask\000"
+ 1452      55415254 
+ 1452      5F496E74 
+ 1452      7254784D 
+ 1452      61736B00 
+ 1453              	.LASF11:
+ 1454 00da 666C6F61 		.ascii	"float\000"
+ 1454      7400
+ 1455              	.LASF38:
+ 1456 00e0 7478496E 		.ascii	"txIntrReg\000"
+ 1456      74725265 
+ 1456      6700
+ 1457              	.LASF41:
+ 1458 00ea 4442475F 		.ascii	"DBG_UART_SpiUartWriteTxData\000"
+ 1458      55415254 
+ 1458      5F537069 
+ 1458      55617274 
+ 1458      57726974 
+ 1459              	.LASF1:
+ 1460 0106 756E7369 		.ascii	"unsigned char\000"
+ 1460      676E6564 
+ 1460      20636861 
+ 1460      7200
+ 1461              	.LASF19:
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccCKXTyj.s 			page 42
 
 
- 1737 003c 28000000 		.4byte	.LFE8
- 1738 0040 00000000 		.4byte	.LFB9
- 1739 0044 14000000 		.4byte	.LFE9
- 1740 0048 00000000 		.4byte	.LFB10
- 1741 004c 16000000 		.4byte	.LFE10
- 1742 0050 00000000 		.4byte	.LFB11
- 1743 0054 14000000 		.4byte	.LFE11
- 1744 0058 00000000 		.4byte	.LFB12
- 1745 005c 14000000 		.4byte	.LFE12
- 1746 0060 00000000 		.4byte	.LFB13
- 1747 0064 14000000 		.4byte	.LFE13
- 1748 0068 00000000 		.4byte	.LFB14
- 1749 006c 28000000 		.4byte	.LFE14
- 1750 0070 00000000 		.4byte	.LFB15
- 1751 0074 58000000 		.4byte	.LFE15
- 1752 0078 00000000 		.4byte	0
- 1753 007c 00000000 		.4byte	0
- 1754              		.section	.debug_line,"",%progbits
- 1755              	.Ldebug_line0:
- 1756 0000 D7010000 		.section	.debug_str,"MS",%progbits,1
- 1756      02007300 
- 1756      00000201 
- 1756      FB0E0D00 
- 1756      01010101 
- 1757              	.LASF6:
- 1758 0000 6C6F6E67 		.ascii	"long long int\000"
- 1758      206C6F6E 
- 1758      6720696E 
- 1758      7400
- 1759              	.LASF48:
- 1760 000e 4442475F 		.ascii	"DBG_UART_SpiUartReadRxData\000"
- 1760      55415254 
- 1760      5F537069 
- 1760      55617274 
- 1760      52656164 
- 1761              	.LASF15:
- 1762 0029 72656733 		.ascii	"reg32\000"
- 1762      3200
- 1763              	.LASF51:
- 1764 002f 47656E65 		.ascii	"Generated_Source\\PSoC4\\DBG_UART_UART.c\000"
- 1764      72617465 
- 1764      645F536F 
- 1764      75726365 
- 1764      5C50536F 
- 1765              	.LASF35:
- 1766 0056 4442475F 		.ascii	"DBG_UART_UartPutString\000"
- 1766      55415254 
- 1766      5F556172 
- 1766      74507574 
- 1766      53747269 
- 1767              	.LASF33:
- 1768 006d 6C657665 		.ascii	"level\000"
- 1768      6C00
- 1769              	.LASF42:
- 1770 0073 4442475F 		.ascii	"DBG_UART_UartSetCtsPolarity\000"
- 1770      55415254 
- 1770      5F556172 
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 47
+ 1462 0114 4442475F 		.ascii	"DBG_UART_UartPostEnable\000"
+ 1462      55415254 
+ 1462      5F556172 
+ 1462      74506F73 
+ 1462      74456E61 
+ 1463              	.LASF13:
+ 1464 012c 63686172 		.ascii	"char8\000"
+ 1464      3800
+ 1465              	.LASF5:
+ 1466 0132 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1466      20756E73 
+ 1466      69676E65 
+ 1466      6420696E 
+ 1466      7400
+ 1467              	.LASF3:
+ 1468 0144 73686F72 		.ascii	"short unsigned int\000"
+ 1468      7420756E 
+ 1468      7369676E 
+ 1468      65642069 
+ 1468      6E7400
+ 1469              	.LASF44:
+ 1470 0157 433A5C55 		.ascii	"C:\\Users\\tsien\\Documents\\GitHub\\Battery_Manage"
+ 1470      73657273 
+ 1470      5C747369 
+ 1470      656E5C44 
+ 1470      6F63756D 
+ 1471 0185 6D656E74 		.ascii	"ment_Board_PY2023\\BatteryBalance\\BatteryBalance.c"
+ 1471      5F426F61 
+ 1471      72645F50 
+ 1471      59323032 
+ 1471      335C4261 
+ 1472 01b6 7964736E 		.ascii	"ydsn\000"
+ 1472      00
+ 1473              	.LASF26:
+ 1474 01bb 72784461 		.ascii	"rxData\000"
+ 1474      746100
+ 1475              	.LASF24:
+ 1476 01c2 61646472 		.ascii	"addressMask\000"
+ 1476      6573734D 
+ 1476      61736B00 
+ 1477              	.LASF12:
+ 1478 01ce 646F7562 		.ascii	"double\000"
+ 1478      6C6500
+ 1479              	.LASF9:
+ 1480 01d5 75696E74 		.ascii	"uint16\000"
+ 1480      313600
+ 1481              	.LASF10:
+ 1482 01dc 75696E74 		.ascii	"uint32\000"
+ 1482      333200
+ 1483              	.LASF28:
+ 1484 01e3 4442475F 		.ascii	"DBG_UART_UartGetByte\000"
+ 1484      55415254 
+ 1484      5F556172 
+ 1484      74476574 
+ 1484      42797465 
+ 1485              	.LASF21:
+ 1486 01f8 4442475F 		.ascii	"DBG_UART_UartSetRxAddress\000"
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccCKXTyj.s 			page 43
 
 
- 1770      74536574 
- 1770      43747350 
- 1771              	.LASF41:
- 1772 008f 4442475F 		.ascii	"DBG_UART_UartDisableCts\000"
- 1772      55415254 
- 1772      5F556172 
- 1772      74446973 
- 1772      61626C65 
- 1773              	.LASF43:
- 1774 00a7 4442475F 		.ascii	"DBG_UART_UartSendBreakBlocking\000"
- 1774      55415254 
- 1774      5F556172 
- 1774      7453656E 
- 1774      64427265 
- 1775              	.LASF3:
- 1776 00c6 73686F72 		.ascii	"short unsigned int\000"
- 1776      7420756E 
- 1776      7369676E 
- 1776      65642069 
- 1776      6E7400
- 1777              	.LASF22:
- 1778 00d9 4442475F 		.ascii	"DBG_UART_UartSetRxAddressMask\000"
- 1778      55415254 
- 1778      5F556172 
- 1778      74536574 
- 1778      52784164 
- 1779              	.LASF36:
- 1780 00f7 73747269 		.ascii	"string\000"
- 1780      6E6700
- 1781              	.LASF27:
- 1782 00fe 4442475F 		.ascii	"DBG_UART_UartGetChar\000"
- 1782      55415254 
- 1782      5F556172 
- 1782      74476574 
- 1782      43686172 
- 1783              	.LASF53:
- 1784 0113 4442475F 		.ascii	"DBG_UART_IntrTxMask\000"
- 1784      55415254 
- 1784      5F496E74 
- 1784      7254784D 
- 1784      61736B00 
- 1785              	.LASF11:
- 1786 0127 666C6F61 		.ascii	"float\000"
- 1786      7400
- 1787              	.LASF46:
- 1788 012d 7478496E 		.ascii	"txIntrReg\000"
- 1788      74725265 
- 1788      6700
- 1789              	.LASF49:
- 1790 0137 4442475F 		.ascii	"DBG_UART_SpiUartWriteTxData\000"
- 1790      55415254 
- 1790      5F537069 
- 1790      55617274 
- 1790      57726974 
- 1791              	.LASF1:
- 1792 0153 756E7369 		.ascii	"unsigned char\000"
- 1792      676E6564 
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 48
+ 1486      55415254 
+ 1486      5F556172 
+ 1486      74536574 
+ 1486      52784164 
+ 1487              	.LASF8:
+ 1488 0212 756E7369 		.ascii	"unsigned int\000"
+ 1488      676E6564 
+ 1488      20696E74 
+ 1488      00
+ 1489              	.LASF23:
+ 1490 021f 61646472 		.ascii	"address\000"
+ 1490      65737300 
+ 1491              	.LASF7:
+ 1492 0227 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1492      206C6F6E 
+ 1492      6720756E 
+ 1492      7369676E 
+ 1492      65642069 
+ 1493              	.LASF32:
+ 1494 023e 62756649 		.ascii	"bufIndex\000"
+ 1494      6E646578 
+ 1494      00
+ 1495              	.LASF42:
+ 1496 0247 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1496      43313120 
+ 1496      352E342E 
+ 1496      31203230 
+ 1496      31363036 
+ 1497 027a 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ 1497      20726576 
+ 1497      6973696F 
+ 1497      6E203233 
+ 1497      37373135 
+ 1498 02ad 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1498      66756E63 
+ 1498      74696F6E 
+ 1498      2D736563 
+ 1498      74696F6E 
+ 1499              	.LASF17:
+ 1500 02d5 73697A65 		.ascii	"sizetype\000"
+ 1500      74797065 
+ 1500      00
+ 1501              	.LASF39:
+ 1502 02de 4442475F 		.ascii	"DBG_UART_SpiUartGetRxBufferSize\000"
+ 1502      55415254 
+ 1502      5F537069 
+ 1502      55617274 
+ 1502      47657452 
+ 1503              	.LASF34:
+ 1504 02fe 74784461 		.ascii	"txDataByte\000"
+ 1504      74614279 
+ 1504      746500
+ 1505              	.LASF14:
+ 1506 0309 63686172 		.ascii	"char\000"
+ 1506      00
+ 1507              	.LASF33:
+ 1508 030e 4442475F 		.ascii	"DBG_UART_UartPutCRLF\000"
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccCKXTyj.s 			page 44
 
 
- 1792      20636861 
- 1792      7200
- 1793              	.LASF19:
- 1794 0161 4442475F 		.ascii	"DBG_UART_UartPostEnable\000"
- 1794      55415254 
- 1794      5F556172 
- 1794      74506F73 
- 1794      74456E61 
- 1795              	.LASF13:
- 1796 0179 63686172 		.ascii	"char8\000"
- 1796      3800
- 1797              	.LASF23:
- 1798 017f 61646472 		.ascii	"address\000"
- 1798      65737300 
- 1799              	.LASF5:
- 1800 0187 6C6F6E67 		.ascii	"long unsigned int\000"
- 1800      20756E73 
- 1800      69676E65 
- 1800      6420696E 
- 1800      7400
- 1801              	.LASF30:
- 1802 0199 4442475F 		.ascii	"DBG_UART_UartSetRtsPolarity\000"
- 1802      55415254 
- 1802      5F556172 
- 1802      74536574 
- 1802      52747350 
- 1803              	.LASF52:
- 1804 01b5 433A5C55 		.ascii	"C:\\Users\\tsien\\Documents\\GitHub\\Battery_Manage"
- 1804      73657273 
- 1804      5C747369 
- 1804      656E5C44 
- 1804      6F63756D 
- 1805 01e3 6D656E74 		.ascii	"ment_Board_PY2023\\BatteryBalance\\BatteryBalance.c"
- 1805      5F426F61 
- 1805      72645F50 
- 1805      59323032 
- 1805      335C4261 
- 1806 0214 7964736E 		.ascii	"ydsn\000"
- 1806      00
- 1807              	.LASF26:
- 1808 0219 72784461 		.ascii	"rxData\000"
- 1808      746100
- 1809              	.LASF24:
- 1810 0220 61646472 		.ascii	"addressMask\000"
- 1810      6573734D 
- 1810      61736B00 
- 1811              	.LASF12:
- 1812 022c 646F7562 		.ascii	"double\000"
- 1812      6C6500
- 1813              	.LASF9:
- 1814 0233 75696E74 		.ascii	"uint16\000"
- 1814      313600
- 1815              	.LASF10:
- 1816 023a 75696E74 		.ascii	"uint32\000"
- 1816      333200
- 1817              	.LASF28:
- 1818 0241 4442475F 		.ascii	"DBG_UART_UartGetByte\000"
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 49
-
-
- 1818      55415254 
- 1818      5F556172 
- 1818      74476574 
- 1818      42797465 
- 1819              	.LASF21:
- 1820 0256 4442475F 		.ascii	"DBG_UART_UartSetRxAddress\000"
- 1820      55415254 
- 1820      5F556172 
- 1820      74536574 
- 1820      52784164 
- 1821              	.LASF8:
- 1822 0270 756E7369 		.ascii	"unsigned int\000"
- 1822      676E6564 
- 1822      20696E74 
- 1822      00
- 1823              	.LASF32:
- 1824 027d 4442475F 		.ascii	"DBG_UART_UartSetRtsFifoLevel\000"
- 1824      55415254 
- 1824      5F556172 
- 1824      74536574 
- 1824      52747346 
- 1825              	.LASF7:
- 1826 029a 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1826      206C6F6E 
- 1826      6720756E 
- 1826      7369676E 
- 1826      65642069 
- 1827              	.LASF40:
- 1828 02b1 4442475F 		.ascii	"DBG_UART_UartEnableCts\000"
- 1828      55415254 
- 1828      5F556172 
- 1828      74456E61 
- 1828      626C6543 
- 1829              	.LASF31:
- 1830 02c8 706F6C61 		.ascii	"polarity\000"
- 1830      72697479 
- 1830      00
- 1831              	.LASF37:
- 1832 02d1 62756649 		.ascii	"bufIndex\000"
- 1832      6E646578 
- 1832      00
- 1833              	.LASF50:
- 1834 02da 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 1834      43313120 
- 1834      352E342E 
- 1834      31203230 
- 1834      31363036 
- 1835 030d 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
- 1835      20726576 
- 1835      6973696F 
- 1835      6E203233 
- 1835      37373135 
- 1836 0340 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 1836      66756E63 
- 1836      74696F6E 
- 1836      2D736563 
- 1836      74696F6E 
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 50
-
-
- 1837              	.LASF17:
- 1838 0368 73697A65 		.ascii	"sizetype\000"
- 1838      74797065 
- 1838      00
- 1839              	.LASF47:
- 1840 0371 4442475F 		.ascii	"DBG_UART_SpiUartGetRxBufferSize\000"
- 1840      55415254 
- 1840      5F537069 
- 1840      55617274 
- 1840      47657452 
- 1841              	.LASF39:
- 1842 0391 74784461 		.ascii	"txDataByte\000"
- 1842      74614279 
- 1842      746500
- 1843              	.LASF14:
- 1844 039c 63686172 		.ascii	"char\000"
- 1844      00
- 1845              	.LASF38:
- 1846 03a1 4442475F 		.ascii	"DBG_UART_UartPutCRLF\000"
- 1846      55415254 
- 1846      5F556172 
- 1846      74507574 
- 1846      43524C46 
- 1847              	.LASF2:
- 1848 03b6 73686F72 		.ascii	"short int\000"
- 1848      7420696E 
- 1848      7400
- 1849              	.LASF4:
- 1850 03c0 6C6F6E67 		.ascii	"long int\000"
- 1850      20696E74 
- 1850      00
- 1851              	.LASF29:
- 1852 03c9 746D7053 		.ascii	"tmpStatus\000"
- 1852      74617475 
- 1852      7300
- 1853              	.LASF25:
- 1854 03d3 6D617463 		.ascii	"matchReg\000"
- 1854      68526567 
- 1854      00
- 1855              	.LASF16:
- 1856 03dc 6C6F6E67 		.ascii	"long double\000"
- 1856      20646F75 
- 1856      626C6500 
- 1857              	.LASF0:
- 1858 03e8 7369676E 		.ascii	"signed char\000"
- 1858      65642063 
- 1858      68617200 
- 1859              	.LASF18:
- 1860 03f4 4442475F 		.ascii	"DBG_UART_UartInit\000"
- 1860      55415254 
- 1860      5F556172 
- 1860      74496E69 
- 1860      7400
- 1861              	.LASF45:
- 1862 0406 74784374 		.ascii	"txCtrlReg\000"
- 1862      726C5265 
- 1862      6700
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccdfsei6.s 			page 51
-
-
- 1863              	.LASF34:
- 1864 0410 75617274 		.ascii	"uartFlowCtrl\000"
- 1864      466C6F77 
- 1864      4374726C 
- 1864      00
- 1865              	.LASF44:
- 1866 041d 62726561 		.ascii	"breakWidth\000"
- 1866      6B576964 
- 1866      746800
- 1867              	.LASF20:
- 1868 0428 4442475F 		.ascii	"DBG_UART_UartStop\000"
- 1868      55415254 
- 1868      5F556172 
- 1868      7453746F 
- 1868      7000
- 1869              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 1508      55415254 
+ 1508      5F556172 
+ 1508      74507574 
+ 1508      43524C46 
+ 1509              	.LASF2:
+ 1510 0323 73686F72 		.ascii	"short int\000"
+ 1510      7420696E 
+ 1510      7400
+ 1511              	.LASF4:
+ 1512 032d 6C6F6E67 		.ascii	"long int\000"
+ 1512      20696E74 
+ 1512      00
+ 1513              	.LASF29:
+ 1514 0336 746D7053 		.ascii	"tmpStatus\000"
+ 1514      74617475 
+ 1514      7300
+ 1515              	.LASF25:
+ 1516 0340 6D617463 		.ascii	"matchReg\000"
+ 1516      68526567 
+ 1516      00
+ 1517              	.LASF16:
+ 1518 0349 6C6F6E67 		.ascii	"long double\000"
+ 1518      20646F75 
+ 1518      626C6500 
+ 1519              	.LASF0:
+ 1520 0355 7369676E 		.ascii	"signed char\000"
+ 1520      65642063 
+ 1520      68617200 
+ 1521              	.LASF37:
+ 1522 0361 74784374 		.ascii	"txCtrlReg\000"
+ 1522      726C5265 
+ 1522      6700
+ 1523              	.LASF18:
+ 1524 036b 4442475F 		.ascii	"DBG_UART_UartInit\000"
+ 1524      55415254 
+ 1524      5F556172 
+ 1524      74496E69 
+ 1524      7400
+ 1525              	.LASF36:
+ 1526 037d 62726561 		.ascii	"breakWidth\000"
+ 1526      6B576964 
+ 1526      746800
+ 1527              	.LASF20:
+ 1528 0388 4442475F 		.ascii	"DBG_UART_UartStop\000"
+ 1528      55415254 
+ 1528      5F556172 
+ 1528      7453746F 
+ 1528      7000
+ 1529              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

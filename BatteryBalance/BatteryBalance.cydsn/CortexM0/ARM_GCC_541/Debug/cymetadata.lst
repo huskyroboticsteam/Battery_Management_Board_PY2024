@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc66f3fK.s 			page 1
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccMKYzEJ.s 			page 1
 
 
    1              		.syntax unified
@@ -35,11 +35,11 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc66f3fK.s 			page 1
   32              	cy_metadata:
   33 0000 00       		.byte	0
   34 0001 02       		.byte	2
-  35 0002 10       		.byte	16
-  36 0003 11       		.byte	17
+  35 0002 04       		.byte	4
+  36 0003 C8       		.byte	-56
   37 0004 11       		.byte	17
-  38 0005 A0       		.byte	-96
-  39 0006 00       		.byte	0
+  38 0005 93       		.byte	-109
+  39 0006 11       		.byte	17
   40 0007 01       		.byte	1
   41 0008 00       		.byte	0
   42 0009 00       		.byte	0
@@ -48,9 +48,9 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc66f3fK.s 			page 1
   45              		.section	.cyflashprotect,"a",%progbits
   46              		.align	2
   47              		.type	cy_meta_flashprotect, %object
-  48              		.size	cy_meta_flashprotect, 128
+  48              		.size	cy_meta_flashprotect, 32
   49              	cy_meta_flashprotect:
-  50 0000 00000000 		.space	128
+  50 0000 00000000 		.space	32
   50      00000000 
   50      00000000 
   50      00000000 
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc66f3fK.s 			page 1
   51              		.text
   52              	.Letext0:
   53              		.file 1 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc66f3fK.s 			page 2
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccMKYzEJ.s 			page 2
 
 
   54              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc66f3fK.s 			page 1
  108 0063 696E7400 		.ascii	"int\000"
  109 0067 02       		.uleb128 0x2
  110 0068 04       		.byte	0x4
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc66f3fK.s 			page 3
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccMKYzEJ.s 			page 3
 
 
  111 0069 07       		.byte	0x7
@@ -133,7 +133,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc66f3fK.s 			page 1
  120 007e 89000000 		.4byte	0x89
  121 0082 06       		.uleb128 0x6
  122 0083 89000000 		.4byte	0x89
- 123 0087 7F       		.byte	0x7f
+ 123 0087 1F       		.byte	0x1f
  124 0088 00       		.byte	0
  125 0089 02       		.uleb128 0x2
  126 008a 04       		.byte	0x4
@@ -161,7 +161,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc66f3fK.s 			page 1
  148 00bb 08       		.uleb128 0x8
  149 00bc 1E000000 		.4byte	.LASF13
  150 00c0 03       		.byte	0x3
- 151 00c1 3C       		.byte	0x3c
+ 151 00c1 30       		.byte	0x30
  152 00c2 CC000000 		.4byte	0xcc
  153 00c6 05       		.uleb128 0x5
  154 00c7 03       		.byte	0x3
@@ -178,10 +178,10 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc66f3fK.s 			page 1
  165 00e1 08       		.uleb128 0x8
  166 00e2 0A000000 		.4byte	.LASF14
  167 00e6 03       		.byte	0x3
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc66f3fK.s 			page 4
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccMKYzEJ.s 			page 4
 
 
- 168 00e7 4B       		.byte	0x4b
+ 168 00e7 3F       		.byte	0x3f
  169 00e8 F2000000 		.4byte	0xf2
  170 00ec 05       		.uleb128 0x5
  171 00ed 03       		.byte	0x3
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc66f3fK.s 			page 1
  222 002c 3E       		.uleb128 0x3e
  223 002d 0B       		.uleb128 0xb
  224 002e 03       		.uleb128 0x3
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc66f3fK.s 			page 5
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccMKYzEJ.s 			page 5
 
 
  225 002f 08       		.uleb128 0x8
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc66f3fK.s 			page 1
  279 0010 00000000 		.4byte	0
  280 0014 00000000 		.4byte	0
  281              		.section	.debug_line,"",%progbits
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc66f3fK.s 			page 6
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccMKYzEJ.s 			page 6
 
 
  282              	.Ldebug_line0:
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc66f3fK.s 			page 1
  301 00e0 7964736E 		.ascii	"ydsn\000"
  301      00
  302              	.LASF8:
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc66f3fK.s 			page 7
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccMKYzEJ.s 			page 7
 
 
  303 00e5 756E7369 		.ascii	"unsigned int\000"
@@ -418,6 +418,6 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc66f3fK.s 			page 1
  323      65642063 
  323      68617200 
  324              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc66f3fK.s 			page 8
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccMKYzEJ.s 			page 8
 
 

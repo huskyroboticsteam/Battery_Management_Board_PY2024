@@ -539,22 +539,22 @@ static void Jetty_ScbModeStop(void)
             hsiomSel[Jetty_TX_SDA_MISO_PIN_INDEX] = Jetty_TX_SDA_MISO_HSIOM_SEL_SPI;
         #endif /* (Jetty_TX_SDA_MISO_PIN) */
         
-        #if (Jetty_CTS_SCLK_PIN)
-            hsiomSel[Jetty_CTS_SCLK_PIN_INDEX] = Jetty_CTS_SCLK_HSIOM_SEL_SPI;
-        #endif /* (Jetty_CTS_SCLK_PIN) */
+        #if (Jetty_SCLK_PIN)
+            hsiomSel[Jetty_SCLK_PIN_INDEX] = Jetty_SCLK_HSIOM_SEL_SPI;
+        #endif /* (Jetty_SCLK_PIN) */
 
             if (Jetty_SPI_SLAVE == subMode)
             {
                 /* Slave */
                 pinsDm[Jetty_RX_SCL_MOSI_PIN_INDEX] = Jetty_PIN_DM_DIG_HIZ;
                 pinsDm[Jetty_TX_SDA_MISO_PIN_INDEX] = Jetty_PIN_DM_STRONG;
-                pinsDm[Jetty_CTS_SCLK_PIN_INDEX] = Jetty_PIN_DM_DIG_HIZ;
+                pinsDm[Jetty_SCLK_PIN_INDEX] = Jetty_PIN_DM_DIG_HIZ;
 
-            #if (Jetty_RTS_SS0_PIN)
+            #if (Jetty_SS0_PIN)
                 /* Only SS0 is valid choice for Slave */
-                hsiomSel[Jetty_RTS_SS0_PIN_INDEX] = Jetty_RTS_SS0_HSIOM_SEL_SPI;
-                pinsDm  [Jetty_RTS_SS0_PIN_INDEX] = Jetty_PIN_DM_DIG_HIZ;
-            #endif /* (Jetty_RTS_SS0_PIN) */
+                hsiomSel[Jetty_SS0_PIN_INDEX] = Jetty_SS0_HSIOM_SEL_SPI;
+                pinsDm  [Jetty_SS0_PIN_INDEX] = Jetty_PIN_DM_DIG_HIZ;
+            #endif /* (Jetty_SS0_PIN) */
 
             #if (Jetty_TX_SDA_MISO_PIN)
                 /* Disable input buffer */
@@ -566,13 +566,13 @@ static void Jetty_ScbModeStop(void)
                 /* (Master) */
                 pinsDm[Jetty_RX_SCL_MOSI_PIN_INDEX] = Jetty_PIN_DM_STRONG;
                 pinsDm[Jetty_TX_SDA_MISO_PIN_INDEX] = Jetty_PIN_DM_DIG_HIZ;
-                pinsDm[Jetty_CTS_SCLK_PIN_INDEX] = Jetty_PIN_DM_STRONG;
+                pinsDm[Jetty_SCLK_PIN_INDEX] = Jetty_PIN_DM_STRONG;
 
-            #if (Jetty_RTS_SS0_PIN)
-                hsiomSel [Jetty_RTS_SS0_PIN_INDEX] = Jetty_RTS_SS0_HSIOM_SEL_SPI;
-                pinsDm   [Jetty_RTS_SS0_PIN_INDEX] = Jetty_PIN_DM_STRONG;
-                pinsInBuf |= Jetty_RTS_SS0_PIN_MASK;
-            #endif /* (Jetty_RTS_SS0_PIN) */
+            #if (Jetty_SS0_PIN)
+                hsiomSel [Jetty_SS0_PIN_INDEX] = Jetty_SS0_HSIOM_SEL_SPI;
+                pinsDm   [Jetty_SS0_PIN_INDEX] = Jetty_PIN_DM_STRONG;
+                pinsInBuf |= Jetty_SS0_PIN_MASK;
+            #endif /* (Jetty_SS0_PIN) */
 
             #if (Jetty_SS1_PIN)
                 hsiomSel [Jetty_SS1_PIN_INDEX] = Jetty_SS1_HSIOM_SEL_SPI;
@@ -600,9 +600,9 @@ static void Jetty_ScbModeStop(void)
             #else
             #endif /* (Jetty_RX_SCL_MOSI_PIN) */
 
-            #if (Jetty_CTS_SCLK_PIN)
-                pinsInBuf |= Jetty_CTS_SCLK_PIN_MASK;
-            #endif /* (Jetty_CTS_SCLK_PIN) */
+            #if (Jetty_SCLK_PIN)
+                pinsInBuf |= Jetty_SCLK_PIN_MASK;
+            #endif /* (Jetty_SCLK_PIN) */
             }
         }
         else /* UART */
@@ -646,22 +646,22 @@ static void Jetty_ScbModeStop(void)
                     if (0u != (Jetty_UART_CTS_PIN_ENABLE & uartEnableMask))
                     {
                         /* CTS input is multiplexed with SCLK */
-                    #if (Jetty_CTS_SCLK_PIN)
-                        hsiomSel[Jetty_CTS_SCLK_PIN_INDEX] = Jetty_CTS_SCLK_HSIOM_SEL_UART;
-                        pinsDm  [Jetty_CTS_SCLK_PIN_INDEX] = Jetty_PIN_DM_DIG_HIZ;
-                    #endif /* (Jetty_CTS_SCLK_PIN) */
+                    #if (Jetty_SCLK_PIN)
+                        hsiomSel[Jetty_SCLK_PIN_INDEX] = Jetty_SCLK_HSIOM_SEL_UART;
+                        pinsDm  [Jetty_SCLK_PIN_INDEX] = Jetty_PIN_DM_DIG_HIZ;
+                    #endif /* (Jetty_SCLK_PIN) */
                     }
 
                     if (0u != (Jetty_UART_RTS_PIN_ENABLE & uartEnableMask))
                     {
                         /* RTS output is multiplexed with SS0 */
-                    #if (Jetty_RTS_SS0_PIN)
-                        hsiomSel[Jetty_RTS_SS0_PIN_INDEX] = Jetty_RTS_SS0_HSIOM_SEL_UART;
-                        pinsDm  [Jetty_RTS_SS0_PIN_INDEX] = Jetty_PIN_DM_STRONG;
+                    #if (Jetty_SS0_PIN)
+                        hsiomSel[Jetty_SS0_PIN_INDEX] = Jetty_SS0_HSIOM_SEL_UART;
+                        pinsDm  [Jetty_SS0_PIN_INDEX] = Jetty_PIN_DM_STRONG;
                         
                         /* Disable input buffer */
-                        pinsInBuf |= Jetty_RTS_SS0_PIN_MASK;
-                    #endif /* (Jetty_RTS_SS0_PIN) */
+                        pinsInBuf |= Jetty_SS0_PIN_MASK;
+                    #endif /* (Jetty_SS0_PIN) */
                     }
                 }
             #endif /* !(Jetty_CY_SCBIP_V0 || Jetty_CY_SCBIP_V1) */
@@ -722,31 +722,31 @@ static void Jetty_ScbModeStop(void)
     #endif /* (!Jetty_CY_SCBIP_V1) */
     #endif /* (Jetty_RX_SCL_MOSI_PIN) */
 
-    #if (Jetty_CTS_SCLK_PIN)
-        Jetty_SET_HSIOM_SEL(Jetty_CTS_SCLK_HSIOM_REG,
-                                       Jetty_CTS_SCLK_HSIOM_MASK,
-                                       Jetty_CTS_SCLK_HSIOM_POS,
-                                       hsiomSel[Jetty_CTS_SCLK_PIN_INDEX]);
+    #if (Jetty_SCLK_PIN)
+        Jetty_SET_HSIOM_SEL(Jetty_SCLK_HSIOM_REG,
+                                       Jetty_SCLK_HSIOM_MASK,
+                                       Jetty_SCLK_HSIOM_POS,
+                                       hsiomSel[Jetty_SCLK_PIN_INDEX]);
 
-        Jetty_uart_cts_spi_sclk_SetDriveMode((uint8) pinsDm[Jetty_CTS_SCLK_PIN_INDEX]);
+        Jetty_spi_sclk_SetDriveMode((uint8) pinsDm[Jetty_SCLK_PIN_INDEX]);
 
-        Jetty_SET_INP_DIS(Jetty_uart_cts_spi_sclk_INP_DIS,
-                                     Jetty_uart_cts_spi_sclk_MASK,
-                                     (0u != (pinsInBuf & Jetty_CTS_SCLK_PIN_MASK)));
-    #endif /* (Jetty_CTS_SCLK_PIN) */
+        Jetty_SET_INP_DIS(Jetty_spi_sclk_INP_DIS,
+                                     Jetty_spi_sclk_MASK,
+                                     (0u != (pinsInBuf & Jetty_SCLK_PIN_MASK)));
+    #endif /* (Jetty_SCLK_PIN) */
 
-    #if (Jetty_RTS_SS0_PIN)
-        Jetty_SET_HSIOM_SEL(Jetty_RTS_SS0_HSIOM_REG,
-                                       Jetty_RTS_SS0_HSIOM_MASK,
-                                       Jetty_RTS_SS0_HSIOM_POS,
-                                       hsiomSel[Jetty_RTS_SS0_PIN_INDEX]);
+    #if (Jetty_SS0_PIN)
+        Jetty_SET_HSIOM_SEL(Jetty_SS0_HSIOM_REG,
+                                       Jetty_SS0_HSIOM_MASK,
+                                       Jetty_SS0_HSIOM_POS,
+                                       hsiomSel[Jetty_SS0_PIN_INDEX]);
 
-        Jetty_uart_rts_spi_ss0_SetDriveMode((uint8) pinsDm[Jetty_RTS_SS0_PIN_INDEX]);
+        Jetty_spi_ss0_SetDriveMode((uint8) pinsDm[Jetty_SS0_PIN_INDEX]);
 
-        Jetty_SET_INP_DIS(Jetty_uart_rts_spi_ss0_INP_DIS,
-                                     Jetty_uart_rts_spi_ss0_MASK,
-                                     (0u != (pinsInBuf & Jetty_RTS_SS0_PIN_MASK)));
-    #endif /* (Jetty_RTS_SS0_PIN) */
+        Jetty_SET_INP_DIS(Jetty_spi_ss0_INP_DIS,
+                                     Jetty_spi_ss0_MASK,
+                                     (0u != (pinsInBuf & Jetty_SS0_PIN_MASK)));
+    #endif /* (Jetty_SS0_PIN) */
 
     #if (Jetty_SS1_PIN)
         Jetty_SET_HSIOM_SEL(Jetty_SS1_HSIOM_REG,

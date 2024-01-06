@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc4MCm62.s 			page 1
 
 
    1              		.syntax unified
@@ -26,7 +26,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
   23              		.thumb_func
   24              		.type	readRegister, %function
   25              	readRegister:
-  26              	.LFB44:
+  26              	.LFB42:
   27              		.file 1 "INA226.c"
    1:INA226.c      **** /*
    2:INA226.c      ****  * Copyright (c) 2016 by Stefano Speretta <s.speretta@tudelft.nl>
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
   28:INA226.c      ****  *
   29:INA226.c      ****  *   Returns:
   30:INA226.c      ****  *   unsigned char         0 succes
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 2
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc4MCm62.s 			page 2
 
 
   31:INA226.c      ****  *                         1 fail
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
   85:INA226.c      ****     return writeRegister(INA226_REG_MASKENABLE, data, 2);
   86:INA226.c      **** }
   87:INA226.c      **** /**
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 3
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc4MCm62.s 			page 3
 
 
   88:INA226.c      ****  *   Returns the bus voltage in mV
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  142:INA226.c      ****     if (ret)
  143:INA226.c      ****     {
  144:INA226.c      ****         *c = 0;
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 4
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc4MCm62.s 			page 4
 
 
  145:INA226.c      ****     }
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
   48 000c 1422     		movs	r2, #20
   49 000e 0021     		movs	r1, #0
   50 0010 4020     		movs	r0, #64
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 5
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc4MCm62.s 			page 5
 
 
   51 0012 FFF7FEFF 		bl	INA226_I2C_I2CMasterSendStart
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
   89 0048 1422     		movs	r2, #20
   90 004a 0120     		movs	r0, #1
   91 004c FFF7FEFF 		bl	INA226_I2C_I2CMasterReadByte
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 6
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc4MCm62.s 			page 6
 
 
   92              	.LVL9:
@@ -339,7 +339,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  117              	.LVL15:
  118 0064 F8BD     		pop	{r3, r4, r5, r6, r7, pc}
  119              		.cfi_endproc
- 120              	.LFE44:
+ 120              	.LFE42:
  121              		.size	readRegister, .-readRegister
  122 0066 C046     		.section	.text.ping,"ax",%progbits
  123              		.align	2
@@ -348,7 +348,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  126              		.thumb_func
  127              		.type	ping, %function
  128              	ping:
- 129              	.LFB36:
+ 129              	.LFB34:
   49:INA226.c      ****     uint8_t id[2];
  130              		.loc 1 49 0
  131              		.cfi_startproc
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  135              		.cfi_def_cfa_offset 8
  136              		.cfi_offset 4, -8
  137              		.cfi_offset 14, -4
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 7
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc4MCm62.s 			page 7
 
 
  138 0002 82B0     		sub	sp, sp, #8
@@ -380,7 +380,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  151              		@ sp needed
  152 0014 10BD     		pop	{r4, pc}
  153              		.cfi_endproc
- 154              	.LFE36:
+ 154              	.LFE34:
  155              		.size	ping, .-ping
  156 0016 C046     		.section	.text.getVoltage,"ax",%progbits
  157              		.align	2
@@ -389,7 +389,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  160              		.thumb_func
  161              		.type	getVoltage, %function
  162              	getVoltage:
- 163              	.LFB40:
+ 163              	.LFB38:
   98:INA226.c      ****     uint8_t ret = readRegister(INA226_REG_BUSVOLTAGE, v, 2);
  164              		.loc 1 98 0
  165              		.cfi_startproc
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  101:INA226.c      ****     {
  186              		.loc 1 101 0
  187 0016 0028     		cmp	r0, #0
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 8
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc4MCm62.s 			page 8
 
 
  188 0018 01D0     		beq	.L9
@@ -433,7 +433,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  195              	.LVL20:
  196 001e 10BD     		pop	{r4, pc}
  197              		.cfi_endproc
- 198              	.LFE40:
+ 198              	.LFE38:
  199              		.size	getVoltage, .-getVoltage
  200              		.section	.text.getShuntVoltage,"ax",%progbits
  201              		.align	2
@@ -442,7 +442,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  204              		.thumb_func
  205              		.type	getShuntVoltage, %function
  206              	getShuntVoltage:
- 207              	.LFB41:
+ 207              	.LFB39:
  119:INA226.c      ****     uint8_t ret = readRegister(INA226_REG_SHUNTVOLTAGE, v, 2);
  208              		.loc 1 119 0
  209              		.cfi_startproc
@@ -477,8 +477,8 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  234              	.LVL24:
  235 0016 10BD     		pop	{r4, pc}
  236              		.cfi_endproc
- 237              	.LFE41:
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 9
+ 237              	.LFE39:
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc4MCm62.s 			page 9
 
 
  238              		.size	getShuntVoltage, .-getShuntVoltage
@@ -489,7 +489,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  243              		.thumb_func
  244              		.type	getCurrent, %function
  245              	getCurrent:
- 246              	.LFB42:
+ 246              	.LFB40:
  139:INA226.c      ****     uint8_t ret = readRegister(INA226_REG_CURRENT, c, 2);
  247              		.loc 1 139 0
  248              		.cfi_startproc
@@ -529,7 +529,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  277              	.LVL28:
  278 001c 10BD     		pop	{r4, pc}
  279              		.cfi_endproc
- 280              	.LFE42:
+ 280              	.LFE40:
  281              		.size	getCurrent, .-getCurrent
  282 001e C046     		.section	.text.getPower,"ax",%progbits
  283              		.align	2
@@ -538,10 +538,10 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  286              		.thumb_func
  287              		.type	getPower, %function
  288              	getPower:
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 10
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc4MCm62.s 			page 10
 
 
- 289              	.LFB43:
+ 289              	.LFB41:
  160:INA226.c      ****     uint8_t ret = readRegister(INA226_REG_POWER, p, 2);
  290              		.loc 1 160 0
  291              		.cfi_startproc
@@ -584,7 +584,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  323              	.LVL32:
  324 0022 10BD     		pop	{r4, pc}
  325              		.cfi_endproc
- 326              	.LFE43:
+ 326              	.LFE41:
  327              		.size	getPower, .-getPower
  328              		.section	.text.writeRegister,"ax",%progbits
  329              		.align	2
@@ -593,12 +593,12 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  332              		.thumb_func
  333              		.type	writeRegister, %function
  334              	writeRegister:
- 335              	.LFB45:
+ 335              	.LFB43:
  202:INA226.c      **** 
  203:INA226.c      **** //Sets the value of the selected internal register
  204:INA226.c      **** uint8_t writeRegister(uint8_t reg, uint8_t *data, uint8_t cnt)
  205:INA226.c      **** {
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 11
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc4MCm62.s 			page 11
 
 
  336              		.loc 1 205 0
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  382 0032 0500     		movs	r5, r0
  383              	.LVL38:
  214:INA226.c      ****     while ((INA226_I2C_I2CMasterStatus() & INA226_I2C_I2C_MSTAT_WR_CMPLT) == 0u) //should wait for 
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 12
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc4MCm62.s 			page 12
 
 
  384              		.loc 1 214 0
@@ -705,7 +705,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  418 0058 00000000 		.word	.LC0
  419 005c 00000000 		.word	debugOutput
  420              		.cfi_endproc
- 421              	.LFE45:
+ 421              	.LFE43:
  422              		.size	writeRegister, .-writeRegister
  423              		.section	.text.reset,"ax",%progbits
  424              		.align	2
@@ -714,11 +714,11 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  427              		.thumb_func
  428              		.type	reset, %function
  429              	reset:
- 430              	.LFB35:
+ 430              	.LFB33:
   34:INA226.c      ****    uint8_t data[2];
  431              		.loc 1 34 0
  432              		.cfi_startproc
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 13
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc4MCm62.s 			page 13
 
 
  433              		@ args = 0, pretend = 0, frame = 8
@@ -749,7 +749,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  454              		@ sp needed
  455 0018 00BD     		pop	{pc}
  456              		.cfi_endproc
- 457              	.LFE35:
+ 457              	.LFE33:
  458              		.size	reset, .-reset
  459              		.global	__aeabi_idiv
  460 001a C046     		.section	.text.setShuntResistor,"ax",%progbits
@@ -759,7 +759,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  464              		.thumb_func
  465              		.type	setShuntResistor, %function
  466              	setShuntResistor:
- 467              	.LFB37:
+ 467              	.LFB35:
   66:INA226.c      ****     uint8_t data[2];
  468              		.loc 1 66 0
  469              		.cfi_startproc
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  481              	.LVL49:
  482 0008 0002     		lsls	r0, r0, #8
  483 000a FFF7FEFF 		bl	__aeabi_idiv
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 14
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc4MCm62.s 			page 14
 
 
  484              	.LVL50:
@@ -800,7 +800,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  497              		@ sp needed
  498 0020 00BD     		pop	{pc}
  499              		.cfi_endproc
- 500              	.LFE37:
+ 500              	.LFE35:
  501              		.size	setShuntResistor, .-setShuntResistor
  502 0022 C046     		.section	.text.init_INA226,"ax",%progbits
  503              		.align	2
@@ -809,7 +809,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  506              		.thumb_func
  507              		.type	init_INA226, %function
  508              	init_INA226:
- 509              	.LFB34:
+ 509              	.LFB32:
   19:INA226.c      ****     INA226_I2C_Start();
  510              		.loc 1 19 0
  511              		.cfi_startproc
@@ -838,13 +838,13 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  530              	.LVL55:
   24:INA226.c      **** 
  531              		.loc 1 24 0
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 15
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc4MCm62.s 			page 15
 
 
  532              		@ sp needed
  533 0014 10BD     		pop	{r4, pc}
  534              		.cfi_endproc
- 535              	.LFE34:
+ 535              	.LFE32:
  536              		.size	init_INA226, .-init_INA226
  537              		.global	__aeabi_i2d
  538              		.global	__aeabi_dmul
@@ -856,7 +856,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  544              		.thumb_func
  545              		.type	setAlertLimitBusVoltage, %function
  546              	setAlertLimitBusVoltage:
- 547              	.LFB38:
+ 547              	.LFB36:
   74:INA226.c      ****     uint8_t data[1];
  548              		.loc 1 74 0
  549              		.cfi_startproc
@@ -897,8 +897,8 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  581 0024 9A999999 		.word	-1717986918
  582 0028 9999E93F 		.word	1072273817
  583              		.cfi_endproc
- 584              	.LFE38:
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 16
+ 584              	.LFE36:
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc4MCm62.s 			page 16
 
 
  585              		.size	setAlertLimitBusVoltage, .-setAlertLimitBusVoltage
@@ -909,7 +909,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  590              		.thumb_func
  591              		.type	setAlertEnableBusUnderVoltage, %function
  592              	setAlertEnableBusUnderVoltage:
- 593              	.LFB39:
+ 593              	.LFB37:
   81:INA226.c      ****     uint8_t data[2];
  594              		.loc 1 81 0
  595              		.cfi_startproc
@@ -941,7 +941,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  617              		@ sp needed
  618 0018 00BD     		pop	{pc}
  619              		.cfi_endproc
- 620              	.LFE39:
+ 620              	.LFE37:
  621              		.size	setAlertEnableBusUnderVoltage, .-setAlertEnableBusUnderVoltage
  622              		.comm	address,1,1
  623              		.comm	debugOutput,32,4
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  631              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
  632              		.file 4 "Generated_Source\\PSoC4/cytypes.h"
  633              		.file 5 "./INA226.h"
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 17
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc4MCm62.s 			page 17
 
 
  634              		.file 6 "Generated_Source\\PSoC4/INA226_I2C_I2C.h"
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  688 0067 05       		.byte	0x5
  689 0068 00000000 		.4byte	.LASF8
  690 006c 02       		.uleb128 0x2
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 18
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc4MCm62.s 			page 18
 
 
  691 006d 08       		.byte	0x8
@@ -1072,13 +1072,13 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  739 00cb 01       		.byte	0x1
  740 00cc AB       		.byte	0xab
  741 00cd 81000000 		.4byte	0x81
- 742 00d1 00000000 		.4byte	.LFB44
- 743 00d5 66000000 		.4byte	.LFE44-.LFB44
+ 742 00d1 00000000 		.4byte	.LFB42
+ 743 00d5 66000000 		.4byte	.LFE42-.LFB42
  744 00d9 01       		.uleb128 0x1
  745 00da 9C       		.byte	0x9c
  746 00db F9010000 		.4byte	0x1f9
  747 00df 07       		.uleb128 0x7
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 19
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc4MCm62.s 			page 19
 
 
  748 00e0 72656700 		.ascii	"reg\000"
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  802 0158 01       		.uleb128 0x1
  803 0159 52       		.byte	0x52
  804 015a 01       		.uleb128 0x1
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 20
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc4MCm62.s 			page 20
 
 
  805 015b 44       		.byte	0x44
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  859 01b5 01       		.uleb128 0x1
  860 01b6 50       		.byte	0x50
  861 01b7 01       		.uleb128 0x1
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 21
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc4MCm62.s 			page 21
 
 
  862 01b8 30       		.byte	0x30
@@ -1258,12 +1258,12 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  916 0200 AD010000 		.4byte	.LASF31
  917 0204 01       		.byte	0x1
  918 0205 30       		.byte	0x30
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 22
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc4MCm62.s 			page 22
 
 
  919 0206 81000000 		.4byte	0x81
- 920 020a 00000000 		.4byte	.LFB36
- 921 020e 16000000 		.4byte	.LFE36-.LFB36
+ 920 020a 00000000 		.4byte	.LFB34
+ 921 020e 16000000 		.4byte	.LFE34-.LFB34
  922 0212 01       		.uleb128 0x1
  923 0213 9C       		.byte	0x9c
  924 0214 41020000 		.4byte	0x241
@@ -1309,8 +1309,8 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  964 0256 01       		.byte	0x1
  965 0257 61       		.byte	0x61
  966 0258 81000000 		.4byte	0x81
- 967 025c 00000000 		.4byte	.LFB40
- 968 0260 20000000 		.4byte	.LFE40-.LFB40
+ 967 025c 00000000 		.4byte	.LFB38
+ 968 0260 20000000 		.4byte	.LFE38-.LFB38
  969 0264 01       		.uleb128 0x1
  970 0265 9C       		.byte	0x9c
  971 0266 9F020000 		.4byte	0x29f
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  973 026b 7600     		.ascii	"v\000"
  974 026d 01       		.byte	0x1
  975 026e 61       		.byte	0x61
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 23
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc4MCm62.s 			page 23
 
 
  976 026f F9010000 		.4byte	0x1f9
@@ -1356,8 +1356,8 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  1008 02a4 01       		.byte	0x1
  1009 02a5 76       		.byte	0x76
  1010 02a6 81000000 		.4byte	0x81
- 1011 02aa 00000000 		.4byte	.LFB41
- 1012 02ae 18000000 		.4byte	.LFE41-.LFB41
+ 1011 02aa 00000000 		.4byte	.LFB39
+ 1012 02ae 18000000 		.4byte	.LFE39-.LFB39
  1013 02b2 01       		.uleb128 0x1
  1014 02b3 9C       		.byte	0x9c
  1015 02b4 ED020000 		.4byte	0x2ed
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  1030 02d3 0E000000 		.4byte	.LVL23
  1031 02d7 C6000000 		.4byte	0xc6
  1032 02db 0E       		.uleb128 0xe
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 24
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc4MCm62.s 			page 24
 
 
  1033 02dc 01       		.uleb128 0x1
@@ -1403,8 +1403,8 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  1052 02f2 01       		.byte	0x1
  1053 02f3 8A       		.byte	0x8a
  1054 02f4 81000000 		.4byte	0x81
- 1055 02f8 00000000 		.4byte	.LFB42
- 1056 02fc 1E000000 		.4byte	.LFE42-.LFB42
+ 1055 02f8 00000000 		.4byte	.LFB40
+ 1056 02fc 1E000000 		.4byte	.LFE40-.LFB40
  1057 0300 01       		.uleb128 0x1
  1058 0301 9C       		.byte	0x9c
  1059 0302 3B030000 		.4byte	0x33b
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  1087 0334 0E       		.uleb128 0xe
  1088 0335 01       		.uleb128 0x1
  1089 0336 52       		.byte	0x52
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 25
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc4MCm62.s 			page 25
 
 
  1090 0337 01       		.uleb128 0x1
@@ -1450,8 +1450,8 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  1096 0340 01       		.byte	0x1
  1097 0341 9F       		.byte	0x9f
  1098 0342 81000000 		.4byte	0x81
- 1099 0346 00000000 		.4byte	.LFB43
- 1100 034a 24000000 		.4byte	.LFE43-.LFB43
+ 1099 0346 00000000 		.4byte	.LFB41
+ 1100 034a 24000000 		.4byte	.LFE41-.LFB41
  1101 034e 01       		.uleb128 0x1
  1102 034f 9C       		.byte	0x9c
  1103 0350 89030000 		.4byte	0x389
@@ -1494,11 +1494,11 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  1140 038e 01       		.byte	0x1
  1141 038f CC       		.byte	0xcc
  1142 0390 81000000 		.4byte	0x81
- 1143 0394 00000000 		.4byte	.LFB45
- 1144 0398 60000000 		.4byte	.LFE45-.LFB45
+ 1143 0394 00000000 		.4byte	.LFB43
+ 1144 0398 60000000 		.4byte	.LFE43-.LFB43
  1145 039c 01       		.uleb128 0x1
  1146 039d 9C       		.byte	0x9c
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 26
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc4MCm62.s 			page 26
 
 
  1147 039e 70040000 		.4byte	0x470
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  1201 0419 01       		.uleb128 0x1
  1202 041a 52       		.byte	0x52
  1203 041b 02       		.uleb128 0x2
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 27
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc4MCm62.s 			page 27
 
 
  1204 041c 75       		.byte	0x75
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  1258 0482 00       		.byte	0
  1259 0483 17       		.uleb128 0x17
  1260 0484 BF000000 		.4byte	0xbf
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 28
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc4MCm62.s 			page 28
 
 
  1261 0488 11       		.uleb128 0x11
@@ -1626,8 +1626,8 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  1263 048d 01       		.byte	0x1
  1264 048e 21       		.byte	0x21
  1265 048f 81000000 		.4byte	0x81
- 1266 0493 00000000 		.4byte	.LFB35
- 1267 0497 1A000000 		.4byte	.LFE35-.LFB35
+ 1266 0493 00000000 		.4byte	.LFB33
+ 1267 0497 1A000000 		.4byte	.LFE33-.LFB33
  1268 049b 01       		.uleb128 0x1
  1269 049c 9C       		.byte	0x9c
  1270 049d CA040000 		.4byte	0x4ca
@@ -1665,8 +1665,8 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  1302 04cf 01       		.byte	0x1
  1303 04d0 41       		.byte	0x41
  1304 04d1 81000000 		.4byte	0x81
- 1305 04d5 00000000 		.4byte	.LFB37
- 1306 04d9 22000000 		.4byte	.LFE37-.LFB37
+ 1305 04d5 00000000 		.4byte	.LFB35
+ 1306 04d9 22000000 		.4byte	.LFE35-.LFB35
  1307 04dd 01       		.uleb128 0x1
  1308 04de 9C       		.byte	0x9c
  1309 04df 1B050000 		.4byte	0x51b
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  1315 04ee 6D020000 		.4byte	.LLST15
  1316 04f2 18       		.uleb128 0x18
  1317 04f3 77000000 		.4byte	.LASF28
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 29
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc4MCm62.s 			page 29
 
 
  1318 04f7 01       		.byte	0x1
@@ -1713,8 +1713,8 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  1347 0520 01       		.byte	0x1
  1348 0521 12       		.byte	0x12
  1349 0522 81000000 		.4byte	0x81
- 1350 0526 00000000 		.4byte	.LFB34
- 1351 052a 16000000 		.4byte	.LFE34-.LFB34
+ 1350 0526 00000000 		.4byte	.LFB32
+ 1351 052a 16000000 		.4byte	.LFE32-.LFB32
  1352 052e 01       		.uleb128 0x1
  1353 052f 9C       		.byte	0x9c
  1354 0530 64050000 		.4byte	0x564
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  1372 055a 0C       		.uleb128 0xc
  1373 055b 14000000 		.4byte	.LVL55
  1374 055f FF010000 		.4byte	0x1ff
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 30
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc4MCm62.s 			page 30
 
 
  1375 0563 00       		.byte	0
@@ -1747,8 +1747,8 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  1378 0569 01       		.byte	0x1
  1379 056a 49       		.byte	0x49
  1380 056b 81000000 		.4byte	0x81
- 1381 056f 00000000 		.4byte	.LFB38
- 1382 0573 2C000000 		.4byte	.LFE38-.LFB38
+ 1381 056f 00000000 		.4byte	.LFB36
+ 1382 0573 2C000000 		.4byte	.LFE36-.LFB36
  1383 0577 01       		.uleb128 0x1
  1384 0578 9C       		.byte	0x9c
  1385 0579 B5050000 		.4byte	0x5b5
@@ -1798,12 +1798,12 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  1429 05c6 D2000000 		.4byte	.LASF38
  1430 05ca 01       		.byte	0x1
  1431 05cb 50       		.byte	0x50
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 31
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc4MCm62.s 			page 31
 
 
  1432 05cc 81000000 		.4byte	0x81
- 1433 05d0 00000000 		.4byte	.LFB39
- 1434 05d4 1A000000 		.4byte	.LFE39-.LFB39
+ 1433 05d0 00000000 		.4byte	.LFB37
+ 1434 05d4 1A000000 		.4byte	.LFE37-.LFB37
  1435 05d8 01       		.uleb128 0x1
  1436 05d9 9C       		.byte	0x9c
  1437 05da 07060000 		.4byte	0x607
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  1486 062f 81000000 		.4byte	0x81
  1487 0633 05       		.uleb128 0x5
  1488 0634 03       		.byte	0x3
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 32
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc4MCm62.s 			page 32
 
 
  1489 0635 00000000 		.4byte	address
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  1543 0000 01       		.uleb128 0x1
  1544 0001 11       		.uleb128 0x11
  1545 0002 01       		.byte	0x1
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 33
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc4MCm62.s 			page 33
 
 
  1546 0003 25       		.uleb128 0x25
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  1600 0039 03       		.uleb128 0x3
  1601 003a 0E       		.uleb128 0xe
  1602 003b 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 34
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc4MCm62.s 			page 34
 
 
  1603 003c 0B       		.uleb128 0xb
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  1657 0073 3A       		.uleb128 0x3a
  1658 0074 0B       		.uleb128 0xb
  1659 0075 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 35
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc4MCm62.s 			page 35
 
 
  1660 0076 0B       		.uleb128 0xb
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  1714 00ae 00       		.byte	0
  1715 00af 11       		.uleb128 0x11
  1716 00b0 01       		.uleb128 0x1
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 36
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc4MCm62.s 			page 36
 
 
  1717 00b1 31       		.uleb128 0x31
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  1771 00ee 13       		.uleb128 0x13
  1772 00ef 11       		.uleb128 0x11
  1773 00f0 01       		.uleb128 0x1
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 37
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc4MCm62.s 			page 37
 
 
  1774 00f1 12       		.uleb128 0x12
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  1828 0128 16       		.uleb128 0x16
  1829 0129 21       		.uleb128 0x21
  1830 012a 00       		.byte	0
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 38
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc4MCm62.s 			page 38
 
 
  1831 012b 49       		.uleb128 0x49
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  1885 0162 00       		.byte	0
  1886 0163 1A       		.uleb128 0x1a
  1887 0164 34       		.uleb128 0x34
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 39
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc4MCm62.s 			page 39
 
 
  1888 0165 00       		.byte	0
@@ -2338,11 +2338,11 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  1942 0004 0B000000 		.4byte	.LVL1-1
  1943 0008 0100     		.2byte	0x1
  1944 000a 50       		.byte	0x50
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 40
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc4MCm62.s 			page 40
 
 
  1945 000b 0B000000 		.4byte	.LVL1-1
- 1946 000f 66000000 		.4byte	.LFE44
+ 1946 000f 66000000 		.4byte	.LFE42
  1947 0013 0400     		.2byte	0x4
  1948 0015 F3       		.byte	0xf3
  1949 0016 01       		.uleb128 0x1
@@ -2360,7 +2360,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  1961 0034 0100     		.2byte	0x1
  1962 0036 57       		.byte	0x57
  1963 0037 64000000 		.4byte	.LVL15
- 1964 003b 66000000 		.4byte	.LFE44
+ 1964 003b 66000000 		.4byte	.LFE42
  1965 003f 0400     		.2byte	0x4
  1966 0041 F3       		.byte	0xf3
  1967 0042 01       		.uleb128 0x1
@@ -2374,7 +2374,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  1975 0055 0100     		.2byte	0x1
  1976 0057 52       		.byte	0x52
  1977 0058 0B000000 		.4byte	.LVL1-1
- 1978 005c 66000000 		.4byte	.LFE44
+ 1978 005c 66000000 		.4byte	.LFE42
  1979 0060 0400     		.2byte	0x4
  1980 0062 F3       		.byte	0xf3
  1981 0063 01       		.uleb128 0x1
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  1999 008f 56       		.byte	0x56
  2000 0090 62000000 		.4byte	.LVL12
  2001 0094 64000000 		.4byte	.LVL13
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 41
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc4MCm62.s 			page 41
 
 
  2002 0098 0100     		.2byte	0x1
@@ -2435,7 +2435,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  2033 00eb 0100     		.2byte	0x1
  2034 00ed 54       		.byte	0x54
  2035 00ee 1E000000 		.4byte	.LVL20
- 2036 00f2 20000000 		.4byte	.LFE40
+ 2036 00f2 20000000 		.4byte	.LFE38
  2037 00f6 0400     		.2byte	0x4
  2038 00f8 F3       		.byte	0xf3
  2039 00f9 01       		.uleb128 0x1
@@ -2457,8 +2457,8 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  2055 0122 0100     		.2byte	0x1
  2056 0124 54       		.byte	0x54
  2057 0125 16000000 		.4byte	.LVL24
- 2058 0129 18000000 		.4byte	.LFE41
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 42
+ 2058 0129 18000000 		.4byte	.LFE39
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc4MCm62.s 			page 42
 
 
  2059 012d 0400     		.2byte	0x4
@@ -2482,7 +2482,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  2077 0159 0100     		.2byte	0x1
  2078 015b 54       		.byte	0x54
  2079 015c 1C000000 		.4byte	.LVL28
- 2080 0160 1E000000 		.4byte	.LFE42
+ 2080 0160 1E000000 		.4byte	.LFE40
  2081 0164 0400     		.2byte	0x4
  2082 0166 F3       		.byte	0xf3
  2083 0167 01       		.uleb128 0x1
@@ -2504,7 +2504,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  2099 0190 0100     		.2byte	0x1
  2100 0192 54       		.byte	0x54
  2101 0193 22000000 		.4byte	.LVL32
- 2102 0197 24000000 		.4byte	.LFE43
+ 2102 0197 24000000 		.4byte	.LFE41
  2103 019b 0400     		.2byte	0x4
  2104 019d F3       		.byte	0xf3
  2105 019e 01       		.uleb128 0x1
@@ -2518,10 +2518,10 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  2113 01b1 0100     		.2byte	0x1
  2114 01b3 50       		.byte	0x50
  2115 01b4 0D000000 		.4byte	.LVL34-1
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 43
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc4MCm62.s 			page 43
 
 
- 2116 01b8 60000000 		.4byte	.LFE45
+ 2116 01b8 60000000 		.4byte	.LFE43
  2117 01bc 0400     		.2byte	0x4
  2118 01be F3       		.byte	0xf3
  2119 01bf 01       		.uleb128 0x1
@@ -2539,7 +2539,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  2131 01dd 0100     		.2byte	0x1
  2132 01df 56       		.byte	0x56
  2133 01e0 56000000 		.4byte	.LVL46
- 2134 01e4 60000000 		.4byte	.LFE45
+ 2134 01e4 60000000 		.4byte	.LFE43
  2135 01e8 0400     		.2byte	0x4
  2136 01ea F3       		.byte	0xf3
  2137 01eb 01       		.uleb128 0x1
@@ -2553,7 +2553,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  2145 01fe 0100     		.2byte	0x1
  2146 0200 52       		.byte	0x52
  2147 0201 0D000000 		.4byte	.LVL34-1
- 2148 0205 60000000 		.4byte	.LFE45
+ 2148 0205 60000000 		.4byte	.LFE43
  2149 0209 0400     		.2byte	0x4
  2150 020b F3       		.byte	0xf3
  2151 020c 01       		.uleb128 0x1
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  2170 0233 28000000 		.4byte	.LVL36
  2171 0237 0200     		.2byte	0x2
  2172 0239 73       		.byte	0x73
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 44
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc4MCm62.s 			page 44
 
 
  2173 023a 00       		.sleb128 0
@@ -2606,7 +2606,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  2195 0275 0100     		.2byte	0x1
  2196 0277 50       		.byte	0x50
  2197 0278 08000000 		.4byte	.LVL49
- 2198 027c 22000000 		.4byte	.LFE37
+ 2198 027c 22000000 		.4byte	.LFE35
  2199 0280 0400     		.2byte	0x4
  2200 0282 F3       		.byte	0xf3
  2201 0283 01       		.uleb128 0x1
@@ -2620,7 +2620,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  2209 0296 0100     		.2byte	0x1
  2210 0298 50       		.byte	0x50
  2211 0299 07000000 		.4byte	.LVL57-1
- 2212 029d 2C000000 		.4byte	.LFE38
+ 2212 029d 2C000000 		.4byte	.LFE36
  2213 02a1 0400     		.2byte	0x4
  2214 02a3 F3       		.byte	0xf3
  2215 02a4 01       		.uleb128 0x1
@@ -2636,61 +2636,61 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  2225 000b 00       		.byte	0
  2226 000c 0000     		.2byte	0
  2227 000e 0000     		.2byte	0
- 2228 0010 00000000 		.4byte	.LFB44
- 2229 0014 66000000 		.4byte	.LFE44-.LFB44
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 45
+ 2228 0010 00000000 		.4byte	.LFB42
+ 2229 0014 66000000 		.4byte	.LFE42-.LFB42
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc4MCm62.s 			page 45
 
 
- 2230 0018 00000000 		.4byte	.LFB36
- 2231 001c 16000000 		.4byte	.LFE36-.LFB36
- 2232 0020 00000000 		.4byte	.LFB40
- 2233 0024 20000000 		.4byte	.LFE40-.LFB40
- 2234 0028 00000000 		.4byte	.LFB41
- 2235 002c 18000000 		.4byte	.LFE41-.LFB41
- 2236 0030 00000000 		.4byte	.LFB42
- 2237 0034 1E000000 		.4byte	.LFE42-.LFB42
- 2238 0038 00000000 		.4byte	.LFB43
- 2239 003c 24000000 		.4byte	.LFE43-.LFB43
- 2240 0040 00000000 		.4byte	.LFB45
- 2241 0044 60000000 		.4byte	.LFE45-.LFB45
- 2242 0048 00000000 		.4byte	.LFB35
- 2243 004c 1A000000 		.4byte	.LFE35-.LFB35
- 2244 0050 00000000 		.4byte	.LFB37
- 2245 0054 22000000 		.4byte	.LFE37-.LFB37
- 2246 0058 00000000 		.4byte	.LFB34
- 2247 005c 16000000 		.4byte	.LFE34-.LFB34
- 2248 0060 00000000 		.4byte	.LFB38
- 2249 0064 2C000000 		.4byte	.LFE38-.LFB38
- 2250 0068 00000000 		.4byte	.LFB39
- 2251 006c 1A000000 		.4byte	.LFE39-.LFB39
+ 2230 0018 00000000 		.4byte	.LFB34
+ 2231 001c 16000000 		.4byte	.LFE34-.LFB34
+ 2232 0020 00000000 		.4byte	.LFB38
+ 2233 0024 20000000 		.4byte	.LFE38-.LFB38
+ 2234 0028 00000000 		.4byte	.LFB39
+ 2235 002c 18000000 		.4byte	.LFE39-.LFB39
+ 2236 0030 00000000 		.4byte	.LFB40
+ 2237 0034 1E000000 		.4byte	.LFE40-.LFB40
+ 2238 0038 00000000 		.4byte	.LFB41
+ 2239 003c 24000000 		.4byte	.LFE41-.LFB41
+ 2240 0040 00000000 		.4byte	.LFB43
+ 2241 0044 60000000 		.4byte	.LFE43-.LFB43
+ 2242 0048 00000000 		.4byte	.LFB33
+ 2243 004c 1A000000 		.4byte	.LFE33-.LFB33
+ 2244 0050 00000000 		.4byte	.LFB35
+ 2245 0054 22000000 		.4byte	.LFE35-.LFB35
+ 2246 0058 00000000 		.4byte	.LFB32
+ 2247 005c 16000000 		.4byte	.LFE32-.LFB32
+ 2248 0060 00000000 		.4byte	.LFB36
+ 2249 0064 2C000000 		.4byte	.LFE36-.LFB36
+ 2250 0068 00000000 		.4byte	.LFB37
+ 2251 006c 1A000000 		.4byte	.LFE37-.LFB37
  2252 0070 00000000 		.4byte	0
  2253 0074 00000000 		.4byte	0
  2254              		.section	.debug_ranges,"",%progbits
  2255              	.Ldebug_ranges0:
- 2256 0000 00000000 		.4byte	.LFB44
- 2257 0004 66000000 		.4byte	.LFE44
- 2258 0008 00000000 		.4byte	.LFB36
- 2259 000c 16000000 		.4byte	.LFE36
- 2260 0010 00000000 		.4byte	.LFB40
- 2261 0014 20000000 		.4byte	.LFE40
- 2262 0018 00000000 		.4byte	.LFB41
- 2263 001c 18000000 		.4byte	.LFE41
- 2264 0020 00000000 		.4byte	.LFB42
- 2265 0024 1E000000 		.4byte	.LFE42
- 2266 0028 00000000 		.4byte	.LFB43
- 2267 002c 24000000 		.4byte	.LFE43
- 2268 0030 00000000 		.4byte	.LFB45
- 2269 0034 60000000 		.4byte	.LFE45
- 2270 0038 00000000 		.4byte	.LFB35
- 2271 003c 1A000000 		.4byte	.LFE35
- 2272 0040 00000000 		.4byte	.LFB37
- 2273 0044 22000000 		.4byte	.LFE37
- 2274 0048 00000000 		.4byte	.LFB34
- 2275 004c 16000000 		.4byte	.LFE34
- 2276 0050 00000000 		.4byte	.LFB38
- 2277 0054 2C000000 		.4byte	.LFE38
- 2278 0058 00000000 		.4byte	.LFB39
- 2279 005c 1A000000 		.4byte	.LFE39
+ 2256 0000 00000000 		.4byte	.LFB42
+ 2257 0004 66000000 		.4byte	.LFE42
+ 2258 0008 00000000 		.4byte	.LFB34
+ 2259 000c 16000000 		.4byte	.LFE34
+ 2260 0010 00000000 		.4byte	.LFB38
+ 2261 0014 20000000 		.4byte	.LFE38
+ 2262 0018 00000000 		.4byte	.LFB39
+ 2263 001c 18000000 		.4byte	.LFE39
+ 2264 0020 00000000 		.4byte	.LFB40
+ 2265 0024 1E000000 		.4byte	.LFE40
+ 2266 0028 00000000 		.4byte	.LFB41
+ 2267 002c 24000000 		.4byte	.LFE41
+ 2268 0030 00000000 		.4byte	.LFB43
+ 2269 0034 60000000 		.4byte	.LFE43
+ 2270 0038 00000000 		.4byte	.LFB33
+ 2271 003c 1A000000 		.4byte	.LFE33
+ 2272 0040 00000000 		.4byte	.LFB35
+ 2273 0044 22000000 		.4byte	.LFE35
+ 2274 0048 00000000 		.4byte	.LFB32
+ 2275 004c 16000000 		.4byte	.LFE32
+ 2276 0050 00000000 		.4byte	.LFB36
+ 2277 0054 2C000000 		.4byte	.LFE36
+ 2278 0058 00000000 		.4byte	.LFB37
+ 2279 005c 1A000000 		.4byte	.LFE37
  2280 0060 00000000 		.4byte	0
  2281 0064 00000000 		.4byte	0
  2282              		.section	.debug_line,"",%progbits
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  2284 0000 17030000 		.section	.debug_str,"MS",%progbits,1
  2284      0200FD01 
  2284      00000201 
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 46
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc4MCm62.s 			page 46
 
 
  2284      FB0E0D00 
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  2307              	.LASF46:
  2308 00af 494E4132 		.ascii	"INA226_I2C_I2CMasterWriteBuf\000"
  2308      32365F49 
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 47
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc4MCm62.s 			page 47
 
 
  2308      32435F49 
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  2330      73746572 
  2331              	.LASF34:
  2332 017d 7368756E 		.ascii	"shunt\000"
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 48
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc4MCm62.s 			page 48
 
 
  2332      7400
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  2359      20726576 
  2359      6973696F 
  2359      6E203233 
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 49
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc4MCm62.s 			page 49
 
 
  2359      37373135 
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 1
  2382 0355 75696E74 		.ascii	"uint32_t\000"
  2382      33325F74 
  2382      00
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xmDtg.s 			page 50
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc4MCm62.s 			page 50
 
 
  2383              	.LASF4:
