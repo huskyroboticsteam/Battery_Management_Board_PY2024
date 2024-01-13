@@ -13,6 +13,7 @@
 #include "io.h"
 #include <stdint.h>
 #include <INA226.h>
+#include "./HindsightCAN/CANCommon.h"
 #include "./HindsightCAN/CANPacket.h"
 #include "./HindsightCAN/Port.h"
 
@@ -23,19 +24,24 @@ int main(void)
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
     BatteryBalanceInit();
     init_INA226();
+    DBG_UART_Init();
     
     uint8_t current;
     uint8_t status;
-    uint16_t count = 0;
+    uint16_t* id = 0;
     CANPacket* data;
 
+    DBG_UART_UartPutString("Test");
     for(;;)
     {
         status = getCurrent(&current);
         if (status == SUCCESS) {
-            *data = ConstructCANPacket(count, sizeof(uint8_t), &current);
-            SendCANPacket(data);
-            count++;
+            //*id = ConstructCANID(0, 0, 0);
+            //*data = ConstructCANPacket(*id, (uint8_t)1, &current);
+            // SendCANPacket(data);
+            //DBG_UART_UartPutChar(data);
+            DBG_UART_UartPutString("Test");
+            // count++;
         }
         
         CyDelay(100);

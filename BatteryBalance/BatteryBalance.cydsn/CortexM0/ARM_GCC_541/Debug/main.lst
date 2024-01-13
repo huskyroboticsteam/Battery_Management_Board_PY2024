@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc6zQvBn.s 			page 1
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccGCScBn.s 			page 1
 
 
    1              		.syntax unified
@@ -43,11 +43,13 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc6zQvBn.s 			page 1
   13:main.c        **** #include "io.h"
   14:main.c        **** #include <stdint.h>
   15:main.c        **** #include <INA226.h>
-  16:main.c        **** #include "./HindsightCAN/CANPacket.h"
-  17:main.c        **** 
-  18:main.c        **** int main(void)
-  19:main.c        **** {
-  28              		.loc 1 19 0
+  16:main.c        **** #include "./HindsightCAN/CANCommon.h"
+  17:main.c        **** #include "./HindsightCAN/CANPacket.h"
+  18:main.c        **** #include "./HindsightCAN/Port.h"
+  19:main.c        **** 
+  20:main.c        **** int main(void)
+  21:main.c        **** {
+  28              		.loc 1 21 0
   29              		.cfi_startproc
   30              		@ args = 0, pretend = 0, frame = 8
   31              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -56,655 +58,941 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc6zQvBn.s 			page 1
   34              		.cfi_offset 14, -4
   35 0002 83B0     		sub	sp, sp, #12
   36              		.cfi_def_cfa_offset 16
-  20:main.c        ****     CyGlobalIntEnable; /* Enable global interrupts. */
-  37              		.loc 1 20 0
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc6zQvBn.s 			page 2
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccGCScBn.s 			page 2
 
 
+  22:main.c        ****     CyGlobalIntEnable; /* Enable global interrupts. */
+  37              		.loc 1 22 0
   38              		.syntax divided
-  39              	@ 20 "main.c" 1
+  39              	@ 22 "main.c" 1
   40 0004 62B6     		CPSIE   i
   41              	@ 0 "" 2
-  21:main.c        **** 
-  22:main.c        ****     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
-  23:main.c        ****     BatteryBalanceInit();
-  42              		.loc 1 23 0
+  23:main.c        **** 
+  24:main.c        ****     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
+  25:main.c        ****     BatteryBalanceInit();
+  42              		.loc 1 25 0
   43              		.thumb
   44              		.syntax unified
   45 0006 FFF7FEFF 		bl	BatteryBalanceInit
   46              	.LVL0:
-  24:main.c        ****     init_INA226();
-  47              		.loc 1 24 0
+  26:main.c        ****     init_INA226();
+  47              		.loc 1 26 0
   48 000a FFF7FEFF 		bl	init_INA226
   49              	.LVL1:
-  50              	.L2:
-  25:main.c        ****     
-  26:main.c        ****     uint8_t current;
-  27:main.c        ****     uint8_t status;
-  28:main.c        **** 
-  29:main.c        ****     for(;;)
-  30:main.c        ****     {
-  31:main.c        ****         status = getCurrent(&current);
-  51              		.loc 1 31 0
-  52 000e 6B46     		mov	r3, sp
-  53 0010 D81D     		adds	r0, r3, #7
-  54 0012 FFF7FEFF 		bl	getCurrent
-  55              	.LVL2:
-  32:main.c        ****         if (status == SUCCESS) {
-  33:main.c        ****             // JettySend(JETTY, &current);  
-  34:main.c        ****             
-  35:main.c        ****         }
-  36:main.c        ****         
-  37:main.c        ****         CyDelay(100);
-  56              		.loc 1 37 0
-  57 0016 6420     		movs	r0, #100
-  58 0018 FFF7FEFF 		bl	CyDelay
-  59              	.LVL3:
-  60 001c F7E7     		b	.L2
-  61              		.cfi_endproc
-  62              	.LFE32:
-  63              		.size	main, .-main
-  64              		.comm	address,1,1
-  65              		.comm	debugOutput,32,4
-  66 001e C046     		.text
-  67              	.Letext0:
-  68              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
-  69              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
-  70              		.file 4 "Generated_Source\\PSoC4/cytypes.h"
-  71              		.file 5 "./INA226.h"
-  72              		.file 6 "io.h"
-  73              		.file 7 "Generated_Source\\PSoC4/CyLib.h"
-  74              		.section	.debug_info,"",%progbits
-  75              	.Ldebug_info0:
-  76 0000 74010000 		.4byte	0x174
-  77 0004 0400     		.2byte	0x4
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc6zQvBn.s 			page 3
+  27:main.c        ****     DBG_UART_Init();
+  50              		.loc 1 27 0
+  51 000e FFF7FEFF 		bl	DBG_UART_Init
+  52              	.LVL2:
+  28:main.c        ****     
+  29:main.c        ****     uint8_t current;
+  30:main.c        ****     uint8_t status;
+  31:main.c        ****     uint16_t* id = 0;
+  32:main.c        ****     CANPacket* data;
+  33:main.c        **** 
+  34:main.c        ****     DBG_UART_UartPutString("Test");
+  53              		.loc 1 34 0
+  54 0012 0848     		ldr	r0, .L4
+  55 0014 FFF7FEFF 		bl	DBG_UART_UartPutString
+  56              	.LVL3:
+  57              	.L3:
+  35:main.c        ****     for(;;)
+  36:main.c        ****     {
+  37:main.c        ****         status = getCurrent(&current);
+  58              		.loc 1 37 0
+  59 0018 6B46     		mov	r3, sp
+  60 001a D81D     		adds	r0, r3, #7
+  61 001c FFF7FEFF 		bl	getCurrent
+  62              	.LVL4:
+  38:main.c        ****         if (status == SUCCESS) {
+  63              		.loc 1 38 0
+  64 0020 0028     		cmp	r0, #0
+  65 0022 02D1     		bne	.L2
+  39:main.c        ****             //*id = ConstructCANID(0, 0, 0);
+  40:main.c        ****             //*data = ConstructCANPacket(*id, (uint8_t)1, &current);
+  41:main.c        ****             // SendCANPacket(data);
+  42:main.c        ****             //DBG_UART_UartPutChar(data);
+  43:main.c        ****             DBG_UART_UartPutString("Test");
+  66              		.loc 1 43 0
+  67 0024 0348     		ldr	r0, .L4
+  68              	.LVL5:
+  69 0026 FFF7FEFF 		bl	DBG_UART_UartPutString
+  70              	.LVL6:
+  71              	.L2:
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccGCScBn.s 			page 3
 
 
-  78 0006 00000000 		.4byte	.Ldebug_abbrev0
-  79 000a 04       		.byte	0x4
-  80 000b 01       		.uleb128 0x1
-  81 000c 25010000 		.4byte	.LASF23
-  82 0010 0C       		.byte	0xc
-  83 0011 2E000000 		.4byte	.LASF24
-  84 0015 A0000000 		.4byte	.LASF25
-  85 0019 00000000 		.4byte	.Ldebug_ranges0+0
-  86 001d 00000000 		.4byte	0
-  87 0021 00000000 		.4byte	.Ldebug_line0
-  88 0025 02       		.uleb128 0x2
-  89 0026 01       		.byte	0x1
-  90 0027 06       		.byte	0x6
-  91 0028 BF010000 		.4byte	.LASF0
-  92 002c 03       		.uleb128 0x3
-  93 002d 80000000 		.4byte	.LASF9
-  94 0031 02       		.byte	0x2
-  95 0032 1D       		.byte	0x1d
-  96 0033 37000000 		.4byte	0x37
-  97 0037 02       		.uleb128 0x2
-  98 0038 01       		.byte	0x1
-  99 0039 08       		.byte	0x8
- 100 003a 92000000 		.4byte	.LASF1
- 101 003e 02       		.uleb128 0x2
- 102 003f 02       		.byte	0x2
- 103 0040 05       		.byte	0x5
- 104 0041 FB010000 		.4byte	.LASF2
- 105 0045 02       		.uleb128 0x2
- 106 0046 02       		.byte	0x2
- 107 0047 07       		.byte	0x7
- 108 0048 0E000000 		.4byte	.LASF3
- 109 004c 02       		.uleb128 0x2
- 110 004d 04       		.byte	0x4
- 111 004e 05       		.byte	0x5
- 112 004f 09010000 		.4byte	.LASF4
- 113 0053 02       		.uleb128 0x2
- 114 0054 04       		.byte	0x4
- 115 0055 07       		.byte	0x7
- 116 0056 50000000 		.4byte	.LASF5
- 117 005a 02       		.uleb128 0x2
- 118 005b 08       		.byte	0x8
- 119 005c 05       		.byte	0x5
- 120 005d 00000000 		.4byte	.LASF6
- 121 0061 02       		.uleb128 0x2
- 122 0062 08       		.byte	0x8
- 123 0063 07       		.byte	0x7
- 124 0064 69000000 		.4byte	.LASF7
- 125 0068 04       		.uleb128 0x4
- 126 0069 04       		.byte	0x4
- 127 006a 05       		.byte	0x5
- 128 006b 696E7400 		.ascii	"int\000"
- 129 006f 02       		.uleb128 0x2
- 130 0070 04       		.byte	0x4
- 131 0071 07       		.byte	0x7
- 132 0072 21000000 		.4byte	.LASF8
- 133 0076 03       		.uleb128 0x3
- 134 0077 8A000000 		.4byte	.LASF10
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc6zQvBn.s 			page 4
+  44:main.c        ****             // count++;
+  45:main.c        ****         }
+  46:main.c        ****         
+  47:main.c        ****         CyDelay(100);
+  72              		.loc 1 47 0
+  73 002a 6420     		movs	r0, #100
+  74 002c FFF7FEFF 		bl	CyDelay
+  75              	.LVL7:
+  48:main.c        ****     }
+  76              		.loc 1 48 0
+  77 0030 F2E7     		b	.L3
+  78              	.L5:
+  79 0032 C046     		.align	2
+  80              	.L4:
+  81 0034 00000000 		.word	.LC0
+  82              		.cfi_endproc
+  83              	.LFE32:
+  84              		.size	main, .-main
+  85              		.comm	address,1,1
+  86              		.comm	debugOutput,32,4
+  87              		.section	.rodata.str1.4,"aMS",%progbits,1
+  88              		.align	2
+  89              	.LC0:
+  90 0000 54657374 		.ascii	"Test\000"
+  90      00
+  91              		.text
+  92              	.Letext0:
+  93              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+  94              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.4\\psoc creator\\import\\gnu\\arm\\5.4.
+  95              		.file 4 "Generated_Source\\PSoC4/cytypes.h"
+  96              		.file 5 "./HindsightCAN/CANPacket.h"
+  97              		.file 6 "./INA226.h"
+  98              		.file 7 "io.h"
+  99              		.file 8 "Generated_Source\\PSoC4/DBG_UART.h"
+ 100              		.file 9 "Generated_Source\\PSoC4/DBG_UART_SPI_UART.h"
+ 101              		.file 10 "Generated_Source\\PSoC4/CyLib.h"
+ 102              		.section	.debug_info,"",%progbits
+ 103              	.Ldebug_info0:
+ 104 0000 45020000 		.4byte	0x245
+ 105 0004 0400     		.2byte	0x4
+ 106 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 107 000a 04       		.byte	0x4
+ 108 000b 01       		.uleb128 0x1
+ 109 000c 5A010000 		.4byte	.LASF31
+ 110 0010 0C       		.byte	0xc
+ 111 0011 09020000 		.4byte	.LASF32
+ 112 0015 80000000 		.4byte	.LASF33
+ 113 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 114 001d 00000000 		.4byte	0
+ 115 0021 00000000 		.4byte	.Ldebug_line0
+ 116 0025 02       		.uleb128 0x2
+ 117 0026 01       		.byte	0x1
+ 118 0027 06       		.byte	0x6
+ 119 0028 4A020000 		.4byte	.LASF0
+ 120 002c 03       		.uleb128 0x3
+ 121 002d 00000000 		.4byte	.LASF3
+ 122 0031 02       		.byte	0x2
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccGCScBn.s 			page 4
 
 
- 135 007b 03       		.byte	0x3
- 136 007c 18       		.byte	0x18
- 137 007d 2C000000 		.4byte	0x2c
- 138 0081 05       		.uleb128 0x5
- 139 0082 3A000000 		.4byte	.LASF11
- 140 0086 04       		.byte	0x4
- 141 0087 FB01     		.2byte	0x1fb
- 142 0089 37000000 		.4byte	0x37
- 143 008d 02       		.uleb128 0x2
- 144 008e 04       		.byte	0x4
- 145 008f 04       		.byte	0x4
- 146 0090 EA010000 		.4byte	.LASF12
- 147 0094 02       		.uleb128 0x2
- 148 0095 08       		.byte	0x8
- 149 0096 04       		.byte	0x4
- 150 0097 1E010000 		.4byte	.LASF13
- 151 009b 02       		.uleb128 0x2
- 152 009c 01       		.byte	0x1
- 153 009d 08       		.byte	0x8
- 154 009e 04010000 		.4byte	.LASF14
- 155 00a2 02       		.uleb128 0x2
- 156 00a3 08       		.byte	0x8
- 157 00a4 04       		.byte	0x4
- 158 00a5 CB010000 		.4byte	.LASF15
- 159 00a9 02       		.uleb128 0x2
- 160 00aa 04       		.byte	0x4
- 161 00ab 07       		.byte	0x7
- 162 00ac 0D020000 		.4byte	.LASF16
- 163 00b0 06       		.uleb128 0x6
- 164 00b1 35000000 		.4byte	.LASF26
- 165 00b5 01       		.byte	0x1
- 166 00b6 12       		.byte	0x12
- 167 00b7 68000000 		.4byte	0x68
- 168 00bb 00000000 		.4byte	.LFB32
- 169 00bf 1E000000 		.4byte	.LFE32-.LFB32
- 170 00c3 01       		.uleb128 0x1
- 171 00c4 9C       		.byte	0x9c
- 172 00c5 19010000 		.4byte	0x119
- 173 00c9 07       		.uleb128 0x7
- 174 00ca 05020000 		.4byte	.LASF27
- 175 00ce 01       		.byte	0x1
- 176 00cf 1A       		.byte	0x1a
- 177 00d0 76000000 		.4byte	0x76
- 178 00d4 02       		.uleb128 0x2
- 179 00d5 91       		.byte	0x91
- 180 00d6 77       		.sleb128 -9
- 181 00d7 08       		.uleb128 0x8
- 182 00d8 62000000 		.4byte	.LASF28
- 183 00dc 01       		.byte	0x1
- 184 00dd 1B       		.byte	0x1b
- 185 00de 76000000 		.4byte	0x76
- 186 00e2 09       		.uleb128 0x9
- 187 00e3 0A000000 		.4byte	.LVL0
- 188 00e7 4B010000 		.4byte	0x14b
- 189 00eb 09       		.uleb128 0x9
- 190 00ec 0E000000 		.4byte	.LVL1
- 191 00f0 56010000 		.4byte	0x156
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc6zQvBn.s 			page 5
+ 123 0032 1D       		.byte	0x1d
+ 124 0033 37000000 		.4byte	0x37
+ 125 0037 02       		.uleb128 0x2
+ 126 0038 01       		.byte	0x1
+ 127 0039 08       		.byte	0x8
+ 128 003a E4000000 		.4byte	.LASF1
+ 129 003e 02       		.uleb128 0x2
+ 130 003f 02       		.byte	0x2
+ 131 0040 05       		.byte	0x5
+ 132 0041 17010000 		.4byte	.LASF2
+ 133 0045 03       		.uleb128 0x3
+ 134 0046 F2000000 		.4byte	.LASF4
+ 135 004a 02       		.byte	0x2
+ 136 004b 2B       		.byte	0x2b
+ 137 004c 50000000 		.4byte	0x50
+ 138 0050 02       		.uleb128 0x2
+ 139 0051 02       		.byte	0x2
+ 140 0052 07       		.byte	0x7
+ 141 0053 6D000000 		.4byte	.LASF5
+ 142 0057 02       		.uleb128 0x2
+ 143 0058 04       		.byte	0x4
+ 144 0059 05       		.byte	0x5
+ 145 005a 21000000 		.4byte	.LASF6
+ 146 005e 02       		.uleb128 0x2
+ 147 005f 04       		.byte	0x4
+ 148 0060 07       		.byte	0x7
+ 149 0061 5B000000 		.4byte	.LASF7
+ 150 0065 02       		.uleb128 0x2
+ 151 0066 08       		.byte	0x8
+ 152 0067 05       		.byte	0x5
+ 153 0068 FB010000 		.4byte	.LASF8
+ 154 006c 02       		.uleb128 0x2
+ 155 006d 08       		.byte	0x8
+ 156 006e 07       		.byte	0x7
+ 157 006f 3B010000 		.4byte	.LASF9
+ 158 0073 04       		.uleb128 0x4
+ 159 0074 04       		.byte	0x4
+ 160 0075 05       		.byte	0x5
+ 161 0076 696E7400 		.ascii	"int\000"
+ 162 007a 02       		.uleb128 0x2
+ 163 007b 04       		.byte	0x4
+ 164 007c 07       		.byte	0x7
+ 165 007d 26010000 		.4byte	.LASF10
+ 166 0081 03       		.uleb128 0x3
+ 167 0082 52010000 		.4byte	.LASF11
+ 168 0086 03       		.byte	0x3
+ 169 0087 18       		.byte	0x18
+ 170 0088 2C000000 		.4byte	0x2c
+ 171 008c 03       		.uleb128 0x3
+ 172 008d 15020000 		.4byte	.LASF12
+ 173 0091 03       		.byte	0x3
+ 174 0092 24       		.byte	0x24
+ 175 0093 45000000 		.4byte	0x45
+ 176 0097 05       		.uleb128 0x5
+ 177 0098 2A000000 		.4byte	.LASF13
+ 178 009c 04       		.byte	0x4
+ 179 009d FB01     		.2byte	0x1fb
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccGCScBn.s 			page 5
 
 
- 192 00f4 0A       		.uleb128 0xa
- 193 00f5 16000000 		.4byte	.LVL2
- 194 00f9 61010000 		.4byte	0x161
- 195 00fd 08010000 		.4byte	0x108
- 196 0101 0B       		.uleb128 0xb
- 197 0102 01       		.uleb128 0x1
- 198 0103 50       		.byte	0x50
- 199 0104 02       		.uleb128 0x2
- 200 0105 7D       		.byte	0x7d
- 201 0106 07       		.sleb128 7
- 202 0107 00       		.byte	0
- 203 0108 0C       		.uleb128 0xc
- 204 0109 1C000000 		.4byte	.LVL3
- 205 010d 6C010000 		.4byte	0x16c
- 206 0111 0B       		.uleb128 0xb
- 207 0112 01       		.uleb128 0x1
- 208 0113 50       		.byte	0x50
- 209 0114 02       		.uleb128 0x2
- 210 0115 08       		.byte	0x8
- 211 0116 64       		.byte	0x64
- 212 0117 00       		.byte	0
- 213 0118 00       		.byte	0
- 214 0119 0D       		.uleb128 0xd
- 215 011a 9B000000 		.4byte	0x9b
- 216 011e 29010000 		.4byte	0x129
- 217 0122 0E       		.uleb128 0xe
- 218 0123 A9000000 		.4byte	0xa9
- 219 0127 1F       		.byte	0x1f
- 220 0128 00       		.byte	0
- 221 0129 0F       		.uleb128 0xf
- 222 012a 12010000 		.4byte	.LASF17
- 223 012e 05       		.byte	0x5
- 224 012f 28       		.byte	0x28
- 225 0130 19010000 		.4byte	0x119
- 226 0134 05       		.uleb128 0x5
- 227 0135 03       		.byte	0x3
- 228 0136 00000000 		.4byte	debugOutput
- 229 013a 0F       		.uleb128 0xf
- 230 013b 48000000 		.4byte	.LASF18
- 231 013f 05       		.byte	0x5
- 232 0140 2B       		.byte	0x2b
- 233 0141 76000000 		.4byte	0x76
- 234 0145 05       		.uleb128 0x5
- 235 0146 03       		.byte	0x3
- 236 0147 00000000 		.4byte	address
- 237 014b 10       		.uleb128 0x10
- 238 014c D7010000 		.4byte	.LASF19
- 239 0150 D7010000 		.4byte	.LASF19
- 240 0154 06       		.byte	0x6
- 241 0155 20       		.byte	0x20
- 242 0156 10       		.uleb128 0x10
- 243 0157 B3010000 		.4byte	.LASF20
- 244 015b B3010000 		.4byte	.LASF20
- 245 015f 05       		.byte	0x5
- 246 0160 30       		.byte	0x30
- 247 0161 10       		.uleb128 0x10
- 248 0162 F0010000 		.4byte	.LASF21
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc6zQvBn.s 			page 6
+ 180 009f 37000000 		.4byte	0x37
+ 181 00a3 02       		.uleb128 0x2
+ 182 00a4 04       		.byte	0x4
+ 183 00a5 04       		.byte	0x4
+ 184 00a6 37000000 		.4byte	.LASF14
+ 185 00aa 02       		.uleb128 0x2
+ 186 00ab 08       		.byte	0x8
+ 187 00ac 04       		.byte	0x4
+ 188 00ad FD000000 		.4byte	.LASF15
+ 189 00b1 02       		.uleb128 0x2
+ 190 00b2 01       		.byte	0x1
+ 191 00b3 08       		.byte	0x8
+ 192 00b4 10020000 		.4byte	.LASF16
+ 193 00b8 02       		.uleb128 0x2
+ 194 00b9 08       		.byte	0x8
+ 195 00ba 04       		.byte	0x4
+ 196 00bb 3E020000 		.4byte	.LASF17
+ 197 00bf 02       		.uleb128 0x2
+ 198 00c0 04       		.byte	0x4
+ 199 00c1 07       		.byte	0x7
+ 200 00c2 F2010000 		.4byte	.LASF18
+ 201 00c6 06       		.uleb128 0x6
+ 202 00c7 0C       		.byte	0xc
+ 203 00c8 05       		.byte	0x5
+ 204 00c9 0F       		.byte	0xf
+ 205 00ca F2000000 		.4byte	0xf2
+ 206 00ce 07       		.uleb128 0x7
+ 207 00cf 696400   		.ascii	"id\000"
+ 208 00d2 05       		.byte	0x5
+ 209 00d3 11       		.byte	0x11
+ 210 00d4 8C000000 		.4byte	0x8c
+ 211 00d8 00       		.byte	0
+ 212 00d9 07       		.uleb128 0x7
+ 213 00da 646C6300 		.ascii	"dlc\000"
+ 214 00de 05       		.byte	0x5
+ 215 00df 12       		.byte	0x12
+ 216 00e0 81000000 		.4byte	0x81
+ 217 00e4 02       		.byte	0x2
+ 218 00e5 08       		.uleb128 0x8
+ 219 00e6 3D000000 		.4byte	.LASF19
+ 220 00ea 05       		.byte	0x5
+ 221 00eb 13       		.byte	0x13
+ 222 00ec F2000000 		.4byte	0xf2
+ 223 00f0 03       		.byte	0x3
+ 224 00f1 00       		.byte	0
+ 225 00f2 09       		.uleb128 0x9
+ 226 00f3 81000000 		.4byte	0x81
+ 227 00f7 02010000 		.4byte	0x102
+ 228 00fb 0A       		.uleb128 0xa
+ 229 00fc BF000000 		.4byte	0xbf
+ 230 0100 07       		.byte	0x7
+ 231 0101 00       		.byte	0
+ 232 0102 03       		.uleb128 0x3
+ 233 0103 E8010000 		.4byte	.LASF20
+ 234 0107 05       		.byte	0x5
+ 235 0108 14       		.byte	0x14
+ 236 0109 C6000000 		.4byte	0xc6
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccGCScBn.s 			page 6
 
 
- 249 0166 F0010000 		.4byte	.LASF21
- 250 016a 05       		.byte	0x5
- 251 016b 3B       		.byte	0x3b
- 252 016c 10       		.uleb128 0x10
- 253 016d 40000000 		.4byte	.LASF22
- 254 0171 40000000 		.4byte	.LASF22
- 255 0175 07       		.byte	0x7
- 256 0176 EC       		.byte	0xec
- 257 0177 00       		.byte	0
- 258              		.section	.debug_abbrev,"",%progbits
- 259              	.Ldebug_abbrev0:
- 260 0000 01       		.uleb128 0x1
- 261 0001 11       		.uleb128 0x11
- 262 0002 01       		.byte	0x1
- 263 0003 25       		.uleb128 0x25
- 264 0004 0E       		.uleb128 0xe
- 265 0005 13       		.uleb128 0x13
- 266 0006 0B       		.uleb128 0xb
- 267 0007 03       		.uleb128 0x3
- 268 0008 0E       		.uleb128 0xe
- 269 0009 1B       		.uleb128 0x1b
- 270 000a 0E       		.uleb128 0xe
- 271 000b 55       		.uleb128 0x55
- 272 000c 17       		.uleb128 0x17
- 273 000d 11       		.uleb128 0x11
- 274 000e 01       		.uleb128 0x1
- 275 000f 10       		.uleb128 0x10
- 276 0010 17       		.uleb128 0x17
- 277 0011 00       		.byte	0
- 278 0012 00       		.byte	0
- 279 0013 02       		.uleb128 0x2
- 280 0014 24       		.uleb128 0x24
- 281 0015 00       		.byte	0
- 282 0016 0B       		.uleb128 0xb
- 283 0017 0B       		.uleb128 0xb
- 284 0018 3E       		.uleb128 0x3e
- 285 0019 0B       		.uleb128 0xb
- 286 001a 03       		.uleb128 0x3
- 287 001b 0E       		.uleb128 0xe
- 288 001c 00       		.byte	0
- 289 001d 00       		.byte	0
- 290 001e 03       		.uleb128 0x3
- 291 001f 16       		.uleb128 0x16
- 292 0020 00       		.byte	0
- 293 0021 03       		.uleb128 0x3
- 294 0022 0E       		.uleb128 0xe
- 295 0023 3A       		.uleb128 0x3a
- 296 0024 0B       		.uleb128 0xb
- 297 0025 3B       		.uleb128 0x3b
- 298 0026 0B       		.uleb128 0xb
- 299 0027 49       		.uleb128 0x49
- 300 0028 13       		.uleb128 0x13
- 301 0029 00       		.byte	0
- 302 002a 00       		.byte	0
- 303 002b 04       		.uleb128 0x4
- 304 002c 24       		.uleb128 0x24
- 305 002d 00       		.byte	0
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc6zQvBn.s 			page 7
+ 237 010d 0B       		.uleb128 0xb
+ 238 010e 21010000 		.4byte	.LASF34
+ 239 0112 01       		.byte	0x1
+ 240 0113 14       		.byte	0x14
+ 241 0114 73000000 		.4byte	0x73
+ 242 0118 00000000 		.4byte	.LFB32
+ 243 011c 38000000 		.4byte	.LFE32-.LFB32
+ 244 0120 01       		.uleb128 0x1
+ 245 0121 9C       		.byte	0x9c
+ 246 0122 C7010000 		.4byte	0x1c7
+ 247 0126 0C       		.uleb128 0xc
+ 248 0127 1E020000 		.4byte	.LASF21
+ 249 012b 01       		.byte	0x1
+ 250 012c 1D       		.byte	0x1d
+ 251 012d 81000000 		.4byte	0x81
+ 252 0131 02       		.uleb128 0x2
+ 253 0132 91       		.byte	0x91
+ 254 0133 77       		.sleb128 -9
+ 255 0134 0D       		.uleb128 0xd
+ 256 0135 30000000 		.4byte	.LASF22
+ 257 0139 01       		.byte	0x1
+ 258 013a 1E       		.byte	0x1e
+ 259 013b 81000000 		.4byte	0x81
+ 260 013f 00000000 		.4byte	.LLST0
+ 261 0143 0E       		.uleb128 0xe
+ 262 0144 696400   		.ascii	"id\000"
+ 263 0147 01       		.byte	0x1
+ 264 0148 1F       		.byte	0x1f
+ 265 0149 C7010000 		.4byte	0x1c7
+ 266 014d 00       		.byte	0
+ 267 014e 0F       		.uleb128 0xf
+ 268 014f 3D000000 		.4byte	.LASF19
+ 269 0153 01       		.byte	0x1
+ 270 0154 20       		.byte	0x20
+ 271 0155 CD010000 		.4byte	0x1cd
+ 272 0159 10       		.uleb128 0x10
+ 273 015a 0A000000 		.4byte	.LVL0
+ 274 015e 05020000 		.4byte	0x205
+ 275 0162 10       		.uleb128 0x10
+ 276 0163 0E000000 		.4byte	.LVL1
+ 277 0167 10020000 		.4byte	0x210
+ 278 016b 10       		.uleb128 0x10
+ 279 016c 12000000 		.4byte	.LVL2
+ 280 0170 1B020000 		.4byte	0x21b
+ 281 0174 11       		.uleb128 0x11
+ 282 0175 18000000 		.4byte	.LVL3
+ 283 0179 26020000 		.4byte	0x226
+ 284 017d 8B010000 		.4byte	0x18b
+ 285 0181 12       		.uleb128 0x12
+ 286 0182 01       		.uleb128 0x1
+ 287 0183 50       		.byte	0x50
+ 288 0184 05       		.uleb128 0x5
+ 289 0185 03       		.byte	0x3
+ 290 0186 00000000 		.4byte	.LC0
+ 291 018a 00       		.byte	0
+ 292 018b 11       		.uleb128 0x11
+ 293 018c 20000000 		.4byte	.LVL4
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccGCScBn.s 			page 7
 
 
- 306 002e 0B       		.uleb128 0xb
- 307 002f 0B       		.uleb128 0xb
- 308 0030 3E       		.uleb128 0x3e
- 309 0031 0B       		.uleb128 0xb
- 310 0032 03       		.uleb128 0x3
- 311 0033 08       		.uleb128 0x8
- 312 0034 00       		.byte	0
- 313 0035 00       		.byte	0
- 314 0036 05       		.uleb128 0x5
- 315 0037 16       		.uleb128 0x16
- 316 0038 00       		.byte	0
- 317 0039 03       		.uleb128 0x3
- 318 003a 0E       		.uleb128 0xe
- 319 003b 3A       		.uleb128 0x3a
- 320 003c 0B       		.uleb128 0xb
- 321 003d 3B       		.uleb128 0x3b
- 322 003e 05       		.uleb128 0x5
- 323 003f 49       		.uleb128 0x49
- 324 0040 13       		.uleb128 0x13
- 325 0041 00       		.byte	0
- 326 0042 00       		.byte	0
- 327 0043 06       		.uleb128 0x6
- 328 0044 2E       		.uleb128 0x2e
- 329 0045 01       		.byte	0x1
- 330 0046 3F       		.uleb128 0x3f
- 331 0047 19       		.uleb128 0x19
- 332 0048 03       		.uleb128 0x3
- 333 0049 0E       		.uleb128 0xe
- 334 004a 3A       		.uleb128 0x3a
- 335 004b 0B       		.uleb128 0xb
- 336 004c 3B       		.uleb128 0x3b
- 337 004d 0B       		.uleb128 0xb
- 338 004e 27       		.uleb128 0x27
- 339 004f 19       		.uleb128 0x19
- 340 0050 49       		.uleb128 0x49
- 341 0051 13       		.uleb128 0x13
- 342 0052 8701     		.uleb128 0x87
- 343 0054 19       		.uleb128 0x19
- 344 0055 11       		.uleb128 0x11
- 345 0056 01       		.uleb128 0x1
- 346 0057 12       		.uleb128 0x12
- 347 0058 06       		.uleb128 0x6
- 348 0059 40       		.uleb128 0x40
- 349 005a 18       		.uleb128 0x18
- 350 005b 9742     		.uleb128 0x2117
- 351 005d 19       		.uleb128 0x19
- 352 005e 01       		.uleb128 0x1
- 353 005f 13       		.uleb128 0x13
- 354 0060 00       		.byte	0
- 355 0061 00       		.byte	0
- 356 0062 07       		.uleb128 0x7
- 357 0063 34       		.uleb128 0x34
- 358 0064 00       		.byte	0
- 359 0065 03       		.uleb128 0x3
- 360 0066 0E       		.uleb128 0xe
- 361 0067 3A       		.uleb128 0x3a
- 362 0068 0B       		.uleb128 0xb
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc6zQvBn.s 			page 8
+ 294 0190 32020000 		.4byte	0x232
+ 295 0194 9F010000 		.4byte	0x19f
+ 296 0198 12       		.uleb128 0x12
+ 297 0199 01       		.uleb128 0x1
+ 298 019a 50       		.byte	0x50
+ 299 019b 02       		.uleb128 0x2
+ 300 019c 7D       		.byte	0x7d
+ 301 019d 07       		.sleb128 7
+ 302 019e 00       		.byte	0
+ 303 019f 11       		.uleb128 0x11
+ 304 01a0 2A000000 		.4byte	.LVL6
+ 305 01a4 26020000 		.4byte	0x226
+ 306 01a8 B6010000 		.4byte	0x1b6
+ 307 01ac 12       		.uleb128 0x12
+ 308 01ad 01       		.uleb128 0x1
+ 309 01ae 50       		.byte	0x50
+ 310 01af 05       		.uleb128 0x5
+ 311 01b0 03       		.byte	0x3
+ 312 01b1 00000000 		.4byte	.LC0
+ 313 01b5 00       		.byte	0
+ 314 01b6 13       		.uleb128 0x13
+ 315 01b7 30000000 		.4byte	.LVL7
+ 316 01bb 3D020000 		.4byte	0x23d
+ 317 01bf 12       		.uleb128 0x12
+ 318 01c0 01       		.uleb128 0x1
+ 319 01c1 50       		.byte	0x50
+ 320 01c2 02       		.uleb128 0x2
+ 321 01c3 08       		.byte	0x8
+ 322 01c4 64       		.byte	0x64
+ 323 01c5 00       		.byte	0
+ 324 01c6 00       		.byte	0
+ 325 01c7 14       		.uleb128 0x14
+ 326 01c8 04       		.byte	0x4
+ 327 01c9 8C000000 		.4byte	0x8c
+ 328 01cd 14       		.uleb128 0x14
+ 329 01ce 04       		.byte	0x4
+ 330 01cf 02010000 		.4byte	0x102
+ 331 01d3 09       		.uleb128 0x9
+ 332 01d4 B1000000 		.4byte	0xb1
+ 333 01d8 E3010000 		.4byte	0x1e3
+ 334 01dc 0A       		.uleb128 0xa
+ 335 01dd BF000000 		.4byte	0xbf
+ 336 01e1 1F       		.byte	0x1f
+ 337 01e2 00       		.byte	0
+ 338 01e3 15       		.uleb128 0x15
+ 339 01e4 32020000 		.4byte	.LASF23
+ 340 01e8 06       		.byte	0x6
+ 341 01e9 28       		.byte	0x28
+ 342 01ea D3010000 		.4byte	0x1d3
+ 343 01ee 05       		.uleb128 0x5
+ 344 01ef 03       		.byte	0x3
+ 345 01f0 00000000 		.4byte	debugOutput
+ 346 01f4 15       		.uleb128 0x15
+ 347 01f5 33010000 		.4byte	.LASF24
+ 348 01f9 06       		.byte	0x6
+ 349 01fa 2B       		.byte	0x2b
+ 350 01fb 81000000 		.4byte	0x81
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccGCScBn.s 			page 8
 
 
- 363 0069 3B       		.uleb128 0x3b
- 364 006a 0B       		.uleb128 0xb
- 365 006b 49       		.uleb128 0x49
- 366 006c 13       		.uleb128 0x13
- 367 006d 02       		.uleb128 0x2
- 368 006e 18       		.uleb128 0x18
- 369 006f 00       		.byte	0
- 370 0070 00       		.byte	0
- 371 0071 08       		.uleb128 0x8
- 372 0072 34       		.uleb128 0x34
- 373 0073 00       		.byte	0
- 374 0074 03       		.uleb128 0x3
- 375 0075 0E       		.uleb128 0xe
- 376 0076 3A       		.uleb128 0x3a
- 377 0077 0B       		.uleb128 0xb
- 378 0078 3B       		.uleb128 0x3b
- 379 0079 0B       		.uleb128 0xb
- 380 007a 49       		.uleb128 0x49
- 381 007b 13       		.uleb128 0x13
- 382 007c 00       		.byte	0
- 383 007d 00       		.byte	0
- 384 007e 09       		.uleb128 0x9
- 385 007f 898201   		.uleb128 0x4109
- 386 0082 00       		.byte	0
- 387 0083 11       		.uleb128 0x11
- 388 0084 01       		.uleb128 0x1
- 389 0085 31       		.uleb128 0x31
- 390 0086 13       		.uleb128 0x13
- 391 0087 00       		.byte	0
- 392 0088 00       		.byte	0
- 393 0089 0A       		.uleb128 0xa
- 394 008a 898201   		.uleb128 0x4109
- 395 008d 01       		.byte	0x1
- 396 008e 11       		.uleb128 0x11
- 397 008f 01       		.uleb128 0x1
- 398 0090 31       		.uleb128 0x31
- 399 0091 13       		.uleb128 0x13
- 400 0092 01       		.uleb128 0x1
- 401 0093 13       		.uleb128 0x13
- 402 0094 00       		.byte	0
- 403 0095 00       		.byte	0
- 404 0096 0B       		.uleb128 0xb
- 405 0097 8A8201   		.uleb128 0x410a
- 406 009a 00       		.byte	0
- 407 009b 02       		.uleb128 0x2
- 408 009c 18       		.uleb128 0x18
- 409 009d 9142     		.uleb128 0x2111
- 410 009f 18       		.uleb128 0x18
- 411 00a0 00       		.byte	0
- 412 00a1 00       		.byte	0
- 413 00a2 0C       		.uleb128 0xc
- 414 00a3 898201   		.uleb128 0x4109
- 415 00a6 01       		.byte	0x1
- 416 00a7 11       		.uleb128 0x11
- 417 00a8 01       		.uleb128 0x1
- 418 00a9 31       		.uleb128 0x31
- 419 00aa 13       		.uleb128 0x13
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc6zQvBn.s 			page 9
+ 351 01ff 05       		.uleb128 0x5
+ 352 0200 03       		.byte	0x3
+ 353 0201 00000000 		.4byte	address
+ 354 0205 16       		.uleb128 0x16
+ 355 0206 04010000 		.4byte	.LASF25
+ 356 020a 04010000 		.4byte	.LASF25
+ 357 020e 07       		.byte	0x7
+ 358 020f 20       		.byte	0x20
+ 359 0210 16       		.uleb128 0x16
+ 360 0211 26020000 		.4byte	.LASF26
+ 361 0215 26020000 		.4byte	.LASF26
+ 362 0219 06       		.byte	0x6
+ 363 021a 30       		.byte	0x30
+ 364 021b 16       		.uleb128 0x16
+ 365 021c 4D000000 		.4byte	.LASF27
+ 366 0220 4D000000 		.4byte	.LASF27
+ 367 0224 08       		.byte	0x8
+ 368 0225 70       		.byte	0x70
+ 369 0226 17       		.uleb128 0x17
+ 370 0227 0A000000 		.4byte	.LASF28
+ 371 022b 0A000000 		.4byte	.LASF28
+ 372 022f 09       		.byte	0x9
+ 373 0230 2A03     		.2byte	0x32a
+ 374 0232 16       		.uleb128 0x16
+ 375 0233 42000000 		.4byte	.LASF29
+ 376 0237 42000000 		.4byte	.LASF29
+ 377 023b 06       		.byte	0x6
+ 378 023c 3B       		.byte	0x3b
+ 379 023d 16       		.uleb128 0x16
+ 380 023e 56020000 		.4byte	.LASF30
+ 381 0242 56020000 		.4byte	.LASF30
+ 382 0246 0A       		.byte	0xa
+ 383 0247 EC       		.byte	0xec
+ 384 0248 00       		.byte	0
+ 385              		.section	.debug_abbrev,"",%progbits
+ 386              	.Ldebug_abbrev0:
+ 387 0000 01       		.uleb128 0x1
+ 388 0001 11       		.uleb128 0x11
+ 389 0002 01       		.byte	0x1
+ 390 0003 25       		.uleb128 0x25
+ 391 0004 0E       		.uleb128 0xe
+ 392 0005 13       		.uleb128 0x13
+ 393 0006 0B       		.uleb128 0xb
+ 394 0007 03       		.uleb128 0x3
+ 395 0008 0E       		.uleb128 0xe
+ 396 0009 1B       		.uleb128 0x1b
+ 397 000a 0E       		.uleb128 0xe
+ 398 000b 55       		.uleb128 0x55
+ 399 000c 17       		.uleb128 0x17
+ 400 000d 11       		.uleb128 0x11
+ 401 000e 01       		.uleb128 0x1
+ 402 000f 10       		.uleb128 0x10
+ 403 0010 17       		.uleb128 0x17
+ 404 0011 00       		.byte	0
+ 405 0012 00       		.byte	0
+ 406 0013 02       		.uleb128 0x2
+ 407 0014 24       		.uleb128 0x24
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccGCScBn.s 			page 9
 
 
- 420 00ab 00       		.byte	0
- 421 00ac 00       		.byte	0
- 422 00ad 0D       		.uleb128 0xd
- 423 00ae 01       		.uleb128 0x1
- 424 00af 01       		.byte	0x1
- 425 00b0 49       		.uleb128 0x49
- 426 00b1 13       		.uleb128 0x13
- 427 00b2 01       		.uleb128 0x1
- 428 00b3 13       		.uleb128 0x13
- 429 00b4 00       		.byte	0
- 430 00b5 00       		.byte	0
- 431 00b6 0E       		.uleb128 0xe
- 432 00b7 21       		.uleb128 0x21
- 433 00b8 00       		.byte	0
- 434 00b9 49       		.uleb128 0x49
- 435 00ba 13       		.uleb128 0x13
- 436 00bb 2F       		.uleb128 0x2f
- 437 00bc 0B       		.uleb128 0xb
- 438 00bd 00       		.byte	0
- 439 00be 00       		.byte	0
- 440 00bf 0F       		.uleb128 0xf
- 441 00c0 34       		.uleb128 0x34
- 442 00c1 00       		.byte	0
- 443 00c2 03       		.uleb128 0x3
- 444 00c3 0E       		.uleb128 0xe
- 445 00c4 3A       		.uleb128 0x3a
- 446 00c5 0B       		.uleb128 0xb
- 447 00c6 3B       		.uleb128 0x3b
- 448 00c7 0B       		.uleb128 0xb
- 449 00c8 49       		.uleb128 0x49
- 450 00c9 13       		.uleb128 0x13
- 451 00ca 3F       		.uleb128 0x3f
- 452 00cb 19       		.uleb128 0x19
- 453 00cc 02       		.uleb128 0x2
- 454 00cd 18       		.uleb128 0x18
- 455 00ce 00       		.byte	0
- 456 00cf 00       		.byte	0
- 457 00d0 10       		.uleb128 0x10
- 458 00d1 2E       		.uleb128 0x2e
- 459 00d2 00       		.byte	0
- 460 00d3 3F       		.uleb128 0x3f
- 461 00d4 19       		.uleb128 0x19
- 462 00d5 3C       		.uleb128 0x3c
- 463 00d6 19       		.uleb128 0x19
- 464 00d7 6E       		.uleb128 0x6e
- 465 00d8 0E       		.uleb128 0xe
- 466 00d9 03       		.uleb128 0x3
- 467 00da 0E       		.uleb128 0xe
- 468 00db 3A       		.uleb128 0x3a
- 469 00dc 0B       		.uleb128 0xb
- 470 00dd 3B       		.uleb128 0x3b
- 471 00de 0B       		.uleb128 0xb
- 472 00df 00       		.byte	0
- 473 00e0 00       		.byte	0
- 474 00e1 00       		.byte	0
- 475              		.section	.debug_aranges,"",%progbits
- 476 0000 1C000000 		.4byte	0x1c
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc6zQvBn.s 			page 10
+ 408 0015 00       		.byte	0
+ 409 0016 0B       		.uleb128 0xb
+ 410 0017 0B       		.uleb128 0xb
+ 411 0018 3E       		.uleb128 0x3e
+ 412 0019 0B       		.uleb128 0xb
+ 413 001a 03       		.uleb128 0x3
+ 414 001b 0E       		.uleb128 0xe
+ 415 001c 00       		.byte	0
+ 416 001d 00       		.byte	0
+ 417 001e 03       		.uleb128 0x3
+ 418 001f 16       		.uleb128 0x16
+ 419 0020 00       		.byte	0
+ 420 0021 03       		.uleb128 0x3
+ 421 0022 0E       		.uleb128 0xe
+ 422 0023 3A       		.uleb128 0x3a
+ 423 0024 0B       		.uleb128 0xb
+ 424 0025 3B       		.uleb128 0x3b
+ 425 0026 0B       		.uleb128 0xb
+ 426 0027 49       		.uleb128 0x49
+ 427 0028 13       		.uleb128 0x13
+ 428 0029 00       		.byte	0
+ 429 002a 00       		.byte	0
+ 430 002b 04       		.uleb128 0x4
+ 431 002c 24       		.uleb128 0x24
+ 432 002d 00       		.byte	0
+ 433 002e 0B       		.uleb128 0xb
+ 434 002f 0B       		.uleb128 0xb
+ 435 0030 3E       		.uleb128 0x3e
+ 436 0031 0B       		.uleb128 0xb
+ 437 0032 03       		.uleb128 0x3
+ 438 0033 08       		.uleb128 0x8
+ 439 0034 00       		.byte	0
+ 440 0035 00       		.byte	0
+ 441 0036 05       		.uleb128 0x5
+ 442 0037 16       		.uleb128 0x16
+ 443 0038 00       		.byte	0
+ 444 0039 03       		.uleb128 0x3
+ 445 003a 0E       		.uleb128 0xe
+ 446 003b 3A       		.uleb128 0x3a
+ 447 003c 0B       		.uleb128 0xb
+ 448 003d 3B       		.uleb128 0x3b
+ 449 003e 05       		.uleb128 0x5
+ 450 003f 49       		.uleb128 0x49
+ 451 0040 13       		.uleb128 0x13
+ 452 0041 00       		.byte	0
+ 453 0042 00       		.byte	0
+ 454 0043 06       		.uleb128 0x6
+ 455 0044 13       		.uleb128 0x13
+ 456 0045 01       		.byte	0x1
+ 457 0046 0B       		.uleb128 0xb
+ 458 0047 0B       		.uleb128 0xb
+ 459 0048 3A       		.uleb128 0x3a
+ 460 0049 0B       		.uleb128 0xb
+ 461 004a 3B       		.uleb128 0x3b
+ 462 004b 0B       		.uleb128 0xb
+ 463 004c 01       		.uleb128 0x1
+ 464 004d 13       		.uleb128 0x13
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccGCScBn.s 			page 10
 
 
- 477 0004 0200     		.2byte	0x2
- 478 0006 00000000 		.4byte	.Ldebug_info0
- 479 000a 04       		.byte	0x4
- 480 000b 00       		.byte	0
- 481 000c 0000     		.2byte	0
- 482 000e 0000     		.2byte	0
- 483 0010 00000000 		.4byte	.LFB32
- 484 0014 1E000000 		.4byte	.LFE32-.LFB32
- 485 0018 00000000 		.4byte	0
- 486 001c 00000000 		.4byte	0
- 487              		.section	.debug_ranges,"",%progbits
- 488              	.Ldebug_ranges0:
- 489 0000 00000000 		.4byte	.LFB32
- 490 0004 1E000000 		.4byte	.LFE32
- 491 0008 00000000 		.4byte	0
- 492 000c 00000000 		.4byte	0
- 493              		.section	.debug_line,"",%progbits
- 494              	.Ldebug_line0:
- 495 0000 79010000 		.section	.debug_str,"MS",%progbits,1
- 495      02005F01 
- 495      00000201 
- 495      FB0E0D00 
- 495      01010101 
- 496              	.LASF6:
- 497 0000 6C6F6E67 		.ascii	"long long int\000"
- 497      206C6F6E 
- 497      6720696E 
- 497      7400
- 498              	.LASF3:
- 499 000e 73686F72 		.ascii	"short unsigned int\000"
- 499      7420756E 
- 499      7369676E 
- 499      65642069 
- 499      6E7400
- 500              	.LASF8:
- 501 0021 756E7369 		.ascii	"unsigned int\000"
- 501      676E6564 
- 501      20696E74 
- 501      00
- 502              	.LASF24:
- 503 002e 6D61696E 		.ascii	"main.c\000"
- 503      2E6300
- 504              	.LASF26:
- 505 0035 6D61696E 		.ascii	"main\000"
- 505      00
- 506              	.LASF11:
- 507 003a 75696E74 		.ascii	"uint8\000"
- 507      3800
- 508              	.LASF22:
- 509 0040 43794465 		.ascii	"CyDelay\000"
- 509      6C617900 
- 510              	.LASF18:
- 511 0048 61646472 		.ascii	"address\000"
- 511      65737300 
- 512              	.LASF5:
- 513 0050 6C6F6E67 		.ascii	"long unsigned int\000"
- 513      20756E73 
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc6zQvBn.s 			page 11
+ 465 004e 00       		.byte	0
+ 466 004f 00       		.byte	0
+ 467 0050 07       		.uleb128 0x7
+ 468 0051 0D       		.uleb128 0xd
+ 469 0052 00       		.byte	0
+ 470 0053 03       		.uleb128 0x3
+ 471 0054 08       		.uleb128 0x8
+ 472 0055 3A       		.uleb128 0x3a
+ 473 0056 0B       		.uleb128 0xb
+ 474 0057 3B       		.uleb128 0x3b
+ 475 0058 0B       		.uleb128 0xb
+ 476 0059 49       		.uleb128 0x49
+ 477 005a 13       		.uleb128 0x13
+ 478 005b 38       		.uleb128 0x38
+ 479 005c 0B       		.uleb128 0xb
+ 480 005d 00       		.byte	0
+ 481 005e 00       		.byte	0
+ 482 005f 08       		.uleb128 0x8
+ 483 0060 0D       		.uleb128 0xd
+ 484 0061 00       		.byte	0
+ 485 0062 03       		.uleb128 0x3
+ 486 0063 0E       		.uleb128 0xe
+ 487 0064 3A       		.uleb128 0x3a
+ 488 0065 0B       		.uleb128 0xb
+ 489 0066 3B       		.uleb128 0x3b
+ 490 0067 0B       		.uleb128 0xb
+ 491 0068 49       		.uleb128 0x49
+ 492 0069 13       		.uleb128 0x13
+ 493 006a 38       		.uleb128 0x38
+ 494 006b 0B       		.uleb128 0xb
+ 495 006c 00       		.byte	0
+ 496 006d 00       		.byte	0
+ 497 006e 09       		.uleb128 0x9
+ 498 006f 01       		.uleb128 0x1
+ 499 0070 01       		.byte	0x1
+ 500 0071 49       		.uleb128 0x49
+ 501 0072 13       		.uleb128 0x13
+ 502 0073 01       		.uleb128 0x1
+ 503 0074 13       		.uleb128 0x13
+ 504 0075 00       		.byte	0
+ 505 0076 00       		.byte	0
+ 506 0077 0A       		.uleb128 0xa
+ 507 0078 21       		.uleb128 0x21
+ 508 0079 00       		.byte	0
+ 509 007a 49       		.uleb128 0x49
+ 510 007b 13       		.uleb128 0x13
+ 511 007c 2F       		.uleb128 0x2f
+ 512 007d 0B       		.uleb128 0xb
+ 513 007e 00       		.byte	0
+ 514 007f 00       		.byte	0
+ 515 0080 0B       		.uleb128 0xb
+ 516 0081 2E       		.uleb128 0x2e
+ 517 0082 01       		.byte	0x1
+ 518 0083 3F       		.uleb128 0x3f
+ 519 0084 19       		.uleb128 0x19
+ 520 0085 03       		.uleb128 0x3
+ 521 0086 0E       		.uleb128 0xe
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccGCScBn.s 			page 11
 
 
- 513      69676E65 
- 513      6420696E 
- 513      7400
- 514              	.LASF28:
- 515 0062 73746174 		.ascii	"status\000"
- 515      757300
- 516              	.LASF7:
- 517 0069 6C6F6E67 		.ascii	"long long unsigned int\000"
- 517      206C6F6E 
- 517      6720756E 
- 517      7369676E 
- 517      65642069 
- 518              	.LASF9:
- 519 0080 5F5F7569 		.ascii	"__uint8_t\000"
- 519      6E74385F 
- 519      7400
- 520              	.LASF10:
- 521 008a 75696E74 		.ascii	"uint8_t\000"
- 521      385F7400 
- 522              	.LASF1:
- 523 0092 756E7369 		.ascii	"unsigned char\000"
- 523      676E6564 
- 523      20636861 
- 523      7200
- 524              	.LASF25:
- 525 00a0 433A5C55 		.ascii	"C:\\Users\\tsien\\Documents\\GitHub\\Battery_Manage"
- 525      73657273 
- 525      5C747369 
- 525      656E5C44 
- 525      6F63756D 
- 526 00ce 6D656E74 		.ascii	"ment_Board_PY2023\\BatteryBalance\\BatteryBalance.c"
- 526      5F426F61 
- 526      72645F50 
- 526      59323032 
- 526      335C4261 
- 527 00ff 7964736E 		.ascii	"ydsn\000"
- 527      00
- 528              	.LASF14:
- 529 0104 63686172 		.ascii	"char\000"
- 529      00
- 530              	.LASF4:
- 531 0109 6C6F6E67 		.ascii	"long int\000"
- 531      20696E74 
- 531      00
- 532              	.LASF17:
- 533 0112 64656275 		.ascii	"debugOutput\000"
- 533      674F7574 
- 533      70757400 
- 534              	.LASF13:
- 535 011e 646F7562 		.ascii	"double\000"
- 535      6C6500
- 536              	.LASF23:
- 537 0125 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 537      43313120 
- 537      352E342E 
- 537      31203230 
- 537      31363036 
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc6zQvBn.s 			page 12
+ 522 0087 3A       		.uleb128 0x3a
+ 523 0088 0B       		.uleb128 0xb
+ 524 0089 3B       		.uleb128 0x3b
+ 525 008a 0B       		.uleb128 0xb
+ 526 008b 27       		.uleb128 0x27
+ 527 008c 19       		.uleb128 0x19
+ 528 008d 49       		.uleb128 0x49
+ 529 008e 13       		.uleb128 0x13
+ 530 008f 8701     		.uleb128 0x87
+ 531 0091 19       		.uleb128 0x19
+ 532 0092 11       		.uleb128 0x11
+ 533 0093 01       		.uleb128 0x1
+ 534 0094 12       		.uleb128 0x12
+ 535 0095 06       		.uleb128 0x6
+ 536 0096 40       		.uleb128 0x40
+ 537 0097 18       		.uleb128 0x18
+ 538 0098 9742     		.uleb128 0x2117
+ 539 009a 19       		.uleb128 0x19
+ 540 009b 01       		.uleb128 0x1
+ 541 009c 13       		.uleb128 0x13
+ 542 009d 00       		.byte	0
+ 543 009e 00       		.byte	0
+ 544 009f 0C       		.uleb128 0xc
+ 545 00a0 34       		.uleb128 0x34
+ 546 00a1 00       		.byte	0
+ 547 00a2 03       		.uleb128 0x3
+ 548 00a3 0E       		.uleb128 0xe
+ 549 00a4 3A       		.uleb128 0x3a
+ 550 00a5 0B       		.uleb128 0xb
+ 551 00a6 3B       		.uleb128 0x3b
+ 552 00a7 0B       		.uleb128 0xb
+ 553 00a8 49       		.uleb128 0x49
+ 554 00a9 13       		.uleb128 0x13
+ 555 00aa 02       		.uleb128 0x2
+ 556 00ab 18       		.uleb128 0x18
+ 557 00ac 00       		.byte	0
+ 558 00ad 00       		.byte	0
+ 559 00ae 0D       		.uleb128 0xd
+ 560 00af 34       		.uleb128 0x34
+ 561 00b0 00       		.byte	0
+ 562 00b1 03       		.uleb128 0x3
+ 563 00b2 0E       		.uleb128 0xe
+ 564 00b3 3A       		.uleb128 0x3a
+ 565 00b4 0B       		.uleb128 0xb
+ 566 00b5 3B       		.uleb128 0x3b
+ 567 00b6 0B       		.uleb128 0xb
+ 568 00b7 49       		.uleb128 0x49
+ 569 00b8 13       		.uleb128 0x13
+ 570 00b9 02       		.uleb128 0x2
+ 571 00ba 17       		.uleb128 0x17
+ 572 00bb 00       		.byte	0
+ 573 00bc 00       		.byte	0
+ 574 00bd 0E       		.uleb128 0xe
+ 575 00be 34       		.uleb128 0x34
+ 576 00bf 00       		.byte	0
+ 577 00c0 03       		.uleb128 0x3
+ 578 00c1 08       		.uleb128 0x8
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccGCScBn.s 			page 12
 
 
- 538 0158 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
- 538      20726576 
- 538      6973696F 
- 538      6E203233 
- 538      37373135 
- 539 018b 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 539      66756E63 
- 539      74696F6E 
- 539      2D736563 
- 539      74696F6E 
- 540              	.LASF20:
- 541 01b3 696E6974 		.ascii	"init_INA226\000"
- 541      5F494E41 
- 541      32323600 
- 542              	.LASF0:
- 543 01bf 7369676E 		.ascii	"signed char\000"
- 543      65642063 
- 543      68617200 
- 544              	.LASF15:
- 545 01cb 6C6F6E67 		.ascii	"long double\000"
- 545      20646F75 
- 545      626C6500 
- 546              	.LASF19:
- 547 01d7 42617474 		.ascii	"BatteryBalanceInit\000"
- 547      65727942 
- 547      616C616E 
- 547      6365496E 
- 547      697400
- 548              	.LASF12:
- 549 01ea 666C6F61 		.ascii	"float\000"
- 549      7400
- 550              	.LASF21:
- 551 01f0 67657443 		.ascii	"getCurrent\000"
- 551      75727265 
- 551      6E7400
- 552              	.LASF2:
- 553 01fb 73686F72 		.ascii	"short int\000"
- 553      7420696E 
- 553      7400
- 554              	.LASF27:
- 555 0205 63757272 		.ascii	"current\000"
- 555      656E7400 
- 556              	.LASF16:
- 557 020d 73697A65 		.ascii	"sizetype\000"
- 557      74797065 
- 557      00
- 558              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 579 00c2 3A       		.uleb128 0x3a
+ 580 00c3 0B       		.uleb128 0xb
+ 581 00c4 3B       		.uleb128 0x3b
+ 582 00c5 0B       		.uleb128 0xb
+ 583 00c6 49       		.uleb128 0x49
+ 584 00c7 13       		.uleb128 0x13
+ 585 00c8 1C       		.uleb128 0x1c
+ 586 00c9 0B       		.uleb128 0xb
+ 587 00ca 00       		.byte	0
+ 588 00cb 00       		.byte	0
+ 589 00cc 0F       		.uleb128 0xf
+ 590 00cd 34       		.uleb128 0x34
+ 591 00ce 00       		.byte	0
+ 592 00cf 03       		.uleb128 0x3
+ 593 00d0 0E       		.uleb128 0xe
+ 594 00d1 3A       		.uleb128 0x3a
+ 595 00d2 0B       		.uleb128 0xb
+ 596 00d3 3B       		.uleb128 0x3b
+ 597 00d4 0B       		.uleb128 0xb
+ 598 00d5 49       		.uleb128 0x49
+ 599 00d6 13       		.uleb128 0x13
+ 600 00d7 00       		.byte	0
+ 601 00d8 00       		.byte	0
+ 602 00d9 10       		.uleb128 0x10
+ 603 00da 898201   		.uleb128 0x4109
+ 604 00dd 00       		.byte	0
+ 605 00de 11       		.uleb128 0x11
+ 606 00df 01       		.uleb128 0x1
+ 607 00e0 31       		.uleb128 0x31
+ 608 00e1 13       		.uleb128 0x13
+ 609 00e2 00       		.byte	0
+ 610 00e3 00       		.byte	0
+ 611 00e4 11       		.uleb128 0x11
+ 612 00e5 898201   		.uleb128 0x4109
+ 613 00e8 01       		.byte	0x1
+ 614 00e9 11       		.uleb128 0x11
+ 615 00ea 01       		.uleb128 0x1
+ 616 00eb 31       		.uleb128 0x31
+ 617 00ec 13       		.uleb128 0x13
+ 618 00ed 01       		.uleb128 0x1
+ 619 00ee 13       		.uleb128 0x13
+ 620 00ef 00       		.byte	0
+ 621 00f0 00       		.byte	0
+ 622 00f1 12       		.uleb128 0x12
+ 623 00f2 8A8201   		.uleb128 0x410a
+ 624 00f5 00       		.byte	0
+ 625 00f6 02       		.uleb128 0x2
+ 626 00f7 18       		.uleb128 0x18
+ 627 00f8 9142     		.uleb128 0x2111
+ 628 00fa 18       		.uleb128 0x18
+ 629 00fb 00       		.byte	0
+ 630 00fc 00       		.byte	0
+ 631 00fd 13       		.uleb128 0x13
+ 632 00fe 898201   		.uleb128 0x4109
+ 633 0101 01       		.byte	0x1
+ 634 0102 11       		.uleb128 0x11
+ 635 0103 01       		.uleb128 0x1
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccGCScBn.s 			page 13
+
+
+ 636 0104 31       		.uleb128 0x31
+ 637 0105 13       		.uleb128 0x13
+ 638 0106 00       		.byte	0
+ 639 0107 00       		.byte	0
+ 640 0108 14       		.uleb128 0x14
+ 641 0109 0F       		.uleb128 0xf
+ 642 010a 00       		.byte	0
+ 643 010b 0B       		.uleb128 0xb
+ 644 010c 0B       		.uleb128 0xb
+ 645 010d 49       		.uleb128 0x49
+ 646 010e 13       		.uleb128 0x13
+ 647 010f 00       		.byte	0
+ 648 0110 00       		.byte	0
+ 649 0111 15       		.uleb128 0x15
+ 650 0112 34       		.uleb128 0x34
+ 651 0113 00       		.byte	0
+ 652 0114 03       		.uleb128 0x3
+ 653 0115 0E       		.uleb128 0xe
+ 654 0116 3A       		.uleb128 0x3a
+ 655 0117 0B       		.uleb128 0xb
+ 656 0118 3B       		.uleb128 0x3b
+ 657 0119 0B       		.uleb128 0xb
+ 658 011a 49       		.uleb128 0x49
+ 659 011b 13       		.uleb128 0x13
+ 660 011c 3F       		.uleb128 0x3f
+ 661 011d 19       		.uleb128 0x19
+ 662 011e 02       		.uleb128 0x2
+ 663 011f 18       		.uleb128 0x18
+ 664 0120 00       		.byte	0
+ 665 0121 00       		.byte	0
+ 666 0122 16       		.uleb128 0x16
+ 667 0123 2E       		.uleb128 0x2e
+ 668 0124 00       		.byte	0
+ 669 0125 3F       		.uleb128 0x3f
+ 670 0126 19       		.uleb128 0x19
+ 671 0127 3C       		.uleb128 0x3c
+ 672 0128 19       		.uleb128 0x19
+ 673 0129 6E       		.uleb128 0x6e
+ 674 012a 0E       		.uleb128 0xe
+ 675 012b 03       		.uleb128 0x3
+ 676 012c 0E       		.uleb128 0xe
+ 677 012d 3A       		.uleb128 0x3a
+ 678 012e 0B       		.uleb128 0xb
+ 679 012f 3B       		.uleb128 0x3b
+ 680 0130 0B       		.uleb128 0xb
+ 681 0131 00       		.byte	0
+ 682 0132 00       		.byte	0
+ 683 0133 17       		.uleb128 0x17
+ 684 0134 2E       		.uleb128 0x2e
+ 685 0135 00       		.byte	0
+ 686 0136 3F       		.uleb128 0x3f
+ 687 0137 19       		.uleb128 0x19
+ 688 0138 3C       		.uleb128 0x3c
+ 689 0139 19       		.uleb128 0x19
+ 690 013a 6E       		.uleb128 0x6e
+ 691 013b 0E       		.uleb128 0xe
+ 692 013c 03       		.uleb128 0x3
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccGCScBn.s 			page 14
+
+
+ 693 013d 0E       		.uleb128 0xe
+ 694 013e 3A       		.uleb128 0x3a
+ 695 013f 0B       		.uleb128 0xb
+ 696 0140 3B       		.uleb128 0x3b
+ 697 0141 05       		.uleb128 0x5
+ 698 0142 00       		.byte	0
+ 699 0143 00       		.byte	0
+ 700 0144 00       		.byte	0
+ 701              		.section	.debug_loc,"",%progbits
+ 702              	.Ldebug_loc0:
+ 703              	.LLST0:
+ 704 0000 20000000 		.4byte	.LVL4
+ 705 0004 26000000 		.4byte	.LVL5
+ 706 0008 0100     		.2byte	0x1
+ 707 000a 50       		.byte	0x50
+ 708 000b 00000000 		.4byte	0
+ 709 000f 00000000 		.4byte	0
+ 710              		.section	.debug_aranges,"",%progbits
+ 711 0000 1C000000 		.4byte	0x1c
+ 712 0004 0200     		.2byte	0x2
+ 713 0006 00000000 		.4byte	.Ldebug_info0
+ 714 000a 04       		.byte	0x4
+ 715 000b 00       		.byte	0
+ 716 000c 0000     		.2byte	0
+ 717 000e 0000     		.2byte	0
+ 718 0010 00000000 		.4byte	.LFB32
+ 719 0014 38000000 		.4byte	.LFE32-.LFB32
+ 720 0018 00000000 		.4byte	0
+ 721 001c 00000000 		.4byte	0
+ 722              		.section	.debug_ranges,"",%progbits
+ 723              	.Ldebug_ranges0:
+ 724 0000 00000000 		.4byte	.LFB32
+ 725 0004 38000000 		.4byte	.LFE32
+ 726 0008 00000000 		.4byte	0
+ 727 000c 00000000 		.4byte	0
+ 728              		.section	.debug_line,"",%progbits
+ 729              	.Ldebug_line0:
+ 730 0000 C1010000 		.section	.debug_str,"MS",%progbits,1
+ 730      0200A201 
+ 730      00000201 
+ 730      FB0E0D00 
+ 730      01010101 
+ 731              	.LASF3:
+ 732 0000 5F5F7569 		.ascii	"__uint8_t\000"
+ 732      6E74385F 
+ 732      7400
+ 733              	.LASF28:
+ 734 000a 4442475F 		.ascii	"DBG_UART_UartPutString\000"
+ 734      55415254 
+ 734      5F556172 
+ 734      74507574 
+ 734      53747269 
+ 735              	.LASF6:
+ 736 0021 6C6F6E67 		.ascii	"long int\000"
+ 736      20696E74 
+ 736      00
+ 737              	.LASF13:
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccGCScBn.s 			page 15
+
+
+ 738 002a 75696E74 		.ascii	"uint8\000"
+ 738      3800
+ 739              	.LASF22:
+ 740 0030 73746174 		.ascii	"status\000"
+ 740      757300
+ 741              	.LASF14:
+ 742 0037 666C6F61 		.ascii	"float\000"
+ 742      7400
+ 743              	.LASF19:
+ 744 003d 64617461 		.ascii	"data\000"
+ 744      00
+ 745              	.LASF29:
+ 746 0042 67657443 		.ascii	"getCurrent\000"
+ 746      75727265 
+ 746      6E7400
+ 747              	.LASF27:
+ 748 004d 4442475F 		.ascii	"DBG_UART_Init\000"
+ 748      55415254 
+ 748      5F496E69 
+ 748      7400
+ 749              	.LASF7:
+ 750 005b 6C6F6E67 		.ascii	"long unsigned int\000"
+ 750      20756E73 
+ 750      69676E65 
+ 750      6420696E 
+ 750      7400
+ 751              	.LASF5:
+ 752 006d 73686F72 		.ascii	"short unsigned int\000"
+ 752      7420756E 
+ 752      7369676E 
+ 752      65642069 
+ 752      6E7400
+ 753              	.LASF33:
+ 754 0080 433A5C55 		.ascii	"C:\\Users\\tsien\\Documents\\GitHub\\Battery_Manage"
+ 754      73657273 
+ 754      5C747369 
+ 754      656E5C44 
+ 754      6F63756D 
+ 755 00ae 6D656E74 		.ascii	"ment_Board_PY2023\\BatteryBalance\\BatteryBalance.c"
+ 755      5F426F61 
+ 755      72645F50 
+ 755      59323032 
+ 755      335C4261 
+ 756 00df 7964736E 		.ascii	"ydsn\000"
+ 756      00
+ 757              	.LASF1:
+ 758 00e4 756E7369 		.ascii	"unsigned char\000"
+ 758      676E6564 
+ 758      20636861 
+ 758      7200
+ 759              	.LASF4:
+ 760 00f2 5F5F7569 		.ascii	"__uint16_t\000"
+ 760      6E743136 
+ 760      5F7400
+ 761              	.LASF15:
+ 762 00fd 646F7562 		.ascii	"double\000"
+ 762      6C6500
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccGCScBn.s 			page 16
+
+
+ 763              	.LASF25:
+ 764 0104 42617474 		.ascii	"BatteryBalanceInit\000"
+ 764      65727942 
+ 764      616C616E 
+ 764      6365496E 
+ 764      697400
+ 765              	.LASF2:
+ 766 0117 73686F72 		.ascii	"short int\000"
+ 766      7420696E 
+ 766      7400
+ 767              	.LASF34:
+ 768 0121 6D61696E 		.ascii	"main\000"
+ 768      00
+ 769              	.LASF10:
+ 770 0126 756E7369 		.ascii	"unsigned int\000"
+ 770      676E6564 
+ 770      20696E74 
+ 770      00
+ 771              	.LASF24:
+ 772 0133 61646472 		.ascii	"address\000"
+ 772      65737300 
+ 773              	.LASF9:
+ 774 013b 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 774      206C6F6E 
+ 774      6720756E 
+ 774      7369676E 
+ 774      65642069 
+ 775              	.LASF11:
+ 776 0152 75696E74 		.ascii	"uint8_t\000"
+ 776      385F7400 
+ 777              	.LASF31:
+ 778 015a 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 778      43313120 
+ 778      352E342E 
+ 778      31203230 
+ 778      31363036 
+ 779 018d 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ 779      20726576 
+ 779      6973696F 
+ 779      6E203233 
+ 779      37373135 
+ 780 01c0 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 780      66756E63 
+ 780      74696F6E 
+ 780      2D736563 
+ 780      74696F6E 
+ 781              	.LASF20:
+ 782 01e8 43414E50 		.ascii	"CANPacket\000"
+ 782      61636B65 
+ 782      7400
+ 783              	.LASF18:
+ 784 01f2 73697A65 		.ascii	"sizetype\000"
+ 784      74797065 
+ 784      00
+ 785              	.LASF8:
+ 786 01fb 6C6F6E67 		.ascii	"long long int\000"
+ 786      206C6F6E 
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccGCScBn.s 			page 17
+
+
+ 786      6720696E 
+ 786      7400
+ 787              	.LASF32:
+ 788 0209 6D61696E 		.ascii	"main.c\000"
+ 788      2E6300
+ 789              	.LASF16:
+ 790 0210 63686172 		.ascii	"char\000"
+ 790      00
+ 791              	.LASF12:
+ 792 0215 75696E74 		.ascii	"uint16_t\000"
+ 792      31365F74 
+ 792      00
+ 793              	.LASF21:
+ 794 021e 63757272 		.ascii	"current\000"
+ 794      656E7400 
+ 795              	.LASF26:
+ 796 0226 696E6974 		.ascii	"init_INA226\000"
+ 796      5F494E41 
+ 796      32323600 
+ 797              	.LASF23:
+ 798 0232 64656275 		.ascii	"debugOutput\000"
+ 798      674F7574 
+ 798      70757400 
+ 799              	.LASF17:
+ 800 023e 6C6F6E67 		.ascii	"long double\000"
+ 800      20646F75 
+ 800      626C6500 
+ 801              	.LASF0:
+ 802 024a 7369676E 		.ascii	"signed char\000"
+ 802      65642063 
+ 802      68617200 
+ 803              	.LASF30:
+ 804 0256 43794465 		.ascii	"CyDelay\000"
+ 804      6C617900 
+ 805              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

@@ -1,8 +1,12 @@
 # BatteryBalance
-# 2024-01-06 20:45:57Z
+# 2024-01-12 02:58:31Z
 
 # IO_2@[IOP=(3)][IoId=(2)] is reserved: SWDDebugEnabled
 dont_use_io iocell 3 2
 # IO_3@[IOP=(3)][IoId=(3)] is reserved: SWDDebugEnabled
 dont_use_io iocell 3 3
 set_location "ClockGenBlock" m0s8clockgenblockcell -1 -1 0
+set_io "\INA226_I2C:sda(0)\" iocell 0 5
+set_io "\INA226_I2C:scl(0)\" iocell 0 4
+set_io "\DBG_UART:tx(0)\" iocell 4 1
+set_io "\DBG_UART:rx(0)\" iocell 4 0
