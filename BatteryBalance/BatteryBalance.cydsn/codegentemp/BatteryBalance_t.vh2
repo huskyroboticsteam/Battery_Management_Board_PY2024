@@ -1,5 +1,5 @@
 -- Project:   C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\BatteryBalance.cyprj
--- Generated: 01/11/2024 18:58:33
+-- Generated: 01/25/2024 19:33:48
 -- PSoC Creator  4.4
 
 ENTITY BatteryBalance IS
@@ -8,7 +8,15 @@ ENTITY BatteryBalance IS
         \INA226_I2C:scl(0)_PAD\ : INOUT std_ulogic;
         \DBG_UART:tx(0)_PAD\ : INOUT std_ulogic;
         \DBG_UART:rx(0)_PAD\ : IN std_ulogic);
-    ATTRIBUTE voltage_VDDA OF __DEFAULT__ : ENTITY IS 3.3e0;
+    ATTRIBUTE voltage_VDDIO_A_1 OF __DEFAULT__ : ENTITY IS 3.3e0;
+    ATTRIBUTE voltage_VDDA_0 OF __DEFAULT__ : ENTITY IS 3.3e0;
+    ATTRIBUTE voltage_VDDA_CTB OF __DEFAULT__ : ENTITY IS 3.3e0;
+    ATTRIBUTE voltage_VDDD_0 OF __DEFAULT__ : ENTITY IS 3.3e0;
+    ATTRIBUTE voltage_VDDD_1 OF __DEFAULT__ : ENTITY IS 3.3e0;
+    ATTRIBUTE voltage_VDDIO_1 OF __DEFAULT__ : ENTITY IS 3.3e0;
+    ATTRIBUTE voltage_VDDIO_2 OF __DEFAULT__ : ENTITY IS 3.3e0;
+    ATTRIBUTE voltage_VDDIO_A OF __DEFAULT__ : ENTITY IS 3.3e0;
+    ATTRIBUTE voltage_VDDIO OF __DEFAULT__ : ENTITY IS 3.3e0;
     ATTRIBUTE voltage_VDDD OF __DEFAULT__ : ENTITY IS 3.3e0;
 END BatteryBalance;
 
@@ -21,6 +29,7 @@ ARCHITECTURE __DEFAULT__ OF BatteryBalance IS
     SIGNAL ClockBlock_LFClk : bit;
     SIGNAL ClockBlock_Routed1 : bit;
     SIGNAL ClockBlock_SysClk : bit;
+    SIGNAL ClockBlock_WCO : bit;
     SIGNAL Net_204 : bit;
     SIGNAL Net_213 : bit;
     SIGNAL Net_220 : bit;
@@ -67,16 +76,16 @@ ARCHITECTURE __DEFAULT__ OF BatteryBalance IS
     ATTRIBUTE Location OF ClockGenBlock : LABEL IS "F(CLK_GEN,0)";
     ATTRIBUTE Location OF ClockBlock : LABEL IS "F(Clock,0)";
     ATTRIBUTE lib_model OF \INA226_I2C:sda(0)\ : LABEL IS "iocell1";
-    ATTRIBUTE Location OF \INA226_I2C:sda(0)\ : LABEL IS "P0[5]";
+    ATTRIBUTE Location OF \INA226_I2C:sda(0)\ : LABEL IS "P1[1]";
     ATTRIBUTE lib_model OF \INA226_I2C:scl(0)\ : LABEL IS "iocell2";
-    ATTRIBUTE Location OF \INA226_I2C:scl(0)\ : LABEL IS "P0[4]";
+    ATTRIBUTE Location OF \INA226_I2C:scl(0)\ : LABEL IS "P1[0]";
     ATTRIBUTE lib_model OF \DBG_UART:tx(0)\ : LABEL IS "iocell3";
-    ATTRIBUTE Location OF \DBG_UART:tx(0)\ : LABEL IS "P4[1]";
+    ATTRIBUTE Location OF \DBG_UART:tx(0)\ : LABEL IS "P7[1]";
     ATTRIBUTE lib_model OF \DBG_UART:rx(0)\ : LABEL IS "iocell4";
-    ATTRIBUTE Location OF \DBG_UART:rx(0)\ : LABEL IS "P4[0]";
-    ATTRIBUTE Location OF \INA226_I2C:SCB_IRQ\ : LABEL IS "[IntrContainer=(0)][IntrId=(11)]";
-    ATTRIBUTE Location OF \INA226_I2C:SCB\ : LABEL IS "F(SCB,1)";
-    ATTRIBUTE Location OF \DBG_UART:SCB\ : LABEL IS "F(SCB,0)";
+    ATTRIBUTE Location OF \DBG_UART:rx(0)\ : LABEL IS "P7[0]";
+    ATTRIBUTE Location OF \INA226_I2C:SCB_IRQ\ : LABEL IS "[IntrContainer=(0)][IntrId=(8)]";
+    ATTRIBUTE Location OF \INA226_I2C:SCB\ : LABEL IS "F(SCB,0)";
+    ATTRIBUTE Location OF \DBG_UART:SCB\ : LABEL IS "F(SCB,3)";
     COMPONENT interrupt
         PORT (
             interrupt : IN std_ulogic;
@@ -272,9 +281,11 @@ BEGIN
             sysclk => ClockBlock_SysClk,
             ilo => ClockBlock_ILO,
             lfclk => ClockBlock_LFClk,
+            wco => ClockBlock_WCO,
             dsi_in_0 => ClockBlock_Routed1,
-            ff_div_2 => \DBG_UART:Net_847_ff3\,
-            ff_div_3 => \INA226_I2C:Net_847_ff2\);
+            ff_div_2 => \INA226_I2C:Net_847_ff2\,
+            ff_div_3 => open,
+            ff_div_5 => \DBG_UART:Net_847_ff3\);
 
     \INA226_I2C:sda\:logicalport
         GENERIC MAP(

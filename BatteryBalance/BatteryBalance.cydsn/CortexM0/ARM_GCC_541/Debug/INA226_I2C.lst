@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 1
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccmnjagw.s 			page 1
 
 
    1              		.syntax unified
@@ -25,7 +25,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 1
   22              		.thumb_func
   23              		.type	INA226_I2C_ScbEnableIntr, %function
   24              	INA226_I2C_ScbEnableIntr:
-  25              	.LFB7:
+  25              	.LFB8:
   26              		.file 1 "Generated_Source\\PSoC4\\INA226_I2C.c"
    1:Generated_Source\PSoC4/INA226_I2C.c **** /***************************************************************************//**
    2:Generated_Source\PSoC4/INA226_I2C.c **** * \file INA226_I2C.c
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 1
   29:Generated_Source\PSoC4/INA226_I2C.c ****     #include "INA226_I2C_SPI_UART_PVT.h"
   30:Generated_Source\PSoC4/INA226_I2C.c **** #endif /* (INA226_I2C_SCB_MODE_SPI_INC || INA226_I2C_SCB_MODE_UART_INC) */
   31:Generated_Source\PSoC4/INA226_I2C.c **** 
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 2
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccmnjagw.s 			page 2
 
 
   32:Generated_Source\PSoC4/INA226_I2C.c **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 1
   86:Generated_Source\PSoC4/INA226_I2C.c ****     /** This global variable stores TX interrupt sources after 
   87:Generated_Source\PSoC4/INA226_I2C.c ****     * INA226_I2C_Stop() is called. Only these TX interrupt sources 
   88:Generated_Source\PSoC4/INA226_I2C.c ****     * will be restored on a subsequent INA226_I2C_Enable() call.
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 3
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccmnjagw.s 			page 3
 
 
   89:Generated_Source\PSoC4/INA226_I2C.c ****     */
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 1
  143:Generated_Source\PSoC4/INA226_I2C.c **** 
  144:Generated_Source\PSoC4/INA226_I2C.c **** #elif (INA226_I2C_SCB_MODE_EZI2C_CONST_CFG)
  145:Generated_Source\PSoC4/INA226_I2C.c ****     INA226_I2C_EzI2CInit();
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 4
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccmnjagw.s 			page 4
 
 
  146:Generated_Source\PSoC4/INA226_I2C.c **** 
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 1
  200:Generated_Source\PSoC4/INA226_I2C.c **** *  After this function call, the component is enabled and ready for operation.
  201:Generated_Source\PSoC4/INA226_I2C.c **** *  When configuration is set to "Unconfigured SCB", the component must first be
  202:Generated_Source\PSoC4/INA226_I2C.c **** *  initialized to operate in one of the following configurations: I2C, SPI, UART
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 5
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccmnjagw.s 			page 5
 
 
  203:Generated_Source\PSoC4/INA226_I2C.c **** *  or EZI2C. Otherwise this function does not enable the component.
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 1
  257:Generated_Source\PSoC4/INA226_I2C.c ****     * is disabled.
  258:Generated_Source\PSoC4/INA226_I2C.c ****     */
  259:Generated_Source\PSoC4/INA226_I2C.c ****     INA226_I2C_SetTxInterruptMode(INA226_I2C_NO_INTR_SOURCES);
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 6
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccmnjagw.s 			page 6
 
 
  260:Generated_Source\PSoC4/INA226_I2C.c **** 
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 1
  314:Generated_Source\PSoC4/INA226_I2C.c **** }
  315:Generated_Source\PSoC4/INA226_I2C.c **** 
  316:Generated_Source\PSoC4/INA226_I2C.c **** 
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 7
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccmnjagw.s 			page 7
 
 
  317:Generated_Source\PSoC4/INA226_I2C.c **** #if (INA226_I2C_SCB_IRQ_INTERNAL)
@@ -418,13 +418,13 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 1
  363:Generated_Source\PSoC4/INA226_I2C.c ****             INA226_I2C_EnableInt();
  364:Generated_Source\PSoC4/INA226_I2C.c ****         }
  365:Generated_Source\PSoC4/INA226_I2C.c **** 
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 8
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccmnjagw.s 			page 8
 
 
  366:Generated_Source\PSoC4/INA226_I2C.c ****     #else
  367:Generated_Source\PSoC4/INA226_I2C.c ****         INA226_I2C_EnableInt();
   35              		.loc 1 367 0
-  36 0002 0B20     		movs	r0, #11
+  36 0002 0820     		movs	r0, #8
   37 0004 FFF7FEFF 		bl	CyIntEnable
   38              	.LVL0:
  368:Generated_Source\PSoC4/INA226_I2C.c **** 
@@ -435,7 +435,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 1
   40              		@ sp needed
   41 0008 10BD     		pop	{r4, pc}
   42              		.cfi_endproc
-  43              	.LFE7:
+  43              	.LFE8:
   44              		.size	INA226_I2C_ScbEnableIntr, .-INA226_I2C_ScbEnableIntr
   45 000a C046     		.section	.text.INA226_I2C_ScbModeStop,"ax",%progbits
   46              		.align	2
@@ -443,7 +443,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 1
   48              		.thumb_func
   49              		.type	INA226_I2C_ScbModeStop, %function
   50              	INA226_I2C_ScbModeStop:
-  51              	.LFB9:
+  51              	.LFB10:
  372:Generated_Source\PSoC4/INA226_I2C.c **** 
  373:Generated_Source\PSoC4/INA226_I2C.c **** 
  374:Generated_Source\PSoC4/INA226_I2C.c **** /*******************************************************************************
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 1
  403:Generated_Source\PSoC4/INA226_I2C.c ****     INA226_I2C_UartPostEnable();
  404:Generated_Source\PSoC4/INA226_I2C.c **** 
  405:Generated_Source\PSoC4/INA226_I2C.c **** #else
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 9
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccmnjagw.s 			page 9
 
 
  406:Generated_Source\PSoC4/INA226_I2C.c ****     /* Unknown mode: do nothing */
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 1
  449:Generated_Source\PSoC4/INA226_I2C.c **** #elif (INA226_I2C_SCB_MODE_SPI_CONST_CFG)
  450:Generated_Source\PSoC4/INA226_I2C.c ****     INA226_I2C_SpiStop();
  451:Generated_Source\PSoC4/INA226_I2C.c **** 
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 10
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccmnjagw.s 			page 10
 
 
  452:Generated_Source\PSoC4/INA226_I2C.c **** #elif (INA226_I2C_SCB_MODE_UART_CONST_CFG)
@@ -552,7 +552,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 1
   64              		@ sp needed
   65 0006 10BD     		pop	{r4, pc}
   66              		.cfi_endproc
-  67              	.LFE9:
+  67              	.LFE10:
   68              		.size	INA226_I2C_ScbModeStop, .-INA226_I2C_ScbModeStop
   69              		.section	.text.INA226_I2C_Init,"ax",%progbits
   70              		.align	2
@@ -561,7 +561,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 1
   73              		.thumb_func
   74              		.type	INA226_I2C_Init, %function
   75              	INA226_I2C_Init:
-  76              	.LFB0:
+  76              	.LFB1:
  124:Generated_Source\PSoC4/INA226_I2C.c **** #if (INA226_I2C_SCB_MODE_UNCONFIG_CONST_CFG)
   77              		.loc 1 124 0
   78              		.cfi_startproc
@@ -580,7 +580,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 1
   89              		@ sp needed
   90 0006 10BD     		pop	{r4, pc}
   91              		.cfi_endproc
-  92              	.LFE0:
+  92              	.LFE1:
   93              		.size	INA226_I2C_Init, .-INA226_I2C_Init
   94              		.section	.text.INA226_I2C_Enable,"ax",%progbits
   95              		.align	2
@@ -589,7 +589,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 1
   98              		.thumb_func
   99              		.type	INA226_I2C_Enable, %function
  100              	INA226_I2C_Enable:
- 101              	.LFB1:
+ 101              	.LFB2:
  172:Generated_Source\PSoC4/INA226_I2C.c **** #if (INA226_I2C_SCB_MODE_UNCONFIG_CONST_CFG)
  102              		.loc 1 172 0
  103              		.cfi_startproc
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 1
  106 0000 10B5     		push	{r4, lr}
  107              		.cfi_def_cfa_offset 8
  108              		.cfi_offset 4, -8
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 11
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccmnjagw.s 			page 11
 
 
  109              		.cfi_offset 14, -4
@@ -621,9 +621,9 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 1
  123              	.L6:
  124              		.align	2
  125              	.L5:
- 126 0014 00000740 		.word	1074200576
+ 126 0014 00002440 		.word	1076101120
  127              		.cfi_endproc
- 128              	.LFE1:
+ 128              	.LFE2:
  129              		.size	INA226_I2C_Enable, .-INA226_I2C_Enable
  130              		.section	.text.INA226_I2C_Start,"ax",%progbits
  131              		.align	2
@@ -632,7 +632,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 1
  134              		.thumb_func
  135              		.type	INA226_I2C_Start, %function
  136              	INA226_I2C_Start:
- 137              	.LFB2:
+ 137              	.LFB3:
  211:Generated_Source\PSoC4/INA226_I2C.c ****     if (0u == INA226_I2C_initVar)
  138              		.loc 1 211 0
  139              		.cfi_startproc
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 1
  156 0010 024B     		ldr	r3, .L9
  157 0012 1A70     		strb	r2, [r3]
  158              	.L8:
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 12
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccmnjagw.s 			page 12
 
 
  218:Generated_Source\PSoC4/INA226_I2C.c **** }
@@ -674,7 +674,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 1
  167              	.L9:
  168 001c 00000000 		.word	.LANCHOR0
  169              		.cfi_endproc
- 170              	.LFE2:
+ 170              	.LFE3:
  171              		.size	INA226_I2C_Start, .-INA226_I2C_Start
  172              		.section	.text.INA226_I2C_Stop,"ax",%progbits
  173              		.align	2
@@ -683,7 +683,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 1
  176              		.thumb_func
  177              		.type	INA226_I2C_Stop, %function
  178              	INA226_I2C_Stop:
- 179              	.LFB3:
+ 179              	.LFB4:
  240:Generated_Source\PSoC4/INA226_I2C.c **** #if (INA226_I2C_SCB_IRQ_INTERNAL)
  180              		.loc 1 240 0
  181              		.cfi_startproc
@@ -695,7 +695,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 1
  187              		.cfi_offset 14, -4
  242:Generated_Source\PSoC4/INA226_I2C.c **** #endif /* (INA226_I2C_SCB_IRQ_INTERNAL) */
  188              		.loc 1 242 0
- 189 0002 0B20     		movs	r0, #11
+ 189 0002 0820     		movs	r0, #8
  190 0004 FFF7FEFF 		bl	CyIntDisable
  191              	.LVL6:
  246:Generated_Source\PSoC4/INA226_I2C.c **** 
@@ -716,9 +716,9 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 1
  204 001a 1A60     		str	r2, [r3]
  262:Generated_Source\PSoC4/INA226_I2C.c **** #endif /* (INA226_I2C_SCB_IRQ_INTERNAL) */
  205              		.loc 1 262 0
- 206 001c 0B20     		movs	r0, #11
+ 206 001c 0820     		movs	r0, #8
  207 001e FFF7FEFF 		bl	CyIntClearPending
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 13
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccmnjagw.s 			page 13
 
 
  208              	.LVL8:
@@ -729,10 +729,10 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 1
  212              	.L13:
  213              		.align	2
  214              	.L12:
- 215 0024 00000740 		.word	1074200576
- 216 0028 880F0740 		.word	1074204552
+ 215 0024 00002440 		.word	1076101120
+ 216 0028 880F2440 		.word	1076105096
  217              		.cfi_endproc
- 218              	.LFE3:
+ 218              	.LFE4:
  219              		.size	INA226_I2C_Stop, .-INA226_I2C_Stop
  220              		.section	.text.INA226_I2C_SetRxFifoLevel,"ax",%progbits
  221              		.align	2
@@ -741,7 +741,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 1
  224              		.thumb_func
  225              		.type	INA226_I2C_SetRxFifoLevel, %function
  226              	INA226_I2C_SetRxFifoLevel:
- 227              	.LFB4:
+ 227              	.LFB5:
  280:Generated_Source\PSoC4/INA226_I2C.c ****     uint32 rxFifoCtrl;
  228              		.loc 1 280 0
  229              		.cfi_startproc
@@ -756,7 +756,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 1
  237              	.LVL10:
  285:Generated_Source\PSoC4/INA226_I2C.c ****     rxFifoCtrl |= ((uint32) (INA226_I2C_RX_FIFO_CTRL_TRIGGER_LEVEL_MASK & level));
  238              		.loc 1 285 0
- 239 0004 0721     		movs	r1, #7
+ 239 0004 0F21     		movs	r1, #15
  240 0006 8B43     		bics	r3, r1
  241              	.LVL11:
  286:Generated_Source\PSoC4/INA226_I2C.c **** 
@@ -775,10 +775,10 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 1
  252              	.L16:
  253              		.align	2
  254              	.L15:
- 255 0010 04030740 		.word	1074201348
+ 255 0010 04032440 		.word	1076101892
  256              		.cfi_endproc
- 257              	.LFE4:
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 14
+ 257              	.LFE5:
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccmnjagw.s 			page 14
 
 
  258              		.size	INA226_I2C_SetRxFifoLevel, .-INA226_I2C_SetRxFifoLevel
@@ -789,7 +789,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 1
  263              		.thumb_func
  264              		.type	INA226_I2C_SetTxFifoLevel, %function
  265              	INA226_I2C_SetTxFifoLevel:
- 266              	.LFB5:
+ 266              	.LFB6:
  305:Generated_Source\PSoC4/INA226_I2C.c ****     uint32 txFifoCtrl;
  267              		.loc 1 305 0
  268              		.cfi_startproc
@@ -804,7 +804,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 1
  276              	.LVL15:
  310:Generated_Source\PSoC4/INA226_I2C.c ****     txFifoCtrl |= ((uint32) (INA226_I2C_TX_FIFO_CTRL_TRIGGER_LEVEL_MASK & level));
  277              		.loc 1 310 0
- 278 0004 0721     		movs	r1, #7
+ 278 0004 0F21     		movs	r1, #15
  279 0006 8B43     		bics	r3, r1
  280              	.LVL16:
  311:Generated_Source\PSoC4/INA226_I2C.c **** 
@@ -823,9 +823,9 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 1
  291              	.L19:
  292              		.align	2
  293              	.L18:
- 294 0010 04020740 		.word	1074201092
+ 294 0010 04022440 		.word	1076101636
  295              		.cfi_endproc
- 296              	.LFE5:
+ 296              	.LFE6:
  297              		.size	INA226_I2C_SetTxFifoLevel, .-INA226_I2C_SetTxFifoLevel
  298              		.section	.text.INA226_I2C_SetCustomInterruptHandler,"ax",%progbits
  299              		.align	2
@@ -834,11 +834,11 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 1
  302              		.thumb_func
  303              		.type	INA226_I2C_SetCustomInterruptHandler, %function
  304              	INA226_I2C_SetCustomInterruptHandler:
- 305              	.LFB6:
+ 305              	.LFB7:
  336:Generated_Source\PSoC4/INA226_I2C.c ****     #if !defined (CY_REMOVE_INA226_I2C_CUSTOM_INTR_HANDLER)
  306              		.loc 1 336 0
  307              		.cfi_startproc
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 15
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccmnjagw.s 			page 15
 
 
  308              		@ args = 0, pretend = 0, frame = 0
@@ -858,1443 +858,967 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 1
  320              	.L21:
  321 0008 00000000 		.word	.LANCHOR0
  322              		.cfi_endproc
- 323              	.LFE6:
+ 323              	.LFE7:
  324              		.size	INA226_I2C_SetCustomInterruptHandler, .-INA226_I2C_SetCustomInterruptHandler
- 325              		.section	.text.INA226_I2C_I2CSlaveNackGeneration,"ax",%progbits
- 326              		.align	2
- 327              		.global	INA226_I2C_I2CSlaveNackGeneration
- 328              		.code	16
- 329              		.thumb_func
- 330              		.type	INA226_I2C_I2CSlaveNackGeneration, %function
- 331              	INA226_I2C_I2CSlaveNackGeneration:
- 332              	.LFB10:
- 459:Generated_Source\PSoC4/INA226_I2C.c **** 
- 460:Generated_Source\PSoC4/INA226_I2C.c **** 
- 461:Generated_Source\PSoC4/INA226_I2C.c **** #if (INA226_I2C_SCB_MODE_UNCONFIG_CONST_CFG)
- 462:Generated_Source\PSoC4/INA226_I2C.c ****     /*******************************************************************************
- 463:Generated_Source\PSoC4/INA226_I2C.c ****     * Function Name: INA226_I2C_SetPins
- 464:Generated_Source\PSoC4/INA226_I2C.c ****     ****************************************************************************//**
- 465:Generated_Source\PSoC4/INA226_I2C.c ****     *
- 466:Generated_Source\PSoC4/INA226_I2C.c ****     *  Sets the pins settings accordingly to the selected operation mode.
- 467:Generated_Source\PSoC4/INA226_I2C.c ****     *  Only available in the Unconfigured operation mode. The mode specific
- 468:Generated_Source\PSoC4/INA226_I2C.c ****     *  initialization function calls it.
- 469:Generated_Source\PSoC4/INA226_I2C.c ****     *  Pins configuration is set by PSoC Creator when a specific mode of operation
- 470:Generated_Source\PSoC4/INA226_I2C.c ****     *  is selected in design time.
- 471:Generated_Source\PSoC4/INA226_I2C.c ****     *
- 472:Generated_Source\PSoC4/INA226_I2C.c ****     *  \param mode:      Mode of SCB operation.
- 473:Generated_Source\PSoC4/INA226_I2C.c ****     *  \param subMode:   Sub-mode of SCB operation. It is only required for SPI and UART
- 474:Generated_Source\PSoC4/INA226_I2C.c ****     *             modes.
- 475:Generated_Source\PSoC4/INA226_I2C.c ****     *  \param uartEnableMask: enables TX or RX direction and RTS and CTS signals.
- 476:Generated_Source\PSoC4/INA226_I2C.c ****     *
- 477:Generated_Source\PSoC4/INA226_I2C.c ****     *******************************************************************************/
- 478:Generated_Source\PSoC4/INA226_I2C.c ****     void INA226_I2C_SetPins(uint32 mode, uint32 subMode, uint32 uartEnableMask)
- 479:Generated_Source\PSoC4/INA226_I2C.c ****     {
- 480:Generated_Source\PSoC4/INA226_I2C.c ****         uint32 pinsDm[INA226_I2C_SCB_PINS_NUMBER];
- 481:Generated_Source\PSoC4/INA226_I2C.c ****         uint32 i;
- 482:Generated_Source\PSoC4/INA226_I2C.c ****         
- 483:Generated_Source\PSoC4/INA226_I2C.c ****     #if (!INA226_I2C_CY_SCBIP_V1)
- 484:Generated_Source\PSoC4/INA226_I2C.c ****         uint32 pinsInBuf = 0u;
- 485:Generated_Source\PSoC4/INA226_I2C.c ****     #endif /* (!INA226_I2C_CY_SCBIP_V1) */
- 486:Generated_Source\PSoC4/INA226_I2C.c ****         
- 487:Generated_Source\PSoC4/INA226_I2C.c ****         uint32 hsiomSel[INA226_I2C_SCB_PINS_NUMBER] = 
- 488:Generated_Source\PSoC4/INA226_I2C.c ****         {
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 16
+ 325              		.global	INA226_I2C_customIntrHandler
+ 326              		.global	INA226_I2C_initVar
+ 327              		.bss
+ 328              		.align	2
+ 329              		.set	.LANCHOR0,. + 0
+ 330              		.type	INA226_I2C_initVar, %object
+ 331              		.size	INA226_I2C_initVar, 1
+ 332              	INA226_I2C_initVar:
+ 333 0000 00       		.space	1
+ 334 0001 000000   		.space	3
+ 335              		.type	INA226_I2C_customIntrHandler, %object
+ 336              		.size	INA226_I2C_customIntrHandler, 4
+ 337              	INA226_I2C_customIntrHandler:
+ 338 0004 00000000 		.space	4
+ 339              		.text
+ 340              	.Letext0:
+ 341              		.file 2 "Generated_Source\\PSoC4/cytypes.h"
+ 342              		.file 3 "Generated_Source\\PSoC4/CyLib.h"
+ 343              		.file 4 "Generated_Source\\PSoC4\\INA226_I2C_I2C_PVT.h"
+ 344              		.section	.debug_info,"",%progbits
+ 345              	.Ldebug_info0:
+ 346 0000 94020000 		.4byte	0x294
+ 347 0004 0400     		.2byte	0x4
+ 348 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 349 000a 04       		.byte	0x4
+ 350 000b 01       		.uleb128 0x1
+ 351 000c 99010000 		.4byte	.LASF37
+ 352 0010 0C       		.byte	0xc
+ 353 0011 30020000 		.4byte	.LASF38
+ 354 0015 9F020000 		.4byte	.LASF39
+ 355 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 356 001d 00000000 		.4byte	0
+ 357 0021 00000000 		.4byte	.Ldebug_line0
+ 358 0025 02       		.uleb128 0x2
+ 359 0026 01       		.byte	0x1
+ 360 0027 06       		.byte	0x6
+ 361 0028 36030000 		.4byte	.LASF0
+ 362 002c 02       		.uleb128 0x2
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccmnjagw.s 			page 16
 
 
- 489:Generated_Source\PSoC4/INA226_I2C.c ****             INA226_I2C_RX_SCL_MOSI_HSIOM_SEL_GPIO,
- 490:Generated_Source\PSoC4/INA226_I2C.c ****             INA226_I2C_TX_SDA_MISO_HSIOM_SEL_GPIO,
- 491:Generated_Source\PSoC4/INA226_I2C.c ****             0u,
- 492:Generated_Source\PSoC4/INA226_I2C.c ****             0u,
- 493:Generated_Source\PSoC4/INA226_I2C.c ****             0u,
- 494:Generated_Source\PSoC4/INA226_I2C.c ****             0u,
- 495:Generated_Source\PSoC4/INA226_I2C.c ****             0u,
- 496:Generated_Source\PSoC4/INA226_I2C.c ****         };
- 497:Generated_Source\PSoC4/INA226_I2C.c **** 
- 498:Generated_Source\PSoC4/INA226_I2C.c ****     #if (INA226_I2C_CY_SCBIP_V1)
- 499:Generated_Source\PSoC4/INA226_I2C.c ****         /* Supress compiler warning. */
- 500:Generated_Source\PSoC4/INA226_I2C.c ****         if ((0u == subMode) || (0u == uartEnableMask))
- 501:Generated_Source\PSoC4/INA226_I2C.c ****         {
- 502:Generated_Source\PSoC4/INA226_I2C.c ****         }
- 503:Generated_Source\PSoC4/INA226_I2C.c ****     #endif /* (INA226_I2C_CY_SCBIP_V1) */
- 504:Generated_Source\PSoC4/INA226_I2C.c **** 
- 505:Generated_Source\PSoC4/INA226_I2C.c ****         /* Set default HSIOM to GPIO and Drive Mode to Analog Hi-Z */
- 506:Generated_Source\PSoC4/INA226_I2C.c ****         for (i = 0u; i < INA226_I2C_SCB_PINS_NUMBER; i++)
- 507:Generated_Source\PSoC4/INA226_I2C.c ****         {
- 508:Generated_Source\PSoC4/INA226_I2C.c ****             pinsDm[i] = INA226_I2C_PIN_DM_ALG_HIZ;
- 509:Generated_Source\PSoC4/INA226_I2C.c ****         }
- 510:Generated_Source\PSoC4/INA226_I2C.c **** 
- 511:Generated_Source\PSoC4/INA226_I2C.c ****         if ((INA226_I2C_SCB_MODE_I2C   == mode) ||
- 512:Generated_Source\PSoC4/INA226_I2C.c ****             (INA226_I2C_SCB_MODE_EZI2C == mode))
- 513:Generated_Source\PSoC4/INA226_I2C.c ****         {
- 514:Generated_Source\PSoC4/INA226_I2C.c ****         #if (INA226_I2C_RX_SCL_MOSI_PIN)
- 515:Generated_Source\PSoC4/INA226_I2C.c ****             hsiomSel[INA226_I2C_RX_SCL_MOSI_PIN_INDEX] = INA226_I2C_RX_SCL_MOSI_HSIOM_SEL_I2C;
- 516:Generated_Source\PSoC4/INA226_I2C.c ****             pinsDm  [INA226_I2C_RX_SCL_MOSI_PIN_INDEX] = INA226_I2C_PIN_DM_OD_LO;
- 517:Generated_Source\PSoC4/INA226_I2C.c ****         #elif (INA226_I2C_RX_WAKE_SCL_MOSI_PIN)
- 518:Generated_Source\PSoC4/INA226_I2C.c ****             hsiomSel[INA226_I2C_RX_WAKE_SCL_MOSI_PIN_INDEX] = INA226_I2C_RX_WAKE_SCL_MOSI_HSIOM_SEL
- 519:Generated_Source\PSoC4/INA226_I2C.c ****             pinsDm  [INA226_I2C_RX_WAKE_SCL_MOSI_PIN_INDEX] = INA226_I2C_PIN_DM_OD_LO;
- 520:Generated_Source\PSoC4/INA226_I2C.c ****         #else
- 521:Generated_Source\PSoC4/INA226_I2C.c ****         #endif /* (INA226_I2C_RX_SCL_MOSI_PIN) */
- 522:Generated_Source\PSoC4/INA226_I2C.c ****         
- 523:Generated_Source\PSoC4/INA226_I2C.c ****         #if (INA226_I2C_TX_SDA_MISO_PIN)
- 524:Generated_Source\PSoC4/INA226_I2C.c ****             hsiomSel[INA226_I2C_TX_SDA_MISO_PIN_INDEX] = INA226_I2C_TX_SDA_MISO_HSIOM_SEL_I2C;
- 525:Generated_Source\PSoC4/INA226_I2C.c ****             pinsDm  [INA226_I2C_TX_SDA_MISO_PIN_INDEX] = INA226_I2C_PIN_DM_OD_LO;
- 526:Generated_Source\PSoC4/INA226_I2C.c ****         #endif /* (INA226_I2C_TX_SDA_MISO_PIN) */
- 527:Generated_Source\PSoC4/INA226_I2C.c ****         }
- 528:Generated_Source\PSoC4/INA226_I2C.c ****     #if (!INA226_I2C_CY_SCBIP_V1)
- 529:Generated_Source\PSoC4/INA226_I2C.c ****         else if (INA226_I2C_SCB_MODE_SPI == mode)
- 530:Generated_Source\PSoC4/INA226_I2C.c ****         {
- 531:Generated_Source\PSoC4/INA226_I2C.c ****         #if (INA226_I2C_RX_SCL_MOSI_PIN)
- 532:Generated_Source\PSoC4/INA226_I2C.c ****             hsiomSel[INA226_I2C_RX_SCL_MOSI_PIN_INDEX] = INA226_I2C_RX_SCL_MOSI_HSIOM_SEL_SPI;
- 533:Generated_Source\PSoC4/INA226_I2C.c ****         #elif (INA226_I2C_RX_WAKE_SCL_MOSI_PIN)
- 534:Generated_Source\PSoC4/INA226_I2C.c ****             hsiomSel[INA226_I2C_RX_WAKE_SCL_MOSI_PIN_INDEX] = INA226_I2C_RX_WAKE_SCL_MOSI_HSIOM_SEL
- 535:Generated_Source\PSoC4/INA226_I2C.c ****         #else
- 536:Generated_Source\PSoC4/INA226_I2C.c ****         #endif /* (INA226_I2C_RX_SCL_MOSI_PIN) */
- 537:Generated_Source\PSoC4/INA226_I2C.c ****         
- 538:Generated_Source\PSoC4/INA226_I2C.c ****         #if (INA226_I2C_TX_SDA_MISO_PIN)
- 539:Generated_Source\PSoC4/INA226_I2C.c ****             hsiomSel[INA226_I2C_TX_SDA_MISO_PIN_INDEX] = INA226_I2C_TX_SDA_MISO_HSIOM_SEL_SPI;
- 540:Generated_Source\PSoC4/INA226_I2C.c ****         #endif /* (INA226_I2C_TX_SDA_MISO_PIN) */
- 541:Generated_Source\PSoC4/INA226_I2C.c ****         
- 542:Generated_Source\PSoC4/INA226_I2C.c ****         #if (INA226_I2C_SCLK_PIN)
- 543:Generated_Source\PSoC4/INA226_I2C.c ****             hsiomSel[INA226_I2C_SCLK_PIN_INDEX] = INA226_I2C_SCLK_HSIOM_SEL_SPI;
- 544:Generated_Source\PSoC4/INA226_I2C.c ****         #endif /* (INA226_I2C_SCLK_PIN) */
- 545:Generated_Source\PSoC4/INA226_I2C.c **** 
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 17
+ 363 002d 01       		.byte	0x1
+ 364 002e 08       		.byte	0x8
+ 365 002f 97000000 		.4byte	.LASF1
+ 366 0033 02       		.uleb128 0x2
+ 367 0034 02       		.byte	0x2
+ 368 0035 05       		.byte	0x5
+ 369 0036 37010000 		.4byte	.LASF2
+ 370 003a 02       		.uleb128 0x2
+ 371 003b 02       		.byte	0x2
+ 372 003c 07       		.byte	0x7
+ 373 003d 6B000000 		.4byte	.LASF3
+ 374 0041 02       		.uleb128 0x2
+ 375 0042 04       		.byte	0x4
+ 376 0043 05       		.byte	0x5
+ 377 0044 0E030000 		.4byte	.LASF4
+ 378 0048 02       		.uleb128 0x2
+ 379 0049 04       		.byte	0x4
+ 380 004a 07       		.byte	0x7
+ 381 004b B1000000 		.4byte	.LASF5
+ 382 004f 02       		.uleb128 0x2
+ 383 0050 08       		.byte	0x8
+ 384 0051 05       		.byte	0x5
+ 385 0052 54020000 		.4byte	.LASF6
+ 386 0056 02       		.uleb128 0x2
+ 387 0057 08       		.byte	0x8
+ 388 0058 07       		.byte	0x7
+ 389 0059 60010000 		.4byte	.LASF7
+ 390 005d 03       		.uleb128 0x3
+ 391 005e 04       		.byte	0x4
+ 392 005f 05       		.byte	0x5
+ 393 0060 696E7400 		.ascii	"int\000"
+ 394 0064 02       		.uleb128 0x2
+ 395 0065 04       		.byte	0x4
+ 396 0066 07       		.byte	0x7
+ 397 0067 53010000 		.4byte	.LASF8
+ 398 006b 04       		.uleb128 0x4
+ 399 006c D5000000 		.4byte	.LASF9
+ 400 0070 02       		.byte	0x2
+ 401 0071 FB01     		.2byte	0x1fb
+ 402 0073 2C000000 		.4byte	0x2c
+ 403 0077 04       		.uleb128 0x4
+ 404 0078 4C010000 		.4byte	.LASF10
+ 405 007c 02       		.byte	0x2
+ 406 007d FD01     		.2byte	0x1fd
+ 407 007f 48000000 		.4byte	0x48
+ 408 0083 02       		.uleb128 0x2
+ 409 0084 04       		.byte	0x4
+ 410 0085 04       		.byte	0x4
+ 411 0086 91000000 		.4byte	.LASF11
+ 412 008a 02       		.uleb128 0x2
+ 413 008b 08       		.byte	0x8
+ 414 008c 04       		.byte	0x4
+ 415 008d 2B010000 		.4byte	.LASF12
+ 416 0091 02       		.uleb128 0x2
+ 417 0092 01       		.byte	0x1
+ 418 0093 08       		.byte	0x8
+ 419 0094 62020000 		.4byte	.LASF13
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccmnjagw.s 			page 17
 
 
- 546:Generated_Source\PSoC4/INA226_I2C.c ****             if (INA226_I2C_SPI_SLAVE == subMode)
- 547:Generated_Source\PSoC4/INA226_I2C.c ****             {
- 548:Generated_Source\PSoC4/INA226_I2C.c ****                 /* Slave */
- 549:Generated_Source\PSoC4/INA226_I2C.c ****                 pinsDm[INA226_I2C_RX_SCL_MOSI_PIN_INDEX] = INA226_I2C_PIN_DM_DIG_HIZ;
- 550:Generated_Source\PSoC4/INA226_I2C.c ****                 pinsDm[INA226_I2C_TX_SDA_MISO_PIN_INDEX] = INA226_I2C_PIN_DM_STRONG;
- 551:Generated_Source\PSoC4/INA226_I2C.c ****                 pinsDm[INA226_I2C_SCLK_PIN_INDEX] = INA226_I2C_PIN_DM_DIG_HIZ;
- 552:Generated_Source\PSoC4/INA226_I2C.c **** 
- 553:Generated_Source\PSoC4/INA226_I2C.c ****             #if (INA226_I2C_SS0_PIN)
- 554:Generated_Source\PSoC4/INA226_I2C.c ****                 /* Only SS0 is valid choice for Slave */
- 555:Generated_Source\PSoC4/INA226_I2C.c ****                 hsiomSel[INA226_I2C_SS0_PIN_INDEX] = INA226_I2C_SS0_HSIOM_SEL_SPI;
- 556:Generated_Source\PSoC4/INA226_I2C.c ****                 pinsDm  [INA226_I2C_SS0_PIN_INDEX] = INA226_I2C_PIN_DM_DIG_HIZ;
- 557:Generated_Source\PSoC4/INA226_I2C.c ****             #endif /* (INA226_I2C_SS0_PIN) */
- 558:Generated_Source\PSoC4/INA226_I2C.c **** 
- 559:Generated_Source\PSoC4/INA226_I2C.c ****             #if (INA226_I2C_TX_SDA_MISO_PIN)
- 560:Generated_Source\PSoC4/INA226_I2C.c ****                 /* Disable input buffer */
- 561:Generated_Source\PSoC4/INA226_I2C.c ****                  pinsInBuf |= INA226_I2C_TX_SDA_MISO_PIN_MASK;
- 562:Generated_Source\PSoC4/INA226_I2C.c ****             #endif /* (INA226_I2C_TX_SDA_MISO_PIN) */
- 563:Generated_Source\PSoC4/INA226_I2C.c ****             }
- 564:Generated_Source\PSoC4/INA226_I2C.c ****             else 
- 565:Generated_Source\PSoC4/INA226_I2C.c ****             {
- 566:Generated_Source\PSoC4/INA226_I2C.c ****                 /* (Master) */
- 567:Generated_Source\PSoC4/INA226_I2C.c ****                 pinsDm[INA226_I2C_RX_SCL_MOSI_PIN_INDEX] = INA226_I2C_PIN_DM_STRONG;
- 568:Generated_Source\PSoC4/INA226_I2C.c ****                 pinsDm[INA226_I2C_TX_SDA_MISO_PIN_INDEX] = INA226_I2C_PIN_DM_DIG_HIZ;
- 569:Generated_Source\PSoC4/INA226_I2C.c ****                 pinsDm[INA226_I2C_SCLK_PIN_INDEX] = INA226_I2C_PIN_DM_STRONG;
- 570:Generated_Source\PSoC4/INA226_I2C.c **** 
- 571:Generated_Source\PSoC4/INA226_I2C.c ****             #if (INA226_I2C_SS0_PIN)
- 572:Generated_Source\PSoC4/INA226_I2C.c ****                 hsiomSel [INA226_I2C_SS0_PIN_INDEX] = INA226_I2C_SS0_HSIOM_SEL_SPI;
- 573:Generated_Source\PSoC4/INA226_I2C.c ****                 pinsDm   [INA226_I2C_SS0_PIN_INDEX] = INA226_I2C_PIN_DM_STRONG;
- 574:Generated_Source\PSoC4/INA226_I2C.c ****                 pinsInBuf |= INA226_I2C_SS0_PIN_MASK;
- 575:Generated_Source\PSoC4/INA226_I2C.c ****             #endif /* (INA226_I2C_SS0_PIN) */
- 576:Generated_Source\PSoC4/INA226_I2C.c **** 
- 577:Generated_Source\PSoC4/INA226_I2C.c ****             #if (INA226_I2C_SS1_PIN)
- 578:Generated_Source\PSoC4/INA226_I2C.c ****                 hsiomSel [INA226_I2C_SS1_PIN_INDEX] = INA226_I2C_SS1_HSIOM_SEL_SPI;
- 579:Generated_Source\PSoC4/INA226_I2C.c ****                 pinsDm   [INA226_I2C_SS1_PIN_INDEX] = INA226_I2C_PIN_DM_STRONG;
- 580:Generated_Source\PSoC4/INA226_I2C.c ****                 pinsInBuf |= INA226_I2C_SS1_PIN_MASK;
- 581:Generated_Source\PSoC4/INA226_I2C.c ****             #endif /* (INA226_I2C_SS1_PIN) */
- 582:Generated_Source\PSoC4/INA226_I2C.c **** 
- 583:Generated_Source\PSoC4/INA226_I2C.c ****             #if (INA226_I2C_SS2_PIN)
- 584:Generated_Source\PSoC4/INA226_I2C.c ****                 hsiomSel [INA226_I2C_SS2_PIN_INDEX] = INA226_I2C_SS2_HSIOM_SEL_SPI;
- 585:Generated_Source\PSoC4/INA226_I2C.c ****                 pinsDm   [INA226_I2C_SS2_PIN_INDEX] = INA226_I2C_PIN_DM_STRONG;
- 586:Generated_Source\PSoC4/INA226_I2C.c ****                 pinsInBuf |= INA226_I2C_SS2_PIN_MASK;
- 587:Generated_Source\PSoC4/INA226_I2C.c ****             #endif /* (INA226_I2C_SS2_PIN) */
- 588:Generated_Source\PSoC4/INA226_I2C.c **** 
- 589:Generated_Source\PSoC4/INA226_I2C.c ****             #if (INA226_I2C_SS3_PIN)
- 590:Generated_Source\PSoC4/INA226_I2C.c ****                 hsiomSel [INA226_I2C_SS3_PIN_INDEX] = INA226_I2C_SS3_HSIOM_SEL_SPI;
- 591:Generated_Source\PSoC4/INA226_I2C.c ****                 pinsDm   [INA226_I2C_SS3_PIN_INDEX] = INA226_I2C_PIN_DM_STRONG;
- 592:Generated_Source\PSoC4/INA226_I2C.c ****                 pinsInBuf |= INA226_I2C_SS3_PIN_MASK;
- 593:Generated_Source\PSoC4/INA226_I2C.c ****             #endif /* (INA226_I2C_SS3_PIN) */
- 594:Generated_Source\PSoC4/INA226_I2C.c **** 
- 595:Generated_Source\PSoC4/INA226_I2C.c ****                 /* Disable input buffers */
- 596:Generated_Source\PSoC4/INA226_I2C.c ****             #if (INA226_I2C_RX_SCL_MOSI_PIN)
- 597:Generated_Source\PSoC4/INA226_I2C.c ****                 pinsInBuf |= INA226_I2C_RX_SCL_MOSI_PIN_MASK;
- 598:Generated_Source\PSoC4/INA226_I2C.c ****             #elif (INA226_I2C_RX_WAKE_SCL_MOSI_PIN)
- 599:Generated_Source\PSoC4/INA226_I2C.c ****                 pinsInBuf |= INA226_I2C_RX_WAKE_SCL_MOSI_PIN_MASK;
- 600:Generated_Source\PSoC4/INA226_I2C.c ****             #else
- 601:Generated_Source\PSoC4/INA226_I2C.c ****             #endif /* (INA226_I2C_RX_SCL_MOSI_PIN) */
- 602:Generated_Source\PSoC4/INA226_I2C.c **** 
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 18
+ 420 0098 04       		.uleb128 0x4
+ 421 0099 10000000 		.4byte	.LASF14
+ 422 009d 02       		.byte	0x2
+ 423 009e A702     		.2byte	0x2a7
+ 424 00a0 A4000000 		.4byte	0xa4
+ 425 00a4 05       		.uleb128 0x5
+ 426 00a5 77000000 		.4byte	0x77
+ 427 00a9 06       		.uleb128 0x6
+ 428 00aa 04       		.byte	0x4
+ 429 00ab AF000000 		.4byte	0xaf
+ 430 00af 07       		.uleb128 0x7
+ 431 00b0 02       		.uleb128 0x2
+ 432 00b1 08       		.byte	0x8
+ 433 00b2 04       		.byte	0x4
+ 434 00b3 17030000 		.4byte	.LASF15
+ 435 00b7 02       		.uleb128 0x2
+ 436 00b8 04       		.byte	0x4
+ 437 00b9 07       		.byte	0x7
+ 438 00ba 27020000 		.4byte	.LASF16
+ 439 00be 08       		.uleb128 0x8
+ 440 00bf DB000000 		.4byte	.LASF17
+ 441 00c3 01       		.byte	0x1
+ 442 00c4 6401     		.2byte	0x164
+ 443 00c6 00000000 		.4byte	.LFB8
+ 444 00ca 0A000000 		.4byte	.LFE8-.LFB8
+ 445 00ce 01       		.uleb128 0x1
+ 446 00cf 9C       		.byte	0x9c
+ 447 00d0 E4000000 		.4byte	0xe4
+ 448 00d4 09       		.uleb128 0x9
+ 449 00d5 08000000 		.4byte	.LVL0
+ 450 00d9 60020000 		.4byte	0x260
+ 451 00dd 0A       		.uleb128 0xa
+ 452 00de 01       		.uleb128 0x1
+ 453 00df 50       		.byte	0x50
+ 454 00e0 01       		.uleb128 0x1
+ 455 00e1 38       		.byte	0x38
+ 456 00e2 00       		.byte	0
+ 457 00e3 00       		.byte	0
+ 458 00e4 08       		.uleb128 0x8
+ 459 00e5 16000000 		.4byte	.LASF18
+ 460 00e9 01       		.byte	0x1
+ 461 00ea A201     		.2byte	0x1a2
+ 462 00ec 00000000 		.4byte	.LFB10
+ 463 00f0 08000000 		.4byte	.LFE10-.LFB10
+ 464 00f4 01       		.uleb128 0x1
+ 465 00f5 9C       		.byte	0x9c
+ 466 00f6 04010000 		.4byte	0x104
+ 467 00fa 0B       		.uleb128 0xb
+ 468 00fb 06000000 		.4byte	.LVL1
+ 469 00ff 6B020000 		.4byte	0x26b
+ 470 0103 00       		.byte	0
+ 471 0104 0C       		.uleb128 0xc
+ 472 0105 89010000 		.4byte	.LASF19
+ 473 0109 01       		.byte	0x1
+ 474 010a 7B       		.byte	0x7b
+ 475 010b 00000000 		.4byte	.LFB1
+ 476 010f 08000000 		.4byte	.LFE1-.LFB1
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccmnjagw.s 			page 18
 
 
- 603:Generated_Source\PSoC4/INA226_I2C.c ****             #if (INA226_I2C_SCLK_PIN)
- 604:Generated_Source\PSoC4/INA226_I2C.c ****                 pinsInBuf |= INA226_I2C_SCLK_PIN_MASK;
- 605:Generated_Source\PSoC4/INA226_I2C.c ****             #endif /* (INA226_I2C_SCLK_PIN) */
- 606:Generated_Source\PSoC4/INA226_I2C.c ****             }
- 607:Generated_Source\PSoC4/INA226_I2C.c ****         }
- 608:Generated_Source\PSoC4/INA226_I2C.c ****         else /* UART */
- 609:Generated_Source\PSoC4/INA226_I2C.c ****         {
- 610:Generated_Source\PSoC4/INA226_I2C.c ****             if (INA226_I2C_UART_MODE_SMARTCARD == subMode)
- 611:Generated_Source\PSoC4/INA226_I2C.c ****             {
- 612:Generated_Source\PSoC4/INA226_I2C.c ****                 /* SmartCard */
- 613:Generated_Source\PSoC4/INA226_I2C.c ****             #if (INA226_I2C_TX_SDA_MISO_PIN)
- 614:Generated_Source\PSoC4/INA226_I2C.c ****                 hsiomSel[INA226_I2C_TX_SDA_MISO_PIN_INDEX] = INA226_I2C_TX_SDA_MISO_HSIOM_SEL_UART;
- 615:Generated_Source\PSoC4/INA226_I2C.c ****                 pinsDm  [INA226_I2C_TX_SDA_MISO_PIN_INDEX] = INA226_I2C_PIN_DM_OD_LO;
- 616:Generated_Source\PSoC4/INA226_I2C.c ****             #endif /* (INA226_I2C_TX_SDA_MISO_PIN) */
- 617:Generated_Source\PSoC4/INA226_I2C.c ****             }
- 618:Generated_Source\PSoC4/INA226_I2C.c ****             else /* Standard or IrDA */
- 619:Generated_Source\PSoC4/INA226_I2C.c ****             {
- 620:Generated_Source\PSoC4/INA226_I2C.c ****                 if (0u != (INA226_I2C_UART_RX_PIN_ENABLE & uartEnableMask))
- 621:Generated_Source\PSoC4/INA226_I2C.c ****                 {
- 622:Generated_Source\PSoC4/INA226_I2C.c ****                 #if (INA226_I2C_RX_SCL_MOSI_PIN)
- 623:Generated_Source\PSoC4/INA226_I2C.c ****                     hsiomSel[INA226_I2C_RX_SCL_MOSI_PIN_INDEX] = INA226_I2C_RX_SCL_MOSI_HSIOM_SEL_U
- 624:Generated_Source\PSoC4/INA226_I2C.c ****                     pinsDm  [INA226_I2C_RX_SCL_MOSI_PIN_INDEX] = INA226_I2C_PIN_DM_DIG_HIZ;
- 625:Generated_Source\PSoC4/INA226_I2C.c ****                 #elif (INA226_I2C_RX_WAKE_SCL_MOSI_PIN)
- 626:Generated_Source\PSoC4/INA226_I2C.c ****                     hsiomSel[INA226_I2C_RX_WAKE_SCL_MOSI_PIN_INDEX] = INA226_I2C_RX_WAKE_SCL_MOSI_H
- 627:Generated_Source\PSoC4/INA226_I2C.c ****                     pinsDm  [INA226_I2C_RX_WAKE_SCL_MOSI_PIN_INDEX] = INA226_I2C_PIN_DM_DIG_HIZ;
- 628:Generated_Source\PSoC4/INA226_I2C.c ****                 #else
- 629:Generated_Source\PSoC4/INA226_I2C.c ****                 #endif /* (INA226_I2C_RX_SCL_MOSI_PIN) */
- 630:Generated_Source\PSoC4/INA226_I2C.c ****                 }
- 631:Generated_Source\PSoC4/INA226_I2C.c **** 
- 632:Generated_Source\PSoC4/INA226_I2C.c ****                 if (0u != (INA226_I2C_UART_TX_PIN_ENABLE & uartEnableMask))
- 633:Generated_Source\PSoC4/INA226_I2C.c ****                 {
- 634:Generated_Source\PSoC4/INA226_I2C.c ****                 #if (INA226_I2C_TX_SDA_MISO_PIN)
- 635:Generated_Source\PSoC4/INA226_I2C.c ****                     hsiomSel[INA226_I2C_TX_SDA_MISO_PIN_INDEX] = INA226_I2C_TX_SDA_MISO_HSIOM_SEL_U
- 636:Generated_Source\PSoC4/INA226_I2C.c ****                     pinsDm  [INA226_I2C_TX_SDA_MISO_PIN_INDEX] = INA226_I2C_PIN_DM_STRONG;
- 637:Generated_Source\PSoC4/INA226_I2C.c ****                     
- 638:Generated_Source\PSoC4/INA226_I2C.c ****                     /* Disable input buffer */
- 639:Generated_Source\PSoC4/INA226_I2C.c ****                     pinsInBuf |= INA226_I2C_TX_SDA_MISO_PIN_MASK;
- 640:Generated_Source\PSoC4/INA226_I2C.c ****                 #endif /* (INA226_I2C_TX_SDA_MISO_PIN) */
- 641:Generated_Source\PSoC4/INA226_I2C.c ****                 }
- 642:Generated_Source\PSoC4/INA226_I2C.c **** 
- 643:Generated_Source\PSoC4/INA226_I2C.c ****             #if !(INA226_I2C_CY_SCBIP_V0 || INA226_I2C_CY_SCBIP_V1)
- 644:Generated_Source\PSoC4/INA226_I2C.c ****                 if (INA226_I2C_UART_MODE_STD == subMode)
- 645:Generated_Source\PSoC4/INA226_I2C.c ****                 {
- 646:Generated_Source\PSoC4/INA226_I2C.c ****                     if (0u != (INA226_I2C_UART_CTS_PIN_ENABLE & uartEnableMask))
- 647:Generated_Source\PSoC4/INA226_I2C.c ****                     {
- 648:Generated_Source\PSoC4/INA226_I2C.c ****                         /* CTS input is multiplexed with SCLK */
- 649:Generated_Source\PSoC4/INA226_I2C.c ****                     #if (INA226_I2C_SCLK_PIN)
- 650:Generated_Source\PSoC4/INA226_I2C.c ****                         hsiomSel[INA226_I2C_SCLK_PIN_INDEX] = INA226_I2C_SCLK_HSIOM_SEL_UART;
- 651:Generated_Source\PSoC4/INA226_I2C.c ****                         pinsDm  [INA226_I2C_SCLK_PIN_INDEX] = INA226_I2C_PIN_DM_DIG_HIZ;
- 652:Generated_Source\PSoC4/INA226_I2C.c ****                     #endif /* (INA226_I2C_SCLK_PIN) */
- 653:Generated_Source\PSoC4/INA226_I2C.c ****                     }
- 654:Generated_Source\PSoC4/INA226_I2C.c **** 
- 655:Generated_Source\PSoC4/INA226_I2C.c ****                     if (0u != (INA226_I2C_UART_RTS_PIN_ENABLE & uartEnableMask))
- 656:Generated_Source\PSoC4/INA226_I2C.c ****                     {
- 657:Generated_Source\PSoC4/INA226_I2C.c ****                         /* RTS output is multiplexed with SS0 */
- 658:Generated_Source\PSoC4/INA226_I2C.c ****                     #if (INA226_I2C_SS0_PIN)
- 659:Generated_Source\PSoC4/INA226_I2C.c ****                         hsiomSel[INA226_I2C_SS0_PIN_INDEX] = INA226_I2C_SS0_HSIOM_SEL_UART;
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 19
+ 477 0113 01       		.uleb128 0x1
+ 478 0114 9C       		.byte	0x9c
+ 479 0115 23010000 		.4byte	0x123
+ 480 0119 0B       		.uleb128 0xb
+ 481 011a 06000000 		.4byte	.LVL2
+ 482 011e 76020000 		.4byte	0x276
+ 483 0122 00       		.byte	0
+ 484 0123 0C       		.uleb128 0xc
+ 485 0124 C3000000 		.4byte	.LASF20
+ 486 0128 01       		.byte	0x1
+ 487 0129 AB       		.byte	0xab
+ 488 012a 00000000 		.4byte	.LFB2
+ 489 012e 18000000 		.4byte	.LFE2-.LFB2
+ 490 0132 01       		.uleb128 0x1
+ 491 0133 9C       		.byte	0x9c
+ 492 0134 42010000 		.4byte	0x142
+ 493 0138 0B       		.uleb128 0xb
+ 494 0139 12000000 		.4byte	.LVL3
+ 495 013d BE000000 		.4byte	0xbe
+ 496 0141 00       		.byte	0
+ 497 0142 0C       		.uleb128 0xc
+ 498 0143 8E020000 		.4byte	.LASF21
+ 499 0147 01       		.byte	0x1
+ 500 0148 D2       		.byte	0xd2
+ 501 0149 00000000 		.4byte	.LFB3
+ 502 014d 20000000 		.4byte	.LFE3-.LFB3
+ 503 0151 01       		.uleb128 0x1
+ 504 0152 9C       		.byte	0x9c
+ 505 0153 6A010000 		.4byte	0x16a
+ 506 0157 0B       		.uleb128 0xb
+ 507 0158 0E000000 		.4byte	.LVL4
+ 508 015c 04010000 		.4byte	0x104
+ 509 0160 0B       		.uleb128 0xb
+ 510 0161 18000000 		.4byte	.LVL5
+ 511 0165 23010000 		.4byte	0x123
+ 512 0169 00       		.byte	0
+ 513 016a 0C       		.uleb128 0xc
+ 514 016b 00000000 		.4byte	.LASF22
+ 515 016f 01       		.byte	0x1
+ 516 0170 EF       		.byte	0xef
+ 517 0171 00000000 		.4byte	.LFB4
+ 518 0175 2C000000 		.4byte	.LFE4-.LFB4
+ 519 0179 01       		.uleb128 0x1
+ 520 017a 9C       		.byte	0x9c
+ 521 017b AB010000 		.4byte	0x1ab
+ 522 017f 0D       		.uleb128 0xd
+ 523 0180 08000000 		.4byte	.LVL6
+ 524 0184 81020000 		.4byte	0x281
+ 525 0188 92010000 		.4byte	0x192
+ 526 018c 0A       		.uleb128 0xa
+ 527 018d 01       		.uleb128 0x1
+ 528 018e 50       		.byte	0x50
+ 529 018f 01       		.uleb128 0x1
+ 530 0190 38       		.byte	0x38
+ 531 0191 00       		.byte	0
+ 532 0192 0B       		.uleb128 0xb
+ 533 0193 0C000000 		.4byte	.LVL7
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccmnjagw.s 			page 19
 
 
- 660:Generated_Source\PSoC4/INA226_I2C.c ****                         pinsDm  [INA226_I2C_SS0_PIN_INDEX] = INA226_I2C_PIN_DM_STRONG;
- 661:Generated_Source\PSoC4/INA226_I2C.c ****                         
- 662:Generated_Source\PSoC4/INA226_I2C.c ****                         /* Disable input buffer */
- 663:Generated_Source\PSoC4/INA226_I2C.c ****                         pinsInBuf |= INA226_I2C_SS0_PIN_MASK;
- 664:Generated_Source\PSoC4/INA226_I2C.c ****                     #endif /* (INA226_I2C_SS0_PIN) */
- 665:Generated_Source\PSoC4/INA226_I2C.c ****                     }
- 666:Generated_Source\PSoC4/INA226_I2C.c ****                 }
- 667:Generated_Source\PSoC4/INA226_I2C.c ****             #endif /* !(INA226_I2C_CY_SCBIP_V0 || INA226_I2C_CY_SCBIP_V1) */
- 668:Generated_Source\PSoC4/INA226_I2C.c ****             }
- 669:Generated_Source\PSoC4/INA226_I2C.c ****         }
- 670:Generated_Source\PSoC4/INA226_I2C.c ****     #endif /* (!INA226_I2C_CY_SCBIP_V1) */
- 671:Generated_Source\PSoC4/INA226_I2C.c **** 
- 672:Generated_Source\PSoC4/INA226_I2C.c ****     /* Configure pins: set HSIOM, DM and InputBufEnable */
- 673:Generated_Source\PSoC4/INA226_I2C.c ****     /* Note: the DR register settings do not effect the pin output if HSIOM is other than GPIO */
- 674:Generated_Source\PSoC4/INA226_I2C.c **** 
- 675:Generated_Source\PSoC4/INA226_I2C.c ****     #if (INA226_I2C_RX_SCL_MOSI_PIN)
- 676:Generated_Source\PSoC4/INA226_I2C.c ****         INA226_I2C_SET_HSIOM_SEL(INA226_I2C_RX_SCL_MOSI_HSIOM_REG,
- 677:Generated_Source\PSoC4/INA226_I2C.c ****                                        INA226_I2C_RX_SCL_MOSI_HSIOM_MASK,
- 678:Generated_Source\PSoC4/INA226_I2C.c ****                                        INA226_I2C_RX_SCL_MOSI_HSIOM_POS,
- 679:Generated_Source\PSoC4/INA226_I2C.c ****                                         hsiomSel[INA226_I2C_RX_SCL_MOSI_PIN_INDEX]);
- 680:Generated_Source\PSoC4/INA226_I2C.c **** 
- 681:Generated_Source\PSoC4/INA226_I2C.c ****         INA226_I2C_uart_rx_i2c_scl_spi_mosi_SetDriveMode((uint8) pinsDm[INA226_I2C_RX_SCL_MOSI_PIN_
- 682:Generated_Source\PSoC4/INA226_I2C.c **** 
- 683:Generated_Source\PSoC4/INA226_I2C.c ****         #if (!INA226_I2C_CY_SCBIP_V1)
- 684:Generated_Source\PSoC4/INA226_I2C.c ****             INA226_I2C_SET_INP_DIS(INA226_I2C_uart_rx_i2c_scl_spi_mosi_INP_DIS,
- 685:Generated_Source\PSoC4/INA226_I2C.c ****                                          INA226_I2C_uart_rx_i2c_scl_spi_mosi_MASK,
- 686:Generated_Source\PSoC4/INA226_I2C.c ****                                          (0u != (pinsInBuf & INA226_I2C_RX_SCL_MOSI_PIN_MASK)));
- 687:Generated_Source\PSoC4/INA226_I2C.c ****         #endif /* (!INA226_I2C_CY_SCBIP_V1) */
- 688:Generated_Source\PSoC4/INA226_I2C.c ****     
- 689:Generated_Source\PSoC4/INA226_I2C.c ****     #elif (INA226_I2C_RX_WAKE_SCL_MOSI_PIN)
- 690:Generated_Source\PSoC4/INA226_I2C.c ****         INA226_I2C_SET_HSIOM_SEL(INA226_I2C_RX_WAKE_SCL_MOSI_HSIOM_REG,
- 691:Generated_Source\PSoC4/INA226_I2C.c ****                                        INA226_I2C_RX_WAKE_SCL_MOSI_HSIOM_MASK,
- 692:Generated_Source\PSoC4/INA226_I2C.c ****                                        INA226_I2C_RX_WAKE_SCL_MOSI_HSIOM_POS,
- 693:Generated_Source\PSoC4/INA226_I2C.c ****                                        hsiomSel[INA226_I2C_RX_WAKE_SCL_MOSI_PIN_INDEX]);
- 694:Generated_Source\PSoC4/INA226_I2C.c **** 
- 695:Generated_Source\PSoC4/INA226_I2C.c ****         INA226_I2C_uart_rx_wake_i2c_scl_spi_mosi_SetDriveMode((uint8)
- 696:Generated_Source\PSoC4/INA226_I2C.c ****                                                                pinsDm[INA226_I2C_RX_WAKE_SCL_MOSI_P
- 697:Generated_Source\PSoC4/INA226_I2C.c **** 
- 698:Generated_Source\PSoC4/INA226_I2C.c ****         INA226_I2C_SET_INP_DIS(INA226_I2C_uart_rx_wake_i2c_scl_spi_mosi_INP_DIS,
- 699:Generated_Source\PSoC4/INA226_I2C.c ****                                      INA226_I2C_uart_rx_wake_i2c_scl_spi_mosi_MASK,
- 700:Generated_Source\PSoC4/INA226_I2C.c ****                                      (0u != (pinsInBuf & INA226_I2C_RX_WAKE_SCL_MOSI_PIN_MASK)));
- 701:Generated_Source\PSoC4/INA226_I2C.c **** 
- 702:Generated_Source\PSoC4/INA226_I2C.c ****          /* Set interrupt on falling edge */
- 703:Generated_Source\PSoC4/INA226_I2C.c ****         INA226_I2C_SET_INCFG_TYPE(INA226_I2C_RX_WAKE_SCL_MOSI_INTCFG_REG,
- 704:Generated_Source\PSoC4/INA226_I2C.c ****                                         INA226_I2C_RX_WAKE_SCL_MOSI_INTCFG_TYPE_MASK,
- 705:Generated_Source\PSoC4/INA226_I2C.c ****                                         INA226_I2C_RX_WAKE_SCL_MOSI_INTCFG_TYPE_POS,
- 706:Generated_Source\PSoC4/INA226_I2C.c ****                                         INA226_I2C_INTCFG_TYPE_FALLING_EDGE);
- 707:Generated_Source\PSoC4/INA226_I2C.c ****     #else
- 708:Generated_Source\PSoC4/INA226_I2C.c ****     #endif /* (INA226_I2C_RX_WAKE_SCL_MOSI_PIN) */
- 709:Generated_Source\PSoC4/INA226_I2C.c **** 
- 710:Generated_Source\PSoC4/INA226_I2C.c ****     #if (INA226_I2C_TX_SDA_MISO_PIN)
- 711:Generated_Source\PSoC4/INA226_I2C.c ****         INA226_I2C_SET_HSIOM_SEL(INA226_I2C_TX_SDA_MISO_HSIOM_REG,
- 712:Generated_Source\PSoC4/INA226_I2C.c ****                                        INA226_I2C_TX_SDA_MISO_HSIOM_MASK,
- 713:Generated_Source\PSoC4/INA226_I2C.c ****                                        INA226_I2C_TX_SDA_MISO_HSIOM_POS,
- 714:Generated_Source\PSoC4/INA226_I2C.c ****                                         hsiomSel[INA226_I2C_TX_SDA_MISO_PIN_INDEX]);
- 715:Generated_Source\PSoC4/INA226_I2C.c **** 
- 716:Generated_Source\PSoC4/INA226_I2C.c ****         INA226_I2C_uart_tx_i2c_sda_spi_miso_SetDriveMode((uint8) pinsDm[INA226_I2C_TX_SDA_MISO_PIN_
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 20
+ 534 0197 E4000000 		.4byte	0xe4
+ 535 019b 09       		.uleb128 0x9
+ 536 019c 22000000 		.4byte	.LVL8
+ 537 01a0 8C020000 		.4byte	0x28c
+ 538 01a4 0A       		.uleb128 0xa
+ 539 01a5 01       		.uleb128 0x1
+ 540 01a6 50       		.byte	0x50
+ 541 01a7 01       		.uleb128 0x1
+ 542 01a8 38       		.byte	0x38
+ 543 01a9 00       		.byte	0
+ 544 01aa 00       		.byte	0
+ 545 01ab 0E       		.uleb128 0xe
+ 546 01ac 11010000 		.4byte	.LASF23
+ 547 01b0 01       		.byte	0x1
+ 548 01b1 1701     		.2byte	0x117
+ 549 01b3 00000000 		.4byte	.LFB5
+ 550 01b7 14000000 		.4byte	.LFE5-.LFB5
+ 551 01bb 01       		.uleb128 0x1
+ 552 01bc 9C       		.byte	0x9c
+ 553 01bd E2010000 		.4byte	0x1e2
+ 554 01c1 0F       		.uleb128 0xf
+ 555 01c2 40000000 		.4byte	.LASF25
+ 556 01c6 01       		.byte	0x1
+ 557 01c7 1701     		.2byte	0x117
+ 558 01c9 77000000 		.4byte	0x77
+ 559 01cd 00000000 		.4byte	.LLST0
+ 560 01d1 10       		.uleb128 0x10
+ 561 01d2 03030000 		.4byte	.LASF26
+ 562 01d6 01       		.byte	0x1
+ 563 01d7 1901     		.2byte	0x119
+ 564 01d9 77000000 		.4byte	0x77
+ 565 01dd 21000000 		.4byte	.LLST1
+ 566 01e1 00       		.byte	0
+ 567 01e2 0E       		.uleb128 0xe
+ 568 01e3 67020000 		.4byte	.LASF24
+ 569 01e7 01       		.byte	0x1
+ 570 01e8 3001     		.2byte	0x130
+ 571 01ea 00000000 		.4byte	.LFB6
+ 572 01ee 14000000 		.4byte	.LFE6-.LFB6
+ 573 01f2 01       		.uleb128 0x1
+ 574 01f3 9C       		.byte	0x9c
+ 575 01f4 19020000 		.4byte	0x219
+ 576 01f8 0F       		.uleb128 0xf
+ 577 01f9 40000000 		.4byte	.LASF25
+ 578 01fd 01       		.byte	0x1
+ 579 01fe 3001     		.2byte	0x130
+ 580 0200 77000000 		.4byte	0x77
+ 581 0204 3F000000 		.4byte	.LLST2
+ 582 0208 10       		.uleb128 0x10
+ 583 0209 41010000 		.4byte	.LASF27
+ 584 020d 01       		.byte	0x1
+ 585 020e 3201     		.2byte	0x132
+ 586 0210 77000000 		.4byte	0x77
+ 587 0214 60000000 		.4byte	.LLST3
+ 588 0218 00       		.byte	0
+ 589 0219 0E       		.uleb128 0xe
+ 590 021a 46000000 		.4byte	.LASF28
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccmnjagw.s 			page 20
 
 
- 717:Generated_Source\PSoC4/INA226_I2C.c **** 
- 718:Generated_Source\PSoC4/INA226_I2C.c ****     #if (!INA226_I2C_CY_SCBIP_V1)
- 719:Generated_Source\PSoC4/INA226_I2C.c ****         INA226_I2C_SET_INP_DIS(INA226_I2C_uart_tx_i2c_sda_spi_miso_INP_DIS,
- 720:Generated_Source\PSoC4/INA226_I2C.c ****                                      INA226_I2C_uart_tx_i2c_sda_spi_miso_MASK,
- 721:Generated_Source\PSoC4/INA226_I2C.c ****                                     (0u != (pinsInBuf & INA226_I2C_TX_SDA_MISO_PIN_MASK)));
- 722:Generated_Source\PSoC4/INA226_I2C.c ****     #endif /* (!INA226_I2C_CY_SCBIP_V1) */
- 723:Generated_Source\PSoC4/INA226_I2C.c ****     #endif /* (INA226_I2C_RX_SCL_MOSI_PIN) */
- 724:Generated_Source\PSoC4/INA226_I2C.c **** 
- 725:Generated_Source\PSoC4/INA226_I2C.c ****     #if (INA226_I2C_SCLK_PIN)
- 726:Generated_Source\PSoC4/INA226_I2C.c ****         INA226_I2C_SET_HSIOM_SEL(INA226_I2C_SCLK_HSIOM_REG,
- 727:Generated_Source\PSoC4/INA226_I2C.c ****                                        INA226_I2C_SCLK_HSIOM_MASK,
- 728:Generated_Source\PSoC4/INA226_I2C.c ****                                        INA226_I2C_SCLK_HSIOM_POS,
- 729:Generated_Source\PSoC4/INA226_I2C.c ****                                        hsiomSel[INA226_I2C_SCLK_PIN_INDEX]);
- 730:Generated_Source\PSoC4/INA226_I2C.c **** 
- 731:Generated_Source\PSoC4/INA226_I2C.c ****         INA226_I2C_spi_sclk_SetDriveMode((uint8) pinsDm[INA226_I2C_SCLK_PIN_INDEX]);
- 732:Generated_Source\PSoC4/INA226_I2C.c **** 
- 733:Generated_Source\PSoC4/INA226_I2C.c ****         INA226_I2C_SET_INP_DIS(INA226_I2C_spi_sclk_INP_DIS,
- 734:Generated_Source\PSoC4/INA226_I2C.c ****                                      INA226_I2C_spi_sclk_MASK,
- 735:Generated_Source\PSoC4/INA226_I2C.c ****                                      (0u != (pinsInBuf & INA226_I2C_SCLK_PIN_MASK)));
- 736:Generated_Source\PSoC4/INA226_I2C.c ****     #endif /* (INA226_I2C_SCLK_PIN) */
- 737:Generated_Source\PSoC4/INA226_I2C.c **** 
- 738:Generated_Source\PSoC4/INA226_I2C.c ****     #if (INA226_I2C_SS0_PIN)
- 739:Generated_Source\PSoC4/INA226_I2C.c ****         INA226_I2C_SET_HSIOM_SEL(INA226_I2C_SS0_HSIOM_REG,
- 740:Generated_Source\PSoC4/INA226_I2C.c ****                                        INA226_I2C_SS0_HSIOM_MASK,
- 741:Generated_Source\PSoC4/INA226_I2C.c ****                                        INA226_I2C_SS0_HSIOM_POS,
- 742:Generated_Source\PSoC4/INA226_I2C.c ****                                        hsiomSel[INA226_I2C_SS0_PIN_INDEX]);
- 743:Generated_Source\PSoC4/INA226_I2C.c **** 
- 744:Generated_Source\PSoC4/INA226_I2C.c ****         INA226_I2C_spi_ss0_SetDriveMode((uint8) pinsDm[INA226_I2C_SS0_PIN_INDEX]);
- 745:Generated_Source\PSoC4/INA226_I2C.c **** 
- 746:Generated_Source\PSoC4/INA226_I2C.c ****         INA226_I2C_SET_INP_DIS(INA226_I2C_spi_ss0_INP_DIS,
- 747:Generated_Source\PSoC4/INA226_I2C.c ****                                      INA226_I2C_spi_ss0_MASK,
- 748:Generated_Source\PSoC4/INA226_I2C.c ****                                      (0u != (pinsInBuf & INA226_I2C_SS0_PIN_MASK)));
- 749:Generated_Source\PSoC4/INA226_I2C.c ****     #endif /* (INA226_I2C_SS0_PIN) */
- 750:Generated_Source\PSoC4/INA226_I2C.c **** 
- 751:Generated_Source\PSoC4/INA226_I2C.c ****     #if (INA226_I2C_SS1_PIN)
- 752:Generated_Source\PSoC4/INA226_I2C.c ****         INA226_I2C_SET_HSIOM_SEL(INA226_I2C_SS1_HSIOM_REG,
- 753:Generated_Source\PSoC4/INA226_I2C.c ****                                        INA226_I2C_SS1_HSIOM_MASK,
- 754:Generated_Source\PSoC4/INA226_I2C.c ****                                        INA226_I2C_SS1_HSIOM_POS,
- 755:Generated_Source\PSoC4/INA226_I2C.c ****                                        hsiomSel[INA226_I2C_SS1_PIN_INDEX]);
- 756:Generated_Source\PSoC4/INA226_I2C.c **** 
- 757:Generated_Source\PSoC4/INA226_I2C.c ****         INA226_I2C_spi_ss1_SetDriveMode((uint8) pinsDm[INA226_I2C_SS1_PIN_INDEX]);
- 758:Generated_Source\PSoC4/INA226_I2C.c **** 
- 759:Generated_Source\PSoC4/INA226_I2C.c ****         INA226_I2C_SET_INP_DIS(INA226_I2C_spi_ss1_INP_DIS,
- 760:Generated_Source\PSoC4/INA226_I2C.c ****                                      INA226_I2C_spi_ss1_MASK,
- 761:Generated_Source\PSoC4/INA226_I2C.c ****                                      (0u != (pinsInBuf & INA226_I2C_SS1_PIN_MASK)));
- 762:Generated_Source\PSoC4/INA226_I2C.c ****     #endif /* (INA226_I2C_SS1_PIN) */
- 763:Generated_Source\PSoC4/INA226_I2C.c **** 
- 764:Generated_Source\PSoC4/INA226_I2C.c ****     #if (INA226_I2C_SS2_PIN)
- 765:Generated_Source\PSoC4/INA226_I2C.c ****         INA226_I2C_SET_HSIOM_SEL(INA226_I2C_SS2_HSIOM_REG,
- 766:Generated_Source\PSoC4/INA226_I2C.c ****                                        INA226_I2C_SS2_HSIOM_MASK,
- 767:Generated_Source\PSoC4/INA226_I2C.c ****                                        INA226_I2C_SS2_HSIOM_POS,
- 768:Generated_Source\PSoC4/INA226_I2C.c ****                                        hsiomSel[INA226_I2C_SS2_PIN_INDEX]);
- 769:Generated_Source\PSoC4/INA226_I2C.c **** 
- 770:Generated_Source\PSoC4/INA226_I2C.c ****         INA226_I2C_spi_ss2_SetDriveMode((uint8) pinsDm[INA226_I2C_SS2_PIN_INDEX]);
- 771:Generated_Source\PSoC4/INA226_I2C.c **** 
- 772:Generated_Source\PSoC4/INA226_I2C.c ****         INA226_I2C_SET_INP_DIS(INA226_I2C_spi_ss2_INP_DIS,
- 773:Generated_Source\PSoC4/INA226_I2C.c ****                                      INA226_I2C_spi_ss2_MASK,
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 21
+ 591 021e 01       		.byte	0x1
+ 592 021f 4F01     		.2byte	0x14f
+ 593 0221 00000000 		.4byte	.LFB7
+ 594 0225 0C000000 		.4byte	.LFE7-.LFB7
+ 595 0229 01       		.uleb128 0x1
+ 596 022a 9C       		.byte	0x9c
+ 597 022b 3E020000 		.4byte	0x23e
+ 598 022f 11       		.uleb128 0x11
+ 599 0230 32010000 		.4byte	.LASF29
+ 600 0234 01       		.byte	0x1
+ 601 0235 4F01     		.2byte	0x14f
+ 602 0237 A9000000 		.4byte	0xa9
+ 603 023b 01       		.uleb128 0x1
+ 604 023c 50       		.byte	0x50
+ 605 023d 00       		.byte	0
+ 606 023e 12       		.uleb128 0x12
+ 607 023f 2D000000 		.4byte	.LASF30
+ 608 0243 01       		.byte	0x1
+ 609 0244 51       		.byte	0x51
+ 610 0245 6B000000 		.4byte	0x6b
+ 611 0249 05       		.uleb128 0x5
+ 612 024a 03       		.byte	0x3
+ 613 024b 00000000 		.4byte	INA226_I2C_initVar
+ 614 024f 12       		.uleb128 0x12
+ 615 0250 F4000000 		.4byte	.LASF31
+ 616 0254 01       		.byte	0x1
+ 617 0255 61       		.byte	0x61
+ 618 0256 A9000000 		.4byte	0xa9
+ 619 025a 05       		.uleb128 0x5
+ 620 025b 03       		.byte	0x3
+ 621 025c 00000000 		.4byte	INA226_I2C_customIntrHandler
+ 622 0260 13       		.uleb128 0x13
+ 623 0261 A5000000 		.4byte	.LASF32
+ 624 0265 A5000000 		.4byte	.LASF32
+ 625 0269 03       		.byte	0x3
+ 626 026a D6       		.byte	0xd6
+ 627 026b 13       		.uleb128 0x13
+ 628 026c 23030000 		.4byte	.LASF33
+ 629 0270 23030000 		.4byte	.LASF33
+ 630 0274 04       		.byte	0x4
+ 631 0275 4C       		.byte	0x4c
+ 632 0276 13       		.uleb128 0x13
+ 633 0277 7E000000 		.4byte	.LASF34
+ 634 027b 7E000000 		.4byte	.LASF34
+ 635 027f 04       		.byte	0x4
+ 636 0280 49       		.byte	0x49
+ 637 0281 13       		.uleb128 0x13
+ 638 0282 81020000 		.4byte	.LASF35
+ 639 0286 81020000 		.4byte	.LASF35
+ 640 028a 03       		.byte	0x3
+ 641 028b D8       		.byte	0xd8
+ 642 028c 13       		.uleb128 0x13
+ 643 028d 77010000 		.4byte	.LASF36
+ 644 0291 77010000 		.4byte	.LASF36
+ 645 0295 03       		.byte	0x3
+ 646 0296 DB       		.byte	0xdb
+ 647 0297 00       		.byte	0
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccmnjagw.s 			page 21
 
 
- 774:Generated_Source\PSoC4/INA226_I2C.c ****                                      (0u != (pinsInBuf & INA226_I2C_SS2_PIN_MASK)));
- 775:Generated_Source\PSoC4/INA226_I2C.c ****     #endif /* (INA226_I2C_SS2_PIN) */
- 776:Generated_Source\PSoC4/INA226_I2C.c **** 
- 777:Generated_Source\PSoC4/INA226_I2C.c ****     #if (INA226_I2C_SS3_PIN)
- 778:Generated_Source\PSoC4/INA226_I2C.c ****         INA226_I2C_SET_HSIOM_SEL(INA226_I2C_SS3_HSIOM_REG,
- 779:Generated_Source\PSoC4/INA226_I2C.c ****                                        INA226_I2C_SS3_HSIOM_MASK,
- 780:Generated_Source\PSoC4/INA226_I2C.c ****                                        INA226_I2C_SS3_HSIOM_POS,
- 781:Generated_Source\PSoC4/INA226_I2C.c ****                                        hsiomSel[INA226_I2C_SS3_PIN_INDEX]);
- 782:Generated_Source\PSoC4/INA226_I2C.c **** 
- 783:Generated_Source\PSoC4/INA226_I2C.c ****         INA226_I2C_spi_ss3_SetDriveMode((uint8) pinsDm[INA226_I2C_SS3_PIN_INDEX]);
- 784:Generated_Source\PSoC4/INA226_I2C.c **** 
- 785:Generated_Source\PSoC4/INA226_I2C.c ****         INA226_I2C_SET_INP_DIS(INA226_I2C_spi_ss3_INP_DIS,
- 786:Generated_Source\PSoC4/INA226_I2C.c ****                                      INA226_I2C_spi_ss3_MASK,
- 787:Generated_Source\PSoC4/INA226_I2C.c ****                                      (0u != (pinsInBuf & INA226_I2C_SS3_PIN_MASK)));
- 788:Generated_Source\PSoC4/INA226_I2C.c ****     #endif /* (INA226_I2C_SS3_PIN) */
- 789:Generated_Source\PSoC4/INA226_I2C.c ****     }
- 790:Generated_Source\PSoC4/INA226_I2C.c **** 
- 791:Generated_Source\PSoC4/INA226_I2C.c **** #endif /* (INA226_I2C_SCB_MODE_UNCONFIG_CONST_CFG) */
- 792:Generated_Source\PSoC4/INA226_I2C.c **** 
- 793:Generated_Source\PSoC4/INA226_I2C.c **** 
- 794:Generated_Source\PSoC4/INA226_I2C.c **** #if (INA226_I2C_CY_SCBIP_V0 || INA226_I2C_CY_SCBIP_V1)
- 795:Generated_Source\PSoC4/INA226_I2C.c ****     /*******************************************************************************
- 796:Generated_Source\PSoC4/INA226_I2C.c ****     * Function Name: INA226_I2C_I2CSlaveNackGeneration
- 797:Generated_Source\PSoC4/INA226_I2C.c ****     ****************************************************************************//**
- 798:Generated_Source\PSoC4/INA226_I2C.c ****     *
- 799:Generated_Source\PSoC4/INA226_I2C.c ****     *  Sets command to generate NACK to the address or data.
- 800:Generated_Source\PSoC4/INA226_I2C.c ****     *
- 801:Generated_Source\PSoC4/INA226_I2C.c ****     *******************************************************************************/
- 802:Generated_Source\PSoC4/INA226_I2C.c ****     void INA226_I2C_I2CSlaveNackGeneration(void)
- 803:Generated_Source\PSoC4/INA226_I2C.c ****     {
- 333              		.loc 1 803 0
- 334              		.cfi_startproc
- 335              		@ args = 0, pretend = 0, frame = 0
- 336              		@ frame_needed = 0, uses_anonymous_args = 0
- 337              		@ link register save eliminated.
- 804:Generated_Source\PSoC4/INA226_I2C.c ****         /* Check for EC_AM toggle condition: EC_AM and clock stretching for address are enabled */
- 805:Generated_Source\PSoC4/INA226_I2C.c ****         if ((0u != (INA226_I2C_CTRL_REG & INA226_I2C_CTRL_EC_AM_MODE)) &&
- 338              		.loc 1 805 0
- 339 0000 0A4B     		ldr	r3, .L25
- 340 0002 1B68     		ldr	r3, [r3]
- 341 0004 DB05     		lsls	r3, r3, #23
- 342 0006 0DD5     		bpl	.L24
- 806:Generated_Source\PSoC4/INA226_I2C.c ****             (0u == (INA226_I2C_I2C_CTRL_REG & INA226_I2C_I2C_CTRL_S_NOT_READY_ADDR_NACK)))
- 343              		.loc 1 806 0 discriminator 1
- 344 0008 094B     		ldr	r3, .L25+4
- 345 000a 1B68     		ldr	r3, [r3]
- 805:Generated_Source\PSoC4/INA226_I2C.c ****             (0u == (INA226_I2C_I2C_CTRL_REG & INA226_I2C_I2C_CTRL_S_NOT_READY_ADDR_NACK)))
- 346              		.loc 1 805 0 discriminator 1
- 347 000c 5B04     		lsls	r3, r3, #17
- 348 000e 09D4     		bmi	.L24
- 807:Generated_Source\PSoC4/INA226_I2C.c ****         {
- 808:Generated_Source\PSoC4/INA226_I2C.c ****             /* Toggle EC_AM before NACK generation */
- 809:Generated_Source\PSoC4/INA226_I2C.c ****             INA226_I2C_CTRL_REG &= ~INA226_I2C_CTRL_EC_AM_MODE;
- 349              		.loc 1 809 0
- 350 0010 064B     		ldr	r3, .L25
- 351 0012 1968     		ldr	r1, [r3]
- 352 0014 074A     		ldr	r2, .L25+8
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 22
+ 648              		.section	.debug_abbrev,"",%progbits
+ 649              	.Ldebug_abbrev0:
+ 650 0000 01       		.uleb128 0x1
+ 651 0001 11       		.uleb128 0x11
+ 652 0002 01       		.byte	0x1
+ 653 0003 25       		.uleb128 0x25
+ 654 0004 0E       		.uleb128 0xe
+ 655 0005 13       		.uleb128 0x13
+ 656 0006 0B       		.uleb128 0xb
+ 657 0007 03       		.uleb128 0x3
+ 658 0008 0E       		.uleb128 0xe
+ 659 0009 1B       		.uleb128 0x1b
+ 660 000a 0E       		.uleb128 0xe
+ 661 000b 55       		.uleb128 0x55
+ 662 000c 17       		.uleb128 0x17
+ 663 000d 11       		.uleb128 0x11
+ 664 000e 01       		.uleb128 0x1
+ 665 000f 10       		.uleb128 0x10
+ 666 0010 17       		.uleb128 0x17
+ 667 0011 00       		.byte	0
+ 668 0012 00       		.byte	0
+ 669 0013 02       		.uleb128 0x2
+ 670 0014 24       		.uleb128 0x24
+ 671 0015 00       		.byte	0
+ 672 0016 0B       		.uleb128 0xb
+ 673 0017 0B       		.uleb128 0xb
+ 674 0018 3E       		.uleb128 0x3e
+ 675 0019 0B       		.uleb128 0xb
+ 676 001a 03       		.uleb128 0x3
+ 677 001b 0E       		.uleb128 0xe
+ 678 001c 00       		.byte	0
+ 679 001d 00       		.byte	0
+ 680 001e 03       		.uleb128 0x3
+ 681 001f 24       		.uleb128 0x24
+ 682 0020 00       		.byte	0
+ 683 0021 0B       		.uleb128 0xb
+ 684 0022 0B       		.uleb128 0xb
+ 685 0023 3E       		.uleb128 0x3e
+ 686 0024 0B       		.uleb128 0xb
+ 687 0025 03       		.uleb128 0x3
+ 688 0026 08       		.uleb128 0x8
+ 689 0027 00       		.byte	0
+ 690 0028 00       		.byte	0
+ 691 0029 04       		.uleb128 0x4
+ 692 002a 16       		.uleb128 0x16
+ 693 002b 00       		.byte	0
+ 694 002c 03       		.uleb128 0x3
+ 695 002d 0E       		.uleb128 0xe
+ 696 002e 3A       		.uleb128 0x3a
+ 697 002f 0B       		.uleb128 0xb
+ 698 0030 3B       		.uleb128 0x3b
+ 699 0031 05       		.uleb128 0x5
+ 700 0032 49       		.uleb128 0x49
+ 701 0033 13       		.uleb128 0x13
+ 702 0034 00       		.byte	0
+ 703 0035 00       		.byte	0
+ 704 0036 05       		.uleb128 0x5
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccmnjagw.s 			page 22
 
 
- 353 0016 0A40     		ands	r2, r1
- 354 0018 1A60     		str	r2, [r3]
- 810:Generated_Source\PSoC4/INA226_I2C.c ****             INA226_I2C_CTRL_REG |=  INA226_I2C_CTRL_EC_AM_MODE;
- 355              		.loc 1 810 0
- 356 001a 1A68     		ldr	r2, [r3]
- 357 001c 8021     		movs	r1, #128
- 358 001e 4900     		lsls	r1, r1, #1
- 359 0020 0A43     		orrs	r2, r1
- 360 0022 1A60     		str	r2, [r3]
- 361              	.L24:
- 811:Generated_Source\PSoC4/INA226_I2C.c ****         }
- 812:Generated_Source\PSoC4/INA226_I2C.c **** 
- 813:Generated_Source\PSoC4/INA226_I2C.c ****         INA226_I2C_I2C_SLAVE_CMD_REG = INA226_I2C_I2C_SLAVE_CMD_S_NACK;
- 362              		.loc 1 813 0
- 363 0024 0222     		movs	r2, #2
- 364 0026 044B     		ldr	r3, .L25+12
- 365 0028 1A60     		str	r2, [r3]
- 814:Generated_Source\PSoC4/INA226_I2C.c ****     }
- 366              		.loc 1 814 0
- 367              		@ sp needed
- 368 002a 7047     		bx	lr
- 369              	.L26:
- 370              		.align	2
- 371              	.L25:
- 372 002c 00000740 		.word	1074200576
- 373 0030 60000740 		.word	1074200672
- 374 0034 FFFEFFFF 		.word	-257
- 375 0038 6C000740 		.word	1074200684
- 376              		.cfi_endproc
- 377              	.LFE10:
- 378              		.size	INA226_I2C_I2CSlaveNackGeneration, .-INA226_I2C_I2CSlaveNackGeneration
- 379              		.global	INA226_I2C_customIntrHandler
- 380              		.global	INA226_I2C_initVar
- 381              		.bss
- 382              		.align	2
- 383              		.set	.LANCHOR0,. + 0
- 384              		.type	INA226_I2C_initVar, %object
- 385              		.size	INA226_I2C_initVar, 1
- 386              	INA226_I2C_initVar:
- 387 0000 00       		.space	1
- 388 0001 000000   		.space	3
- 389              		.type	INA226_I2C_customIntrHandler, %object
- 390              		.size	INA226_I2C_customIntrHandler, 4
- 391              	INA226_I2C_customIntrHandler:
- 392 0004 00000000 		.space	4
- 393              		.text
- 394              	.Letext0:
- 395              		.file 2 "Generated_Source\\PSoC4/cytypes.h"
- 396              		.file 3 "Generated_Source\\PSoC4/CyLib.h"
- 397              		.file 4 "Generated_Source\\PSoC4\\INA226_I2C_I2C_PVT.h"
- 398              		.section	.debug_info,"",%progbits
- 399              	.Ldebug_info0:
- 400 0000 A6020000 		.4byte	0x2a6
- 401 0004 0400     		.2byte	0x4
- 402 0006 00000000 		.4byte	.Ldebug_abbrev0
- 403 000a 04       		.byte	0x4
- 404 000b 01       		.uleb128 0x1
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 23
+ 705 0037 35       		.uleb128 0x35
+ 706 0038 00       		.byte	0
+ 707 0039 49       		.uleb128 0x49
+ 708 003a 13       		.uleb128 0x13
+ 709 003b 00       		.byte	0
+ 710 003c 00       		.byte	0
+ 711 003d 06       		.uleb128 0x6
+ 712 003e 0F       		.uleb128 0xf
+ 713 003f 00       		.byte	0
+ 714 0040 0B       		.uleb128 0xb
+ 715 0041 0B       		.uleb128 0xb
+ 716 0042 49       		.uleb128 0x49
+ 717 0043 13       		.uleb128 0x13
+ 718 0044 00       		.byte	0
+ 719 0045 00       		.byte	0
+ 720 0046 07       		.uleb128 0x7
+ 721 0047 15       		.uleb128 0x15
+ 722 0048 00       		.byte	0
+ 723 0049 27       		.uleb128 0x27
+ 724 004a 19       		.uleb128 0x19
+ 725 004b 00       		.byte	0
+ 726 004c 00       		.byte	0
+ 727 004d 08       		.uleb128 0x8
+ 728 004e 2E       		.uleb128 0x2e
+ 729 004f 01       		.byte	0x1
+ 730 0050 03       		.uleb128 0x3
+ 731 0051 0E       		.uleb128 0xe
+ 732 0052 3A       		.uleb128 0x3a
+ 733 0053 0B       		.uleb128 0xb
+ 734 0054 3B       		.uleb128 0x3b
+ 735 0055 05       		.uleb128 0x5
+ 736 0056 27       		.uleb128 0x27
+ 737 0057 19       		.uleb128 0x19
+ 738 0058 11       		.uleb128 0x11
+ 739 0059 01       		.uleb128 0x1
+ 740 005a 12       		.uleb128 0x12
+ 741 005b 06       		.uleb128 0x6
+ 742 005c 40       		.uleb128 0x40
+ 743 005d 18       		.uleb128 0x18
+ 744 005e 9742     		.uleb128 0x2117
+ 745 0060 19       		.uleb128 0x19
+ 746 0061 01       		.uleb128 0x1
+ 747 0062 13       		.uleb128 0x13
+ 748 0063 00       		.byte	0
+ 749 0064 00       		.byte	0
+ 750 0065 09       		.uleb128 0x9
+ 751 0066 898201   		.uleb128 0x4109
+ 752 0069 01       		.byte	0x1
+ 753 006a 11       		.uleb128 0x11
+ 754 006b 01       		.uleb128 0x1
+ 755 006c 31       		.uleb128 0x31
+ 756 006d 13       		.uleb128 0x13
+ 757 006e 00       		.byte	0
+ 758 006f 00       		.byte	0
+ 759 0070 0A       		.uleb128 0xa
+ 760 0071 8A8201   		.uleb128 0x410a
+ 761 0074 00       		.byte	0
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccmnjagw.s 			page 23
 
 
- 405 000c BB010000 		.4byte	.LASF37
- 406 0010 0C       		.byte	0xc
- 407 0011 52020000 		.4byte	.LASF38
- 408 0015 C1020000 		.4byte	.LASF39
- 409 0019 00000000 		.4byte	.Ldebug_ranges0+0
- 410 001d 00000000 		.4byte	0
- 411 0021 00000000 		.4byte	.Ldebug_line0
- 412 0025 02       		.uleb128 0x2
- 413 0026 01       		.byte	0x1
- 414 0027 06       		.byte	0x6
- 415 0028 58030000 		.4byte	.LASF0
- 416 002c 02       		.uleb128 0x2
- 417 002d 01       		.byte	0x1
- 418 002e 08       		.byte	0x8
- 419 002f B9000000 		.4byte	.LASF1
- 420 0033 02       		.uleb128 0x2
- 421 0034 02       		.byte	0x2
- 422 0035 05       		.byte	0x5
- 423 0036 59010000 		.4byte	.LASF2
- 424 003a 02       		.uleb128 0x2
- 425 003b 02       		.byte	0x2
- 426 003c 07       		.byte	0x7
- 427 003d 8D000000 		.4byte	.LASF3
- 428 0041 02       		.uleb128 0x2
- 429 0042 04       		.byte	0x4
- 430 0043 05       		.byte	0x5
- 431 0044 30030000 		.4byte	.LASF4
- 432 0048 02       		.uleb128 0x2
- 433 0049 04       		.byte	0x4
- 434 004a 07       		.byte	0x7
- 435 004b D3000000 		.4byte	.LASF5
- 436 004f 02       		.uleb128 0x2
- 437 0050 08       		.byte	0x8
- 438 0051 05       		.byte	0x5
- 439 0052 76020000 		.4byte	.LASF6
- 440 0056 02       		.uleb128 0x2
- 441 0057 08       		.byte	0x8
- 442 0058 07       		.byte	0x7
- 443 0059 82010000 		.4byte	.LASF7
- 444 005d 03       		.uleb128 0x3
- 445 005e 04       		.byte	0x4
- 446 005f 05       		.byte	0x5
- 447 0060 696E7400 		.ascii	"int\000"
- 448 0064 02       		.uleb128 0x2
- 449 0065 04       		.byte	0x4
- 450 0066 07       		.byte	0x7
- 451 0067 75010000 		.4byte	.LASF8
- 452 006b 04       		.uleb128 0x4
- 453 006c F7000000 		.4byte	.LASF9
- 454 0070 02       		.byte	0x2
- 455 0071 FB01     		.2byte	0x1fb
- 456 0073 2C000000 		.4byte	0x2c
- 457 0077 04       		.uleb128 0x4
- 458 0078 6E010000 		.4byte	.LASF10
- 459 007c 02       		.byte	0x2
- 460 007d FD01     		.2byte	0x1fd
- 461 007f 48000000 		.4byte	0x48
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 24
+ 762 0075 02       		.uleb128 0x2
+ 763 0076 18       		.uleb128 0x18
+ 764 0077 9142     		.uleb128 0x2111
+ 765 0079 18       		.uleb128 0x18
+ 766 007a 00       		.byte	0
+ 767 007b 00       		.byte	0
+ 768 007c 0B       		.uleb128 0xb
+ 769 007d 898201   		.uleb128 0x4109
+ 770 0080 00       		.byte	0
+ 771 0081 11       		.uleb128 0x11
+ 772 0082 01       		.uleb128 0x1
+ 773 0083 31       		.uleb128 0x31
+ 774 0084 13       		.uleb128 0x13
+ 775 0085 00       		.byte	0
+ 776 0086 00       		.byte	0
+ 777 0087 0C       		.uleb128 0xc
+ 778 0088 2E       		.uleb128 0x2e
+ 779 0089 01       		.byte	0x1
+ 780 008a 3F       		.uleb128 0x3f
+ 781 008b 19       		.uleb128 0x19
+ 782 008c 03       		.uleb128 0x3
+ 783 008d 0E       		.uleb128 0xe
+ 784 008e 3A       		.uleb128 0x3a
+ 785 008f 0B       		.uleb128 0xb
+ 786 0090 3B       		.uleb128 0x3b
+ 787 0091 0B       		.uleb128 0xb
+ 788 0092 27       		.uleb128 0x27
+ 789 0093 19       		.uleb128 0x19
+ 790 0094 11       		.uleb128 0x11
+ 791 0095 01       		.uleb128 0x1
+ 792 0096 12       		.uleb128 0x12
+ 793 0097 06       		.uleb128 0x6
+ 794 0098 40       		.uleb128 0x40
+ 795 0099 18       		.uleb128 0x18
+ 796 009a 9742     		.uleb128 0x2117
+ 797 009c 19       		.uleb128 0x19
+ 798 009d 01       		.uleb128 0x1
+ 799 009e 13       		.uleb128 0x13
+ 800 009f 00       		.byte	0
+ 801 00a0 00       		.byte	0
+ 802 00a1 0D       		.uleb128 0xd
+ 803 00a2 898201   		.uleb128 0x4109
+ 804 00a5 01       		.byte	0x1
+ 805 00a6 11       		.uleb128 0x11
+ 806 00a7 01       		.uleb128 0x1
+ 807 00a8 31       		.uleb128 0x31
+ 808 00a9 13       		.uleb128 0x13
+ 809 00aa 01       		.uleb128 0x1
+ 810 00ab 13       		.uleb128 0x13
+ 811 00ac 00       		.byte	0
+ 812 00ad 00       		.byte	0
+ 813 00ae 0E       		.uleb128 0xe
+ 814 00af 2E       		.uleb128 0x2e
+ 815 00b0 01       		.byte	0x1
+ 816 00b1 3F       		.uleb128 0x3f
+ 817 00b2 19       		.uleb128 0x19
+ 818 00b3 03       		.uleb128 0x3
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccmnjagw.s 			page 24
 
 
- 462 0083 02       		.uleb128 0x2
- 463 0084 04       		.byte	0x4
- 464 0085 04       		.byte	0x4
- 465 0086 B3000000 		.4byte	.LASF11
- 466 008a 02       		.uleb128 0x2
- 467 008b 08       		.byte	0x8
- 468 008c 04       		.byte	0x4
- 469 008d 4D010000 		.4byte	.LASF12
- 470 0091 02       		.uleb128 0x2
- 471 0092 01       		.byte	0x1
- 472 0093 08       		.byte	0x8
- 473 0094 84020000 		.4byte	.LASF13
- 474 0098 04       		.uleb128 0x4
- 475 0099 10000000 		.4byte	.LASF14
- 476 009d 02       		.byte	0x2
- 477 009e A702     		.2byte	0x2a7
- 478 00a0 A4000000 		.4byte	0xa4
- 479 00a4 05       		.uleb128 0x5
- 480 00a5 77000000 		.4byte	0x77
- 481 00a9 06       		.uleb128 0x6
- 482 00aa 04       		.byte	0x4
- 483 00ab AF000000 		.4byte	0xaf
- 484 00af 07       		.uleb128 0x7
- 485 00b0 02       		.uleb128 0x2
- 486 00b1 08       		.byte	0x8
- 487 00b2 04       		.byte	0x4
- 488 00b3 39030000 		.4byte	.LASF15
- 489 00b7 02       		.uleb128 0x2
- 490 00b8 04       		.byte	0x4
- 491 00b9 07       		.byte	0x7
- 492 00ba 49020000 		.4byte	.LASF16
- 493 00be 08       		.uleb128 0x8
- 494 00bf FD000000 		.4byte	.LASF17
- 495 00c3 01       		.byte	0x1
- 496 00c4 6401     		.2byte	0x164
- 497 00c6 00000000 		.4byte	.LFB7
- 498 00ca 0A000000 		.4byte	.LFE7-.LFB7
- 499 00ce 01       		.uleb128 0x1
- 500 00cf 9C       		.byte	0x9c
- 501 00d0 E4000000 		.4byte	0xe4
- 502 00d4 09       		.uleb128 0x9
- 503 00d5 08000000 		.4byte	.LVL0
- 504 00d9 72020000 		.4byte	0x272
- 505 00dd 0A       		.uleb128 0xa
- 506 00de 01       		.uleb128 0x1
- 507 00df 50       		.byte	0x50
- 508 00e0 01       		.uleb128 0x1
- 509 00e1 3B       		.byte	0x3b
- 510 00e2 00       		.byte	0
- 511 00e3 00       		.byte	0
- 512 00e4 08       		.uleb128 0x8
- 513 00e5 16000000 		.4byte	.LASF18
- 514 00e9 01       		.byte	0x1
- 515 00ea A201     		.2byte	0x1a2
- 516 00ec 00000000 		.4byte	.LFB9
- 517 00f0 08000000 		.4byte	.LFE9-.LFB9
- 518 00f4 01       		.uleb128 0x1
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 25
+ 819 00b4 0E       		.uleb128 0xe
+ 820 00b5 3A       		.uleb128 0x3a
+ 821 00b6 0B       		.uleb128 0xb
+ 822 00b7 3B       		.uleb128 0x3b
+ 823 00b8 05       		.uleb128 0x5
+ 824 00b9 27       		.uleb128 0x27
+ 825 00ba 19       		.uleb128 0x19
+ 826 00bb 11       		.uleb128 0x11
+ 827 00bc 01       		.uleb128 0x1
+ 828 00bd 12       		.uleb128 0x12
+ 829 00be 06       		.uleb128 0x6
+ 830 00bf 40       		.uleb128 0x40
+ 831 00c0 18       		.uleb128 0x18
+ 832 00c1 9742     		.uleb128 0x2117
+ 833 00c3 19       		.uleb128 0x19
+ 834 00c4 01       		.uleb128 0x1
+ 835 00c5 13       		.uleb128 0x13
+ 836 00c6 00       		.byte	0
+ 837 00c7 00       		.byte	0
+ 838 00c8 0F       		.uleb128 0xf
+ 839 00c9 05       		.uleb128 0x5
+ 840 00ca 00       		.byte	0
+ 841 00cb 03       		.uleb128 0x3
+ 842 00cc 0E       		.uleb128 0xe
+ 843 00cd 3A       		.uleb128 0x3a
+ 844 00ce 0B       		.uleb128 0xb
+ 845 00cf 3B       		.uleb128 0x3b
+ 846 00d0 05       		.uleb128 0x5
+ 847 00d1 49       		.uleb128 0x49
+ 848 00d2 13       		.uleb128 0x13
+ 849 00d3 02       		.uleb128 0x2
+ 850 00d4 17       		.uleb128 0x17
+ 851 00d5 00       		.byte	0
+ 852 00d6 00       		.byte	0
+ 853 00d7 10       		.uleb128 0x10
+ 854 00d8 34       		.uleb128 0x34
+ 855 00d9 00       		.byte	0
+ 856 00da 03       		.uleb128 0x3
+ 857 00db 0E       		.uleb128 0xe
+ 858 00dc 3A       		.uleb128 0x3a
+ 859 00dd 0B       		.uleb128 0xb
+ 860 00de 3B       		.uleb128 0x3b
+ 861 00df 05       		.uleb128 0x5
+ 862 00e0 49       		.uleb128 0x49
+ 863 00e1 13       		.uleb128 0x13
+ 864 00e2 02       		.uleb128 0x2
+ 865 00e3 17       		.uleb128 0x17
+ 866 00e4 00       		.byte	0
+ 867 00e5 00       		.byte	0
+ 868 00e6 11       		.uleb128 0x11
+ 869 00e7 05       		.uleb128 0x5
+ 870 00e8 00       		.byte	0
+ 871 00e9 03       		.uleb128 0x3
+ 872 00ea 0E       		.uleb128 0xe
+ 873 00eb 3A       		.uleb128 0x3a
+ 874 00ec 0B       		.uleb128 0xb
+ 875 00ed 3B       		.uleb128 0x3b
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccmnjagw.s 			page 25
 
 
- 519 00f5 9C       		.byte	0x9c
- 520 00f6 04010000 		.4byte	0x104
- 521 00fa 0B       		.uleb128 0xb
- 522 00fb 06000000 		.4byte	.LVL1
- 523 00ff 7D020000 		.4byte	0x27d
- 524 0103 00       		.byte	0
- 525 0104 0C       		.uleb128 0xc
- 526 0105 AB010000 		.4byte	.LASF19
- 527 0109 01       		.byte	0x1
- 528 010a 7B       		.byte	0x7b
- 529 010b 00000000 		.4byte	.LFB0
- 530 010f 08000000 		.4byte	.LFE0-.LFB0
- 531 0113 01       		.uleb128 0x1
- 532 0114 9C       		.byte	0x9c
- 533 0115 23010000 		.4byte	0x123
- 534 0119 0B       		.uleb128 0xb
- 535 011a 06000000 		.4byte	.LVL2
- 536 011e 88020000 		.4byte	0x288
- 537 0122 00       		.byte	0
- 538 0123 0C       		.uleb128 0xc
- 539 0124 E5000000 		.4byte	.LASF20
- 540 0128 01       		.byte	0x1
- 541 0129 AB       		.byte	0xab
- 542 012a 00000000 		.4byte	.LFB1
- 543 012e 18000000 		.4byte	.LFE1-.LFB1
- 544 0132 01       		.uleb128 0x1
- 545 0133 9C       		.byte	0x9c
- 546 0134 42010000 		.4byte	0x142
- 547 0138 0B       		.uleb128 0xb
- 548 0139 12000000 		.4byte	.LVL3
- 549 013d BE000000 		.4byte	0xbe
- 550 0141 00       		.byte	0
- 551 0142 0C       		.uleb128 0xc
- 552 0143 B0020000 		.4byte	.LASF21
- 553 0147 01       		.byte	0x1
- 554 0148 D2       		.byte	0xd2
- 555 0149 00000000 		.4byte	.LFB2
- 556 014d 20000000 		.4byte	.LFE2-.LFB2
- 557 0151 01       		.uleb128 0x1
- 558 0152 9C       		.byte	0x9c
- 559 0153 6A010000 		.4byte	0x16a
- 560 0157 0B       		.uleb128 0xb
- 561 0158 0E000000 		.4byte	.LVL4
- 562 015c 04010000 		.4byte	0x104
- 563 0160 0B       		.uleb128 0xb
- 564 0161 18000000 		.4byte	.LVL5
- 565 0165 23010000 		.4byte	0x123
- 566 0169 00       		.byte	0
- 567 016a 0C       		.uleb128 0xc
- 568 016b 00000000 		.4byte	.LASF22
- 569 016f 01       		.byte	0x1
- 570 0170 EF       		.byte	0xef
- 571 0171 00000000 		.4byte	.LFB3
- 572 0175 2C000000 		.4byte	.LFE3-.LFB3
- 573 0179 01       		.uleb128 0x1
- 574 017a 9C       		.byte	0x9c
- 575 017b AB010000 		.4byte	0x1ab
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 26
+ 876 00ee 05       		.uleb128 0x5
+ 877 00ef 49       		.uleb128 0x49
+ 878 00f0 13       		.uleb128 0x13
+ 879 00f1 02       		.uleb128 0x2
+ 880 00f2 18       		.uleb128 0x18
+ 881 00f3 00       		.byte	0
+ 882 00f4 00       		.byte	0
+ 883 00f5 12       		.uleb128 0x12
+ 884 00f6 34       		.uleb128 0x34
+ 885 00f7 00       		.byte	0
+ 886 00f8 03       		.uleb128 0x3
+ 887 00f9 0E       		.uleb128 0xe
+ 888 00fa 3A       		.uleb128 0x3a
+ 889 00fb 0B       		.uleb128 0xb
+ 890 00fc 3B       		.uleb128 0x3b
+ 891 00fd 0B       		.uleb128 0xb
+ 892 00fe 49       		.uleb128 0x49
+ 893 00ff 13       		.uleb128 0x13
+ 894 0100 3F       		.uleb128 0x3f
+ 895 0101 19       		.uleb128 0x19
+ 896 0102 02       		.uleb128 0x2
+ 897 0103 18       		.uleb128 0x18
+ 898 0104 00       		.byte	0
+ 899 0105 00       		.byte	0
+ 900 0106 13       		.uleb128 0x13
+ 901 0107 2E       		.uleb128 0x2e
+ 902 0108 00       		.byte	0
+ 903 0109 3F       		.uleb128 0x3f
+ 904 010a 19       		.uleb128 0x19
+ 905 010b 3C       		.uleb128 0x3c
+ 906 010c 19       		.uleb128 0x19
+ 907 010d 6E       		.uleb128 0x6e
+ 908 010e 0E       		.uleb128 0xe
+ 909 010f 03       		.uleb128 0x3
+ 910 0110 0E       		.uleb128 0xe
+ 911 0111 3A       		.uleb128 0x3a
+ 912 0112 0B       		.uleb128 0xb
+ 913 0113 3B       		.uleb128 0x3b
+ 914 0114 0B       		.uleb128 0xb
+ 915 0115 00       		.byte	0
+ 916 0116 00       		.byte	0
+ 917 0117 00       		.byte	0
+ 918              		.section	.debug_loc,"",%progbits
+ 919              	.Ldebug_loc0:
+ 920              	.LLST0:
+ 921 0000 00000000 		.4byte	.LVL9
+ 922 0004 0A000000 		.4byte	.LVL12
+ 923 0008 0100     		.2byte	0x1
+ 924 000a 50       		.byte	0x50
+ 925 000b 0A000000 		.4byte	.LVL12
+ 926 000f 14000000 		.4byte	.LFE5
+ 927 0013 0400     		.2byte	0x4
+ 928 0015 F3       		.byte	0xf3
+ 929 0016 01       		.uleb128 0x1
+ 930 0017 50       		.byte	0x50
+ 931 0018 9F       		.byte	0x9f
+ 932 0019 00000000 		.4byte	0
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccmnjagw.s 			page 26
 
 
- 576 017f 0D       		.uleb128 0xd
- 577 0180 08000000 		.4byte	.LVL6
- 578 0184 93020000 		.4byte	0x293
- 579 0188 92010000 		.4byte	0x192
- 580 018c 0A       		.uleb128 0xa
- 581 018d 01       		.uleb128 0x1
- 582 018e 50       		.byte	0x50
- 583 018f 01       		.uleb128 0x1
- 584 0190 3B       		.byte	0x3b
- 585 0191 00       		.byte	0
- 586 0192 0B       		.uleb128 0xb
- 587 0193 0C000000 		.4byte	.LVL7
- 588 0197 E4000000 		.4byte	0xe4
- 589 019b 09       		.uleb128 0x9
- 590 019c 22000000 		.4byte	.LVL8
- 591 01a0 9E020000 		.4byte	0x29e
- 592 01a4 0A       		.uleb128 0xa
- 593 01a5 01       		.uleb128 0x1
- 594 01a6 50       		.byte	0x50
- 595 01a7 01       		.uleb128 0x1
- 596 01a8 3B       		.byte	0x3b
- 597 01a9 00       		.byte	0
- 598 01aa 00       		.byte	0
- 599 01ab 0E       		.uleb128 0xe
- 600 01ac 33010000 		.4byte	.LASF23
- 601 01b0 01       		.byte	0x1
- 602 01b1 1701     		.2byte	0x117
- 603 01b3 00000000 		.4byte	.LFB4
- 604 01b7 14000000 		.4byte	.LFE4-.LFB4
- 605 01bb 01       		.uleb128 0x1
- 606 01bc 9C       		.byte	0x9c
- 607 01bd E2010000 		.4byte	0x1e2
- 608 01c1 0F       		.uleb128 0xf
- 609 01c2 40000000 		.4byte	.LASF25
- 610 01c6 01       		.byte	0x1
- 611 01c7 1701     		.2byte	0x117
- 612 01c9 77000000 		.4byte	0x77
- 613 01cd 00000000 		.4byte	.LLST0
- 614 01d1 10       		.uleb128 0x10
- 615 01d2 25030000 		.4byte	.LASF26
- 616 01d6 01       		.byte	0x1
- 617 01d7 1901     		.2byte	0x119
- 618 01d9 77000000 		.4byte	0x77
- 619 01dd 21000000 		.4byte	.LLST1
- 620 01e1 00       		.byte	0
- 621 01e2 0E       		.uleb128 0xe
- 622 01e3 89020000 		.4byte	.LASF24
- 623 01e7 01       		.byte	0x1
- 624 01e8 3001     		.2byte	0x130
- 625 01ea 00000000 		.4byte	.LFB5
- 626 01ee 14000000 		.4byte	.LFE5-.LFB5
- 627 01f2 01       		.uleb128 0x1
- 628 01f3 9C       		.byte	0x9c
- 629 01f4 19020000 		.4byte	0x219
- 630 01f8 0F       		.uleb128 0xf
- 631 01f9 40000000 		.4byte	.LASF25
- 632 01fd 01       		.byte	0x1
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 27
+ 933 001d 00000000 		.4byte	0
+ 934              	.LLST1:
+ 935 0021 04000000 		.4byte	.LVL10
+ 936 0025 0C000000 		.4byte	.LVL13
+ 937 0029 0100     		.2byte	0x1
+ 938 002b 53       		.byte	0x53
+ 939 002c 0C000000 		.4byte	.LVL13
+ 940 0030 14000000 		.4byte	.LFE5
+ 941 0034 0100     		.2byte	0x1
+ 942 0036 50       		.byte	0x50
+ 943 0037 00000000 		.4byte	0
+ 944 003b 00000000 		.4byte	0
+ 945              	.LLST2:
+ 946 003f 00000000 		.4byte	.LVL14
+ 947 0043 0A000000 		.4byte	.LVL17
+ 948 0047 0100     		.2byte	0x1
+ 949 0049 50       		.byte	0x50
+ 950 004a 0A000000 		.4byte	.LVL17
+ 951 004e 14000000 		.4byte	.LFE6
+ 952 0052 0400     		.2byte	0x4
+ 953 0054 F3       		.byte	0xf3
+ 954 0055 01       		.uleb128 0x1
+ 955 0056 50       		.byte	0x50
+ 956 0057 9F       		.byte	0x9f
+ 957 0058 00000000 		.4byte	0
+ 958 005c 00000000 		.4byte	0
+ 959              	.LLST3:
+ 960 0060 04000000 		.4byte	.LVL15
+ 961 0064 0C000000 		.4byte	.LVL18
+ 962 0068 0100     		.2byte	0x1
+ 963 006a 53       		.byte	0x53
+ 964 006b 0C000000 		.4byte	.LVL18
+ 965 006f 14000000 		.4byte	.LFE6
+ 966 0073 0100     		.2byte	0x1
+ 967 0075 50       		.byte	0x50
+ 968 0076 00000000 		.4byte	0
+ 969 007a 00000000 		.4byte	0
+ 970              		.section	.debug_aranges,"",%progbits
+ 971 0000 5C000000 		.4byte	0x5c
+ 972 0004 0200     		.2byte	0x2
+ 973 0006 00000000 		.4byte	.Ldebug_info0
+ 974 000a 04       		.byte	0x4
+ 975 000b 00       		.byte	0
+ 976 000c 0000     		.2byte	0
+ 977 000e 0000     		.2byte	0
+ 978 0010 00000000 		.4byte	.LFB8
+ 979 0014 0A000000 		.4byte	.LFE8-.LFB8
+ 980 0018 00000000 		.4byte	.LFB10
+ 981 001c 08000000 		.4byte	.LFE10-.LFB10
+ 982 0020 00000000 		.4byte	.LFB1
+ 983 0024 08000000 		.4byte	.LFE1-.LFB1
+ 984 0028 00000000 		.4byte	.LFB2
+ 985 002c 18000000 		.4byte	.LFE2-.LFB2
+ 986 0030 00000000 		.4byte	.LFB3
+ 987 0034 20000000 		.4byte	.LFE3-.LFB3
+ 988 0038 00000000 		.4byte	.LFB4
+ 989 003c 2C000000 		.4byte	.LFE4-.LFB4
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccmnjagw.s 			page 27
 
 
- 633 01fe 3001     		.2byte	0x130
- 634 0200 77000000 		.4byte	0x77
- 635 0204 3F000000 		.4byte	.LLST2
- 636 0208 10       		.uleb128 0x10
- 637 0209 63010000 		.4byte	.LASF27
- 638 020d 01       		.byte	0x1
- 639 020e 3201     		.2byte	0x132
- 640 0210 77000000 		.4byte	0x77
- 641 0214 60000000 		.4byte	.LLST3
- 642 0218 00       		.byte	0
- 643 0219 0E       		.uleb128 0xe
- 644 021a 46000000 		.4byte	.LASF28
- 645 021e 01       		.byte	0x1
- 646 021f 4F01     		.2byte	0x14f
- 647 0221 00000000 		.4byte	.LFB6
- 648 0225 0C000000 		.4byte	.LFE6-.LFB6
- 649 0229 01       		.uleb128 0x1
- 650 022a 9C       		.byte	0x9c
- 651 022b 3E020000 		.4byte	0x23e
- 652 022f 11       		.uleb128 0x11
- 653 0230 54010000 		.4byte	.LASF29
- 654 0234 01       		.byte	0x1
- 655 0235 4F01     		.2byte	0x14f
- 656 0237 A9000000 		.4byte	0xa9
- 657 023b 01       		.uleb128 0x1
- 658 023c 50       		.byte	0x50
- 659 023d 00       		.byte	0
- 660 023e 12       		.uleb128 0x12
- 661 023f 6B000000 		.4byte	.LASF40
- 662 0243 01       		.byte	0x1
- 663 0244 2203     		.2byte	0x322
- 664 0246 00000000 		.4byte	.LFB10
- 665 024a 3C000000 		.4byte	.LFE10-.LFB10
- 666 024e 01       		.uleb128 0x1
- 667 024f 9C       		.byte	0x9c
- 668 0250 13       		.uleb128 0x13
- 669 0251 2D000000 		.4byte	.LASF30
- 670 0255 01       		.byte	0x1
- 671 0256 51       		.byte	0x51
- 672 0257 6B000000 		.4byte	0x6b
- 673 025b 05       		.uleb128 0x5
- 674 025c 03       		.byte	0x3
- 675 025d 00000000 		.4byte	INA226_I2C_initVar
- 676 0261 13       		.uleb128 0x13
- 677 0262 16010000 		.4byte	.LASF31
- 678 0266 01       		.byte	0x1
- 679 0267 61       		.byte	0x61
- 680 0268 A9000000 		.4byte	0xa9
- 681 026c 05       		.uleb128 0x5
- 682 026d 03       		.byte	0x3
- 683 026e 00000000 		.4byte	INA226_I2C_customIntrHandler
- 684 0272 14       		.uleb128 0x14
- 685 0273 C7000000 		.4byte	.LASF32
- 686 0277 C7000000 		.4byte	.LASF32
- 687 027b 03       		.byte	0x3
- 688 027c D6       		.byte	0xd6
- 689 027d 14       		.uleb128 0x14
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 28
+ 990 0040 00000000 		.4byte	.LFB5
+ 991 0044 14000000 		.4byte	.LFE5-.LFB5
+ 992 0048 00000000 		.4byte	.LFB6
+ 993 004c 14000000 		.4byte	.LFE6-.LFB6
+ 994 0050 00000000 		.4byte	.LFB7
+ 995 0054 0C000000 		.4byte	.LFE7-.LFB7
+ 996 0058 00000000 		.4byte	0
+ 997 005c 00000000 		.4byte	0
+ 998              		.section	.debug_ranges,"",%progbits
+ 999              	.Ldebug_ranges0:
+ 1000 0000 00000000 		.4byte	.LFB8
+ 1001 0004 0A000000 		.4byte	.LFE8
+ 1002 0008 00000000 		.4byte	.LFB10
+ 1003 000c 08000000 		.4byte	.LFE10
+ 1004 0010 00000000 		.4byte	.LFB1
+ 1005 0014 08000000 		.4byte	.LFE1
+ 1006 0018 00000000 		.4byte	.LFB2
+ 1007 001c 18000000 		.4byte	.LFE2
+ 1008 0020 00000000 		.4byte	.LFB3
+ 1009 0024 20000000 		.4byte	.LFE3
+ 1010 0028 00000000 		.4byte	.LFB4
+ 1011 002c 2C000000 		.4byte	.LFE4
+ 1012 0030 00000000 		.4byte	.LFB5
+ 1013 0034 14000000 		.4byte	.LFE5
+ 1014 0038 00000000 		.4byte	.LFB6
+ 1015 003c 14000000 		.4byte	.LFE6
+ 1016 0040 00000000 		.4byte	.LFB7
+ 1017 0044 0C000000 		.4byte	.LFE7
+ 1018 0048 00000000 		.4byte	0
+ 1019 004c 00000000 		.4byte	0
+ 1020              		.section	.debug_line,"",%progbits
+ 1021              	.Ldebug_line0:
+ 1022 0000 2E010000 		.section	.debug_str,"MS",%progbits,1
+ 1022      02006A00 
+ 1022      00000201 
+ 1022      FB0E0D00 
+ 1022      01010101 
+ 1023              	.LASF22:
+ 1024 0000 494E4132 		.ascii	"INA226_I2C_Stop\000"
+ 1024      32365F49 
+ 1024      32435F53 
+ 1024      746F7000 
+ 1025              	.LASF14:
+ 1026 0010 72656733 		.ascii	"reg32\000"
+ 1026      3200
+ 1027              	.LASF18:
+ 1028 0016 494E4132 		.ascii	"INA226_I2C_ScbModeStop\000"
+ 1028      32365F49 
+ 1028      32435F53 
+ 1028      63624D6F 
+ 1028      64655374 
+ 1029              	.LASF30:
+ 1030 002d 494E4132 		.ascii	"INA226_I2C_initVar\000"
+ 1030      32365F49 
+ 1030      32435F69 
+ 1030      6E697456 
+ 1030      617200
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccmnjagw.s 			page 28
 
 
- 690 027e 45030000 		.4byte	.LASF33
- 691 0282 45030000 		.4byte	.LASF33
- 692 0286 04       		.byte	0x4
- 693 0287 4C       		.byte	0x4c
- 694 0288 14       		.uleb128 0x14
- 695 0289 A0000000 		.4byte	.LASF34
- 696 028d A0000000 		.4byte	.LASF34
- 697 0291 04       		.byte	0x4
- 698 0292 49       		.byte	0x49
- 699 0293 14       		.uleb128 0x14
- 700 0294 A3020000 		.4byte	.LASF35
- 701 0298 A3020000 		.4byte	.LASF35
- 702 029c 03       		.byte	0x3
- 703 029d D8       		.byte	0xd8
- 704 029e 14       		.uleb128 0x14
- 705 029f 99010000 		.4byte	.LASF36
- 706 02a3 99010000 		.4byte	.LASF36
- 707 02a7 03       		.byte	0x3
- 708 02a8 DB       		.byte	0xdb
- 709 02a9 00       		.byte	0
- 710              		.section	.debug_abbrev,"",%progbits
- 711              	.Ldebug_abbrev0:
- 712 0000 01       		.uleb128 0x1
- 713 0001 11       		.uleb128 0x11
- 714 0002 01       		.byte	0x1
- 715 0003 25       		.uleb128 0x25
- 716 0004 0E       		.uleb128 0xe
- 717 0005 13       		.uleb128 0x13
- 718 0006 0B       		.uleb128 0xb
- 719 0007 03       		.uleb128 0x3
- 720 0008 0E       		.uleb128 0xe
- 721 0009 1B       		.uleb128 0x1b
- 722 000a 0E       		.uleb128 0xe
- 723 000b 55       		.uleb128 0x55
- 724 000c 17       		.uleb128 0x17
- 725 000d 11       		.uleb128 0x11
- 726 000e 01       		.uleb128 0x1
- 727 000f 10       		.uleb128 0x10
- 728 0010 17       		.uleb128 0x17
- 729 0011 00       		.byte	0
- 730 0012 00       		.byte	0
- 731 0013 02       		.uleb128 0x2
- 732 0014 24       		.uleb128 0x24
- 733 0015 00       		.byte	0
- 734 0016 0B       		.uleb128 0xb
- 735 0017 0B       		.uleb128 0xb
- 736 0018 3E       		.uleb128 0x3e
- 737 0019 0B       		.uleb128 0xb
- 738 001a 03       		.uleb128 0x3
- 739 001b 0E       		.uleb128 0xe
- 740 001c 00       		.byte	0
- 741 001d 00       		.byte	0
- 742 001e 03       		.uleb128 0x3
- 743 001f 24       		.uleb128 0x24
- 744 0020 00       		.byte	0
- 745 0021 0B       		.uleb128 0xb
- 746 0022 0B       		.uleb128 0xb
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 29
+ 1031              	.LASF25:
+ 1032 0040 6C657665 		.ascii	"level\000"
+ 1032      6C00
+ 1033              	.LASF28:
+ 1034 0046 494E4132 		.ascii	"INA226_I2C_SetCustomInterruptHandler\000"
+ 1034      32365F49 
+ 1034      32435F53 
+ 1034      65744375 
+ 1034      73746F6D 
+ 1035              	.LASF3:
+ 1036 006b 73686F72 		.ascii	"short unsigned int\000"
+ 1036      7420756E 
+ 1036      7369676E 
+ 1036      65642069 
+ 1036      6E7400
+ 1037              	.LASF34:
+ 1038 007e 494E4132 		.ascii	"INA226_I2C_I2CInit\000"
+ 1038      32365F49 
+ 1038      32435F49 
+ 1038      3243496E 
+ 1038      697400
+ 1039              	.LASF11:
+ 1040 0091 666C6F61 		.ascii	"float\000"
+ 1040      7400
+ 1041              	.LASF1:
+ 1042 0097 756E7369 		.ascii	"unsigned char\000"
+ 1042      676E6564 
+ 1042      20636861 
+ 1042      7200
+ 1043              	.LASF32:
+ 1044 00a5 4379496E 		.ascii	"CyIntEnable\000"
+ 1044      74456E61 
+ 1044      626C6500 
+ 1045              	.LASF5:
+ 1046 00b1 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1046      20756E73 
+ 1046      69676E65 
+ 1046      6420696E 
+ 1046      7400
+ 1047              	.LASF20:
+ 1048 00c3 494E4132 		.ascii	"INA226_I2C_Enable\000"
+ 1048      32365F49 
+ 1048      32435F45 
+ 1048      6E61626C 
+ 1048      6500
+ 1049              	.LASF9:
+ 1050 00d5 75696E74 		.ascii	"uint8\000"
+ 1050      3800
+ 1051              	.LASF17:
+ 1052 00db 494E4132 		.ascii	"INA226_I2C_ScbEnableIntr\000"
+ 1052      32365F49 
+ 1052      32435F53 
+ 1052      6362456E 
+ 1052      61626C65 
+ 1053              	.LASF31:
+ 1054 00f4 494E4132 		.ascii	"INA226_I2C_customIntrHandler\000"
+ 1054      32365F49 
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccmnjagw.s 			page 29
 
 
- 747 0023 3E       		.uleb128 0x3e
- 748 0024 0B       		.uleb128 0xb
- 749 0025 03       		.uleb128 0x3
- 750 0026 08       		.uleb128 0x8
- 751 0027 00       		.byte	0
- 752 0028 00       		.byte	0
- 753 0029 04       		.uleb128 0x4
- 754 002a 16       		.uleb128 0x16
- 755 002b 00       		.byte	0
- 756 002c 03       		.uleb128 0x3
- 757 002d 0E       		.uleb128 0xe
- 758 002e 3A       		.uleb128 0x3a
- 759 002f 0B       		.uleb128 0xb
- 760 0030 3B       		.uleb128 0x3b
- 761 0031 05       		.uleb128 0x5
- 762 0032 49       		.uleb128 0x49
- 763 0033 13       		.uleb128 0x13
- 764 0034 00       		.byte	0
- 765 0035 00       		.byte	0
- 766 0036 05       		.uleb128 0x5
- 767 0037 35       		.uleb128 0x35
- 768 0038 00       		.byte	0
- 769 0039 49       		.uleb128 0x49
- 770 003a 13       		.uleb128 0x13
- 771 003b 00       		.byte	0
- 772 003c 00       		.byte	0
- 773 003d 06       		.uleb128 0x6
- 774 003e 0F       		.uleb128 0xf
- 775 003f 00       		.byte	0
- 776 0040 0B       		.uleb128 0xb
- 777 0041 0B       		.uleb128 0xb
- 778 0042 49       		.uleb128 0x49
- 779 0043 13       		.uleb128 0x13
- 780 0044 00       		.byte	0
- 781 0045 00       		.byte	0
- 782 0046 07       		.uleb128 0x7
- 783 0047 15       		.uleb128 0x15
- 784 0048 00       		.byte	0
- 785 0049 27       		.uleb128 0x27
- 786 004a 19       		.uleb128 0x19
- 787 004b 00       		.byte	0
- 788 004c 00       		.byte	0
- 789 004d 08       		.uleb128 0x8
- 790 004e 2E       		.uleb128 0x2e
- 791 004f 01       		.byte	0x1
- 792 0050 03       		.uleb128 0x3
- 793 0051 0E       		.uleb128 0xe
- 794 0052 3A       		.uleb128 0x3a
- 795 0053 0B       		.uleb128 0xb
- 796 0054 3B       		.uleb128 0x3b
- 797 0055 05       		.uleb128 0x5
- 798 0056 27       		.uleb128 0x27
- 799 0057 19       		.uleb128 0x19
- 800 0058 11       		.uleb128 0x11
- 801 0059 01       		.uleb128 0x1
- 802 005a 12       		.uleb128 0x12
- 803 005b 06       		.uleb128 0x6
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 30
+ 1054      32435F63 
+ 1054      7573746F 
+ 1054      6D496E74 
+ 1055              	.LASF23:
+ 1056 0111 494E4132 		.ascii	"INA226_I2C_SetRxFifoLevel\000"
+ 1056      32365F49 
+ 1056      32435F53 
+ 1056      65745278 
+ 1056      4669666F 
+ 1057              	.LASF12:
+ 1058 012b 646F7562 		.ascii	"double\000"
+ 1058      6C6500
+ 1059              	.LASF29:
+ 1060 0132 66756E63 		.ascii	"func\000"
+ 1060      00
+ 1061              	.LASF2:
+ 1062 0137 73686F72 		.ascii	"short int\000"
+ 1062      7420696E 
+ 1062      7400
+ 1063              	.LASF27:
+ 1064 0141 74784669 		.ascii	"txFifoCtrl\000"
+ 1064      666F4374 
+ 1064      726C00
+ 1065              	.LASF10:
+ 1066 014c 75696E74 		.ascii	"uint32\000"
+ 1066      333200
+ 1067              	.LASF8:
+ 1068 0153 756E7369 		.ascii	"unsigned int\000"
+ 1068      676E6564 
+ 1068      20696E74 
+ 1068      00
+ 1069              	.LASF7:
+ 1070 0160 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1070      206C6F6E 
+ 1070      6720756E 
+ 1070      7369676E 
+ 1070      65642069 
+ 1071              	.LASF36:
+ 1072 0177 4379496E 		.ascii	"CyIntClearPending\000"
+ 1072      74436C65 
+ 1072      61725065 
+ 1072      6E64696E 
+ 1072      6700
+ 1073              	.LASF19:
+ 1074 0189 494E4132 		.ascii	"INA226_I2C_Init\000"
+ 1074      32365F49 
+ 1074      32435F49 
+ 1074      6E697400 
+ 1075              	.LASF37:
+ 1076 0199 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1076      43313120 
+ 1076      352E342E 
+ 1076      31203230 
+ 1076      31363036 
+ 1077 01cc 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ 1077      20726576 
+ 1077      6973696F 
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccmnjagw.s 			page 30
 
 
- 804 005c 40       		.uleb128 0x40
- 805 005d 18       		.uleb128 0x18
- 806 005e 9742     		.uleb128 0x2117
- 807 0060 19       		.uleb128 0x19
- 808 0061 01       		.uleb128 0x1
- 809 0062 13       		.uleb128 0x13
- 810 0063 00       		.byte	0
- 811 0064 00       		.byte	0
- 812 0065 09       		.uleb128 0x9
- 813 0066 898201   		.uleb128 0x4109
- 814 0069 01       		.byte	0x1
- 815 006a 11       		.uleb128 0x11
- 816 006b 01       		.uleb128 0x1
- 817 006c 31       		.uleb128 0x31
- 818 006d 13       		.uleb128 0x13
- 819 006e 00       		.byte	0
- 820 006f 00       		.byte	0
- 821 0070 0A       		.uleb128 0xa
- 822 0071 8A8201   		.uleb128 0x410a
- 823 0074 00       		.byte	0
- 824 0075 02       		.uleb128 0x2
- 825 0076 18       		.uleb128 0x18
- 826 0077 9142     		.uleb128 0x2111
- 827 0079 18       		.uleb128 0x18
- 828 007a 00       		.byte	0
- 829 007b 00       		.byte	0
- 830 007c 0B       		.uleb128 0xb
- 831 007d 898201   		.uleb128 0x4109
- 832 0080 00       		.byte	0
- 833 0081 11       		.uleb128 0x11
- 834 0082 01       		.uleb128 0x1
- 835 0083 31       		.uleb128 0x31
- 836 0084 13       		.uleb128 0x13
- 837 0085 00       		.byte	0
- 838 0086 00       		.byte	0
- 839 0087 0C       		.uleb128 0xc
- 840 0088 2E       		.uleb128 0x2e
- 841 0089 01       		.byte	0x1
- 842 008a 3F       		.uleb128 0x3f
- 843 008b 19       		.uleb128 0x19
- 844 008c 03       		.uleb128 0x3
- 845 008d 0E       		.uleb128 0xe
- 846 008e 3A       		.uleb128 0x3a
- 847 008f 0B       		.uleb128 0xb
- 848 0090 3B       		.uleb128 0x3b
- 849 0091 0B       		.uleb128 0xb
- 850 0092 27       		.uleb128 0x27
- 851 0093 19       		.uleb128 0x19
- 852 0094 11       		.uleb128 0x11
- 853 0095 01       		.uleb128 0x1
- 854 0096 12       		.uleb128 0x12
- 855 0097 06       		.uleb128 0x6
- 856 0098 40       		.uleb128 0x40
- 857 0099 18       		.uleb128 0x18
- 858 009a 9742     		.uleb128 0x2117
- 859 009c 19       		.uleb128 0x19
- 860 009d 01       		.uleb128 0x1
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 31
+ 1077      6E203233 
+ 1077      37373135 
+ 1078 01ff 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1078      66756E63 
+ 1078      74696F6E 
+ 1078      2D736563 
+ 1078      74696F6E 
+ 1079              	.LASF16:
+ 1080 0227 73697A65 		.ascii	"sizetype\000"
+ 1080      74797065 
+ 1080      00
+ 1081              	.LASF38:
+ 1082 0230 47656E65 		.ascii	"Generated_Source\\PSoC4\\INA226_I2C.c\000"
+ 1082      72617465 
+ 1082      645F536F 
+ 1082      75726365 
+ 1082      5C50536F 
+ 1083              	.LASF6:
+ 1084 0254 6C6F6E67 		.ascii	"long long int\000"
+ 1084      206C6F6E 
+ 1084      6720696E 
+ 1084      7400
+ 1085              	.LASF13:
+ 1086 0262 63686172 		.ascii	"char\000"
+ 1086      00
+ 1087              	.LASF24:
+ 1088 0267 494E4132 		.ascii	"INA226_I2C_SetTxFifoLevel\000"
+ 1088      32365F49 
+ 1088      32435F53 
+ 1088      65745478 
+ 1088      4669666F 
+ 1089              	.LASF35:
+ 1090 0281 4379496E 		.ascii	"CyIntDisable\000"
+ 1090      74446973 
+ 1090      61626C65 
+ 1090      00
+ 1091              	.LASF21:
+ 1092 028e 494E4132 		.ascii	"INA226_I2C_Start\000"
+ 1092      32365F49 
+ 1092      32435F53 
+ 1092      74617274 
+ 1092      00
+ 1093              	.LASF39:
+ 1094 029f 433A5C55 		.ascii	"C:\\Users\\tsien\\Documents\\GitHub\\Battery_Manage"
+ 1094      73657273 
+ 1094      5C747369 
+ 1094      656E5C44 
+ 1094      6F63756D 
+ 1095 02cd 6D656E74 		.ascii	"ment_Board_PY2023\\BatteryBalance\\BatteryBalance.c"
+ 1095      5F426F61 
+ 1095      72645F50 
+ 1095      59323032 
+ 1095      335C4261 
+ 1096 02fe 7964736E 		.ascii	"ydsn\000"
+ 1096      00
+ 1097              	.LASF26:
+ 1098 0303 72784669 		.ascii	"rxFifoCtrl\000"
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccmnjagw.s 			page 31
 
 
- 861 009e 13       		.uleb128 0x13
- 862 009f 00       		.byte	0
- 863 00a0 00       		.byte	0
- 864 00a1 0D       		.uleb128 0xd
- 865 00a2 898201   		.uleb128 0x4109
- 866 00a5 01       		.byte	0x1
- 867 00a6 11       		.uleb128 0x11
- 868 00a7 01       		.uleb128 0x1
- 869 00a8 31       		.uleb128 0x31
- 870 00a9 13       		.uleb128 0x13
- 871 00aa 01       		.uleb128 0x1
- 872 00ab 13       		.uleb128 0x13
- 873 00ac 00       		.byte	0
- 874 00ad 00       		.byte	0
- 875 00ae 0E       		.uleb128 0xe
- 876 00af 2E       		.uleb128 0x2e
- 877 00b0 01       		.byte	0x1
- 878 00b1 3F       		.uleb128 0x3f
- 879 00b2 19       		.uleb128 0x19
- 880 00b3 03       		.uleb128 0x3
- 881 00b4 0E       		.uleb128 0xe
- 882 00b5 3A       		.uleb128 0x3a
- 883 00b6 0B       		.uleb128 0xb
- 884 00b7 3B       		.uleb128 0x3b
- 885 00b8 05       		.uleb128 0x5
- 886 00b9 27       		.uleb128 0x27
- 887 00ba 19       		.uleb128 0x19
- 888 00bb 11       		.uleb128 0x11
- 889 00bc 01       		.uleb128 0x1
- 890 00bd 12       		.uleb128 0x12
- 891 00be 06       		.uleb128 0x6
- 892 00bf 40       		.uleb128 0x40
- 893 00c0 18       		.uleb128 0x18
- 894 00c1 9742     		.uleb128 0x2117
- 895 00c3 19       		.uleb128 0x19
- 896 00c4 01       		.uleb128 0x1
- 897 00c5 13       		.uleb128 0x13
- 898 00c6 00       		.byte	0
- 899 00c7 00       		.byte	0
- 900 00c8 0F       		.uleb128 0xf
- 901 00c9 05       		.uleb128 0x5
- 902 00ca 00       		.byte	0
- 903 00cb 03       		.uleb128 0x3
- 904 00cc 0E       		.uleb128 0xe
- 905 00cd 3A       		.uleb128 0x3a
- 906 00ce 0B       		.uleb128 0xb
- 907 00cf 3B       		.uleb128 0x3b
- 908 00d0 05       		.uleb128 0x5
- 909 00d1 49       		.uleb128 0x49
- 910 00d2 13       		.uleb128 0x13
- 911 00d3 02       		.uleb128 0x2
- 912 00d4 17       		.uleb128 0x17
- 913 00d5 00       		.byte	0
- 914 00d6 00       		.byte	0
- 915 00d7 10       		.uleb128 0x10
- 916 00d8 34       		.uleb128 0x34
- 917 00d9 00       		.byte	0
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 32
-
-
- 918 00da 03       		.uleb128 0x3
- 919 00db 0E       		.uleb128 0xe
- 920 00dc 3A       		.uleb128 0x3a
- 921 00dd 0B       		.uleb128 0xb
- 922 00de 3B       		.uleb128 0x3b
- 923 00df 05       		.uleb128 0x5
- 924 00e0 49       		.uleb128 0x49
- 925 00e1 13       		.uleb128 0x13
- 926 00e2 02       		.uleb128 0x2
- 927 00e3 17       		.uleb128 0x17
- 928 00e4 00       		.byte	0
- 929 00e5 00       		.byte	0
- 930 00e6 11       		.uleb128 0x11
- 931 00e7 05       		.uleb128 0x5
- 932 00e8 00       		.byte	0
- 933 00e9 03       		.uleb128 0x3
- 934 00ea 0E       		.uleb128 0xe
- 935 00eb 3A       		.uleb128 0x3a
- 936 00ec 0B       		.uleb128 0xb
- 937 00ed 3B       		.uleb128 0x3b
- 938 00ee 05       		.uleb128 0x5
- 939 00ef 49       		.uleb128 0x49
- 940 00f0 13       		.uleb128 0x13
- 941 00f1 02       		.uleb128 0x2
- 942 00f2 18       		.uleb128 0x18
- 943 00f3 00       		.byte	0
- 944 00f4 00       		.byte	0
- 945 00f5 12       		.uleb128 0x12
- 946 00f6 2E       		.uleb128 0x2e
- 947 00f7 00       		.byte	0
- 948 00f8 3F       		.uleb128 0x3f
- 949 00f9 19       		.uleb128 0x19
- 950 00fa 03       		.uleb128 0x3
- 951 00fb 0E       		.uleb128 0xe
- 952 00fc 3A       		.uleb128 0x3a
- 953 00fd 0B       		.uleb128 0xb
- 954 00fe 3B       		.uleb128 0x3b
- 955 00ff 05       		.uleb128 0x5
- 956 0100 27       		.uleb128 0x27
- 957 0101 19       		.uleb128 0x19
- 958 0102 11       		.uleb128 0x11
- 959 0103 01       		.uleb128 0x1
- 960 0104 12       		.uleb128 0x12
- 961 0105 06       		.uleb128 0x6
- 962 0106 40       		.uleb128 0x40
- 963 0107 18       		.uleb128 0x18
- 964 0108 9742     		.uleb128 0x2117
- 965 010a 19       		.uleb128 0x19
- 966 010b 00       		.byte	0
- 967 010c 00       		.byte	0
- 968 010d 13       		.uleb128 0x13
- 969 010e 34       		.uleb128 0x34
- 970 010f 00       		.byte	0
- 971 0110 03       		.uleb128 0x3
- 972 0111 0E       		.uleb128 0xe
- 973 0112 3A       		.uleb128 0x3a
- 974 0113 0B       		.uleb128 0xb
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 33
-
-
- 975 0114 3B       		.uleb128 0x3b
- 976 0115 0B       		.uleb128 0xb
- 977 0116 49       		.uleb128 0x49
- 978 0117 13       		.uleb128 0x13
- 979 0118 3F       		.uleb128 0x3f
- 980 0119 19       		.uleb128 0x19
- 981 011a 02       		.uleb128 0x2
- 982 011b 18       		.uleb128 0x18
- 983 011c 00       		.byte	0
- 984 011d 00       		.byte	0
- 985 011e 14       		.uleb128 0x14
- 986 011f 2E       		.uleb128 0x2e
- 987 0120 00       		.byte	0
- 988 0121 3F       		.uleb128 0x3f
- 989 0122 19       		.uleb128 0x19
- 990 0123 3C       		.uleb128 0x3c
- 991 0124 19       		.uleb128 0x19
- 992 0125 6E       		.uleb128 0x6e
- 993 0126 0E       		.uleb128 0xe
- 994 0127 03       		.uleb128 0x3
- 995 0128 0E       		.uleb128 0xe
- 996 0129 3A       		.uleb128 0x3a
- 997 012a 0B       		.uleb128 0xb
- 998 012b 3B       		.uleb128 0x3b
- 999 012c 0B       		.uleb128 0xb
- 1000 012d 00       		.byte	0
- 1001 012e 00       		.byte	0
- 1002 012f 00       		.byte	0
- 1003              		.section	.debug_loc,"",%progbits
- 1004              	.Ldebug_loc0:
- 1005              	.LLST0:
- 1006 0000 00000000 		.4byte	.LVL9
- 1007 0004 0A000000 		.4byte	.LVL12
- 1008 0008 0100     		.2byte	0x1
- 1009 000a 50       		.byte	0x50
- 1010 000b 0A000000 		.4byte	.LVL12
- 1011 000f 14000000 		.4byte	.LFE4
- 1012 0013 0400     		.2byte	0x4
- 1013 0015 F3       		.byte	0xf3
- 1014 0016 01       		.uleb128 0x1
- 1015 0017 50       		.byte	0x50
- 1016 0018 9F       		.byte	0x9f
- 1017 0019 00000000 		.4byte	0
- 1018 001d 00000000 		.4byte	0
- 1019              	.LLST1:
- 1020 0021 04000000 		.4byte	.LVL10
- 1021 0025 0C000000 		.4byte	.LVL13
- 1022 0029 0100     		.2byte	0x1
- 1023 002b 53       		.byte	0x53
- 1024 002c 0C000000 		.4byte	.LVL13
- 1025 0030 14000000 		.4byte	.LFE4
- 1026 0034 0100     		.2byte	0x1
- 1027 0036 50       		.byte	0x50
- 1028 0037 00000000 		.4byte	0
- 1029 003b 00000000 		.4byte	0
- 1030              	.LLST2:
- 1031 003f 00000000 		.4byte	.LVL14
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 34
-
-
- 1032 0043 0A000000 		.4byte	.LVL17
- 1033 0047 0100     		.2byte	0x1
- 1034 0049 50       		.byte	0x50
- 1035 004a 0A000000 		.4byte	.LVL17
- 1036 004e 14000000 		.4byte	.LFE5
- 1037 0052 0400     		.2byte	0x4
- 1038 0054 F3       		.byte	0xf3
- 1039 0055 01       		.uleb128 0x1
- 1040 0056 50       		.byte	0x50
- 1041 0057 9F       		.byte	0x9f
- 1042 0058 00000000 		.4byte	0
- 1043 005c 00000000 		.4byte	0
- 1044              	.LLST3:
- 1045 0060 04000000 		.4byte	.LVL15
- 1046 0064 0C000000 		.4byte	.LVL18
- 1047 0068 0100     		.2byte	0x1
- 1048 006a 53       		.byte	0x53
- 1049 006b 0C000000 		.4byte	.LVL18
- 1050 006f 14000000 		.4byte	.LFE5
- 1051 0073 0100     		.2byte	0x1
- 1052 0075 50       		.byte	0x50
- 1053 0076 00000000 		.4byte	0
- 1054 007a 00000000 		.4byte	0
- 1055              		.section	.debug_aranges,"",%progbits
- 1056 0000 64000000 		.4byte	0x64
- 1057 0004 0200     		.2byte	0x2
- 1058 0006 00000000 		.4byte	.Ldebug_info0
- 1059 000a 04       		.byte	0x4
- 1060 000b 00       		.byte	0
- 1061 000c 0000     		.2byte	0
- 1062 000e 0000     		.2byte	0
- 1063 0010 00000000 		.4byte	.LFB7
- 1064 0014 0A000000 		.4byte	.LFE7-.LFB7
- 1065 0018 00000000 		.4byte	.LFB9
- 1066 001c 08000000 		.4byte	.LFE9-.LFB9
- 1067 0020 00000000 		.4byte	.LFB0
- 1068 0024 08000000 		.4byte	.LFE0-.LFB0
- 1069 0028 00000000 		.4byte	.LFB1
- 1070 002c 18000000 		.4byte	.LFE1-.LFB1
- 1071 0030 00000000 		.4byte	.LFB2
- 1072 0034 20000000 		.4byte	.LFE2-.LFB2
- 1073 0038 00000000 		.4byte	.LFB3
- 1074 003c 2C000000 		.4byte	.LFE3-.LFB3
- 1075 0040 00000000 		.4byte	.LFB4
- 1076 0044 14000000 		.4byte	.LFE4-.LFB4
- 1077 0048 00000000 		.4byte	.LFB5
- 1078 004c 14000000 		.4byte	.LFE5-.LFB5
- 1079 0050 00000000 		.4byte	.LFB6
- 1080 0054 0C000000 		.4byte	.LFE6-.LFB6
- 1081 0058 00000000 		.4byte	.LFB10
- 1082 005c 3C000000 		.4byte	.LFE10-.LFB10
- 1083 0060 00000000 		.4byte	0
- 1084 0064 00000000 		.4byte	0
- 1085              		.section	.debug_ranges,"",%progbits
- 1086              	.Ldebug_ranges0:
- 1087 0000 00000000 		.4byte	.LFB7
- 1088 0004 0A000000 		.4byte	.LFE7
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 35
-
-
- 1089 0008 00000000 		.4byte	.LFB9
- 1090 000c 08000000 		.4byte	.LFE9
- 1091 0010 00000000 		.4byte	.LFB0
- 1092 0014 08000000 		.4byte	.LFE0
- 1093 0018 00000000 		.4byte	.LFB1
- 1094 001c 18000000 		.4byte	.LFE1
- 1095 0020 00000000 		.4byte	.LFB2
- 1096 0024 20000000 		.4byte	.LFE2
- 1097 0028 00000000 		.4byte	.LFB3
- 1098 002c 2C000000 		.4byte	.LFE3
- 1099 0030 00000000 		.4byte	.LFB4
- 1100 0034 14000000 		.4byte	.LFE4
- 1101 0038 00000000 		.4byte	.LFB5
- 1102 003c 14000000 		.4byte	.LFE5
- 1103 0040 00000000 		.4byte	.LFB6
- 1104 0044 0C000000 		.4byte	.LFE6
- 1105 0048 00000000 		.4byte	.LFB10
- 1106 004c 3C000000 		.4byte	.LFE10
- 1107 0050 00000000 		.4byte	0
- 1108 0054 00000000 		.4byte	0
- 1109              		.section	.debug_line,"",%progbits
- 1110              	.Ldebug_line0:
- 1111 0000 4D010000 		.section	.debug_str,"MS",%progbits,1
- 1111      02006A00 
- 1111      00000201 
- 1111      FB0E0D00 
- 1111      01010101 
- 1112              	.LASF22:
- 1113 0000 494E4132 		.ascii	"INA226_I2C_Stop\000"
- 1113      32365F49 
- 1113      32435F53 
- 1113      746F7000 
- 1114              	.LASF14:
- 1115 0010 72656733 		.ascii	"reg32\000"
- 1115      3200
- 1116              	.LASF18:
- 1117 0016 494E4132 		.ascii	"INA226_I2C_ScbModeStop\000"
- 1117      32365F49 
- 1117      32435F53 
- 1117      63624D6F 
- 1117      64655374 
- 1118              	.LASF30:
- 1119 002d 494E4132 		.ascii	"INA226_I2C_initVar\000"
- 1119      32365F49 
- 1119      32435F69 
- 1119      6E697456 
- 1119      617200
- 1120              	.LASF25:
- 1121 0040 6C657665 		.ascii	"level\000"
- 1121      6C00
- 1122              	.LASF28:
- 1123 0046 494E4132 		.ascii	"INA226_I2C_SetCustomInterruptHandler\000"
- 1123      32365F49 
- 1123      32435F53 
- 1123      65744375 
- 1123      73746F6D 
- 1124              	.LASF40:
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 36
-
-
- 1125 006b 494E4132 		.ascii	"INA226_I2C_I2CSlaveNackGeneration\000"
- 1125      32365F49 
- 1125      32435F49 
- 1125      3243536C 
- 1125      6176654E 
- 1126              	.LASF3:
- 1127 008d 73686F72 		.ascii	"short unsigned int\000"
- 1127      7420756E 
- 1127      7369676E 
- 1127      65642069 
- 1127      6E7400
- 1128              	.LASF34:
- 1129 00a0 494E4132 		.ascii	"INA226_I2C_I2CInit\000"
- 1129      32365F49 
- 1129      32435F49 
- 1129      3243496E 
- 1129      697400
- 1130              	.LASF11:
- 1131 00b3 666C6F61 		.ascii	"float\000"
- 1131      7400
- 1132              	.LASF1:
- 1133 00b9 756E7369 		.ascii	"unsigned char\000"
- 1133      676E6564 
- 1133      20636861 
- 1133      7200
- 1134              	.LASF32:
- 1135 00c7 4379496E 		.ascii	"CyIntEnable\000"
- 1135      74456E61 
- 1135      626C6500 
- 1136              	.LASF5:
- 1137 00d3 6C6F6E67 		.ascii	"long unsigned int\000"
- 1137      20756E73 
- 1137      69676E65 
- 1137      6420696E 
- 1137      7400
- 1138              	.LASF20:
- 1139 00e5 494E4132 		.ascii	"INA226_I2C_Enable\000"
- 1139      32365F49 
- 1139      32435F45 
- 1139      6E61626C 
- 1139      6500
- 1140              	.LASF9:
- 1141 00f7 75696E74 		.ascii	"uint8\000"
- 1141      3800
- 1142              	.LASF17:
- 1143 00fd 494E4132 		.ascii	"INA226_I2C_ScbEnableIntr\000"
- 1143      32365F49 
- 1143      32435F53 
- 1143      6362456E 
- 1143      61626C65 
- 1144              	.LASF31:
- 1145 0116 494E4132 		.ascii	"INA226_I2C_customIntrHandler\000"
- 1145      32365F49 
- 1145      32435F63 
- 1145      7573746F 
- 1145      6D496E74 
- 1146              	.LASF23:
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 37
-
-
- 1147 0133 494E4132 		.ascii	"INA226_I2C_SetRxFifoLevel\000"
- 1147      32365F49 
- 1147      32435F53 
- 1147      65745278 
- 1147      4669666F 
- 1148              	.LASF12:
- 1149 014d 646F7562 		.ascii	"double\000"
- 1149      6C6500
- 1150              	.LASF29:
- 1151 0154 66756E63 		.ascii	"func\000"
- 1151      00
- 1152              	.LASF2:
- 1153 0159 73686F72 		.ascii	"short int\000"
- 1153      7420696E 
- 1153      7400
- 1154              	.LASF27:
- 1155 0163 74784669 		.ascii	"txFifoCtrl\000"
- 1155      666F4374 
- 1155      726C00
- 1156              	.LASF10:
- 1157 016e 75696E74 		.ascii	"uint32\000"
- 1157      333200
- 1158              	.LASF8:
- 1159 0175 756E7369 		.ascii	"unsigned int\000"
- 1159      676E6564 
- 1159      20696E74 
- 1159      00
- 1160              	.LASF7:
- 1161 0182 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1161      206C6F6E 
- 1161      6720756E 
- 1161      7369676E 
- 1161      65642069 
- 1162              	.LASF36:
- 1163 0199 4379496E 		.ascii	"CyIntClearPending\000"
- 1163      74436C65 
- 1163      61725065 
- 1163      6E64696E 
- 1163      6700
- 1164              	.LASF19:
- 1165 01ab 494E4132 		.ascii	"INA226_I2C_Init\000"
- 1165      32365F49 
- 1165      32435F49 
- 1165      6E697400 
- 1166              	.LASF37:
- 1167 01bb 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 1167      43313120 
- 1167      352E342E 
- 1167      31203230 
- 1167      31363036 
- 1168 01ee 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
- 1168      20726576 
- 1168      6973696F 
- 1168      6E203233 
- 1168      37373135 
- 1169 0221 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 1169      66756E63 
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 38
-
-
- 1169      74696F6E 
- 1169      2D736563 
- 1169      74696F6E 
- 1170              	.LASF16:
- 1171 0249 73697A65 		.ascii	"sizetype\000"
- 1171      74797065 
- 1171      00
- 1172              	.LASF38:
- 1173 0252 47656E65 		.ascii	"Generated_Source\\PSoC4\\INA226_I2C.c\000"
- 1173      72617465 
- 1173      645F536F 
- 1173      75726365 
- 1173      5C50536F 
- 1174              	.LASF6:
- 1175 0276 6C6F6E67 		.ascii	"long long int\000"
- 1175      206C6F6E 
- 1175      6720696E 
- 1175      7400
- 1176              	.LASF13:
- 1177 0284 63686172 		.ascii	"char\000"
- 1177      00
- 1178              	.LASF24:
- 1179 0289 494E4132 		.ascii	"INA226_I2C_SetTxFifoLevel\000"
- 1179      32365F49 
- 1179      32435F53 
- 1179      65745478 
- 1179      4669666F 
- 1180              	.LASF35:
- 1181 02a3 4379496E 		.ascii	"CyIntDisable\000"
- 1181      74446973 
- 1181      61626C65 
- 1181      00
- 1182              	.LASF21:
- 1183 02b0 494E4132 		.ascii	"INA226_I2C_Start\000"
- 1183      32365F49 
- 1183      32435F53 
- 1183      74617274 
- 1183      00
- 1184              	.LASF39:
- 1185 02c1 433A5C55 		.ascii	"C:\\Users\\tsien\\Documents\\GitHub\\Battery_Manage"
- 1185      73657273 
- 1185      5C747369 
- 1185      656E5C44 
- 1185      6F63756D 
- 1186 02ef 6D656E74 		.ascii	"ment_Board_PY2023\\BatteryBalance\\BatteryBalance.c"
- 1186      5F426F61 
- 1186      72645F50 
- 1186      59323032 
- 1186      335C4261 
- 1187 0320 7964736E 		.ascii	"ydsn\000"
- 1187      00
- 1188              	.LASF26:
- 1189 0325 72784669 		.ascii	"rxFifoCtrl\000"
- 1189      666F4374 
- 1189      726C00
- 1190              	.LASF4:
- 1191 0330 6C6F6E67 		.ascii	"long int\000"
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccn5xXuU.s 			page 39
-
-
- 1191      20696E74 
- 1191      00
- 1192              	.LASF15:
- 1193 0339 6C6F6E67 		.ascii	"long double\000"
- 1193      20646F75 
- 1193      626C6500 
- 1194              	.LASF33:
- 1195 0345 494E4132 		.ascii	"INA226_I2C_I2CStop\000"
- 1195      32365F49 
- 1195      32435F49 
- 1195      32435374 
- 1195      6F7000
- 1196              	.LASF0:
- 1197 0358 7369676E 		.ascii	"signed char\000"
- 1197      65642063 
- 1197      68617200 
- 1198              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 1098      666F4374 
+ 1098      726C00
+ 1099              	.LASF4:
+ 1100 030e 6C6F6E67 		.ascii	"long int\000"
+ 1100      20696E74 
+ 1100      00
+ 1101              	.LASF15:
+ 1102 0317 6C6F6E67 		.ascii	"long double\000"
+ 1102      20646F75 
+ 1102      626C6500 
+ 1103              	.LASF33:
+ 1104 0323 494E4132 		.ascii	"INA226_I2C_I2CStop\000"
+ 1104      32365F49 
+ 1104      32435F49 
+ 1104      32435374 
+ 1104      6F7000
+ 1105              	.LASF0:
+ 1106 0336 7369676E 		.ascii	"signed char\000"
+ 1106      65642063 
+ 1106      68617200 
+ 1107              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

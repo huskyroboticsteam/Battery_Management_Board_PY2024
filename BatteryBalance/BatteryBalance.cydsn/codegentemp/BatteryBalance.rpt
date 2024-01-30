@@ -1,13 +1,13 @@
-Loading plugins phase: Elapsed time ==> 0s.353ms
+Loading plugins phase: Elapsed time ==> 0s.249ms
 <CYPRESSTAG name="CyDsfit arguments...">
-cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\BatteryBalance.cyprj -d CY8C4245AXI-483 -s C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\Generated_Source\PSoC4 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
+cydsfit arguments: -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -.fdsreffile=referenced_files.txt -p C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\BatteryBalance.cyprj -d CY8C4247AXI-M485 -s C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\Generated_Source\PSoC4 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE
 </CYPRESSTAG>
 <CYPRESSTAG name="Design elaboration results...">
 </CYPRESSTAG>
-Elaboration phase: Elapsed time ==> 3s.186ms
+Elaboration phase: Elapsed time ==> 2s.800ms
 <CYPRESSTAG name="HDL generation results...">
 </CYPRESSTAG>
-HDL generation phase: Elapsed time ==> 0s.095ms
+HDL generation phase: Elapsed time ==> 0s.083ms
 <CYPRESSTAG name="Synthesis results...">
 
      | | | | | | |
@@ -41,7 +41,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\tsien
 ======================================================================
 
 vlogfe V6.3 IR 41:  Verilog parser
-Thu Jan 11 18:58:29 2024
+Thu Jan 25 19:33:44 2024
 
 
 ======================================================================
@@ -51,7 +51,7 @@ Options  :    -yv2 -q10 BatteryBalance.v
 ======================================================================
 
 vpp V6.3 IR 41:  Verilog Pre-Processor
-Thu Jan 11 18:58:29 2024
+Thu Jan 25 19:33:44 2024
 
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\cy_virtualmux_v1_0\cy_virtualmux_v1_0.v'
 Flattening file 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\psoc\content\CyPrimitives\cyprimitives.cylib\ZeroTerminal\ZeroTerminal.v'
@@ -83,7 +83,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\tsien
 ======================================================================
 
 tovif V6.3 IR 41:  High-level synthesis
-Thu Jan 11 18:58:29 2024
+Thu Jan 25 19:33:44 2024
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -110,7 +110,7 @@ Options  :    -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\tsien
 ======================================================================
 
 topld V6.3 IR 41:  Synthesis and optimization
-Thu Jan 11 18:58:29 2024
+Thu Jan 25 19:33:44 2024
 
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\std.vhd'.
 Linking 'C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\lib\common\cypress.vhd'.
@@ -227,14 +227,14 @@ CYPRESS_DIR    : C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\wa
 Warp Program   : C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\warp\bin\warp.exe
 Warp Arguments : -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\BatteryBalance.cyprj -dcpsoc3 BatteryBalance.v -verilog
 </CYPRESSTAG>
-Warp synthesis phase: Elapsed time ==> 0s.879ms
+Warp synthesis phase: Elapsed time ==> 0s.850ms
 <CYPRESSTAG name="Fitter results...">
 <CYPRESSTAG name="Fitter startup details...">
-cyp3fit: V4.4.0.80, Family: PSoC3, Started at: Thursday, 11 January 2024 18:58:30
-Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\BatteryBalance.cyprj -d CY8C4245AXI-483 BatteryBalance.v -verilog
+cyp3fit: V4.4.0.80, Family: PSoC3, Started at: Thursday, 25 January 2024 19:33:44
+Options: -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=LE -ya -.fftprj=C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\BatteryBalance.cyprj -d CY8C4247AXI-M485 BatteryBalance.v -verilog
 </CYPRESSTAG>
 <CYPRESSTAG name="Design parsing">
-Design parsing phase: Elapsed time ==> 0s.055ms
+Design parsing phase: Elapsed time ==> 0s.016ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Tech Mapping">
 <CYPRESSTAG name="Initial Mapping" icon="FILE_RPT_TECHM">
@@ -465,12 +465,14 @@ Resource Type                 : Used : Free :  Max :  % Used
 ============================================================
 Digital Clocks                :    0 :    4 :    4 :  0.00 %
 Interrupts                    :    1 :   31 :   32 :  3.13 %
-IO                            :    6 :   30 :   36 : 16.67 %
+IO                            :    6 :   45 :   51 : 11.76 %
 Segment LCD                   :    0 :    1 :    1 :  0.00 %
-CapSense                      :    0 :    1 :    1 :  0.00 %
+CapSense                      :    0 :    2 :    2 :  0.00 %
 Die Temp                      :    0 :    1 :    1 :  0.00 %
-Serial Communication (SCB)    :    2 :    0 :    2 : 100.00 %
-Timer/Counter/PWM             :    0 :    4 :    4 :  0.00 %
+CAN 2.0b                      :    0 :    2 :    2 :  0.00 %
+Serial Communication (SCB)    :    2 :    2 :    4 : 50.00 %
+DMA Channels                  :    0 :    8 :    8 :  0.00 %
+Timer/Counter/PWM             :    0 :    8 :    8 :  0.00 %
 UDB                           :      :      :      :        
   Macrocells                  :    0 :   32 :   32 :  0.00 %
   Unique P-terms              :    0 :   64 :   64 :  0.00 %
@@ -478,15 +480,15 @@ UDB                           :      :      :      :
   Datapath Cells              :    0 :    4 :    4 :  0.00 %
   Status Cells                :    0 :    4 :    4 :  0.00 %
   Control Cells               :    0 :    4 :    4 :  0.00 %
-Comparator/Opamp              :    0 :    2 :    2 :  0.00 %
+Comparator/Opamp              :    0 :    4 :    4 :  0.00 %
 LP Comparator                 :    0 :    2 :    2 :  0.00 %
 SAR ADC                       :    0 :    1 :    1 :  0.00 %
 DAC                           :      :      :      :        
-  7-bit IDAC                  :    0 :    1 :    1 :  0.00 %
-  8-bit IDAC                  :    0 :    1 :    1 :  0.00 %
+  7-bit IDAC                  :    0 :    2 :    2 :  0.00 %
+  8-bit IDAC                  :    0 :    2 :    2 :  0.00 %
 </CYPRESSTAG>
-Technology Mapping: Elapsed time ==> 0s.035ms
-Tech Mapping phase: Elapsed time ==> 0s.084ms
+Technology Mapping: Elapsed time ==> 0s.033ms
+Tech Mapping phase: Elapsed time ==> 0s.100ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Placement">
 <CYPRESSTAG name="FFB & IO Pre Placement">
@@ -494,24 +496,24 @@ Tech Mapping phase: Elapsed time ==> 0s.084ms
 
 Cell                                : Block                              
 =========================================================================
-\INA226_I2C:sda(0)\                 : [IOP=(0)][IoId=(5)]                
-\INA226_I2C:scl(0)\                 : [IOP=(0)][IoId=(4)]                
-\DBG_UART:tx(0)\                    : [IOP=(4)][IoId=(1)]                
-\DBG_UART:rx(0)\                    : [IOP=(4)][IoId=(0)]                
+\INA226_I2C:sda(0)\                 : [IOP=(1)][IoId=(1)]                
+\INA226_I2C:scl(0)\                 : [IOP=(1)][IoId=(0)]                
+\DBG_UART:tx(0)\                    : [IOP=(7)][IoId=(1)]                
+\DBG_UART:rx(0)\                    : [IOP=(7)][IoId=(0)]                
 ClockGenBlock                       : CLK_GEN_[FFB(CLK_GEN,0)]           
-\INA226_I2C:SCB\                    : SCB_[FFB(SCB,1)]                   
-\DBG_UART:SCB\                      : SCB_[FFB(SCB,0)]                   
+\INA226_I2C:SCB\                    : SCB_[FFB(SCB,0)]                   
+\DBG_UART:SCB\                      : SCB_[FFB(SCB,3)]                   
 
 </CYPRESSTAG>
 </CYPRESSTAG>
 <CYPRESSTAG name="Real Analog Placement">
-Elapsed time ==> 0.2451649s
+Elapsed time ==> 0.8046575s
 </CYPRESSTAG>
-Analog Placement phase: Elapsed time ==> 0s.565ms
+Analog Placement phase: Elapsed time ==> 1s.216ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Analog Routing">
 <CYPRESSTAG name="Analog Routing">
-Route success=True, Iterations=1 Elapsed=0.0020095 secs
+Route success=True, Iterations=1 Elapsed=0.0022105 secs
 </CYPRESSTAG>
 Analog Routing phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
@@ -524,12 +526,12 @@ Map of item to net {
 }
 Mux Info {
 }
-Analog Code Generation phase: Elapsed time ==> 0s.025ms
+Analog Code Generation phase: Elapsed time ==> 0s.033ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Placement">
 <CYPRESSTAG name="Detailed placement messages">
 I2659: No Constrained paths were found. The placer will run in non-timing driven mode.
-I2076: Total run-time: 0.6 sec.
+I2076: Total run-time: 0.5 sec.
 
 </CYPRESSTAG>
 <CYPRESSTAG name="PLD Packing">
@@ -543,7 +545,7 @@ PLD Packing: Elapsed time ==> 0s.000ms
 Initial Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
 <CYPRESSTAG name="Final Partitioning Summary">
 Final Partitioning Summary not displayed at this verbose level.</CYPRESSTAG>
-Partitioning: Elapsed time ==> 0s.019ms
+Partitioning: Elapsed time ==> 0s.016ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Final Placement Summary">
 
@@ -565,7 +567,7 @@ UDB [UDB=(0,1)] is empty.
 UDB [UDB=(1,0)] is empty.
 UDB [UDB=(1,1)] is empty.
 Intr container @ [IntrContainer=(0)]: 
-  Intr@ [IntrContainer=(0)][IntrId=(11)] 
+  Intr@ [IntrContainer=(0)][IntrId=(8)] 
     interrupt: Name =\INA226_I2C:SCB_IRQ\
         PORT MAP (
             interrupt => Net_204 );
@@ -574,8 +576,10 @@ Intr container @ [IntrContainer=(0)]:
             int_type = "10"
             is_nmi = 0
         }
+Drq container @ [DrqContainer=(0)]: empty
 Port 0 contains the following IO cells:
-[IoId=4]: 
+Port 1 contains the following IO cells:
+[IoId=0]: 
 Pin : Name = \INA226_I2C:scl(0)\
     Attributes:
         In Group/Port: True
@@ -616,7 +620,7 @@ Pin : Name = \INA226_I2C:scl(0)\
     {
     }
 
-[IoId=5]: 
+[IoId=1]: 
 Pin : Name = \INA226_I2C:sda(0)\
     Attributes:
         In Group/Port: True
@@ -657,10 +661,12 @@ Pin : Name = \INA226_I2C:sda(0)\
     {
     }
 
-Port 1 contains the following IO cells:
 Port 2 contains the following IO cells:
 Port 3 contains the following IO cells:
 Port 4 contains the following IO cells:
+Port 5 contains the following IO cells:
+Port 6 contains the following IO cells:
+Port 7 contains the following IO cells:
 [IoId=0]: 
 Pin : Name = \DBG_UART:rx(0)\
     Attributes:
@@ -744,6 +750,7 @@ Pin : Name = \DBG_UART:tx(0)\
     }
 
 ARM group 0: empty
+CAN group 0: empty
 Clock group 0: 
     Clock Block @ F(Clock,0): 
     m0s8clockblockcell: Name =ClockBlock
@@ -754,6 +761,7 @@ Clock group 0:
             sysclk => ClockBlock_SysClk ,
             ilo => ClockBlock_ILO ,
             lfclk => ClockBlock_LFClk ,
+            wco => ClockBlock_WCO ,
             dsi_in_0 => ClockBlock_Routed1 ,
             ff_div_2 => \INA226_I2C:Net_847_ff2\ ,
             ff_div_3 => \DBG_UART:Net_847_ff3\ );
@@ -765,28 +773,6 @@ PICU group 0: empty
 LPCOMP group 0: empty
 SCB group 0: 
     SCB Block @ F(SCB,0): 
-    m0s8scbcell: Name =\DBG_UART:SCB\
-        PORT MAP (
-            clock => \DBG_UART:Net_847_ff3\ ,
-            interrupt => Net_248 ,
-            uart_rx => \DBG_UART:rx_wire\ ,
-            uart_tx => \DBG_UART:tx_wire\ ,
-            uart_rts => \DBG_UART:rts_wire\ ,
-            mosi_m => \DBG_UART:mosi_m_wire\ ,
-            select_m_3 => \DBG_UART:select_m_wire_3\ ,
-            select_m_2 => \DBG_UART:select_m_wire_2\ ,
-            select_m_1 => \DBG_UART:select_m_wire_1\ ,
-            select_m_0 => \DBG_UART:select_m_wire_0\ ,
-            sclk_m => \DBG_UART:sclk_m_wire\ ,
-            miso_s => \DBG_UART:miso_s_wire\ ,
-            tr_tx_req => Net_266 ,
-            tr_rx_req => Net_257 );
-        Properties:
-        {
-            cy_registers = ""
-            scb_mode = 2
-        }
-    SCB Block @ F(SCB,1): 
     m0s8scbcell: Name =\INA226_I2C:SCB\
         PORT MAP (
             clock => \INA226_I2C:Net_847_ff2\ ,
@@ -809,6 +795,28 @@ SCB group 0:
             cy_registers = ""
             scb_mode = 0
         }
+    SCB Block @ F(SCB,3): 
+    m0s8scbcell: Name =\DBG_UART:SCB\
+        PORT MAP (
+            clock => \DBG_UART:Net_847_ff3\ ,
+            interrupt => Net_248 ,
+            uart_rx => \DBG_UART:rx_wire\ ,
+            uart_tx => \DBG_UART:tx_wire\ ,
+            uart_rts => \DBG_UART:rts_wire\ ,
+            mosi_m => \DBG_UART:mosi_m_wire\ ,
+            select_m_3 => \DBG_UART:select_m_wire_3\ ,
+            select_m_2 => \DBG_UART:select_m_wire_2\ ,
+            select_m_1 => \DBG_UART:select_m_wire_1\ ,
+            select_m_0 => \DBG_UART:select_m_wire_0\ ,
+            sclk_m => \DBG_UART:sclk_m_wire\ ,
+            miso_s => \DBG_UART:miso_s_wire\ ,
+            tr_tx_req => Net_266 ,
+            tr_rx_req => Net_257 );
+        Properties:
+        {
+            cy_registers = ""
+            scb_mode = 2
+        }
 CSD group 0: empty
 CSIDAC8 group 0: empty
 CSIDAC7 group 0: empty
@@ -829,6 +837,7 @@ PASSBLOCK group 0: empty
 WCO group 0: empty
 SRSS group 0: empty
 CPUSS group 0: empty
+IOSS group 0: empty
 EXCO group 0: empty
 </CYPRESSTAG>
 <CYPRESSTAG name="Port Configuration Details">
@@ -839,42 +848,42 @@ Port Configuration report
      |     |       | Interrupt |                  |                     | 
 Port | Pin | Fixed |      Type |       Drive Mode |                Name | Connections
 -----+-----+-------+-----------+------------------+---------------------+-----------------------
-   0 |   4 |     * |      NONE |    OPEN_DRAIN_LO | \INA226_I2C:scl(0)\ | FB(Net_220)
-     |   5 |     * |      NONE |    OPEN_DRAIN_LO | \INA226_I2C:sda(0)\ | FB(Net_221)
+   1 |   0 |     * |      NONE |    OPEN_DRAIN_LO | \INA226_I2C:scl(0)\ | FB(Net_220)
+     |   1 |     * |      NONE |    OPEN_DRAIN_LO | \INA226_I2C:sda(0)\ | FB(Net_221)
 -----+-----+-------+-----------+------------------+---------------------+-----------------------
-   4 |   0 |     * |      NONE |     HI_Z_DIGITAL |    \DBG_UART:rx(0)\ | FB(\DBG_UART:rx_wire\)
+   7 |   0 |     * |      NONE |     HI_Z_DIGITAL |    \DBG_UART:rx(0)\ | FB(\DBG_UART:rx_wire\)
      |   1 |     * |      NONE |         CMOS_OUT |    \DBG_UART:tx(0)\ | In(\DBG_UART:tx_wire\)
 ------------------------------------------------------------------------------------------------
 </CYPRESSTAG>
 </CYPRESSTAG>
 </CYPRESSTAG>
 Digital component placer commit/Report: Elapsed time ==> 0s.016ms
-Digital Placement phase: Elapsed time ==> 1s.033ms
+Digital Placement phase: Elapsed time ==> 0s.783ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Digital Routing">
-"C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\bin/sjrouter.exe" --xml-path "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\dev\psoc4/psoc4a/route_arch-rrg.cydata" --vh2-path "BatteryBalance_r.vh2" --pcf-path "BatteryBalance.pco" --des-name "BatteryBalance" --dsf-path "BatteryBalance.dsf" --sdc-path "BatteryBalance.sdc" --lib-path "BatteryBalance_r.lib"
+"C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\bin/sjrouter.exe" --xml-path "C:\Program Files (x86)\Cypress\PSoC Creator\4.4\PSoC Creator\dev\psoc4/4/route_arch-rrg.cydata" --vh2-path "BatteryBalance_r.vh2" --pcf-path "BatteryBalance.pco" --des-name "BatteryBalance" --dsf-path "BatteryBalance.dsf" --sdc-path "BatteryBalance.sdc" --lib-path "BatteryBalance_r.lib"
 Routing successful.
-Digital Routing phase: Elapsed time ==> 1s.101ms
+Digital Routing phase: Elapsed time ==> 1s.068ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Generation">
-Bitstream Generation phase: Elapsed time ==> 0s.289ms
+Bitstream Generation phase: Elapsed time ==> 0s.382ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Bitstream Verification">
-Bitstream Verification phase: Elapsed time ==> 0s.043ms
+Bitstream Verification phase: Elapsed time ==> 0s.033ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Static timing analysis">
 Timing report is in BatteryBalance_timing.html.
-Static timing analysis phase: Elapsed time ==> 0s.347ms
+Static timing analysis phase: Elapsed time ==> 0s.266ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Data reporting">
 Data reporting phase: Elapsed time ==> 0s.000ms
 </CYPRESSTAG>
 <CYPRESSTAG name="Database update...">
-Design database save phase: Elapsed time ==> 0s.360ms
+Design database save phase: Elapsed time ==> 0s.283ms
 </CYPRESSTAG>
-cydsfit: Elapsed time ==> 4s.091ms
+cydsfit: Elapsed time ==> 4s.300ms
 </CYPRESSTAG>
-Fitter phase: Elapsed time ==> 4s.109ms
-API generation phase: Elapsed time ==> 2s.840ms
-Dependency generation phase: Elapsed time ==> 0s.038ms
-Cleanup phase: Elapsed time ==> 0s.003ms
+Fitter phase: Elapsed time ==> 4s.300ms
+API generation phase: Elapsed time ==> 2s.517ms
+Dependency generation phase: Elapsed time ==> 0s.033ms
+Cleanup phase: Elapsed time ==> 0s.000ms

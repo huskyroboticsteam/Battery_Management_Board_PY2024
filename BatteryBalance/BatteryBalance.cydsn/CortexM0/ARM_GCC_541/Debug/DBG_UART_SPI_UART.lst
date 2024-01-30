@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccVtuCM4.s 			page 1
 
 
    1              		.syntax unified
@@ -26,7 +26,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
   23              		.thumb_func
   24              		.type	DBG_UART_SpiUartReadRxData, %function
   25              	DBG_UART_SpiUartReadRxData:
-  26              	.LFB0:
+  26              	.LFB1:
   27              		.file 1 "Generated_Source\\PSoC4\\DBG_UART_SPI_UART.c"
    1:Generated_Source\PSoC4/DBG_UART_SPI_UART.c **** /***************************************************************************//**
    2:Generated_Source\PSoC4/DBG_UART_SPI_UART.c **** * \file DBG_UART_SPI_UART.c
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
   28:Generated_Source\PSoC4/DBG_UART_SPI_UART.c ****     volatile uint32 DBG_UART_rxBufferHead;
   29:Generated_Source\PSoC4/DBG_UART_SPI_UART.c ****     /* Start index to get data from the software receive buffer.*/
   30:Generated_Source\PSoC4/DBG_UART_SPI_UART.c ****     volatile uint32 DBG_UART_rxBufferTail;
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 2
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccVtuCM4.s 			page 2
 
 
   31:Generated_Source\PSoC4/DBG_UART_SPI_UART.c ****     /**
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
   28              		.loc 1 84 0
   29              		.cfi_startproc
   30              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 3
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccVtuCM4.s 			page 3
 
 
   31              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
  132:Generated_Source\PSoC4/DBG_UART_SPI_UART.c **** 
  133:Generated_Source\PSoC4/DBG_UART_SPI_UART.c ****         return (rxData);
  134:Generated_Source\PSoC4/DBG_UART_SPI_UART.c ****     }
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 4
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccVtuCM4.s 			page 4
 
 
   38              		.loc 1 134 0
@@ -187,9 +187,9 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
   41              	.L3:
   42 0006 C046     		.align	2
   43              	.L2:
-  44 0008 40030640 		.word	1074135872
+  44 0008 40032740 		.word	1076298560
   45              		.cfi_endproc
-  46              	.LFE0:
+  46              	.LFE1:
   47              		.size	DBG_UART_SpiUartReadRxData, .-DBG_UART_SpiUartReadRxData
   48              		.section	.text.DBG_UART_SpiUartGetRxBufferSize,"ax",%progbits
   49              		.align	2
@@ -198,7 +198,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
   52              		.thumb_func
   53              		.type	DBG_UART_SpiUartGetRxBufferSize, %function
   54              	DBG_UART_SpiUartGetRxBufferSize:
-  55              	.LFB1:
+  55              	.LFB2:
  135:Generated_Source\PSoC4/DBG_UART_SPI_UART.c **** 
  136:Generated_Source\PSoC4/DBG_UART_SPI_UART.c **** 
  137:Generated_Source\PSoC4/DBG_UART_SPI_UART.c ****     /*******************************************************************************
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
  166:Generated_Source\PSoC4/DBG_UART_SPI_UART.c ****             locHead = DBG_UART_rxBufferHead;
  167:Generated_Source\PSoC4/DBG_UART_SPI_UART.c **** 
  168:Generated_Source\PSoC4/DBG_UART_SPI_UART.c ****             if(locHead >= DBG_UART_rxBufferTail)
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 5
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccVtuCM4.s 			page 5
 
 
  169:Generated_Source\PSoC4/DBG_UART_SPI_UART.c ****             {
@@ -255,7 +255,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
   61              		.loc 1 179 0
   62 0000 024B     		ldr	r3, .L5
   63 0002 1B68     		ldr	r3, [r3]
-  64 0004 0F20     		movs	r0, #15
+  64 0004 1F20     		movs	r0, #31
   65 0006 1840     		ands	r0, r3
   66              	.LVL2:
  180:Generated_Source\PSoC4/DBG_UART_SPI_UART.c ****         }
@@ -269,9 +269,9 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
   70              	.L6:
   71 000a C046     		.align	2
   72              	.L5:
-  73 000c 08030640 		.word	1074135816
+  73 000c 08032740 		.word	1076298504
   74              		.cfi_endproc
-  75              	.LFE1:
+  75              	.LFE2:
   76              		.size	DBG_UART_SpiUartGetRxBufferSize, .-DBG_UART_SpiUartGetRxBufferSize
   77              		.section	.text.DBG_UART_SpiUartClearRxBuffer,"ax",%progbits
   78              		.align	2
@@ -280,7 +280,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
   81              		.thumb_func
   82              		.type	DBG_UART_SpiUartClearRxBuffer, %function
   83              	DBG_UART_SpiUartClearRxBuffer:
-  84              	.LFB2:
+  84              	.LFB3:
  185:Generated_Source\PSoC4/DBG_UART_SPI_UART.c **** 
  186:Generated_Source\PSoC4/DBG_UART_SPI_UART.c **** 
  187:Generated_Source\PSoC4/DBG_UART_SPI_UART.c ****     /*******************************************************************************
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
  199:Generated_Source\PSoC4/DBG_UART_SPI_UART.c ****     *******************************************************************************/
  200:Generated_Source\PSoC4/DBG_UART_SPI_UART.c ****     void DBG_UART_SpiUartClearRxBuffer(void)
  201:Generated_Source\PSoC4/DBG_UART_SPI_UART.c ****     {
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 6
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccVtuCM4.s 			page 6
 
 
   85              		.loc 1 201 0
@@ -353,12 +353,12 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
  104              	.L9:
  105 0016 C046     		.align	2
  106              	.L8:
- 107 0018 04030640 		.word	1074135812
+ 107 0018 04032740 		.word	1076298500
  108 001c FFFFFEFF 		.word	-65537
  109              		.cfi_endproc
- 110              	.LFE2:
+ 110              	.LFE3:
  111              		.size	DBG_UART_SpiUartClearRxBuffer, .-DBG_UART_SpiUartClearRxBuffer
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 7
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccVtuCM4.s 			page 7
 
 
  112              		.section	.text.DBG_UART_SpiUartWriteTxData,"ax",%progbits
@@ -368,7 +368,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
  116              		.thumb_func
  117              		.type	DBG_UART_SpiUartWriteTxData, %function
  118              	DBG_UART_SpiUartWriteTxData:
- 119              	.LFB3:
+ 119              	.LFB4:
  232:Generated_Source\PSoC4/DBG_UART_SPI_UART.c **** 
  233:Generated_Source\PSoC4/DBG_UART_SPI_UART.c **** #endif /* (DBG_UART_RX_DIRECTION) */
  234:Generated_Source\PSoC4/DBG_UART_SPI_UART.c **** 
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
  271:Generated_Source\PSoC4/DBG_UART_SPI_UART.c ****             }
  272:Generated_Source\PSoC4/DBG_UART_SPI_UART.c ****             /* Put data into TX software buffer */
  273:Generated_Source\PSoC4/DBG_UART_SPI_UART.c ****             else
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 8
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccVtuCM4.s 			page 8
 
 
  274:Generated_Source\PSoC4/DBG_UART_SPI_UART.c ****             {
@@ -460,7 +460,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
  127              		.loc 1 309 0 discriminator 1
  128 0000 044B     		ldr	r3, .L12
  129 0002 1B68     		ldr	r3, [r3]
- 130 0004 0F22     		movs	r2, #15
+ 130 0004 1F22     		movs	r2, #31
  131 0006 1340     		ands	r3, r2
  132 0008 082B     		cmp	r3, #8
  133 000a F9D0     		beq	.L11
@@ -478,15 +478,15 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
  138              		@ sp needed
  139 0010 7047     		bx	lr
  140              	.L13:
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 9
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccVtuCM4.s 			page 9
 
 
  141 0012 C046     		.align	2
  142              	.L12:
- 143 0014 08020640 		.word	1074135560
- 144 0018 40020640 		.word	1074135616
+ 143 0014 08022740 		.word	1076298248
+ 144 0018 40022740 		.word	1076298304
  145              		.cfi_endproc
- 146              	.LFE3:
+ 146              	.LFE4:
  147              		.size	DBG_UART_SpiUartWriteTxData, .-DBG_UART_SpiUartWriteTxData
  148              		.section	.text.DBG_UART_SpiUartPutArray,"ax",%progbits
  149              		.align	2
@@ -495,7 +495,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
  152              		.thumb_func
  153              		.type	DBG_UART_SpiUartPutArray, %function
  154              	DBG_UART_SpiUartPutArray:
- 155              	.LFB4:
+ 155              	.LFB5:
  317:Generated_Source\PSoC4/DBG_UART_SPI_UART.c **** 
  318:Generated_Source\PSoC4/DBG_UART_SPI_UART.c **** 
  319:Generated_Source\PSoC4/DBG_UART_SPI_UART.c ****     /*******************************************************************************
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
  342:Generated_Source\PSoC4/DBG_UART_SPI_UART.c ****         uint32 i;
  343:Generated_Source\PSoC4/DBG_UART_SPI_UART.c **** 
  344:Generated_Source\PSoC4/DBG_UART_SPI_UART.c ****         for (i=0u; i < count; i++)
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 10
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccVtuCM4.s 			page 10
 
 
  170              		.loc 1 344 0
@@ -570,7 +570,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
  190              	.LVL11:
  191 0016 70BD     		pop	{r4, r5, r6, pc}
  192              		.cfi_endproc
- 193              	.LFE4:
+ 193              	.LFE5:
  194              		.size	DBG_UART_SpiUartPutArray, .-DBG_UART_SpiUartPutArray
  195              		.section	.text.DBG_UART_SpiUartGetTxBufferSize,"ax",%progbits
  196              		.align	2
@@ -579,7 +579,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
  199              		.thumb_func
  200              		.type	DBG_UART_SpiUartGetTxBufferSize, %function
  201              	DBG_UART_SpiUartGetTxBufferSize:
- 202              	.LFB5:
+ 202              	.LFB6:
  349:Generated_Source\PSoC4/DBG_UART_SPI_UART.c **** 
  350:Generated_Source\PSoC4/DBG_UART_SPI_UART.c **** 
  351:Generated_Source\PSoC4/DBG_UART_SPI_UART.c ****     /*******************************************************************************
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
  364:Generated_Source\PSoC4/DBG_UART_SPI_UART.c ****     *  Number of data elements ready to transmit.
  365:Generated_Source\PSoC4/DBG_UART_SPI_UART.c ****     *
  366:Generated_Source\PSoC4/DBG_UART_SPI_UART.c ****     * \globalvars
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 11
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccVtuCM4.s 			page 11
 
 
  367:Generated_Source\PSoC4/DBG_UART_SPI_UART.c ****     *  DBG_UART_txBufferHead - the start index to put data into the 
@@ -639,7 +639,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
  208              		.loc 1 396 0
  209 0000 024B     		ldr	r3, .L18
  210 0002 1B68     		ldr	r3, [r3]
- 211 0004 0F20     		movs	r0, #15
+ 211 0004 1F20     		movs	r0, #31
  212 0006 1840     		ands	r0, r3
  213              	.LVL12:
  397:Generated_Source\PSoC4/DBG_UART_SPI_UART.c ****         }
@@ -653,12 +653,12 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
  217              	.L19:
  218 000a C046     		.align	2
  219              	.L18:
- 220 000c 08020640 		.word	1074135560
+ 220 000c 08022740 		.word	1076298248
  221              		.cfi_endproc
- 222              	.LFE5:
+ 222              	.LFE6:
  223              		.size	DBG_UART_SpiUartGetTxBufferSize, .-DBG_UART_SpiUartGetTxBufferSize
  224              		.section	.text.DBG_UART_SpiUartClearTxBuffer,"ax",%progbits
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 12
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccVtuCM4.s 			page 12
 
 
  225              		.align	2
@@ -667,7 +667,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
  228              		.thumb_func
  229              		.type	DBG_UART_SpiUartClearTxBuffer, %function
  230              	DBG_UART_SpiUartClearTxBuffer:
- 231              	.LFB6:
+ 231              	.LFB7:
  402:Generated_Source\PSoC4/DBG_UART_SPI_UART.c **** 
  403:Generated_Source\PSoC4/DBG_UART_SPI_UART.c **** 
  404:Generated_Source\PSoC4/DBG_UART_SPI_UART.c ****     /*******************************************************************************
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
  244 000c 1968     		ldr	r1, [r3]
  245 000e 034A     		ldr	r2, .L21+4
  246 0010 0A40     		ands	r2, r1
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 13
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccVtuCM4.s 			page 13
 
 
  247 0012 1A60     		str	r2, [r3]
@@ -731,10 +731,10 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
  251              	.L22:
  252 0016 C046     		.align	2
  253              	.L21:
- 254 0018 04020640 		.word	1074135556
+ 254 0018 04022740 		.word	1076298244
  255 001c FFFFFEFF 		.word	-65537
  256              		.cfi_endproc
- 257              	.LFE6:
+ 257              	.LFE7:
  258              		.size	DBG_UART_SpiUartClearTxBuffer, .-DBG_UART_SpiUartClearTxBuffer
  259              		.section	.text.DBG_UART_SpiUartDisableIntRx,"ax",%progbits
  260              		.align	2
@@ -743,7 +743,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
  263              		.thumb_func
  264              		.type	DBG_UART_SpiUartDisableIntRx, %function
  265              	DBG_UART_SpiUartDisableIntRx:
- 266              	.LFB7:
+ 266              	.LFB8:
  440:Generated_Source\PSoC4/DBG_UART_SPI_UART.c **** 
  441:Generated_Source\PSoC4/DBG_UART_SPI_UART.c **** #endif /* (DBG_UART_TX_DIRECTION) */
  442:Generated_Source\PSoC4/DBG_UART_SPI_UART.c **** 
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
  277 0004 0022     		movs	r2, #0
  278 0006 1A60     		str	r2, [r3]
  461:Generated_Source\PSoC4/DBG_UART_SPI_UART.c **** 
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 14
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccVtuCM4.s 			page 14
 
 
  462:Generated_Source\PSoC4/DBG_UART_SPI_UART.c ****     return (intSource);
@@ -789,9 +789,9 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
  282              	.L25:
  283 000a C046     		.align	2
  284              	.L24:
- 285 000c C80F0640 		.word	1074139080
+ 285 000c C80F2740 		.word	1076301768
  286              		.cfi_endproc
- 287              	.LFE7:
+ 287              	.LFE8:
  288              		.size	DBG_UART_SpiUartDisableIntRx, .-DBG_UART_SpiUartDisableIntRx
  289              		.section	.text.DBG_UART_SpiUartDisableIntTx,"ax",%progbits
  290              		.align	2
@@ -800,7 +800,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
  293              		.thumb_func
  294              		.type	DBG_UART_SpiUartDisableIntTx, %function
  295              	DBG_UART_SpiUartDisableIntTx:
- 296              	.LFB8:
+ 296              	.LFB9:
  464:Generated_Source\PSoC4/DBG_UART_SPI_UART.c **** 
  465:Generated_Source\PSoC4/DBG_UART_SPI_UART.c **** 
  466:Generated_Source\PSoC4/DBG_UART_SPI_UART.c **** /*******************************************************************************
@@ -838,15 +838,15 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
  309              		.loc 1 485 0
  310              		@ sp needed
  311 0008 7047     		bx	lr
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 15
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccVtuCM4.s 			page 15
 
 
  312              	.L28:
  313 000a C046     		.align	2
  314              	.L27:
- 315 000c 880F0640 		.word	1074139016
+ 315 000c 880F2740 		.word	1076301704
  316              		.cfi_endproc
- 317              	.LFE8:
+ 317              	.LFE9:
  318              		.size	DBG_UART_SpiUartDisableIntTx, .-DBG_UART_SpiUartDisableIntTx
  319              		.text
  320              	.Letext0:
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
  366 0058 07       		.byte	0x7
  367 0059 AA010000 		.4byte	.LASF7
  368 005d 03       		.uleb128 0x3
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 16
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccVtuCM4.s 			page 16
 
 
  369 005e 04       		.byte	0x4
@@ -950,15 +950,15 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
  415 00bc 01       		.byte	0x1
  416 00bd 53       		.byte	0x53
  417 00be 77000000 		.4byte	0x77
- 418 00c2 00000000 		.4byte	.LFB0
- 419 00c6 0C000000 		.4byte	.LFE0-.LFB0
+ 418 00c2 00000000 		.4byte	.LFB1
+ 419 00c6 0C000000 		.4byte	.LFE1-.LFB1
  420 00ca 01       		.uleb128 0x1
  421 00cb 9C       		.byte	0x9c
  422 00cc E0000000 		.4byte	0xe0
  423 00d0 07       		.uleb128 0x7
  424 00d1 0F010000 		.4byte	.LASF19
  425 00d5 01       		.byte	0x1
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 17
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccVtuCM4.s 			page 17
 
 
  426 00d6 55       		.byte	0x55
@@ -970,8 +970,8 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
  432 00e5 01       		.byte	0x1
  433 00e6 9D       		.byte	0x9d
  434 00e7 77000000 		.4byte	0x77
- 435 00eb 00000000 		.4byte	.LFB1
- 436 00ef 10000000 		.4byte	.LFE1-.LFB1
+ 435 00eb 00000000 		.4byte	.LFB2
+ 436 00ef 10000000 		.4byte	.LFE2-.LFB2
  437 00f3 01       		.uleb128 0x1
  438 00f4 9C       		.byte	0x9c
  439 00f5 07010000 		.4byte	0x107
@@ -987,16 +987,16 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
  449 0108 00000000 		.4byte	.LASF27
  450 010c 01       		.byte	0x1
  451 010d C8       		.byte	0xc8
- 452 010e 00000000 		.4byte	.LFB2
- 453 0112 20000000 		.4byte	.LFE2-.LFB2
+ 452 010e 00000000 		.4byte	.LFB3
+ 453 0112 20000000 		.4byte	.LFE3-.LFB3
  454 0116 01       		.uleb128 0x1
  455 0117 9C       		.byte	0x9c
  456 0118 0A       		.uleb128 0xa
  457 0119 72000000 		.4byte	.LASF21
  458 011d 01       		.byte	0x1
  459 011e 0101     		.2byte	0x101
- 460 0120 00000000 		.4byte	.LFB3
- 461 0124 1C000000 		.4byte	.LFE3-.LFB3
+ 460 0120 00000000 		.4byte	.LFB4
+ 461 0124 1C000000 		.4byte	.LFE4-.LFB4
  462 0128 01       		.uleb128 0x1
  463 0129 9C       		.byte	0x9c
  464 012a 3D010000 		.4byte	0x13d
@@ -1012,13 +1012,13 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
  474 013e FF020000 		.4byte	.LASF22
  475 0142 01       		.byte	0x1
  476 0143 5401     		.2byte	0x154
- 477 0145 00000000 		.4byte	.LFB4
- 478 0149 18000000 		.4byte	.LFE4-.LFB4
+ 477 0145 00000000 		.4byte	.LFB5
+ 478 0149 18000000 		.4byte	.LFE5-.LFB5
  479 014d 01       		.uleb128 0x1
  480 014e 9C       		.byte	0x9c
  481 014f 8B010000 		.4byte	0x18b
  482 0153 0C       		.uleb128 0xc
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 18
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccVtuCM4.s 			page 18
 
 
  483 0154 16010000 		.4byte	.LASF24
@@ -1052,8 +1052,8 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
  511 019b 01       		.byte	0x1
  512 019c 7501     		.2byte	0x175
  513 019e 77000000 		.4byte	0x77
- 514 01a2 00000000 		.4byte	.LFB5
- 515 01a6 10000000 		.4byte	.LFE5-.LFB5
+ 514 01a2 00000000 		.4byte	.LFB6
+ 515 01a6 10000000 		.4byte	.LFE6-.LFB6
  516 01aa 01       		.uleb128 0x1
  517 01ab 9C       		.byte	0x9c
  518 01ac BF010000 		.4byte	0x1bf
@@ -1069,8 +1069,8 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
  528 01c0 EC010000 		.4byte	.LASF28
  529 01c4 01       		.byte	0x1
  530 01c5 A101     		.2byte	0x1a1
- 531 01c7 00000000 		.4byte	.LFB6
- 532 01cb 20000000 		.4byte	.LFE6-.LFB6
+ 531 01c7 00000000 		.4byte	.LFB7
+ 532 01cb 20000000 		.4byte	.LFE7-.LFB7
  533 01cf 01       		.uleb128 0x1
  534 01d0 9C       		.byte	0x9c
  535 01d1 11       		.uleb128 0x11
@@ -1078,11 +1078,11 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
  537 01d6 01       		.byte	0x1
  538 01d7 C601     		.2byte	0x1c6
  539 01d9 77000000 		.4byte	0x77
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 19
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccVtuCM4.s 			page 19
 
 
- 540 01dd 00000000 		.4byte	.LFB7
- 541 01e1 10000000 		.4byte	.LFE7-.LFB7
+ 540 01dd 00000000 		.4byte	.LFB8
+ 541 01e1 10000000 		.4byte	.LFE8-.LFB8
  542 01e5 01       		.uleb128 0x1
  543 01e6 9C       		.byte	0x9c
  544 01e7 FA010000 		.4byte	0x1fa
@@ -1099,8 +1099,8 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
  555 01ff 01       		.byte	0x1
  556 0200 DC01     		.2byte	0x1dc
  557 0202 77000000 		.4byte	0x77
- 558 0206 00000000 		.4byte	.LFB8
- 559 020a 10000000 		.4byte	.LFE8-.LFB8
+ 558 0206 00000000 		.4byte	.LFB9
+ 559 020a 10000000 		.4byte	.LFE9-.LFB9
  560 020e 01       		.uleb128 0x1
  561 020f 9C       		.byte	0x9c
  562 0210 12       		.uleb128 0x12
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
  594 0015 00       		.byte	0
  595 0016 0B       		.uleb128 0xb
  596 0017 0B       		.uleb128 0xb
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 20
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccVtuCM4.s 			page 20
 
 
  597 0018 3E       		.uleb128 0x3e
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
  651 004e 12       		.uleb128 0x12
  652 004f 06       		.uleb128 0x6
  653 0050 40       		.uleb128 0x40
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 21
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccVtuCM4.s 			page 21
 
 
  654 0051 18       		.uleb128 0x18
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
  708 0088 40       		.uleb128 0x40
  709 0089 18       		.uleb128 0x18
  710 008a 9742     		.uleb128 0x2117
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 22
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccVtuCM4.s 			page 22
 
 
  711 008c 19       		.uleb128 0x19
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
  765 00c3 02       		.uleb128 0x2
  766 00c4 17       		.uleb128 0x17
  767 00c5 00       		.byte	0
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 23
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccVtuCM4.s 			page 23
 
 
  768 00c6 00       		.byte	0
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
  822 00fe 49       		.uleb128 0x49
  823 00ff 13       		.uleb128 0x13
  824 0100 11       		.uleb128 0x11
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 24
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccVtuCM4.s 			page 24
 
 
  825 0101 01       		.uleb128 0x1
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
  879 0139 03       		.uleb128 0x3
  880 013a 0E       		.uleb128 0xe
  881 013b 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 25
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccVtuCM4.s 			page 25
 
 
  882 013c 0B       		.uleb128 0xb
@@ -1468,7 +1468,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
  906 000a 30       		.byte	0x30
  907 000b 9F       		.byte	0x9f
  908 000c 04000000 		.4byte	.LVL1
- 909 0010 0C000000 		.4byte	.LFE0
+ 909 0010 0C000000 		.4byte	.LFE1
  910 0014 0100     		.2byte	0x1
  911 0016 50       		.byte	0x50
  912 0017 00000000 		.4byte	0
@@ -1483,7 +1483,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
  921 0032 0100     		.2byte	0x1
  922 0034 56       		.byte	0x56
  923 0035 16000000 		.4byte	.LVL11
- 924 0039 18000000 		.4byte	.LFE4
+ 924 0039 18000000 		.4byte	.LFE5
  925 003d 0400     		.2byte	0x4
  926 003f F3       		.byte	0xf3
  927 0040 01       		.uleb128 0x1
@@ -1498,13 +1498,13 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
  936 0055 51       		.byte	0x51
  937 0056 0A000000 		.4byte	.LVL6
  938 005a 16000000 		.4byte	.LVL10
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 26
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccVtuCM4.s 			page 26
 
 
  939 005e 0100     		.2byte	0x1
  940 0060 55       		.byte	0x55
  941 0061 16000000 		.4byte	.LVL10
- 942 0065 18000000 		.4byte	.LFE4
+ 942 0065 18000000 		.4byte	.LFE5
  943 0069 0400     		.2byte	0x4
  944 006b F3       		.byte	0xf3
  945 006c 01       		.uleb128 0x1
@@ -1532,49 +1532,49 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
  967 000b 00       		.byte	0
  968 000c 0000     		.2byte	0
  969 000e 0000     		.2byte	0
- 970 0010 00000000 		.4byte	.LFB0
- 971 0014 0C000000 		.4byte	.LFE0-.LFB0
- 972 0018 00000000 		.4byte	.LFB1
- 973 001c 10000000 		.4byte	.LFE1-.LFB1
- 974 0020 00000000 		.4byte	.LFB2
- 975 0024 20000000 		.4byte	.LFE2-.LFB2
- 976 0028 00000000 		.4byte	.LFB3
- 977 002c 1C000000 		.4byte	.LFE3-.LFB3
- 978 0030 00000000 		.4byte	.LFB4
- 979 0034 18000000 		.4byte	.LFE4-.LFB4
- 980 0038 00000000 		.4byte	.LFB5
- 981 003c 10000000 		.4byte	.LFE5-.LFB5
- 982 0040 00000000 		.4byte	.LFB6
- 983 0044 20000000 		.4byte	.LFE6-.LFB6
- 984 0048 00000000 		.4byte	.LFB7
- 985 004c 10000000 		.4byte	.LFE7-.LFB7
- 986 0050 00000000 		.4byte	.LFB8
- 987 0054 10000000 		.4byte	.LFE8-.LFB8
+ 970 0010 00000000 		.4byte	.LFB1
+ 971 0014 0C000000 		.4byte	.LFE1-.LFB1
+ 972 0018 00000000 		.4byte	.LFB2
+ 973 001c 10000000 		.4byte	.LFE2-.LFB2
+ 974 0020 00000000 		.4byte	.LFB3
+ 975 0024 20000000 		.4byte	.LFE3-.LFB3
+ 976 0028 00000000 		.4byte	.LFB4
+ 977 002c 1C000000 		.4byte	.LFE4-.LFB4
+ 978 0030 00000000 		.4byte	.LFB5
+ 979 0034 18000000 		.4byte	.LFE5-.LFB5
+ 980 0038 00000000 		.4byte	.LFB6
+ 981 003c 10000000 		.4byte	.LFE6-.LFB6
+ 982 0040 00000000 		.4byte	.LFB7
+ 983 0044 20000000 		.4byte	.LFE7-.LFB7
+ 984 0048 00000000 		.4byte	.LFB8
+ 985 004c 10000000 		.4byte	.LFE8-.LFB8
+ 986 0050 00000000 		.4byte	.LFB9
+ 987 0054 10000000 		.4byte	.LFE9-.LFB9
  988 0058 00000000 		.4byte	0
  989 005c 00000000 		.4byte	0
  990              		.section	.debug_ranges,"",%progbits
  991              	.Ldebug_ranges0:
- 992 0000 00000000 		.4byte	.LFB0
- 993 0004 0C000000 		.4byte	.LFE0
- 994 0008 00000000 		.4byte	.LFB1
- 995 000c 10000000 		.4byte	.LFE1
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 27
+ 992 0000 00000000 		.4byte	.LFB1
+ 993 0004 0C000000 		.4byte	.LFE1
+ 994 0008 00000000 		.4byte	.LFB2
+ 995 000c 10000000 		.4byte	.LFE2
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccVtuCM4.s 			page 27
 
 
- 996 0010 00000000 		.4byte	.LFB2
- 997 0014 20000000 		.4byte	.LFE2
- 998 0018 00000000 		.4byte	.LFB3
- 999 001c 1C000000 		.4byte	.LFE3
- 1000 0020 00000000 		.4byte	.LFB4
- 1001 0024 18000000 		.4byte	.LFE4
- 1002 0028 00000000 		.4byte	.LFB5
- 1003 002c 10000000 		.4byte	.LFE5
- 1004 0030 00000000 		.4byte	.LFB6
- 1005 0034 20000000 		.4byte	.LFE6
- 1006 0038 00000000 		.4byte	.LFB7
- 1007 003c 10000000 		.4byte	.LFE7
- 1008 0040 00000000 		.4byte	.LFB8
- 1009 0044 10000000 		.4byte	.LFE8
+ 996 0010 00000000 		.4byte	.LFB3
+ 997 0014 20000000 		.4byte	.LFE3
+ 998 0018 00000000 		.4byte	.LFB4
+ 999 001c 1C000000 		.4byte	.LFE4
+ 1000 0020 00000000 		.4byte	.LFB5
+ 1001 0024 18000000 		.4byte	.LFE5
+ 1002 0028 00000000 		.4byte	.LFB6
+ 1003 002c 10000000 		.4byte	.LFE6
+ 1004 0030 00000000 		.4byte	.LFB7
+ 1005 0034 20000000 		.4byte	.LFE7
+ 1006 0038 00000000 		.4byte	.LFB8
+ 1007 003c 10000000 		.4byte	.LFE8
+ 1008 0040 00000000 		.4byte	.LFB9
+ 1009 0044 10000000 		.4byte	.LFE9
  1010 0048 00000000 		.4byte	0
  1011 004c 00000000 		.4byte	0
  1012              		.section	.debug_line,"",%progbits
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
  1028      00
  1029              	.LASF11:
  1030 006c 666C6F61 		.ascii	"float\000"
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 28
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccVtuCM4.s 			page 28
 
 
  1030      7400
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
  1054      333200
  1055              	.LASF26:
  1056 0155 4442475F 		.ascii	"DBG_UART_SpiUartGetTxBufferSize\000"
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 29
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccVtuCM4.s 			page 29
 
 
  1056      55415254 
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 1
  1074 0298 73697A65 		.ascii	"sizetype\000"
  1074      74797065 
  1074      00
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\cc0xRtip.s 			page 30
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccVtuCM4.s 			page 30
 
 
  1075              	.LASF18:

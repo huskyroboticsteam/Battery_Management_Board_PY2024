@@ -84,6 +84,8 @@
   <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\cmsis_gcc.h" value="HEADER;;;;;cy_boot" />
   <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\cmsis_compiler.h" value="HEADER;;;;;cy_boot" />
   <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\CyBootAsmGnu.s" value="SOURCE_ASM;CortexM0,CortexM0p,CortexM3,CortexM4,CortexM7;;b98f980c-3bd1-4fc7-a887-c56a20a46fdd;;cy_boot" />
+  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\CyDMA.h" value="HEADER;;;;;cy_dmac" />
+  <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\CyDMA.c" value="SOURCE_C;CortexM0;;;;cy_dmac" />
   <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\CyLFClk.c" value="SOURCE_C;CortexM0;;;;cy_lfclk" />
   <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\CyLFClk.h" value="HEADER;;;;;cy_lfclk" />
   <file name="C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\codegentemp\cy_em_eeprom.c" value="SOURCE_C;CortexM0;;;;Em_EEPROM_Dynamic" />

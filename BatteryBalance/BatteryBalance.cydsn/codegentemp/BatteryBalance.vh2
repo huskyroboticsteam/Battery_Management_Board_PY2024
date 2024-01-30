@@ -2,7 +2,7 @@
 --	Conversion of BatteryBalance.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Thu Jan 11 18:58:30 2024
+--	Thu Jan 25 19:33:44 2024
 --
 
 USE cypress.cypress.all;
@@ -292,7 +292,7 @@ one <=  ('1') ;
 		id=>"43ec2fa1-bf22-4b71-9477-b6ca7b97f0b0/2dc2d7a8-ce2b-43c7-af4a-821c8cd73ccf",
 		source_clock_id=>"",
 		divisor=>0,
-		period=>"8680555555.55556",
+		period=>"6510416666.66667",
 		is_direct=>'0',
 		is_digital=>'0')
 	PORT MAP(clock_out=>\DBG_UART:Net_847\,

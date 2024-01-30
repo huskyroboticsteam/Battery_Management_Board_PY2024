@@ -24,24 +24,27 @@ int main(void)
     /* Place your initialization/startup code here (e.g. MyInst_Start()) */
     BatteryBalanceInit();
     init_INA226();
-    DBG_UART_Init();
-    
+    DBG_UART_Start();
+    InitCAN(0x3, 0x3); // TODO: ask about the deviceAddress
+
     uint8_t current;
     uint8_t status;
     uint16_t* id = 0;
-    CANPacket* data;
+    CANPacket* packet;
 
-    DBG_UART_UartPutString("Test");
+    // DBG_UART_UartPutString("Test");
     for(;;)
     {
-        status = getCurrent(&current);
+        status = getVoltage(&current);
+        packet = NULL;
+        
         if (status == SUCCESS) {
-            //*id = ConstructCANID(0, 0, 0);
-            //*data = ConstructCANPacket(*id, (uint8_t)1, &current);
-            // SendCANPacket(data);
-            //DBG_UART_UartPutChar(data);
-            DBG_UART_UartPutString("Test");
-            // count++;
+            PrintInt(current);
+            DBG_UART_UartPutString("mA\n\r");
+            AssembleTelemetryReportPacket(packet, 0x2, 0x1, 0xF6, current); 
+            SendCANPacket(packet);
+        } else {
+            DBG_UART_UartPutString("FAIL");   
         }
         
         CyDelay(100);

@@ -1,13 +1,10 @@
---------------- Build Started: 01/11/2024 19:00:03 Project: BatteryBalance, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
+--------------- Build Started: 01/29/2024 18:57:30 Project: BatteryBalance, Configuration: ARM GCC 5.4-2016-q2-update Debug ---------------
 The code generation step is up to date.
 arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/main.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c main.c -o .\CortexM0\ARM_GCC_541\Debug\main.o
 main.c: In function 'main':
 main.c:32:16: warning: unused variable 'data' [-Wunused-variable]
      CANPacket* data;
                 ^
-main.c:31:15: warning: unused variable 'id' [-Wunused-variable]
-     uint16_t* id = 0;
-               ^
 arm-none-eabi-gcc.exe -mcpu=cortex-m0 -mthumb -I. -IGenerated_Source\PSoC4 -Wa,-alh=.\CortexM0\ARM_GCC_541\Debug/PortTemplate.lst -g -D DEBUG -D CY_CORE_ID=0 -Wall -ffunction-sections -ffat-lto-objects -Og -c HindsightCAN\PortFiles\PortTemplate.c -o .\CortexM0\ARM_GCC_541\Debug\PortTemplate.o
 HindsightCAN\PortFiles\PortTemplate.c: In function 'SendCANPacket':
 HindsightCAN\PortFiles\PortTemplate.c:17:1: warning: control reaches end of non-void function [-Wreturn-type]
@@ -17,14 +14,14 @@ HindsightCAN\PortFiles\PortTemplate.c: In function 'PollAndReceiveCANPacket':
 HindsightCAN\PortFiles\PortTemplate.c:21:1: warning: control reaches end of non-void function [-Wreturn-type]
  }
  ^
-arm-none-eabi-ar.exe -rs .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a .\CortexM0\ARM_GCC_541\Debug\CyFlash.o .\CortexM0\ARM_GCC_541\Debug\CyLib.o .\CortexM0\ARM_GCC_541\Debug\cyPm.o .\CortexM0\ARM_GCC_541\Debug\cyutils.o .\CortexM0\ARM_GCC_541\Debug\CyLFClk.o .\CortexM0\ARM_GCC_541\Debug\cy_em_eeprom.o .\CortexM0\ARM_GCC_541\Debug\INA226_I2C.o .\CortexM0\ARM_GCC_541\Debug\INA226_I2C_I2C_INT.o .\CortexM0\ARM_GCC_541\Debug\INA226_I2C_I2C.o .\CortexM0\ARM_GCC_541\Debug\INA226_I2C_I2C_BOOT.o .\CortexM0\ARM_GCC_541\Debug\INA226_I2C_PM.o .\CortexM0\ARM_GCC_541\Debug\INA226_I2C_BOOT.o .\CortexM0\ARM_GCC_541\Debug\INA226_I2C_I2C_MASTER.o .\CortexM0\ARM_GCC_541\Debug\INA226_I2C_SCBCLK.o .\CortexM0\ARM_GCC_541\Debug\INA226_I2C_sda.o .\CortexM0\ARM_GCC_541\Debug\INA226_I2C_sda_PM.o .\CortexM0\ARM_GCC_541\Debug\INA226_I2C_scl.o .\CortexM0\ARM_GCC_541\Debug\INA226_I2C_scl_PM.o .\CortexM0\ARM_GCC_541\Debug\INA226_I2C_SCB_IRQ.o .\CortexM0\ARM_GCC_541\Debug\DBG_UART.o .\CortexM0\ARM_GCC_541\Debug\DBG_UART_SPI_UART.o .\CortexM0\ARM_GCC_541\Debug\DBG_UART_SPI_UART_INT.o .\CortexM0\ARM_GCC_541\Debug\DBG_UART_PM.o .\CortexM0\ARM_GCC_541\Debug\DBG_UART_UART.o .\CortexM0\ARM_GCC_541\Debug\DBG_UART_BOOT.o .\CortexM0\ARM_GCC_541\Debug\DBG_UART_UART_BOOT.o .\CortexM0\ARM_GCC_541\Debug\DBG_UART_SCBCLK.o .\CortexM0\ARM_GCC_541\Debug\DBG_UART_tx.o .\CortexM0\ARM_GCC_541\Debug\DBG_UART_tx_PM.o .\CortexM0\ARM_GCC_541\Debug\DBG_UART_rx.o .\CortexM0\ARM_GCC_541\Debug\DBG_UART_rx_PM.o .\CortexM0\ARM_GCC_541\Debug\CyBootAsmGnu.o
+arm-none-eabi-ar.exe -rs .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a .\CortexM0\ARM_GCC_541\Debug\CyFlash.o .\CortexM0\ARM_GCC_541\Debug\CyLib.o .\CortexM0\ARM_GCC_541\Debug\cyPm.o .\CortexM0\ARM_GCC_541\Debug\cyutils.o .\CortexM0\ARM_GCC_541\Debug\CyDMA.o .\CortexM0\ARM_GCC_541\Debug\CyLFClk.o .\CortexM0\ARM_GCC_541\Debug\cy_em_eeprom.o .\CortexM0\ARM_GCC_541\Debug\INA226_I2C.o .\CortexM0\ARM_GCC_541\Debug\INA226_I2C_I2C_INT.o .\CortexM0\ARM_GCC_541\Debug\INA226_I2C_I2C.o .\CortexM0\ARM_GCC_541\Debug\INA226_I2C_I2C_BOOT.o .\CortexM0\ARM_GCC_541\Debug\INA226_I2C_PM.o .\CortexM0\ARM_GCC_541\Debug\INA226_I2C_BOOT.o .\CortexM0\ARM_GCC_541\Debug\INA226_I2C_I2C_MASTER.o .\CortexM0\ARM_GCC_541\Debug\INA226_I2C_SCBCLK.o .\CortexM0\ARM_GCC_541\Debug\INA226_I2C_sda.o .\CortexM0\ARM_GCC_541\Debug\INA226_I2C_sda_PM.o .\CortexM0\ARM_GCC_541\Debug\INA226_I2C_scl.o .\CortexM0\ARM_GCC_541\Debug\INA226_I2C_scl_PM.o .\CortexM0\ARM_GCC_541\Debug\INA226_I2C_SCB_IRQ.o .\CortexM0\ARM_GCC_541\Debug\DBG_UART.o .\CortexM0\ARM_GCC_541\Debug\DBG_UART_SPI_UART.o .\CortexM0\ARM_GCC_541\Debug\DBG_UART_SPI_UART_INT.o .\CortexM0\ARM_GCC_541\Debug\DBG_UART_PM.o .\CortexM0\ARM_GCC_541\Debug\DBG_UART_UART.o .\CortexM0\ARM_GCC_541\Debug\DBG_UART_BOOT.o .\CortexM0\ARM_GCC_541\Debug\DBG_UART_UART_BOOT.o .\CortexM0\ARM_GCC_541\Debug\DBG_UART_SCBCLK.o .\CortexM0\ARM_GCC_541\Debug\DBG_UART_tx.o .\CortexM0\ARM_GCC_541\Debug\DBG_UART_tx_PM.o .\CortexM0\ARM_GCC_541\Debug\DBG_UART_rx.o .\CortexM0\ARM_GCC_541\Debug\DBG_UART_rx_PM.o .\CortexM0\ARM_GCC_541\Debug\CyBootAsmGnu.o
 arm-none-eabi-ar.exe: creating .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a
 arm-none-eabi-gcc.exe -Wl,--start-group -o C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\CortexM0\ARM_GCC_541\Debug\BatteryBalance.elf .\CortexM0\ARM_GCC_541\Debug\main.o .\CortexM0\ARM_GCC_541\Debug\battery.o .\CortexM0\ARM_GCC_541\Debug\INA226.o .\CortexM0\ARM_GCC_541\Debug\CANCommon.o .\CortexM0\ARM_GCC_541\Debug\CANGPIO.o .\CortexM0\ARM_GCC_541\Debug\CANLocalization.o .\CortexM0\ARM_GCC_541\Debug\CANMotorUnit.o .\CortexM0\ARM_GCC_541\Debug\CANPower.o .\CortexM0\ARM_GCC_541\Debug\CANScience.o .\CortexM0\ARM_GCC_541\Debug\PortTemplate.o .\CortexM0\ARM_GCC_541\Debug\CANPacket.o .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o .\CortexM0\ARM_GCC_541\Debug\cymetadata.o .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o .\CortexM0\ARM_GCC_541\Debug\BatteryBalance.a -mcpu=cortex-m0 -mthumb -L Generated_Source\PSoC4 -Wl,-Map,.\CortexM0\ARM_GCC_541\Debug/BatteryBalance.map -T Generated_Source\PSoC4\cm0gcc.ld -specs=nano.specs -Wl,--gc-sections -g -ffunction-sections -Og -ffat-lto-objects -Wl,--end-group
-cyelftool.exe -C C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\CortexM0\ARM_GCC_541\Debug\BatteryBalance.elf --flash_row_size 128 --flash_size 32768 --flash_offset 0x00000000
+cyelftool.exe -C C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\CortexM0\ARM_GCC_541\Debug\BatteryBalance.elf --flash_row_size 128 --flash_size 131072 --flash_offset 0x00000000
 No ELF section .cychecksum found, creating one
 Application checksum calculated and stored in ELF section .cychecksum
 Checksum calculated and stored in ELF section .cymeta
 cyelftool.exe -S C:\Users\tsien\Documents\GitHub\Battery_Management_Board_PY2023\BatteryBalance\BatteryBalance.cydsn\CortexM0\ARM_GCC_541\Debug\BatteryBalance.elf
-Flash used: 6086 of 32768 bytes (18.6%).
-SRAM used: 2648 of 4096 bytes (64.6%). Stack: 2048 bytes. Heap: 128 bytes.
---------------- Build Succeeded: 01/11/2024 19:00:06 ---------------
+Flash used: 6272 of 131072 bytes (4.8%).
+SRAM used: 2664 of 16384 bytes (16.3%). Stack: 2048 bytes. Heap: 128 bytes.
+--------------- Build Succeeded: 01/29/2024 18:57:33 ---------------

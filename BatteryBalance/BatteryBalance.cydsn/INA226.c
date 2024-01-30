@@ -84,6 +84,7 @@ uint8_t setAlertEnableBusUnderVoltage()
     data[1] = 0;  //INA226_BIT_BUL;
     return writeRegister(INA226_REG_MASKENABLE, data, 2);
 }
+
 /**
  *   Returns the bus voltage in mV
  *

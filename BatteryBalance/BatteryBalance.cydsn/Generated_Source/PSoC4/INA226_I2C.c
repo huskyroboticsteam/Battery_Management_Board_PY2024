@@ -539,22 +539,22 @@ static void INA226_I2C_ScbModeStop(void)
             hsiomSel[INA226_I2C_TX_SDA_MISO_PIN_INDEX] = INA226_I2C_TX_SDA_MISO_HSIOM_SEL_SPI;
         #endif /* (INA226_I2C_TX_SDA_MISO_PIN) */
         
-        #if (INA226_I2C_SCLK_PIN)
-            hsiomSel[INA226_I2C_SCLK_PIN_INDEX] = INA226_I2C_SCLK_HSIOM_SEL_SPI;
-        #endif /* (INA226_I2C_SCLK_PIN) */
+        #if (INA226_I2C_CTS_SCLK_PIN)
+            hsiomSel[INA226_I2C_CTS_SCLK_PIN_INDEX] = INA226_I2C_CTS_SCLK_HSIOM_SEL_SPI;
+        #endif /* (INA226_I2C_CTS_SCLK_PIN) */
 
             if (INA226_I2C_SPI_SLAVE == subMode)
             {
                 /* Slave */
                 pinsDm[INA226_I2C_RX_SCL_MOSI_PIN_INDEX] = INA226_I2C_PIN_DM_DIG_HIZ;
                 pinsDm[INA226_I2C_TX_SDA_MISO_PIN_INDEX] = INA226_I2C_PIN_DM_STRONG;
-                pinsDm[INA226_I2C_SCLK_PIN_INDEX] = INA226_I2C_PIN_DM_DIG_HIZ;
+                pinsDm[INA226_I2C_CTS_SCLK_PIN_INDEX] = INA226_I2C_PIN_DM_DIG_HIZ;
 
-            #if (INA226_I2C_SS0_PIN)
+            #if (INA226_I2C_RTS_SS0_PIN)
                 /* Only SS0 is valid choice for Slave */
-                hsiomSel[INA226_I2C_SS0_PIN_INDEX] = INA226_I2C_SS0_HSIOM_SEL_SPI;
-                pinsDm  [INA226_I2C_SS0_PIN_INDEX] = INA226_I2C_PIN_DM_DIG_HIZ;
-            #endif /* (INA226_I2C_SS0_PIN) */
+                hsiomSel[INA226_I2C_RTS_SS0_PIN_INDEX] = INA226_I2C_RTS_SS0_HSIOM_SEL_SPI;
+                pinsDm  [INA226_I2C_RTS_SS0_PIN_INDEX] = INA226_I2C_PIN_DM_DIG_HIZ;
+            #endif /* (INA226_I2C_RTS_SS0_PIN) */
 
             #if (INA226_I2C_TX_SDA_MISO_PIN)
                 /* Disable input buffer */
@@ -566,13 +566,13 @@ static void INA226_I2C_ScbModeStop(void)
                 /* (Master) */
                 pinsDm[INA226_I2C_RX_SCL_MOSI_PIN_INDEX] = INA226_I2C_PIN_DM_STRONG;
                 pinsDm[INA226_I2C_TX_SDA_MISO_PIN_INDEX] = INA226_I2C_PIN_DM_DIG_HIZ;
-                pinsDm[INA226_I2C_SCLK_PIN_INDEX] = INA226_I2C_PIN_DM_STRONG;
+                pinsDm[INA226_I2C_CTS_SCLK_PIN_INDEX] = INA226_I2C_PIN_DM_STRONG;
 
-            #if (INA226_I2C_SS0_PIN)
-                hsiomSel [INA226_I2C_SS0_PIN_INDEX] = INA226_I2C_SS0_HSIOM_SEL_SPI;
-                pinsDm   [INA226_I2C_SS0_PIN_INDEX] = INA226_I2C_PIN_DM_STRONG;
-                pinsInBuf |= INA226_I2C_SS0_PIN_MASK;
-            #endif /* (INA226_I2C_SS0_PIN) */
+            #if (INA226_I2C_RTS_SS0_PIN)
+                hsiomSel [INA226_I2C_RTS_SS0_PIN_INDEX] = INA226_I2C_RTS_SS0_HSIOM_SEL_SPI;
+                pinsDm   [INA226_I2C_RTS_SS0_PIN_INDEX] = INA226_I2C_PIN_DM_STRONG;
+                pinsInBuf |= INA226_I2C_RTS_SS0_PIN_MASK;
+            #endif /* (INA226_I2C_RTS_SS0_PIN) */
 
             #if (INA226_I2C_SS1_PIN)
                 hsiomSel [INA226_I2C_SS1_PIN_INDEX] = INA226_I2C_SS1_HSIOM_SEL_SPI;
@@ -600,9 +600,9 @@ static void INA226_I2C_ScbModeStop(void)
             #else
             #endif /* (INA226_I2C_RX_SCL_MOSI_PIN) */
 
-            #if (INA226_I2C_SCLK_PIN)
-                pinsInBuf |= INA226_I2C_SCLK_PIN_MASK;
-            #endif /* (INA226_I2C_SCLK_PIN) */
+            #if (INA226_I2C_CTS_SCLK_PIN)
+                pinsInBuf |= INA226_I2C_CTS_SCLK_PIN_MASK;
+            #endif /* (INA226_I2C_CTS_SCLK_PIN) */
             }
         }
         else /* UART */
@@ -646,22 +646,22 @@ static void INA226_I2C_ScbModeStop(void)
                     if (0u != (INA226_I2C_UART_CTS_PIN_ENABLE & uartEnableMask))
                     {
                         /* CTS input is multiplexed with SCLK */
-                    #if (INA226_I2C_SCLK_PIN)
-                        hsiomSel[INA226_I2C_SCLK_PIN_INDEX] = INA226_I2C_SCLK_HSIOM_SEL_UART;
-                        pinsDm  [INA226_I2C_SCLK_PIN_INDEX] = INA226_I2C_PIN_DM_DIG_HIZ;
-                    #endif /* (INA226_I2C_SCLK_PIN) */
+                    #if (INA226_I2C_CTS_SCLK_PIN)
+                        hsiomSel[INA226_I2C_CTS_SCLK_PIN_INDEX] = INA226_I2C_CTS_SCLK_HSIOM_SEL_UART;
+                        pinsDm  [INA226_I2C_CTS_SCLK_PIN_INDEX] = INA226_I2C_PIN_DM_DIG_HIZ;
+                    #endif /* (INA226_I2C_CTS_SCLK_PIN) */
                     }
 
                     if (0u != (INA226_I2C_UART_RTS_PIN_ENABLE & uartEnableMask))
                     {
                         /* RTS output is multiplexed with SS0 */
-                    #if (INA226_I2C_SS0_PIN)
-                        hsiomSel[INA226_I2C_SS0_PIN_INDEX] = INA226_I2C_SS0_HSIOM_SEL_UART;
-                        pinsDm  [INA226_I2C_SS0_PIN_INDEX] = INA226_I2C_PIN_DM_STRONG;
+                    #if (INA226_I2C_RTS_SS0_PIN)
+                        hsiomSel[INA226_I2C_RTS_SS0_PIN_INDEX] = INA226_I2C_RTS_SS0_HSIOM_SEL_UART;
+                        pinsDm  [INA226_I2C_RTS_SS0_PIN_INDEX] = INA226_I2C_PIN_DM_STRONG;
                         
                         /* Disable input buffer */
-                        pinsInBuf |= INA226_I2C_SS0_PIN_MASK;
-                    #endif /* (INA226_I2C_SS0_PIN) */
+                        pinsInBuf |= INA226_I2C_RTS_SS0_PIN_MASK;
+                    #endif /* (INA226_I2C_RTS_SS0_PIN) */
                     }
                 }
             #endif /* !(INA226_I2C_CY_SCBIP_V0 || INA226_I2C_CY_SCBIP_V1) */
@@ -722,31 +722,31 @@ static void INA226_I2C_ScbModeStop(void)
     #endif /* (!INA226_I2C_CY_SCBIP_V1) */
     #endif /* (INA226_I2C_RX_SCL_MOSI_PIN) */
 
-    #if (INA226_I2C_SCLK_PIN)
-        INA226_I2C_SET_HSIOM_SEL(INA226_I2C_SCLK_HSIOM_REG,
-                                       INA226_I2C_SCLK_HSIOM_MASK,
-                                       INA226_I2C_SCLK_HSIOM_POS,
-                                       hsiomSel[INA226_I2C_SCLK_PIN_INDEX]);
+    #if (INA226_I2C_CTS_SCLK_PIN)
+        INA226_I2C_SET_HSIOM_SEL(INA226_I2C_CTS_SCLK_HSIOM_REG,
+                                       INA226_I2C_CTS_SCLK_HSIOM_MASK,
+                                       INA226_I2C_CTS_SCLK_HSIOM_POS,
+                                       hsiomSel[INA226_I2C_CTS_SCLK_PIN_INDEX]);
 
-        INA226_I2C_spi_sclk_SetDriveMode((uint8) pinsDm[INA226_I2C_SCLK_PIN_INDEX]);
+        INA226_I2C_uart_cts_spi_sclk_SetDriveMode((uint8) pinsDm[INA226_I2C_CTS_SCLK_PIN_INDEX]);
 
-        INA226_I2C_SET_INP_DIS(INA226_I2C_spi_sclk_INP_DIS,
-                                     INA226_I2C_spi_sclk_MASK,
-                                     (0u != (pinsInBuf & INA226_I2C_SCLK_PIN_MASK)));
-    #endif /* (INA226_I2C_SCLK_PIN) */
+        INA226_I2C_SET_INP_DIS(INA226_I2C_uart_cts_spi_sclk_INP_DIS,
+                                     INA226_I2C_uart_cts_spi_sclk_MASK,
+                                     (0u != (pinsInBuf & INA226_I2C_CTS_SCLK_PIN_MASK)));
+    #endif /* (INA226_I2C_CTS_SCLK_PIN) */
 
-    #if (INA226_I2C_SS0_PIN)
-        INA226_I2C_SET_HSIOM_SEL(INA226_I2C_SS0_HSIOM_REG,
-                                       INA226_I2C_SS0_HSIOM_MASK,
-                                       INA226_I2C_SS0_HSIOM_POS,
-                                       hsiomSel[INA226_I2C_SS0_PIN_INDEX]);
+    #if (INA226_I2C_RTS_SS0_PIN)
+        INA226_I2C_SET_HSIOM_SEL(INA226_I2C_RTS_SS0_HSIOM_REG,
+                                       INA226_I2C_RTS_SS0_HSIOM_MASK,
+                                       INA226_I2C_RTS_SS0_HSIOM_POS,
+                                       hsiomSel[INA226_I2C_RTS_SS0_PIN_INDEX]);
 
-        INA226_I2C_spi_ss0_SetDriveMode((uint8) pinsDm[INA226_I2C_SS0_PIN_INDEX]);
+        INA226_I2C_uart_rts_spi_ss0_SetDriveMode((uint8) pinsDm[INA226_I2C_RTS_SS0_PIN_INDEX]);
 
-        INA226_I2C_SET_INP_DIS(INA226_I2C_spi_ss0_INP_DIS,
-                                     INA226_I2C_spi_ss0_MASK,
-                                     (0u != (pinsInBuf & INA226_I2C_SS0_PIN_MASK)));
-    #endif /* (INA226_I2C_SS0_PIN) */
+        INA226_I2C_SET_INP_DIS(INA226_I2C_uart_rts_spi_ss0_INP_DIS,
+                                     INA226_I2C_uart_rts_spi_ss0_MASK,
+                                     (0u != (pinsInBuf & INA226_I2C_RTS_SS0_PIN_MASK)));
+    #endif /* (INA226_I2C_RTS_SS0_PIN) */
 
     #if (INA226_I2C_SS1_PIN)
         INA226_I2C_SET_HSIOM_SEL(INA226_I2C_SS1_HSIOM_REG,

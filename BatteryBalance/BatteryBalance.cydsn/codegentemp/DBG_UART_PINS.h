@@ -32,8 +32,8 @@
 #define DBG_UART_REMOVE_RX_WAKE_SCL_MOSI_PIN  (1u)
 #define DBG_UART_REMOVE_RX_SCL_MOSI_PIN      (1u)
 #define DBG_UART_REMOVE_TX_SDA_MISO_PIN      (1u)
-#define DBG_UART_REMOVE_SCLK_PIN      (1u)
-#define DBG_UART_REMOVE_SS0_PIN      (1u)
+#define DBG_UART_REMOVE_CTS_SCLK_PIN      (1u)
+#define DBG_UART_REMOVE_RTS_SS0_PIN      (1u)
 #define DBG_UART_REMOVE_SS1_PIN                 (1u)
 #define DBG_UART_REMOVE_SS2_PIN                 (1u)
 #define DBG_UART_REMOVE_SS3_PIN                 (1u)
@@ -62,8 +62,8 @@
 #define DBG_UART_RX_WAKE_SCL_MOSI_PIN (0u == DBG_UART_REMOVE_RX_WAKE_SCL_MOSI_PIN)
 #define DBG_UART_RX_SCL_MOSI_PIN     (0u == DBG_UART_REMOVE_RX_SCL_MOSI_PIN)
 #define DBG_UART_TX_SDA_MISO_PIN     (0u == DBG_UART_REMOVE_TX_SDA_MISO_PIN)
-#define DBG_UART_SCLK_PIN     (0u == DBG_UART_REMOVE_SCLK_PIN)
-#define DBG_UART_SS0_PIN     (0u == DBG_UART_REMOVE_SS0_PIN)
+#define DBG_UART_CTS_SCLK_PIN     (0u == DBG_UART_REMOVE_CTS_SCLK_PIN)
+#define DBG_UART_RTS_SS0_PIN     (0u == DBG_UART_REMOVE_RTS_SS0_PIN)
 #define DBG_UART_SS1_PIN                (0u == DBG_UART_REMOVE_SS1_PIN)
 #define DBG_UART_SS2_PIN                (0u == DBG_UART_REMOVE_SS2_PIN)
 #define DBG_UART_SS3_PIN                (0u == DBG_UART_REMOVE_SS3_PIN)
@@ -105,13 +105,13 @@
     #include "DBG_UART_uart_tx_i2c_sda_spi_miso.h"
 #endif /* (DBG_UART_TX_SDA_MISO) */
 
-#if (DBG_UART_SCLK_PIN)
-    #include "DBG_UART_spi_sclk.h"
-#endif /* (DBG_UART_SCLK) */
+#if (DBG_UART_CTS_SCLK_PIN)
+    #include "DBG_UART_uart_cts_spi_sclk.h"
+#endif /* (DBG_UART_CTS_SCLK) */
 
-#if (DBG_UART_SS0_PIN)
-    #include "DBG_UART_spi_ss0.h"
-#endif /* (DBG_UART_SS0_PIN) */
+#if (DBG_UART_RTS_SS0_PIN)
+    #include "DBG_UART_uart_rts_spi_ss0.h"
+#endif /* (DBG_UART_RTS_SS0_PIN) */
 
 #if (DBG_UART_SS1_PIN)
     #include "DBG_UART_spi_ss1.h"
@@ -245,31 +245,31 @@
     #define DBG_UART_TX_SDA_MISO_HSIOM_SEL_UART  (DBG_UART_uart_tx_i2c_sda_spi_miso__0__HSIOM_UART)
 #endif /* (DBG_UART_TX_SDA_MISO_PIN) */
 
-#if (DBG_UART_SCLK_PIN)
-    #define DBG_UART_SCLK_HSIOM_REG   (*(reg32 *) DBG_UART_spi_sclk__0__HSIOM)
-    #define DBG_UART_SCLK_HSIOM_PTR   ( (reg32 *) DBG_UART_spi_sclk__0__HSIOM)
+#if (DBG_UART_CTS_SCLK_PIN)
+    #define DBG_UART_CTS_SCLK_HSIOM_REG   (*(reg32 *) DBG_UART_uart_cts_spi_sclk__0__HSIOM)
+    #define DBG_UART_CTS_SCLK_HSIOM_PTR   ( (reg32 *) DBG_UART_uart_cts_spi_sclk__0__HSIOM)
     
-    #define DBG_UART_SCLK_HSIOM_MASK      (DBG_UART_spi_sclk__0__HSIOM_MASK)
-    #define DBG_UART_SCLK_HSIOM_POS       (DBG_UART_spi_sclk__0__HSIOM_SHIFT)
-    #define DBG_UART_SCLK_HSIOM_SEL_GPIO  (DBG_UART_spi_sclk__0__HSIOM_GPIO)
-    #define DBG_UART_SCLK_HSIOM_SEL_I2C   (DBG_UART_spi_sclk__0__HSIOM_I2C)
-    #define DBG_UART_SCLK_HSIOM_SEL_SPI   (DBG_UART_spi_sclk__0__HSIOM_SPI)
-    #define DBG_UART_SCLK_HSIOM_SEL_UART  (DBG_UART_spi_sclk__0__HSIOM_UART)
-#endif /* (DBG_UART_SCLK_PIN) */
+    #define DBG_UART_CTS_SCLK_HSIOM_MASK      (DBG_UART_uart_cts_spi_sclk__0__HSIOM_MASK)
+    #define DBG_UART_CTS_SCLK_HSIOM_POS       (DBG_UART_uart_cts_spi_sclk__0__HSIOM_SHIFT)
+    #define DBG_UART_CTS_SCLK_HSIOM_SEL_GPIO  (DBG_UART_uart_cts_spi_sclk__0__HSIOM_GPIO)
+    #define DBG_UART_CTS_SCLK_HSIOM_SEL_I2C   (DBG_UART_uart_cts_spi_sclk__0__HSIOM_I2C)
+    #define DBG_UART_CTS_SCLK_HSIOM_SEL_SPI   (DBG_UART_uart_cts_spi_sclk__0__HSIOM_SPI)
+    #define DBG_UART_CTS_SCLK_HSIOM_SEL_UART  (DBG_UART_uart_cts_spi_sclk__0__HSIOM_UART)
+#endif /* (DBG_UART_CTS_SCLK_PIN) */
 
-#if (DBG_UART_SS0_PIN)
-    #define DBG_UART_SS0_HSIOM_REG   (*(reg32 *) DBG_UART_spi_ss0__0__HSIOM)
-    #define DBG_UART_SS0_HSIOM_PTR   ( (reg32 *) DBG_UART_spi_ss0__0__HSIOM)
+#if (DBG_UART_RTS_SS0_PIN)
+    #define DBG_UART_RTS_SS0_HSIOM_REG   (*(reg32 *) DBG_UART_uart_rts_spi_ss0__0__HSIOM)
+    #define DBG_UART_RTS_SS0_HSIOM_PTR   ( (reg32 *) DBG_UART_uart_rts_spi_ss0__0__HSIOM)
     
-    #define DBG_UART_SS0_HSIOM_MASK      (DBG_UART_spi_ss0__0__HSIOM_MASK)
-    #define DBG_UART_SS0_HSIOM_POS       (DBG_UART_spi_ss0__0__HSIOM_SHIFT)
-    #define DBG_UART_SS0_HSIOM_SEL_GPIO  (DBG_UART_spi_ss0__0__HSIOM_GPIO)
-    #define DBG_UART_SS0_HSIOM_SEL_I2C   (DBG_UART_spi_ss0__0__HSIOM_I2C)
-    #define DBG_UART_SS0_HSIOM_SEL_SPI   (DBG_UART_spi_ss0__0__HSIOM_SPI)
+    #define DBG_UART_RTS_SS0_HSIOM_MASK      (DBG_UART_uart_rts_spi_ss0__0__HSIOM_MASK)
+    #define DBG_UART_RTS_SS0_HSIOM_POS       (DBG_UART_uart_rts_spi_ss0__0__HSIOM_SHIFT)
+    #define DBG_UART_RTS_SS0_HSIOM_SEL_GPIO  (DBG_UART_uart_rts_spi_ss0__0__HSIOM_GPIO)
+    #define DBG_UART_RTS_SS0_HSIOM_SEL_I2C   (DBG_UART_uart_rts_spi_ss0__0__HSIOM_I2C)
+    #define DBG_UART_RTS_SS0_HSIOM_SEL_SPI   (DBG_UART_uart_rts_spi_ss0__0__HSIOM_SPI)
 #if !(DBG_UART_CY_SCBIP_V0 || DBG_UART_CY_SCBIP_V1)
-    #define DBG_UART_SS0_HSIOM_SEL_UART  (DBG_UART_spi_ss0__0__HSIOM_UART)
+    #define DBG_UART_RTS_SS0_HSIOM_SEL_UART  (DBG_UART_uart_rts_spi_ss0__0__HSIOM_UART)
 #endif /* !(DBG_UART_CY_SCBIP_V0 || DBG_UART_CY_SCBIP_V1) */
-#endif /* (DBG_UART_SS0_PIN) */
+#endif /* (DBG_UART_RTS_SS0_PIN) */
 
 #if (DBG_UART_SS1_PIN)
     #define DBG_UART_SS1_HSIOM_REG  (*(reg32 *) DBG_UART_spi_ss1__0__HSIOM)
@@ -511,8 +511,8 @@
 #define DBG_UART_RX_WAKE_SCL_MOSI_PIN_INDEX   (0u)
 #define DBG_UART_RX_SCL_MOSI_PIN_INDEX       (0u)
 #define DBG_UART_TX_SDA_MISO_PIN_INDEX       (1u)
-#define DBG_UART_SCLK_PIN_INDEX       (2u)
-#define DBG_UART_SS0_PIN_INDEX       (3u)
+#define DBG_UART_CTS_SCLK_PIN_INDEX       (2u)
+#define DBG_UART_RTS_SS0_PIN_INDEX       (3u)
 #define DBG_UART_SS1_PIN_INDEX                  (4u)
 #define DBG_UART_SS2_PIN_INDEX                  (5u)
 #define DBG_UART_SS3_PIN_INDEX                  (6u)
@@ -521,8 +521,8 @@
 #define DBG_UART_RX_WAKE_SCL_MOSI_PIN_MASK ((uint32) 0x01u << DBG_UART_RX_WAKE_SCL_MOSI_PIN_INDEX)
 #define DBG_UART_RX_SCL_MOSI_PIN_MASK     ((uint32) 0x01u << DBG_UART_RX_SCL_MOSI_PIN_INDEX)
 #define DBG_UART_TX_SDA_MISO_PIN_MASK     ((uint32) 0x01u << DBG_UART_TX_SDA_MISO_PIN_INDEX)
-#define DBG_UART_SCLK_PIN_MASK     ((uint32) 0x01u << DBG_UART_SCLK_PIN_INDEX)
-#define DBG_UART_SS0_PIN_MASK     ((uint32) 0x01u << DBG_UART_SS0_PIN_INDEX)
+#define DBG_UART_CTS_SCLK_PIN_MASK     ((uint32) 0x01u << DBG_UART_CTS_SCLK_PIN_INDEX)
+#define DBG_UART_RTS_SS0_PIN_MASK     ((uint32) 0x01u << DBG_UART_RTS_SS0_PIN_INDEX)
 #define DBG_UART_SS1_PIN_MASK                ((uint32) 0x01u << DBG_UART_SS1_PIN_INDEX)
 #define DBG_UART_SS2_PIN_MASK                ((uint32) 0x01u << DBG_UART_SS2_PIN_INDEX)
 #define DBG_UART_SS3_PIN_MASK                ((uint32) 0x01u << DBG_UART_SS3_PIN_INDEX)
@@ -556,12 +556,12 @@
                                                    DBG_UART_uart_tx_i2c_sda_spi_miso_SHIFT))
 #endif /* (DBG_UART_TX_SDA_MISO_PIN) */
 
-#if (DBG_UART_SS0_PIN)
-    #define DBG_UART_CHECK_SS0_PIN_USED \
+#if (DBG_UART_RTS_SS0_PIN)
+    #define DBG_UART_CHECK_RTS_SS0_PIN_USED \
                 (DBG_UART_PIN_DM_ALG_HIZ != \
-                    DBG_UART_GET_P4_PIN_DM(DBG_UART_spi_ss0_PC, \
-                                                   DBG_UART_spi_ss0_SHIFT))
-#endif /* (DBG_UART_SS0_PIN) */
+                    DBG_UART_GET_P4_PIN_DM(DBG_UART_uart_rts_spi_ss0_PC, \
+                                                   DBG_UART_uart_rts_spi_ss0_SHIFT))
+#endif /* (DBG_UART_RTS_SS0_PIN) */
 
 /* Set bits-mask in register */
 #define DBG_UART_SET_REGISTER_BITS(reg, mask, pos, mode) \
@@ -667,10 +667,10 @@
 #define DBG_UART_REMOVE_MOSI_SCL_RX_PIN         DBG_UART_REMOVE_RX_SCL_MOSI_PIN
 #define DBG_UART_REMOVE_MISO_SDA_TX_PIN         DBG_UART_REMOVE_TX_SDA_MISO_PIN
 #ifndef DBG_UART_REMOVE_SCLK_PIN
-#define DBG_UART_REMOVE_SCLK_PIN                DBG_UART_REMOVE_SCLK_PIN
+#define DBG_UART_REMOVE_SCLK_PIN                DBG_UART_REMOVE_CTS_SCLK_PIN
 #endif /* DBG_UART_REMOVE_SCLK_PIN */
 #ifndef DBG_UART_REMOVE_SS0_PIN
-#define DBG_UART_REMOVE_SS0_PIN                 DBG_UART_REMOVE_SS0_PIN
+#define DBG_UART_REMOVE_SS0_PIN                 DBG_UART_REMOVE_RTS_SS0_PIN
 #endif /* DBG_UART_REMOVE_SS0_PIN */
 
 /* Unconfigured pins */
@@ -678,10 +678,10 @@
 #define DBG_UART_MOSI_SCL_RX_PIN        DBG_UART_RX_SCL_MOSI_PIN
 #define DBG_UART_MISO_SDA_TX_PIN        DBG_UART_TX_SDA_MISO_PIN
 #ifndef DBG_UART_SCLK_PIN
-#define DBG_UART_SCLK_PIN               DBG_UART_SCLK_PIN
+#define DBG_UART_SCLK_PIN               DBG_UART_CTS_SCLK_PIN
 #endif /* DBG_UART_SCLK_PIN */
 #ifndef DBG_UART_SS0_PIN
-#define DBG_UART_SS0_PIN                DBG_UART_SS0_PIN
+#define DBG_UART_SS0_PIN                DBG_UART_RTS_SS0_PIN
 #endif /* DBG_UART_SS0_PIN */
 
 #if (DBG_UART_MOSI_SCL_RX_WAKE_PIN)
@@ -713,19 +713,19 @@
 
 #if (DBG_UART_SCLK_PIN)
     #ifndef DBG_UART_SCLK_HSIOM_REG
-    #define DBG_UART_SCLK_HSIOM_REG     DBG_UART_SCLK_HSIOM_REG
-    #define DBG_UART_SCLK_HSIOM_PTR     DBG_UART_SCLK_HSIOM_PTR
-    #define DBG_UART_SCLK_HSIOM_MASK    DBG_UART_SCLK_HSIOM_MASK
-    #define DBG_UART_SCLK_HSIOM_POS     DBG_UART_SCLK_HSIOM_POS
+    #define DBG_UART_SCLK_HSIOM_REG     DBG_UART_CTS_SCLK_HSIOM_REG
+    #define DBG_UART_SCLK_HSIOM_PTR     DBG_UART_CTS_SCLK_HSIOM_PTR
+    #define DBG_UART_SCLK_HSIOM_MASK    DBG_UART_CTS_SCLK_HSIOM_MASK
+    #define DBG_UART_SCLK_HSIOM_POS     DBG_UART_CTS_SCLK_HSIOM_POS
     #endif /* DBG_UART_SCLK_HSIOM_REG */
 #endif /* (DBG_UART_SCLK_PIN) */
 
 #if (DBG_UART_SS0_PIN)
     #ifndef DBG_UART_SS0_HSIOM_REG
-    #define DBG_UART_SS0_HSIOM_REG      DBG_UART_SS0_HSIOM_REG
-    #define DBG_UART_SS0_HSIOM_PTR      DBG_UART_SS0_HSIOM_PTR
-    #define DBG_UART_SS0_HSIOM_MASK     DBG_UART_SS0_HSIOM_MASK
-    #define DBG_UART_SS0_HSIOM_POS      DBG_UART_SS0_HSIOM_POS
+    #define DBG_UART_SS0_HSIOM_REG      DBG_UART_RTS_SS0_HSIOM_REG
+    #define DBG_UART_SS0_HSIOM_PTR      DBG_UART_RTS_SS0_HSIOM_PTR
+    #define DBG_UART_SS0_HSIOM_MASK     DBG_UART_RTS_SS0_HSIOM_MASK
+    #define DBG_UART_SS0_HSIOM_POS      DBG_UART_RTS_SS0_HSIOM_POS
     #endif /* DBG_UART_SS0_HSIOM_REG */
 #endif /* (DBG_UART_SS0_PIN) */
 
@@ -733,20 +733,20 @@
 #define DBG_UART_MOSI_SCL_RX_PIN_INDEX      DBG_UART_RX_SCL_MOSI_PIN_INDEX
 #define DBG_UART_MISO_SDA_TX_PIN_INDEX      DBG_UART_TX_SDA_MISO_PIN_INDEX
 #ifndef DBG_UART_SCLK_PIN_INDEX
-#define DBG_UART_SCLK_PIN_INDEX             DBG_UART_SCLK_PIN_INDEX
+#define DBG_UART_SCLK_PIN_INDEX             DBG_UART_CTS_SCLK_PIN_INDEX
 #endif /* DBG_UART_SCLK_PIN_INDEX */
 #ifndef DBG_UART_SS0_PIN_INDEX
-#define DBG_UART_SS0_PIN_INDEX              DBG_UART_SS0_PIN_INDEX
+#define DBG_UART_SS0_PIN_INDEX              DBG_UART_RTS_SS0_PIN_INDEX
 #endif /* DBG_UART_SS0_PIN_INDEX */
 
 #define DBG_UART_MOSI_SCL_RX_WAKE_PIN_MASK DBG_UART_RX_WAKE_SCL_MOSI_PIN_MASK
 #define DBG_UART_MOSI_SCL_RX_PIN_MASK      DBG_UART_RX_SCL_MOSI_PIN_MASK
 #define DBG_UART_MISO_SDA_TX_PIN_MASK      DBG_UART_TX_SDA_MISO_PIN_MASK
 #ifndef DBG_UART_SCLK_PIN_MASK
-#define DBG_UART_SCLK_PIN_MASK             DBG_UART_SCLK_PIN_MASK
+#define DBG_UART_SCLK_PIN_MASK             DBG_UART_CTS_SCLK_PIN_MASK
 #endif /* DBG_UART_SCLK_PIN_MASK */
 #ifndef DBG_UART_SS0_PIN_MASK
-#define DBG_UART_SS0_PIN_MASK              DBG_UART_SS0_PIN_MASK
+#define DBG_UART_SS0_PIN_MASK              DBG_UART_RTS_SS0_PIN_MASK
 #endif /* DBG_UART_SS0_PIN_MASK */
 
 #endif /* (CY_SCB_PINS_DBG_UART_H) */

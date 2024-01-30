@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccqwYpMH.s 			page 1
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccRmYAXM.s 			page 1
 
 
    1              		.syntax unified
@@ -26,7 +26,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccqwYpMH.s 			page 1
   23              		.thumb_func
   24              		.type	InitCAN, %function
   25              	InitCAN:
-  26              	.LFB32:
+  26              	.LFB34:
   27              		.file 1 "HindsightCAN\\PortFiles\\PortTemplate.c"
    1:HindsightCAN\PortFiles/PortTemplate.c **** /*
    2:HindsightCAN\PortFiles/PortTemplate.c ****  * Documentation: https://huskyroboticsteam.slite.com/app/channels/iU0BryG7M9/collections/aXvWTcIR6
@@ -51,19 +51,19 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccqwYpMH.s 			page 1
   35              		@ sp needed
   36 0000 7047     		bx	lr
   37              		.cfi_endproc
-  38              	.LFE32:
+  38              	.LFE34:
   39              		.size	InitCAN, .-InitCAN
   40 0002 C046     		.section	.text.SendCANPacket,"ax",%progbits
   41              		.align	2
   42              		.global	SendCANPacket
   43              		.code	16
   44              		.thumb_func
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccqwYpMH.s 			page 2
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccRmYAXM.s 			page 2
 
 
   45              		.type	SendCANPacket, %function
   46              	SendCANPacket:
-  47              	.LFB33:
+  47              	.LFB35:
   14:HindsightCAN\PortFiles/PortTemplate.c **** int SendCANPacket(CANPacket *packetToSend)
   15:HindsightCAN\PortFiles/PortTemplate.c **** {
   48              		.loc 1 15 0
@@ -79,7 +79,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccqwYpMH.s 			page 1
   56              		@ sp needed
   57 0000 7047     		bx	lr
   58              		.cfi_endproc
-  59              	.LFE33:
+  59              	.LFE35:
   60              		.size	SendCANPacket, .-SendCANPacket
   61 0002 C046     		.section	.text.PollAndReceiveCANPacket,"ax",%progbits
   62              		.align	2
@@ -88,7 +88,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccqwYpMH.s 			page 1
   65              		.thumb_func
   66              		.type	PollAndReceiveCANPacket, %function
   67              	PollAndReceiveCANPacket:
-  68              	.LFB34:
+  68              	.LFB36:
   18:HindsightCAN\PortFiles/PortTemplate.c **** int PollAndReceiveCANPacket(CANPacket *receivedPacket)
   19:HindsightCAN\PortFiles/PortTemplate.c **** {
   69              		.loc 1 19 0
@@ -104,7 +104,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccqwYpMH.s 			page 1
   77              		@ sp needed
   78 0000 7047     		bx	lr
   79              		.cfi_endproc
-  80              	.LFE34:
+  80              	.LFE36:
   81              		.size	PollAndReceiveCANPacket, .-PollAndReceiveCANPacket
   82 0002 C046     		.section	.text.getLocalDeviceSerial,"ax",%progbits
   83              		.align	2
@@ -113,12 +113,12 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccqwYpMH.s 			page 1
   86              		.thumb_func
   87              		.type	getLocalDeviceSerial, %function
   88              	getLocalDeviceSerial:
-  89              	.LFB35:
+  89              	.LFB37:
   22:HindsightCAN\PortFiles/PortTemplate.c **** 
   23:HindsightCAN\PortFiles/PortTemplate.c **** uint8_t getLocalDeviceSerial()
   24:HindsightCAN\PortFiles/PortTemplate.c **** {
   90              		.loc 1 24 0
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccqwYpMH.s 			page 3
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccRmYAXM.s 			page 3
 
 
   91              		.cfi_startproc
@@ -134,7 +134,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccqwYpMH.s 			page 1
   97              		@ sp needed
   98 0002 7047     		bx	lr
   99              		.cfi_endproc
- 100              	.LFE35:
+ 100              	.LFE37:
  101              		.size	getLocalDeviceSerial, .-getLocalDeviceSerial
  102              		.section	.text.getLocalDeviceGroup,"ax",%progbits
  103              		.align	2
@@ -143,7 +143,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccqwYpMH.s 			page 1
  106              		.thumb_func
  107              		.type	getLocalDeviceGroup, %function
  108              	getLocalDeviceGroup:
- 109              	.LFB36:
+ 109              	.LFB38:
   29:HindsightCAN\PortFiles/PortTemplate.c **** uint8_t getLocalDeviceGroup()
   30:HindsightCAN\PortFiles/PortTemplate.c **** {
  110              		.loc 1 30 0
@@ -159,7 +159,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccqwYpMH.s 			page 1
  117              		@ sp needed
  118 0002 7047     		bx	lr
  119              		.cfi_endproc
- 120              	.LFE36:
+ 120              	.LFE38:
  121              		.size	getLocalDeviceGroup, .-getLocalDeviceGroup
  122              		.section	.text.getChipType,"ax",%progbits
  123              		.align	2
@@ -168,7 +168,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccqwYpMH.s 			page 1
  126              		.thumb_func
  127              		.type	getChipType, %function
  128              	getChipType:
- 129              	.LFB37:
+ 129              	.LFB39:
   34:HindsightCAN\PortFiles/PortTemplate.c **** 
   35:HindsightCAN\PortFiles/PortTemplate.c **** uint8_t getChipType()
   36:HindsightCAN\PortFiles/PortTemplate.c **** {
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccqwYpMH.s 			page 1
  133              		@ frame_needed = 0, uses_anonymous_args = 0
  134              		@ link register save eliminated.
   37:HindsightCAN\PortFiles/PortTemplate.c ****     // return CHIP_TYPE; 
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccqwYpMH.s 			page 4
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccRmYAXM.s 			page 4
 
 
   38:HindsightCAN\PortFiles/PortTemplate.c ****     return 0x05;
@@ -189,7 +189,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccqwYpMH.s 			page 1
  137              		@ sp needed
  138 0002 7047     		bx	lr
  139              		.cfi_endproc
- 140              	.LFE37:
+ 140              	.LFE39:
  141              		.size	getChipType, .-getChipType
  142              		.text
  143              	.Letext0:
@@ -203,10 +203,10 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccqwYpMH.s 			page 1
  151 0006 00000000 		.4byte	.Ldebug_abbrev0
  152 000a 04       		.byte	0x4
  153 000b 01       		.uleb128 0x1
- 154 000c 60010000 		.4byte	.LASF29
+ 154 000c 6D010000 		.4byte	.LASF29
  155 0010 0C       		.byte	0xc
- 156 0011 36020000 		.4byte	.LASF30
- 157 0015 8F000000 		.4byte	.LASF31
+ 156 0011 3F020000 		.4byte	.LASF30
+ 157 0015 A6000000 		.4byte	.LASF31
  158 0019 00000000 		.4byte	.Ldebug_ranges0+0
  159 001d 00000000 		.4byte	0
  160 0021 00000000 		.4byte	.Ldebug_line0
@@ -222,39 +222,39 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccqwYpMH.s 			page 1
  170 0037 02       		.uleb128 0x2
  171 0038 01       		.byte	0x1
  172 0039 08       		.byte	0x8
- 173 003a 5C000000 		.4byte	.LASF1
+ 173 003a 73000000 		.4byte	.LASF1
  174 003e 02       		.uleb128 0x2
  175 003f 02       		.byte	0x2
  176 0040 05       		.byte	0x5
- 177 0041 14010000 		.4byte	.LASF2
+ 177 0041 2B010000 		.4byte	.LASF2
  178 0045 03       		.uleb128 0x3
- 179 0046 F3000000 		.4byte	.LASF4
+ 179 0046 0A010000 		.4byte	.LASF4
  180 004a 02       		.byte	0x2
  181 004b 2B       		.byte	0x2b
  182 004c 50000000 		.4byte	0x50
  183 0050 02       		.uleb128 0x2
  184 0051 02       		.byte	0x2
  185 0052 07       		.byte	0x7
- 186 0053 7C000000 		.4byte	.LASF5
+ 186 0053 93000000 		.4byte	.LASF5
  187 0057 02       		.uleb128 0x2
  188 0058 04       		.byte	0x4
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccqwYpMH.s 			page 5
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccRmYAXM.s 			page 5
 
 
  189 0059 05       		.byte	0x5
- 190 005a 70020000 		.4byte	.LASF6
+ 190 005a 24000000 		.4byte	.LASF6
  191 005e 02       		.uleb128 0x2
  192 005f 04       		.byte	0x4
  193 0060 07       		.byte	0x7
- 194 0061 6A000000 		.4byte	.LASF7
+ 194 0061 81000000 		.4byte	.LASF7
  195 0065 02       		.uleb128 0x2
  196 0066 08       		.byte	0x8
  197 0067 05       		.byte	0x5
- 198 0068 05020000 		.4byte	.LASF8
+ 198 0068 0E020000 		.4byte	.LASF8
  199 006c 02       		.uleb128 0x2
  200 006d 08       		.byte	0x8
  201 006e 07       		.byte	0x7
- 202 006f 41010000 		.4byte	.LASF9
+ 202 006f 4E010000 		.4byte	.LASF9
  203 0073 04       		.uleb128 0x4
  204 0074 04       		.byte	0x4
  205 0075 05       		.byte	0x5
@@ -262,14 +262,14 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccqwYpMH.s 			page 1
  207 007a 02       		.uleb128 0x2
  208 007b 04       		.byte	0x4
  209 007c 07       		.byte	0x7
- 210 007d 34010000 		.4byte	.LASF10
+ 210 007d 41010000 		.4byte	.LASF10
  211 0081 03       		.uleb128 0x3
- 212 0082 58010000 		.4byte	.LASF11
+ 212 0082 65010000 		.4byte	.LASF11
  213 0086 03       		.byte	0x3
  214 0087 18       		.byte	0x18
  215 0088 2C000000 		.4byte	0x2c
  216 008c 03       		.uleb128 0x3
- 217 008d 2D020000 		.4byte	.LASF12
+ 217 008d 36020000 		.4byte	.LASF12
  218 0091 03       		.byte	0x3
  219 0092 24       		.byte	0x24
  220 0093 45000000 		.4byte	0x45
@@ -291,14 +291,14 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccqwYpMH.s 			page 1
  236 00b1 81000000 		.4byte	0x81
  237 00b5 02       		.byte	0x2
  238 00b6 07       		.uleb128 0x7
- 239 00b7 57000000 		.4byte	.LASF13
+ 239 00b7 60000000 		.4byte	.LASF13
  240 00bb 04       		.byte	0x4
  241 00bc 13       		.byte	0x13
  242 00bd C3000000 		.4byte	0xc3
  243 00c1 03       		.byte	0x3
  244 00c2 00       		.byte	0
  245 00c3 08       		.uleb128 0x8
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccqwYpMH.s 			page 6
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccRmYAXM.s 			page 6
 
 
  246 00c4 81000000 		.4byte	0x81
@@ -310,39 +310,39 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccqwYpMH.s 			page 1
  252 00d3 02       		.uleb128 0x2
  253 00d4 04       		.byte	0x4
  254 00d5 07       		.byte	0x7
- 255 00d6 EE010000 		.4byte	.LASF14
+ 255 00d6 05020000 		.4byte	.LASF14
  256 00da 03       		.uleb128 0x3
- 257 00db 1E010000 		.4byte	.LASF15
+ 257 00db FB010000 		.4byte	.LASF15
  258 00df 04       		.byte	0x4
  259 00e0 14       		.byte	0x14
  260 00e1 97000000 		.4byte	0x97
  261 00e5 02       		.uleb128 0x2
  262 00e6 04       		.byte	0x4
  263 00e7 04       		.byte	0x4
- 264 00e8 51000000 		.4byte	.LASF16
+ 264 00e8 5A000000 		.4byte	.LASF16
  265 00ec 02       		.uleb128 0x2
  266 00ed 08       		.byte	0x8
  267 00ee 04       		.byte	0x4
- 268 00ef FE000000 		.4byte	.LASF17
+ 268 00ef 15010000 		.4byte	.LASF17
  269 00f3 02       		.uleb128 0x2
  270 00f4 01       		.byte	0x1
  271 00f5 08       		.byte	0x8
- 272 00f6 13020000 		.4byte	.LASF18
+ 272 00f6 1C020000 		.4byte	.LASF18
  273 00fa 02       		.uleb128 0x2
  274 00fb 08       		.byte	0x8
  275 00fc 04       		.byte	0x4
  276 00fd 79020000 		.4byte	.LASF19
  277 0101 0A       		.uleb128 0xa
- 278 0102 25020000 		.4byte	.LASF32
+ 278 0102 2E020000 		.4byte	.LASF32
  279 0106 01       		.byte	0x1
  280 0107 09       		.byte	0x9
- 281 0108 00000000 		.4byte	.LFB32
- 282 010c 02000000 		.4byte	.LFE32-.LFB32
+ 281 0108 00000000 		.4byte	.LFB34
+ 282 010c 02000000 		.4byte	.LFE34-.LFB34
  283 0110 01       		.uleb128 0x1
  284 0111 9C       		.byte	0x9c
  285 0112 31010000 		.4byte	0x131
  286 0116 0B       		.uleb128 0xb
- 287 0117 28010000 		.4byte	.LASF20
+ 287 0117 35010000 		.4byte	.LASF20
  288 011b 01       		.byte	0x1
  289 011c 09       		.byte	0x9
  290 011d 73000000 		.4byte	0x73
@@ -357,20 +357,20 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccqwYpMH.s 			page 1
  299 012f 51       		.byte	0x51
  300 0130 00       		.byte	0
  301 0131 0C       		.uleb128 0xc
- 302 0132 F7010000 		.4byte	.LASF23
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccqwYpMH.s 			page 7
+ 302 0132 65000000 		.4byte	.LASF23
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccRmYAXM.s 			page 7
 
 
  303 0136 01       		.byte	0x1
  304 0137 0E       		.byte	0xe
  305 0138 73000000 		.4byte	0x73
- 306 013c 00000000 		.4byte	.LFB33
- 307 0140 02000000 		.4byte	.LFE33-.LFB33
+ 306 013c 00000000 		.4byte	.LFB35
+ 307 0140 02000000 		.4byte	.LFE35-.LFB35
  308 0144 01       		.uleb128 0x1
  309 0145 9C       		.byte	0x9c
  310 0146 5A010000 		.4byte	0x15a
  311 014a 0D       		.uleb128 0xd
- 312 014b 18020000 		.4byte	.LASF22
+ 312 014b 21020000 		.4byte	.LASF22
  313 014f 01       		.byte	0x1
  314 0150 0E       		.byte	0xe
  315 0151 5A010000 		.4byte	0x15a
@@ -380,50 +380,50 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccqwYpMH.s 			page 1
  319 015b 04       		.byte	0x4
  320 015c DA000000 		.4byte	0xda
  321 0160 0C       		.uleb128 0xc
- 322 0161 39000000 		.4byte	.LASF24
+ 322 0161 42000000 		.4byte	.LASF24
  323 0165 01       		.byte	0x1
  324 0166 12       		.byte	0x12
  325 0167 73000000 		.4byte	0x73
- 326 016b 00000000 		.4byte	.LFB34
- 327 016f 02000000 		.4byte	.LFE34-.LFB34
+ 326 016b 00000000 		.4byte	.LFB36
+ 327 016f 02000000 		.4byte	.LFE36-.LFB36
  328 0173 01       		.uleb128 0x1
  329 0174 9C       		.byte	0x9c
  330 0175 89010000 		.4byte	0x189
  331 0179 0D       		.uleb128 0xd
- 332 017a 05010000 		.4byte	.LASF25
+ 332 017a 1C010000 		.4byte	.LASF25
  333 017e 01       		.byte	0x1
  334 017f 12       		.byte	0x12
  335 0180 5A010000 		.4byte	0x15a
  336 0184 21000000 		.4byte	.LLST1
  337 0188 00       		.byte	0
  338 0189 0F       		.uleb128 0xf
- 339 018a 24000000 		.4byte	.LASF26
+ 339 018a 2D000000 		.4byte	.LASF26
  340 018e 01       		.byte	0x1
  341 018f 17       		.byte	0x17
  342 0190 81000000 		.4byte	0x81
- 343 0194 00000000 		.4byte	.LFB35
- 344 0198 04000000 		.4byte	.LFE35-.LFB35
+ 343 0194 00000000 		.4byte	.LFB37
+ 344 0198 04000000 		.4byte	.LFE37-.LFB37
  345 019c 01       		.uleb128 0x1
  346 019d 9C       		.byte	0x9c
  347 019e 0F       		.uleb128 0xf
- 348 019f 5C020000 		.4byte	.LASF27
+ 348 019f 65020000 		.4byte	.LASF27
  349 01a3 01       		.byte	0x1
  350 01a4 1D       		.byte	0x1d
  351 01a5 81000000 		.4byte	0x81
- 352 01a9 00000000 		.4byte	.LFB36
- 353 01ad 04000000 		.4byte	.LFE36-.LFB36
+ 352 01a9 00000000 		.4byte	.LFB38
+ 353 01ad 04000000 		.4byte	.LFE38-.LFB38
  354 01b1 01       		.uleb128 0x1
  355 01b2 9C       		.byte	0x9c
  356 01b3 0F       		.uleb128 0xf
  357 01b4 0A000000 		.4byte	.LASF28
  358 01b8 01       		.byte	0x1
  359 01b9 23       		.byte	0x23
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccqwYpMH.s 			page 8
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccRmYAXM.s 			page 8
 
 
  360 01ba 81000000 		.4byte	0x81
- 361 01be 00000000 		.4byte	.LFB37
- 362 01c2 04000000 		.4byte	.LFE37-.LFB37
+ 361 01be 00000000 		.4byte	.LFB39
+ 362 01c2 04000000 		.4byte	.LFE39-.LFB39
  363 01c6 01       		.uleb128 0x1
  364 01c7 9C       		.byte	0x9c
  365 01c8 00       		.byte	0
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccqwYpMH.s 			page 1
  414 002e 0B       		.uleb128 0xb
  415 002f 0B       		.uleb128 0xb
  416 0030 3E       		.uleb128 0x3e
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccqwYpMH.s 			page 9
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccRmYAXM.s 			page 9
 
 
  417 0031 0B       		.uleb128 0xb
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccqwYpMH.s 			page 1
  471 0067 13       		.uleb128 0x13
  472 0068 00       		.byte	0
  473 0069 00       		.byte	0
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccqwYpMH.s 			page 10
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccRmYAXM.s 			page 10
 
 
  474 006a 09       		.uleb128 0x9
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccqwYpMH.s 			page 1
  528 00a1 03       		.uleb128 0x3
  529 00a2 0E       		.uleb128 0xe
  530 00a3 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccqwYpMH.s 			page 11
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccRmYAXM.s 			page 11
 
 
  531 00a4 0B       		.uleb128 0xb
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccqwYpMH.s 			page 1
  585 00db 49       		.uleb128 0x49
  586 00dc 13       		.uleb128 0x13
  587 00dd 11       		.uleb128 0x11
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccqwYpMH.s 			page 12
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccRmYAXM.s 			page 12
 
 
  588 00de 01       		.uleb128 0x1
@@ -679,7 +679,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccqwYpMH.s 			page 1
  603 0008 0100     		.2byte	0x1
  604 000a 50       		.byte	0x50
  605 000b 00000000 		.4byte	.LVL2
- 606 000f 02000000 		.4byte	.LFE33
+ 606 000f 02000000 		.4byte	.LFE35
  607 0013 0400     		.2byte	0x4
  608 0015 F3       		.byte	0xf3
  609 0016 01       		.uleb128 0x1
@@ -693,7 +693,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccqwYpMH.s 			page 1
  617 0029 0100     		.2byte	0x1
  618 002b 50       		.byte	0x50
  619 002c 00000000 		.4byte	.LVL4
- 620 0030 02000000 		.4byte	.LFE34
+ 620 0030 02000000 		.4byte	.LFE36
  621 0034 0400     		.2byte	0x4
  622 0036 F3       		.byte	0xf3
  623 0037 01       		.uleb128 0x1
@@ -709,37 +709,37 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccqwYpMH.s 			page 1
  633 000b 00       		.byte	0
  634 000c 0000     		.2byte	0
  635 000e 0000     		.2byte	0
- 636 0010 00000000 		.4byte	.LFB32
- 637 0014 02000000 		.4byte	.LFE32-.LFB32
- 638 0018 00000000 		.4byte	.LFB33
- 639 001c 02000000 		.4byte	.LFE33-.LFB33
- 640 0020 00000000 		.4byte	.LFB34
- 641 0024 02000000 		.4byte	.LFE34-.LFB34
- 642 0028 00000000 		.4byte	.LFB35
- 643 002c 04000000 		.4byte	.LFE35-.LFB35
- 644 0030 00000000 		.4byte	.LFB36
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccqwYpMH.s 			page 13
+ 636 0010 00000000 		.4byte	.LFB34
+ 637 0014 02000000 		.4byte	.LFE34-.LFB34
+ 638 0018 00000000 		.4byte	.LFB35
+ 639 001c 02000000 		.4byte	.LFE35-.LFB35
+ 640 0020 00000000 		.4byte	.LFB36
+ 641 0024 02000000 		.4byte	.LFE36-.LFB36
+ 642 0028 00000000 		.4byte	.LFB37
+ 643 002c 04000000 		.4byte	.LFE37-.LFB37
+ 644 0030 00000000 		.4byte	.LFB38
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccRmYAXM.s 			page 13
 
 
- 645 0034 04000000 		.4byte	.LFE36-.LFB36
- 646 0038 00000000 		.4byte	.LFB37
- 647 003c 04000000 		.4byte	.LFE37-.LFB37
+ 645 0034 04000000 		.4byte	.LFE38-.LFB38
+ 646 0038 00000000 		.4byte	.LFB39
+ 647 003c 04000000 		.4byte	.LFE39-.LFB39
  648 0040 00000000 		.4byte	0
  649 0044 00000000 		.4byte	0
  650              		.section	.debug_ranges,"",%progbits
  651              	.Ldebug_ranges0:
- 652 0000 00000000 		.4byte	.LFB32
- 653 0004 02000000 		.4byte	.LFE32
- 654 0008 00000000 		.4byte	.LFB33
- 655 000c 02000000 		.4byte	.LFE33
- 656 0010 00000000 		.4byte	.LFB34
- 657 0014 02000000 		.4byte	.LFE34
- 658 0018 00000000 		.4byte	.LFB35
- 659 001c 04000000 		.4byte	.LFE35
- 660 0020 00000000 		.4byte	.LFB36
- 661 0024 04000000 		.4byte	.LFE36
- 662 0028 00000000 		.4byte	.LFB37
- 663 002c 04000000 		.4byte	.LFE37
+ 652 0000 00000000 		.4byte	.LFB34
+ 653 0004 02000000 		.4byte	.LFE34
+ 654 0008 00000000 		.4byte	.LFB35
+ 655 000c 02000000 		.4byte	.LFE35
+ 656 0010 00000000 		.4byte	.LFB36
+ 657 0014 02000000 		.4byte	.LFE36
+ 658 0018 00000000 		.4byte	.LFB37
+ 659 001c 04000000 		.4byte	.LFE37
+ 660 0020 00000000 		.4byte	.LFB38
+ 661 0024 04000000 		.4byte	.LFE38
+ 662 0028 00000000 		.4byte	.LFB39
+ 663 002c 04000000 		.4byte	.LFE39
  664 0030 00000000 		.4byte	0
  665 0034 00000000 		.4byte	0
  666              		.section	.debug_line,"",%progbits
@@ -762,162 +762,162 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccqwYpMH.s 			page 1
  674      63654164 
  674      64726573 
  674      7300
- 675              	.LASF26:
- 676 0024 6765744C 		.ascii	"getLocalDeviceSerial\000"
- 676      6F63616C 
- 676      44657669 
- 676      63655365 
- 676      7269616C 
- 677              	.LASF24:
- 678 0039 506F6C6C 		.ascii	"PollAndReceiveCANPacket\000"
- 678      416E6452 
- 678      65636569 
- 678      76654341 
- 678      4E506163 
- 679              	.LASF16:
- 680 0051 666C6F61 		.ascii	"float\000"
- 680      7400
- 681              	.LASF13:
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccqwYpMH.s 			page 14
+ 675              	.LASF6:
+ 676 0024 6C6F6E67 		.ascii	"long int\000"
+ 676      20696E74 
+ 676      00
+ 677              	.LASF26:
+ 678 002d 6765744C 		.ascii	"getLocalDeviceSerial\000"
+ 678      6F63616C 
+ 678      44657669 
+ 678      63655365 
+ 678      7269616C 
+ 679              	.LASF24:
+ 680 0042 506F6C6C 		.ascii	"PollAndReceiveCANPacket\000"
+ 680      416E6452 
+ 680      65636569 
+ 680      76654341 
+ 680      4E506163 
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccRmYAXM.s 			page 14
 
 
- 682 0057 64617461 		.ascii	"data\000"
- 682      00
- 683              	.LASF1:
- 684 005c 756E7369 		.ascii	"unsigned char\000"
- 684      676E6564 
- 684      20636861 
- 684      7200
- 685              	.LASF7:
- 686 006a 6C6F6E67 		.ascii	"long unsigned int\000"
- 686      20756E73 
- 686      69676E65 
- 686      6420696E 
+ 681              	.LASF16:
+ 682 005a 666C6F61 		.ascii	"float\000"
+ 682      7400
+ 683              	.LASF13:
+ 684 0060 64617461 		.ascii	"data\000"
+ 684      00
+ 685              	.LASF23:
+ 686 0065 53656E64 		.ascii	"SendCANPacket\000"
+ 686      43414E50 
+ 686      61636B65 
  686      7400
- 687              	.LASF5:
- 688 007c 73686F72 		.ascii	"short unsigned int\000"
- 688      7420756E 
- 688      7369676E 
- 688      65642069 
- 688      6E7400
- 689              	.LASF31:
- 690 008f 433A5C55 		.ascii	"C:\\Users\\tsien\\Documents\\GitHub\\Battery_Manage"
- 690      73657273 
- 690      5C747369 
- 690      656E5C44 
- 690      6F63756D 
- 691 00bd 6D656E74 		.ascii	"ment_Board_PY2023\\BatteryBalance\\BatteryBalance.c"
- 691      5F426F61 
- 691      72645F50 
- 691      59323032 
- 691      335C4261 
- 692 00ee 7964736E 		.ascii	"ydsn\000"
- 692      00
- 693              	.LASF4:
- 694 00f3 5F5F7569 		.ascii	"__uint16_t\000"
- 694      6E743136 
- 694      5F7400
- 695              	.LASF17:
- 696 00fe 646F7562 		.ascii	"double\000"
- 696      6C6500
- 697              	.LASF25:
- 698 0105 72656365 		.ascii	"receivedPacket\000"
- 698      69766564 
- 698      5061636B 
- 698      657400
- 699              	.LASF2:
- 700 0114 73686F72 		.ascii	"short int\000"
- 700      7420696E 
- 700      7400
- 701              	.LASF15:
- 702 011e 43414E50 		.ascii	"CANPacket\000"
- 702      61636B65 
- 702      7400
- 703              	.LASF20:
- 704 0128 64657669 		.ascii	"deviceGroup\000"
- 704      63654772 
- 704      6F757000 
- 705              	.LASF10:
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccqwYpMH.s 			page 15
+ 687              	.LASF1:
+ 688 0073 756E7369 		.ascii	"unsigned char\000"
+ 688      676E6564 
+ 688      20636861 
+ 688      7200
+ 689              	.LASF7:
+ 690 0081 6C6F6E67 		.ascii	"long unsigned int\000"
+ 690      20756E73 
+ 690      69676E65 
+ 690      6420696E 
+ 690      7400
+ 691              	.LASF5:
+ 692 0093 73686F72 		.ascii	"short unsigned int\000"
+ 692      7420756E 
+ 692      7369676E 
+ 692      65642069 
+ 692      6E7400
+ 693              	.LASF31:
+ 694 00a6 433A5C55 		.ascii	"C:\\Users\\tsien\\Documents\\GitHub\\Battery_Manage"
+ 694      73657273 
+ 694      5C747369 
+ 694      656E5C44 
+ 694      6F63756D 
+ 695 00d4 6D656E74 		.ascii	"ment_Board_PY2023\\BatteryBalance\\BatteryBalance.c"
+ 695      5F426F61 
+ 695      72645F50 
+ 695      59323032 
+ 695      335C4261 
+ 696 0105 7964736E 		.ascii	"ydsn\000"
+ 696      00
+ 697              	.LASF4:
+ 698 010a 5F5F7569 		.ascii	"__uint16_t\000"
+ 698      6E743136 
+ 698      5F7400
+ 699              	.LASF17:
+ 700 0115 646F7562 		.ascii	"double\000"
+ 700      6C6500
+ 701              	.LASF25:
+ 702 011c 72656365 		.ascii	"receivedPacket\000"
+ 702      69766564 
+ 702      5061636B 
+ 702      657400
+ 703              	.LASF2:
+ 704 012b 73686F72 		.ascii	"short int\000"
+ 704      7420696E 
+ 704      7400
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccRmYAXM.s 			page 15
 
 
- 706 0134 756E7369 		.ascii	"unsigned int\000"
- 706      676E6564 
- 706      20696E74 
- 706      00
- 707              	.LASF9:
- 708 0141 6C6F6E67 		.ascii	"long long unsigned int\000"
- 708      206C6F6E 
- 708      6720756E 
- 708      7369676E 
- 708      65642069 
- 709              	.LASF11:
- 710 0158 75696E74 		.ascii	"uint8_t\000"
- 710      385F7400 
- 711              	.LASF29:
- 712 0160 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 712      43313120 
- 712      352E342E 
- 712      31203230 
- 712      31363036 
- 713 0193 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
- 713      20726576 
- 713      6973696F 
- 713      6E203233 
- 713      37373135 
- 714 01c6 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 714      66756E63 
- 714      74696F6E 
- 714      2D736563 
- 714      74696F6E 
- 715              	.LASF14:
- 716 01ee 73697A65 		.ascii	"sizetype\000"
- 716      74797065 
- 716      00
- 717              	.LASF23:
- 718 01f7 53656E64 		.ascii	"SendCANPacket\000"
- 718      43414E50 
+ 705              	.LASF20:
+ 706 0135 64657669 		.ascii	"deviceGroup\000"
+ 706      63654772 
+ 706      6F757000 
+ 707              	.LASF10:
+ 708 0141 756E7369 		.ascii	"unsigned int\000"
+ 708      676E6564 
+ 708      20696E74 
+ 708      00
+ 709              	.LASF9:
+ 710 014e 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 710      206C6F6E 
+ 710      6720756E 
+ 710      7369676E 
+ 710      65642069 
+ 711              	.LASF11:
+ 712 0165 75696E74 		.ascii	"uint8_t\000"
+ 712      385F7400 
+ 713              	.LASF29:
+ 714 016d 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 714      43313120 
+ 714      352E342E 
+ 714      31203230 
+ 714      31363036 
+ 715 01a0 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ 715      20726576 
+ 715      6973696F 
+ 715      6E203233 
+ 715      37373135 
+ 716 01d3 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 716      66756E63 
+ 716      74696F6E 
+ 716      2D736563 
+ 716      74696F6E 
+ 717              	.LASF15:
+ 718 01fb 43414E50 		.ascii	"CANPacket\000"
  718      61636B65 
  718      7400
- 719              	.LASF8:
- 720 0205 6C6F6E67 		.ascii	"long long int\000"
- 720      206C6F6E 
- 720      6720696E 
- 720      7400
- 721              	.LASF18:
- 722 0213 63686172 		.ascii	"char\000"
- 722      00
- 723              	.LASF22:
- 724 0218 7061636B 		.ascii	"packetToSend\000"
- 724      6574546F 
- 724      53656E64 
+ 719              	.LASF14:
+ 720 0205 73697A65 		.ascii	"sizetype\000"
+ 720      74797065 
+ 720      00
+ 721              	.LASF8:
+ 722 020e 6C6F6E67 		.ascii	"long long int\000"
+ 722      206C6F6E 
+ 722      6720696E 
+ 722      7400
+ 723              	.LASF18:
+ 724 021c 63686172 		.ascii	"char\000"
  724      00
- 725              	.LASF32:
- 726 0225 496E6974 		.ascii	"InitCAN\000"
- 726      43414E00 
- 727              	.LASF12:
- 728 022d 75696E74 		.ascii	"uint16_t\000"
- 728      31365F74 
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccqwYpMH.s 			page 16
+ 725              	.LASF22:
+ 726 0221 7061636B 		.ascii	"packetToSend\000"
+ 726      6574546F 
+ 726      53656E64 
+ 726      00
+ 727              	.LASF32:
+ 728 022e 496E6974 		.ascii	"InitCAN\000"
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccRmYAXM.s 			page 16
 
 
- 728      00
- 729              	.LASF30:
- 730 0236 48696E64 		.ascii	"HindsightCAN\\PortFiles\\PortTemplate.c\000"
- 730      73696768 
- 730      7443414E 
- 730      5C506F72 
- 730      7446696C 
- 731              	.LASF27:
- 732 025c 6765744C 		.ascii	"getLocalDeviceGroup\000"
- 732      6F63616C 
- 732      44657669 
- 732      63654772 
- 732      6F757000 
- 733              	.LASF6:
- 734 0270 6C6F6E67 		.ascii	"long int\000"
- 734      20696E74 
- 734      00
+ 728      43414E00 
+ 729              	.LASF12:
+ 730 0236 75696E74 		.ascii	"uint16_t\000"
+ 730      31365F74 
+ 730      00
+ 731              	.LASF30:
+ 732 023f 48696E64 		.ascii	"HindsightCAN\\PortFiles\\PortTemplate.c\000"
+ 732      73696768 
+ 732      7443414E 
+ 732      5C506F72 
+ 732      7446696C 
+ 733              	.LASF27:
+ 734 0265 6765744C 		.ascii	"getLocalDeviceGroup\000"
+ 734      6F63616C 
+ 734      44657669 
+ 734      63654772 
+ 734      6F757000 
  735              	.LASF19:
  736 0279 6C6F6E67 		.ascii	"long double\000"
  736      20646F75 

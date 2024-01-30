@@ -327,14 +327,14 @@ void DBG_UART_UartPostEnable(void)
     #endif /* (DBG_UART_TX_SDA_MISO_PIN_PIN) */
 
     #if !(DBG_UART_CY_SCBIP_V0 || DBG_UART_CY_SCBIP_V1)
-        #if (DBG_UART_SS0_PIN)
-            if (DBG_UART_CHECK_SS0_PIN_USED)
+        #if (DBG_UART_RTS_SS0_PIN)
+            if (DBG_UART_CHECK_RTS_SS0_PIN_USED)
             {
                 /* Set SCB UART to drive the output pin */
-                DBG_UART_SET_HSIOM_SEL(DBG_UART_SS0_HSIOM_REG, DBG_UART_SS0_HSIOM_MASK,
-                                               DBG_UART_SS0_HSIOM_POS, DBG_UART_SS0_HSIOM_SEL_UART);
+                DBG_UART_SET_HSIOM_SEL(DBG_UART_RTS_SS0_HSIOM_REG, DBG_UART_RTS_SS0_HSIOM_MASK,
+                                               DBG_UART_RTS_SS0_HSIOM_POS, DBG_UART_RTS_SS0_HSIOM_SEL_UART);
             }
-        #endif /* (DBG_UART_SS0_PIN) */
+        #endif /* (DBG_UART_RTS_SS0_PIN) */
     #endif /* !(DBG_UART_CY_SCBIP_V0 || DBG_UART_CY_SCBIP_V1) */
 
 #else
@@ -379,17 +379,17 @@ void DBG_UART_UartStop(void)
     #endif /* (DBG_UART_TX_SDA_MISO_PIN_PIN) */
 
     #if !(DBG_UART_CY_SCBIP_V0 || DBG_UART_CY_SCBIP_V1)
-        #if (DBG_UART_SS0_PIN)
-            if (DBG_UART_CHECK_SS0_PIN_USED)
+        #if (DBG_UART_RTS_SS0_PIN)
+            if (DBG_UART_CHECK_RTS_SS0_PIN_USED)
             {
                 /* Set output pin state after block is disabled */
-                DBG_UART_spi_ss0_Write(DBG_UART_GET_UART_RTS_INACTIVE);
+                DBG_UART_uart_rts_spi_ss0_Write(DBG_UART_GET_UART_RTS_INACTIVE);
 
                 /* Set GPIO to drive output pin */
-                DBG_UART_SET_HSIOM_SEL(DBG_UART_SS0_HSIOM_REG, DBG_UART_SS0_HSIOM_MASK,
-                                               DBG_UART_SS0_HSIOM_POS, DBG_UART_SS0_HSIOM_SEL_GPIO);
+                DBG_UART_SET_HSIOM_SEL(DBG_UART_RTS_SS0_HSIOM_REG, DBG_UART_RTS_SS0_HSIOM_MASK,
+                                               DBG_UART_RTS_SS0_HSIOM_POS, DBG_UART_RTS_SS0_HSIOM_SEL_GPIO);
             }
-        #endif /* (DBG_UART_SS0_PIN) */
+        #endif /* (DBG_UART_RTS_SS0_PIN) */
     #endif /* !(DBG_UART_CY_SCBIP_V0 || DBG_UART_CY_SCBIP_V1) */
 
 #else
