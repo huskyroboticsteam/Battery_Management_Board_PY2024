@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccRmYAXM.s 			page 1
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccnsP8ha.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccRmYAXM.s 			page 1
   42              		.global	SendCANPacket
   43              		.code	16
   44              		.thumb_func
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccRmYAXM.s 			page 2
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccnsP8ha.s 			page 2
 
 
   45              		.type	SendCANPacket, %function
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccRmYAXM.s 			page 1
   23:HindsightCAN\PortFiles/PortTemplate.c **** uint8_t getLocalDeviceSerial()
   24:HindsightCAN\PortFiles/PortTemplate.c **** {
   90              		.loc 1 24 0
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccRmYAXM.s 			page 3
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccnsP8ha.s 			page 3
 
 
   91              		.cfi_startproc
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccRmYAXM.s 			page 1
  133              		@ frame_needed = 0, uses_anonymous_args = 0
  134              		@ link register save eliminated.
   37:HindsightCAN\PortFiles/PortTemplate.c ****     // return CHIP_TYPE; 
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccRmYAXM.s 			page 4
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccnsP8ha.s 			page 4
 
 
   38:HindsightCAN\PortFiles/PortTemplate.c ****     return 0x05;
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccRmYAXM.s 			page 1
  186 0053 93000000 		.4byte	.LASF5
  187 0057 02       		.uleb128 0x2
  188 0058 04       		.byte	0x4
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccRmYAXM.s 			page 5
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccnsP8ha.s 			page 5
 
 
  189 0059 05       		.byte	0x5
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccRmYAXM.s 			page 1
  243 00c1 03       		.byte	0x3
  244 00c2 00       		.byte	0
  245 00c3 08       		.uleb128 0x8
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccRmYAXM.s 			page 6
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccnsP8ha.s 			page 6
 
 
  246 00c4 81000000 		.4byte	0x81
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccRmYAXM.s 			page 1
  300 0130 00       		.byte	0
  301 0131 0C       		.uleb128 0xc
  302 0132 65000000 		.4byte	.LASF23
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccRmYAXM.s 			page 7
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccnsP8ha.s 			page 7
 
 
  303 0136 01       		.byte	0x1
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccRmYAXM.s 			page 1
  357 01b4 0A000000 		.4byte	.LASF28
  358 01b8 01       		.byte	0x1
  359 01b9 23       		.byte	0x23
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccRmYAXM.s 			page 8
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccnsP8ha.s 			page 8
 
 
  360 01ba 81000000 		.4byte	0x81
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccRmYAXM.s 			page 1
  414 002e 0B       		.uleb128 0xb
  415 002f 0B       		.uleb128 0xb
  416 0030 3E       		.uleb128 0x3e
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccRmYAXM.s 			page 9
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccnsP8ha.s 			page 9
 
 
  417 0031 0B       		.uleb128 0xb
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccRmYAXM.s 			page 1
  471 0067 13       		.uleb128 0x13
  472 0068 00       		.byte	0
  473 0069 00       		.byte	0
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccRmYAXM.s 			page 10
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccnsP8ha.s 			page 10
 
 
  474 006a 09       		.uleb128 0x9
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccRmYAXM.s 			page 1
  528 00a1 03       		.uleb128 0x3
  529 00a2 0E       		.uleb128 0xe
  530 00a3 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccRmYAXM.s 			page 11
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccnsP8ha.s 			page 11
 
 
  531 00a4 0B       		.uleb128 0xb
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccRmYAXM.s 			page 1
  585 00db 49       		.uleb128 0x49
  586 00dc 13       		.uleb128 0x13
  587 00dd 11       		.uleb128 0x11
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccRmYAXM.s 			page 12
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccnsP8ha.s 			page 12
 
 
  588 00de 01       		.uleb128 0x1
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccRmYAXM.s 			page 1
  642 0028 00000000 		.4byte	.LFB37
  643 002c 04000000 		.4byte	.LFE37-.LFB37
  644 0030 00000000 		.4byte	.LFB38
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccRmYAXM.s 			page 13
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccnsP8ha.s 			page 13
 
 
  645 0034 04000000 		.4byte	.LFE38-.LFB38
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccRmYAXM.s 			page 1
  680      65636569 
  680      76654341 
  680      4E506163 
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccRmYAXM.s 			page 14
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccnsP8ha.s 			page 14
 
 
  681              	.LASF16:
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccRmYAXM.s 			page 1
  704 012b 73686F72 		.ascii	"short int\000"
  704      7420696E 
  704      7400
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccRmYAXM.s 			page 15
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccnsP8ha.s 			page 15
 
 
  705              	.LASF20:
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccRmYAXM.s 			page 1
  726      00
  727              	.LASF32:
  728 022e 496E6974 		.ascii	"InitCAN\000"
-ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccRmYAXM.s 			page 16
+ARM GAS  C:\Users\tsien\AppData\Local\Temp\ccnsP8ha.s 			page 16
 
 
  728      43414E00 

@@ -25,29 +25,33 @@ int main(void)
     BatteryBalanceInit();
     init_INA226();
     DBG_UART_Start();
-    InitCAN(0x3, 0x3); // TODO: ask about the deviceAddress
+    InitCAN(0x3, 0x3);
 
     uint8_t current;
     uint8_t status;
     uint16_t* id = 0;
-    CANPacket* packet;
+    CANPacket packet;
+    CANPacket receivePacket;
 
-    // DBG_UART_UartPutString("Test");
     for(;;)
     {
+        while (PollAndReceiveCANPacket(&receivePacket) > 2) {}
+        
+       
         status = getVoltage(&current);
-        packet = NULL;
         
         if (status == SUCCESS) {
-            PrintInt(current);
-            DBG_UART_UartPutString("mA\n\r");
-            AssembleTelemetryReportPacket(packet, 0x2, 0x1, 0xF6, current); 
-            SendCANPacket(packet);
+            // PrintInt(current);
+            // DBG_UART_UartPutString("mA\n\r");
+            // DBG_UART_UartPutString("Constructing Packet\n\r");
+            AssembleTelemetryReportPacket(&packet, 0x2, 0x1, 0x1, current);
+            // DBG_UART_UartPutString("Packet Constructed\n\r");
+            SendCANPacket(&packet);
         } else {
             DBG_UART_UartPutString("FAIL");   
         }
         
-        CyDelay(100);
+        CyDelay(100); 
     }
 }
 

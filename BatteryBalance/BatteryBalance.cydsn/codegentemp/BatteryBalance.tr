@@ -16,16 +16,17 @@
 ##################################################################### 
                     1::Clock Frequency Summary
 ===================================================================== 
-Number of clocks: 11
+Number of clocks: 12
 Clock: ClockBlock/ff_div_5     | N/A  | Target: 100.00 MHz  | 
-Clock: CyHFClk                 | N/A  | Target: 48.00 MHz   | 
+Clock: CyExtClk                | N/A  | Target: 40.00 MHz   | 
+Clock: CyHFClk                 | N/A  | Target: 40.00 MHz   | 
 Clock: CyILO                   | N/A  | Target: 0.03 MHz    | 
-Clock: CyIMO                   | N/A  | Target: 48.00 MHz   | 
 Clock: CyLFClk                 | N/A  | Target: 0.03 MHz    | 
-Clock: CyRouted1               | N/A  | Target: 48.00 MHz   | 
-Clock: CySysClk                | N/A  | Target: 48.00 MHz   | 
-Clock: DBG_UART_SCBCLK         | N/A  | Target: 0.15 MHz    | 
-Clock: DBG_UART_SCBCLK(FFB)    | N/A  | Target: 0.15 MHz    | 
+Clock: CyRouted1               | N/A  | Target: 40.00 MHz   | 
+Clock: CySysClk                | N/A  | Target: 40.00 MHz   | 
+Clock: CyWCO                   | N/A  | Target: 0.03 MHz    | 
+Clock: DBG_UART_SCBCLK         | N/A  | Target: 1.82 MHz    | 
+Clock: DBG_UART_SCBCLK(FFB)    | N/A  | Target: 1.82 MHz    | 
 Clock: INA226_I2C_SCBCLK       | N/A  | Target: 1.60 MHz    | 
 Clock: INA226_I2C_SCBCLK(FFB)  | N/A  | Target: 1.60 MHz    | 
 

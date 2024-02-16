@@ -1,6 +1,6 @@
 (DELAYFILE
  (SDFVERSION "IEEE 1497 4.0")
- (DATE "2024-01-26T03:33:48Z")
+ (DATE "2024-02-13T02:54:58Z")
  (DESIGN "BatteryBalance")
  (VENDOR "Cypress Semiconductor")
  (PROGRAM "PSoC Creator")
@@ -13,9 +13,14 @@
   (DELAY
    (ABSOLUTE
     (INTERCONNECT ClockBlock.hfclk \\INA226_I2C\:SCB_IRQ\\.clock (0.000:0.000:0.000))
+    (INTERCONNECT ClockBlock.hfclk \\CAN\:isr\\.clock (0.000:0.000:0.000))
+    (INTERCONNECT RX_1\(0\).fb \\CAN\:CanIP\\.can_rx (1.000:1.000:1.000))
+    (INTERCONNECT \\CAN\:CanIP\\.can_tx TX_1\(0\).pin_input (1.000:1.000:1.000))
     (INTERCONNECT \\INA226_I2C\:SCB\\.interrupt \\INA226_I2C\:SCB_IRQ\\.interrupt (0.000:0.000:0.000))
     (INTERCONNECT \\INA226_I2C\:scl\(0\)\\.fb \\INA226_I2C\:SCB\\.i2c_scl (0.000:0.000:0.000))
     (INTERCONNECT \\INA226_I2C\:sda\(0\)\\.fb \\INA226_I2C\:SCB\\.i2c_sda (0.000:0.000:0.000))
+    (INTERCONNECT \\CAN\:CanIP\\.interrupt \\CAN\:isr\\.interrupt (1.000:1.000:1.000))
+    (INTERCONNECT TX_1\(0\).pad_out TX_1\(0\).pad_in (0.000:0.000:0.000))
     (INTERCONNECT ClockBlock.ff_div_5 \\DBG_UART\:SCB\\.clock (0.000:0.000:0.000))
     (INTERCONNECT \\DBG_UART\:rx\(0\)\\.fb \\DBG_UART\:SCB\\.uart_rx (0.000:0.000:0.000))
     (INTERCONNECT \\DBG_UART\:tx\(0\)\\.pad_out \\DBG_UART\:tx\(0\)\\.pad_in (0.000:0.000:0.000))
@@ -26,6 +31,9 @@
     (INTERCONNECT \\DBG_UART\:tx\(0\)\\.pad_out \\DBG_UART\:tx\(0\)_PAD\\ (0.000:0.000:0.000))
     (INTERCONNECT \\DBG_UART\:tx\(0\)_PAD\\ \\DBG_UART\:tx\(0\)\\.pad_in (0.000:0.000:0.000))
     (INTERCONNECT \\DBG_UART\:rx\(0\)_PAD\\ \\DBG_UART\:rx\(0\)\\.pad_in (0.000:0.000:0.000))
+    (INTERCONNECT RX_1\(0\)_PAD RX_1\(0\).pad_in (0.000:0.000:0.000))
+    (INTERCONNECT TX_1\(0\).pad_out TX_1\(0\)_PAD (0.000:0.000:0.000))
+    (INTERCONNECT TX_1\(0\)_PAD TX_1\(0\).pad_in (0.000:0.000:0.000))
    )
   )
  )

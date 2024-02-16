@@ -2,7 +2,22 @@ net ClockBlock_HFClk
 	term   ":m0s8clockblockcell.hfclk"
 	switch ":m0s8clockblockcell.hfclk==>:interrupt_8.clock"
 	term   ":interrupt_8.clock"
+	switch ":m0s8clockblockcell.hfclk==>:interrupt_28.clock"
+	term   ":interrupt_28.clock"
 end ClockBlock_HFClk
+net Net_11
+	term   ":ioport0:pin0.fb"
+	switch ":ioport0:pin0.fb==>:ioport0:hsiom_in0.hsiom0_in"
+	switch ":ioport0:hsiom_in0.fixed_ACT_2==>:cancell_1__can_rx__hsiom_permute.ioport0__fixed_out_p0_ACT_2"
+	switch ":cancell_1__can_rx__hsiom_permute.cancell_1__can_rx==>:cancell_1.can_rx"
+	term   ":cancell_1.can_rx"
+end Net_11
+net Net_12
+	term   ":cancell_1.can_tx"
+	switch ":cancell_1.can_tx==>:ioport0:hsiom_out1.fixed_ACT_2"
+	switch ":ioport0:hsiom_out1.hsiom1_out==>:ioport0:pin1.pin_input"
+	term   ":ioport0:pin1.pin_input"
+end Net_12
 net Net_204
 	term   ":m0s8scbcell_0.interrupt"
 	switch ":m0s8scbcell_0.interrupt==>:interrupt_idmux_8.in_0"
@@ -23,6 +38,12 @@ net Net_221
 	switch ":m0s8scbcell_0__i2c_sda__hsiom_permute.m0s8scbcell_0__i2c_sda==>:m0s8scbcell_0.i2c_sda"
 	term   ":m0s8scbcell_0.i2c_sda"
 end Net_221
+net Net_286
+	term   ":cancell_1.interrupt"
+	switch ":cancell_1.interrupt==>:interrupt_idmux_28.in_0"
+	switch ":interrupt_idmux_28.interrupt_idmux_28__out==>:interrupt_28.interrupt"
+	term   ":interrupt_28.interrupt"
+end Net_286
 net \DBG_UART:rx_wire\
 	term   ":ioport7:pin0.fb"
 	switch ":ioport7:pin0.fb==>:ioport7:hsiom_in0.hsiom0_in"

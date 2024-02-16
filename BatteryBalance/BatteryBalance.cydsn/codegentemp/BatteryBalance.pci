@@ -1,6 +1,12 @@
 # BatteryBalance
-# 2024-01-26 03:33:46Z
+# 2024-02-13 02:54:50Z
 
+# IO_4@[IOP=(0)][IoId=(4)] is reserved: KhzXtalEnabled
+dont_use_io iocell 0 4
+# IO_5@[IOP=(0)][IoId=(5)] is reserved: KhzXtalEnabled
+dont_use_io iocell 0 5
+# IO_6@[IOP=(0)][IoId=(6)] is reserved: ExtClkEnabled
+dont_use_io iocell 0 6
 # IO_2@[IOP=(3)][IoId=(2)] is reserved: SWDDebugEnabled
 dont_use_io iocell 3 2
 # IO_3@[IOP=(3)][IoId=(3)] is reserved: SWDDebugEnabled
@@ -10,3 +16,5 @@ set_io "\INA226_I2C:sda(0)\" iocell 1 1
 set_io "\INA226_I2C:scl(0)\" iocell 1 0
 set_io "\DBG_UART:tx(0)\" iocell 7 1
 set_io "\DBG_UART:rx(0)\" iocell 7 0
+set_io "RX_1(0)" iocell 0 0
+set_io "TX_1(0)" iocell 0 1
