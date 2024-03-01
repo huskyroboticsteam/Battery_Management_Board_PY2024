@@ -1,0 +1,3 @@
+[submodule "Battery Management Board.cydsn/HindsightCAN"]
+	path = Battery Management Board.cydsn/HindsightCAN
+	url = https://github.com/huskyroboticsteam/HindsightCAN.git

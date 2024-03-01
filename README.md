@@ -1,1 +1,3 @@
-# Battery_Management_Board_PY2023
+# Battery Management Board
+
+Adapt this project to make board firmware!
