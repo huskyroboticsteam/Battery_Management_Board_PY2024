@@ -20,6 +20,8 @@
 #include "FSM_Stuff.h"
 #include "HindsightCAN/CANLibrary.h"
 
+#include <INA226.h>
+
 // LED stuff
 volatile uint8_t CAN_time_LED = 0;
 volatile uint8_t ERROR_time_LED = 0;
@@ -107,6 +109,8 @@ void Initialize(void) {
 
     isr_Button_1_StartEx(Button_1_Handler);
     isr_Period_Reset_StartEx(Period_Reset_Handler);
+    
+    init_INA226();
 }
 
 void DebugPrint(char input) {
