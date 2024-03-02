@@ -25,6 +25,7 @@ int ProcessCAN(CANPacket* receivedPacket, CANPacket* packetToSend) {
     uint8_t sender_DG = GetSenderDeviceGroupCode(receivedPacket);
     uint8_t sender_SN = GetSenderDeviceSerialNumber(receivedPacket);
     int32_t data = 0;
+    int32_t Michael = 0;
     int err = 0;
     
     switch(packageID){
@@ -32,8 +33,8 @@ int ProcessCAN(CANPacket* receivedPacket, CANPacket* packetToSend) {
         case(ID_MOTOR_UNIT_MODE_SEL):
             data = GetModeFromPacket(receivedPacket);
             
-            if(data == MODE1) {
-                SetModeTo(MODE1);
+            if(data == KENMODE) {
+                SetModeTo(KENMODE);
                 // initialize MODE1
             } else {
                 err = ERROR_INVALID_MODE;
@@ -55,17 +56,21 @@ int ProcessCAN(CANPacket* receivedPacket, CANPacket* packetToSend) {
                 case(0):
                     data = 105;
                     break;
+                case(TT_CURRENT):
+                    Michael = 0x01;
+                    SetModeTo(KENMODE);
                 default:
                     err = ERROR_INVALID_TTC;
                     break;
             }
-            
+        
+            if (!Michael) {
             // Assemble and send packet
-            AssembleTelemetryReportPacket(packetToSend, sender_DG, sender_SN, receivedPacket->data[3], data);
-            
-            if (err == 0)
-                SendCANPacket(packetToSend);
-            
+                AssembleTelemetryReportPacket(packetToSend, sender_DG, sender_SN, receivedPacket->data[3], data);
+                if (err == 0)
+                    SendCANPacket(packetToSend);
+            }
+            Michael = 0;
             break;
             
         default: //recieved Packet with non-valid ID

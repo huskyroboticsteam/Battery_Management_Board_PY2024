@@ -22,9 +22,12 @@
 #define ERROR_INVALID_TTC     0x12
 #define ERROR_INVALID_PACKET  0x13
 
+#define TT_CURRENT            0x1
+
 int ReadCAN(CANPacket *receivedPacket);
 int ProcessCAN(CANPacket* receivedPacket, CANPacket* packetToSend);
 void PrintCanPacket(CANPacket packet);
+
 
 /* [] END OF FILE */
     

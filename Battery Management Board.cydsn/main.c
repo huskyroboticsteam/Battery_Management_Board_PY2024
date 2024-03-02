@@ -19,6 +19,7 @@
 #include "CAN_Stuff.h"
 #include "FSM_Stuff.h"
 #include "HindsightCAN/CANLibrary.h"
+#include "io.h"
 
 #include <INA226.h>
 
@@ -54,7 +55,8 @@ int main(void)
 { 
     Initialize();
     int err;
-    
+    uint8_t current;
+    uint8_t status;
     for(;;)
     {
         err = 0;
@@ -68,13 +70,26 @@ int main(void)
                     CAN_time_LED = 0;
                     err = ProcessCAN(&can_recieve, &can_send);
                 }
-                if (GetMode() == MODE1)
-                    SetStateTo(DO_MODE1);
+                if (GetMode() == KENMODE)
+                    SetStateTo(DO_KENMODE);
                 else 
                     SetStateTo(CHECK_CAN);
                 break;
-            case(DO_MODE1):
+            case(DO_KENMODE):
                 // mode 1 tasks
+                status = getVoltage(&current);
+        
+                if (status == SUCCESS) {
+                    // PrintInt(current);
+                    // DBG_UART_UartPutString("mA\n\r");
+                    // DBG_UART_UartPutString("Constructing Packet\n\r");
+                    AssembleTelemetryReportPacket(&can_send, 0x2, 0x1, 0x1, current);
+                    // DBG_UART_UartPutString("Packet Constructed\n\r");
+                    SendCANPacket(&can_send);
+                } else {
+                    err = ERROR_INVALID_PACKET;
+                }
+                
                 SetStateTo(CHECK_CAN);
                 break;
             default:
@@ -104,7 +119,7 @@ void Initialize(void) {
     
     LED_DBG_Write(0);
     
-    InitCAN(0x4, (int)address);
+    InitCAN(0x3, (int)address);
     Timer_Period_Reset_Start();
 
     isr_Button_1_StartEx(Button_1_Handler);
