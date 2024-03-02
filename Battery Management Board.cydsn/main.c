@@ -80,17 +80,14 @@ int main(void)
                 status = getVoltage(&current);
         
                 if (status == SUCCESS) {
-                    // PrintInt(current);
-                    // DBG_UART_UartPutString("mA\n\r");
-                    // DBG_UART_UartPutString("Constructing Packet\n\r");
                     AssembleTelemetryReportPacket(&can_send, 0x2, 0x1, 0x1, current);
-                    // DBG_UART_UartPutString("Packet Constructed\n\r");
                     SendCANPacket(&can_send);
                 } else {
                     err = ERROR_INVALID_PACKET;
                 }
                 
                 SetStateTo(CHECK_CAN);
+                SetModeTo(MRBEASTMODE);
                 break;
             default:
                 err = ERROR_INVALID_STATE;

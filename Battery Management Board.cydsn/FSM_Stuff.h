@@ -16,10 +16,11 @@
 //States in FSM
 #define UNINIT          0x0
 #define CHECK_CAN       0x1
-#define DO_KENMODE        0x2
+#define DO_KENMODE      0x2
 
 //Operation modes
-#define KENMODE           0x2
+#define KENMODE         0x2
+#define MRBEASTMODE     0xFF
 
 // FSM Errors (0x20-0x2F)
 #define ERROR_ESTOP         0x20
